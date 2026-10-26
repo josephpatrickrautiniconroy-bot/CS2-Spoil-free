@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3463294,
+      "revid": 3463339,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-26T10:42:21.807Z",
-      "result": "24 matches, 35 map videos"
+      "fetchedAt": "2026-10-26T14:47:42.854Z",
+      "result": "24 matches, 39 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -1837,6 +1837,16 @@
       "ok": true,
       "seconds": 10438,
       "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "RpoWrrMhR9o": {
+      "ok": true,
+      "seconds": 5848,
+      "checkedAt": "2026-10-26T14:47:42.854Z"
+    },
+    "8zXCDmx0YVw": {
+      "ok": true,
+      "seconds": 6105,
+      "checkedAt": "2026-10-26T14:47:42.854Z"
     }
   },
   "parserVersion": 6,
@@ -3580,7 +3590,7 @@
       "YaLLa Compass/2026/Summer",
       "YaLLa Compass/2026/UAE"
     ],
-    "checkedAt": "2026-10-26T01:57:35.703Z",
+    "checkedAt": "2026-10-26T14:47:42.854Z",
     "key": "{\"categories\":[\"Category:S-Tier Tournaments\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\",\"exclude\":[\"FISSURE/\"]}"
   },
   "images": {
