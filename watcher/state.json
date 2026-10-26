@@ -1,12 +1,4243 @@
 {
   "version": 1,
-  "configHash": "",
+  "configHash": "c5ac3d0f",
   "uploads": {
     "@ESLCS": "UUPq2ETz4aAGo2Z-8JisDPIA",
     "@BLASTPremier": "UU9k--dE_UE0Faxzgb_DDkYQ",
     "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww"
   },
-  "seen": {},
-  "pending": {},
-  "matchActivity": {}
+  "seen": {
+    "HDC0XRRGmMs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "vKKzX-yTtsw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "QfNLLDByG8c": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Ga8pTErXIEA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Qg3AnOOGASg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "z2BkhcXNluU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "6D5rZR19crE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "YYuiuypSlSA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "VxosVZpWU-o": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "FOzUwttxH1w": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "IgvFe2jvzLU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "7Ac7neJNHW0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "bXNMWi4tpwk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "CC7ScB-JNVw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "_dTeJxDLtTU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "3QNK7LYmovc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "p1f7hJYEi-w": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "aj77Fekp1bc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "34zz4uJIpYQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "VTQJw-eGmLs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "JwZR_0T_dJY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "JMxVWu7BIgg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "J7iGRYXFISI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Bx_zbzGzPPY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "e81Ff9f3SAs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "bsGwg3TzPK0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "2k-Rzc_53Z4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "CDmqjDfD6gg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "lcjciyumc_Q": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "X1kLc3TvV44": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Narpl5mx6Zg": {
+      "status": "review",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "_iLYW8vJ9E0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "amZXnOau1pE": {
+      "status": "review",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "e9tQRqSqzAk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "EUZICUxo5W8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Zk1_YV45V3Y": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "csE0dNbsLb8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TBrNOzLJtCo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mT46iQTKrqo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "MeKsZJNX1HU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "EwSBwy3ctHM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "uwHE8BvxeYg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Tfrl61F-5Mw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "rZxsKtqOqQ0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Lh_UQSjtkUo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "NBFKFM6wC2k": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "LZ26mCY6qFQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "xR2E2DInOlo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TxGwiq0-abA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "3Kjz7pqaOzQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "yCCmwIRbsuM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "VnWDNthZ2L4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "rS9b76-ddaI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "X7gp9cmo-6A": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "1ZZhvlN3xqQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "iRQ4YaWPM2g": {
+      "status": "review",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "fyJCr9xpLUs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mNzfGFdSUSs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "qhGoxH3h3w8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "UmP39Q5fz-M": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Q8F8qcJ-SmI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "We0B_KI0AYY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ItAbdsw7yYs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cPp0ui479NE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "_IkScmHfPPE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "h-E6NIWJhfg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "6XelBqlO8HU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "La_0CC4yxgo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Nt7708sHu5E": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "oP8bTi7bzsg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Kc-jEzABOz8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "9l7o9NVE8N0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "FH1j77GfIBg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "aNPSziq1spk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "8SvBrkDEyQs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "kzvhqKBjH04": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "HJ__la8jSkQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "s9ZeWMegNhw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "LsSIcv0cvJA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "FHMyI5U1GRQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "q2ybi9U0eJs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "k3SQBC8hkHw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "yf0BqRWz6Zs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "CxCIx1BN0aA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "PbKzvZpOokQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ga4fBrA9Iyo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "yjrJmLWRPLA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "oIRCXOrllzE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "PMAheJLThbQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "13gwKPKC-N8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "soodPRHJk5A": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "CCCwpcACQPU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "hhAHaaG0cGE": {
+      "status": "review",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "0E71k_6OIjU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "9FrqMZd_MSk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "yxcOiU_zSD4": {
+      "status": "review",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "NOKNZWV3wnU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "uTk-UNXf8UU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "dC6BUCV_DZ0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "atUxaPtzPxc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "IJ-Z97_nf_4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Yk6V0ak4VLI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "y6w_wyN2lUI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "_dsVqa6k6jA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "m03dueeoRik": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "23qE9HvlVPU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "xdhtgzh-cGA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Px3ZZp5ZEls": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "j2VfRtOv39E": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mu2uFcQ8bjk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "larAlDIH-Ko": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "bgB_6gy5x3w": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "619DQPH_U4A": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cBkqS5P4ukU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "UxXnq8SBniY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "bQNXNW41YaM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "BRlnfZHztcY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "pkeHx20M-bs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "H_b_QbTUr2U": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Ap9mNacpvP8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "1f9jnfkWNu4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "nINSibrTRIY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "XtJZMEGj6sk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "qYz_TUIFsCg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "QlbWdSzRDoI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "-adVB7QHOBU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Gmw99kR27kM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Ym4-uwkzJ3s": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "O5c8MPt7KMI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "eTa1Wm1Bt78": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "_1n7MS-AYBI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "u3J5T84tYTU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "sBj8mrgWK98": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "stkO_H9-Opg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "97cYbqVVPTM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "zLF3dL2COhM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "owmgQJK5dfo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "kT9djQcQXuY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "N3yHPMLiIaw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "B4YIEYYLTSg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "6Thw4ZbMPdI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "xJzZphagaBA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "BRIS7gOHoho": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "1YbRoGOiPME": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "MaMvwnLF1DM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "r-Xadj8vlTg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "QCtR2slije8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "CtV_H8Ymchk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "3mu1QI8C-Ko": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "6dc-Gm6zgsA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "275t2kAMmF0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "kKXxKBT78XU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "teGZRZpiM6I": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TRU_z6ILdYo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "4sfGhU3KpJU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "zVa8g1T0Gi4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "E_idT_V-_zQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "6pvtSdHoCVc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "3Yp0Fi0qcVE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "9-pkcQPhN48": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ZcvnV--QLWY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "nYS_xh2b3-g": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "uD_tlPT_AY0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "2L3_d7ut_-c": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "QV1av4tiEaI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "grJg6WoFbOg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "sGruhp4VK_o": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "xecrNVhafgE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ylNQ5sIeSyA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "PF9xfSWIwLY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "YIiQpHYh9LY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "D_tPYH8WfRs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "apG7aet3p0g": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "vIluUbpSTH0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "DsMixpoi-7U": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "HT1lOYZMBuk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "SHgLhtv11vU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "lry3rVhMbMA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "rGnlFbLzQV4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "udXiSU6OKO8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "nBsx1sCyyDY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "YuD3DWvEi3U": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "RASfOZKLN-s": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "QGOQ-8kuZvM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "wnZ9DCeqFhU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "OB_CeD-TUYs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "49B6-Mxjc5w": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "xcHAqNsG6c0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "llQRiNxp28o": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "2O7Wf18A8Mc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "9la3ud_3Bb0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "vGKcOHtO96s": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ND4ifK9EPtM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "_EPixck0iDM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "PrC1G8I8UM4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "R4koOf_jQlY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ldkGQxhfynQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "oZGUq4_PNMQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "8ESEiloKWyQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "jo6LLPFajn0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "eCw80-_Sr5g": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "GVuHLNj5lIA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Fv5I4bptcNM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Iaw7vwCfCPA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ZZdaBTuf_Tg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "e-sQ1bjbnsA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ivUTbfRzJ40": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "GDjrKYUIbjM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cjo-8hGA_9s": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "gkjvKWee-4E": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cVyY02YkLic": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "reWC_jQ2FMY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "x9al9bqwFNI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "x7KO0S2otbM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "9UvbTXa4_x0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "4f_fisG5j9g": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "MQGvHLK3ctc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "HclaYGDkYOY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "pj-aF9LyJXw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "-Y0T1tw7Zz0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "fyNBGNUgwmI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Sa_WighbUMU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "suuyfW5rqQA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "lawItm-8fgU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "7M9rbaug-Z0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "CdTT_4dGMvk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "jjqPnBgZsUc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "1a3fPofjZwo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mvAEKkdD4gU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "kNLkWSyDRT4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "0Bw319nVJ3c": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "FlV2OBRogHM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "SoqdNHtfa_o": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "_T3ra0nJAjc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "RuwmnGjrf04": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "LcMDVOtgvdk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "9vCiC9i7cUs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "EyO8Ug2kEpc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "lV0ssjzKfJw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TXllCgEM6ps": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "zwx9gvenh1Q": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "KG3SQJCbras": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TPy-4MtFMvY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "YOH8m4yumZY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "l54_Btd3oJA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "sbrjk37VJ7w": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TseqhZmvAb4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "i2ynbYkgFhM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "GWkVaZlFFRU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "e7G9uXEDNO8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mT7EQFwIaZA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "6DGzDzFN1wA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "nWoODRZEyAs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "iLnojOgxzS4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "2BeOH4g3YP0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "JaIjtQB85AI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "5uDP2YfoJIM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "7cCU8tarIgk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "CuCp-hMnH2U": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "FSO-zSu8cYQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "q6GdyFL0pl8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "8T3sqnU_J3Q": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "oxtYcUZKbAI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "muRfeSQ6cGw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "IBo_6G1pHRo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "3ZyJPnGWZwc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "qgSnniq1NPs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "-8srrHQGcaU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cBw7QzoZjE0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "D4G4knQJQd0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "GllV02bmyu8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "q-3zzik_sjE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "5qlCWpCAnRg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cth53YtYIcU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Im3OHRzxkeg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "faGTWvsA2Gs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "R3019Bzrm84": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "4qctS11skyM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "l58C-fNb6zM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ihTfsSFtAG8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "KaNM9q8ajfQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ZEY2N4Alx6U": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "d_3FZl4esdM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "IPAU90aOJMQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "oJi8OiF8skc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "J6D3fo-fpsM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "X6LG6knGOXw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "dQ9IjOMo2Ps": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "xkzy11E_ZHs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "qLmucC7yDlM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "KXxEDPu31eM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "3kVghr6Swag": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "MBjtYBlZ-Lc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "z1RkejKfCtU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "hSNiWEEpfts": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "z02kuZcHJuU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "WWTcu33u00A": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "WREXY_RabVI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "6UgRf1qXy5g": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "iSiyJWL4ask": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "owFh8q10oXs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "PO1TJKsqtGc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "MVVH0BjMYgM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cK37Yq6i4Rk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "7WS1e35ja2U": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "eWzaUHE5LQs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "0VZ4u77DGEE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "pDVXraHm6-o": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ZoiFFYAr_mU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "MDTkRvcfRuc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "0PisNssMVEA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "niwIVPJtcX4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ZRw-K0VvMAg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TZd_YLWVhzE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mVAQ_hSb5Sk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mDCzr2pjIb4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "JijOEdE2A3c": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "P_eQEE3qlbM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Mn8TGRjtIbY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mGM_-AozBYc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "g-dVc3s6cNQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "RQLcR0aQ6aM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "k0YrOiSt-HA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "8d-_S3kkQx8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "yHwRmFrXfSU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "82y98I__G4o": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "UGbdTORSPXU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "dyTEZ2pT0ns": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "5slUA-NTiLA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "9BfgNjp7KDc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "RMNUrEAiLJs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "mQwxFi-KUVA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "X88swzTDPeY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "3sjtKsak1qU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "RawR7H9a_2A": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "gPgWjM3F85E": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "Y8layN0_YVM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "F5ddBLwPRxc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "cQmf7kQ8p7s": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "WuYwSxueXFY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "bAxWrL8RJtM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "MWknVlQoY0c": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "kOZHGP1EGoY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "qJwibMqAi98": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "AI0JhqZGfv4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "UPqJb2tI09k": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "TWd8KU898Jw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "EjqKkOfmFJ8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "ofmC7VXJIhQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:00:47.429Z"
+    }
+  },
+  "pending": {
+    "Narpl5mx6Zg": {
+      "reason": "Couldn’t find two team names in the title.",
+      "title": "Potential CS2 Coaches of the Future? ☝️🤓 | BLAST Open Porto 2026",
+      "channel": "@BLASTPremier",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "amZXnOau1pE": {
+      "reason": "Couldn’t find two team names in the title.",
+      "title": "Guessing Which Counter-Strike Pros Used These Steam Profile Pics 🫢 | BLAST Open Porto 2026",
+      "channel": "@BLASTPremier",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "iRQ4YaWPM2g": {
+      "reason": "Couldn’t find two team names in the title.",
+      "title": "Counter-Strike JEOPARDY! ft. Scrawny, Mauisnake, Voo and NatTea 😵 | BLAST Open Porto 2026",
+      "channel": "@BLASTPremier",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "hhAHaaG0cGE": {
+      "reason": "Couldn’t find two team names in the title.",
+      "title": "Counter-Strike Roles EXPLAINED ft. Ruggah and Pimp 🧠 | BLAST Open Porto 2026",
+      "channel": "@BLASTPremier",
+      "at": "2026-10-26T01:00:47.429Z"
+    },
+    "yxcOiU_zSD4": {
+      "reason": "Couldn’t find two team names in the title.",
+      "title": "\"YOU'RE F***ING GREAT, BRO!\" 🎙️🔥 Best of MIC'D UP | BLAST Open Porto 2026 Group Stage Team Comms",
+      "channel": "@BLASTPremier",
+      "at": "2026-10-26T01:00:47.429Z"
+    }
+  },
+  "matchActivity": {},
+  "stageStart": {},
+  "debug": {
+    "HDC0XRRGmMs": {
+      "channel": "@BLASTPremier",
+      "title": "EliGE vs NAF-FLY: Who would @TeamLiquidCS trust in the clutch with the round on the line? 👀",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-22T09:30:35Z",
+      "why": "too short"
+    },
+    "vKKzX-yTtsw": {
+      "channel": "@BLASTPremier",
+      "title": "KennyS vs m0NESY? apEX vs FalleN? @FaZeEsports & @mousesports Pick the BETTER CS Legends 👀",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-08-22T13:30:15Z",
+      "why": "too short"
+    },
+    "QfNLLDByG8c": {
+      "channel": "@BLASTPremier",
+      "title": "Techno4K: \"They're adapting to our team very quickly\" 💪 @1mongolz talk DarkMeister and tikuak",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-23T10:00:02Z",
+      "why": "too short"
+    },
+    "Ga8pTErXIEA": {
+      "channel": "@BLASTPremier",
+      "title": "PR: \"With xertioN, I would say I have more responsibility...\" 🤔 @mousesports",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-24T09:00:17Z",
+      "why": "too short"
+    },
+    "Qg3AnOOGASg": {
+      "channel": "@BLASTPremier",
+      "title": "magixx explains the “lifecycle” of a Counter-Strike pro 😅 @TeamSpiritCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-25T10:00:36Z",
+      "why": "too short"
+    },
+    "z2BkhcXNluU": {
+      "channel": "@BLASTPremier",
+      "title": "FIRST MATCH, FIRST ACE of the tournament by r1nkle 🔥 @G2CS | @redbullgaming",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-26T11:03:26Z",
+      "why": "too short"
+    },
+    "6D5rZR19crE": {
+      "channel": "@BLASTPremier",
+      "title": "Even r1nkle couldn't believe he hit these shots 😅 @G2CS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-26T11:40:51Z",
+      "why": "too short"
+    },
+    "YYuiuypSlSA": {
+      "channel": "@BLASTPremier",
+      "title": "DENDELE GET DONK'D 😮‍💨 @TeamSpiritCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-26T13:39:52Z",
+      "why": "too short"
+    },
+    "VxosVZpWU-o": {
+      "channel": "@BLASTPremier",
+      "title": "\"IT'S ANOTHER DONK ACE!!!\" 🗣️🔥 @TeamSpiritCS | @redbullgaming",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-26T13:49:07Z",
+      "why": "too short"
+    },
+    "FOzUwttxH1w": {
+      "channel": "@BLASTPremier",
+      "title": "donk: \"Keep it {Cache}, keep it\" 😊 @TeamSpiritCS",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-26T14:20:43Z",
+      "why": "too short"
+    },
+    "IgvFe2jvzLU": {
+      "channel": "@BLASTPremier",
+      "title": "Higher or Lower: CS2 Skins & Cases Edition with NatTea, Mauisnake and Voo ⬆️⬇️",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-26T14:46:11Z",
+      "why": "too short"
+    },
+    "7Ac7neJNHW0": {
+      "channel": "@BLASTPremier",
+      "title": "makazze: \"To be honest, I'm not going outside that much\" 😬 @NAVICounterStrike",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-08-26T14:55:00Z",
+      "why": "too short"
+    },
+    "bXNMWi4tpwk": {
+      "channel": "@BLASTPremier",
+      "title": "w0nderful with a WONDERFUL 4K 🤩 @NAVICounterStrike",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-26T16:03:24Z",
+      "why": "too short"
+    },
+    "CC7ScB-JNVw": {
+      "channel": "@BLASTPremier",
+      "title": "HEY, WATCH IT B1T! That's 610Hz 🤬 @asusrog",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-26T16:13:24Z",
+      "why": "too short"
+    },
+    "_dTeJxDLtTU": {
+      "channel": "@BLASTPremier",
+      "title": "Swisher and Lake got a lil too excited after that map win... 🤨 @M80gg",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-26T16:45:49Z",
+      "why": "too short"
+    },
+    "3QNK7LYmovc": {
+      "channel": "@BLASTPremier",
+      "title": "NAVI have nothing on this INSANE JBa 1vs3 for match point 😱 @M80gg",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-26T17:24:04Z",
+      "why": "too short"
+    },
+    "p1f7hJYEi-w": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, Day 1 - Aurora vs G2, Spirit vs DENDELE, NAVI vs M80, FURIA vs paiN",
+      "minutes": 707,
+      "live": true,
+      "published": "2026-08-26T20:37:06Z",
+      "why": "too long"
+    },
+    "aj77Fekp1bc": {
+      "channel": "@BLASTPremier",
+      "title": "Ranking the BEST Teams in CS2 Right Now 📈🤔 | BLAST Open Porto 2026",
+      "minutes": 12,
+      "live": false,
+      "published": "2026-08-27T05:30:27Z",
+      "why": "too short"
+    },
+    "34zz4uJIpYQ": {
+      "channel": "@BLASTPremier",
+      "title": "@jLcs2: \"I want to play the game... can we start it now?!\" 😤 @TeamVitalityCS | @blacklyteofficial",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-27T09:12:28Z",
+      "why": "too short"
+    },
+    "VTQJw-eGmLs": {
+      "channel": "@BLASTPremier",
+      "title": "GG jL... he already got kicked from the server 😭🚫 @TeamVitalityCS",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-27T09:37:59Z",
+      "why": "too short"
+    },
+    "JwZR_0T_dJY": {
+      "channel": "@BLASTPremier",
+      "title": "CAPTAIN CLUTCH KURTKA vs Vitality 🫡 @InCircleEsports",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-27T10:43:47Z",
+      "why": "too short"
+    },
+    "JMxVWu7BIgg": {
+      "channel": "@BLASTPremier",
+      "title": "THE UPSET! @InCircleEsports defeat Vitality in 2?! 🤯",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-27T11:24:06Z",
+      "why": "too short"
+    },
+    "J7iGRYXFISI": {
+      "channel": "@BLASTPremier",
+      "title": "@InCircleEsports when they play Vitality 😎",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-27T11:39:28Z",
+      "why": "too short"
+    },
+    "Bx_zbzGzPPY": {
+      "channel": "@BLASTPremier",
+      "title": "@jLcs2: \"I looked up to 3 players in my life, s1mple, ZywOo and ropz...\" 🥹",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-27T11:54:43Z",
+      "why": "too short"
+    },
+    "e81Ff9f3SAs": {
+      "channel": "@BLASTPremier",
+      "title": "dgt pistol round 1vs3 clutch keeps @9zTeam alive 👏",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-27T13:57:28Z",
+      "why": "too short"
+    },
+    "bsGwg3TzPK0": {
+      "channel": "@BLASTPremier",
+      "title": "HOLY MOLY MOUZ 🫣 How did @9zTeam win that 2vs5?!",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-27T14:13:21Z",
+      "why": "too short"
+    },
+    "2k-Rzc_53Z4": {
+      "channel": "@BLASTPremier",
+      "title": "Are you a Cache newbie and wanting to learn how to play it like the pros? 👀 @OfficialRefrag",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-08-27T14:35:20Z",
+      "why": "too short"
+    },
+    "CDmqjDfD6gg": {
+      "channel": "@BLASTPremier",
+      "title": "YEEHAW! Gunslinger xfl0ud goes wild with this 4K 🤠 @FUTEsports | @asusrog",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-27T15:43:35Z",
+      "why": "too short"
+    },
+    "lcjciyumc_Q": {
+      "channel": "@BLASTPremier",
+      "title": "latto finishes off FUT with the ACE 🥵 @legacyggbr",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-27T16:46:19Z",
+      "why": "too short"
+    },
+    "X1kLc3TvV44": {
+      "channel": "@BLASTPremier",
+      "title": "LIGHTNING STRIKES TWICE for @m0nesy13 ⚡| @redbullgaming ACE",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-27T19:06:20Z",
+      "why": "too short"
+    },
+    "Narpl5mx6Zg": {
+      "channel": "@BLASTPremier",
+      "title": "Potential CS2 Coaches of the Future? ☝️🤓 | BLAST Open Porto 2026",
+      "minutes": 16,
+      "live": false,
+      "published": "2026-08-27T20:45:01Z",
+      "why": "review: Couldn’t find two team names in the title."
+    },
+    "_iLYW8vJ9E0": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, Day 2 - Vitality vs IC, MOUZ vs 9z, Legacy vs FUT, Falcons vs Lynn Vision",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-08-27T21:14:11Z",
+      "why": "too long"
+    },
+    "amZXnOau1pE": {
+      "channel": "@BLASTPremier",
+      "title": "Guessing Which Counter-Strike Pros Used These Steam Profile Pics 🫢 | BLAST Open Porto 2026",
+      "minutes": 15,
+      "live": false,
+      "published": "2026-08-28T08:00:28Z",
+      "why": "review: Couldn’t find two team names in the title."
+    },
+    "e9tQRqSqzAk": {
+      "channel": "@BLASTPremier",
+      "title": "These are some super CURSED Steam profile pics... 🤨",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-28T09:11:25Z",
+      "why": "too short"
+    },
+    "EUZICUxo5W8": {
+      "channel": "@BLASTPremier",
+      "title": "doc 4K DELETES Aurora 💀 @DendeleTV",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-28T10:27:45Z",
+      "why": "too short"
+    },
+    "Zk1_YV45V3Y": {
+      "channel": "@BLASTPremier",
+      "title": "Wicadia bags himself a DOUBLE ACE series 💪 @Aurora_CS2 | @redbullgaming",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-08-28T11:20:30Z",
+      "why": "too short"
+    },
+    "csE0dNbsLb8": {
+      "channel": "@BLASTPremier",
+      "title": "donk ACES are just inevitable 🤷 @TeamSpiritCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-28T13:56:41Z",
+      "why": "too short"
+    },
+    "TBrNOzLJtCo": {
+      "channel": "@BLASTPremier",
+      "title": "Which Counter-Strike Pros Made These Plays? 📺👀 | @asusrog   Laboratory",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-28T14:00:21Z",
+      "why": "too short"
+    },
+    "mT46iQTKrqo": {
+      "channel": "@BLASTPremier",
+      "title": "Which Counter-Strike Pro Made The Play? 📺👀 ft. Mauisnake and Voo | @asusrog Laboratory",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-28T14:00:28Z",
+      "why": "too short"
+    },
+    "MeKsZJNX1HU": {
+      "channel": "@BLASTPremier",
+      "title": "zont1x: \"I'm just trying to win as much as I can, and it's not about certain goals\" 🗿 @TeamSpiritCS",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-28T15:06:31Z",
+      "why": "too short"
+    },
+    "EwSBwy3ctHM": {
+      "channel": "@BLASTPremier",
+      "title": "VAMOS SNOW with the 4K vs NAVI 🙌 @paingamingbr",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-28T15:40:25Z",
+      "why": "too short"
+    },
+    "uwHE8BvxeYg": {
+      "channel": "@BLASTPremier",
+      "title": "NEURON ACTIVATED! @NAVICounterStrike make the comeback happen on Mirage 🧠",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-28T17:17:52Z",
+      "why": "too short"
+    },
+    "Tfrl61F-5Mw": {
+      "channel": "@BLASTPremier",
+      "title": "Professor made this clutch look easy 😎  @FURIA.CS2",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-28T19:15:58Z",
+      "why": "too short"
+    },
+    "rZxsKtqOqQ0": {
+      "channel": "@BLASTPremier",
+      "title": "A rare look behind-the-scenes at BLAST Studios 📹👀 (pls excuse the mess)",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-28T19:24:34Z",
+      "why": "too short"
+    },
+    "Lh_UQSjtkUo": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, Day 3 - Aurora vs DENDELE, G2 vs Spirit, NAVI vs paiN, M80 vs FURIA",
+      "minutes": 682,
+      "live": true,
+      "published": "2026-08-28T20:16:15Z",
+      "why": "too long"
+    },
+    "NBFKFM6wC2k": {
+      "channel": "@BLASTPremier",
+      "title": "Aww, look at how much they've grown up 🥹 | CS2 Talent REACT to Old Pics of Themselves",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-29T11:55:45Z",
+      "why": "too short"
+    },
+    "LZ26mCY6qFQ": {
+      "channel": "@BLASTPremier",
+      "title": "ropz the AWPer gets the clutch 🎯 @TeamVitalityCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-29T13:13:44Z",
+      "why": "too short"
+    },
+    "xR2E2DInOlo": {
+      "channel": "@BLASTPremier",
+      "title": "\"It's not ZywOo's fault his parents didn't have s*x before, ya know\" 😐",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-29T15:47:11Z",
+      "why": "too short"
+    },
+    "TxGwiq0-abA": {
+      "channel": "@BLASTPremier",
+      "title": "PIXEL PERFECT AWP shot from z4kr 👾 | @asusrog Action Replay",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-29T16:10:32Z",
+      "why": "too short"
+    },
+    "3Kjz7pqaOzQ": {
+      "channel": "@BLASTPremier",
+      "title": "CRAZY @legacyggbr 2vs5 against Falcons 🤯",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-29T17:19:01Z",
+      "why": "too short"
+    },
+    "yCCmwIRbsuM": {
+      "channel": "@BLASTPremier",
+      "title": "BIG BRAIN @m0nesy13 tricks Legacy in the clutch 🧠 @FalconsEsport",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-29T18:38:50Z",
+      "why": "too short"
+    },
+    "VnWDNthZ2L4": {
+      "channel": "@BLASTPremier",
+      "title": "This @m0nesy13 1vs3 was ABSOLUTELY MAGICAL 😱🪄 @FalconsEsport",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-29T19:42:14Z",
+      "why": "too short"
+    },
+    "rS9b76-ddaI": {
+      "channel": "@BLASTPremier",
+      "title": "m0NESY: \"Don't change your setting guys\" 😅 @FalconsEsport",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-29T19:51:27Z",
+      "why": "too short"
+    },
+    "X7gp9cmo-6A": {
+      "channel": "@BLASTPremier",
+      "title": "CS2 Pro Roster Build Challenge: 🇩🇰 Denmark vs Sweden 🇸🇪 | BLAST Open Porto 2026",
+      "minutes": 12,
+      "live": false,
+      "published": "2026-08-29T20:00:11Z",
+      "why": "too short"
+    },
+    "1ZZhvlN3xqQ": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, Day 4 - Vitality vs 9z, IC vs MOUZ, FUT vs Lynn Vision, Legacy vs Falcons",
+      "minutes": 703,
+      "live": true,
+      "published": "2026-08-29T20:46:01Z",
+      "why": "too long"
+    },
+    "iRQ4YaWPM2g": {
+      "channel": "@BLASTPremier",
+      "title": "Counter-Strike JEOPARDY! ft. Scrawny, Mauisnake, Voo and NatTea 😵 | BLAST Open Porto 2026",
+      "minutes": 18,
+      "live": false,
+      "published": "2026-08-30T08:15:38Z",
+      "why": "review: Couldn’t find two team names in the title."
+    },
+    "fyJCr9xpLUs": {
+      "channel": "@BLASTPremier",
+      "title": "makazze: \"I was having some visa issues, and I could've got banned\" 😳 @NAVICounterStrike",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-30T09:28:22Z",
+      "why": "too short"
+    },
+    "mNzfGFdSUSs": {
+      "channel": "@BLASTPremier",
+      "title": "HeavyGod had NO business winning that 1vs3 🫨 @G2CS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T10:07:00Z",
+      "why": "too short"
+    },
+    "qhGoxH3h3w8": {
+      "channel": "@BLASTPremier",
+      "title": "Pixel-perfect precision from the players... pixel-perfect picture provided by @asusrog 😎",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T10:27:31Z",
+      "why": "too short"
+    },
+    "UmP39Q5fz-M": {
+      "channel": "@BLASTPremier",
+      "title": "Sneaky beaky Aleksib gets the DEFUSE 😶‍🌫️💣 @NAVICounterStrike",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T11:28:55Z",
+      "why": "too short"
+    },
+    "Q8F8qcJ-SmI": {
+      "channel": "@BLASTPremier",
+      "title": "Aleksib: \"It's kind of obvious that we're lacking that something in all of us\" 😔",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T12:01:52Z",
+      "why": "too short"
+    },
+    "We0B_KI0AYY": {
+      "channel": "@BLASTPremier",
+      "title": "This XANTARES duelies Ace was ABSOLUTE PERFECTION 🔫🔫 @Aurora_CS2 | @redbullgaming",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T13:31:11Z",
+      "why": "too short"
+    },
+    "ItAbdsw7yYs": {
+      "channel": "@BLASTPremier",
+      "title": "ashhh: \"...we need to be in a position where we can be good enough on our best day\" 🗣️ @Aurora_CS2",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-08-30T14:52:17Z",
+      "why": "too short"
+    },
+    "cPp0ui479NE": {
+      "channel": "@BLASTPremier",
+      "title": "That shot is ILLEGAL, dem0n 👮‍♂️🚨 @FUTEsports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-30T16:51:44Z",
+      "why": "too short"
+    },
+    "_IkScmHfPPE": {
+      "channel": "@BLASTPremier",
+      "title": "COMBAT AWPER try bags a 3K vs Vitality 🔥 @legacyggbr",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T18:09:19Z",
+      "why": "too short"
+    },
+    "h-E6NIWJhfg": {
+      "channel": "@BLASTPremier",
+      "title": "@ZywOo ACTIVATED for a 4K and the clutch 👏😤 @TeamVitalityCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T18:36:58Z",
+      "why": "too short"
+    },
+    "6XelBqlO8HU": {
+      "channel": "@BLASTPremier",
+      "title": "jL: \"I'm like @kingmezii bro... a little bit worse\" 😅 @TeamVitalityCS",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-30T18:49:01Z",
+      "why": "too short"
+    },
+    "La_0CC4yxgo": {
+      "channel": "@BLASTPremier",
+      "title": "\"YOU STOLE MY ACE, NOOOOO!\" 😭 @TeamVitalityCS",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-30T19:30:30Z",
+      "why": "too short"
+    },
+    "Nt7708sHu5E": {
+      "channel": "@BLASTPremier",
+      "title": "INSANE latto 1vs3 and the ACE vs Vitality 😱 @legacyggbr",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-30T20:07:00Z",
+      "why": "too short"
+    },
+    "oP8bTi7bzsg": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, Day 5 - G2 vs NAVI, M80 vs Aurora, IC vs FUT, Legacy vs Vitality",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-08-30T21:37:27Z",
+      "why": "too long"
+    },
+    "Kc-jEzABOz8": {
+      "channel": "@BLASTPremier",
+      "title": "Counter-Strike Pros You Need to Build a Roster Around 🏗️ | BLAST Open Porto 2026",
+      "minutes": 9,
+      "live": false,
+      "published": "2026-08-31T08:00:22Z",
+      "why": "too short"
+    },
+    "9l7o9NVE8N0": {
+      "channel": "@BLASTPremier",
+      "title": "I mean.... okay @apexcsgo... why not? 🔫🤷 @TeamVitalityCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T08:00:28Z",
+      "why": "too short"
+    },
+    "FH1j77GfIBg": {
+      "channel": "@BLASTPremier",
+      "title": "AWP WALLBANG?! Who else but @ZywOo? 💥😏 @TeamVitalityCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T08:23:20Z",
+      "why": "too short"
+    },
+    "aNPSziq1spk": {
+      "channel": "@BLASTPremier",
+      "title": "@jLcs2 to TYLOO CONFIRMED?!?!?! 😳🇨🇳",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-31T09:02:25Z",
+      "why": "too short"
+    },
+    "8SvBrkDEyQs": {
+      "channel": "@BLASTPremier",
+      "title": "tN1R be stylin' on squeaky door 🚪 @TeamSpiritCS",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-31T11:01:45Z",
+      "why": "too short"
+    },
+    "kzvhqKBjH04": {
+      "channel": "@BLASTPremier",
+      "title": "YEKINDAR: \"Maybe I would IGL, or at least I would not want to... too much cortisol honestly...\" 😅",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T11:18:00Z",
+      "why": "too short"
+    },
+    "HJ__la8jSkQ": {
+      "channel": "@BLASTPremier",
+      "title": "What happened there, XANTARES? 😅 @Aurora_CS2",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T12:57:47Z",
+      "why": "too short"
+    },
+    "s9ZeWMegNhw": {
+      "channel": "@BLASTPremier",
+      "title": "200IQ BIG BALLS moment from NertZ 😮‍💨🧠 @G2CS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T13:50:28Z",
+      "why": "too short"
+    },
+    "LsSIcv0cvJA": {
+      "channel": "@BLASTPremier",
+      "title": "@Aurora_CS2 were all laughs after they ECO'D G2 😂",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T14:36:43Z",
+      "why": "too short"
+    },
+    "FHMyI5U1GRQ": {
+      "channel": "@BLASTPremier",
+      "title": "MASSIVE 1vs4 from r1nkle 🤯 @G2CS",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-08-31T15:17:29Z",
+      "why": "too short"
+    },
+    "q2ybi9U0eJs": {
+      "channel": "@BLASTPremier",
+      "title": "Are these CS2 skins and cases HIGHER or LOWER in price? 💰👀 @ic_com_official",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-08-31T15:42:03Z",
+      "why": "too short"
+    },
+    "k3SQBC8hkHw": {
+      "channel": "@BLASTPremier",
+      "title": "kyousuke DELETES Spinx 💀 @FalconsEsport",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-08-31T18:49:53Z",
+      "why": "too short"
+    },
+    "yf0BqRWz6Zs": {
+      "channel": "@BLASTPremier",
+      "title": "xelex was on another level vs Falcons 👀 @mousesports",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T19:15:03Z",
+      "why": "too short"
+    },
+    "CxCIx1BN0aA": {
+      "channel": "@BLASTPremier",
+      "title": "Y'ALL NEED SOME HELP from @OfficialRefrag 👏",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-08-31T19:27:10Z",
+      "why": "too short"
+    },
+    "PbKzvZpOokQ": {
+      "channel": "@BLASTPremier",
+      "title": "@ZywOo clutches up like always 🤩 @TeamVitalityCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T19:51:06Z",
+      "why": "too short"
+    },
+    "ga4fBrA9Iyo": {
+      "channel": "@BLASTPremier",
+      "title": "\"YOU'RE F***ING GREAT, BRO!\" 🗣️ This @jLcs2 3K was CRAZY @TeamVitalityCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-08-31T20:12:06Z",
+      "why": "too short"
+    },
+    "yjrJmLWRPLA": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, Day 6 - Spirit vs FURIA, G2 vs Aurora, MOUZ vs Falcons, FUT vs Vitality",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-08-31T21:21:25Z",
+      "why": "too long"
+    },
+    "oIRCXOrllzE": {
+      "channel": "@BLASTPremier",
+      "title": "BEST MOMENTS of BLAST Open Porto 2026 Group Stage",
+      "minutes": 20,
+      "live": false,
+      "published": "2026-09-01T07:00:07Z",
+      "why": "ignored word in title"
+    },
+    "PMAheJLThbQ": {
+      "channel": "@BLASTPremier",
+      "title": "S-TIER MOMENTS 😳 | BLAST Open Porto 2026 Group Stage",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-01T07:00:33Z",
+      "why": "too short"
+    },
+    "13gwKPKC-N8": {
+      "channel": "@BLASTPremier",
+      "title": "THREE DAYS TO GO 'TIL PORTO 🇵🇹🏟️",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-01T14:00:28Z",
+      "why": "too short"
+    },
+    "soodPRHJk5A": {
+      "channel": "@BLASTPremier",
+      "title": "@apexcsgo scout POPS OFF and FUT crash out 🫠🎯 @TeamVitalityCS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-01T14:46:15Z",
+      "why": "too short"
+    },
+    "CCCwpcACQPU": {
+      "channel": "@BLASTPremier",
+      "title": "TWO DAYS TO GO 'TIL PORTO! 🇵🇹🙌",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-02T11:04:27Z",
+      "why": "too short"
+    },
+    "hhAHaaG0cGE": {
+      "channel": "@BLASTPremier",
+      "title": "Counter-Strike Roles EXPLAINED ft. Ruggah and Pimp 🧠 | BLAST Open Porto 2026",
+      "minutes": 16,
+      "live": false,
+      "published": "2026-09-02T12:00:10Z",
+      "why": "review: Couldn’t find two team names in the title."
+    },
+    "0E71k_6OIjU": {
+      "channel": "@ESLCS",
+      "title": "IEM Beijing 2026 - Closed Qualifiers - Asia Region - Day 1",
+      "minutes": 490,
+      "live": true,
+      "published": "2026-09-02T14:41:23Z",
+      "why": "too long"
+    },
+    "9FrqMZd_MSk": {
+      "channel": "@ESLCS",
+      "title": "IEM Beijing 2026 - Closed Qualifiers - Global Region - Day 1",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-09-02T21:42:45Z",
+      "why": "too long"
+    },
+    "yxcOiU_zSD4": {
+      "channel": "@BLASTPremier",
+      "title": "\"YOU'RE F***ING GREAT, BRO!\" 🎙️🔥 Best of MIC'D UP | BLAST Open Porto 2026 Group Stage Team Comms",
+      "minutes": 16,
+      "live": false,
+      "published": "2026-09-03T11:00:00Z",
+      "why": "review: Couldn’t find two team names in the title."
+    },
+    "NOKNZWV3wnU": {
+      "channel": "@BLASTPremier",
+      "title": "Best of MIC'D UP 🎙️🔥 | BLAST Open Porto Group Stage Team Comms",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-03T11:15:35Z",
+      "why": "too short"
+    },
+    "uTk-UNXf8UU": {
+      "channel": "@BLASTPremier",
+      "title": "ONE DAY TO GO 'TIL PORTO! 🇵🇹🔉",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-03T12:00:50Z",
+      "why": "too short"
+    },
+    "dC6BUCV_DZ0": {
+      "channel": "@BLASTPremier",
+      "title": "Counter-Strike Pros React to the Community’s WILDEST Takes 🤨",
+      "minutes": 6,
+      "live": false,
+      "published": "2026-09-03T16:00:31Z",
+      "why": "too short"
+    },
+    "atUxaPtzPxc": {
+      "channel": "@BLASTPremier",
+      "title": "\"You guys should try harder...\" 🙄 CS2 Pro React to the Internet's UNHINGED Comments",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-03T16:31:42Z",
+      "why": "too short"
+    },
+    "IJ-Z97_nf_4": {
+      "channel": "@ESLCS",
+      "title": "IEM Beijing 2026 - Closed Qualifiers - Asia Region - Day 2",
+      "minutes": 624,
+      "live": true,
+      "published": "2026-09-03T16:43:36Z",
+      "why": "too long"
+    },
+    "Yk6V0ak4VLI": {
+      "channel": "@ESLCS",
+      "title": "IEM Beijing 2026 - Closed Qualifiers - Global Region - Day 2",
+      "minutes": 494,
+      "live": true,
+      "published": "2026-09-03T20:20:05Z",
+      "why": "too long"
+    },
+    "y6w_wyN2lUI": {
+      "channel": "@BLASTPremier",
+      "title": "CS Guns go pew-pew!",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-09-04T10:33:55Z",
+      "why": "too short"
+    },
+    "_dsVqa6k6jA": {
+      "channel": "@ESLCS",
+      "title": "IEM Beijing 2026 - Closed Qualifiers - Asia Region - Day 3",
+      "minutes": 69,
+      "live": true,
+      "published": "2026-09-04T12:51:49Z",
+      "why": "no tournament matched"
+    },
+    "m03dueeoRik": {
+      "channel": "@BLASTPremier",
+      "title": "ARE YOU READY FOR BLAST OPEN PORTO PLAY-OFFS?",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-09-04T14:09:10Z",
+      "why": "too short"
+    },
+    "23qE9HvlVPU": {
+      "channel": "@BLASTPremier",
+      "title": "huNter and NiKo don't fight IRL, but on the server... 💥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-04T14:30:00Z",
+      "why": "too short"
+    },
+    "xdhtgzh-cGA": {
+      "channel": "@BLASTPremier",
+      "title": "PIXEL PERFECT PRECISION NIKO 4K!",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-04T15:33:04Z",
+      "why": "too short"
+    },
+    "Px3ZZp5ZEls": {
+      "channel": "@BLASTPremier",
+      "title": "​@FalconsEsport  vs @G2esports 🔥 | 3 Minute Highlights - BLAST Premier Open Porto 2026",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-04T16:18:03Z",
+      "why": "ignored word in title"
+    },
+    "j2VfRtOv39E": {
+      "channel": "@BLASTPremier",
+      "title": "huNter ACE to keep G2 in the game 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-04T16:39:53Z",
+      "why": "too short"
+    },
+    "mu2uFcQ8bjk": {
+      "channel": "@BLASTPremier",
+      "title": "jL is GREAT with languages",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-04T17:31:25Z",
+      "why": "too short"
+    },
+    "larAlDIH-Ko": {
+      "channel": "@BLASTPremier",
+      "title": "Porto crowd might like FalleN better than apEX... 🤔",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-04T17:50:49Z",
+      "why": "too short"
+    },
+    "bgB_6gy5x3w": {
+      "channel": "@BLASTPremier",
+      "title": "No brakes on this FalleN train, CHOO-CHOO! 🚂💨",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-04T18:30:43Z",
+      "why": "too short"
+    },
+    "619DQPH_U4A": {
+      "channel": "@BLASTPremier",
+      "title": "​@FURIA.CS2  vs @Team_Vitality  🔥 | 3 Minute Highlights - BLAST Premier Open Porto 2026",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-04T20:05:05Z",
+      "why": "ignored word in title"
+    },
+    "cBkqS5P4ukU": {
+      "channel": "@BLASTPremier",
+      "title": "Is jL coming back or not? 👀",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-04T20:39:33Z",
+      "why": "too short"
+    },
+    "UxXnq8SBniY": {
+      "channel": "@BLASTPremier",
+      "title": "Learn your spray transfer with @OfficialRefrag !",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-09-04T21:04:04Z",
+      "why": "too short"
+    },
+    "bQNXNW41YaM": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, Quarterfinals - Falcons vs G2, FURIA vs Vitality",
+      "minutes": 436,
+      "live": true,
+      "published": "2026-09-04T21:07:51Z",
+      "why": "long livestream recording"
+    },
+    "BRlnfZHztcY": {
+      "channel": "@ESLCS",
+      "title": "IEM Beijing 2026 - Closed Qualifiers - Global Region - Day 3",
+      "minutes": 389,
+      "live": true,
+      "published": "2026-09-04T21:25:33Z",
+      "why": "long livestream recording"
+    },
+    "pkeHx20M-bs": {
+      "channel": "@BLASTPremier",
+      "title": "Naming CS2 Teams from Logos",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-05T11:58:11Z",
+      "why": "too short"
+    },
+    "H_b_QbTUr2U": {
+      "channel": "@BLASTPremier",
+      "title": "kyosuke's Deagle easy as 1-2-3",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-05T14:58:06Z",
+      "why": "too short"
+    },
+    "Ap9mNacpvP8": {
+      "channel": "@BLASTPremier",
+      "title": "@TeamSpiritCS vs @FalconsEsport | 3 Minute Highlights - BLAST Premier Open Porto 2026 SEMIFINAL 🔥",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-05T16:13:17Z",
+      "why": "ignored word in title"
+    },
+    "1f9jnfkWNu4": {
+      "channel": "@BLASTPremier",
+      "title": "Almost m0NESY magic but Team Spirit takes the Grand Final spot! 🐉",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-05T16:40:55Z",
+      "why": "too short"
+    },
+    "nINSibrTRIY": {
+      "channel": "@BLASTPremier",
+      "title": "When your teammates are from France...",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-05T16:50:51Z",
+      "why": "too short"
+    },
+    "XtJZMEGj6sk": {
+      "channel": "@BLASTPremier",
+      "title": "1v1 but make it 4 people... 😏 Polymarket CS Showdown!",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-05T17:21:28Z",
+      "why": "too short"
+    },
+    "qYz_TUIFsCg": {
+      "channel": "@BLASTPremier",
+      "title": "ZywOo shows off his aggressive AWP for a crazy 3k! 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-05T17:59:31Z",
+      "why": "too short"
+    },
+    "QlbWdSzRDoI": {
+      "channel": "@BLASTPremier",
+      "title": "@mousesports vs @Team_Vitality | 3 Minute Highlights - BLAST Premier Open Porto 2026 SEMIFINAL 🔥",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-05T18:58:07Z",
+      "why": "ignored word in title"
+    },
+    "-adVB7QHOBU": {
+      "channel": "@BLASTPremier",
+      "title": "Our Bounty Champions book their spot in another GRAND FINAL 🐭",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-05T19:28:52Z",
+      "why": "too short"
+    },
+    "Gmw99kR27kM": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, SEMIFINALS - Spirit vs Falcons, MOUZ vs Vitality",
+      "minutes": 366,
+      "live": true,
+      "published": "2026-09-05T19:34:49Z",
+      "why": "long livestream recording"
+    },
+    "Ym4-uwkzJ3s": {
+      "channel": "@BLASTPremier",
+      "title": "Who is the right NiKo??",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T10:44:57Z",
+      "why": "too short"
+    },
+    "O5c8MPt7KMI": {
+      "channel": "@BLASTPremier",
+      "title": "ZywOo AK 4k to secure the round! 💪",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T13:36:50Z",
+      "why": "too short"
+    },
+    "eTa1Wm1Bt78": {
+      "channel": "@BLASTPremier",
+      "title": "Who are Fated to Become the BLAST Open Porto Champions? 👑",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T14:11:43Z",
+      "why": "too short"
+    },
+    "_1n7MS-AYBI": {
+      "channel": "@BLASTPremier",
+      "title": "donk taps MOUZ out of existence! 🤯",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T14:49:03Z",
+      "why": "too short"
+    },
+    "u3J5T84tYTU": {
+      "channel": "@BLASTPremier",
+      "title": "WILD sh1ro flicks to send Team Spirit in the lead!",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-06T15:49:54Z",
+      "why": "too short"
+    },
+    "sBj8mrgWK98": {
+      "channel": "@BLASTPremier",
+      "title": "MOUZ WITH THE INSANE COMEBACK ON MIRAGE! 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T16:47:41Z",
+      "why": "too short"
+    },
+    "stkO_H9-Opg": {
+      "channel": "@BLASTPremier",
+      "title": "sh1ro the Flying Reaper",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-06T16:48:55Z",
+      "why": "too short"
+    },
+    "97cYbqVVPTM": {
+      "channel": "@BLASTPremier",
+      "title": "zont1x shuts the door on Ancient with a clutch 1v3!",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-06T17:14:11Z",
+      "why": "too short"
+    },
+    "zLF3dL2COhM": {
+      "channel": "@BLASTPremier",
+      "title": "Archarom + Portuguese crowd, name a better Duo! 👏",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T17:49:55Z",
+      "why": "too short"
+    },
+    "owmgQJK5dfo": {
+      "channel": "@BLASTPremier",
+      "title": "TOP MOMENTS 😳 | BLAST Open Porto 2026 Playoffs",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-06T18:22:27Z",
+      "why": "too short"
+    },
+    "kT9djQcQXuY": {
+      "channel": "@BLASTPremier",
+      "title": "@TeamSpiritCS vs @mousesports   | 3 Minute Highlights - BLAST Premier Open Porto 2026 Grand Final 🔥",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-06T18:30:41Z",
+      "why": "ignored word in title"
+    },
+    "N3yHPMLiIaw": {
+      "channel": "@BLASTPremier",
+      "title": "TEAM SPIRIT ARE YOUR BLAST OPEN PORTO 2026 CHAMPIONS 🐉",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T18:42:09Z",
+      "why": "too short"
+    },
+    "B4YIEYYLTSg": {
+      "channel": "@BLASTPremier",
+      "title": "@TeamSpiritCS vs @mousesports | 3 Minute Highlights - BLAST Premier Open Porto 2026 GRAND FINAL🔥",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-06T18:58:33Z",
+      "why": "ignored word in title"
+    },
+    "6Thw4ZbMPdI": {
+      "channel": "@BLASTPremier",
+      "title": "BLAST Open Porto 2026, GRAND FINAL - Spirit vs MOUZ",
+      "minutes": 340,
+      "live": true,
+      "published": "2026-09-06T19:07:38Z",
+      "why": "long livestream recording"
+    },
+    "xJzZphagaBA": {
+      "channel": "@BLASTPremier",
+      "title": "donk has a message to all his haters",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-06T19:07:49Z",
+      "why": "too short"
+    },
+    "BRIS7gOHoho": {
+      "channel": "@BLASTPremier",
+      "title": "BEST MOMENTS of BLAST Premier Open Porto 2026 Playoffs",
+      "minutes": 10,
+      "live": false,
+      "published": "2026-09-06T20:12:17Z",
+      "why": "ignored word in title"
+    },
+    "1YbRoGOiPME": {
+      "channel": "@BLASTPremier",
+      "title": "THESE FANS UNDERSTOOD THE ASSIGNMENT 🙌🇵🇹",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-07T12:15:29Z",
+      "why": "too short"
+    },
+    "MaMvwnLF1DM": {
+      "channel": "@BLASTPremier",
+      "title": "Streamers REACT to NiKo's INSANE 4K on Inferno 🔥 | BLAST Open Porto 2026",
+      "minutes": 7,
+      "live": false,
+      "published": "2026-09-07T14:00:39Z",
+      "why": "too short"
+    },
+    "r-Xadj8vlTg": {
+      "channel": "@BLASTPremier",
+      "title": "NiKo's INSANE Inferno 4K Has Streamers SHOOK 😱",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-07T14:00:49Z",
+      "why": "too short"
+    },
+    "QCtR2slije8": {
+      "channel": "@BLASTPremier",
+      "title": "BEST CLUTCHES 🤯 | BLAST Open Porto 2026",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-07T16:00:24Z",
+      "why": "too short"
+    },
+    "CtV_H8Ymchk": {
+      "channel": "@BLASTPremier",
+      "title": "BEST CLUTCHES of BLAST Premier Open Porto 2026",
+      "minutes": 13,
+      "live": false,
+      "published": "2026-09-07T16:00:36Z",
+      "why": "too short"
+    },
+    "3mu1QI8C-Ko": {
+      "channel": "@ESLCS",
+      "title": "What is the first Polish event these pros attended?",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-08T08:30:22Z",
+      "why": "too short"
+    },
+    "6dc-Gm6zgsA": {
+      "channel": "@BLASTPremier",
+      "title": "CS2 Pros REACT to the Most Wholesome HLTV Comments 🥰",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-08T13:07:14Z",
+      "why": "too short"
+    },
+    "275t2kAMmF0": {
+      "channel": "@BLASTPremier",
+      "title": "FUNNY, WEIRD AND CURSED MOMENTS 😂 | BLAST Premier Open Porto 2026",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-08T14:23:52Z",
+      "why": "too short"
+    },
+    "kKXxKBT78XU": {
+      "channel": "@BLASTPremier",
+      "title": "FUNNY MOMENTS of BLAST Premier Open Porto 2026",
+      "minutes": 13,
+      "live": false,
+      "published": "2026-09-08T14:24:01Z",
+      "why": "too short"
+    },
+    "teGZRZpiM6I": {
+      "channel": "@ESLCS",
+      "title": "What is a low premier rating? We asked the pros their thoughts!",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-09T09:00:35Z",
+      "why": "too short"
+    },
+    "TRU_z6ILdYo": {
+      "channel": "@BLASTPremier",
+      "title": "BACK-TO-BACK BLAST Open MVPs for donk 🏅🔥 @TeamSpiritCS",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-09-09T12:00:28Z",
+      "why": "too short"
+    },
+    "4sfGhU3KpJU": {
+      "channel": "@ESLCS",
+      "title": "donk & magixx play who is the first player that comes to mind",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-10T09:00:16Z",
+      "why": "too short"
+    },
+    "zVa8g1T0Gi4": {
+      "channel": "@BLASTPremier",
+      "title": "TeSeS keeps @FalconsEsport ALIVE in the semi-finals 🗣️🔥",
+      "minutes": 2,
+      "live": false,
+      "published": "2026-09-10T10:00:06Z",
+      "why": "too short"
+    },
+    "E_idT_V-_zQ": {
+      "channel": "@ESLCS",
+      "title": "Favourite Polish dish",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-11T09:00:31Z",
+      "why": "too short"
+    },
+    "6pvtSdHoCVc": {
+      "channel": "@BLASTPremier",
+      "title": "Who is HIM?! It's FalleN, of course... 😎 @FURIA.CS2",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-11T09:30:25Z",
+      "why": "too short"
+    },
+    "3Yp0Fi0qcVE": {
+      "channel": "@BLASTPremier",
+      "title": "PR REALLY hates Dust2 😭 @mousesports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-12T09:00:08Z",
+      "why": "too short"
+    },
+    "9-pkcQPhN48": {
+      "channel": "@ESLCS",
+      "title": "NiKo & Karrigan share what they think is the most iconic play from Katowice",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-12T09:00:18Z",
+      "why": "too short"
+    },
+    "ZcvnV--QLWY": {
+      "channel": "@ESLCS",
+      "title": "Where would you bite??",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-13T09:00:13Z",
+      "why": "too short"
+    },
+    "nYS_xh2b3-g": {
+      "channel": "@BLASTPremier",
+      "title": "Missing you already, Porto 🇵🇹🫶",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-13T09:30:08Z",
+      "why": "too short"
+    },
+    "uD_tlPT_AY0": {
+      "channel": "@ESLCS",
+      "title": "donk shares what he thinks is the most iconic play from Katowice",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-14T09:00:10Z",
+      "why": "too short"
+    },
+    "2L3_d7ut_-c": {
+      "channel": "@ESLCS",
+      "title": "We asked the pros for their favourite arena, which is the best?",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-15T09:00:19Z",
+      "why": "too short"
+    },
+    "QV1av4tiEaI": {
+      "channel": "@BLASTPremier",
+      "title": "Not even an army could stop donk during the Grand Final... 😎",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-15T10:54:20Z",
+      "why": "too short"
+    },
+    "grJg6WoFbOg": {
+      "channel": "@ESLCS",
+      "title": "G2 share their thoughts on the most iconic Katowice play",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-16T09:00:09Z",
+      "why": "too short"
+    },
+    "sGruhp4VK_o": {
+      "channel": "@BLASTPremier",
+      "title": "molodoy dodging bullets like Neo in Porto 😎",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-16T09:41:09Z",
+      "why": "too short"
+    },
+    "xecrNVhafgE": {
+      "channel": "@ESLCS",
+      "title": "The first Polish word that comes to mind... but it can't be THAT one",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-17T09:00:22Z",
+      "why": "too short"
+    },
+    "ylNQ5sIeSyA": {
+      "channel": "@BLASTPremier",
+      "title": "Karrigan got the whole Porto crowd wee-woo-ing 🚑😂",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-17T13:57:26Z",
+      "why": "too short"
+    },
+    "PF9xfSWIwLY": {
+      "channel": "@ESLCS",
+      "title": "Favourite moment from inside the Spodek",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-18T09:00:31Z",
+      "why": "too short"
+    },
+    "YIiQpHYh9LY": {
+      "channel": "@BLASTPremier",
+      "title": "There's a reason why they call @fallenINSIDER The Professor 🧠",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-18T14:51:07Z",
+      "why": "too short"
+    },
+    "D_tPYH8WfRs": {
+      "channel": "@pgl",
+      "title": "PGL Wallachia Season 9 [Opener]",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-19T06:37:42Z",
+      "why": "too short"
+    },
+    "apG7aet3p0g": {
+      "channel": "@ESLCS",
+      "title": "We asked the pros what games they play the most besides CS",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-19T10:00:22Z",
+      "why": "too short"
+    },
+    "vIluUbpSTH0": {
+      "channel": "@pgl",
+      "title": "[B] LGD Gaming vs. Yakult Brothers - PGL Wallachia Season 9 - Group Stage - Round 1",
+      "minutes": 606,
+      "live": true,
+      "published": "2026-09-19T18:28:07Z",
+      "why": "too long"
+    },
+    "DsMixpoi-7U": {
+      "channel": "@pgl",
+      "title": "[A] Team Yandex vs. MOUZ - PGL Wallachia Season 9 - Group Stage - Round 1",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-09-19T23:40:59Z",
+      "why": "too long"
+    },
+    "HT1lOYZMBuk": {
+      "channel": "@ESLCS",
+      "title": "What do the pros consider a low ELO on FACEIT? 😨",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-20T10:00:15Z",
+      "why": "too short"
+    },
+    "SHgLhtv11vU": {
+      "channel": "@pgl",
+      "title": "\"I Wanna See How Malr1ne Is Gonna LOSE Every Tournament\" 😂 #Dota2 #PGLWallachia #Yandex",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-20T11:49:03Z",
+      "why": "too short"
+    },
+    "lry3rVhMbMA": {
+      "channel": "@pgl",
+      "title": "[A] Team Yandex vs. Team Nemesis - PGL Wallachia Season 9 - Group Stage - Round 2 High Matches (1-0)",
+      "minutes": 694,
+      "live": true,
+      "published": "2026-09-20T18:44:38Z",
+      "why": "too long"
+    },
+    "rGnlFbLzQV4": {
+      "channel": "@pgl",
+      "title": "Ammar: \"I Just Try to Play How I Used to Play\" 🤔 #Dota2 #PGLWallachia #Yandex",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-20T19:15:13Z",
+      "why": "too short"
+    },
+    "udXiSU6OKO8": {
+      "channel": "@pgl",
+      "title": "[B] MOUZ vs. Pibbles Corp. - PGL Wallachia Season 9 - Group Stage - Round 2 Low Matches (0-1)",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-09-20T20:47:47Z",
+      "why": "too long"
+    },
+    "nBsx1sCyyDY": {
+      "channel": "@pgl",
+      "title": "\"What the f**k is happening\" 🤯 tier 3 chaos explained #Dota2 #PGLWallachia #Yandex",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-21T09:15:35Z",
+      "why": "too short"
+    },
+    "YuD3DWvEi3U": {
+      "channel": "@BLASTPremier",
+      "title": "yuurih was like a brick wall on the B bombsite 😳",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-21T10:01:35Z",
+      "why": "too short"
+    },
+    "RASfOZKLN-s": {
+      "channel": "@ESLCS",
+      "title": "Which team does the BEST trashtalk??",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-21T11:00:35Z",
+      "why": "too short"
+    },
+    "QGOQ-8kuZvM": {
+      "channel": "@pgl",
+      "title": "[A] Team Yandex vs. Natus Vincere - PGL Wallachia Season 9 - Group Stage - Round 3 High Matches (2-0",
+      "minutes": 699,
+      "live": true,
+      "published": "2026-09-21T19:33:36Z",
+      "why": "too long"
+    },
+    "wnZ9DCeqFhU": {
+      "channel": "@pgl",
+      "title": "[B] Pibbles Corp. vs. Hokori - PGL Wallachia Season 9 - Group Stage - Round 3 Low Matches (0-2)",
+      "minutes": 701,
+      "live": true,
+      "published": "2026-09-21T19:45:34Z",
+      "why": "too long"
+    },
+    "OB_CeD-TUYs": {
+      "channel": "@BLASTPremier",
+      "title": "NiKo reminding his old team what he's capable of 😈",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-22T09:46:53Z",
+      "why": "too short"
+    },
+    "49B6-Mxjc5w": {
+      "channel": "@pgl",
+      "title": "[B] MOUZ vs. Hokori - PGL Wallachia Season 9 - Group Stage - Round 4 Low Matches (1-2)",
+      "minutes": 486,
+      "live": true,
+      "published": "2026-09-22T15:49:11Z",
+      "why": "too long"
+    },
+    "xcHAqNsG6c0": {
+      "channel": "@pgl",
+      "title": "Ammar: \"5,000 more years with these guys??\" 😂🔥 #Dota2 #Yandex #PGLWallachia",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-22T16:15:03Z",
+      "why": "too short"
+    },
+    "llQRiNxp28o": {
+      "channel": "@pgl",
+      "title": "[A] LGD Gaming vs. Aurora Gaming - PGL Wallachia Season 9 - Group Stage - Round 4 High Matches (2-1)",
+      "minutes": 596,
+      "live": true,
+      "published": "2026-09-22T17:29:53Z",
+      "why": "too long"
+    },
+    "2O7Wf18A8Mc": {
+      "channel": "@pgl",
+      "title": "Ammar: \"I hope he doesn't grief me, and I won't grief him\" 😂 #Dota2 #Tundra #Yandex",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-22T21:00:22Z",
+      "why": "too short"
+    },
+    "9la3ud_3Bb0": {
+      "channel": "@pgl",
+      "title": "\"I Don't Care If I Finish Last, I Want Only One Thing!\" 😤 #Dota2 #PGLWallachia #Yandex",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-23T05:45:17Z",
+      "why": "too short"
+    },
+    "vGKcOHtO96s": {
+      "channel": "@ESLCS",
+      "title": "You Can Now Reload… Silently 🤫",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-23T08:41:34Z",
+      "why": "too short"
+    },
+    "ND4ifK9EPtM": {
+      "channel": "@ESLCS",
+      "title": "CS2 just got a huge new update 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-23T14:51:58Z",
+      "why": "too short"
+    },
+    "_EPixck0iDM": {
+      "channel": "@pgl",
+      "title": "LGD Gaming vs. MOUZ - PGL Wallachia Season 9 - Group Stage - Round 5 (2-2)",
+      "minutes": 573,
+      "live": true,
+      "published": "2026-09-23T16:39:52Z",
+      "why": "too long"
+    },
+    "PrC1G8I8UM4": {
+      "channel": "@BLASTPremier",
+      "title": "Clean clutching from the Captain of @mousesports 🫡",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-24T10:08:57Z",
+      "why": "too short"
+    },
+    "R4koOf_jQlY": {
+      "channel": "@pgl",
+      "title": "Team Yandex vs. 1win - PGL Wallachia Season 9 - Winner Bracket R1",
+      "minutes": 686,
+      "live": true,
+      "published": "2026-09-24T18:57:53Z",
+      "why": "too long"
+    },
+    "ldkGQxhfynQ": {
+      "channel": "@BLASTPremier",
+      "title": "2vs5? No problem for Team Spirit 😎",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-09-25T08:55:53Z",
+      "why": "too short"
+    },
+    "oZGUq4_PNMQ": {
+      "channel": "@pgl",
+      "title": "Aurora Gaming vs. Team Yandex - PGL Wallachia Season 9 - Winner Bracket R2",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-09-25T21:23:51Z",
+      "why": "too long"
+    },
+    "8ESEiloKWyQ": {
+      "channel": "@pgl",
+      "title": "Xtreme Gaming vs. Natus Vincere - PGL Wallachia Season 9 - Lower Bracket R3",
+      "minutes": 627,
+      "live": true,
+      "published": "2026-09-26T18:37:15Z",
+      "why": "too long"
+    },
+    "jo6LLPFajn0": {
+      "channel": "@pgl",
+      "title": "Ex-Falcons Roundtable: ATF, skiter and Sneyking at PGL Wallachia Season 9",
+      "minutes": 15,
+      "live": false,
+      "published": "2026-09-27T12:25:15Z",
+      "why": "no tournament matched"
+    },
+    "eCw80-_Sr5g": {
+      "channel": "@pgl",
+      "title": "Team Yandex vs. Natus Vincere - PGL Wallachia Season 9 - Grand Final",
+      "minutes": 518,
+      "live": true,
+      "published": "2026-09-27T16:53:49Z",
+      "why": "too long"
+    },
+    "GVuHLNj5lIA": {
+      "channel": "@ESLCS",
+      "title": "Who will win ESL Pro League S24?",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-27T17:02:51Z",
+      "why": "too short"
+    },
+    "Fv5I4bptcNM": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League S24 🔥",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-27T17:04:02Z",
+      "why": "too short"
+    },
+    "Iaw7vwCfCPA": {
+      "channel": "@BLASTPremier",
+      "title": "It never gets old... 😂",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-28T13:30:23Z",
+      "why": "too short"
+    },
+    "ZZdaBTuf_Tg": {
+      "channel": "@BLASTPremier",
+      "title": "Even two years later, we can still feel the force of that NiKo desk slam 😳",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-29T11:49:19Z",
+      "why": "too short"
+    },
+    "e-sQ1bjbnsA": {
+      "channel": "@ESLCS",
+      "title": "Do CS pros know what URL and SSD mean? 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-09-30T23:19:58Z",
+      "why": "too short"
+    },
+    "ivUTbfRzJ40": {
+      "channel": "@ESLCS",
+      "title": "IEM Cologne 2027 Announcement Trailer",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-01T13:02:59Z",
+      "why": "ignored word in title"
+    },
+    "GDjrKYUIbjM": {
+      "channel": "@BLASTPremier",
+      "title": "It just feels right seeing jL back clutching it up on the main stage again 🥰",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-02T12:27:14Z",
+      "why": "too short"
+    },
+    "cjo-8hGA_9s": {
+      "channel": "@ESLCS",
+      "title": "Zero with the first ACE of ESL Pro League Katowice 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-03T11:45:11Z",
+      "why": "too short"
+    },
+    "gkjvKWee-4E": {
+      "channel": "@ESLCS",
+      "title": "SO EZ FOR M0NESY 😮‍💨 #cs2 #counterstrike #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-03T17:07:05Z",
+      "why": "too short"
+    },
+    "cVyY02YkLic": {
+      "channel": "@ESLCS",
+      "title": "W0NDERFUL with the INSANE PREDICTION #cs2 #counterstrike #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-03T17:56:56Z",
+      "why": "too short"
+    },
+    "reWC_jQ2FMY": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 1 - Stream A - Full show",
+      "minutes": 636,
+      "live": true,
+      "published": "2026-10-03T19:15:53Z",
+      "why": "too long"
+    },
+    "x9al9bqwFNI": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 1 - Stream B - Full show",
+      "minutes": 687,
+      "live": true,
+      "published": "2026-10-04T02:28:12Z",
+      "why": "too long"
+    },
+    "x7KO0S2otbM": {
+      "channel": "@ESLCS",
+      "title": "donk is going CRAZY 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T08:05:50Z",
+      "why": "too short"
+    },
+    "9UvbTXa4_x0": {
+      "channel": "@ESLCS",
+      "title": "donk UNREAL 🤯",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T08:07:48Z",
+      "why": "too short"
+    },
+    "4f_fisG5j9g": {
+      "channel": "@ESLCS",
+      "title": "First knife kill of the event 😮‍💨 #cs2 #counterstrike #gaming #esports tr",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T09:30:55Z",
+      "why": "too short"
+    },
+    "MQGvHLK3ctc": {
+      "channel": "@ESLCS",
+      "title": "100% SKILL 🤯#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T09:55:39Z",
+      "why": "too short"
+    },
+    "HclaYGDkYOY": {
+      "channel": "@ESLCS",
+      "title": "Donk Warming Up 🔥",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T10:02:35Z",
+      "why": "too short"
+    },
+    "pj-aF9LyJXw": {
+      "channel": "@ESLCS",
+      "title": "Who's winning it? 😳#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T10:17:38Z",
+      "why": "too short"
+    },
+    "-Y0T1tw7Zz0": {
+      "channel": "@ESLCS",
+      "title": "Every millimeter matters at the highest level 😳",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T10:20:11Z",
+      "why": "too short"
+    },
+    "fyNBGNUgwmI": {
+      "channel": "@ESLCS",
+      "title": "#1 COACH IS BACK 🐸 #cs2 #counterstrike #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T10:49:39Z",
+      "why": "too short"
+    },
+    "Sa_WighbUMU": {
+      "channel": "@ESLCS",
+      "title": "magixx SHUTS DOWN PARIVISION 😳",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T10:54:30Z",
+      "why": "too short"
+    },
+    "suuyfW5rqQA": {
+      "channel": "@ESLCS",
+      "title": "POV: Rushing B PAID OFF",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T12:02:17Z",
+      "why": "too short"
+    },
+    "lawItm-8fgU": {
+      "channel": "@ESLCS",
+      "title": "BRO GOT THE UNC TOOLS 🛠️",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T12:27:30Z",
+      "why": "too short"
+    },
+    "7M9rbaug-Z0": {
+      "channel": "@ESLCS",
+      "title": "DONK DESTROYED PARIVISION 🤯🤯#cs2 #counterstrike #csgo #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T12:52:41Z",
+      "why": "too short"
+    },
+    "CdTT_4dGMvk": {
+      "channel": "@ESLCS",
+      "title": "What just happened there? 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T13:01:19Z",
+      "why": "too short"
+    },
+    "jjqPnBgZsUc": {
+      "channel": "@ESLCS",
+      "title": "apEX CORE 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T14:05:48Z",
+      "why": "too short"
+    },
+    "1a3fPofjZwo": {
+      "channel": "@ESLCS",
+      "title": "try with a 4k on the Pistol 🔫",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-04T15:33:55Z",
+      "why": "too short"
+    },
+    "mvAEKkdD4gU": {
+      "channel": "@ESLCS",
+      "title": "This is actually UNREAL 😭#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T15:59:28Z",
+      "why": "too short"
+    },
+    "kNLkWSyDRT4": {
+      "channel": "@ESLCS",
+      "title": "WHAT IS HAPPENING?? 😭#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T16:23:46Z",
+      "why": "too short"
+    },
+    "0Bw319nVJ3c": {
+      "channel": "@ESLCS",
+      "title": "luchov gets ALL FIVE 👀",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-04T16:49:50Z",
+      "why": "too short"
+    },
+    "FlV2OBRogHM": {
+      "channel": "@ESLCS",
+      "title": "TeSeS 1v4 CLUTCH 🔥",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T17:16:46Z",
+      "why": "too short"
+    },
+    "SoqdNHtfa_o": {
+      "channel": "@ESLCS",
+      "title": "Everything is calculated for El Profesor 👀#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T17:23:46Z",
+      "why": "too short"
+    },
+    "_T3ra0nJAjc": {
+      "channel": "@ESLCS",
+      "title": "Nothing but HEADSHOTS 🔥",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T18:03:20Z",
+      "why": "too short"
+    },
+    "RuwmnGjrf04": {
+      "channel": "@ESLCS",
+      "title": "Team Vitality takes down NAVI 2-1 at ESL Pro League S24",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-04T19:39:49Z",
+      "why": "too short"
+    },
+    "LcMDVOtgvdk": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 2 - Stream A - Full show",
+      "minutes": 672,
+      "live": true,
+      "published": "2026-10-04T19:54:01Z",
+      "why": "too long"
+    },
+    "9vCiC9i7cUs": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 2 - Stream B - Full show",
+      "minutes": 688,
+      "live": true,
+      "published": "2026-10-04T20:08:03Z",
+      "why": "too long"
+    },
+    "EyO8Ug2kEpc": {
+      "channel": "@ESLCS",
+      "title": "Do you agree with XANTARES? 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T06:58:51Z",
+      "why": "too short"
+    },
+    "lV0ssjzKfJw": {
+      "channel": "@ESLCS",
+      "title": "A TEC-9 1v4?! FL1T IS CRAZY 💀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T09:33:51Z",
+      "why": "too short"
+    },
+    "TXllCgEM6ps": {
+      "channel": "@ESLCS",
+      "title": "Admin got caught in the crossfire 💀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T10:01:00Z",
+      "why": "too short"
+    },
+    "zwx9gvenh1Q": {
+      "channel": "@ESLCS",
+      "title": "Could 1 week actually be enough? 🧐",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T12:14:29Z",
+      "why": "too short"
+    },
+    "KG3SQJCbras": {
+      "channel": "@ESLCS",
+      "title": "One game, two emotions 😁😔",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T15:20:46Z",
+      "why": "too short"
+    },
+    "TPy-4MtFMvY": {
+      "channel": "@ESLCS",
+      "title": "B site is CLOSED 😳",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T16:16:09Z",
+      "why": "too short"
+    },
+    "YOH8m4yumZY": {
+      "channel": "@ESLCS",
+      "title": "DONK TAKES OVER MID AND GETS A 4K 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-05T16:44:27Z",
+      "why": "too short"
+    },
+    "l54_Btd3oJA": {
+      "channel": "@ESLCS",
+      "title": "MOUZ SHOCK SPIRIT WITH A 2-0",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-05T16:48:03Z",
+      "why": "too short"
+    },
+    "sbrjk37VJ7w": {
+      "channel": "@ESLCS",
+      "title": "He really loves his knife 😂#cs2 #counterstrike #csgo #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T18:05:12Z",
+      "why": "too short"
+    },
+    "TseqhZmvAb4": {
+      "channel": "@ESLCS",
+      "title": "What would you do in this situation? 😳#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T18:50:11Z",
+      "why": "too short"
+    },
+    "i2ynbYkgFhM": {
+      "channel": "@ESLCS",
+      "title": "DAMAGE GIVEN: 0 🤯#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-05T19:55:33Z",
+      "why": "too short"
+    },
+    "GWkVaZlFFRU": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 3 - Stream A - Full show",
+      "minutes": 692,
+      "live": true,
+      "published": "2026-10-05T20:12:07Z",
+      "why": "too long"
+    },
+    "e7G9uXEDNO8": {
+      "channel": "@ESLCS",
+      "title": "Counter-Strike's greatest minds back together - IGL Reunion Roundtable",
+      "minutes": 103,
+      "live": false,
+      "published": "2026-10-05T20:33:54Z",
+      "why": "no tournament matched"
+    },
+    "mT7EQFwIaZA": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 3 - Stream B - Full show",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-10-05T20:52:39Z",
+      "why": "too long"
+    },
+    "6DGzDzFN1wA": {
+      "channel": "@ESLCS",
+      "title": "Who’s gonna be the DHL MVP here in Katowice? 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-06T07:05:40Z",
+      "why": "too short"
+    },
+    "nWoODRZEyAs": {
+      "channel": "@ESLCS",
+      "title": "Falcons vs NAVI - H2H 🤯",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-06T13:05:32Z",
+      "why": "too short"
+    },
+    "iLnojOgxzS4": {
+      "channel": "@ESLCS",
+      "title": "FalleN shared his internal battles about retiring",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-06T14:05:21Z",
+      "why": "too short"
+    },
+    "2BeOH4g3YP0": {
+      "channel": "@ESLCS",
+      "title": "What was this play... 🤔#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-06T14:12:19Z",
+      "why": "too short"
+    },
+    "JaIjtQB85AI": {
+      "channel": "@ESLCS",
+      "title": "1WIN Takes Down Team Spirit 2-0 😳",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-06T14:56:56Z",
+      "why": "too short"
+    },
+    "5uDP2YfoJIM": {
+      "channel": "@ESLCS",
+      "title": "NertZ Quad-Kill on the dualies 🔫🔫",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-06T16:04:58Z",
+      "why": "too short"
+    },
+    "7cCU8tarIgk": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 4 - Stream B - Full show",
+      "minutes": 531,
+      "live": true,
+      "published": "2026-10-06T20:21:45Z",
+      "why": "too long"
+    },
+    "CuCp-hMnH2U": {
+      "channel": "@ESLCS",
+      "title": "Too iimuch AURA 😂🚨#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-06T20:23:57Z",
+      "why": "too short"
+    },
+    "FSO-zSu8cYQ": {
+      "channel": "@ESLCS",
+      "title": "What was THAT 😂#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-06T20:51:23Z",
+      "why": "too short"
+    },
+    "q6GdyFL0pl8": {
+      "channel": "@ESLCS",
+      "title": "That play was CRAAZY 🤯#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-06T22:53:26Z",
+      "why": "too short"
+    },
+    "8T3sqnU_J3Q": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 4 - Stream A - Full show",
+      "minutes": 707,
+      "live": true,
+      "published": "2026-10-06T23:25:23Z",
+      "why": "too long"
+    },
+    "oxtYcUZKbAI": {
+      "channel": "@ESLCS",
+      "title": "Unc has to lock in 🫩",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T07:16:58Z",
+      "why": "too short"
+    },
+    "muRfeSQ6cGw": {
+      "channel": "@ESLCS",
+      "title": "The sacrifices of being a pro CS player aren't just made by the players themselves.",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-07T12:15:05Z",
+      "why": "too short"
+    },
+    "IBo_6G1pHRo": {
+      "channel": "@ESLCS",
+      "title": "kyousuke vs TeSeS - Who Has More Hours in CS2?",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T14:06:50Z",
+      "why": "too short"
+    },
+    "3ZyJPnGWZwc": {
+      "channel": "@ESLCS",
+      "title": "TeSeS is TOO GOOD with Pistol 🔫",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-07T14:10:38Z",
+      "why": "too short"
+    },
+    "qgSnniq1NPs": {
+      "channel": "@ESLCS",
+      "title": "Molodoy denies the retake with a huge 4K 🔥",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T14:15:13Z",
+      "why": "too short"
+    },
+    "-8srrHQGcaU": {
+      "channel": "@ESLCS",
+      "title": "Today's The Day",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-10-07T16:49:04Z",
+      "why": "too short"
+    },
+    "cBw7QzoZjE0": {
+      "channel": "@ESLCS",
+      "title": "What happened to NAVI man... 😔#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T18:24:13Z",
+      "why": "too short"
+    },
+    "D4G4knQJQd0": {
+      "channel": "@ESLCS",
+      "title": "HOWWWW  🤯#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T18:47:24Z",
+      "why": "too short"
+    },
+    "GllV02bmyu8": {
+      "channel": "@ESLCS",
+      "title": "zont1x 1v3 Clutch to Close out the Half",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-07T19:43:40Z",
+      "why": "too short"
+    },
+    "q-3zzik_sjE": {
+      "channel": "@ESLCS",
+      "title": "1HP… magixx ACED against M80",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-07T19:44:57Z",
+      "why": "too short"
+    },
+    "5qlCWpCAnRg": {
+      "channel": "@ESLCS",
+      "title": "POV: You’re Observing ESL Pro League S24",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T19:46:30Z",
+      "why": "too short"
+    },
+    "cth53YtYIcU": {
+      "channel": "@ESLCS",
+      "title": "5 Coaches vs 5 Coaches - The UNC Showmatch",
+      "minutes": 42,
+      "live": false,
+      "published": "2026-10-07T20:22:28Z",
+      "why": "no tournament matched"
+    },
+    "Im3OHRzxkeg": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 5 - Full show",
+      "minutes": 562,
+      "live": true,
+      "published": "2026-10-07T21:07:33Z",
+      "why": "too long"
+    },
+    "faGTWvsA2Gs": {
+      "channel": "@ESLCS",
+      "title": "THE BIG 3 HAVE MADE IT TO THE PLAYOFFS 😳🔥#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T21:09:38Z",
+      "why": "too short"
+    },
+    "R3019Bzrm84": {
+      "channel": "@ESLCS",
+      "title": "NAH THIS MATCH WILL FEED GENERATIONS 🤯#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-07T22:37:09Z",
+      "why": "too short"
+    },
+    "4qctS11skyM": {
+      "channel": "@ESLCS",
+      "title": "sh1ro 1v3 CLUTCH 🔥",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-08T00:13:27Z",
+      "why": "too short"
+    },
+    "l58C-fNb6zM": {
+      "channel": "@ESLCS",
+      "title": "NiKo vs m0NESY: Who Has More Hours in CS2? 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-08T00:16:08Z",
+      "why": "too short"
+    },
+    "ihTfsSFtAG8": {
+      "channel": "@ESLCS",
+      "title": "The moment Team Spirit made it to the Spodek! 🛸",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-08T00:18:45Z",
+      "why": "too short"
+    },
+    "KaNM9q8ajfQ": {
+      "channel": "@ESLCS",
+      "title": "WHO'S WINNING IT ALL?? 😳#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-08T14:28:30Z",
+      "why": "too short"
+    },
+    "ZEY2N4Alx6U": {
+      "channel": "@ESLCS",
+      "title": "Blinking Legend 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-08T15:53:00Z",
+      "why": "too short"
+    },
+    "d_3FZl4esdM": {
+      "channel": "@ESLCS",
+      "title": "Counter-Strike's MOST STACKED Pug V2 +/- 300 ELO",
+      "minutes": 40,
+      "live": false,
+      "published": "2026-10-08T16:58:31Z",
+      "why": "no tournament matched"
+    },
+    "IPAU90aOJMQ": {
+      "channel": "@ESLCS",
+      "title": "FIRST PLAYOFF ROUND ALREADY DELIVERING 🔥🤯#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-08T18:31:43Z",
+      "why": "too short"
+    },
+    "oJi8OiF8skc": {
+      "channel": "@ESLCS",
+      "title": "Poor NiKo 💔😩",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-09T10:29:25Z",
+      "why": "too short"
+    },
+    "J6D3fo-fpsM": {
+      "channel": "@ESLCS",
+      "title": "fame with the ACE agaisnt AURORA",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T11:11:28Z",
+      "why": "too short"
+    },
+    "X6LG6knGOXw": {
+      "channel": "@ESLCS",
+      "title": "FlameZ hitting shots mid-air 💀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-09T16:58:47Z",
+      "why": "too short"
+    },
+    "dQ9IjOMo2Ps": {
+      "channel": "@ESLCS",
+      "title": "How close is too close? 😳",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-09T16:59:49Z",
+      "why": "too short"
+    },
+    "xkzy11E_ZHs": {
+      "channel": "@ESLCS",
+      "title": "Vitality book their spot in the semifinals!",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T17:01:24Z",
+      "why": "too short"
+    },
+    "qLmucC7yDlM": {
+      "channel": "@ESLCS",
+      "title": "Thank you FalleN ❤️",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T17:08:15Z",
+      "why": "too short"
+    },
+    "KXxEDPu31eM": {
+      "channel": "@ESLCS",
+      "title": "tN1R ACED against Team Falcons",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T17:28:42Z",
+      "why": "too short"
+    },
+    "3kVghr6Swag": {
+      "channel": "@ESLCS",
+      "title": "m0NESY JUST WIPED SPIRIT 💀",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T17:45:36Z",
+      "why": "too short"
+    },
+    "MBjtYBlZ-Lc": {
+      "channel": "@ESLCS",
+      "title": "Donk’s spray control is INSANE 🤯",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T18:48:57Z",
+      "why": "too short"
+    },
+    "z1RkejKfCtU": {
+      "channel": "@ESLCS",
+      "title": "POV: You’re a CS2 PRO Player",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T18:54:24Z",
+      "why": "too short"
+    },
+    "hSNiWEEpfts": {
+      "channel": "@ESLCS",
+      "title": "The journey ends here for Falcons🫩",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-09T19:32:41Z",
+      "why": "too short"
+    },
+    "z02kuZcHJuU": {
+      "channel": "@ESLCS",
+      "title": "ZywOo knows 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-09T20:03:05Z",
+      "why": "too short"
+    },
+    "WWTcu33u00A": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 6 - Full show",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-10-09T20:19:49Z",
+      "why": "too long"
+    },
+    "WREXY_RabVI": {
+      "channel": "@ESLCS",
+      "title": "m0nesy team 🤯",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-09T20:41:05Z",
+      "why": "too short"
+    },
+    "6UgRf1qXy5g": {
+      "channel": "@ESLCS",
+      "title": "Team Falcons had a nice run 😢   #cs2 #counterstrike #gaming #esports #falcons",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-09T21:27:16Z",
+      "why": "too short"
+    },
+    "iSiyJWL4ask": {
+      "channel": "@ESLCS",
+      "title": "300 elo match is crazy 😨",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-09T21:36:27Z",
+      "why": "too short"
+    },
+    "owFh8q10oXs": {
+      "channel": "@ESLCS",
+      "title": "THIS IS SO SMOOTH 😳#cs2 #counterstrike #csgo #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T09:32:41Z",
+      "why": "too short"
+    },
+    "PO1TJKsqtGc": {
+      "channel": "@ESLCS",
+      "title": "Where does Aleksib rank among the greatest IGLs of all time? 👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T09:50:49Z",
+      "why": "too short"
+    },
+    "MVVH0BjMYgM": {
+      "channel": "@ESLCS",
+      "title": "Bro couldn't believe his eyes 😂 #cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T09:57:27Z",
+      "why": "too short"
+    },
+    "cK37Yq6i4Rk": {
+      "channel": "@ESLCS",
+      "title": "Do you agree? 👀",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-10T13:09:56Z",
+      "why": "too short"
+    },
+    "7WS1e35ja2U": {
+      "channel": "@ESLCS",
+      "title": "woxic COLLATERAL into a QUAD KILL 🤯",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-10T14:48:49Z",
+      "why": "too short"
+    },
+    "eWzaUHE5LQs": {
+      "channel": "@ESLCS",
+      "title": "woxic NO-SCOPES his way to a QUAD KILL 💀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T14:51:44Z",
+      "why": "too short"
+    },
+    "0VZ4u77DGEE": {
+      "channel": "@ESLCS",
+      "title": "Turkish legend 🤯",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T15:10:21Z",
+      "why": "too short"
+    },
+    "pDVXraHm6-o": {
+      "channel": "@ESLCS",
+      "title": "ZywOo gets ALL FIVE 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-10T15:54:56Z",
+      "why": "too short"
+    },
+    "ZoiFFYAr_mU": {
+      "channel": "@ESLCS",
+      "title": "m0NESY getting ready 🤩",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T17:52:31Z",
+      "why": "too short"
+    },
+    "MDTkRvcfRuc": {
+      "channel": "@ESLCS",
+      "title": "Smartest move so far? 🧐",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-10T18:29:50Z",
+      "why": "too short"
+    },
+    "0PisNssMVEA": {
+      "channel": "@ESLCS",
+      "title": "How Donk warms up before a match 🎯",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T18:41:07Z",
+      "why": "too short"
+    },
+    "niwIVPJtcX4": {
+      "channel": "@ESLCS",
+      "title": "magixx 1v3 CLUTCH 😬",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-10T20:52:43Z",
+      "why": "too short"
+    },
+    "ZRw-K0VvMAg": {
+      "channel": "@ESLCS",
+      "title": "tN1R saves the round with a CRAZY Defuse 🔥",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-10T20:57:49Z",
+      "why": "too short"
+    },
+    "TZd_YLWVhzE": {
+      "channel": "@ESLCS",
+      "title": "The Dispatch EXPOSED 2 - A Behind the Scenes Special",
+      "minutes": 10,
+      "live": false,
+      "published": "2026-10-10T20:58:32Z",
+      "why": "ignored word in title"
+    },
+    "mVAQ_hSb5Sk": {
+      "channel": "@ESLCS",
+      "title": "zont1x with the INSANE 1v2 clutch 🤩",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T20:59:17Z",
+      "why": "too short"
+    },
+    "mDCzr2pjIb4": {
+      "channel": "@ESLCS",
+      "title": "What was that sh1ro??? 🫣",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T21:06:42Z",
+      "why": "too short"
+    },
+    "JijOEdE2A3c": {
+      "channel": "@ESLCS",
+      "title": "Feeling bad for Spirit atm 🫩",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T21:20:00Z",
+      "why": "too short"
+    },
+    "P_eQEE3qlbM": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 7 - Full show",
+      "minutes": 526,
+      "live": true,
+      "published": "2026-10-10T21:28:37Z",
+      "why": "too long"
+    },
+    "Mn8TGRjtIbY": {
+      "channel": "@ESLCS",
+      "title": "The feeling of every Spirit fan 😢#cs2 #counterstrike #gaming #esports #teamspirit",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T23:07:17Z",
+      "why": "too short"
+    },
+    "mGM_-AozBYc": {
+      "channel": "@ESLCS",
+      "title": "Good start, bad finish 😭 #cs2 #counterstrike #csgo #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-10T23:35:02Z",
+      "why": "too short"
+    },
+    "g-dVc3s6cNQ": {
+      "channel": "@ESLCS",
+      "title": "Wicadia ACED against Spirit 🔥",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-11T11:49:20Z",
+      "why": "too short"
+    },
+    "RQLcR0aQ6aM": {
+      "channel": "@ESLCS",
+      "title": "This is very familiar from magixx 🥶#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-11T13:55:18Z",
+      "why": "too short"
+    },
+    "k0YrOiSt-HA": {
+      "channel": "@ESLCS",
+      "title": "POV: You’re Getting Ready for a $1M tournament 🏆",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-11T15:48:42Z",
+      "why": "too short"
+    },
+    "8d-_S3kkQx8": {
+      "channel": "@ESLCS",
+      "title": "Your ESL Pro League S24 Katowice CHAMPIONS - Team Vitality 🏆",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-11T18:52:14Z",
+      "why": "too short"
+    },
+    "yHwRmFrXfSU": {
+      "channel": "@ESLCS",
+      "title": "Your DHL MVP at ESL Pro League S24 Katowice is ZywOo 🏆",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-11T18:54:46Z",
+      "why": "too short"
+    },
+    "82y98I__G4o": {
+      "channel": "@ESLCS",
+      "title": "ESL Pro League Season 24 - Day 8 - Full show",
+      "minutes": 481,
+      "live": true,
+      "published": "2026-10-11T19:07:49Z",
+      "why": "too long"
+    },
+    "UGbdTORSPXU": {
+      "channel": "@ESLCS",
+      "title": "Still winning 🤯",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-11T19:23:02Z",
+      "why": "too short"
+    },
+    "dyTEZ2pT0ns": {
+      "channel": "@ESLCS",
+      "title": "How sad for Spirit 🫩",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-11T19:39:15Z",
+      "why": "too short"
+    },
+    "5slUA-NTiLA": {
+      "channel": "@ESLCS",
+      "title": "Vitality aura has to be studied 😤",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-11T20:06:40Z",
+      "why": "too short"
+    },
+    "9BfgNjp7KDc": {
+      "channel": "@ESLCS",
+      "title": "So generous of Vitality to donate their guns 👏#cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-11T20:44:25Z",
+      "why": "too short"
+    },
+    "RMNUrEAiLJs": {
+      "channel": "@ESLCS",
+      "title": "VITALITY ERA IS BACK 💛👏#cs2 #counterstrike #gaming #esports #teamvitality",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-11T22:31:03Z",
+      "why": "too short"
+    },
+    "mQwxFi-KUVA": {
+      "channel": "@ESLCS",
+      "title": "What should CS2’s slogan be? 👀#cs2 #counterstrike #csgo #gaming #esports",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-13T13:29:23Z",
+      "why": "too short"
+    },
+    "X88swzTDPeY": {
+      "channel": "@BLASTPremier",
+      "title": "Our BRAND-NEW BLAST Rivals trophy hits the streets of Hong Kong 🏆🇭🇰",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-14T10:05:20Z",
+      "why": "too short"
+    },
+    "3sjtKsak1qU": {
+      "channel": "@ESLCS",
+      "title": "ROPZ CASHIER??!! 😳 #cs2 #counterstrike #gaming #esports #csgo",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-14T19:43:14Z",
+      "why": "too short"
+    },
+    "RawR7H9a_2A": {
+      "channel": "@ESLCS",
+      "title": "Mirage Forever or Never Again?! 👀",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-15T23:31:47Z",
+      "why": "too short"
+    },
+    "gPgWjM3F85E": {
+      "channel": "@ESLCS",
+      "title": "Would you rather LOSE your aim or your game sense?! 🤔",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-19T00:11:39Z",
+      "why": "too short"
+    },
+    "Y8layN0_YVM": {
+      "channel": "@ESLCS",
+      "title": "From heartbreak to history. 🥹🏆",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-21T12:14:11Z",
+      "why": "too short"
+    },
+    "F5ddBLwPRxc": {
+      "channel": "@ESLCS",
+      "title": "Would you rather play T or CT side?",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-22T13:58:48Z",
+      "why": "too short"
+    },
+    "cQmf7kQ8p7s": {
+      "channel": "@BLASTPremier",
+      "title": "AUDIO ONLY 🔊 Can @FalconsEsport and @FURIA.CS2 figure out what's happening in these clips? 👂",
+      "minutes": 3,
+      "live": false,
+      "published": "2026-10-23T16:17:23Z",
+      "why": "too short"
+    },
+    "WuYwSxueXFY": {
+      "channel": "@pgl",
+      "title": "[TRAILER] PGL Masters Bucharest 2026",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-24T07:59:21Z",
+      "why": "ignored word in title"
+    },
+    "bAxWrL8RJtM": {
+      "channel": "@pgl",
+      "title": "kyxsan defends XANTARES 🛡️ \"he's doing so much for the team\" #PGL #CS2 #kyxsan #XANTARES #Aurora",
+      "minutes": 1,
+      "live": false,
+      "published": "2026-10-24T10:15:07Z",
+      "why": "too short"
+    },
+    "MWknVlQoY0c": {
+      "channel": "@ESLCS",
+      "title": "Who is the BEST pistol player right now? 🔫👀",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-24T13:50:07Z",
+      "why": "too short"
+    },
+    "kOZHGP1EGoY": {
+      "channel": "@pgl",
+      "title": "magixx: \"I remember the day when I woke up...\"👀 Mirage graffiti #PGLMasters #CS2 #magixx #teamspirit",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-24T18:45:34Z",
+      "why": "too short"
+    },
+    "qJwibMqAi98": {
+      "channel": "@pgl",
+      "title": "[A] G2 Esports vs. Natus Vincere - PGL Masters Bucharest 2026 - Group Stage: Opening Round",
+      "minutes": 715,
+      "live": true,
+      "published": "2026-10-24T22:45:14Z",
+      "why": "too long"
+    },
+    "AI0JhqZGfv4": {
+      "channel": "@pgl",
+      "title": "[B] FURIA vs. DENDELE - PGL Masters Bucharest 2026 - Group Stage: Opening Round",
+      "minutes": 704,
+      "live": true,
+      "published": "2026-10-24T23:37:51Z",
+      "why": "too long"
+    },
+    "UPqJb2tI09k": {
+      "channel": "@pgl",
+      "title": "[A] FURIA vs. Natus Vincere - PGL Masters Bucharest 2026 - Group Stage: Round 2",
+      "minutes": 626,
+      "live": true,
+      "published": "2026-10-25T07:12:25Z",
+      "why": "too long"
+    },
+    "TWd8KU898Jw": {
+      "channel": "@pgl",
+      "title": "[B] Legacy vs. DENDELE - PGL Masters Bucharest 2026 - Group Stage: Round 2",
+      "minutes": 597,
+      "live": true,
+      "published": "2026-10-25T07:14:54Z",
+      "why": "too long"
+    },
+    "EjqKkOfmFJ8": {
+      "channel": "@pgl",
+      "title": "FalleN 💔 \"winning the tournament... then what would be the point?\" #PGLMasters #CS2 #FalleN",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-25T12:45:07Z",
+      "why": "too short"
+    },
+    "ofmC7VXJIhQ": {
+      "channel": "@ESLCS",
+      "title": "Best Comeback of All Time?? 😳",
+      "minutes": 0,
+      "live": false,
+      "published": "2026-10-25T18:35:14Z",
+      "why": "too short"
+    }
+  },
+  "backfilled": {
+    "PGL Masters Bucharest 2026": "2026-10-26T01:00:47.429Z",
+    "IEM Beijing 2026": "2026-10-26T01:00:47.429Z",
+    "BLAST Rivals Hong Kong 2026": "2026-10-26T01:00:47.429Z",
+    "PGL Major Singapore 2026": "2026-10-26T01:00:47.429Z",
+    "ESL Pro League Season 24": "2026-10-26T01:00:47.429Z",
+    "BLAST Open Fall 2026": "2026-10-26T01:00:47.429Z"
+  }
 }
