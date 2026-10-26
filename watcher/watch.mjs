@@ -318,8 +318,10 @@ async function main() {
         ds.key = key;
       } catch (e) { warn('Couldn’t look for new tournaments on Liquipedia: ' + e.message); }
     }
-    const skip = new Set(arr(disc.exclude).map(str));
-    const picked = arr(ds.titles).filter(t => !skip.has(t) && ds.info[t] && ds.info[t].sdate && ds.info[t].sdate >= from && ds.info[t].sdate <= to);
+    // an entry ending in "/" leaves out every page under it, e.g. "FISSURE/"
+    const skip = arr(disc.exclude).map(str).filter(Boolean);
+    const skipped = t => skip.some(x => x.endsWith('/') ? t.startsWith(x) : t === x);
+    const picked = arr(ds.titles).filter(t => !skipped(t) && ds.info[t] && ds.info[t].sdate && ds.info[t].sdate >= from && ds.info[t].sdate <= to);
     for (const t of picked) if (!wanted.some(w => w.page === t)) wanted.push({ page: t, discovered: true });
     if (due) log('Found ' + picked.length + ' tournaments in ' + arr(disc.categories).join(', ') + ' between ' + (from || 'the start') + ' and ' + to + '.');
   }
@@ -499,6 +501,13 @@ async function main() {
         w.t[w.field] = 'images/auto/' + saved;
       }
     } catch (e) { warn('Couldn’t fetch event pictures: ' + e.message); }
+  }
+  // Pictures of tournaments that are no longer on the site are removed.
+  const ids = new Set(auto.tournaments.flatMap(t => [t.id, t.id + '-dark']));
+  for (const [key, img] of Object.entries(state.images)) {
+    if (ids.has(key)) continue;
+    await unlink(path.join(FILES.autoImages, img.saved)).catch(() => {});
+    delete state.images[key];
   }
 
   /* 7. save */

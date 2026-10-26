@@ -33,10 +33,10 @@ The watcher never saves scores, winners, placements or video titles. The only re
 
 - **`discover`** adds every tournament in the listed Liquipedia categories that starts between `from` and `to`. It's set to `Category:S-Tier Tournaments` from June 2026 to the end of 2027, so new events show up by themselves once Liquipedia has their page.
   - To add A tier events, add `"Category:A-Tier Tournaments"` to `categories`.
-  - To leave an event out, put its Liquipedia page name in `exclude`, for example `"FISSURE/Playground/6"`.
+  - To leave an event out, put its Liquipedia page name in `exclude`, for example `"BLAST/Rivals/2027"`. A name ending in `/` leaves out a whole series: `"FISSURE/"` is there because FISSURE doesn't post match videos. Remove it to bring FISSURE events back.
 - **`tournaments`** lists events by hand. Use `"liquipedia"` with the page name from its address (https://liquipedia.net/counterstrike/ESL/Pro_League/Season_24 is `"ESL/Pro League/Season 24"`), or `"search"` with the event's name. Add `"name"` to show a different name on the site.
 
-The home page sorts events into **Happening now**, **Ready to watch** (finished) and **Coming up**, based on their dates. Upcoming events are listed before their matches are drawn. A finished event without any videos is hidden. FISSURE doesn't post match videos, for example.
+The home page sorts events into **Happening now**, **Ready to watch** (finished) and **Coming up**, based on their dates. Upcoming events are listed before their matches are drawn. A finished event without any videos is hidden two days after it ends.
 
 ## Event pictures
 
