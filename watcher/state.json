@@ -1,1407 +1,1339 @@
 {
   "version": 1,
-  "configHash": "c5ac3d0f",
+  "configHash": "107fdff5",
   "uploads": {
     "@ESLCS": "UUPq2ETz4aAGo2Z-8JisDPIA",
     "@BLASTPremier": "UU9k--dE_UE0Faxzgb_DDkYQ",
     "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww"
   },
   "seen": {
-    "HDC0XRRGmMs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "vKKzX-yTtsw": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "QfNLLDByG8c": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Ga8pTErXIEA": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Qg3AnOOGASg": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "z2BkhcXNluU": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "6D5rZR19crE": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "YYuiuypSlSA": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "VxosVZpWU-o": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "FOzUwttxH1w": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "IgvFe2jvzLU": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "7Ac7neJNHW0": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "bXNMWi4tpwk": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "CC7ScB-JNVw": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "_dTeJxDLtTU": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "3QNK7LYmovc": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "p1f7hJYEi-w": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "aj77Fekp1bc": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "34zz4uJIpYQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "VTQJw-eGmLs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "JwZR_0T_dJY": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "JMxVWu7BIgg": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "J7iGRYXFISI": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Bx_zbzGzPPY": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "e81Ff9f3SAs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "bsGwg3TzPK0": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "2k-Rzc_53Z4": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "CDmqjDfD6gg": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "lcjciyumc_Q": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "X1kLc3TvV44": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
     "Narpl5mx6Zg": {
       "status": "review",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "_iLYW8vJ9E0": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "amZXnOau1pE": {
       "status": "review",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "e9tQRqSqzAk": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "EUZICUxo5W8": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Zk1_YV45V3Y": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "csE0dNbsLb8": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "TBrNOzLJtCo": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "mT46iQTKrqo": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "MeKsZJNX1HU": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "EwSBwy3ctHM": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "uwHE8BvxeYg": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Tfrl61F-5Mw": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "rZxsKtqOqQ0": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Lh_UQSjtkUo": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "NBFKFM6wC2k": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "LZ26mCY6qFQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "xR2E2DInOlo": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "TxGwiq0-abA": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "3Kjz7pqaOzQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "yCCmwIRbsuM": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "VnWDNthZ2L4": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "rS9b76-ddaI": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "X7gp9cmo-6A": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "1ZZhvlN3xqQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "iRQ4YaWPM2g": {
       "status": "review",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "fyJCr9xpLUs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "mNzfGFdSUSs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "qhGoxH3h3w8": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "UmP39Q5fz-M": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Q8F8qcJ-SmI": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "We0B_KI0AYY": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "ItAbdsw7yYs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "cPp0ui479NE": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "_IkScmHfPPE": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "h-E6NIWJhfg": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "6XelBqlO8HU": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "La_0CC4yxgo": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Nt7708sHu5E": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "oP8bTi7bzsg": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "Kc-jEzABOz8": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "9l7o9NVE8N0": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "FH1j77GfIBg": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "aNPSziq1spk": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "8SvBrkDEyQs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "kzvhqKBjH04": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "HJ__la8jSkQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "s9ZeWMegNhw": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "LsSIcv0cvJA": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "FHMyI5U1GRQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "q2ybi9U0eJs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "k3SQBC8hkHw": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "yf0BqRWz6Zs": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "CxCIx1BN0aA": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "PbKzvZpOokQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "ga4fBrA9Iyo": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "yjrJmLWRPLA": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "oIRCXOrllzE": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "PMAheJLThbQ": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "13gwKPKC-N8": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "soodPRHJk5A": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "CCCwpcACQPU": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "hhAHaaG0cGE": {
       "status": "review",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "0E71k_6OIjU": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
-    },
-    "9FrqMZd_MSk": {
-      "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "yxcOiU_zSD4": {
       "status": "review",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "aj77Fekp1bc": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "34zz4uJIpYQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "VTQJw-eGmLs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "JwZR_0T_dJY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "JMxVWu7BIgg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "J7iGRYXFISI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "Bx_zbzGzPPY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "e81Ff9f3SAs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "bsGwg3TzPK0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "2k-Rzc_53Z4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "CDmqjDfD6gg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "lcjciyumc_Q": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "X1kLc3TvV44": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "_iLYW8vJ9E0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "e9tQRqSqzAk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "EUZICUxo5W8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "Zk1_YV45V3Y": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "csE0dNbsLb8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "TBrNOzLJtCo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "mT46iQTKrqo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "MeKsZJNX1HU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "EwSBwy3ctHM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "uwHE8BvxeYg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "Tfrl61F-5Mw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "rZxsKtqOqQ0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "Lh_UQSjtkUo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "NBFKFM6wC2k": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "LZ26mCY6qFQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "xR2E2DInOlo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "TxGwiq0-abA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "3Kjz7pqaOzQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "yCCmwIRbsuM": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "VnWDNthZ2L4": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "rS9b76-ddaI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "X7gp9cmo-6A": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "1ZZhvlN3xqQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "fyJCr9xpLUs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "mNzfGFdSUSs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "qhGoxH3h3w8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "UmP39Q5fz-M": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "Q8F8qcJ-SmI": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "We0B_KI0AYY": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "ItAbdsw7yYs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "cPp0ui479NE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "_IkScmHfPPE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "h-E6NIWJhfg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "6XelBqlO8HU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "La_0CC4yxgo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "Nt7708sHu5E": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "oP8bTi7bzsg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "Kc-jEzABOz8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "9l7o9NVE8N0": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "FH1j77GfIBg": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "aNPSziq1spk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "8SvBrkDEyQs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "kzvhqKBjH04": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "HJ__la8jSkQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "s9ZeWMegNhw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "LsSIcv0cvJA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "FHMyI5U1GRQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "q2ybi9U0eJs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "k3SQBC8hkHw": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "yf0BqRWz6Zs": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "CxCIx1BN0aA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "PbKzvZpOokQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "ga4fBrA9Iyo": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "yjrJmLWRPLA": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "oIRCXOrllzE": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "PMAheJLThbQ": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "13gwKPKC-N8": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "soodPRHJk5A": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "CCCwpcACQPU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "0E71k_6OIjU": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
+    },
+    "9FrqMZd_MSk": {
+      "status": "skipped",
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "NOKNZWV3wnU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "uTk-UNXf8UU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "dC6BUCV_DZ0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "atUxaPtzPxc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "IJ-Z97_nf_4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Yk6V0ak4VLI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "y6w_wyN2lUI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "_dsVqa6k6jA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "m03dueeoRik": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "23qE9HvlVPU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "xdhtgzh-cGA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Px3ZZp5ZEls": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "j2VfRtOv39E": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "mu2uFcQ8bjk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "larAlDIH-Ko": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "bgB_6gy5x3w": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "619DQPH_U4A": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "cBkqS5P4ukU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "UxXnq8SBniY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "bQNXNW41YaM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "BRlnfZHztcY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "pkeHx20M-bs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "H_b_QbTUr2U": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Ap9mNacpvP8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "1f9jnfkWNu4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "nINSibrTRIY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "XtJZMEGj6sk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "qYz_TUIFsCg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "QlbWdSzRDoI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "-adVB7QHOBU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Gmw99kR27kM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Ym4-uwkzJ3s": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "O5c8MPt7KMI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "eTa1Wm1Bt78": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "_1n7MS-AYBI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "u3J5T84tYTU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "sBj8mrgWK98": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "stkO_H9-Opg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "97cYbqVVPTM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "zLF3dL2COhM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "owmgQJK5dfo": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "kT9djQcQXuY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "N3yHPMLiIaw": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "B4YIEYYLTSg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "6Thw4ZbMPdI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "xJzZphagaBA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "BRIS7gOHoho": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "1YbRoGOiPME": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "MaMvwnLF1DM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "r-Xadj8vlTg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "QCtR2slije8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "CtV_H8Ymchk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "3mu1QI8C-Ko": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "6dc-Gm6zgsA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "275t2kAMmF0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "kKXxKBT78XU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "teGZRZpiM6I": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "TRU_z6ILdYo": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "4sfGhU3KpJU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "zVa8g1T0Gi4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "E_idT_V-_zQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "6pvtSdHoCVc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "3Yp0Fi0qcVE": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "9-pkcQPhN48": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ZcvnV--QLWY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "nYS_xh2b3-g": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "uD_tlPT_AY0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "2L3_d7ut_-c": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "QV1av4tiEaI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "grJg6WoFbOg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "sGruhp4VK_o": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "xecrNVhafgE": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ylNQ5sIeSyA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "PF9xfSWIwLY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "YIiQpHYh9LY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "D_tPYH8WfRs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "apG7aet3p0g": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "vIluUbpSTH0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "DsMixpoi-7U": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "HT1lOYZMBuk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "SHgLhtv11vU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "lry3rVhMbMA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "rGnlFbLzQV4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "udXiSU6OKO8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "nBsx1sCyyDY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "YuD3DWvEi3U": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "RASfOZKLN-s": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "QGOQ-8kuZvM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "wnZ9DCeqFhU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "OB_CeD-TUYs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "49B6-Mxjc5w": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "xcHAqNsG6c0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "llQRiNxp28o": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "2O7Wf18A8Mc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "9la3ud_3Bb0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "vGKcOHtO96s": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ND4ifK9EPtM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "_EPixck0iDM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "PrC1G8I8UM4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "R4koOf_jQlY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ldkGQxhfynQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "oZGUq4_PNMQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "8ESEiloKWyQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "jo6LLPFajn0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "eCw80-_Sr5g": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "GVuHLNj5lIA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Fv5I4bptcNM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Iaw7vwCfCPA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ZZdaBTuf_Tg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "e-sQ1bjbnsA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ivUTbfRzJ40": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "GDjrKYUIbjM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "cjo-8hGA_9s": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "gkjvKWee-4E": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "cVyY02YkLic": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "reWC_jQ2FMY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "x9al9bqwFNI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "x7KO0S2otbM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "9UvbTXa4_x0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "4f_fisG5j9g": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "MQGvHLK3ctc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "HclaYGDkYOY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "pj-aF9LyJXw": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "-Y0T1tw7Zz0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "fyNBGNUgwmI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Sa_WighbUMU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "suuyfW5rqQA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "lawItm-8fgU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "7M9rbaug-Z0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "CdTT_4dGMvk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "jjqPnBgZsUc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "1a3fPofjZwo": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "mvAEKkdD4gU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "kNLkWSyDRT4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "0Bw319nVJ3c": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "FlV2OBRogHM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "SoqdNHtfa_o": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "_T3ra0nJAjc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "RuwmnGjrf04": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "LcMDVOtgvdk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "9vCiC9i7cUs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "EyO8Ug2kEpc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "lV0ssjzKfJw": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "TXllCgEM6ps": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "zwx9gvenh1Q": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "KG3SQJCbras": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "TPy-4MtFMvY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "YOH8m4yumZY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "l54_Btd3oJA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "sbrjk37VJ7w": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "TseqhZmvAb4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "i2ynbYkgFhM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "GWkVaZlFFRU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "e7G9uXEDNO8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "mT7EQFwIaZA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "6DGzDzFN1wA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "nWoODRZEyAs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "iLnojOgxzS4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "2BeOH4g3YP0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "JaIjtQB85AI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "5uDP2YfoJIM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "7cCU8tarIgk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "CuCp-hMnH2U": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "FSO-zSu8cYQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "q6GdyFL0pl8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "8T3sqnU_J3Q": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "oxtYcUZKbAI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "muRfeSQ6cGw": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "IBo_6G1pHRo": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "3ZyJPnGWZwc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "qgSnniq1NPs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "-8srrHQGcaU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "cBw7QzoZjE0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "D4G4knQJQd0": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "GllV02bmyu8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "q-3zzik_sjE": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "5qlCWpCAnRg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "cth53YtYIcU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Im3OHRzxkeg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "faGTWvsA2Gs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "R3019Bzrm84": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "4qctS11skyM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "l58C-fNb6zM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ihTfsSFtAG8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "KaNM9q8ajfQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ZEY2N4Alx6U": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "d_3FZl4esdM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "IPAU90aOJMQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "oJi8OiF8skc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "J6D3fo-fpsM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "X6LG6knGOXw": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "dQ9IjOMo2Ps": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "xkzy11E_ZHs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "qLmucC7yDlM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "KXxEDPu31eM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "3kVghr6Swag": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "MBjtYBlZ-Lc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "z1RkejKfCtU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "hSNiWEEpfts": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "z02kuZcHJuU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "WWTcu33u00A": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "WREXY_RabVI": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "6UgRf1qXy5g": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "iSiyJWL4ask": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "owFh8q10oXs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "PO1TJKsqtGc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "MVVH0BjMYgM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "cK37Yq6i4Rk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "7WS1e35ja2U": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "eWzaUHE5LQs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "0VZ4u77DGEE": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "pDVXraHm6-o": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ZoiFFYAr_mU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "MDTkRvcfRuc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "0PisNssMVEA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "niwIVPJtcX4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ZRw-K0VvMAg": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "TZd_YLWVhzE": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "mVAQ_hSb5Sk": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "mDCzr2pjIb4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "JijOEdE2A3c": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "P_eQEE3qlbM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Mn8TGRjtIbY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "mGM_-AozBYc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "g-dVc3s6cNQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "RQLcR0aQ6aM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "k0YrOiSt-HA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "8d-_S3kkQx8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "yHwRmFrXfSU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "82y98I__G4o": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "UGbdTORSPXU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "dyTEZ2pT0ns": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "5slUA-NTiLA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "9BfgNjp7KDc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "RMNUrEAiLJs": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "mQwxFi-KUVA": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "X88swzTDPeY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "3sjtKsak1qU": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "RawR7H9a_2A": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "gPgWjM3F85E": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "Y8layN0_YVM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "F5ddBLwPRxc": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "cQmf7kQ8p7s": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "WuYwSxueXFY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "bAxWrL8RJtM": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "MWknVlQoY0c": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "kOZHGP1EGoY": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "qJwibMqAi98": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "AI0JhqZGfv4": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "UPqJb2tI09k": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "TWd8KU898Jw": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "EjqKkOfmFJ8": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     },
     "ofmC7VXJIhQ": {
       "status": "skipped",
-      "at": "2026-10-26T01:00:47.429Z"
+      "at": "2026-10-26T01:03:10.400Z"
     }
   },
   "pending": {
@@ -4239,5 +4171,2053 @@
     "PGL Major Singapore 2026": "2026-10-26T01:00:47.429Z",
     "ESL Pro League Season 24": "2026-10-26T01:00:47.429Z",
     "BLAST Open Fall 2026": "2026-10-26T01:00:47.429Z"
+  },
+  "debugProbe": {
+    "at": "2026-10-26T01:03:14.835Z",
+    "descriptions": {
+      "p1f7hJYEi-w": {
+        "title": "BLAST Open Porto 2026, Day 1 - Aurora vs G2, Spirit vs DENDELE, NAVI vs M80, FURIA vs paiN",
+        "length": 1776,
+        "timestampLines": [
+          "Aurora Gaming vs G2 Esports (11:00 CEST)",
+          "Team Spirit vs DENDELE CS (13:30 CEST)",
+          "Natus Vincere vs M80 (16:00 CEST)",
+          "FURIA vs paiN Gaming (18:30 CEST)"
+        ],
+        "start": "🎟️ https://blast.tv/cs/tickets\n\nStay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Group Stage, Day 1 (rolling start): \nAurora Gaming vs G2 Esports (11:00 CEST)\nTeam Spirit vs DENDELE CS (13:30 CEST)\nNatus Vincere vs M80 (16:00 CEST)\nFURIA vs paiN Gaming (18:30 CEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best in"
+      },
+      "_iLYW8vJ9E0": {
+        "title": "BLAST Open Porto 2026, Day 2 - Vitality vs IC, MOUZ vs 9z, Legacy vs FUT, Falcons vs Lynn Vision",
+        "length": 1784,
+        "timestampLines": [
+          "Team Vitality vs Inner Circle Esports (11:00 CEST)",
+          "MOUZ vs 9z Team (13:30 CEST)",
+          "Legacy vs FUT Esports (16:00 CEST)",
+          "Team Falcons vs Lynn Vision (18:30 CEST)"
+        ],
+        "start": "🎟️ https://blast.tv/cs/tickets\n\nStay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Group Stage, Day 1 (rolling start): \nTeam Vitality vs Inner Circle Esports (11:00 CEST)\nMOUZ vs 9z Team (13:30 CEST)\nLegacy vs FUT Esports (16:00 CEST)\nTeam Falcons vs Lynn Vision (18:30 CEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very"
+      },
+      "Lh_UQSjtkUo": {
+        "title": "BLAST Open Porto 2026, Day 3 - Aurora vs DENDELE, G2 vs Spirit, NAVI vs paiN, M80 vs FURIA",
+        "length": 1776,
+        "timestampLines": [
+          "Aurora Gaming vs DENDELE CS (11:00 CEST)",
+          "G2 Esports vs Team Spirit (13:30 CEST)",
+          "Natus Vincere vs paiN Gaming (16:00 CEST)",
+          "M80 vs FURIA (18:30 CEST)"
+        ],
+        "start": "🎟️ https://blast.tv/cs/tickets\n\nStay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Group Stage, Day 3 (rolling start): \nAurora Gaming vs DENDELE CS (11:00 CEST)\nG2 Esports vs Team Spirit (13:30 CEST)\nNatus Vincere vs paiN Gaming (16:00 CEST)\nM80 vs FURIA (18:30 CEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best in"
+      },
+      "1ZZhvlN3xqQ": {
+        "title": "BLAST Open Porto 2026, Day 4 - Vitality vs 9z, IC vs MOUZ, FUT vs Lynn Vision, Legacy vs Falcons",
+        "length": 1774,
+        "timestampLines": [
+          "Team Vitality vs 9z Team (11:00 CEST)",
+          "IC Esports vs MOUZ (13:30 CEST)",
+          "FUT Esports vs Lynn Vision (16:00 CEST)",
+          "Legacy vs Team Falcons (18:30 CEST)"
+        ],
+        "start": "🎟️ https://blast.tv/cs/tickets\n\nStay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Group Stage, Day 4 (rolling start): \nTeam Vitality vs 9z Team (11:00 CEST)\nIC Esports vs MOUZ (13:30 CEST)\nFUT Esports vs Lynn Vision (16:00 CEST)\nLegacy vs Team Falcons (18:30 CEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best in c"
+      },
+      "oP8bTi7bzsg": {
+        "title": "BLAST Open Porto 2026, Day 5 - G2 vs NAVI, M80 vs Aurora, IC vs FUT, Legacy vs Vitality",
+        "length": 1778,
+        "timestampLines": [
+          "G2 Esports vs Natus Vincere (11:00 CEST)",
+          "M80 v Aurora Gaming (13:30 CEST)",
+          "IC Esports vs FUT Esports (16:00 CEST)",
+          "Legacy vs Team Vitality (18:30 CEST)"
+        ],
+        "start": "🎟️ https://blast.tv/cs/tickets\n\nStay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Group Stage, Day 4 (rolling start): \nG2 Esports vs Natus Vincere (11:00 CEST)\nM80 v Aurora Gaming (13:30 CEST)\nIC Esports vs FUT Esports (16:00 CEST)\nLegacy vs Team Vitality (18:30 CEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best "
+      },
+      "yjrJmLWRPLA": {
+        "title": "BLAST Open Porto 2026, Day 6 - Spirit vs FURIA, G2 vs Aurora, MOUZ vs Falcons, FUT vs Vitality",
+        "length": 1779,
+        "timestampLines": [
+          "Team Spirit vs FURIA (11:00 CEST)",
+          "G2 Esports vs Aurora Gaming (13:30 CEST)",
+          "MOUZ vs Team Falcons (16:00 CEST)",
+          "FUT Esports vs Team Vitality (18:30 CEST)"
+        ],
+        "start": "🎟️ https://blast.tv/cs/tickets\n\nStay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Group Stage, Day 6 (rolling start): \nTeam Spirit vs FURIA (11:00 CEST)\nG2 Esports vs Aurora Gaming (13:30 CEST)\nMOUZ vs Team Falcons (16:00 CEST)\nFUT Esports vs Team Vitality (18:30 CEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best"
+      },
+      "0E71k_6OIjU": {
+        "title": "IEM Beijing 2026 - Closed Qualifiers - Asia Region - Day 1",
+        "length": 822,
+        "timestampLines": [
+          "0:00 Intro",
+          "24:04 FlyQuest vs. NEXVOID - Map 1 (Inferno)",
+          "1:21:38 Studio",
+          "1:38:28 FlyQuest vs. NEXVOID - Map 2 (Anubis)",
+          "2:38:40 Studio",
+          "3:16:36 NEXVOID vs. Lynn Vision Gaming - Map 1 (Inferno)",
+          "4:05:50 Studio",
+          "4:22:26 NEXVOID vs. Lynn Vision Gaming - Map 2 (Dust2)",
+          "5:04:41 Studio",
+          "6:30:24 TYLOO vs. DEPO - Map 1 (Mirage)",
+          "7:00:42 Studio",
+          "7:22:07 TYLOO vs. DEPO - Map 2 (Inferno)",
+          "7:56:15 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "9FrqMZd_MSk": {
+        "title": "IEM Beijing 2026 - Closed Qualifiers - Global Region - Day 1",
+        "length": 1057,
+        "timestampLines": [
+          "0:00 Intro",
+          "24:38 magic vs. K27 Esports - Map 1 (Cache)",
+          "1:12:11 Studio",
+          "1:33:11 magic vs. K27 Esports - Map 2 (Ancient)",
+          "2:00:45 Studio",
+          "3:34:59 BIG vs. Nemiga Gaming - Map 1 (Nuke)",
+          "4:24:08 Studio",
+          "4:42:15 BIG vs. Nemiga Gaming - Map 2 (Ancient)",
+          "5:42:50 Studio",
+          "6:00:48 BIG vs. Nemiga Gaming - Map 3 (Mirage)",
+          "6:49:05 Studio",
+          "7:22:50 Eternal Fire vs. HEROIC - Map 1 (Ancient)",
+          "8:03:50 Studio",
+          "8:22:55 Eternal Fire vs. HEROIC - Map 2 (Inferno)",
+          "8:57:14 Studio",
+          "9:14:44 Eternal Fire vs. HEROIC - Map 3 (Mirage)",
+          "10:09:27 Studio",
+          "10:39:41 BIG vs. paiN Gaming - Map 1 (Dust2)",
+          "11:21:10 Studio",
+          "11:36:40 BIG vs. paiN Gaming - Map 2 (Cache)"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "IJ-Z97_nf_4": {
+        "title": "IEM Beijing 2026 - Closed Qualifiers - Asia Region - Day 2",
+        "length": 888,
+        "timestampLines": [
+          "0:00 Intro",
+          "31:19 FlyQuest vs. Kaleido Gaming - Map 1 (Cache)",
+          "1:04:49 Studio",
+          "1:24:40 FlyQuest vs. Kaleido Gaming - Map 2 (Anubis)",
+          "1:56:49 Studio",
+          "3:44:12 FlyQuest vs. DEPO - Map 1 (Anubis)",
+          "4:28:04 Studio",
+          "4:46:37 FlyQuest vs. DEPO - Map 2 (Ancient)",
+          "5:34:00 Studio",
+          "6:26:35 FlyQuest vs. Rare Atom - Map 1 (Dust2)",
+          "7:54:14 Studio",
+          "8:21:51 FlyQuest vs. Rare Atom - Map 2 (Anubis)",
+          "9:17:26 Studio",
+          "9:36:57 FlyQuest vs. Rare Atom - Map 3 (Inferno)",
+          "10:15:06 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "Yk6V0ak4VLI": {
+        "title": "IEM Beijing 2026 - Closed Qualifiers - Global Region - Day 2",
+        "length": 841,
+        "timestampLines": [
+          "0:00 Intro",
+          "26:41 BIG vs. magic - Map 1 (Ancient)",
+          "1:02:23 Studio",
+          "1:18:46 BIG vs. magic - Map 2 (Cache)",
+          "2:33:23 Studio",
+          "3:27:07 Eternal Fire vs. Nuclear TigeRES - Map 1 (Ancient)",
+          "4:23:50 Studio",
+          "4:48:13 Eternal Fire vs. Nuclear TigeRES - Map 2 (Anubis)",
+          "5:34:11 Studio",
+          "6:21:40 Eternal Fire vs. K27 Esports  - Map 1 (Ancient)",
+          "7:07:40 Studio",
+          "7:25:14 Eternal Fire vs. K27 Esports  - Map 2 (Cache)",
+          "8:06:46 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "bQNXNW41YaM": {
+        "title": "BLAST Open Porto 2026, Quarterfinals - Falcons vs G2, FURIA vs Vitality",
+        "length": 1665,
+        "timestampLines": [
+          "Team Spirit vs FURIA (15:00 WEST)",
+          "G2 Esports vs Aurora Gaming (18:30 WEST)"
+        ],
+        "start": "Stay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Quarterfinals (rolling start): \nTeam Spirit vs FURIA (15:00 WEST)\nG2 Esports vs Aurora Gaming (18:30 WEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best in competitive CS2 matchplay!\n\nWe’ll be streaming live from our CS2 tournaments around the world, featuring the w"
+      },
+      "BRlnfZHztcY": {
+        "title": "IEM Beijing 2026 - Closed Qualifiers - Global Region - Day 3",
+        "length": 721,
+        "timestampLines": [
+          "0:00 Intro",
+          "29:15 Nuclear TigeRES vs. B8 Esports - Map 1 (Inferno)",
+          "1:17:16 Studio",
+          "1:33:37 Nuclear TigeRES vs. B8 Esports - Map 2 (Mirage)",
+          "2:08:04 Studio",
+          "4:06:23 HEROIC vs. uclear TigeRES - Map 1 (Ancient)",
+          "4:40:31 Studio",
+          "5:01:12 HEROIC vs. uclear TigeRES - Map 2 (Dust2)",
+          "6:19:08 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "Gmw99kR27kM": {
+        "title": "BLAST Open Porto 2026, SEMIFINALS - Spirit vs Falcons, MOUZ vs Vitality",
+        "length": 1381,
+        "timestampLines": [
+          "Team Spirit vs Team Falcons (15:00 WEST)",
+          "MOUZ vs Team Vitalit (18:30 WEST)"
+        ],
+        "start": "Stay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, Semifinals (rolling start): \nTeam Spirit vs Team Falcons (15:00 WEST)\nMOUZ vs Team Vitalit (18:30 WEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best in competitive CS2 matchplay!\n\nWe’ll be streaming live from our CS2 tournaments around the world, featuring the worl"
+      },
+      "6Thw4ZbMPdI": {
+        "title": "BLAST Open Porto 2026, GRAND FINAL - Spirit vs MOUZ",
+        "length": 1372,
+        "timestampLines": [
+          "Team Spirit vs MOUZ (15:00 WEST)"
+        ],
+        "start": "Who will be crowned the Champions of Porto? 👑\n\nStay informed about BLAST Premier Counter-Strike 💥 https://blast.tv/cs\n\nBLAST Open Porto 2026, GRAND FINAL: \nTeam Spirit vs MOUZ (15:00 WEST)\n\nThis is BLAST Premier, the YouTube channel dedicated to bringing you the very best in competitive CS2 matchplay!\n\nWe’ll be streaming live from our CS2 tournaments around the world, featuring the world’s elite"
+      },
+      "vIluUbpSTH0": {
+        "title": "[B] LGD Gaming vs. Yakult Brothers - PGL Wallachia Season 9 - Group Stage - Round 1",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "DsMixpoi-7U": {
+        "title": "[A] Team Yandex vs. MOUZ - PGL Wallachia Season 9 - Group Stage - Round 1",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "lry3rVhMbMA": {
+        "title": "[A] Team Yandex vs. Team Nemesis - PGL Wallachia Season 9 - Group Stage - Round 2 High Matches (1-0)",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "udXiSU6OKO8": {
+        "title": "[B] MOUZ vs. Pibbles Corp. - PGL Wallachia Season 9 - Group Stage - Round 2 Low Matches (0-1)",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "QGOQ-8kuZvM": {
+        "title": "[A] Team Yandex vs. Natus Vincere - PGL Wallachia Season 9 - Group Stage - Round 3 High Matches (2-0",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "wnZ9DCeqFhU": {
+        "title": "[B] Pibbles Corp. vs. Hokori - PGL Wallachia Season 9 - Group Stage - Round 3 Low Matches (0-2)",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "49B6-Mxjc5w": {
+        "title": "[B] MOUZ vs. Hokori - PGL Wallachia Season 9 - Group Stage - Round 4 Low Matches (1-2)",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "llQRiNxp28o": {
+        "title": "[A] LGD Gaming vs. Aurora Gaming - PGL Wallachia Season 9 - Group Stage - Round 4 High Matches (2-1)",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "_EPixck0iDM": {
+        "title": "LGD Gaming vs. MOUZ - PGL Wallachia Season 9 - Group Stage - Round 5 (2-2)",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "R4koOf_jQlY": {
+        "title": "Team Yandex vs. 1win - PGL Wallachia Season 9 - Winner Bracket R1",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "oZGUq4_PNMQ": {
+        "title": "Aurora Gaming vs. Team Yandex - PGL Wallachia Season 9 - Winner Bracket R2",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "8ESEiloKWyQ": {
+        "title": "Xtreme Gaming vs. Natus Vincere - PGL Wallachia Season 9 - Lower Bracket R3",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "eCw80-_Sr5g": {
+        "title": "Team Yandex vs. Natus Vincere - PGL Wallachia Season 9 - Grand Final",
+        "length": 447,
+        "timestampLines": [],
+        "start": "PGL Wallachia Season #9 - DOTA 2  \n\n📅 September 19-27, 2026 | 📍 Bucharest, Romania - PGL Studios  \n💰 $1,000,000 Prize Pool | 🎮 16 Top Teams  \n\nTournament Format  \n\n🔹 Group Stage (Swiss System)  \n- 16 teams compete in a Swiss format  \n- All matches Bo3 \n- Top 8 teams advance to Playoffs  \n\n🔹 Playoffs (Double-Elimination)  \n- All matches Bo3 (except Grand Final)  \n- Grand Final: Bo5\n\n\n📺 Subsc"
+      },
+      "reWC_jQ2FMY": {
+        "title": "ESL Pro League Season 24 - Day 1 - Stream A - Full show",
+        "length": 1002,
+        "timestampLines": [
+          "00:00 Intro",
+          "28:38 Studio",
+          "58:06 Team Falcons vs. TYLOO - Map 1 (Mirage)",
+          "1:52:30 Studio",
+          "2:07:47 Team Falcons vs. TYLOO - Map 2 (Anubis)",
+          "2:48:00 Studio",
+          "3:30:56 Team Vitality vs. 1WIN - Map 1 (Dust2)",
+          "4:00:24 Studio",
+          "4:16:01 Team Vitality vs. 1WIN - Map 2 (Cache)",
+          "4:56:42 Studio",
+          "5:58:05 Aurora Gaming vs. 9z Globant - Map 1 (Dust2)",
+          "6:37:13 Studio",
+          "6:52:00 Aurora Gaming vs. 9z Globant - Map 2 (Mirage)",
+          "7:42:50 Studio",
+          "8:27:57 G2 Esports vs. Natus Vincere - Map 1 (Cache)",
+          "9:18:39 Studio",
+          "9:33:53 G2 Esports vs. Natus Vincere - Map 2 (Inferno)",
+          "10:13:36 Studio",
+          "10:28:08 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "x9al9bqwFNI": {
+        "title": "ESL Pro League Season 24 - Day 1 - Stream B - Full show",
+        "length": 1084,
+        "timestampLines": [
+          "00:00 Intro",
+          "21:51 Studio",
+          "51:30 Legacy vs. PARIVISION - Map 1 (Dust2)",
+          "1:31:28 Studio",
+          "1:46:28 Legacy vs. PARIVISION - Map 2 (Inferno)",
+          "2:21:18 Studio",
+          "2:34:57 Legacy vs. PARIVISION - Map 3 (Ancient)",
+          "3:38:06 Studio",
+          "3:57:55 Team Spirit vs. ShindeN - Map 1 (Dust2)",
+          "4:55:33 Studio",
+          "5:11:37 Team Spirit vs. ShindeN - Map 2 (Nuke)",
+          "6:03:34 Studio",
+          "6:18:32 Team Spirit vs. ShindeN - Map 3 (Mirage)",
+          "6:55:57 Studio",
+          "7:16:35 MOUZ vs. M80 - Map 1 (Cache)",
+          "8:05:13 Studio",
+          "8:20:35 MOUZ vs. M80 - Map 2 (Mirage)",
+          "8:58:19 Studio",
+          "9:18:45 FURIA vs. BetBoom Team - Map 1 (Mirage)",
+          "9:54:52 Studio",
+          "10:13:37 FURIA vs. BetBoom Team - Map 2 (Cache)",
+          "11:18:16 Studio",
+          "10:26:08 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "LcMDVOtgvdk": {
+        "title": "ESL Pro League Season 24 - Day 2 - Stream A - Full show",
+        "length": 1144,
+        "timestampLines": [
+          "00:00 Intro",
+          "28:02 Studio",
+          "58:42 Team Spirit vs. PARIVISION - Map 1 (Ancient)",
+          "1:51:16 Studio",
+          "2:06:43 Team Spirit vs. PARIVISION - Map 2 (Dust2)",
+          "2:53:27 Studio",
+          "3:09:41 Team Spirit vs. PARIVISION - Map 3 (Anubis)",
+          "3:54:10 Studio",
+          "4:16:10 Team Falcons vs. Aurora Gaming - Map 1 (Mirage)",
+          "4:54:05 Studio",
+          "5:09:33 Team Falcons vs. Aurora Gaming - Map 2 (Dust2)",
+          "5:58:26 Studio",
+          "6:19:25 FURIA vs. MOUZ - Map 1 (Cache)",
+          "6:55:51 Studio",
+          "7:11:38 FURIA vs. MOUZ - Map 2 (Mirage)",
+          "7:54:30 Studio",
+          "8:27:34 Team Vitality vs. Natus Vincere - Map 1 (Anubis)",
+          "9:10:29 Studio",
+          "9:26:34 Team Vitality vs. Natus Vincere - Map 2 (Nuke)",
+          "10:05:05 Studio",
+          "10:20:35 Team Vitality vs. Natus Vincere - Map 3 (Mirage)",
+          "10:59:06 Studio",
+          "11:10:08 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "9vCiC9i7cUs": {
+        "title": "ESL Pro League Season 24 - Day 2 - Stream B - Full show",
+        "length": 1016,
+        "timestampLines": [
+          "00:00 Intro",
+          "26:13 Studio",
+          "55:40 ShindeN vs. Legacy - Map 1 (Nuke)",
+          "1:46:50 Studio",
+          "2:02:38 ShindeN vs. Legacy - Map 2 (Mirage)",
+          "2:49:23 Studio",
+          "3:25:37 9z Globant vs. TYLOO - Map 1 (Nuke)",
+          "4:16:34 Studio",
+          "4:32:36 9z Globant vs. TYLOO - Map 2 (Mirage)",
+          "5:02:43 Studio",
+          "5:55:42 G2 Esports vs. 1WIN - Map 1 (Dust2)",
+          "6:53:55 Studio",
+          "7:09:34 G2 Esports vs. 1WIN - Map 2 (Ancient)",
+          "7:44:06 Studio",
+          "7:59:35 G2 Esports vs. 1WIN - Map 3 (Mirage)",
+          "8:45:26 Studio",
+          "9:05:43 BetBoom Team vs. M80 - Map 1 (Cache)",
+          "10:10:42 Studio",
+          "10:26:44 BetBoom Team vs. M80 - Map 2 (Anubis)",
+          "11:20:12 Studio",
+          "11:26:06 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "GWkVaZlFFRU": {
+        "title": "ESL Pro League Season 24 - Day 3 - Stream A - Full show",
+        "length": 1132,
+        "timestampLines": [
+          "00:00 Intro",
+          "25:37 Studio",
+          "57:10 PARIVISION vs. FURIA - Map 1 (Ancient)",
+          "1:42:39 Studio",
+          "1:58:05 PARIVISION vs. FURIA - Map 2 (Mirage)",
+          "2:41:07 Studio",
+          "2:57:26 PARIVISION vs. FURIA - Map 3 (Inferno)",
+          "3:54:00 Studio",
+          "4:16:16 9z Globant vs. Natus Vincere - Map 1 (Nuke)",
+          "4:57:44 Studio",
+          "5:13:08 9z Globant vs. Natus Vincere - Map 2 (Cache)",
+          "5:57:26 Studio",
+          "6:18:10 Team Spirit vs. MOUZ - Map 1 (Dust2)",
+          "6:58:25 Studio",
+          "7:14:15 Team Spirit vs. MOUZ - Map 2 (Mirage)",
+          "8:03:30 Studio",
+          "8:25:06 Team Vitality vs. Team Falcons - Map 1 (Anubis)",
+          "9:17:09 Studio",
+          "9:33:06 Team Vitality vs. Team Falcons - Map 2 (Dust2)",
+          "10:11:05 Studio",
+          "10:27:03 Team Vitality vs. Team Falcons - Map 3 (Mirage)",
+          "11:12:26 Studio",
+          "11:30:08 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "mT7EQFwIaZA": {
+        "title": "ESL Pro League Season 24 - Day 3 - Stream B - Full show",
+        "length": 1060,
+        "timestampLines": [
+          "00:00 Intro",
+          "25:26 Studio",
+          "54:48 ShindeN vs. G2 Esports - Map 1 (Dust2)",
+          "1:39:02 Studio",
+          "1:54:48 ShindeN vs. G2 Esports - Map 2 (Ancient)",
+          "2:40:30 Studio",
+          "3:24:52 Legacy vs. 1WIN - Map 1 (Dust2)",
+          "4:11:20 Studio",
+          "4:26:48 Legacy vs. 1WIN - Map 2 (Ancient)",
+          "5:14:42 Studio",
+          "5:54:52 M80 vs. TYLOO - Map 1 (Mirage)",
+          "6:51:50 Studio",
+          "7:07:44 M80 vs. TYLOO - Map 2 (Cache)",
+          "7:53:25 Studio",
+          "8:08:41 M80 vs. TYLOO - Map 3 (Anubis)",
+          "8:56:47 Studio",
+          "9:16:55 Aurora Gaming vs. BetBoom Team - Map 1 (Mirage)",
+          "9:57:09 Studio",
+          "10:12:44 Aurora Gaming vs. BetBoom Team - Map 2 (Nuke)",
+          "10:59:25 Studio",
+          "11:15:57 Aurora Gaming vs. BetBoom Team - Map 3 (Anubis)"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "7cCU8tarIgk": {
+        "title": "ESL Pro League Season 24 - Day 4 - Stream B - Full show",
+        "length": 894,
+        "timestampLines": [
+          "00:00 Intro",
+          "27:40 Studio",
+          "57:06 Team Spirit vs. 1WIN - Map 1 (Cache)",
+          "1:37:08 Studio",
+          "1:53:30 Team Spirit vs. 1WIN - Map 2 (Anubis)",
+          "2:48:46 Studio",
+          "3:27:06 9z Globant vs. BetBoom Team - Map 1 (Dust2)",
+          "4:17:05 Studio",
+          "4:33:00 9z Globant vs. BetBoom Team - Map 2 (Mirage)",
+          "5:15:21 Studio",
+          "5:57:09 Legacy vs. M80 - Map 1 (Cache)",
+          "6:34:29 Studio",
+          "6:50:04 Legacy vs. M80 - Map 2 (Mirage)",
+          "7:37:02 Studio",
+          "7:52:57 Legacy vs. M80 - Map 3 (Dust2)",
+          "8:36:26 Studio",
+          "8:49:08 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "8T3sqnU_J3Q": {
+        "title": "ESL Pro League Season 24 - Day 4 - Stream A - Full show",
+        "length": 1082,
+        "timestampLines": [
+          "00:00 Intro",
+          "27:59 Studio",
+          "58:06 G2 Esports vs. PARIVISION - Map 1 (Ancient)",
+          "1:47:55 Studio",
+          "2:04:10 G2 Esports vs. PARIVISION - Map 2 (Anubis)",
+          "2:55:49 Studio",
+          "3:11:35 G2 Esports vs. PARIVISION - Map 3 (Inferno)",
+          "4:13:27 Studio",
+          "4:39:47 FURIA vs. Aurora Gaming - Map 1 (Dust2)",
+          "5:32:30 Studio",
+          "5:48:32 FURIA vs. Aurora Gaming - Map 2 (Mirage)",
+          "6:38:05 Studio",
+          "6:53:35 FURIA vs. Aurora Gaming - Map 3 (Nuke)",
+          "7:40:50 Studio",
+          "8:02:14 Team Falcons vs. Natus Vincere - Map 1 (Inferno)",
+          "8:52:53 Studio",
+          "9:08:30 Team Falcons vs. Natus Vincere - Map 2 (Anubis)",
+          "10:31:35 Studio",
+          "10:47:32 Team Falcons vs. Natus Vincere - Map 3 (Mirage)",
+          "11:36:35 Studio",
+          "11:42:05 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "Im3OHRzxkeg": {
+        "title": "ESL Pro League Season 24 - Day 5 - Full show",
+        "length": 921,
+        "timestampLines": [
+          "00:00 Intro",
+          "27:55 Studio",
+          "57:33 9z Globant vs. FURIA - Map 1 (Nuke)",
+          "1:44:59 Studio",
+          "2:00:26 9z Globant vs. FURIA - Map 2 (Inferno)",
+          "2:39:13 Studio",
+          "3:27:55 Natus Vincere vs. PARIVISION - Map 1 (Inferno)",
+          "4:20:58 Studio",
+          "4:36:30 Natus Vincere vs. PARIVISION - Map 2 (Cache)",
+          "5:29:22 Studio",
+          "5:45:35 Natus Vincere vs. PARIVISION - Map 3 (Mirage)",
+          "6:44:27 Studio",
+          "7:04:26 Team Spirit vs. M80 - Map 1 (Dust2)",
+          "7:49:20 Studio",
+          "8:05:25 Team Spirit vs. M80 - Map 2 (Cache)",
+          "9:07:00 Studio",
+          "9:20:05 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "WWTcu33u00A": {
+        "title": "ESL Pro League Season 24 - Day 6 - Full show",
+        "length": 990,
+        "timestampLines": [
+          "0:00 Intro",
+          "34:40 Studio",
+          "1:04:11 The One vs. Aurora Gaming - Map 1 (Dust2)",
+          "1:57:09 Studio",
+          "2:15:55 The One vs. Aurora Gaming - Map 2 (Anubis)",
+          "3:05:47 Studio",
+          "4:06:40 Team Vitality vs. PVISION - Map 1 (Inferno)",
+          "4:41:38 Studio",
+          "5:03:07 Team Vitality vs. PVISION - Map 2 (Dust2)",
+          "5:53:40 Studio",
+          "6:50:04 FURIA vs. MOUZ - Map 1 (Nuke)",
+          "7:39:01 Studio",
+          "7:58:20 FURIA vs. MOUZ - Map 2 (Inferno)",
+          "8:42:18 Studio",
+          "9:39:56 Team Falcons vs. Team Spirit - Map 1 (Mirage)",
+          "10:29:36 Studio",
+          "10:49:14 Team Falcons vs. Team Spirit - Map 2 (Anubis)",
+          "11:40:00 Studio",
+          "11:56:02 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "P_eQEE3qlbM": {
+        "title": "ESL Pro League Season 24 - Day 7 - Full show",
+        "length": 871,
+        "timestampLines": [
+          "0:00 Intro",
+          "39:02 Studio",
+          "1:25:45 Team Vitality vs. Aurora Gaming - Map 1 (Anubis)",
+          "2:13:09 Studio",
+          "2:31:49 Team Vitality vs. Aurora Gaming - Map 2 (Cache)",
+          "3:17:58 Studio",
+          "3:37:24 Team Vitality vs. Aurora Gaming - Map 3 (Mirage)",
+          "4:25:13 Studio",
+          "5:23:30 Team Spirit vs. MOUZ - Map 1 (Dust2)",
+          "6:12:29 Studio",
+          "6:31:05 Team Spirit vs. MOUZ - Map 2 (Mirage)",
+          "7:10:58 Studio",
+          "7:30:39 Team Spirit vs. MOUZ - Map 3 (Nuke)",
+          "8:24:20 Studio",
+          "8:40:05 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "82y98I__G4o": {
+        "title": "ESL Pro League Season 24 - Day 8 - Full show",
+        "length": 804,
+        "timestampLines": [
+          "0:00 Intro",
+          "51:30 Studio",
+          "1:01:02 Aurora Gaming vs. Team Spirit - Map 1 (Mirage)",
+          "1:50:55 Studio",
+          "2:09:05 Aurora Gaming vs. Team Spirit - Map 2 (Anubis)",
+          "2:51:00 Studio",
+          "4:24:22 Team Vitality vs. MOUZ - Map 1 (Cache)",
+          "5:09:23 Studio",
+          "5:28:49 Team Vitality vs. MOUZ - Map 2 (Inferno)",
+          "6:12:09 Studio",
+          "6:31:22 Team Vitality vs. MOUZ - Map 3 (Dust2)",
+          "7:33:36 Studio",
+          "7:57:36 Outro"
+        ],
+        "start": "Join the discussion:\nhttp://www.twitter.com/eslcs\nhttp://www.facebook.com/eslcs\nhttp://www.instagram.com/eslcs\n\nhttp://www.twitter.com/iem\nhttp://www.facebook.com/iem\n\nWatch live on Twitch:\nhttps://www.twitch.tv/eslcs\n\nGet the latest ESL apparel:\nhttp://shop.eslgaming.com\n\nYour leading Competitive Gaming Platform:\nhttps://www.faceit.com\n\nGet free statistics for your matchmaking games with \nhttp://"
+      },
+      "qJwibMqAi98": {
+        "title": "[A] G2 Esports vs. Natus Vincere - PGL Masters Bucharest 2026 - Group Stage: Opening Round",
+        "length": 586,
+        "timestampLines": [],
+        "start": "PGL Masters Bucharest 2026 - Counter-Strike 2\n\n📅 October 24 - 31, 2026 | 📍 Bucharest, Romania - PGL Studios\n💰 $1,250,000 | 🎮 16 Top Teams\n\nParticipating Teams:\n\nAurora Gaming\nTeam Spirit\nTeam Vitality\nNatus Vincere\nFURIA\nMOUZ\nLegacy\nG2 Esports\nBetBoom Team\nFUT Esports\n9z Team\nThe MongolZ\nNemiga Gaming\nTeam Liquid\nDENDELE\nTYLOO\n\nTournament Format\n\n🔹 Group Stage (October 24-28):\n16 teams, Swiss"
+      },
+      "AI0JhqZGfv4": {
+        "title": "[B] FURIA vs. DENDELE - PGL Masters Bucharest 2026 - Group Stage: Opening Round",
+        "length": 586,
+        "timestampLines": [],
+        "start": "PGL Masters Bucharest 2026 - Counter-Strike 2\n\n📅 October 24 - 31, 2026 | 📍 Bucharest, Romania - PGL Studios\n💰 $1,250,000 | 🎮 16 Top Teams\n\nParticipating Teams:\n\nAurora Gaming\nTeam Spirit\nTeam Vitality\nNatus Vincere\nFURIA\nMOUZ\nLegacy\nG2 Esports\nBetBoom Team\nFUT Esports\n9z Team\nThe MongolZ\nNemiga Gaming\nTeam Liquid\nDENDELE\nTYLOO\n\nTournament Format\n\n🔹 Group Stage (October 24-28):\n16 teams, Swiss"
+      },
+      "UPqJb2tI09k": {
+        "title": "[A] FURIA vs. Natus Vincere - PGL Masters Bucharest 2026 - Group Stage: Round 2",
+        "length": 586,
+        "timestampLines": [],
+        "start": "PGL Masters Bucharest 2026 - Counter-Strike 2\n\n📅 October 24 - 31, 2026 | 📍 Bucharest, Romania - PGL Studios\n💰 $1,250,000 | 🎮 16 Top Teams\n\nParticipating Teams:\n\nAurora Gaming\nTeam Spirit\nTeam Vitality\nNatus Vincere\nFURIA\nMOUZ\nLegacy\nG2 Esports\nBetBoom Team\nFUT Esports\n9z Team\nThe MongolZ\nNemiga Gaming\nTeam Liquid\nDENDELE\nTYLOO\n\nTournament Format\n\n🔹 Group Stage (October 24-28):\n16 teams, Swiss"
+      },
+      "TWd8KU898Jw": {
+        "title": "[B] Legacy vs. DENDELE - PGL Masters Bucharest 2026 - Group Stage: Round 2",
+        "length": 586,
+        "timestampLines": [],
+        "start": "PGL Masters Bucharest 2026 - Counter-Strike 2\n\n📅 October 24 - 31, 2026 | 📍 Bucharest, Romania - PGL Studios\n💰 $1,250,000 | 🎮 16 Top Teams\n\nParticipating Teams:\n\nAurora Gaming\nTeam Spirit\nTeam Vitality\nNatus Vincere\nFURIA\nMOUZ\nLegacy\nG2 Esports\nBetBoom Team\nFUT Esports\n9z Team\nThe MongolZ\nNemiga Gaming\nTeam Liquid\nDENDELE\nTYLOO\n\nTournament Format\n\n🔹 Group Stage (October 24-28):\n16 teams, Swiss"
+      }
+    },
+    "searches": {
+      "Spirit vs MOUZ BLAST Open Porto 2026 grand final": [
+        {
+          "id": "6Thw4ZbMPdI",
+          "channel": "BLAST Premier",
+          "channelId": "UC9k--dE_UE0Faxzgb_DDkYQ",
+          "title": "BLAST Open Porto 2026, GRAND FINAL - Spirit vs MOUZ",
+          "published": "2026-09-06T19:07:38Z",
+          "duration": "PT5H40M11S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "ZZl2jFTBmt0",
+          "channel": "BLAST Premier CS2 Highlights",
+          "channelId": "UCbWA4nLSXvfWnOS2Q4yP48A",
+          "title": "GRAND FINAL! Spirit vs MOUZ - Official Highlights - BLAST Premier Open Porto 2026",
+          "published": "2026-09-06T18:23:36Z",
+          "duration": "PT1H30M24S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "FM-gZDe7aSg",
+          "channel": "ohnepixel raw",
+          "channelId": "UCWX7tzz1JJVc2Usx0BRn1Cg",
+          "title": "INSANE GRAND FINAL | Spirit vs. Mouz | BLAST Open Porto 2026 Final",
+          "published": "2026-09-06T21:22:43Z",
+          "duration": "PT1H23M46S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "XHCdQLS1Lo4",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs MOUZ - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-06T18:35:06Z",
+          "duration": "PT3H6M13S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "r2ErQYFejKY",
+          "channel": "Focus Fire",
+          "channelId": "UC9Nf3LbKrFmMM73pPYSVHug",
+          "title": "[FIL] BLAST Open Porto 2026 Grand Finals - Spirit vs MOUZ (BO5)",
+          "published": "2026-09-06T18:30:56Z",
+          "duration": "PT4H47M28S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "5bVH8m5qQas",
+          "channel": "fl0m",
+          "channelId": "UCVXA3FX3fCv-YEuBlxpeFVg",
+          "title": "🔴 Team Spirit vs MOUZ | GRAND FINAL | BLAST Porto Open 2026 | fl0m",
+          "published": "2026-09-06T18:44:32Z",
+          "duration": "PT5H11M29S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "-T12YC9ZLo8",
+          "channel": "MaaRaa MN",
+          "channelId": "UC7jQ9aI5xenDR4-J1Dh4TqQ",
+          "title": "[MN] Spirit VS MOUZ | BLAST Open Porto 2026 | Grand final",
+          "published": "2026-09-06T18:27:57Z",
+          "duration": "PT4H30M16S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "8IAhwD9a4HI",
+          "channel": "ohnepixel",
+          "channelId": "UC3ti8PjJczdDKHSwk7TESkw",
+          "title": "🔴SPIRIT vs MOUZ [GRAND FINAL] BLAST PORTO 2026🔴",
+          "published": "2026-09-06T19:36:39Z",
+          "duration": "PT5H38M26S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "lf4HcTNB97g",
+          "channel": "Highlights BLAST & EWC by BETBOOM",
+          "channelId": "UC75feZ1OCLH6BlxkMgkyamA",
+          "title": "Team Spirit vs MOUZ | БО5 | ХАЙЛАЙТЫ - BLAST Open Porto 2026",
+          "published": "2026-09-06T20:36:44Z",
+          "duration": "PT47M3S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "O4YryM-0tSQ",
+          "channel": "Chinzo Gaming",
+          "channelId": "UCis3Zl-X3J0D1nvjU9qZXkA",
+          "title": "/MN/- MOUZ VS SPIRIT - BLAST OPEN PORTO 2026 - GRAND FINAL  -  /BO5/",
+          "published": "2026-09-06T18:34:22Z",
+          "duration": "PT4H30M13S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "OdtSlIZHp2I",
+          "channel": "CS2 Maincast",
+          "channelId": "UCwN7_8XdZY1az0SSDRx8oOA",
+          "title": "HIGHLIGHTS 👉GRAND FINAL! Spirit проти MOUZ | BLAST Premier Open Porto 2026",
+          "published": "2026-09-06T18:28:35Z",
+          "duration": "PT1H34M41S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "4F3vJvz1Yac",
+          "channel": "EDCS - POV",
+          "channelId": "UCw4fqF910B8uCoGQUWPfHsg",
+          "title": "donk 23-9 | Rating 2.32 | Spirit vs MOUZ | ancient | GRAND FINAL BLAST Open Porto 2026",
+          "published": "2026-09-06T21:00:39Z",
+          "duration": "PT17M31S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "Y7Rzb8qUvFo",
+          "channel": "Cyberclasher",
+          "channelId": "UCcfyyYjAFM8932N-BVTU4Hg",
+          "title": "[LIVE] ⚔️Spirit vs MOUZ🏆BLAST Open Porto 2026 - Grand Finals",
+          "published": "2026-09-06T18:34:42Z",
+          "duration": "PT4H20M41S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "2husRmnCESc",
+          "channel": "forg1",
+          "channelId": "UCTdzR5FzTCpyyIwdFyMsSGw",
+          "title": "SPIRIT vs MOUZ || BLAST Open Porto 2026 || Gran Final || BO5 || HIGHLIGHTS",
+          "published": "2026-09-06T19:31:09Z",
+          "duration": "PT1H53M50S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "dyYqJ687cYM",
+          "channel": "Polex",
+          "channelId": "UC4zkyuzj4LIU2zFKesx97Aw",
+          "title": "BLAST OPEN PORTO 2026 - GRANDE FINAL",
+          "published": "2026-09-06T19:10:32Z",
+          "duration": "PT5H24M46S",
+          "embeddable": true,
+          "wasLive": true
+        }
+      ],
+      "Spirit vs MOUZ map 1 BLAST Open Porto 2026": [
+        {
+          "id": "6Thw4ZbMPdI",
+          "channel": "BLAST Premier",
+          "channelId": "UC9k--dE_UE0Faxzgb_DDkYQ",
+          "title": "BLAST Open Porto 2026, GRAND FINAL - Spirit vs MOUZ",
+          "published": "2026-09-06T19:07:38Z",
+          "duration": "PT5H40M11S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "ZZl2jFTBmt0",
+          "channel": "BLAST Premier CS2 Highlights",
+          "channelId": "UCbWA4nLSXvfWnOS2Q4yP48A",
+          "title": "GRAND FINAL! Spirit vs MOUZ - Official Highlights - BLAST Premier Open Porto 2026",
+          "published": "2026-09-06T18:23:36Z",
+          "duration": "PT1H30M24S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "XHCdQLS1Lo4",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs MOUZ - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-06T18:35:06Z",
+          "duration": "PT3H6M13S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "FM-gZDe7aSg",
+          "channel": "ohnepixel raw",
+          "channelId": "UCWX7tzz1JJVc2Usx0BRn1Cg",
+          "title": "INSANE GRAND FINAL | Spirit vs. Mouz | BLAST Open Porto 2026 Final",
+          "published": "2026-09-06T21:22:43Z",
+          "duration": "PT1H23M46S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "J7wqJM3eYqo",
+          "channel": "MAJ3R",
+          "channelId": "UCa-1Z3WVYj-R38hfRDi7bag",
+          "title": "FABREYLE DEDECAST! - SPIRIT VS MOUZ | BLAST Open Porto 2026 Grand Final | BO5 | 1. Map Dust 2",
+          "published": "2026-09-06T15:50:18Z",
+          "duration": "PT48M",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "5bVH8m5qQas",
+          "channel": "fl0m",
+          "channelId": "UCVXA3FX3fCv-YEuBlxpeFVg",
+          "title": "🔴 Team Spirit vs MOUZ | GRAND FINAL | BLAST Porto Open 2026 | fl0m",
+          "published": "2026-09-06T18:44:32Z",
+          "duration": "PT5H11M29S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "obZf-a1q2mE",
+          "channel": "CS2 Maincast VOD`s",
+          "channelId": "UCT1wsGOKUKxN7Hkh70y1N7Q",
+          "title": "Spirit проти MOUZ | Карта 1 | BLAST Open Porto 2026",
+          "published": "2026-09-06T15:35:09Z",
+          "duration": "PT48M45S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "Gmw99kR27kM",
+          "channel": "BLAST Premier",
+          "channelId": "UC9k--dE_UE0Faxzgb_DDkYQ",
+          "title": "BLAST Open Porto 2026, SEMIFINALS - Spirit vs Falcons, MOUZ vs Vitality",
+          "published": "2026-09-05T19:34:49Z",
+          "duration": "PT6H5M30S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "G-sGsilkEe0",
+          "channel": "RoundLab",
+          "channelId": "UC7amDHwE_cxZ7DjC4PnGBCA",
+          "title": "Spirit vs MouZ Finale (Ancient) | Blast Open Porto 2026 Highlights",
+          "published": "2026-09-19T16:00:15Z",
+          "duration": "PT19M43S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "Hb20OnVTjZA",
+          "channel": "topCS2plays",
+          "channelId": "UCRpMWaWgSioZChi-Hm4Z5Uw",
+          "title": "donk Final Map 1 Dust2 Spirit vs MOUZ BLAST Open Porto 2026 CS2",
+          "published": "2026-09-08T17:00:10Z",
+          "duration": "PT23M38S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "hyNq9HBX5Nw",
+          "channel": "POVCounterStrike",
+          "channelId": "UCngLXUSYGqRxZ9-_c8HcvWA",
+          "title": "POV donk spirit vs mouz blast open porto Final",
+          "published": "2026-09-06T20:10:16Z",
+          "duration": "PT5M58S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "UPDx72cbyEY",
+          "channel": "LIM-CS POV | Pro Tournaments",
+          "channelId": "UC5-6i2BapLYKGoLEoddq9LA",
+          "title": "sh1ro (19-10) SPIRIT vs MOUZ (Dust2) | BLAST Open Porto 2026",
+          "published": "2026-09-07T02:03:49Z",
+          "duration": "PT31M56S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "mka6gwrHmks",
+          "channel": "BLAST Premier CS2 Highlights",
+          "channelId": "UCbWA4nLSXvfWnOS2Q4yP48A",
+          "title": "GRAND FINAL! Spirit vs MOUZ - Official Highlights - BLAST Premier Bounty S2 2026",
+          "published": "2026-08-02T15:08:15Z",
+          "duration": "PT1H29M24S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "CqV38Nk_Rv4",
+          "channel": "CSDEX",
+          "channelId": "UCmYnZfP6G1dFa5QdQRQBacA",
+          "title": "Spirit tN1R (13-4) CT A Rotator on Nuke vs MOUZ @ BLAST Open Porto 2026 Grand final",
+          "published": "2026-09-08T17:59:18Z",
+          "duration": "PT14M33S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "lAmq5dCRirE",
+          "channel": "CSDEX",
+          "channelId": "UCmYnZfP6G1dFa5QdQRQBacA",
+          "title": "Spirit sh1ro (15-5) CT Awper on Mirage vs MOUZ @ BLAST Open Porto 2026 Grand final",
+          "published": "2026-09-08T17:59:20Z",
+          "duration": "PT14M23S",
+          "embeddable": true,
+          "wasLive": false
+        }
+      ],
+      "G2 vs NAVI PGL Masters Bucharest 2026": [
+        {
+          "id": "qJwibMqAi98",
+          "channel": "PGL",
+          "channelId": "UC5jpxDZx4yoBo324pMQ91Ww",
+          "title": "[A] G2 Esports vs. Natus Vincere - PGL Masters Bucharest 2026 - Group Stage: Opening Round",
+          "published": "2026-10-24T22:45:14Z",
+          "duration": "PT11H55M1S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "UPqJb2tI09k",
+          "channel": "PGL",
+          "channelId": "UC5jpxDZx4yoBo324pMQ91Ww",
+          "title": "[A] FURIA vs. Natus Vincere - PGL Masters Bucharest 2026 - Group Stage: Round 2",
+          "published": "2026-10-25T07:12:25Z",
+          "duration": "PT10H26M",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "I1vqKnniWww",
+          "channel": "CS2 Maincast",
+          "channelId": "UCwN7_8XdZY1az0SSDRx8oOA",
+          "title": "HIGHLIGHTS 👉 G2 проти NAVI | PGL Masters Bucharest 2026",
+          "published": "2026-10-24T19:18:11Z",
+          "duration": "PT1H8M18S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "-y6YJadckIo",
+          "channel": "Focus Fire",
+          "channelId": "UC9Nf3LbKrFmMM73pPYSVHug",
+          "title": "[FIL] NAVI vs G2 - PGL Masters Bucharest 2026",
+          "published": "2026-10-24T22:19:44Z",
+          "duration": "PT11H54M59S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "d2fG94KDHMo",
+          "channel": "TV Arena Esport",
+          "channelId": "UC61WNEK07Mjo2SzlJnvFH4Q",
+          "title": "PGL MASTERS BUCHAREST 2026 - G2 vs Aurora | FURIA vs NaVi",
+          "published": "2026-10-25T19:26:47Z",
+          "duration": "PT4H59M",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "ReY5jSxMvqM",
+          "channel": "SL4M & Counter-Strike ",
+          "channelId": "UCd3C0cHsp7xSj44UYetK1Nw",
+          "title": "G2 vs NAVI | BO3 | PGL Masters Bucharest 2026 Group Stage | VOD | 🎙КРИВОЙ ЭФИР",
+          "published": "2026-10-24T20:13:06Z",
+          "duration": "PT2H22M53S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "C9Qk54OjEPY",
+          "channel": "TV Arena Esport",
+          "channelId": "UC61WNEK07Mjo2SzlJnvFH4Q",
+          "title": "PGL MASTERS BUCHAREST 2026 - Vitality vs 9z | G2 vs NaVi",
+          "published": "2026-10-24T21:49:03Z",
+          "duration": "PT5H24M41S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "IaxKvctPzK8",
+          "channel": "Gaules",
+          "channelId": "UC5ZTRH1zclthyc6b_D3m2Pw",
+          "title": "FURIA vs NAVI | PGL MASTERS BUCHAREST 2026 | DIA 2 - !socio - Siga @Gaules nas redes sociais!",
+          "published": "2026-10-25T18:28:46Z",
+          "duration": "PT9H56M57S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "aKs-MokK1bA",
+          "channel": "jaxiTV",
+          "channelId": "UCNnj5ZidUZV61UNtZP0M1gQ",
+          "title": "NAVI vs G2 - PGL MASTERS BUCURESTI 1.250.000$",
+          "published": "2026-10-24T19:40:45Z",
+          "duration": "PT8H20M2S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "1tpV29xn1Ks",
+          "channel": "Gaules",
+          "channelId": "UC5ZTRH1zclthyc6b_D3m2Pw",
+          "title": "A TENSÃO TOMOU CONTA! - FURIA x NAVI | MELHORES MOMENTOS | PGL MASTERS BUCHAREST 2026",
+          "published": "2026-10-25T18:21:08Z",
+          "duration": "PT33M9S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "ttN6hJCLAM8",
+          "channel": "CS2 Maincast",
+          "channelId": "UCwN7_8XdZY1az0SSDRx8oOA",
+          "title": "[UA] FURIA проти NAVI | PGL Masters Bucharest 2026",
+          "published": "2026-10-25T19:23:50Z",
+          "duration": "PT10H3M18S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "tM91BT5f4Ds",
+          "channel": "MADHOUSE TV",
+          "channelId": "UCyZ0uI-HkhK1bfhtK3h-XEg",
+          "title": "PGL MASTERS BUCHAREST 2026 (DIA 02) - TODOS OS JOGOS - COMPLETO",
+          "published": "2026-10-25T18:20:04Z",
+          "duration": "PT9H59M19S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "uegDbA2B3U8",
+          "channel": "CS2 Maincast",
+          "channelId": "UCwN7_8XdZY1az0SSDRx8oOA",
+          "title": "[UA] G2 проти NAVI | PGL Masters Bucharest 2026",
+          "published": "2026-10-24T20:20:00Z",
+          "duration": "PT11H54M59S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "dewXS6NpS0s",
+          "channel": "23 FPS TV",
+          "channelId": "UC34VvdW4P5GSxtiAUwt5LXg",
+          "title": "[Highlights] G2 vs NAVI | PGL Masters Bucharest 2026 | Group Stage",
+          "published": "2026-10-24T21:27:30Z",
+          "duration": "PT1H16M24S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "ojN0qBpSrQ4",
+          "channel": "CS2 Maincast",
+          "channelId": "UCwN7_8XdZY1az0SSDRx8oOA",
+          "title": "HIGHLIGHTS 👉 FURIA проти NAVI | PGL Masters Bucharest 2026",
+          "published": "2026-10-25T18:02:32Z",
+          "duration": "PT52M3S",
+          "embeddable": true,
+          "wasLive": false
+        }
+      ],
+      "FURIA vs Vitality BLAST Open Porto 2026 quarterfinal": [
+        {
+          "id": "bQNXNW41YaM",
+          "channel": "BLAST Premier",
+          "channelId": "UC9k--dE_UE0Faxzgb_DDkYQ",
+          "title": "BLAST Open Porto 2026, Quarterfinals - Falcons vs G2, FURIA vs Vitality",
+          "published": "2026-09-04T21:07:51Z",
+          "duration": "PT7H16M21S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "YrpByrmDnjQ",
+          "channel": "BLAST Premier CS2 Highlights",
+          "channelId": "UCbWA4nLSXvfWnOS2Q4yP48A",
+          "title": "QUARTER-FINAL! FURIA vs Vitality - Official Highlights - BLAST Premier Open Porto 2026",
+          "published": "2026-09-04T20:04:23Z",
+          "duration": "PT47M55S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "jPseZeBo0qw",
+          "channel": "ohnepixel raw",
+          "channelId": "UCWX7tzz1JJVc2Usx0BRn1Cg",
+          "title": "INSANE COMEBACK | Vitality vs Furia | BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-04T22:16:29Z",
+          "duration": "PT1H15M32S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "KT_nfDkDESI",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "FURIA vs Vitality - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-04T20:14:01Z",
+          "duration": "PT2H23M8S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "f_XcfcXx8Io",
+          "channel": "BETBOOM ESPORTS",
+          "channelId": "UCukWhjd4-arDJp3DjxPGXvA",
+          "title": "CS2 BLAST Open Porto 2026 | Quarterfinals",
+          "published": "2026-09-04T20:56:32Z",
+          "duration": "PT7H46M5S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "kL7SE_9m_iA",
+          "channel": "Gaules",
+          "channelId": "UC5ZTRH1zclthyc6b_D3m2Pw",
+          "title": "O QUE ACONTECEU? - FURIA x VITALITY - PARTIDA COMPLETA - BLAST OPEN PORTO",
+          "published": "2026-09-04T23:44:15Z",
+          "duration": "PT1H16M41S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "yQYWsRShfcE",
+          "channel": "CSDEX Scouts",
+          "channelId": "UC_8KcbkJb8j89H8MotGYLEQ",
+          "title": "Vitality ropz 3K vs FURIA @ Cache - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-10T14:29:34Z",
+          "duration": "PT7S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "qjLMwEwlLl4",
+          "channel": "CSDEX Scouts",
+          "channelId": "UC_8KcbkJb8j89H8MotGYLEQ",
+          "title": "Vitality ZywOo 3K vs FURIA @ Cache - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-11T02:29:32Z",
+          "duration": "PT13S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "wBsYatnHnus",
+          "channel": "CSDEX Pugstars",
+          "channelId": "UCL9tZTfXXCeznGeYfnKzXaA",
+          "title": "FURIA molodoy 3K vs Vitality @ Cache - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-09T02:28:47Z",
+          "duration": "PT10S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "yEMHjkzeUxw",
+          "channel": "CSDEX",
+          "channelId": "UCmYnZfP6G1dFa5QdQRQBacA",
+          "title": "FURIA YEKINDAR 11 Kills vs Vitality @ Nuke - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-08T17:23:16Z",
+          "duration": "PT29S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "KMH1drfediA",
+          "channel": "DAVE BLUE",
+          "channelId": "UCTF4Cl-oLf1RT8rmnEFH0eA",
+          "title": "OhnePixel react to Vitality getting booed vs Furia getting applauded by crowd at BLAST Open Porto",
+          "published": "2026-09-04T18:56:33Z",
+          "duration": "PT1M1S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "637y7Ld1wa8",
+          "channel": "CSDEX Labs",
+          "channelId": "UC61HLhLR70Eg2HNdKLt_x6Q",
+          "title": "FURIA KSCERATO Highlights vs Vitality @ Nuke - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-09T14:28:21Z",
+          "duration": "PT15S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "SjlG30G4jxY",
+          "channel": "CSDEX Scouts",
+          "channelId": "UC_8KcbkJb8j89H8MotGYLEQ",
+          "title": "Vitality ZywOo 3K vs FURIA @ Cache - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-10T20:29:34Z",
+          "duration": "PT9S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "7RdmCNE81ok",
+          "channel": "CSDEX Scouts",
+          "channelId": "UC_8KcbkJb8j89H8MotGYLEQ",
+          "title": "FURIA KSCERATO 3K vs Vitality @ Nuke - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-10T08:29:11Z",
+          "duration": "PT8S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "5Iv-u4M_SM4",
+          "channel": "CSDEX",
+          "channelId": "UCmYnZfP6G1dFa5QdQRQBacA",
+          "title": "FURIA FalleN 12 Kills vs Vitality @ Nuke - BLAST Open Porto 2026 Quarter-final",
+          "published": "2026-09-08T17:23:32Z",
+          "duration": "PT32S",
+          "embeddable": true,
+          "wasLive": false
+        }
+      ],
+      "ESL Pro League Season 24 grand final": [
+        {
+          "id": "r_k_RwPJexc",
+          "channel": "ESL Archives",
+          "channelId": "UCXQexglLCaJyTImYLmSO9Ng",
+          "title": "Vitality vs. MOUZ - ESL Pro League Season 24 - Grand-final",
+          "published": "2026-10-11T19:28:16Z",
+          "duration": "PT2H35M13S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "9MVib5ZyFps",
+          "channel": "ESL Counter-Strike Highlights",
+          "channelId": "UCDQZcZZwv-RhxHxJpHCdmbQ",
+          "title": "GRAND FINAL! Vitality vs MOUZ - HIGHLIGHTS - ESL Pro League Season 24 | CS2",
+          "published": "2026-10-11T18:41:53Z",
+          "duration": "PT1H22M22S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "82y98I__G4o",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 8 - Full show",
+          "published": "2026-10-11T19:07:49Z",
+          "duration": "PT8H47S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "Y7lVQAPWeN4",
+          "channel": "Meta",
+          "channelId": "UCUIw2cp9BoB_UoyLr4knD8Q",
+          "title": "ESL Pro League S24 - Grand Final - BO5 - MN cast",
+          "published": "2026-10-11T18:33:06Z",
+          "duration": "PT3H24M",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "dqBxvTCv43M",
+          "channel": "ESL Counter-Strike Highlights",
+          "channelId": "UCDQZcZZwv-RhxHxJpHCdmbQ",
+          "title": "WINNER TO GRAND FINAL! MOUZ vs Spirit - HIGHLIGHTS - ESL Pro League Season 24 | CS2",
+          "published": "2026-10-10T20:58:24Z",
+          "duration": "PT1H2M20S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "P_eQEE3qlbM",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 7 - Full show",
+          "published": "2026-10-10T21:28:37Z",
+          "duration": "PT8H46M24S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "AkfbiscU8pM",
+          "channel": "MaaRaa MN",
+          "channelId": "UC7jQ9aI5xenDR4-J1Dh4TqQ",
+          "title": "[MN] Vitality VS MOUZ | ESL Pro League Season 24 | Grand final",
+          "published": "2026-10-11T18:45:56Z",
+          "duration": "PT6H53M57S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "8T3sqnU_J3Q",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 4 - Stream A - Full show",
+          "published": "2026-10-06T23:25:23Z",
+          "duration": "PT11H47M20S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "ZIuMalRKnJo",
+          "channel": "ESL Counter-Strike Highlights",
+          "channelId": "UCDQZcZZwv-RhxHxJpHCdmbQ",
+          "title": "WINNER TO GRAND FINAL! Aurora vs Vitality - HIGHLIGHTS - ESL Pro League Season 24 | CS2",
+          "published": "2026-10-10T17:01:00Z",
+          "duration": "PT57M35S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "WWTcu33u00A",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 6 - Full show",
+          "published": "2026-10-09T20:19:49Z",
+          "duration": "PT11H54M59S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "VFgG8108RUU",
+          "channel": "ohnepixel raw",
+          "channelId": "UCWX7tzz1JJVc2Usx0BRn1Cg",
+          "title": "INSANE GRAND FINAL | VITALITY vs MOUZ | ESL PRO LEAGUE S24",
+          "published": "2026-10-11T21:42:47Z",
+          "duration": "PT1H11M43S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "Im3OHRzxkeg",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 5 - Full show",
+          "published": "2026-10-07T21:07:33Z",
+          "duration": "PT9H22M7S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "FcZAwcUgfag",
+          "channel": "SL4M & Counter-Strike ",
+          "channelId": "UCd3C0cHsp7xSj44UYetK1Nw",
+          "title": "ФИНАЛ! Vitality vs MOUZ  -  ESL Pro League Season 24 | CS2 | 🎙КРИВОЙ ЭФИР",
+          "published": "2026-10-11T20:14:42Z",
+          "duration": "PT7H58M56S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "LcMDVOtgvdk",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 2 - Stream A - Full show",
+          "published": "2026-10-04T19:54:01Z",
+          "duration": "PT11H11M38S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "NkMvFzPy73k",
+          "channel": "23 FPS TV",
+          "channelId": "UC34VvdW4P5GSxtiAUwt5LXg",
+          "title": "[HIGHLIGHTS] Vitality vs Mouz | ESL Pro League Season 24 | GRAND FINAL",
+          "published": "2026-10-12T01:58:24Z",
+          "duration": "PT1H15M55S",
+          "embeddable": true,
+          "wasLive": false
+        }
+      ],
+      "ESL Pro League Season 24 map 1": [
+        {
+          "id": "reWC_jQ2FMY",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 1 - Stream A - Full show",
+          "published": "2026-10-03T19:15:53Z",
+          "duration": "PT10H35M57S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "82y98I__G4o",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 8 - Full show",
+          "published": "2026-10-11T19:07:49Z",
+          "duration": "PT8H47S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "8T3sqnU_J3Q",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 4 - Stream A - Full show",
+          "published": "2026-10-06T23:25:23Z",
+          "duration": "PT11H47M20S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "P_eQEE3qlbM",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 7 - Full show",
+          "published": "2026-10-10T21:28:37Z",
+          "duration": "PT8H46M24S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "x9al9bqwFNI",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 1 - Stream B - Full show",
+          "published": "2026-10-04T02:28:12Z",
+          "duration": "PT11H27M11S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "WWTcu33u00A",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 6 - Full show",
+          "published": "2026-10-09T20:19:49Z",
+          "duration": "PT11H54M59S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "Im3OHRzxkeg",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 5 - Full show",
+          "published": "2026-10-07T21:07:33Z",
+          "duration": "PT9H22M7S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "LcMDVOtgvdk",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 2 - Stream A - Full show",
+          "published": "2026-10-04T19:54:01Z",
+          "duration": "PT11H11M38S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "fNmUYlD8L9E",
+          "channel": "ESL Archives",
+          "channelId": "UCXQexglLCaJyTImYLmSO9Ng",
+          "title": "Spirit vs. ShindeN - ESL Pro League Season 24 - ROUND #1",
+          "published": "2026-10-03T16:39:32Z",
+          "duration": "PT2H28M37S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "GWkVaZlFFRU",
+          "channel": "ESL Counter-Strike",
+          "channelId": "UCPq2ETz4aAGo2Z-8JisDPIA",
+          "title": "ESL Pro League Season 24 - Day 3 - Stream A - Full show",
+          "published": "2026-10-05T20:12:07Z",
+          "duration": "PT11H31M30S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "UTCvI0LwSbI",
+          "channel": "ESL Archives",
+          "channelId": "UCXQexglLCaJyTImYLmSO9Ng",
+          "title": "Aurora vs. Spirit - ESL Pro League Season 24 - 3rd Place decider",
+          "published": "2026-10-11T14:08:32Z",
+          "duration": "PT1H33M39S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "__hBk4jPPFA",
+          "channel": "SL4M & Counter-Strike ",
+          "channelId": "UCd3C0cHsp7xSj44UYetK1Nw",
+          "title": "Day 1 | ESL Pro League Season 24 Quarterfinals | 🎙КРИВОЙ ЭФИР",
+          "published": "2026-10-09T20:56:03Z",
+          "duration": "PT11H26M",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "r_k_RwPJexc",
+          "channel": "ESL Archives",
+          "channelId": "UCXQexglLCaJyTImYLmSO9Ng",
+          "title": "Vitality vs. MOUZ - ESL Pro League Season 24 - Grand-final",
+          "published": "2026-10-11T19:28:16Z",
+          "duration": "PT2H35M13S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "9MVib5ZyFps",
+          "channel": "ESL Counter-Strike Highlights",
+          "channelId": "UCDQZcZZwv-RhxHxJpHCdmbQ",
+          "title": "GRAND FINAL! Vitality vs MOUZ - HIGHLIGHTS - ESL Pro League Season 24 | CS2",
+          "published": "2026-10-11T18:41:53Z",
+          "duration": "PT1H22M22S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "dqBxvTCv43M",
+          "channel": "ESL Counter-Strike Highlights",
+          "channelId": "UCDQZcZZwv-RhxHxJpHCdmbQ",
+          "title": "WINNER TO GRAND FINAL! MOUZ vs Spirit - HIGHLIGHTS - ESL Pro League Season 24 | CS2",
+          "published": "2026-10-10T20:58:24Z",
+          "duration": "PT1H2M20S",
+          "embeddable": true,
+          "wasLive": false
+        }
+      ],
+      "BLAST Open Porto 2026 full match": [
+        {
+          "id": "qWA8A0wJidw",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Falcons vs G2 - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-04T16:17:28Z",
+          "duration": "PT1H41M43S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "XHCdQLS1Lo4",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs MOUZ - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-06T18:35:06Z",
+          "duration": "PT3H6M13S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "mzRUzg6iWQ0",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs Falcons - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-05T16:22:13Z",
+          "duration": "PT1H41M53S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "iJh58u4_2Ws",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "G2 vs Spirit - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-28T16:00:24Z",
+          "duration": "PT1H42M43S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "I5bSrP14Aqo",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs FURIA - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-31T12:55:26Z",
+          "duration": "PT1H29M21S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "IxLWZT9FM3w",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Legacy vs Falcons - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-29T21:45:37Z",
+          "duration": "PT2H14M7S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "nqa_cvZWy7k",
+          "channel": "Meta",
+          "channelId": "UCUIw2cp9BoB_UoyLr4knD8Q",
+          "title": "BLAST Open Porto 2026 - Playoffs - Quarterfinals - MN cast",
+          "published": "2026-09-04T20:08:06Z",
+          "duration": "PT6H16M59S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "X1wjP7lxsJc",
+          "channel": "BLAST Premier",
+          "channelId": "UC9k--dE_UE0Faxzgb_DDkYQ",
+          "title": "BLAST Premier Open Porto 2026 OPENING MATCHES 🇵🇹🙌",
+          "published": "2026-08-17T15:03:46Z",
+          "duration": "PT2M42S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "fmrECrAm0Sg",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Vitality vs Legacy - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-30T20:55:23Z",
+          "duration": "PT2H39M",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "8eQ1rwcZ0xs",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "FUT vs Vitality - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-31T22:00:03Z",
+          "duration": "PT1H29M11S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "oIRCXOrllzE",
+          "channel": "BLAST Premier",
+          "channelId": "UC9k--dE_UE0Faxzgb_DDkYQ",
+          "title": "BEST MOMENTS of BLAST Open Porto 2026 Group Stage",
+          "published": "2026-09-01T07:00:07Z",
+          "duration": "PT20M22S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "pitkLCzW1_k",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Falcons vs Lynn Vision - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-27T20:25:10Z",
+          "duration": "PT2H20M7S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "KT_nfDkDESI",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "FURIA vs Vitality - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-04T20:14:01Z",
+          "duration": "PT2H23M8S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "bQNXNW41YaM",
+          "channel": "BLAST Premier",
+          "channelId": "UC9k--dE_UE0Faxzgb_DDkYQ",
+          "title": "BLAST Open Porto 2026, Quarterfinals - Falcons vs G2, FURIA vs Vitality",
+          "published": "2026-09-04T21:07:51Z",
+          "duration": "PT7H16M21S",
+          "embeddable": true,
+          "wasLive": true
+        },
+        {
+          "id": "-3HIMZY5uaw",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "MOUZ vs Vitality - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-05T19:06:11Z",
+          "duration": "PT1H35M52S",
+          "embeddable": true,
+          "wasLive": false
+        }
+      ],
+      "CS2 full match VOD 2026": [
+        {
+          "id": "mzRUzg6iWQ0",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs Falcons - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-05T16:22:13Z",
+          "duration": "PT1H41M53S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "IxLWZT9FM3w",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Legacy vs Falcons - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-29T21:45:37Z",
+          "duration": "PT2H14M7S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "YQNqvCc-sOU",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Vitality vs Falcons - Full CS2 Match VOD - BLAST Bounty Malta Season 1 2026",
+          "published": "2026-01-24T18:05:04Z",
+          "duration": "PT2H13M37S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "hRcpsaW8DTE",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Vitality vs NAVI - Full CS2 Match VOD - BLAST Open Rotterdam 2026",
+          "published": "2026-03-29T14:15:39Z",
+          "duration": "PT2H41M20S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "p6U28DEBn8A",
+          "channel": "ESL Archives",
+          "channelId": "UCXQexglLCaJyTImYLmSO9Ng",
+          "title": "FURIA vs. Falcons - IEM Cologne Major 2026 Playoffs - Grand-final",
+          "published": "2026-06-21T20:08:31Z",
+          "duration": "PT2H44M7S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "XHCdQLS1Lo4",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs MOUZ - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-09-06T18:35:06Z",
+          "duration": "PT3H6M13S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "I5bSrP14Aqo",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs FURIA - BLAST Open Porto 2026 - Full Counter-Strike Match VOD",
+          "published": "2026-08-31T12:55:26Z",
+          "duration": "PT1H29M21S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "gwDAc5ofgUI",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Team Liquid vs Spirit - Full Counter-Strike Match VOD - BLAST Bounty Malta 2026 S2",
+          "published": "2026-07-30T14:55:26Z",
+          "duration": "PT1H24M31S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "Co5d7IQaUyI",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "FaZe vs Spirit - Full Counter-Strike Match VOD - BLAST Bounty Malta 2026 S2",
+          "published": "2026-08-01T13:47:20Z",
+          "duration": "PT2H29M59S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "ewjjXce8B1E",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "NAVI vs Vitality - Full CS2 Match VOD - BLAST Rivals Fort Worth 2026",
+          "published": "2026-05-03T21:16:34Z",
+          "duration": "PT2H36M49S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "ShaapH9gQZY",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs Vitality - Full CS2 Match VOD - BLAST Rivals Hong Kong 2025",
+          "published": "2025-11-14T15:04:18Z",
+          "duration": "PT3H31M6S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "I30m-F7oYiY",
+          "channel": "EWC Extra",
+          "channelId": "UCef7TE-TfKtAHukBHfXBhvA",
+          "title": "Vitality vs. Spirit | CS2 at EWC 26 - Quarterfinal - VOD",
+          "published": "2026-08-21T20:17:16Z",
+          "duration": "PT2H41M26S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "k4uLbGkm6Ls",
+          "channel": "Siez CSGO",
+          "channelId": "UCfr-p44-ihSytVc_Ebgw2_w",
+          "title": "CS2 POV | DONK ON FIRE🔥 60 KILLS! Faceit Ranked (DUST2) Voicecomms 60-27",
+          "published": "2024-07-14T13:59:26Z",
+          "duration": "PT32M49S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "Ja8sIK26HPk",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "TYLOO vs Falcons - Full CS2 Match VOD - BLAST Open Rotterdam 2026",
+          "published": "2026-03-22T14:00:44Z",
+          "duration": "PT2H14M37S",
+          "embeddable": true,
+          "wasLive": false
+        },
+        {
+          "id": "0G50IAwYIq0",
+          "channel": "BLAST Premier VOD Archive",
+          "channelId": "UC9O88aQhTVtoxVrCVQalTLQ",
+          "title": "Spirit vs MOUZ - Full Counter-Strike Match VOD - BLAST Bounty Malta 2026 S2",
+          "published": "2026-08-02T15:09:10Z",
+          "duration": "PT3H15M14S",
+          "embeddable": true,
+          "wasLive": false
+        }
+      ]
+    },
+    "liquipedia": {
+      "BLAST Open Porto 2026": {
+        "pages": [
+          {
+            "title": "BLAST/Open/2026/Fall",
+            "length": 57920,
+            "vodCount": 68,
+            "vodSamples": [
+              "https://youtu.be/PtYHZZKLY80&t=21",
+              "https://youtu.be/PtYHZZKLY80&t=2976",
+              "https://youtu.be/JjhAXKobLfw&t=24",
+              "https://youtu.be/JjhAXKobLfw&t=2733",
+              "https://youtu.be/OI_0foLsGxk&t=30",
+              "https://youtu.be/OI_0foLsGxk&t=2002",
+              "https://youtu.be/_zI8n6Ln9B0&t=22",
+              "https://youtu.be/_zI8n6Ln9B0&t=2437",
+              "https://youtu.be/_zI8n6Ln9B0&t=5218",
+              "https://youtu.be/iJh58u4_2Ws&t=28",
+              "https://youtu.be/iJh58u4_2Ws&t=2861",
+              "https://youtu.be/5uMqu31a9OY&t=10",
+              "https://youtu.be/5uMqu31a9OY&t=4164",
+              "https://youtu.be/I5bSrP14Aqo&t=23",
+              "https://youtu.be/I5bSrP14Aqo&t=3043"
+            ],
+            "hasMatch2": true
+          },
+          {
+            "title": "S-Tier Tournaments",
+            "length": 68,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "Valve Tier 1 Events",
+            "length": 1039,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "Donk",
+            "length": 31566,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          }
+        ],
+        "searchHits": [
+          "BLAST/Open/2026/Fall",
+          "S-Tier Tournaments",
+          "Valve Tier 1 Events",
+          "Donk",
+          "BLAST/Open/2026/Fall/North America",
+          "DENDELE CS/Results"
+        ]
+      },
+      "ESL Pro League Season 24": {
+        "pages": [
+          {
+            "title": "ESL/Pro League/Season 24",
+            "length": 62358,
+            "vodCount": 99,
+            "vodSamples": [
+              "https://youtu.be/PBsT2Ju9eX4&t=106",
+              "https://youtu.be/PBsT2Ju9eX4&t=3317",
+              "https://youtu.be/P2f_fo3XR4Q&t=14",
+              "https://youtu.be/P2f_fo3XR4Q&t=2452",
+              "https://youtu.be/P2f_fo3XR4Q&t=4519",
+              "https://youtu.be/fNmUYlD8L9E&t=29",
+              "https://youtu.be/fNmUYlD8L9E&t=3538",
+              "https://youtu.be/fNmUYlD8L9E&t=6671",
+              "https://youtu.be/Ofdkv-Cxj18&t=40",
+              "https://youtu.be/Ofdkv-Cxj18&t=1846",
+              "https://youtu.be/Vzc56Oc1M2U&t=38",
+              "https://youtu.be/Vzc56Oc1M2U&t=2997",
+              "https://youtu.be/AAH05Lv60Ms&t=28",
+              "https://youtu.be/AAH05Lv60Ms&t=2365",
+              "https://youtu.be/C-fnJY34PAI&t=29"
+            ],
+            "hasMatch2": true
+          },
+          {
+            "title": "Skriv",
+            "length": 688,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "Buckethead",
+            "length": 1657,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "ESL/Grand Slam/VII",
+            "length": 3519,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          }
+        ],
+        "searchHits": [
+          "ESL/Pro League/Season 24",
+          "Skriv",
+          "Buckethead",
+          "ESL/Grand Slam/VII",
+          "Valve Wildcard Events",
+          "HLTV/MVP Awards"
+        ]
+      },
+      "PGL Masters Bucharest 2026": {
+        "pages": [
+          {
+            "title": "Team Spirit",
+            "length": 26524,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "Aurora Gaming",
+            "length": 25737,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "FUT Esports",
+            "length": 9097,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "Legacy",
+            "length": 20038,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          }
+        ],
+        "searchHits": [
+          "Team Spirit",
+          "Aurora Gaming",
+          "FUT Esports",
+          "Legacy",
+          "FURIA",
+          "G2 Esports"
+        ]
+      },
+      "IEM Cologne 2025": {
+        "pages": [
+          {
+            "title": "Intel Extreme Masters/2025/Cologne",
+            "length": 100747,
+            "vodCount": 114,
+            "vodSamples": [
+              "https://youtu.be/WsBGWYEYB5w?t=10",
+              "https://youtu.be/WsBGWYEYB5w?t=3901",
+              "https://youtu.be/h9xe-AKqkeA?t=5",
+              "https://youtu.be/h9xe-AKqkeA?t=3823",
+              "https://youtu.be/5rAolb8uvQg?t=2",
+              "https://youtu.be/5rAolb8uvQg?t=2767",
+              "https://youtu.be/Rp-axV92RRo?t=7",
+              "https://youtu.be/Rp-axV92RRo?t=2836",
+              "https://youtu.be/Rp-axV92RRo?t=5853",
+              "https://youtu.be/YkSpiOar_0w?t=4",
+              "https://youtu.be/YkSpiOar_0w?t=2209",
+              "https://youtu.be/IFtIof4M3yo?t=8",
+              "https://youtu.be/IFtIof4M3yo?t=4034",
+              "https://youtu.be/PYUaJ2CcR24?t=7",
+              "https://youtu.be/PYUaJ2CcR24?t=1837"
+            ],
+            "hasMatch2": true
+          },
+          {
+            "title": "SunPayus",
+            "length": 6024,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "ESL/Grand Slam/VI",
+            "length": 3665,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          },
+          {
+            "title": "Jks",
+            "length": 12316,
+            "vodCount": 0,
+            "vodSamples": [],
+            "hasMatch2": false
+          }
+        ],
+        "searchHits": [
+          "Intel Extreme Masters/2025/Cologne",
+          "SunPayus",
+          "ESL/Grand Slam/VI",
+          "Jks",
+          "Gr1ks",
+          "Kyousuke"
+        ]
+      }
+    }
   }
 }
