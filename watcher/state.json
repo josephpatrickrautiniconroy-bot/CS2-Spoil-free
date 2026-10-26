@@ -5,19 +5,19 @@
       "revid": 3463168,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-26T01:17:56.352Z"
+      "fetchedAt": "2026-10-26T01:30:24.110Z"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-26T01:17:56.352Z"
+      "fetchedAt": "2026-10-26T01:30:24.110Z"
     },
     "BLAST/Open/2026/Fall": {
       "revid": 3446344,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-26T01:17:56.352Z"
+      "fetchedAt": "2026-10-26T01:30:24.110Z"
     },
     "Intel Extreme Masters/2026/Cologne": {
       "revid": 3462007,
@@ -33,25 +33,25 @@
         "Intel Extreme Masters/2026/Cologne/Stage 1": 3413160,
         "Intel Extreme Masters/2026/Cologne/Playoffs": 3390154
       },
-      "fetchedAt": "2026-10-26T01:17:56.352Z"
-    },
-    "BLAST/Rivals/2026/Fall": {
-      "revid": 3462416,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:17:56.352Z"
-    },
-    "PGL/2026/Singapore": {
-      "revid": 3463117,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:17:56.352Z"
+      "fetchedAt": "2026-10-26T01:30:24.110Z"
     },
     "Intel Extreme Masters/2026/Beijing": {
       "revid": 3461671,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-26T01:20:02.475Z"
+      "fetchedAt": "2026-10-26T01:30:24.110Z"
+    },
+    "BLAST/Rivals/2026/Fall": {
+      "revid": 3462416,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:30:24.110Z"
+    },
+    "PGL/2026/Singapore": {
+      "revid": 3463117,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:30:24.110Z"
     }
   },
   "resolved": {
@@ -1182,5 +1182,6 @@
       "seconds": 9847,
       "checkedAt": "2026-10-26T01:17:56.352Z"
     }
-  }
+  },
+  "parserVersion": 2
 }
