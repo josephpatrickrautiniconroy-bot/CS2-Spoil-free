@@ -167,26 +167,126 @@
       "subRevids": {},
       "fetchedAt": "2026-10-26T01:37:41.321Z"
     },
-    "FiReSPORTS/Major/2027/Buenos Aires": {},
-    "Forge of Legends/2026": {},
-    "Intel Extreme Masters/2027/Brazil": {},
-    "Intel Extreme Masters/2027/Cologne": {},
-    "Intel Extreme Masters/2027/Kraków": {},
-    "Intel Extreme Masters/2027/United States": {},
-    "PGL/2026/Fall": {},
-    "PGL/2026/Summer": {},
-    "PGL/2027/Bucharest": {},
-    "PGL/2027/China": {},
-    "PGL/2027/Cluj-Napoca": {},
-    "PGL/2027/October": {},
-    "PGL/2027/September": {},
-    "PGL/2027/Łódź": {},
-    "Perfect World/Major/2027/Shanghai": {},
-    "StarLadder/StarSeries/2026/Fall": {},
-    "StarLadder/StarSeries/2027/Fall": {},
-    "Thunderpick/World Championship/2026": {},
-    "YaLLa Compass/2026/Summer": {},
-    "YaLLa Compass/2026/UAE": {}
+    "FiReSPORTS/Major/2027/Buenos Aires": {
+      "revid": 3447349,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Forge of Legends/2026": {
+      "revid": 3377614,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Intel Extreme Masters/2027/Brazil": {
+      "revid": 3454014,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Intel Extreme Masters/2027/Cologne": {
+      "revid": 3454005,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Intel Extreme Masters/2027/Kraków": {
+      "revid": 3454006,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Intel Extreme Masters/2027/United States": {
+      "revid": 3454013,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2026/Fall": {
+      "revid": 3411917,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2026/Summer": {
+      "revid": 3411916,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2027/Bucharest": {
+      "revid": 3461697,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2027/China": {
+      "revid": 3456893,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2027/Cluj-Napoca": {
+      "revid": 3456852,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2027/October": {
+      "revid": 3456934,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2027/September": {
+      "revid": 3456929,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "PGL/2027/Łódź": {
+      "revid": 3456870,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Perfect World/Major/2027/Shanghai": {
+      "revid": 3448190,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "StarLadder/StarSeries/2026/Fall": {
+      "revid": 3450463,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "StarLadder/StarSeries/2027/Fall": {
+      "revid": 3448985,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Thunderpick/World Championship/2026": {
+      "revid": 3462582,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "YaLLa Compass/2026/Summer": {
+      "revid": 3432052,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "YaLLa Compass/2026/UAE": {
+      "revid": 3403849,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:42:31.452Z"
+    }
   },
   "resolved": {
     "IEM Cologne Major 2026": "Intel Extreme Masters/2026/Cologne",
@@ -1670,6 +1770,76 @@
       "ok": true,
       "seconds": 13373,
       "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "ZWv5cwe8WO8": {
+      "ok": true,
+      "seconds": 8382,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "l94aqGHxLPg": {
+      "ok": true,
+      "seconds": 5094,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "1E6LIK7EGHs": {
+      "ok": true,
+      "seconds": 5400,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "5W4-_BHXl7g": {
+      "ok": true,
+      "seconds": 7830,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "h9Aqi4BzpfM": {
+      "ok": true,
+      "seconds": 8692,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "09SREO1c36Q": {
+      "ok": true,
+      "seconds": 7849,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "KAIwaUgiKvo": {
+      "ok": true,
+      "seconds": 7301,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "OvpiH_e2D6s": {
+      "ok": true,
+      "seconds": 5148,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "Et6cs2OYQAc": {
+      "ok": true,
+      "seconds": 4541,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "OEwN5pO-xFA": {
+      "ok": true,
+      "seconds": 9581,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "jhRCPLzyino": {
+      "ok": true,
+      "seconds": 8677,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "unV0K0cpsGE": {
+      "ok": true,
+      "seconds": 5691,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "edHKRIU5BUU": {
+      "ok": true,
+      "seconds": 4802,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
+    },
+    "WsjToHpGI-M": {
+      "ok": true,
+      "seconds": 10438,
+      "checkedAt": "2026-10-26T01:42:31.452Z"
     }
   },
   "parserVersion": 4,
