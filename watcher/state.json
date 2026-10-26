@@ -1,8 +1,10 @@
 {
   "version": 1,
-  "configHash": "",
+  "configHash": "ec57ba31",
   "uploads": {},
   "seen": {},
   "pending": {},
-  "matchActivity": {}
+  "matchActivity": {},
+  "stageStart": {},
+  "backfilled": {}
 }
