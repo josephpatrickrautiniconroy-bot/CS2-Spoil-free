@@ -1,0 +1,22 @@
+name: Video quality probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['probe/**', '.github/workflows/quality-probe.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i --no-save playwright@1.48.2
+      - name: Measure with Google Chrome
+        run: node probe/quality.mjs
+        env:
+          PROBE_CHANNEL: chrome

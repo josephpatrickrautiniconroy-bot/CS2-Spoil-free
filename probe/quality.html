@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Quality probe</title>
+<style>body{margin:0;background:#111}#frame{position:relative;overflow:hidden;background:#000}#host{position:absolute;left:0;top:0;border:0;transform-origin:0 0}#over{position:absolute;inset:0;z-index:2}</style>
+<div id="frame"><div id="host"></div></div>
+<script>
+// ?w=854&h=480&vw=1920&vh=1080&controls=0&overlay=1&v=ID&start=106
+const q = new URLSearchParams(location.search);
+const w = +q.get('w'), hgt = +q.get('h'), vw = +(q.get('vw') || w), vh = +(q.get('vh') || hgt);
+const frame = document.getElementById('frame'), host = document.getElementById('host');
+frame.style.width = w + 'px'; frame.style.height = hgt + 'px';
+host.style.width = vw + 'px'; host.style.height = vh + 'px';
+if (vw !== w) host.style.transform = 'scale(' + (w / vw) + ')';
+if (q.get('overlay') === '1') frame.insertAdjacentHTML('beforeend', '<div id="over"></div>');
+window.onYouTubeIframeAPIReady = () => {
+  window.player = new YT.Player('host', {
+    host: 'https://www.youtube-nocookie.com', videoId: q.get('v'), width: vw, height: vh,
+    playerVars: { controls: +(q.get('controls') || 0), autoplay: 1, mute: 1, playsinline: 1, rel: 0, start: +(q.get('start') || 0), origin: location.origin },
+    events: { onReady: e => { e.target.mute(); e.target.playVideo(); } }
+  });
+  const f = document.querySelector('#host'); if (f && f.tagName === 'IFRAME') { f.style.transform = host.style.transform; }
+};
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
