@@ -50,18 +50,21 @@ jobs:
       - name: Save what the watcher found
         id: save
         run: |
-          if git diff --quiet -- auto.json; then
+          # New or changed event pictures count as a site change too.
+          pictures="$(git status --porcelain -- images 2>/dev/null)"
+          if git diff --quiet -- auto.json && [ -z "$pictures" ]; then
             echo "site_changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "site_changed=true" >> "$GITHUB_OUTPUT"
           fi
-          if git diff --quiet -- auto.json watcher/state.json; then
+          if git diff --quiet -- auto.json watcher/state.json && [ -z "$pictures" ]; then
             echo "Nothing new to save."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add auto.json watcher/state.json
+          if [ -d images ]; then git add -A images; fi
           git commit -m "Video watcher: new videos"
           git pull --rebase -X theirs
           git push

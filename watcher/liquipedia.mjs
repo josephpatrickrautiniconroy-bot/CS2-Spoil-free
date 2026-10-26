@@ -7,7 +7,7 @@
 */
 
 // Bump when the reader changes, so the watcher reads every page again with the new version.
-export const PARSER_VERSION = 5;
+export const PARSER_VERSION = 6;
 
 /* ---------- template parsing ---------- */
 
@@ -129,7 +129,9 @@ export function parseInfobox(text) {
       name: plain(p.name), shortname: plain(p.shortname), series: plain(p.series), organizer: plain(p.organizer),
       sdate: stripComments(p.sdate || p.date).trim(), edate: stripComments(p.edate || p.date).trim(),
       city: plain(p.city), country: plain(p.country), type: plain(p.type), tier: plain(p.liquipediatier),
-      teamNumber: plain(p.team_number), prizepool: plain(p.prizepoolusd || p.prizepool)
+      teamNumber: plain(p.team_number), prizepool: plain(p.prizepoolusd || p.prizepool),
+      // Logo file names on Liquipedia: one for light backgrounds, and one for dark if there is one.
+      image: plain(p.image), imageDark: plain(p.imagedark || p.imagedarkmode)
     });
   }
   const display = (text.match(/\{\{DISPLAYTITLE:\s*([^}]*)\}\}/) || [])[1] || '';

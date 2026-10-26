@@ -122,6 +122,19 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .section-in{padding-block:48px 64px;display:flex;flex-direction:column;gap:28px}
 .section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
+.group{display:flex;flex-direction:column;gap:20px}
+.group + .group{padding-top:20px}
+.group-note{color:var(--muted);margin-top:-12px}
+.live-dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--accent);margin-right:12px;vertical-align:middle}
+.show-more{align-self:flex-start}
+/* Event logos come in a version for light backgrounds and one for dark. */
+.art-logo.dk{display:none}
+:root[data-theme="dark"] .art-logo.lt{display:none}
+:root[data-theme="dark"] .art-logo.dk{display:block}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .art-logo.lt{display:none}
+  :root:not([data-theme="light"]) .art-logo.dk{display:block}
+}
 .chip{min-height:44px;padding:8px 18px;background:transparent;color:var(--ink);border:2px solid var(--strong);font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--inv);color:var(--inv-ink)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:32px 24px}
@@ -583,7 +596,7 @@ function mergeAuto(d, auto) {
   arr(auto.tournaments).forEach(at => {
     if (!at || !at.id || hidden.has(str(at.id)) || d.tournaments.some(x => x.id === str(at.id))) return;
     d.tournaments.push({ id: str(at.id), name: str(at.name), year: str(at.year), dates: str(at.dates), location: str(at.location),
-      teamsText: str(at.teamsText), logo: '', art: '', stages: [] });
+      teamsText: str(at.teamsText), logo: str(at.logo), logoDark: str(at.logoDark), art: str(at.art), sdate: str(at.sdate), edate: str(at.edate), stages: [] });
   });
   const all = new Map();
   d.tournaments.forEach(t => t.stages.forEach(s => s.rounds.forEach(r => r.matches.forEach(m => all.set(m.id, m)))));
@@ -662,6 +675,16 @@ async function loadSources() {
 }
 let showControls = true;
 let homeYear = 'all';
+let showAllUpcoming = false;
+/* Where an event stands today: 'upcoming', 'live' or 'done'. Events without dates count as done. */
+function tStatus(t) {
+  const today = new Date().toISOString().slice(0, 10);
+  const sd = str(t.sdate).slice(0, 10), ed = str(t.edate).slice(0, 10) || sd;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(sd)) return /^\d{4}/.test(sd) && sd.slice(0, 4) > today.slice(0, 4) ? 'upcoming' : 'done';
+  if (sd > today) return 'upcoming';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(ed) && ed < today) return 'done';
+  return 'live';
+}
 let autoplayNext = false;
 let teamsChangedInMatch = false;
 let P = null; // the active video player
@@ -801,6 +824,7 @@ function logoBox(tm, cls) {
 }
 function artView(t) {
   if (t.art) return h('img', { src: t.art, alt: '' });
+  if (t.logo && t.logoDark) return h('div', { class: 'art-fallback' }, h('img', { class: 'art-logo lt', src: t.logo, alt: '' }), h('img', { class: 'art-logo dk', src: t.logoDark, alt: '' }));
   if (t.logo) return h('div', { class: 'art-fallback' }, h('img', { class: 'art-logo', src: t.logo, alt: '' }));
   return h('div', { class: 'art-fallback' }, h('span', { class: 'art-name' }, t.name || 'Tournament'));
 }
@@ -911,22 +935,40 @@ function renderHome(app) {
   if (feat) hero.append(h('div', { class: 'hero-art' }, artView(feat)));
   app.append(hero);
 
-  // tournament list
-  const years = [...new Set(ts.map(t => t.year.trim()).filter(Boolean))].sort().reverse();
-  if (homeYear !== 'all' && !years.includes(homeYear)) homeYear = 'all';
-  const head = h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'All tournaments'));
-  if (years.length > 1) {
-    head.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Filter by year' },
-      ['all'].concat(years).map(y => h('button', { type: 'button', class: 'chip', 'aria-pressed': String(homeYear === y), onClick: () => { homeYear = y; rerender(); } }, y === 'all' ? 'All' : y))));
-  }
-  const inner = h('div', { class: 'wrap section-in' }, head);
-  const shown = ts.filter(t => homeYear === 'all' || t.year.trim() === homeYear);
+  // tournament list, in three groups: on now, finished, and still to come
+  const inner = h('div', { class: 'wrap section-in' });
   if (!ts.length && !editing()) inner.append(h('p', { class: 'empty' }, 'No tournaments have been added yet. Check back soon.'));
-  else {
+  const live = ts.filter(t => tStatus(t) === 'live');
+  const done = ts.filter(t => tStatus(t) === 'done');
+  // Coming up: soonest first.
+  const upcoming = ts.filter(t => tStatus(t) === 'upcoming').sort((a, b) => str(a.sdate) < str(b.sdate) ? -1 : str(a.sdate) > str(b.sdate) ? 1 : 0);
+  if (live.length) {
+    inner.append(h('div', { class: 'group', id: 'grp-live' },
+      h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, h('span', { class: 'live-dot', 'aria-hidden': 'true' }), 'Happening now')),
+      h('p', { class: 'group-note' }, 'Matches are added as their videos come out, usually within a day.'),
+      h('div', { class: 'grid' }, live.map(tCard))));
+  }
+  if (done.length || editing()) {
+    const years = [...new Set(done.map(t => t.year.trim()).filter(Boolean))].sort().reverse();
+    if (homeYear !== 'all' && !years.includes(homeYear)) homeYear = 'all';
+    const head = h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Ready to watch'));
+    if (years.length > 1) {
+      head.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Filter by year' },
+        ['all'].concat(years).map(y => h('button', { type: 'button', class: 'chip', 'aria-pressed': String(homeYear === y), onClick: () => { homeYear = y; rerender(); } }, y === 'all' ? 'All' : y))));
+    }
     const grid = h('div', { class: 'grid' });
     if (editing()) grid.append(h('button', { type: 'button', class: 'add-tile', onClick: addTournament }, '+ Add tournament'));
-    shown.forEach(t => grid.append(tCard(t)));
-    inner.append(grid);
+    done.filter(t => homeYear === 'all' || t.year.trim() === homeYear).forEach(t => grid.append(tCard(t)));
+    inner.append(h('div', { class: 'group', id: 'grp-done' }, head,
+      h('p', { class: 'group-note' }, 'Finished events. Start from the first match and watch it unfold.'), grid));
+  }
+  if (upcoming.length) {
+    const first = showAllUpcoming ? upcoming : upcoming.slice(0, 6);
+    inner.append(h('div', { class: 'group', id: 'grp-upcoming' },
+      h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Coming up')),
+      h('p', { class: 'group-note' }, 'Matches show up here once they’re drawn.'),
+      h('div', { class: 'grid' }, first.map(tCard)),
+      upcoming.length > first.length ? h('button', { type: 'button', class: 'btn btn-outline show-more', onClick: () => { showAllUpcoming = true; rerender(); } }, 'Show all ' + upcoming.length) : null));
   }
   app.append(h('section', { class: 'section', id: 'sec-tournaments' }, inner));
 
@@ -939,12 +981,15 @@ function renderHome(app) {
 }
 function tCard(t) {
   const n = countMatches(t);
+  const st = tStatus(t);
+  const meta = st === 'upcoming' && !n ? 'Coming up' + (t.teamsText ? ' · ' + t.teamsText : '')
+    : (st === 'live' ? 'Live · ' : '') + plural(t.stages.length, 'stage') + ' · ' + plural(n, 'match', 'matches');
   return h('a', { class: 't-card', href: '#/t/' + t.id },
     h('div', { class: 't-art' }, artView(t)),
     h('div', { class: 't-body' },
       h('div', { class: 't-name' }, t.name || 'Untitled tournament'),
       t.dates ? h('div', { class: 't-dates' }, t.dates) : null,
-      h('div', { class: 't-meta' }, plural(t.stages.length, 'stage') + ' · ' + plural(n, 'match', 'matches'))));
+      h('div', { class: 't-meta' }, meta)));
 }
 function addTournament() {
   const t = {
@@ -1007,7 +1052,7 @@ function renderTournament(app, r) {
 
   const body = h('section', { class: 'wrap stage-body' });
   app.append(body);
-  if (!s) { body.append(h('p', { class: 'empty' }, editing() ? 'Add a stage to start adding matches.' : 'No matches have been added yet.')); return; }
+  if (!s) { body.append(h('p', { class: 'empty' }, editing() ? 'Add a stage to start adding matches.' : (tStatus(t) === 'upcoming' ? 'This event hasn’t started yet. Its matches show up here once they’re drawn.' : 'No matches have been added yet.'))); return; }
   const si = t.stages.indexOf(s);
   body.append(h('div', { class: 'section-head' },
     ed('h2', 'h2', s.name || (editing() ? '' : 'Stage'), v => { s.name = v; }, { label: 'Stage name', placeholder: 'Stage name' }),

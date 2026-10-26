@@ -36,7 +36,13 @@ The watcher never saves scores, winners, placements or video titles. The only re
   - To leave an event out, put its Liquipedia page name in `exclude`, for example `"FISSURE/Playground/6"`.
 - **`tournaments`** lists events by hand. Use `"liquipedia"` with the page name from its address (https://liquipedia.net/counterstrike/ESL/Pro_League/Season_24 is `"ESL/Pro League/Season 24"`), or `"search"` with the event's name. Add `"name"` to show a different name on the site.
 
-An event appears on the site once its first matches are drawn. A finished event that never got any videos stays hidden. FISSURE doesn't post match videos, for example.
+The home page sorts events into **Happening now**, **Ready to watch** (finished) and **Coming up**, based on their dates. Upcoming events are listed before their matches are drawn. A finished event without any videos is hidden. FISSURE doesn't post match videos, for example.
+
+## Event pictures
+
+Each event's logo is copied from Liquipedia into `images/auto/` automatically, with a separate version for dark mode if Liquipedia has one.
+
+To use your own picture instead, upload it to the `images/events/` folder, named after the event's id, for example `images/events/esl-pro-league-season-24.jpg` (JPG, PNG or WebP, ideally 1600×900). The id is the last part of the event's address on the site (`#/t/esl-pro-league-season-24`). On GitHub, open the repository, click **Add file → Upload files**, drag the picture in, and type `images/events/` before its name. The next watcher run (within 30 minutes) puts it on the site.
 
 ## If something looks wrong
 

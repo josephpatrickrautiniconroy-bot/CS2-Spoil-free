@@ -19,7 +19,7 @@
   Liquipedia's API rules: an identifying User-Agent and at most one request every 2 seconds.
   Its content is CC BY-SA, so the site credits it.
 */
-import { readFile, writeFile, appendFile } from 'node:fs/promises';
+import { readFile, writeFile, appendFile, mkdir, readdir, unlink } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -29,7 +29,9 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FILES = {
   config: path.join(ROOT, 'watcher', 'config.json'),
   state: path.join(ROOT, 'watcher', 'state.json'),
-  auto: path.join(ROOT, 'auto.json')
+  auto: path.join(ROOT, 'auto.json'),
+  autoImages: path.join(ROOT, 'images', 'auto'),
+  ownImages: path.join(ROOT, 'images', 'events')
 };
 const YT_KEY = process.env.YOUTUBE_API_KEY || '';
 const YT_API = process.env.YOUTUBE_API_BASE || 'https://www.googleapis.com/youtube/v3';
@@ -170,7 +172,8 @@ function buildTournament(tc, pages, teamOf) {
     id, name, page: tc.page, year: (sdate.match(/^\d{4}/) || [''])[0], sdate, edate,
     dates: datesText(sdate, edate),
     location: [info.city, info.country].filter(Boolean).join(', ') || (info.type === 'Online' ? 'Online' : ''),
-    teamsText: info.teamNumber ? info.teamNumber + ' teams' : ''
+    teamsText: info.teamNumber ? info.teamNumber + ' teams' : '',
+    image: info.image || '', imageDark: info.imageDark || ''
   };
 
   const all = [];
@@ -398,9 +401,12 @@ async function main() {
     // What happened is noted in state.json too, since the run logs aren't always at hand.
     const ps = state.pages[tc.page];
     ps.result = matches.length + ' matches, ' + linked + ' map videos';
-    if (!matches.length) { ps.result = 'no matches drawn yet, not on the site'; continue; }
+    // Events that haven't started are listed under "Coming up" even before their matches are drawn.
+    const upcoming = /^\d{4}-\d{2}-\d{2}/.test(tournament.sdate) ? Date.parse(tournament.sdate.slice(0, 10) + 'T00:00:00Z') > NOW.getTime() : false;
+    if (!matches.length && !upcoming) { ps.result = 'no matches, not on the site'; continue; }
+    if (!matches.length) ps.result = 'coming up, no matches drawn yet';
     const ended = Date.parse(str(tournament.edate).slice(0, 10) + 'T23:59:59Z');
-    if (!linked && ended && NOW.getTime() - ended > 14 * 24 * HOUR) { ps.result += ', none with videos, so not on the site'; summary.tournaments.push(tournament.name + ': no videos, left off the site'); continue; }
+    if (!linked && ended && NOW.getTime() - ended > 2 * 24 * HOUR) { ps.result += ', none with videos, so not on the site'; summary.tournaments.push(tournament.name + ': no videos, left off the site'); continue; }
     auto.tournaments.push(tournament);
     auto.matches.push(...matches);
     Object.assign(auto.videos, videos);
@@ -449,7 +455,53 @@ async function main() {
   for (const id of Object.keys(state.videos)) if (!allIds.has(id)) delete state.videos[id];
   for (const p of Object.keys(state.pages)) if (!keep.has(p)) delete state.pages[p];
 
-  /* 6. save */
+  /* 6. event pictures: your own picture in images/events/<id>.jpg (or .png/.webp) is used as the card picture;
+        otherwise the event's logo is copied from Liquipedia into images/auto/ once */
+  let own = [];
+  try { own = await readdir(FILES.ownImages); } catch (e) { /* no folder yet */ }
+  let have = [];
+  try { have = await readdir(FILES.autoImages); } catch (e) { /* no folder yet */ }
+  state.images = (state.images && typeof state.images === 'object') ? state.images : {};
+  const wantFiles = [];
+  for (const t of auto.tournaments) {
+    const mine = own.find(f => f.replace(/\.(jpe?g|png|webp|avif)$/i, '') === t.id);
+    t.art = mine ? 'images/events/' + mine : '';
+    for (const [field, file, suffix] of [['logo', t.image, ''], ['logoDark', t.imageDark, '-dark']]) {
+      t[field] = '';
+      if (!file) continue;
+      const done = state.images[t.id + suffix];
+      if (done && done.file === file && have.includes(done.saved)) t[field] = 'images/auto/' + done.saved;
+      else wantFiles.push({ t, field, file, key: t.id + suffix });
+    }
+  }
+  if (wantFiles.length) {
+    await mkdir(FILES.autoImages, { recursive: true });
+    const batch = wantFiles.slice(0, +config.maxImagesPerRun || 20);
+    try {
+      const res = await lp({ action: 'query', prop: 'imageinfo', iiprop: 'url|mime', iiurlwidth: '640', titles: [...new Set(batch.map(w => 'File:' + w.file))].join('|') });
+      const norm = new Map(arr(res.query.normalized).map(n => [n.to, n.from]));
+      const urls = new Map(arr(res.query.pages).map(p => [norm.get(p.title) || p.title, p.imageinfo && p.imageinfo[0]]));
+      for (const w of batch) {
+        const ii = urls.get('File:' + w.file);
+        if (!ii) continue;
+        const url = ii.thumburl || ii.url;
+        const ext = (/\.(png|jpe?g|webp|gif|svg)(?:$|\?)/i.exec(url) || [, 'png'])[1].toLowerCase();
+        const saved = w.key + '.' + (ext === 'jpeg' ? 'jpg' : ext);
+        const wait = lastLp + LP_DELAY - Date.now();
+        if (wait > 0) await sleep(wait);
+        lastLp = Date.now();
+        const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+        if (!r.ok) { warn('Couldn’t download the picture ' + w.file + ': HTTP ' + r.status); continue; }
+        await writeFile(path.join(FILES.autoImages, saved), Buffer.from(await r.arrayBuffer()));
+        const old = state.images[w.key];
+        if (old && old.saved !== saved) await unlink(path.join(FILES.autoImages, old.saved)).catch(() => {});
+        state.images[w.key] = { file: w.file, saved };
+        w.t[w.field] = 'images/auto/' + saved;
+      }
+    } catch (e) { warn('Couldn’t fetch event pictures: ' + e.message); }
+  }
+
+  /* 7. save */
   const before = await readJson(FILES.auto, {});
   auto.updatedAt = withoutUpdatedAt(auto) !== withoutUpdatedAt(before) ? NOW.toISOString() : (before.updatedAt || '');
   await writeJsonIfChanged(FILES.auto, auto);
