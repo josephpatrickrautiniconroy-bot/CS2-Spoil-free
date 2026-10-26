@@ -1286,11 +1286,18 @@ document.addEventListener('click', e => {
 function showPlayingQuality() {
   const st = P;
   if (!st) return;
-  let q = '';
-  try { q = st.ready && st.played ? YT_QUALITY[st.yt.getPlaybackQuality()] || '' : ''; } catch (e) { q = ''; }
+  let q = '', best = '';
+  try {
+    if (st.ready && st.played) {
+      q = YT_QUALITY[st.yt.getPlaybackQuality()] || '';
+      const order = Object.keys(YT_QUALITY);
+      const levels = (st.yt.getAvailableQualityLevels ? st.yt.getAvailableQualityLevels() : []).filter(l => YT_QUALITY[l]);
+      if (levels.length) best = YT_QUALITY[levels.sort((a, b) => order.indexOf(b) - order.indexOf(a))[0]];
+    }
+  } catch (e) { q = ''; }
   const el = st.els.ctl.qnow;
   el.hidden = !q;
-  el.textContent = q ? 'Playing at ' + q + ' right now.' : '';
+  el.textContent = q ? 'Playing at ' + q + ' right now' + (best ? ', and YouTube offers up to ' + best + ' for this video.' : '.') : '';
 }
 function fitVideo(st) {
   const frame = st.els.frame, ifr = frame && frame.querySelector('iframe');
@@ -1373,7 +1380,9 @@ function mountPlayer(f, idx, els) {
   loadYT().then(YT => {
     if (P !== st) return;
     st.yt = new YT.Player(els.host, {
-      host: 'https://www.youtube-nocookie.com',
+      // YouTube's privacy-enhanced player (youtube-nocookie.com) stayed at 360p whatever the size,
+      // so the standard player is used. Add ?nocookie to the address to compare.
+      host: new URLSearchParams(location.search).has('nocookie') ? 'https://www.youtube-nocookie.com' : 'https://www.youtube.com',
       videoId: vid.id,
       width: '100%',
       height: '100%',
