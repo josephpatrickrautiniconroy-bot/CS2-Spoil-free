@@ -244,8 +244,11 @@ async function main() {
     autoTeams: config.autoCreateTeams !== false,
     autoMatches: config.autoCreateMatches !== false,
     skipWords: arr(config.ignoreTitlesWith).map(s => str(s).toLowerCase()).filter(Boolean),
-    ignoreVideos: new Set(arr(config.ignoreVideos).map(str))
+    ignoreVideos: new Set(arr(config.ignoreVideos).map(str)),
+    debug: config.debugTitles === true
   };
+  if (opts.debug) state.debug = (state.debug && typeof state.debug === 'object') ? state.debug : {};
+  else delete state.debug;
 
   // If the settings changed, look again at videos that were skipped before.
   const configHash = shortHash(JSON.stringify(config));
@@ -369,20 +372,23 @@ async function main() {
       const channel = candidates.get(id);
       const title = str(v.snippet.title);
       const desc = str(v.snippet.description);
-      const markSeen = status => { state.seen[id] = { status, at: NOW.toISOString() }; delete state.pending[id]; };
-      const reviewBase = reason => { state.pending[id] = { reason, title, channel, at: (state.pending[id] && state.pending[id].at) || NOW.toISOString() }; state.seen[id] = { status: 'review', at: NOW.toISOString() }; summary.review++; };
+      // With "debugTitles": true in config.json, every video's title and what happened to it is saved in
+      // state.json under "debug", to check the watcher against an organiser's real titles. Turn it off afterwards.
+      const note = why => { if (opts.debug) state.debug[id] = { channel, title, minutes: Math.round(isoDurationMinutes(v.contentDetails.duration)), live: !!(v.liveStreamingDetails && v.liveStreamingDetails.actualStartTime), published: v.snippet.publishedAt, why }; };
+      const markSeen = (status, why) => { state.seen[id] = { status, at: NOW.toISOString() }; delete state.pending[id]; note(why || status); };
+      const reviewBase = reason => { note('review: ' + reason); state.pending[id] = { reason, title, channel, at: (state.pending[id] && state.pending[id].at) || NOW.toISOString() }; state.seen[id] = { status: 'review', at: NOW.toISOString() }; summary.review++; };
 
-      if (v.snippet.liveBroadcastContent && v.snippet.liveBroadcastContent !== 'none') continue; // check again once it's a VOD
+      if (v.snippet.liveBroadcastContent && v.snippet.liveBroadcastContent !== 'none') { note('live or upcoming'); continue; } // check again once it's a VOD
       const lower = title.toLowerCase();
-      if (opts.skipWords.some(w => lower.includes(w))) { markSeen('skipped'); continue; }
+      if (opts.skipWords.some(w => lower.includes(w))) { markSeen('skipped', 'ignored word in title'); continue; }
       // Too short = highlights or clips. Too long = a whole day's stream.
       const minutes = isoDurationMinutes(v.contentDetails.duration);
-      if (minutes < opts.minMinutes || minutes > opts.maxVideoHours * 60) { markSeen('skipped'); continue; }
+      if (minutes < opts.minMinutes || minutes > opts.maxVideoHours * 60) { markSeen('skipped', minutes < opts.minMinutes ? 'too short' : 'too long'); continue; }
       const wasLive = !!(v.liveStreamingDetails && v.liveStreamingDetails.actualStartTime);
       const publishedAt = Date.parse(v.snippet.publishedAt);
       if (wasLive && minutes > opts.maxLivestreamHours * 60) {
         if (opts.tournaments.some(tc => arr(tc.titleKeywords).some(k => words(title).includes(words(k))))) summary.longStreams++;
-        markSeen('skipped'); continue;
+        markSeen('skipped', 'long livestream recording'); continue;
       }
 
       // which tournament? (A title naming a different season or year is a different event.)
@@ -395,7 +401,7 @@ async function main() {
           arr(tc.titleKeywords).some(k => words(title).includes(words(k))) &&
           !clash(tc, SEASON) && !clash(tc, YEAR);
       });
-      if (!tconf) { markSeen('skipped'); continue; }
+      if (!tconf) { markSeen('skipped', 'no tournament matched'); continue; }
       tally(tconf.siteTournament, 'found');
       const review = reason => { reviewBase(reason); tally(tconf.siteTournament, 'review'); };
       const t = arr(site.tournaments).find(x => looseName(x.name) === looseName(tconf.siteTournament));

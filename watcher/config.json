@@ -341,7 +341,7 @@
   "maxLivestreamHours": 4,
   "stageDateGraceHours": 18,
   "uploadDelayHours": 4,
-  "lookbackDays": 10,
+  "lookbackDays": 60,
   "autoCreateTeams": true,
   "autoCreateMatches": true,
   "ignoreTitlesWith": [
@@ -365,5 +365,6 @@
     "draw show"
   ],
   "ignoreVideos": [],
-  "acceptVideosForDays": 21
+  "acceptVideosForDays": 21,
+  "debugTitles": true
 }
