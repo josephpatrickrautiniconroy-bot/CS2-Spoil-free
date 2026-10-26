@@ -3799,6 +3799,38 @@
     "starladder-starseries-fall-2026-dark": {
       "file": "StarLadder StarSeries darkmode.png",
       "saved": "starladder-starseries-fall-2026-dark.png"
+    },
+    "blast-open-porto-2026": {
+      "file": "BLAST Open 2026 lightmode.png",
+      "saved": "blast-open-porto-2026.png"
+    },
+    "blast-open-porto-2026-dark": {
+      "file": "BLAST Open 2026 darkmode.png",
+      "saved": "blast-open-porto-2026-dark.png"
+    },
+    "esports-world-cup-2026": {
+      "file": "Esports World Cup 2026 Paris lightmode.png",
+      "saved": "esports-world-cup-2026.png"
+    },
+    "esports-world-cup-2026-dark": {
+      "file": "Esports World Cup 2026 Paris darkmode.png",
+      "saved": "esports-world-cup-2026-dark.png"
+    },
+    "blast-bounty-summer-2026": {
+      "file": "BLAST Bounty Malta 2026 lightmode.png",
+      "saved": "blast-bounty-summer-2026.png"
+    },
+    "blast-bounty-summer-2026-dark": {
+      "file": "BLAST Bounty Malta 2026 darkmode.png",
+      "saved": "blast-bounty-summer-2026-dark.png"
+    },
+    "intel-extreme-masters-cologne-major-2026": {
+      "file": "IEM Cologne Major 2026 lightmode.png",
+      "saved": "intel-extreme-masters-cologne-major-2026.png"
+    },
+    "intel-extreme-masters-cologne-major-2026-dark": {
+      "file": "IEM Cologne Major 2026 darkmode.png",
+      "saved": "intel-extreme-masters-cologne-major-2026-dark.png"
     }
   }
 }

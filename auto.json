@@ -495,8 +495,8 @@
       "image": "BLAST Open 2026 lightmode.png",
       "imageDark": "BLAST Open 2026 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/blast-open-porto-2026.png",
+      "logoDark": "images/auto/blast-open-porto-2026-dark.png"
     },
     {
       "id": "esports-world-cup-2026",
@@ -511,8 +511,8 @@
       "image": "Esports World Cup 2026 Paris lightmode.png",
       "imageDark": "Esports World Cup 2026 Paris darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/esports-world-cup-2026.png",
+      "logoDark": "images/auto/esports-world-cup-2026-dark.png"
     },
     {
       "id": "blast-bounty-summer-2026",
@@ -527,8 +527,8 @@
       "image": "BLAST Bounty Malta 2026 lightmode.png",
       "imageDark": "BLAST Bounty Malta 2026 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/blast-bounty-summer-2026.png",
+      "logoDark": "images/auto/blast-bounty-summer-2026-dark.png"
     },
     {
       "id": "intel-extreme-masters-cologne-major-2026",
@@ -543,8 +543,8 @@
       "image": "IEM Cologne Major 2026 lightmode.png",
       "imageDark": "IEM Cologne Major 2026 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/intel-extreme-masters-cologne-major-2026.png",
+      "logoDark": "images/auto/intel-extreme-masters-cologne-major-2026-dark.png"
     }
   ],
   "teams": [
@@ -11015,6 +11015,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-26T02:07:24.498Z",
+  "updatedAt": "2026-10-26T02:13:07.412Z",
   "featured": "pgl-masters-bucharest-2026"
 }
