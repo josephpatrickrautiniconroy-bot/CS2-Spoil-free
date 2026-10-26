@@ -506,11 +506,11 @@ const DEFAULT_HOW = [
   { title: 'Every map listed', text: 'Each series shows all of its possible maps, so you can’t count how many were played.' },
   { title: 'Later rounds locked', text: 'Matchups that would give away earlier results stay hidden until you open them.' }
 ];
-const blankMap = () => ({ name: '', video: '', start: '', notPlayed: false });
+const blankMap = () => ({ name: '', video: '', start: '', end: '', notPlayed: false });
 const arr = v => Array.isArray(v) ? v : [];
 function normMatch(m) {
   const bo = [1, 3, 5].includes(+m.bo) ? +m.bo : 3;
-  const maps = arr(m.maps).slice(0, bo).map(x => ({ name: str(x && x.name), video: str(x && x.video), start: str(x && x.start), notPlayed: !!(x && x.notPlayed) }));
+  const maps = arr(m.maps).slice(0, bo).map(x => ({ name: str(x && x.name), video: str(x && x.video), start: str(x && x.start), end: str(x && x.end), notPlayed: !!(x && x.notPlayed) }));
   while (maps.length < bo) maps.push(blankMap());
   return { id: str(m.id), a: str(m.a), b: str(m.b), bo, date: str(m.date), thumb: str(m.thumb), maps };
 }
@@ -569,6 +569,12 @@ function mergeAuto(d, auto) {
     if (!t || !t.id || hidden.has(str(t.id)) || d.teams.some(x => x.id === str(t.id))) return;
     d.teams.push({ id: str(t.id), name: str(t.name), logo: '', aliases: arr(t.aliases).map(str).filter(Boolean) });
   });
+  // Tournaments the watcher built from Liquipedia, newest first, after any you added yourself.
+  arr(auto.tournaments).forEach(at => {
+    if (!at || !at.id || hidden.has(str(at.id)) || d.tournaments.some(x => x.id === str(at.id))) return;
+    d.tournaments.push({ id: str(at.id), name: str(at.name), year: str(at.year), dates: str(at.dates), location: str(at.location),
+      teamsText: str(at.teamsText), logo: '', art: '', stages: [] });
+  });
   const all = new Map();
   d.tournaments.forEach(t => t.stages.forEach(s => s.rounds.forEach(r => r.matches.forEach(m => all.set(m.id, m)))));
   arr(auto.matches).forEach(am => {
@@ -577,15 +583,28 @@ function mergeAuto(d, auto) {
     if (!t) return;
     const stageName = str(am.stage) || 'Matches';
     let s = t.stages.find(x => looseName(x.name) === looseName(stageName));
-    if (!s) { s = { id: 'auto-s-' + looseName(t.id + '-' + stageName), name: stageName, info: '', rounds: [] }; t.stages.push(s); }
+    if (!s) {
+      s = { id: 'auto-s-' + looseName(t.id + '-' + stageName), name: stageName, info: '', rounds: [] };
+      const so = typeof am.stageOrder === 'number' ? am.stageOrder : -1;
+      const sat = so >= 0 ? t.stages.findIndex(x => typeof x.order === 'number' && x.order > so) : -1;
+      if (so >= 0) Object.defineProperty(s, 'order', { value: so, enumerable: false });
+      if (sat >= 0) t.stages.splice(sat, 0, s); else t.stages.push(s);
+    }
     const roundName = str(am.round) || 'New matches';
     let r = s.rounds.find(x => looseName(x.name) === looseName(roundName));
     if (!r) {
       const isFirst = t.stages.indexOf(s) === 0 && s.rounds.length === 0;
       r = { id: 'auto-r-' + looseName(s.id + '-' + roundName), name: roundName, locked: !isFirst, matches: [] };
-      // Put well-known rounds in their natural place (Quarter-finals before Semi-finals, and so on).
-      const rank = roundRank(roundName);
-      const at = rank >= 0 ? s.rounds.findIndex(x => roundRank(x.name) > rank) : -1;
+      // The watcher says where each round goes (the order it was played). Otherwise put
+      // well-known rounds in their natural place (Quarter-finals before Semi-finals, and so on).
+      let at;
+      if (typeof am.roundOrder === 'number') {
+        Object.defineProperty(r, 'order', { value: am.roundOrder, enumerable: false });
+        at = s.rounds.findIndex(x => typeof x.order === 'number' && x.order > am.roundOrder);
+      } else {
+        const rank = roundRank(roundName);
+        at = rank >= 0 ? s.rounds.findIndex(x => roundRank(x.name) > rank) : -1;
+      }
       if (at >= 0) s.rounds.splice(at, 0, r); else s.rounds.push(r);
     }
     const m = normMatch(am);
@@ -601,7 +620,7 @@ function mergeAuto(d, auto) {
       const dm = m.maps[i];
       if (!dm.name && av.name) dm.name = str(av.name);
       if (dm.video) return;
-      if (av.video) { dm.video = str(av.video); if (!dm.start) dm.start = str(av.start); dm.notPlayed = false; }
+      if (av.video) { dm.video = str(av.video); if (!dm.start) dm.start = str(av.start); if (!dm.end) dm.end = str(av.end); dm.notPlayed = false; }
       else if (av.notPlayed) dm.notPlayed = true;
     });
   });
@@ -833,7 +852,10 @@ function renderHeader() {
 function renderFooter() {
   $('#footer').replaceChildren(h('div', { class: 'wrap footer-in' },
     ed('span', 'footer-brand', data.site.name, v => { data.site.name = v; renderHeader(); }, { label: 'Site name', placeholder: 'Site name' }),
-    ed('span', 'footer-text', data.site.footer, v => { data.site.footer = v; }, { label: 'Footer text', placeholder: 'Footer text' })));
+    ed('span', 'footer-text', data.site.footer, v => { data.site.footer = v; }, { label: 'Footer text', placeholder: 'Footer text' }),
+    // Liquipedia's content is CC BY-SA, so its use is credited whenever the watcher's data is on the page.
+    AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/counterstrike/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
+      ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null));
 }
 function exampleNotice() {
   return h('div', { class: 'wrap' }, h('div', { class: 'edit-panel notice' },
@@ -1189,9 +1211,13 @@ function mountPlayer(f, idx, els) {
   if (map.notPlayed) return setCover('notplayed');
   if (!vid.id) return setCover('novideo');
   if (location.protocol === 'file:') return setCover('file');
+  // A video can hold a whole series (or a whole day). The map plays from its start to its end only.
+  st.start = toSeconds(map.start) || vid.start || 0;
+  st.end = toSeconds(map.end) || 0;
+  if (st.end && st.end <= st.start) st.end = 0;
   const saved = resumeTime(m.id, idx);
-  st.resumeAt = saved > 15 ? saved : 0;
-  const startAt = st.resumeAt || toSeconds(map.start) || vid.start || 0;
+  st.resumeAt = saved > st.start + 15 && (!st.end || saved < st.end - 5) ? saved : 0;
+  const startAt = st.resumeAt || st.start;
   const auto = autoplayNext;
   autoplayNext = false;
   setCover('loading');
@@ -1202,7 +1228,7 @@ function mountPlayer(f, idx, els) {
       videoId: vid.id,
       width: '100%',
       height: '100%',
-      playerVars: { controls: 0, disablekb: 1, fs: 0, rel: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1, start: Math.floor(startAt), origin: location.origin },
+      playerVars: Object.assign({ controls: 0, disablekb: 1, fs: 0, rel: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1, start: Math.floor(startAt), origin: location.origin }, st.end ? { end: Math.ceil(st.end) } : {}),
       events: {
         onReady: () => {
           if (P !== st) return;
@@ -1257,10 +1283,10 @@ function setCover(mode) {
     c.append(h('div', { class: 'spinner', 'aria-hidden': 'true' }), h('p', { class: 'cover-sub' }, 'Loading the video…'));
   } else if (mode === 'start') {
     c.append(h('div', { class: 'cover-eyebrow' }, label), h('div', { class: 'cover-title' }, teamName(m.a) + ' vs ' + teamName(m.b)), playBtn(),
-      st.resumeAt ? h('div', { class: 'resume' }, h('span', {}, 'Picks up where you left off, at ' + fmt(st.resumeAt) + '.'),
-        h('button', { type: 'button', class: 'text-btn light', onClick: e => { e.stopPropagation(); restart(); } }, 'Start from the beginning')) : null);
+      st.resumeAt ? h('div', { class: 'resume' }, h('span', {}, 'Picks up where you left off, at ' + fmt(st.resumeAt - st.start) + '.'),
+        h('button', { type: 'button', class: 'text-btn light', onClick: e => { e.stopPropagation(); restart(); } }, 'Start from the beginning')) : '');
   } else if (mode === 'paused') {
-    c.append(h('div', { class: 'cover-eyebrow' }, 'Paused · ' + label), h('div', { class: 'cover-title', id: 'cover-time' }, fmt(currentTime())), playBtn());
+    c.append(h('div', { class: 'cover-eyebrow' }, 'Paused · ' + label), h('div', { class: 'cover-title', id: 'cover-time' }, fmt(mapTime(st))), playBtn());
   } else if (mode === 'ended') {
     c.append(h('div', { class: 'cover-eyebrow' }, 'End of ' + label),
       h('div', { class: 'cover-title' }, next >= 0 ? 'Ready for Map ' + (next + 1) + '?' : 'That’s the end of the series'),
@@ -1286,12 +1312,23 @@ function setCover(mode) {
       back());
   }
 }
+// Time into the map (not into the video), so a map's clock always starts at 0:00.
+const mapTime = st => Math.max(0, currentTime() - (st.start || 0));
 function tick() {
   const st = P;
   if (!st || !st.ready) return;
   const t = currentTime();
-  st.els.ctl.elapsed.textContent = fmt(t);
-  if (st.mode === 'paused') { const ct = document.getElementById('cover-time'); if (ct) ct.textContent = fmt(t); }
+  // Stop where the map ends, before the video moves on to the next map or the analyst desk.
+  if (st.end && t >= st.end - 0.25 && st.mode !== 'ended') {
+    st.yt.pauseVideo();
+    clearResume(st.m.id, st.idx);
+    st.resumeAt = 0;
+    setCover('ended');
+    updatePlayIcon(false);
+    return;
+  }
+  st.els.ctl.elapsed.textContent = fmt(mapTime(st));
+  if (st.mode === 'paused') { const ct = document.getElementById('cover-time'); if (ct) ct.textContent = fmt(mapTime(st)); }
   const now = Date.now();
   if (st.mode !== 'ended' && t > 15 && now - st.lastSave > 4000) { st.lastSave = now; saveResume(st.m.id, st.idx, t); }
 }
@@ -1299,12 +1336,16 @@ function togglePlay() {
   const st = P;
   if (!st || !st.ready) return;
   const s = st.yt.getPlayerState();
-  if (s === 1 || s === 3) st.yt.pauseVideo(); else st.yt.playVideo();
+  if (s === 1 || s === 3) st.yt.pauseVideo();
+  else if (st.mode !== 'ended') st.yt.playVideo();
 }
 function seek(d) {
   const st = P;
   if (!st || !st.ready) return;
-  st.yt.seekTo(Math.max(0, currentTime() + d), true);
+  // Skipping never leaves the map: not back into the one before, not on into the next.
+  let to = Math.max(st.start || 0, currentTime() + d);
+  if (st.end) to = Math.min(to, st.end);
+  st.yt.seekTo(to, true);
   setTimeout(tick, 150);
 }
 function restart() {
@@ -1312,7 +1353,7 @@ function restart() {
   if (!st || !st.ready) return;
   st.resumeAt = 0;
   clearResume(st.m.id, st.idx);
-  st.yt.seekTo(0, true);
+  st.yt.seekTo(st.start || 0, true);
   st.yt.playVideo();
 }
 function updatePlayIcon(playing) {
