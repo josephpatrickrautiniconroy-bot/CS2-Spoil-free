@@ -4462,19 +4462,6 @@
       "date": "26 Oct"
     },
     {
-      "id": "lp-28d79119a5",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-betboom-team",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
       "id": "lp-5ccf0b5624",
       "tournamentId": "pgl-masters-bucharest-2026",
       "tournament": "PGL Masters Bucharest 2026",
@@ -4484,6 +4471,19 @@
       "roundOrder": 3,
       "a": "lp-g2-esports",
       "b": "lp-dendele-cs",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-28d79119a5",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-betboom-team",
+      "b": "lp-natus-vincere",
       "bo": 3,
       "date": "26 Oct"
     }
@@ -10867,22 +10867,22 @@
     "lp-27d740e8ea": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/r3Mehl6e5S0",
+          "start": "38",
+          "end": "2841",
           "name": "Mirage",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/r3Mehl6e5S0",
+          "start": "2841",
+          "end": "5661",
           "name": "Dust II",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/r3Mehl6e5S0",
+          "start": "5661",
           "end": "",
           "name": "Anubis",
           "notPlayed": false
@@ -10892,22 +10892,22 @@
     "lp-6aa2a3b941": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/QlOvDGtV6dI",
+          "start": "33",
+          "end": "3321",
           "name": "Inferno",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/QlOvDGtV6dI",
+          "start": "3321",
+          "end": "5517",
           "name": "Nuke",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/QlOvDGtV6dI",
+          "start": "5517",
           "end": "",
           "name": "Mirage",
           "notPlayed": false
@@ -10960,6 +10960,31 @@
           "start": "",
           "end": "",
           "name": "Mirage",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-5ccf0b5624": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
           "notPlayed": false
         }
       ]
@@ -10988,33 +11013,8 @@
           "notPlayed": false
         }
       ]
-    },
-    "lp-5ccf0b5624": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
     }
   },
-  "updatedAt": "2026-10-26T14:47:42.854Z",
+  "updatedAt": "2026-10-26T16:49:12.513Z",
   "featured": "pgl-masters-bucharest-2026"
 }
