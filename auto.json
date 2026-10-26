@@ -319,7 +319,7 @@
       "image": "PGL allmode.png",
       "imageDark": "",
       "art": "",
-      "logo": "",
+      "logo": "images/auto/pgl-cluj-napoca-2027.png",
       "logoDark": ""
     },
     {
@@ -335,8 +335,8 @@
       "image": "Intel Extreme Masters 2022 lightmode.png",
       "imageDark": "Intel Extreme Masters 2022 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/intel-extreme-masters-krakow-2027.png",
+      "logoDark": "images/auto/intel-extreme-masters-krakow-2027-dark.png"
     },
     {
       "id": "pgl-bucharest-2027",
@@ -351,7 +351,7 @@
       "image": "PGL allmode.png",
       "imageDark": "",
       "art": "",
-      "logo": "",
+      "logo": "images/auto/pgl-bucharest-2027.png",
       "logoDark": ""
     },
     {
@@ -367,8 +367,8 @@
       "image": "BLAST lightmode.png",
       "imageDark": "BLAST darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/blast-bounty-winter-2027.png",
+      "logoDark": "images/auto/blast-bounty-winter-2027-dark.png"
     },
     {
       "id": "pgl-major-singapore-2026",
@@ -383,8 +383,8 @@
       "image": "PGL Major Singapore 2026 lightmode.png",
       "imageDark": "PGL Major Singapore 2026 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/pgl-major-singapore-2026.png",
+      "logoDark": "images/auto/pgl-major-singapore-2026-dark.png"
     },
     {
       "id": "yalla-compass-uae-2026",
@@ -399,8 +399,8 @@
       "image": "YaLLa Compass 2025 lightmode.png",
       "imageDark": "YaLLa Compass 2025 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/yalla-compass-uae-2026.png",
+      "logoDark": "images/auto/yalla-compass-uae-2026-dark.png"
     },
     {
       "id": "blast-rivals-fall-2026",
@@ -415,8 +415,8 @@
       "image": "BLAST Rivals 2026 lightmode.png",
       "imageDark": "BLAST Rivals 2026 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/blast-rivals-fall-2026.png",
+      "logoDark": "images/auto/blast-rivals-fall-2026-dark.png"
     },
     {
       "id": "intel-extreme-masters-beijing-2026",
@@ -431,8 +431,8 @@
       "image": "Intel Extreme Masters 2022 lightmode.png",
       "imageDark": "Intel Extreme Masters 2022 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/intel-extreme-masters-beijing-2026.png",
+      "logoDark": "images/auto/intel-extreme-masters-beijing-2026-dark.png"
     },
     {
       "id": "pgl-masters-bucharest-2026",
@@ -447,8 +447,8 @@
       "image": "PGL Masters Bucharest 2026 lightmode.png",
       "imageDark": "PGL Masters Bucharest 2026 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/pgl-masters-bucharest-2026.png",
+      "logoDark": "images/auto/pgl-masters-bucharest-2026-dark.png"
     },
     {
       "id": "esl-pro-league-season-24",
@@ -463,8 +463,8 @@
       "image": "ESL Pro League Season 24 lightmode.png",
       "imageDark": "ESL Pro League Season 24 darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/esl-pro-league-season-24.png",
+      "logoDark": "images/auto/esl-pro-league-season-24-dark.png"
     },
     {
       "id": "starladder-starseries-fall-2026",
@@ -479,8 +479,8 @@
       "image": "StarLadder StarSeries lightmode.png",
       "imageDark": "StarLadder StarSeries darkmode.png",
       "art": "",
-      "logo": "",
-      "logoDark": ""
+      "logo": "images/auto/starladder-starseries-fall-2026.png",
+      "logoDark": "images/auto/starladder-starseries-fall-2026-dark.png"
     },
     {
       "id": "blast-open-porto-2026",
@@ -11015,6 +11015,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-26T01:57:35.703Z",
+  "updatedAt": "2026-10-26T02:07:24.498Z",
   "featured": "pgl-masters-bucharest-2026"
 }
