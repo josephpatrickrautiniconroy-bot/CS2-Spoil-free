@@ -16,7 +16,15 @@ jobs:
         with:
           node-version: 20
       - run: npm i --no-save playwright@1.48.2
-      - name: Measure with Google Chrome
+      - name: Headless Chrome
         run: node probe/quality.mjs
         env:
           PROBE_CHANNEL: chrome
+          PROBE_CASES: 'desk 854x480,control,site desk'
+          PROBE_TAG: 'headless '
+      - name: Chrome with a screen
+        run: xvfb-run -a node probe/quality.mjs
+        env:
+          PROBE_CHANNEL: chrome
+          PROBE_HEADED: '1'
+          PROBE_TAG: 'headed '

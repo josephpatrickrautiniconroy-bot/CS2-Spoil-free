@@ -16,7 +16,7 @@ window.onYouTubeIframeAPIReady = () => {
   window.player = new YT.Player('host', {
     host: 'https://www.youtube-nocookie.com', videoId: q.get('v'), width: vw, height: vh,
     playerVars: { controls: +(q.get('controls') || 0), autoplay: 1, mute: 1, playsinline: 1, rel: 0, start: +(q.get('start') || 0), origin: location.origin },
-    events: { onReady: e => { e.target.mute(); e.target.playVideo(); } }
+    events: { onReady: e => { e.target.mute(); e.target.playVideo(); }, onError: e => { window.ytError = e.data; } }
   });
   const f = document.querySelector('#host'); if (f && f.tagName === 'IFRAME') { f.style.transform = host.style.transform; }
 };

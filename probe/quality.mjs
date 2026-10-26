@@ -17,8 +17,10 @@ const cases = [
   ['desk 1280x720', desk, 'w=1280&h=720'],
   ['phone 390x219', phone, 'w=390&h=219'],
   ['phone 390x219 drawn at 1920x1080', phone, 'w=390&h=219&vw=1920&vh=1080'],
+  ['control video 854x480', desk, 'w=854&h=480', 'aqz-KE-bpKQ', 30],
 ];
-const browser = await chromium.launch({ channel: process.env.PROBE_CHANNEL || undefined, args: ['--autoplay-policy=no-user-gesture-required'] });
+const browser = await chromium.launch({ channel: process.env.PROBE_CHANNEL || undefined, headless: !process.env.PROBE_HEADED, args: ['--autoplay-policy=no-user-gesture-required'] });
+const only = (process.env.PROBE_CASES || '').split(',').filter(Boolean);
 
 async function sample(p, label) {
   const out = [];
@@ -27,22 +29,29 @@ async function sample(p, label) {
     const yf = p.frames().find(f => /youtube/.test(f.url()));
     let v = null, q = '';
     try { v = yf && await yf.evaluate(() => { const x = document.querySelector('video'); return x ? [x.videoWidth, x.videoHeight, Math.round(x.currentTime)] : null; }); } catch (e) { v = 'err ' + e.message.slice(0, 60); }
-    try { q = await p.evaluate(() => window.player && window.player.getPlaybackQuality ? window.player.getPlaybackQuality() : ''); } catch (e) { /* the live site keeps its player private */ }
+    try { q = await p.evaluate(() => window.player && window.player.getPlaybackQuality ? window.player.getPlaybackQuality() + ' state ' + window.player.getPlayerState() + (window.ytError ? ' error ' + window.ytError : '') : ''); } catch (e) { /* the live site keeps its player private */ }
     out.push(at + 's=' + (Array.isArray(v) ? v[1] + 'p@' + v[2] : v) + (q ? '/' + q : ''));
   }
-  const line = label + ': ' + out.join(' ');
+  try {
+    const yf = p.frames().find(f => /youtube/.test(f.url()));
+    const txt = yf ? await yf.evaluate(() => document.body.innerText.replace(/\s+/g, ' ').slice(0, 160)) : 'no youtube frame';
+    out.push('| ' + txt);
+  } catch (e) { out.push('| ' + e.message.slice(0, 60)); }
+  const line = (process.env.PROBE_TAG || '') + label + ': ' + out.join(' ');
   console.log('::notice::' + line);
 }
 
-for (const [label, ctx, qs] of cases) {
+for (const [label, ctx, qs, vid = V, start = START] of cases) {
+  if (only.length && !only.some(o => label.includes(o))) continue;
   const c = await browser.newContext(ctx);
   const p = await c.newPage();
-  await p.goto('http://localhost:8123/?' + qs + '&v=' + V + '&start=' + START);
+  await p.goto('http://localhost:8123/?' + qs + '&v=' + vid + '&start=' + start);
   await sample(p, label);
   await c.close();
 }
 // The real site, normal and wide, clicking play like a viewer would.
 for (const [label, wide] of [['site desk', false], ['site desk wide', true]]) {
+  if (only.length && !only.some(o => label.includes(o))) continue;
   const c = await browser.newContext(desk);
   await c.addInitScript(w => { try { localStorage.setItem('sf:wide', w ? 'true' : 'false'); } catch (e) {} }, wide);
   const p = await c.newPage();
