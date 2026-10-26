@@ -10,53 +10,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const TIME = /(?:^|\s|\[|\()((?:\d{1,2}:)?\d{1,2}:\d{2})(?=$|\s|\]|\)|-)/;
 
 export async function probe({ yt, state, log }) {
-  const out = { at: new Date().toISOString(), descriptions: {}, searches: {}, liquipedia: {} };
-
-  // 1. Descriptions of long stream recordings
-  const longIds = Object.entries(state.debug || {}).filter(([, v]) => v.minutes > 240).map(([id]) => id);
-  for (let i = 0; i < longIds.length; i += 50) {
-    try {
-      const res = await yt('videos', { part: 'snippet', id: longIds.slice(i, i + 50).join(',') });
-      for (const v of res.items || []) {
-        const desc = String(v.snippet.description || '');
-        const lines = desc.split(/\r?\n/);
-        out.descriptions[v.id] = {
-          title: v.snippet.title,
-          length: desc.length,
-          timestampLines: lines.filter(l => TIME.test(l)).slice(0, 40),
-          start: desc.slice(0, 400)
-        };
-      }
-    } catch (e) { out.descriptions.error = e.message; }
-  }
-
-  // 2. YouTube search for known matches
-  const queries = [
-    'Spirit vs MOUZ BLAST Open Porto 2026 grand final',
-    'Spirit vs MOUZ map 1 BLAST Open Porto 2026',
-    'G2 vs NAVI PGL Masters Bucharest 2026',
-    'FURIA vs Vitality BLAST Open Porto 2026 quarterfinal',
-    'ESL Pro League Season 24 grand final',
-    'ESL Pro League Season 24 map 1',
-    'BLAST Open Porto 2026 full match',
-    'CS2 full match VOD 2026'
-  ];
-  for (const q of queries) {
-    try {
-      const res = await yt('search', { part: 'snippet', type: 'video', maxResults: '15', q, order: 'relevance' });
-      const items = (res.items || []).map(it => ({ id: it.id.videoId, channel: it.snippet.channelTitle, channelId: it.snippet.channelId, title: it.snippet.title, published: it.snippet.publishedAt }));
-      if (items.length) {
-        const det = await yt('videos', { part: 'contentDetails,status,liveStreamingDetails', id: items.map(x => x.id).join(',') });
-        for (const d of det.items || []) {
-          const x = items.find(i => i.id === d.id);
-          if (x) { x.duration = d.contentDetails.duration; x.embeddable = d.status && d.status.embeddable; x.wasLive = !!(d.liveStreamingDetails && d.liveStreamingDetails.actualStartTime); }
-        }
-      }
-      out.searches[q] = items;
-    } catch (e) { out.searches[q] = { error: e.message }; }
-  }
-
-  // 3. Liquipedia VOD links (API rules: own user agent, at most one request every 2 seconds)
+  const out = { at: new Date().toISOString(), wikitext: {}, pages: {}, prefix: {}, vodChannels: {} };
   const LP = 'https://liquipedia.net/counterstrike/api.php';
   const headers = { 'User-Agent': 'cs2-spoiler-free-site research probe (github.com/josephpatrickrautiniconroy-bot/CS2-Spoil-free)', 'Accept-Encoding': 'gzip' };
   const lp = async params => {
@@ -67,22 +21,41 @@ export async function probe({ yt, state, log }) {
     if (!r.ok) throw new Error('Liquipedia HTTP ' + r.status);
     return r.json();
   };
-  for (const term of ['BLAST Open Porto 2026', 'ESL Pro League Season 24', 'PGL Masters Bucharest 2026', 'IEM Cologne 2025']) {
-    const entry = out.liquipedia[term] = { pages: [] };
-    try {
-      const s = await lp({ action: 'query', list: 'search', srsearch: term, srlimit: '6' });
-      const titles = (s.query && s.query.search || []).map(x => x.title);
-      entry.searchHits = titles;
-      for (const title of titles.slice(0, 4)) {
-        const c = await lp({ action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', titles: title });
-        const page = Object.values(c.query.pages)[0];
-        const text = page && page.revisions ? page.revisions[0].slots.main['*'] : '';
-        const vods = [...text.matchAll(/\|\s*vod[a-z]*\d*\s*=\s*([^\s|}]+)/gi)].map(m => m[1]);
-        entry.pages.push({ title, length: text.length, vodCount: vods.length, vodSamples: vods.slice(0, 15), hasMatch2: /\{\{Match\b/i.test(text) });
-      }
-    } catch (e) { entry.error = e.message; }
-  }
+  const content = async title => {
+    const c = await lp({ action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', titles: title, redirects: '1' });
+    const page = Object.values(c.query.pages)[0];
+    return page && page.revisions ? page.revisions[0].slots.main['*'] : '';
+  };
+  const vodsIn = text => [...text.matchAll(/\|\s*vod[a-z]*\d*\s*=\s*([^\s|}]+)/gi)].map(m => m[1]);
 
+  // Full wikitext of two pages, to learn the match format.
+  for (const title of ['ESL/Pro League/Season 24', 'BLAST/Open/2026/Fall']) {
+    try { out.wikitext[title] = await content(title); } catch (e) { out.wikitext[title] = 'ERROR ' + e.message; }
+  }
+  // Subpages and VOD coverage for other events, including old CS:GO ones.
+  for (const prefix of ['PGL/2026', 'Intel Extreme Masters/2025/Cologne', 'PGL/2021/Stockholm', 'ESL/One/2014/Cologne', 'BLAST/Premier/2023/World Final', 'StarLadder/2019/Major', 'FISSURE', 'Perfect World/Major/2025']) {
+    try {
+      const r = await lp({ action: 'query', list: 'prefixsearch', pssearch: prefix, pslimit: '20' });
+      out.prefix[prefix] = (r.query.prefixsearch || []).map(x => x.title);
+    } catch (e) { out.prefix[prefix] = 'ERROR ' + e.message; }
+  }
+  const pagesToCount = [];
+  for (const list of Object.values(out.prefix)) if (Array.isArray(list)) pagesToCount.push(...list.filter(t => !/\/(Statistics|Results|Media|Broadcast|Qualifier|Qualifiers|Open Qualifier|Closed Qualifier)/i.test(t)).slice(0, 4));
+  for (const title of [...new Set(pagesToCount)].slice(0, 24)) {
+    try { const t = await content(title); const v = vodsIn(t); out.pages[title] = { length: t.length, vodCount: v.length, samples: v.slice(0, 6), matchTemplates: (t.match(/\{\{Match\b/gi) || []).length, bracketTemplates: (t.match(/\{\{(Bracket|Matchlist|SingleMatch)\b/gi) || []).length }; }
+    catch (e) { out.pages[title] = 'ERROR ' + e.message; }
+  }
+  // Which YouTube channels the Liquipedia VOD links point at.
+  const ids = new Set();
+  for (const text of Object.values(out.wikitext)) for (const v of vodsIn(text)) { const m = v.match(/(?:youtu\.be\/|v=)([\w-]{11})/); if (m) ids.add(m[1]); }
+  for (const p of Object.values(out.pages)) for (const v of (p.samples || [])) { const m = v.match(/(?:youtu\.be\/|v=)([\w-]{11})/); if (m) ids.add(m[1]); }
+  const list = [...ids];
+  for (let i = 0; i < list.length; i += 50) {
+    try {
+      const res = await yt('videos', { part: 'snippet,contentDetails,status', id: list.slice(i, i + 50).join(',') });
+      for (const v of res.items || []) out.vodChannels[v.id] = { channel: v.snippet.channelTitle, channelId: v.snippet.channelId, title: v.snippet.title, duration: v.contentDetails.duration, embeddable: v.status.embeddable };
+    } catch (e) { out.vodChannels.error = e.message; }
+  }
   log('Research probe saved to state.json.');
   return out;
 }
