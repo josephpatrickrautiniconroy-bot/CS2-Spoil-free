@@ -4486,6 +4486,84 @@
       "b": "lp-natus-vincere",
       "bo": 3,
       "date": "26 Oct"
+    },
+    {
+      "id": "lp-a897912a42",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 4",
+      "roundOrder": 4,
+      "a": "lp-team-liquid",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "27 Oct"
+    },
+    {
+      "id": "lp-ec5556bd28",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 4",
+      "roundOrder": 4,
+      "a": "lp-nemiga-gaming",
+      "b": "lp-dendele-cs",
+      "bo": 3,
+      "date": "27 Oct"
+    },
+    {
+      "id": "lp-7e3817e1e5",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 4",
+      "roundOrder": 4,
+      "a": "lp-team-spirit",
+      "b": "lp-mouz",
+      "bo": 3,
+      "date": "27 Oct"
+    },
+    {
+      "id": "lp-2a5ea4e892",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 4",
+      "roundOrder": 4,
+      "a": "lp-the-mongolz",
+      "b": "lp-legacy",
+      "bo": 3,
+      "date": "27 Oct"
+    },
+    {
+      "id": "lp-eba4f5a003",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 4",
+      "roundOrder": 4,
+      "a": "lp-team-vitality",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "27 Oct"
+    },
+    {
+      "id": "lp-93b0c5279f",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 4",
+      "roundOrder": 4,
+      "a": "lp-furia",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": "27 Oct"
     }
   ],
   "videos": {
@@ -10992,15 +11070,15 @@
     "lp-28d79119a5": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/QQNRNtZDJ1E",
+          "start": "38",
+          "end": "3443",
           "name": "Dust II",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/QQNRNtZDJ1E",
+          "start": "3443",
           "end": "",
           "name": "Nuke",
           "notPlayed": false
@@ -11013,8 +11091,158 @@
           "notPlayed": true
         }
       ]
+    },
+    "lp-a897912a42": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-ec5556bd28": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-7e3817e1e5": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-2a5ea4e892": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-eba4f5a003": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-93b0c5279f": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-26T19:43:52.494Z",
+  "updatedAt": "2026-10-26T20:36:51.025Z",
   "featured": "pgl-masters-bucharest-2026"
 }
