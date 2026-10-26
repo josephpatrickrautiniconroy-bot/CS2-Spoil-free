@@ -46,11 +46,18 @@
       "subpages": [],
       "subRevids": {},
       "fetchedAt": "2026-10-26T01:17:56.352Z"
+    },
+    "Intel Extreme Masters/2026/Beijing": {
+      "revid": 3461671,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:20:02.475Z"
     }
   },
   "resolved": {
     "IEM Cologne Major 2026": "Intel Extreme Masters/2026/Cologne",
-    "BLAST Rivals 2026 Hong Kong": "BLAST/Rivals/2026/Fall"
+    "BLAST Rivals 2026 Hong Kong": "BLAST/Rivals/2026/Fall",
+    "Intel Extreme Masters Beijing 2026": "Intel Extreme Masters/2026/Beijing"
   },
   "teams": {
     "fut": {
@@ -200,6 +207,18 @@
     "gaimin": {
       "id": "lp-gaimin-gladiators",
       "name": "Gaimin"
+    },
+    "the mongolz": {
+      "id": "lp-the-mongolz",
+      "name": "MongolZ"
+    },
+    "faze": {
+      "id": "lp-faze-clan",
+      "name": "FaZe"
+    },
+    "team liquid": {
+      "id": "lp-team-liquid",
+      "name": "Liquid"
     }
   },
   "videos": {

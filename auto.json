@@ -25,6 +25,17 @@
       "teamsText": "8 teams"
     },
     {
+      "id": "intel-extreme-masters-beijing-nbsp-2026",
+      "name": "Intel Extreme Masters Beijing&nbsp;2026",
+      "page": "Intel Extreme Masters/2026/Beijing",
+      "year": "2026",
+      "sdate": "2026-11-02",
+      "edate": "2026-11-08",
+      "dates": "2–8 November 2026",
+      "location": "Beijing, China",
+      "teamsText": "16 teams"
+    },
+    {
       "id": "pgl-masters-bucharest-2026",
       "name": "PGL Masters Bucharest 2026",
       "page": "PGL/2026/Masters",
@@ -109,6 +120,10 @@
     {
       "id": "lp-team-falcons",
       "name": "Falcons"
+    },
+    {
+      "id": "lp-faze-clan",
+      "name": "FaZe"
     },
     {
       "id": "lp-flyquest",
@@ -2867,6 +2882,110 @@
       "b": "lp-g2-esports",
       "bo": 3,
       "date": "11 Nov"
+    },
+    {
+      "id": "lp-1144bd1cb8",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-legacy",
+      "b": "lp-the-mongolz",
+      "bo": 3,
+      "date": ""
+    },
+    {
+      "id": "lp-34a1fee10a",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-heroic",
+      "b": "lp-b8",
+      "bo": 3,
+      "date": ""
+    },
+    {
+      "id": "lp-dbfa622f88",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-furia",
+      "b": "lp-faze-clan",
+      "bo": 3,
+      "date": ""
+    },
+    {
+      "id": "lp-0ff6e121ef",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-natus-vincere",
+      "b": "lp-team-falcons",
+      "bo": 3,
+      "date": ""
+    },
+    {
+      "id": "lp-ac9e34a298",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-mouz",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": ""
+    },
+    {
+      "id": "lp-cbfa7e1e72",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-9z-team",
+      "b": "lp-betboom-team",
+      "bo": 3,
+      "date": ""
+    },
+    {
+      "id": "lp-87a240523e",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-aurora-gaming",
+      "b": "lp-team-liquid",
+      "bo": 3,
+      "date": ""
+    },
+    {
+      "id": "lp-b4a46d837a",
+      "tournamentId": "intel-extreme-masters-beijing-nbsp-2026",
+      "tournament": "Intel Extreme Masters Beijing&nbsp;2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-parivision",
+      "b": "lp-g2-esports",
+      "bo": 3,
+      "date": ""
     }
   ],
   "videos": {
@@ -7451,7 +7570,207 @@
           "notPlayed": false
         }
       ]
+    },
+    "lp-1144bd1cb8": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-34a1fee10a": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-dbfa622f88": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-0ff6e121ef": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-ac9e34a298": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-cbfa7e1e72": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-87a240523e": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-b4a46d837a": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-26T01:17:56.352Z"
+  "updatedAt": "2026-10-26T01:20:02.475Z"
 }
