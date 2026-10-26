@@ -3,6 +3,246 @@
   "source": "Liquipedia (CC BY-SA 3.0), https://liquipedia.net/counterstrike/",
   "tournaments": [
     {
+      "id": "blast-rivals-2027",
+      "name": "BLAST Rivals 2027",
+      "page": "BLAST/Rivals/2027",
+      "year": "2027",
+      "sdate": "2027-11-08",
+      "edate": "2027-11-14",
+      "dates": "8–14 November 2027",
+      "location": "World",
+      "teamsText": "8 teams",
+      "image": "BLAST lightmode.png",
+      "imageDark": "BLAST darkmode.png",
+      "art": "",
+      "logo": "images/auto/blast-rivals-2027.png",
+      "logoDark": "images/auto/blast-rivals-2027-dark.png"
+    },
+    {
+      "id": "fissure-playground-9",
+      "name": "FISSURE Playground #9",
+      "page": "FISSURE/Playground/9",
+      "year": "2027",
+      "sdate": "2027-10-21",
+      "edate": "2027-10-30",
+      "dates": "21–30 October 2027",
+      "location": "World",
+      "teamsText": "",
+      "image": "FISSURE PLAYGRGOUND icon lightmode.png",
+      "imageDark": "FISSURE PLAYGRGOUND icon darkmode.png",
+      "art": "",
+      "logo": "images/auto/fissure-playground-9.png",
+      "logoDark": "images/auto/fissure-playground-9-dark.png"
+    },
+    {
+      "id": "blast-open-fall-2027",
+      "name": "BLAST Open Fall 2027",
+      "page": "BLAST/Open/2027/Fall",
+      "year": "2027",
+      "sdate": "2027-10-04",
+      "edate": "2027-10-17",
+      "dates": "4–17 October 2027",
+      "location": "Rio de Janeiro, Brazil",
+      "teamsText": "16 teams",
+      "image": "BLAST lightmode.png",
+      "imageDark": "BLAST darkmode.png",
+      "art": "",
+      "logo": "images/auto/blast-open-fall-2027.png",
+      "logoDark": "images/auto/blast-open-fall-2027-dark.png"
+    },
+    {
+      "id": "esl-pro-league-season-26",
+      "name": "ESL Pro League Season 26",
+      "page": "ESL/Pro League/Season 26",
+      "year": "2027",
+      "sdate": "2027-09-23",
+      "edate": "2027-10-03",
+      "dates": "23 September – 3 October 2027",
+      "location": "World",
+      "teamsText": "16 teams",
+      "image": "ESL Pro League 2019 new lightmode.png",
+      "imageDark": "ESL Pro League 2019 new darkmode.png",
+      "art": "",
+      "logo": "images/auto/esl-pro-league-season-26.png",
+      "logoDark": "images/auto/esl-pro-league-season-26-dark.png"
+    },
+    {
+      "id": "blast-bounty-summer-2027",
+      "name": "BLAST Bounty Summer 2027",
+      "page": "BLAST/Bounty/2027/Summer",
+      "year": "2027",
+      "sdate": "2027-08-30",
+      "edate": "2027-09-12",
+      "dates": "30 August – 12 September 2027",
+      "location": "World",
+      "teamsText": "16 teams",
+      "image": "BLAST lightmode.png",
+      "imageDark": "BLAST darkmode.png",
+      "art": "",
+      "logo": "images/auto/blast-bounty-summer-2027.png",
+      "logoDark": "images/auto/blast-bounty-summer-2027-dark.png"
+    },
+    {
+      "id": "fissure-playground-8",
+      "name": "FISSURE Playground #8",
+      "page": "FISSURE/Playground/8",
+      "year": "2027",
+      "sdate": "2027-08-18",
+      "edate": "2027-08-30",
+      "dates": "18–30 August 2027",
+      "location": "Georgia",
+      "teamsText": "16 teams",
+      "image": "FISSURE PLAYGRGOUND icon lightmode.png",
+      "imageDark": "FISSURE PLAYGRGOUND icon darkmode.png",
+      "art": "",
+      "logo": "images/auto/fissure-playground-8.png",
+      "logoDark": "images/auto/fissure-playground-8-dark.png"
+    },
+    {
+      "id": "cs-asia-championships-2027",
+      "name": "CS Asia Championships 2027",
+      "page": "CS Asia Championships/2027",
+      "year": "2027",
+      "sdate": "2027-08-17",
+      "edate": "2027-08-29",
+      "dates": "17–29 August 2027",
+      "location": "China",
+      "teamsText": "16 teams",
+      "image": "CS Asia Championships 2027 lightmode.png",
+      "imageDark": "CS Asia Championships 2027 darkmode.png",
+      "art": "",
+      "logo": "images/auto/cs-asia-championships-2027.png",
+      "logoDark": "images/auto/cs-asia-championships-2027-dark.png"
+    },
+    {
+      "id": "esports-world-cup-2027",
+      "name": "Esports World Cup 2027",
+      "page": "Esports World Cup/2027",
+      "year": "2027",
+      "sdate": "2027-07-20",
+      "edate": "2027-08-01",
+      "dates": "20 July – 1 August 2027",
+      "location": "Riyadh, Saudi Arabia",
+      "teamsText": "32 teams",
+      "image": "Esports World Cup 2026 lightmode.png",
+      "imageDark": "Esports World Cup 2026 darkmode.png",
+      "art": "",
+      "logo": "images/auto/esports-world-cup-2027.png",
+      "logoDark": "images/auto/esports-world-cup-2027-dark.png"
+    },
+    {
+      "id": "fissure-playground-7",
+      "name": "FISSURE Playground #7",
+      "page": "FISSURE/Playground/7",
+      "year": "2027",
+      "sdate": "2027-07-12",
+      "edate": "2027-07-19",
+      "dates": "12–19 July 2027",
+      "location": "World",
+      "teamsText": "",
+      "image": "FISSURE PLAYGRGOUND icon lightmode.png",
+      "imageDark": "FISSURE PLAYGRGOUND icon darkmode.png",
+      "art": "",
+      "logo": "images/auto/fissure-playground-7.png",
+      "logoDark": "images/auto/fissure-playground-7-dark.png"
+    },
+    {
+      "id": "blast-open-summer-2027",
+      "name": "BLAST Open Summer 2027",
+      "page": "BLAST/Open/2027/Summer",
+      "year": "2027",
+      "sdate": "2027-05-10",
+      "edate": "2027-05-23",
+      "dates": "10–23 May 2027",
+      "location": "Ulaanbaatar<!--, Mongolia",
+      "teamsText": "16 teams",
+      "image": "BLAST lightmode.png",
+      "imageDark": "BLAST darkmode.png",
+      "art": "",
+      "logo": "images/auto/blast-open-summer-2027.png",
+      "logoDark": "images/auto/blast-open-summer-2027-dark.png"
+    },
+    {
+      "id": "fissure-playground-6",
+      "name": "FISSURE Playground #6",
+      "page": "FISSURE/Playground/6",
+      "year": "2027",
+      "sdate": "2027-04-15",
+      "edate": "2027-04-26",
+      "dates": "15–26 April 2027",
+      "location": "World",
+      "teamsText": "",
+      "image": "FISSURE PLAYGRGOUND icon lightmode.png",
+      "imageDark": "FISSURE PLAYGRGOUND icon darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
+    },
+    {
+      "id": "blast-open-spring-2027",
+      "name": "BLAST Open Spring 2027",
+      "page": "BLAST/Open/2027/Spring",
+      "year": "2027",
+      "sdate": "2027-03-19",
+      "edate": "2027-03-28",
+      "dates": "19–28 March 2027",
+      "location": "Singapore",
+      "teamsText": "16 teams",
+      "image": "BLAST lightmode.png",
+      "imageDark": "BLAST darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
+    },
+    {
+      "id": "esl-pro-league-season-25",
+      "name": "ESL Pro League Season 25",
+      "page": "ESL/Pro League/Season 25",
+      "year": "2027",
+      "sdate": "2027-03-06",
+      "edate": "2027-03-14",
+      "dates": "6–14 March 2027",
+      "location": "Saudi Arabia",
+      "teamsText": "16 teams",
+      "image": "ESL Pro League 2019 new lightmode.png",
+      "imageDark": "ESL Pro League 2019 new darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
+    },
+    {
+      "id": "blast-bounty-winter-2027",
+      "name": "BLAST Bounty Winter 2027",
+      "page": "BLAST/Bounty/2027/Winter",
+      "year": "2027",
+      "sdate": "2027-01-13",
+      "edate": "2027-01-24",
+      "dates": "13–24 January 2027",
+      "location": "Attard, Malta",
+      "teamsText": "16 teams",
+      "image": "BLAST lightmode.png",
+      "imageDark": "BLAST darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
+    },
+    {
+      "id": "pgl-major-singapore-2026",
+      "name": "PGL Major Singapore 2026",
+      "page": "PGL/2026/Singapore",
+      "year": "2026",
+      "sdate": "2026-11-24",
+      "edate": "2026-12-13",
+      "dates": "24 November – 13 December 2026",
+      "location": "Kallang, Singapore",
+      "teamsText": "32 teams",
+      "image": "PGL Major Singapore 2026 lightmode.png",
+      "imageDark": "PGL Major Singapore 2026 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
+    },
+    {
       "id": "blast-rivals-fall-2026",
       "name": "BLAST Rivals Fall 2026",
       "page": "BLAST/Rivals/2026/Fall",
@@ -11,7 +251,12 @@
       "edate": "2026-11-15",
       "dates": "11–15 November 2026",
       "location": "Chek Lap Kok, Hong Kong",
-      "teamsText": "8 teams"
+      "teamsText": "8 teams",
+      "image": "BLAST Rivals 2026 lightmode.png",
+      "imageDark": "BLAST Rivals 2026 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "intel-extreme-masters-beijing-2026",
@@ -22,7 +267,12 @@
       "edate": "2026-11-08",
       "dates": "2–8 November 2026",
       "location": "Beijing, China",
-      "teamsText": "16 teams"
+      "teamsText": "16 teams",
+      "image": "Intel Extreme Masters 2022 lightmode.png",
+      "imageDark": "Intel Extreme Masters 2022 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "pgl-masters-bucharest-2026",
@@ -33,7 +283,12 @@
       "edate": "2026-10-31",
       "dates": "24–31 October 2026",
       "location": "Bucharest, Romania",
-      "teamsText": "16 teams"
+      "teamsText": "16 teams",
+      "image": "PGL Masters Bucharest 2026 lightmode.png",
+      "imageDark": "PGL Masters Bucharest 2026 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "thunderpick-world-championship-2026",
@@ -44,7 +299,10 @@
       "edate": "2026-10-18",
       "dates": "14–18 October 2026",
       "location": "Attard, Malta",
-      "teamsText": "8 teams"
+      "teamsText": "8 teams",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "esl-pro-league-season-24",
@@ -55,7 +313,12 @@
       "edate": "2026-10-11",
       "dates": "3–11 October 2026",
       "location": "Katowice, Poland",
-      "teamsText": "16 teams"
+      "teamsText": "16 teams",
+      "image": "ESL Pro League Season 24 lightmode.png",
+      "imageDark": "ESL Pro League Season 24 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "starladder-starseries-fall-2026",
@@ -66,7 +329,10 @@
       "edate": "2026-09-20",
       "dates": "17–20 September 2026",
       "location": "Barcelona, Spain",
-      "teamsText": "8 teams"
+      "teamsText": "8 teams",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "blast-open-porto-2026",
@@ -77,7 +343,12 @@
       "edate": "2026-09-06",
       "dates": "26 August – 6 September 2026",
       "location": "Porto, Portugal",
-      "teamsText": "16 teams"
+      "teamsText": "16 teams",
+      "image": "BLAST Open 2026 lightmode.png",
+      "imageDark": "BLAST Open 2026 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "esports-world-cup-2026",
@@ -88,7 +359,12 @@
       "edate": "2026-08-23",
       "dates": "12–23 August 2026",
       "location": "Paris, France",
-      "teamsText": "32 teams"
+      "teamsText": "32 teams",
+      "image": "Esports World Cup 2026 Paris lightmode.png",
+      "imageDark": "Esports World Cup 2026 Paris darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "blast-bounty-summer-2026",
@@ -99,7 +375,12 @@
       "edate": "2026-08-02",
       "dates": "30 July – 2 August 2026",
       "location": "Attard, Malta",
-      "teamsText": "8 teams"
+      "teamsText": "8 teams",
+      "image": "BLAST Bounty Malta 2026 lightmode.png",
+      "imageDark": "BLAST Bounty Malta 2026 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     },
     {
       "id": "intel-extreme-masters-cologne-major-2026",
@@ -110,7 +391,12 @@
       "edate": "2026-06-21",
       "dates": "2–21 June 2026",
       "location": "Cologne, Germany",
-      "teamsText": "32 teams"
+      "teamsText": "32 teams",
+      "image": "IEM Cologne Major 2026 lightmode.png",
+      "imageDark": "IEM Cologne Major 2026 darkmode.png",
+      "art": "",
+      "logo": "",
+      "logoDark": ""
     }
   ],
   "teams": [
@@ -296,6 +582,370 @@
     }
   ],
   "matches": [
+    {
+      "id": "lp-a5a27a1cb3",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-mouz",
+      "b": "lp-nrg",
+      "bo": 3,
+      "date": "17 Sept"
+    },
+    {
+      "id": "lp-c30108b80a",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-magic",
+      "b": "lp-team-vitality",
+      "bo": 3,
+      "date": "17 Sept"
+    },
+    {
+      "id": "lp-fc91dd494c",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-aurora-gaming",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "17 Sept"
+    },
+    {
+      "id": "lp-82001a6e30",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-furia",
+      "b": "lp-mibr",
+      "bo": 3,
+      "date": "17 Sept"
+    },
+    {
+      "id": "lp-d5a53e2b36",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Round 1",
+      "roundOrder": 2,
+      "a": "lp-mouz",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "18 Sept"
+    },
+    {
+      "id": "lp-23b3e2f5bb",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Round 1",
+      "roundOrder": 2,
+      "a": "lp-mibr",
+      "b": "lp-magic",
+      "bo": 3,
+      "date": "18 Sept"
+    },
+    {
+      "id": "lp-73c76734e9",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Semi-Finals",
+      "roundOrder": 3,
+      "a": "lp-nrg",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "18 Sept"
+    },
+    {
+      "id": "lp-54017faf5b",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Semi-Finals",
+      "roundOrder": 3,
+      "a": "lp-furia",
+      "b": "lp-team-vitality",
+      "bo": 3,
+      "date": "18 Sept"
+    },
+    {
+      "id": "lp-5b671aa81a",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarter-Finals",
+      "roundOrder": 4,
+      "a": "lp-nrg",
+      "b": "lp-mibr",
+      "bo": 3,
+      "date": "19 Sept"
+    },
+    {
+      "id": "lp-640ae2ea41",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarter-Finals",
+      "roundOrder": 4,
+      "a": "lp-furia",
+      "b": "lp-mouz",
+      "bo": 3,
+      "date": "19 Sept"
+    },
+    {
+      "id": "lp-bd07c1aa44",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Final",
+      "roundOrder": 5,
+      "a": "lp-aurora-gaming",
+      "b": "lp-team-vitality",
+      "bo": 3,
+      "date": "19 Sept"
+    },
+    {
+      "id": "lp-36be919591",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Semi-Finals",
+      "roundOrder": 6,
+      "a": "lp-furia",
+      "b": "lp-mibr",
+      "bo": 3,
+      "date": "19 Sept"
+    },
+    {
+      "id": "lp-d144c054ea",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Final",
+      "roundOrder": 7,
+      "a": "lp-team-vitality",
+      "b": "lp-furia",
+      "bo": 3,
+      "date": "20 Sept"
+    },
+    {
+      "id": "lp-104b3ca3e8",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Grand Final",
+      "roundOrder": 8,
+      "a": "lp-aurora-gaming",
+      "b": "lp-team-vitality",
+      "bo": 5,
+      "date": "20 Sept"
+    },
+    {
+      "id": "lp-1a30ffcf9c",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A",
+      "roundOrder": 1,
+      "a": "lp-9z-team",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "14 Oct"
+    },
+    {
+      "id": "lp-f0b5e50707",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A",
+      "roundOrder": 1,
+      "a": "lp-team-falcons",
+      "b": "lp-ninjas-in-pyjamas",
+      "bo": 3,
+      "date": "14 Oct"
+    },
+    {
+      "id": "lp-fb424683a9",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A",
+      "roundOrder": 1,
+      "a": "lp-aurora-gaming",
+      "b": "lp-ninjas-in-pyjamas",
+      "bo": 3,
+      "date": "15 Oct"
+    },
+    {
+      "id": "lp-b0e0822b86",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A",
+      "roundOrder": 1,
+      "a": "lp-9z-team",
+      "b": "lp-team-falcons",
+      "bo": 3,
+      "date": "15 Oct"
+    },
+    {
+      "id": "lp-3e3f0c3f93",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A",
+      "roundOrder": 1,
+      "a": "lp-9z-team",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "16 Oct"
+    },
+    {
+      "id": "lp-9dce937cf3",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B",
+      "roundOrder": 2,
+      "a": "lp-legacy",
+      "b": "lp-parivision",
+      "bo": 3,
+      "date": "14 Oct"
+    },
+    {
+      "id": "lp-6a95f5ff02",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B",
+      "roundOrder": 2,
+      "a": "lp-furia",
+      "b": "lp-betboom-team",
+      "bo": 3,
+      "date": "14 Oct"
+    },
+    {
+      "id": "lp-449309e77b",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B",
+      "roundOrder": 2,
+      "a": "lp-parivision",
+      "b": "lp-betboom-team",
+      "bo": 3,
+      "date": "15 Oct"
+    },
+    {
+      "id": "lp-8a3d4ab94b",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B",
+      "roundOrder": 2,
+      "a": "lp-legacy",
+      "b": "lp-furia",
+      "bo": 3,
+      "date": "15 Oct"
+    },
+    {
+      "id": "lp-6ee7d72e07",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B",
+      "roundOrder": 2,
+      "a": "lp-legacy",
+      "b": "lp-betboom-team",
+      "bo": 3,
+      "date": "16 Oct"
+    },
+    {
+      "id": "lp-d1c3d7df82",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Semifinals",
+      "roundOrder": 3,
+      "a": "lp-aurora-gaming",
+      "b": "lp-furia",
+      "bo": 3,
+      "date": "17 Oct"
+    },
+    {
+      "id": "lp-09c32d9662",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Semifinals",
+      "roundOrder": 3,
+      "a": "lp-team-falcons",
+      "b": "lp-betboom-team",
+      "bo": 3,
+      "date": "17 Oct"
+    },
+    {
+      "id": "lp-51e3321bff",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Third Place Match",
+      "roundOrder": 4,
+      "a": "lp-team-falcons",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "18 Oct"
+    },
+    {
+      "id": "lp-d8ea2ba568",
+      "tournamentId": "thunderpick-world-championship-2026",
+      "tournament": "Thunderpick World Championship 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Grand Final",
+      "roundOrder": 5,
+      "a": "lp-betboom-team",
+      "b": "lp-furia",
+      "bo": 5,
+      "date": "18 Oct"
+    },
     {
       "id": "lp-e017aaea27",
       "tournamentId": "pgl-masters-bucharest-2026",
@@ -3870,373 +4520,737 @@
       "b": "lp-team-spirit",
       "bo": 5,
       "date": "23 Aug"
-    },
-    {
-      "id": "lp-a5a27a1cb3",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-mouz",
-      "b": "lp-nrg",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-c30108b80a",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-magic",
-      "b": "lp-team-vitality",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-fc91dd494c",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-aurora-gaming",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-82001a6e30",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-furia",
-      "b": "lp-mibr",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-d5a53e2b36",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Round 1",
-      "roundOrder": 2,
-      "a": "lp-mouz",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-23b3e2f5bb",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Round 1",
-      "roundOrder": 2,
-      "a": "lp-mibr",
-      "b": "lp-magic",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-73c76734e9",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Semi-Finals",
-      "roundOrder": 3,
-      "a": "lp-nrg",
-      "b": "lp-aurora-gaming",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-54017faf5b",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Semi-Finals",
-      "roundOrder": 3,
-      "a": "lp-furia",
-      "b": "lp-team-vitality",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-5b671aa81a",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Quarter-Finals",
-      "roundOrder": 4,
-      "a": "lp-nrg",
-      "b": "lp-mibr",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-640ae2ea41",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Quarter-Finals",
-      "roundOrder": 4,
-      "a": "lp-furia",
-      "b": "lp-mouz",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-bd07c1aa44",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Final",
-      "roundOrder": 5,
-      "a": "lp-aurora-gaming",
-      "b": "lp-team-vitality",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-36be919591",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Semi-Finals",
-      "roundOrder": 6,
-      "a": "lp-furia",
-      "b": "lp-mibr",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-d144c054ea",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Final",
-      "roundOrder": 7,
-      "a": "lp-team-vitality",
-      "b": "lp-furia",
-      "bo": 3,
-      "date": "20 Sept"
-    },
-    {
-      "id": "lp-104b3ca3e8",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Grand Final",
-      "roundOrder": 8,
-      "a": "lp-aurora-gaming",
-      "b": "lp-team-vitality",
-      "bo": 5,
-      "date": "20 Sept"
-    },
-    {
-      "id": "lp-1a30ffcf9c",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A",
-      "roundOrder": 1,
-      "a": "lp-9z-team",
-      "b": "lp-aurora-gaming",
-      "bo": 3,
-      "date": "14 Oct"
-    },
-    {
-      "id": "lp-f0b5e50707",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A",
-      "roundOrder": 1,
-      "a": "lp-team-falcons",
-      "b": "lp-ninjas-in-pyjamas",
-      "bo": 3,
-      "date": "14 Oct"
-    },
-    {
-      "id": "lp-fb424683a9",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A",
-      "roundOrder": 1,
-      "a": "lp-aurora-gaming",
-      "b": "lp-ninjas-in-pyjamas",
-      "bo": 3,
-      "date": "15 Oct"
-    },
-    {
-      "id": "lp-b0e0822b86",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A",
-      "roundOrder": 1,
-      "a": "lp-9z-team",
-      "b": "lp-team-falcons",
-      "bo": 3,
-      "date": "15 Oct"
-    },
-    {
-      "id": "lp-3e3f0c3f93",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A",
-      "roundOrder": 1,
-      "a": "lp-9z-team",
-      "b": "lp-aurora-gaming",
-      "bo": 3,
-      "date": "16 Oct"
-    },
-    {
-      "id": "lp-9dce937cf3",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B",
-      "roundOrder": 2,
-      "a": "lp-legacy",
-      "b": "lp-parivision",
-      "bo": 3,
-      "date": "14 Oct"
-    },
-    {
-      "id": "lp-6a95f5ff02",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B",
-      "roundOrder": 2,
-      "a": "lp-furia",
-      "b": "lp-betboom-team",
-      "bo": 3,
-      "date": "14 Oct"
-    },
-    {
-      "id": "lp-449309e77b",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B",
-      "roundOrder": 2,
-      "a": "lp-parivision",
-      "b": "lp-betboom-team",
-      "bo": 3,
-      "date": "15 Oct"
-    },
-    {
-      "id": "lp-8a3d4ab94b",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B",
-      "roundOrder": 2,
-      "a": "lp-legacy",
-      "b": "lp-furia",
-      "bo": 3,
-      "date": "15 Oct"
-    },
-    {
-      "id": "lp-6ee7d72e07",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B",
-      "roundOrder": 2,
-      "a": "lp-legacy",
-      "b": "lp-betboom-team",
-      "bo": 3,
-      "date": "16 Oct"
-    },
-    {
-      "id": "lp-d1c3d7df82",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Playoffs",
-      "stageOrder": 1,
-      "round": "Semifinals",
-      "roundOrder": 3,
-      "a": "lp-aurora-gaming",
-      "b": "lp-furia",
-      "bo": 3,
-      "date": "17 Oct"
-    },
-    {
-      "id": "lp-09c32d9662",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Playoffs",
-      "stageOrder": 1,
-      "round": "Semifinals",
-      "roundOrder": 3,
-      "a": "lp-team-falcons",
-      "b": "lp-betboom-team",
-      "bo": 3,
-      "date": "17 Oct"
-    },
-    {
-      "id": "lp-51e3321bff",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Playoffs",
-      "stageOrder": 1,
-      "round": "Third Place Match",
-      "roundOrder": 4,
-      "a": "lp-team-falcons",
-      "b": "lp-aurora-gaming",
-      "bo": 3,
-      "date": "18 Oct"
-    },
-    {
-      "id": "lp-d8ea2ba568",
-      "tournamentId": "thunderpick-world-championship-2026",
-      "tournament": "Thunderpick World Championship 2026",
-      "stage": "Playoffs",
-      "stageOrder": 1,
-      "round": "Grand Final",
-      "roundOrder": 5,
-      "a": "lp-betboom-team",
-      "b": "lp-furia",
-      "bo": 5,
-      "date": "18 Oct"
     }
   ],
   "videos": {
+    "lp-a5a27a1cb3": {
+      "maps": [
+        {
+          "video": "https://youtu.be/ZWv5cwe8WO8",
+          "start": "23",
+          "end": "2952",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/ZWv5cwe8WO8",
+          "start": "2952",
+          "end": "5359",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/ZWv5cwe8WO8",
+          "start": "5359",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-c30108b80a": {
+      "maps": [
+        {
+          "video": "https://youtu.be/l94aqGHxLPg",
+          "start": "30",
+          "end": "2413",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/l94aqGHxLPg",
+          "start": "2413",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-fc91dd494c": {
+      "maps": [
+        {
+          "video": "https://youtu.be/1E6LIK7EGHs",
+          "start": "28",
+          "end": "2991",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/1E6LIK7EGHs",
+          "start": "2991",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-82001a6e30": {
+      "maps": [
+        {
+          "video": "https://youtu.be/5W4-_BHXl7g",
+          "start": "29",
+          "end": "3217",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/5W4-_BHXl7g",
+          "start": "3217",
+          "end": "5579",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/5W4-_BHXl7g",
+          "start": "5579",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-d5a53e2b36": {
+      "maps": [
+        {
+          "video": "https://youtu.be/h9Aqi4BzpfM",
+          "start": "32",
+          "end": "3104",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/h9Aqi4BzpfM",
+          "start": "3104",
+          "end": "6196",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/h9Aqi4BzpfM",
+          "start": "6196",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-23b3e2f5bb": {
+      "maps": [
+        {
+          "video": "https://youtu.be/09SREO1c36Q",
+          "start": "28",
+          "end": "2427",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/09SREO1c36Q",
+          "start": "2427",
+          "end": "5292",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/09SREO1c36Q",
+          "start": "5292",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-73c76734e9": {
+      "maps": [
+        {
+          "video": "https://youtu.be/KAIwaUgiKvo",
+          "start": "28",
+          "end": "2864",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/KAIwaUgiKvo",
+          "start": "2864",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-54017faf5b": {
+      "maps": [
+        {
+          "video": "https://youtu.be/OvpiH_e2D6s",
+          "start": "28",
+          "end": "2844",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/OvpiH_e2D6s",
+          "start": "2844",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-5b671aa81a": {
+      "maps": [
+        {
+          "video": "https://youtu.be/Et6cs2OYQAc",
+          "start": "27",
+          "end": "2524",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/Et6cs2OYQAc",
+          "start": "2524",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-640ae2ea41": {
+      "maps": [
+        {
+          "video": "https://youtu.be/OEwN5pO-xFA",
+          "start": "23",
+          "end": "2836",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/OEwN5pO-xFA",
+          "start": "2836",
+          "end": "7370",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/OEwN5pO-xFA",
+          "start": "7370",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-bd07c1aa44": {
+      "maps": [
+        {
+          "video": "https://youtu.be/jhRCPLzyino",
+          "start": "25",
+          "end": "2577",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/jhRCPLzyino",
+          "start": "2577",
+          "end": "6072",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/jhRCPLzyino",
+          "start": "6072",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-36be919591": {
+      "maps": [
+        {
+          "video": "https://youtu.be/unV0K0cpsGE",
+          "start": "16",
+          "end": "2731",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/unV0K0cpsGE",
+          "start": "2731",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-d144c054ea": {
+      "maps": [
+        {
+          "video": "https://youtu.be/edHKRIU5BUU",
+          "start": "31",
+          "end": "2289",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/edHKRIU5BUU",
+          "start": "2289",
+          "end": "",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-104b3ca3e8": {
+      "maps": [
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "32",
+          "end": "2421",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "2421",
+          "end": "5818",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "5818",
+          "end": "8033",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "8033",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-1a30ffcf9c": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-f0b5e50707": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-fb424683a9": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-b0e0822b86": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-3e3f0c3f93": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-9dce937cf3": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-6a95f5ff02": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-449309e77b": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-8a3d4ab94b": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-6ee7d72e07": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-d1c3d7df82": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-09c32d9662": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-51e3321bff": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-d8ea2ba568": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        }
+      ]
+    },
     "lp-e017aaea27": {
       "maps": [
         {
@@ -10397,736 +11411,8 @@
           "notPlayed": true
         }
       ]
-    },
-    "lp-a5a27a1cb3": {
-      "maps": [
-        {
-          "video": "https://youtu.be/ZWv5cwe8WO8",
-          "start": "23",
-          "end": "2952",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/ZWv5cwe8WO8",
-          "start": "2952",
-          "end": "5359",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/ZWv5cwe8WO8",
-          "start": "5359",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-c30108b80a": {
-      "maps": [
-        {
-          "video": "https://youtu.be/l94aqGHxLPg",
-          "start": "30",
-          "end": "2413",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/l94aqGHxLPg",
-          "start": "2413",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-fc91dd494c": {
-      "maps": [
-        {
-          "video": "https://youtu.be/1E6LIK7EGHs",
-          "start": "28",
-          "end": "2991",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/1E6LIK7EGHs",
-          "start": "2991",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-82001a6e30": {
-      "maps": [
-        {
-          "video": "https://youtu.be/5W4-_BHXl7g",
-          "start": "29",
-          "end": "3217",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/5W4-_BHXl7g",
-          "start": "3217",
-          "end": "5579",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/5W4-_BHXl7g",
-          "start": "5579",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-d5a53e2b36": {
-      "maps": [
-        {
-          "video": "https://youtu.be/h9Aqi4BzpfM",
-          "start": "32",
-          "end": "3104",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/h9Aqi4BzpfM",
-          "start": "3104",
-          "end": "6196",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/h9Aqi4BzpfM",
-          "start": "6196",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-23b3e2f5bb": {
-      "maps": [
-        {
-          "video": "https://youtu.be/09SREO1c36Q",
-          "start": "28",
-          "end": "2427",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/09SREO1c36Q",
-          "start": "2427",
-          "end": "5292",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/09SREO1c36Q",
-          "start": "5292",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-73c76734e9": {
-      "maps": [
-        {
-          "video": "https://youtu.be/KAIwaUgiKvo",
-          "start": "28",
-          "end": "2864",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/KAIwaUgiKvo",
-          "start": "2864",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-54017faf5b": {
-      "maps": [
-        {
-          "video": "https://youtu.be/OvpiH_e2D6s",
-          "start": "28",
-          "end": "2844",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/OvpiH_e2D6s",
-          "start": "2844",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-5b671aa81a": {
-      "maps": [
-        {
-          "video": "https://youtu.be/Et6cs2OYQAc",
-          "start": "27",
-          "end": "2524",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/Et6cs2OYQAc",
-          "start": "2524",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-640ae2ea41": {
-      "maps": [
-        {
-          "video": "https://youtu.be/OEwN5pO-xFA",
-          "start": "23",
-          "end": "2836",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/OEwN5pO-xFA",
-          "start": "2836",
-          "end": "7370",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/OEwN5pO-xFA",
-          "start": "7370",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-bd07c1aa44": {
-      "maps": [
-        {
-          "video": "https://youtu.be/jhRCPLzyino",
-          "start": "25",
-          "end": "2577",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/jhRCPLzyino",
-          "start": "2577",
-          "end": "6072",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/jhRCPLzyino",
-          "start": "6072",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-36be919591": {
-      "maps": [
-        {
-          "video": "https://youtu.be/unV0K0cpsGE",
-          "start": "16",
-          "end": "2731",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/unV0K0cpsGE",
-          "start": "2731",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-d144c054ea": {
-      "maps": [
-        {
-          "video": "https://youtu.be/edHKRIU5BUU",
-          "start": "31",
-          "end": "2289",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/edHKRIU5BUU",
-          "start": "2289",
-          "end": "",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-104b3ca3e8": {
-      "maps": [
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "32",
-          "end": "2421",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "2421",
-          "end": "5818",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "5818",
-          "end": "8033",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "8033",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-1a30ffcf9c": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-f0b5e50707": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-fb424683a9": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-b0e0822b86": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-3e3f0c3f93": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-9dce937cf3": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-6a95f5ff02": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-449309e77b": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-8a3d4ab94b": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-6ee7d72e07": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-d1c3d7df82": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-09c32d9662": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-51e3321bff": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-d8ea2ba568": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        }
-      ]
     }
   },
-  "updatedAt": "2026-10-26T01:47:48.135Z",
+  "updatedAt": "2026-10-26T01:53:07.328Z",
   "featured": "pgl-masters-bucharest-2026"
 }
