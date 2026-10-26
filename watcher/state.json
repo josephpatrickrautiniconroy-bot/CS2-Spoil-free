@@ -1,226 +1,20 @@
 {
   "version": 2,
   "pages": {
-    "PGL/2026/Masters": {
-      "revid": 3463168,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:30:24.110Z"
-    },
-    "ESL/Pro League/Season 24": {
-      "revid": 3461311,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:30:24.110Z"
-    },
-    "BLAST/Open/2026/Fall": {
-      "revid": 3446344,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:30:24.110Z"
-    },
-    "Intel Extreme Masters/2026/Cologne": {
-      "revid": 3462007,
-      "subpages": [
-        "Intel Extreme Masters/2026/Cologne/Stage 2",
-        "Intel Extreme Masters/2026/Cologne/Stage 3",
-        "Intel Extreme Masters/2026/Cologne/Stage 1",
-        "Intel Extreme Masters/2026/Cologne/Playoffs"
-      ],
-      "subRevids": {
-        "Intel Extreme Masters/2026/Cologne/Stage 2": 3413161,
-        "Intel Extreme Masters/2026/Cologne/Stage 3": 3413157,
-        "Intel Extreme Masters/2026/Cologne/Stage 1": 3413160,
-        "Intel Extreme Masters/2026/Cologne/Playoffs": 3390154
-      },
-      "fetchedAt": "2026-10-26T01:30:24.110Z"
-    },
-    "Intel Extreme Masters/2026/Beijing": {
-      "revid": 3461671,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:30:24.110Z"
-    },
-    "BLAST/Rivals/2026/Fall": {
-      "revid": 3462416,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:30:24.110Z"
-    },
-    "PGL/2026/Singapore": {
-      "revid": 3463117,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-26T01:30:24.110Z"
-    }
+    "PGL/2026/Masters": {},
+    "ESL/Pro League/Season 24": {},
+    "BLAST/Open/2026/Fall": {},
+    "Intel Extreme Masters/2026/Cologne": {},
+    "Intel Extreme Masters/2026/Beijing": {},
+    "BLAST/Rivals/2026/Fall": {},
+    "PGL/2026/Singapore": {}
   },
   "resolved": {
     "IEM Cologne Major 2026": "Intel Extreme Masters/2026/Cologne",
     "BLAST Rivals 2026 Hong Kong": "BLAST/Rivals/2026/Fall",
     "Intel Extreme Masters Beijing 2026": "Intel Extreme Masters/2026/Beijing"
   },
-  "teams": {
-    "fut": {
-      "id": "lp-fut-esports",
-      "name": "FUT"
-    },
-    "tyloo": {
-      "id": "lp-tyloo",
-      "name": "TYLOO"
-    },
-    "aurora": {
-      "id": "lp-aurora-gaming",
-      "name": "Aurora"
-    },
-    "mongolz": {
-      "id": "lp-the-mongolz",
-      "name": "MongolZ"
-    },
-    "spirit": {
-      "id": "lp-team-spirit",
-      "name": "Spirit"
-    },
-    "betboom": {
-      "id": "lp-betboom-team",
-      "name": "BB"
-    },
-    "mouz": {
-      "id": "lp-mouz",
-      "name": "MOUZ"
-    },
-    "tl": {
-      "id": "lp-team-liquid",
-      "name": "Liquid"
-    },
-    "legacy": {
-      "id": "lp-legacy",
-      "name": "Legacy"
-    },
-    "nemiga": {
-      "id": "lp-nemiga-gaming",
-      "name": "Nemiga"
-    },
-    "vit": {
-      "id": "lp-team-vitality",
-      "name": "Vitality"
-    },
-    "9z": {
-      "id": "lp-9z-team",
-      "name": "9z"
-    },
-    "g2": {
-      "id": "lp-g2-esports",
-      "name": "G2"
-    },
-    "navi": {
-      "id": "lp-natus-vincere",
-      "name": "NAVI"
-    },
-    "furia": {
-      "id": "lp-furia",
-      "name": "FURIA"
-    },
-    "dendele": {
-      "id": "lp-dendele-cs",
-      "name": "DENDELE"
-    },
-    "falcons": {
-      "id": "lp-team-falcons",
-      "name": "Falcons"
-    },
-    "parivision": {
-      "id": "lp-parivision",
-      "name": "PV"
-    },
-    "shinden": {
-      "id": "lp-shinden",
-      "name": "ShindeN"
-    },
-    "1w": {
-      "id": "lp-1w-team",
-      "name": "1w"
-    },
-    "m80": {
-      "id": "lp-m80",
-      "name": "M80"
-    },
-    "pain": {
-      "id": "lp-pain-gaming",
-      "name": "paiN"
-    },
-    "lvg": {
-      "id": "lp-lynn-vision-gaming",
-      "name": "LVG"
-    },
-    "ic": {
-      "id": "lp-ic-esports",
-      "name": "IC"
-    },
-    "astralis": {
-      "id": "lp-astralis",
-      "name": "Astralis"
-    },
-    "gl": {
-      "id": "lp-gamerlegion",
-      "name": "GL"
-    },
-    "fq": {
-      "id": "lp-flyquest",
-      "name": "FLY"
-    },
-    "b8": {
-      "id": "lp-b8",
-      "name": "B8"
-    },
-    "monte": {
-      "id": "lp-monte",
-      "name": "Monte"
-    },
-    "big": {
-      "id": "lp-big",
-      "name": "BIG"
-    },
-    "mibr": {
-      "id": "lp-mibr",
-      "name": "MIBR"
-    },
-    "sinners": {
-      "id": "lp-sinners-esports",
-      "name": "SINNERS"
-    },
-    "thunderdownunder": {
-      "id": "lp-off-chops",
-      "name": "Chops"
-    },
-    "nrg": {
-      "id": "lp-nrg",
-      "name": "NRG"
-    },
-    "heroic": {
-      "id": "lp-heroic",
-      "name": "HEROIC"
-    },
-    "sharks": {
-      "id": "lp-dendele-cs",
-      "name": "DENDELE"
-    },
-    "gaimin": {
-      "id": "lp-gaimin-gladiators",
-      "name": "Gaimin"
-    },
-    "the mongolz": {
-      "id": "lp-the-mongolz",
-      "name": "MongolZ"
-    },
-    "faze": {
-      "id": "lp-faze-clan",
-      "name": "FaZe"
-    },
-    "team liquid": {
-      "id": "lp-team-liquid",
-      "name": "Liquid"
-    }
-  },
+  "teams": {},
   "videos": {
     "YcBD2QIKQAI": {
       "ok": true,
@@ -1183,5 +977,5 @@
       "checkedAt": "2026-10-26T01:17:56.352Z"
     }
   },
-  "parserVersion": 2
+  "parserVersion": 3
 }
