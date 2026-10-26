@@ -75,6 +75,7 @@ jobs:
           mkdir -p _site
           cp index.html data.json auto.json _site/
           if [ -d images ]; then cp -r images _site/; fi
+          if [ -d tools ]; then cp -r tools _site/; fi
 
       - name: Set up GitHub Pages
         if: steps.save.outputs.site_changed == 'true' || github.event_name != 'schedule'
