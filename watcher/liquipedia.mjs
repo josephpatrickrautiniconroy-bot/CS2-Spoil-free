@@ -6,6 +6,9 @@
   keeps are which maps were played, so a series' unplayed maps can be marked as such.
 */
 
+// Bump when the reader changes, so the watcher reads every page again with the new version.
+export const PARSER_VERSION = 2;
+
 /* ---------- template parsing ---------- */
 
 // Finds every {{Name ...}} template in text (not nested ones inside other matches of the same name).
@@ -65,6 +68,8 @@ const plain = s => stripComments(s)
   .replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, '$1')
   .replace(/'{2,}/g, '')
   .replace(/<[^>]+>/g, '')
+  .replace(/&(nbsp|amp|quot|apos|lt|gt|#\d+|#x[\da-f]+);/gi, (m, e) => ({ nbsp: ' ', amp: '&', quot: '"', apos: "'", lt: '<', gt: '>' })[e.toLowerCase()]
+    || String.fromCodePoint(e[1].toLowerCase() === 'x' ? parseInt(e.slice(2), 16) : +e.slice(1)))
   .replace(/\s+/g, ' ')
   .trim();
 
@@ -210,6 +215,6 @@ export function parsePage(text, pageTitle = '') {
 export function teamNamesFromExpansion(wikitext) {
   return String(wikitext || '').split('\n').map(line => {
     const m = line.match(/team-template-text">\s*\[\[([^\]|]*)(?:\|([^\]]*))?\]\]/);
-    return m ? { page: m[1].trim(), name: (m[2] || m[1]).trim() } : null;
+    return m ? { page: plain(m[1]), name: plain(m[2] || m[1]) } : null;
   });
 }

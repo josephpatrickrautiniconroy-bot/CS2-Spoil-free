@@ -23,7 +23,7 @@ import { readFile, writeFile, appendFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { parsePage, teamNamesFromExpansion } from './liquipedia.mjs';
+import { parsePage, teamNamesFromExpansion, PARSER_VERSION } from './liquipedia.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FILES = {
@@ -238,6 +238,8 @@ async function main() {
   const state = await readJson(FILES.state, {});
   if (state.version !== 2) { for (const k of Object.keys(state)) delete state[k]; state.version = 2; }
   for (const k of ['pages', 'resolved', 'teams', 'videos']) if (!state[k] || typeof state[k] !== 'object') state[k] = {};
+  // A newer page reader: read every page again.
+  if (state.parserVersion !== PARSER_VERSION) { state.pages = {}; state.teams = {}; state.parserVersion = PARSER_VERSION; }
   if (auto.version !== 2) { for (const k of Object.keys(auto)) delete auto[k]; }
   auto.version = 2;
   auto.source = 'Liquipedia (CC BY-SA 3.0), https://liquipedia.net/counterstrike/';
