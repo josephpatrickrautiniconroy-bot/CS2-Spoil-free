@@ -28,34 +28,20 @@ export async function probe({ yt, state, log }) {
   };
   const vodsIn = text => [...text.matchAll(/\|\s*vod[a-z]*\d*\s*=\s*([^\s|}]+)/gi)].map(m => m[1]);
 
-  // Full wikitext of two pages, to learn the match format.
-  for (const title of ['ESL/Pro League/Season 24', 'BLAST/Open/2026/Fall']) {
+  // Fixtures for building the Liquipedia reader.
+  for (const title of ['PGL/2021/Stockholm', 'PGL/2021/Stockholm/Legends Stage', 'PGL/2026/Masters', 'Intel Extreme Masters/2025/Cologne']) {
     try { out.wikitext[title] = await content(title); } catch (e) { out.wikitext[title] = 'ERROR ' + e.message; }
   }
-  // Subpages and VOD coverage for other events, including old CS:GO ones.
-  for (const prefix of ['PGL/2026', 'Intel Extreme Masters/2025/Cologne', 'PGL/2021/Stockholm', 'ESL/One/2014/Cologne', 'BLAST/Premier/2023/World Final', 'StarLadder/2019/Major', 'FISSURE', 'Perfect World/Major/2025']) {
-    try {
-      const r = await lp({ action: 'query', list: 'prefixsearch', pssearch: prefix, pslimit: '20' });
-      out.prefix[prefix] = (r.query.prefixsearch || []).map(x => x.title);
-    } catch (e) { out.prefix[prefix] = 'ERROR ' + e.message; }
-  }
-  const pagesToCount = [];
-  for (const list of Object.values(out.prefix)) if (Array.isArray(list)) pagesToCount.push(...list.filter(t => !/\/(Statistics|Results|Media|Broadcast|Qualifier|Qualifiers|Open Qualifier|Closed Qualifier)/i.test(t)).slice(0, 4));
-  for (const title of [...new Set(pagesToCount)].slice(0, 24)) {
-    try { const t = await content(title); const v = vodsIn(t); out.pages[title] = { length: t.length, vodCount: v.length, samples: v.slice(0, 6), matchTemplates: (t.match(/\{\{Match\b/gi) || []).length, bracketTemplates: (t.match(/\{\{(Bracket|Matchlist|SingleMatch)\b/gi) || []).length }; }
-    catch (e) { out.pages[title] = 'ERROR ' + e.message; }
-  }
-  // Which YouTube channels the Liquipedia VOD links point at.
-  const ids = new Set();
-  for (const text of Object.values(out.wikitext)) for (const v of vodsIn(text)) { const m = v.match(/(?:youtu\.be\/|v=)([\w-]{11})/); if (m) ids.add(m[1]); }
-  for (const p of Object.values(out.pages)) for (const v of (p.samples || [])) { const m = v.match(/(?:youtu\.be\/|v=)([\w-]{11})/); if (m) ids.add(m[1]); }
-  const list = [...ids];
-  for (let i = 0; i < list.length; i += 50) {
-    try {
-      const res = await yt('videos', { part: 'snippet,contentDetails,status', id: list.slice(i, i + 50).join(',') });
-      for (const v of res.items || []) out.vodChannels[v.id] = { channel: v.snippet.channelTitle, channelId: v.snippet.channelId, title: v.snippet.title, duration: v.contentDetails.duration, embeddable: v.status.embeddable };
-    } catch (e) { out.vodChannels.error = e.message; }
-  }
+  try {
+    out.expand = await lp({ action: 'expandtemplates', prop: 'wikitext', text: '{{TeamShort|falcons}}\n{{TeamShort|tyloo}}\n{{Team|parivision}}\n{{TeamShort|natus vincere}}\n{{TeamShort|navi}}' });
+  } catch (e) { out.expand = 'ERROR ' + e.message; }
+  try {
+    out.revisions = await lp({ action: 'query', prop: 'revisions', rvprop: 'ids|timestamp', titles: 'ESL/Pro League/Season 24|BLAST/Open/2026/Fall|PGL/2026/Masters|Not a real page xyz' });
+  } catch (e) { out.revisions = 'ERROR ' + e.message; }
+  try {
+    out.multiContent = await lp({ action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', titles: 'FISSURE|FISSURE/Playground/8' });
+    for (const pg of Object.values(out.multiContent.query.pages)) if (pg.revisions) pg.revisions[0].slots.main['*'] = pg.revisions[0].slots.main['*'].slice(0, 300);
+  } catch (e) { out.multiContent = 'ERROR ' + e.message; }
   log('Research probe saved to state.json.');
   return out;
 }
