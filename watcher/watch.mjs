@@ -23,7 +23,7 @@ import { readFile, writeFile, appendFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { parsePage, teamNamesFromExpansion, PARSER_VERSION } from './liquipedia.mjs';
+import { parsePage, parseInfobox, teamNamesFromExpansion, PARSER_VERSION } from './liquipedia.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FILES = {
@@ -273,6 +273,52 @@ async function main() {
     }
     if (page) wanted.push({ ...tc, page });
     else problems.push('Couldn’t find a Liquipedia page for the search "' + tc.search + '". Add `"liquipedia": "<page name>"` instead.');
+  }
+
+  /* 1b. tournaments found automatically: the pages in Liquipedia's tier categories
+        (such as "Category:S-Tier Tournaments") that start within the configured dates */
+  const disc = config.discover;
+  if (disc && arr(disc.categories).length) {
+    const ds = state.discover = (state.discover && typeof state.discover === 'object') ? state.discover : {};
+    ds.info = (ds.info && typeof ds.info === 'object') ? ds.info : {};
+    const from = str(disc.from), to = str(disc.to) || '9999';
+    const key = JSON.stringify(disc);
+    const due = !ds.checkedAt || ds.key !== key || NOW.getTime() - Date.parse(ds.checkedAt) > (+disc.everyHours || 12) * HOUR;
+    if (due) {
+      try {
+        const titles = new Set();
+        for (const cat of arr(disc.categories)) {
+          let cont = '';
+          for (let i = 0; i < 10; i++) {
+            const q = { action: 'query', list: 'categorymembers', cmtitle: cat, cmnamespace: '0', cmlimit: '500', cmprop: 'title' };
+            if (cont) q.cmcontinue = cont;
+            const res = await lp(q);
+            arr(res.query.categorymembers).forEach(m => titles.add(m.title));
+            cont = res.continue && res.continue.cmcontinue;
+            if (!cont) break;
+          }
+          if (![...titles].length) problems.push('The Liquipedia category "' + cat + '" in config.json has no tournaments. Check its name.');
+        }
+        // Read the infobox of pages not seen before, skipping titles that name a year outside the range.
+        const fy = +from.slice(0, 4) || 0, ty = +to.slice(0, 4) || 9999;
+        const unknown = [...titles].filter(t => !(ds.info[t] && ds.info[t].sdate) && !/qualifier/i.test(t))
+          .filter(t => { const ys = (t.match(/\b(?:19|20)\d\d\b/g) || []).map(Number); return !ys.length || ys.some(y => y >= fy && y <= ty); });
+        for (let i = 0; i < unknown.length && i < 400; i += 20) {
+          const res = await lp({ action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', titles: unknown.slice(i, i + 20).join('|') });
+          for (const p of arr(res.query.pages)) {
+            const ib = parseInfobox(p.revisions ? p.revisions[0].slots.main.content || '' : '');
+            ds.info[p.title] = { name: ib.name || '', sdate: ib.sdate || '', edate: ib.edate || '' };
+          }
+        }
+        ds.titles = [...titles].sort();
+        ds.checkedAt = NOW.toISOString();
+        ds.key = key;
+      } catch (e) { warn('Couldn’t look for new tournaments on Liquipedia: ' + e.message); }
+    }
+    const skip = new Set(arr(disc.exclude).map(str));
+    const picked = arr(ds.titles).filter(t => !skip.has(t) && ds.info[t] && ds.info[t].sdate && ds.info[t].sdate >= from && ds.info[t].sdate <= to);
+    for (const t of picked) if (!wanted.some(w => w.page === t)) wanted.push({ page: t, discovered: true });
+    if (due) log('Found ' + picked.length + ' tournaments in ' + arr(disc.categories).join(', ') + ' between ' + (from || 'the start') + ' and ' + to + '.');
   }
 
   /* 2. which pages changed? (the main page and any stage subpages) */

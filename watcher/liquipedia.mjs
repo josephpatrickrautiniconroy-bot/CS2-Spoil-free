@@ -119,7 +119,8 @@ export function parseVod(url) {
 
 const SKIP_HEADINGS = /^(overview|detailed results|results|high|low|mid|middle|matches)$/i;
 
-export function parsePage(text, pageTitle = '') {
+// Just the infobox: name, dates, place, tier and size.
+export function parseInfobox(text) {
   const info = {};
   const ib = findTemplates(text, 'Infobox league')[0];
   if (ib) {
@@ -133,6 +134,11 @@ export function parsePage(text, pageTitle = '') {
   }
   const display = (text.match(/\{\{DISPLAYTITLE:\s*([^}]*)\}\}/) || [])[1] || '';
   info.displayTitle = plain(display);
+  return info;
+}
+
+export function parsePage(text, pageTitle = '') {
+  const info = parseInfobox(text);
 
   // Headings, comments and match containers, in page order.
   const headings = [...text.matchAll(/^(={2,6})\s*(.*?)\s*\1\s*$/gm)].map(m => ({ pos: m.index, level: m[1].length, text: m[2] }));
