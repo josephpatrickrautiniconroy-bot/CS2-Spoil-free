@@ -366,5 +366,6 @@
   ],
   "ignoreVideos": [],
   "acceptVideosForDays": 21,
-  "debugTitles": true
+  "debugTitles": true,
+  "debugProbe": true
 }

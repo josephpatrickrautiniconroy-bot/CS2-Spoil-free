@@ -553,6 +553,12 @@ async function main() {
     }
   }
 
+  // One-off research, see watcher/probe.mjs.
+  if (config.debugProbe === true && YT_KEY) {
+    try { const { probe } = await import('./probe.mjs'); state.debugProbe = await probe({ yt, state, log }); }
+    catch (e) { warn('Research probe failed: ' + e.message); }
+  }
+
   /* 6. tidy up and save */
   const forgetBefore = NOW.getTime() - Math.max(60, opts.lookbackDays * 3) * 24 * HOUR;
   for (const [id, s] of Object.entries(state.seen)) if (Date.parse(s.at) < forgetBefore && !state.pending[id]) delete state.seen[id];
