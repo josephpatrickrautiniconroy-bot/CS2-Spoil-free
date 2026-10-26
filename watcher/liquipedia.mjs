@@ -7,7 +7,7 @@
 */
 
 // Bump when the reader changes, so the watcher reads every page again with the new version.
-export const PARSER_VERSION = 2;
+export const PARSER_VERSION = 3;
 
 /* ---------- template parsing ---------- */
 

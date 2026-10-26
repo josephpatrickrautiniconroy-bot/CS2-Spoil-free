@@ -230,6 +230,14 @@ function buildTournament(tc, pages, teamOf) {
   return { tournament, matches, videos };
 }
 
+// Liquipedia's short names are sometimes initials ("GL", "PV"). Those get the fuller name
+// ("GamerLegion", "PARIVISION"), without a trailing "Esports" or "Gaming".
+function displayName({ name, page }) {
+  if (name.length > 3 || !page || page === name) return name;
+  const full = page.replace(/\s+(esports|e-sports|gaming|team|club|gg)$/i, '').trim();
+  return full.length > 3 ? full : name;
+}
+
 /* ---------- main ---------- */
 async function main() {
   const config = await readJson(FILES.config, null);
@@ -323,7 +331,7 @@ async function main() {
       const names = teamNamesFromExpansion(res.expandtemplates.wikitext);
       batch.forEach((k, j) => {
         const n = names[j];
-        state.teams[k] = n && n.name ? { id: 'lp-' + slug(n.page || n.name), name: n.name } : { id: 'lp-' + slug(k), name: k.replace(/\b\w/g, c => c.toUpperCase()) };
+        state.teams[k] = n && n.name ? { id: 'lp-' + slug(n.page || n.name), name: displayName(n) } : { id: 'lp-' + slug(k), name: k.replace(/\b\w/g, c => c.toUpperCase()) };
       });
     } catch (e) { warn('Couldn’t look up team names: ' + e.message); }
   }
