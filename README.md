@@ -49,7 +49,7 @@ To use your own picture instead, upload it to the `images/events/` folder, named
 - **The Actions tab** shows each run. A red cross means a run failed. Click it to see which step.
 - **The Issues tab** gets an issue labelled `needs-review` when the watcher can't find a page or category. It closes itself once the problem is fixed.
 - **A map says "Video coming soon"** when Liquipedia doesn't have its video link yet. It usually fills in within a day.
-- **Video quality** is chosen by YouTube based on the player's size, and sites can't set it. The wide player (W) and full screen (F) get the best quality.
+- **Video quality**: YouTube picks the quality from the player's size, and sites can't set it directly. So the player's quality button (1080p by default, 720p on phones) draws the video at that size and scales it down to fit. YouTube can still drop lower on a slow connection. The button's menu shows the quality playing right now.
 
 ## Credits
 

@@ -241,7 +241,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .spinner{width:40px;height:40px;border:4px solid rgba(242,239,232,.25);border-top-color:#F2EFE8;border-radius:50%;animation:spin 1s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion: reduce){.spinner{animation-duration:3s}}
-.controls{background:var(--controls);color:#F2EFE8;display:flex;flex-wrap:wrap;align-items:center;gap:2px;padding:6px 10px}
+.controls{position:relative;background:var(--controls);color:#F2EFE8;display:flex;flex-wrap:wrap;align-items:center;gap:2px;padding:6px 10px}
 .ctl{min-width:48px;height:44px;padding:0 6px;background:transparent;border:none;color:#F2EFE8;font-family:var(--display);font-weight:800;font-size:18px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
 .ctl:hover:not(:disabled){background:rgba(255,255,255,.1)}
 .ctl:disabled{opacity:.4;cursor:default}
@@ -250,6 +250,17 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .elapsed{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.04em;padding:0 8px;font-variant-numeric:tabular-nums}
 .len-hidden{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#B4B0A7;padding:0 8px}
 .vol{width:96px;accent-color:#C8372D}
+/* YouTube picks the quality from the player's size, so the video is drawn at the chosen quality's size and scaled down to fit. */
+.video-frame iframe.scaled{right:auto;bottom:auto;transform-origin:0 0}
+.q-wrap{position:relative;display:inline-flex}
+.ctl-q{font-size:15px;letter-spacing:.04em;min-width:60px}
+.q-menu{position:absolute;right:0;bottom:calc(100% + 6px);z-index:5;width:230px;background:var(--controls);border:1px solid rgba(255,255,255,.18);padding:6px;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.q-menu[hidden]{display:none}
+.q-opt{display:flex;align-items:center;gap:10px;min-height:40px;padding:0 10px;background:transparent;border:none;color:#F2EFE8;font:inherit;font-weight:600;font-size:16px;text-align:left;cursor:pointer}
+.q-opt:hover{background:rgba(255,255,255,.1)}
+.q-opt .ic{visibility:hidden}
+.q-opt[aria-checked="true"] .ic{visibility:visible}
+.q-note{font-size:13px;line-height:1.4;color:#B4B0A7;padding:6px 10px 4px}
 .player:fullscreen{width:100%;height:100%}
 .player:fullscreen .video-frame{flex:1;aspect-ratio:auto}
 .player:-webkit-full-screen{width:100%;height:100%}
@@ -339,6 +350,8 @@ span.editable{display:inline-block}
   .main-nav{gap:0 18px;font-size:14px}
   .sf-badge span{display:none}
   .len-hidden span,.vol{display:none}
+  .q-wrap{position:static}
+  .q-menu{left:8px;right:8px;width:auto}
   .hero{padding-block:36px}
   .locked{padding:20px}
 }
@@ -512,7 +525,8 @@ const ICONS = {
   moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>',
   sun: '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>',
   lock: '<rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path>',
-  x: '<line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line>'
+  x: '<line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line>',
+  check: '<polyline points="4 12 10 18 20 6"></polyline>'
 };
 function icon(name, size, fill) {
   const span = document.createElement('span');
@@ -1160,9 +1174,10 @@ function renderPlayer(app, r) {
 
   const host = h('div', { id: 'yt-host' });
   const cover = h('div', { class: 'cover', id: 'cover' });
+  const frame = h('div', { class: 'video-frame' }, host, cover);
   const ctl = buildControls();
   const col = h('div', { class: 'player-col' },
-    h('div', { class: 'player', id: 'player' }, h('div', { class: 'video-frame' }, host, cover), ctl.bar),
+    h('div', { class: 'player', id: 'player' }, frame, ctl.bar),
     h('div', { class: 'match-head' },
       h('h1', { class: 'match-title' }, teamName(m.a), ' ', h('span', { class: 'vs' }, 'versus'), ' ', teamName(m.b)),
       metaLine(['Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), s.name, rd.name, 'Best of ' + m.bo, m.date])),
@@ -1186,7 +1201,7 @@ function renderPlayer(app, r) {
       h('span', { class: 'map-state' }, i === idx ? 'Now showing' : 'Open')))),
     h('p', { class: 'hint' }, 'Every possible map is listed, so this list can’t tell you how long the series went. Map names only show for the map you’re on.'),
     wbtn,
-    h('p', { class: 'hint' }, 'Keys: Space plays or pauses. ← and → skip 10 seconds, hold Shift for 30. W for a wide player, F for full screen. A bigger player usually gets better video quality.'));
+    h('p', { class: 'hint' }, 'Keys: Space plays or pauses. ← and → skip 10 seconds, hold Shift for 30. W for a wide player, F for full screen.'));
   page.append(h('div', { class: 'player-row' }, col, aside));
 
   const others = rd.matches.filter(x => x !== m);
@@ -1194,7 +1209,7 @@ function renderPlayer(app, r) {
     h('h2', { class: 'h2 h2-sm' }, 'More from ' + (rd.name || 'this round')),
     h('div', { class: 'grid' }, others.map(x => matchCard(x, rd)))));
   app.append(page);
-  mountPlayer(f, idx, { host, cover, ctl });
+  mountPlayer(f, idx, { host, cover, ctl, frame });
 }
 function buildControls() {
   const btn = (label, content) => h('button', { type: 'button', class: 'ctl', 'aria-label': label }, content);
@@ -1210,11 +1225,87 @@ function buildControls() {
     wide: btn(store.get('wide', false) ? 'Normal size' : 'Wide player', icon(store.get('wide', false) ? 'narrow' : 'wide', 22)),
     fs: btn('Full screen', icon('fs', 22))
   };
-  c.wide.title = 'Wide player: a bigger video usually plays in higher quality (W)';
+  c.wide.title = 'Wide player (W)';
   c.wide.addEventListener('click', toggleWide);
+  buildQualityMenu(c);
   c.bar = h('div', { class: 'controls' }, c.play, c.b30, c.b10, c.f10, c.f30, h('span', { class: 'spacer' }),
-    c.elapsed, h('span', { class: 'len-hidden' }, icon('eyeoff', 16), h('span', {}, 'Length hidden')), c.mute, c.vol, c.wide, c.fs);
+    c.elapsed, h('span', { class: 'len-hidden' }, icon('eyeoff', 16), h('span', {}, 'Length hidden')), c.mute, c.vol, c.qwrap, c.wide, c.fs);
   return c;
+}
+
+/* ---------- video quality ----------
+   Sites can't tell YouTube which quality to play: it picks one from the player's
+   size and the connection. So the video is drawn at the size of the chosen quality
+   and scaled down to fit. YouTube can still go lower when the connection is slow. */
+const QUALITIES = [[1080, '1080p'], [720, '720p'], [480, '480p'], [0, 'Auto']];
+const YT_QUALITY = { tiny: '144p', small: '240p', medium: '360p', large: '480p', hd720: '720p', hd1080: '1080p', hd1440: '1440p', hd2160: '2160p', highres: '4K' };
+function qualityPref() {
+  const q = store.get('quality', null);
+  if (QUALITIES.some(x => x[0] === q)) return q;
+  return window.innerWidth >= 700 ? 1080 : 720; // phones start at 720p to go easy on mobile data
+}
+function qualityLabel(q) { return (QUALITIES.find(x => x[0] === q) || QUALITIES[0])[1]; }
+function buildQualityMenu(c) {
+  c.quality = h('button', { type: 'button', class: 'ctl ctl-q', 'aria-label': 'Video quality', 'aria-haspopup': 'true', 'aria-expanded': 'false', title: 'Video quality' }, qualityLabel(qualityPref()));
+  c.qnow = h('div', { class: 'q-note', hidden: true });
+  const opts = QUALITIES.map(([q, label]) => h('button', { type: 'button', class: 'q-opt', role: 'menuitemradio', 'aria-checked': String(q === qualityPref()), 'data-q': q },
+    icon('check', 16), q ? label : 'Auto (by player size)'));
+  c.qmenu = h('div', { class: 'q-menu', role: 'menu', 'aria-label': 'Video quality', hidden: true }, opts, c.qnow,
+    h('div', { class: 'q-note' }, 'YouTube can still play lower than this when the connection is slow.'));
+  c.qwrap = h('div', { class: 'q-wrap' }, c.quality, c.qmenu);
+  const close = focus => { c.qmenu.hidden = true; c.quality.setAttribute('aria-expanded', 'false'); if (focus) c.quality.focus(); };
+  c.quality.addEventListener('click', e => {
+    e.stopPropagation();
+    if (!c.qmenu.hidden) return close();
+    c.qmenu.hidden = false;
+    c.quality.setAttribute('aria-expanded', 'true');
+    showPlayingQuality();
+    (opts.find(o => o.getAttribute('aria-checked') === 'true') || opts[0]).focus();
+  });
+  for (const o of opts) o.addEventListener('click', e => {
+    e.stopPropagation();
+    const q = +o.dataset.q;
+    store.set('quality', q);
+    opts.forEach(x => x.setAttribute('aria-checked', String(x === o)));
+    c.quality.textContent = qualityLabel(q);
+    if (P) fitVideo(P);
+    close(true);
+  });
+  c.qmenu.addEventListener('keydown', e => {
+    const i = opts.indexOf(document.activeElement);
+    if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); close(true); }
+    else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); e.stopPropagation(); opts[(i + (e.key === 'ArrowDown' ? 1 : opts.length - 1)) % opts.length].focus(); }
+  });
+  c.qclose = close;
+}
+document.addEventListener('click', e => {
+  const c = P && P.els.ctl;
+  if (c && !c.qmenu.hidden && !c.qwrap.contains(e.target)) c.qclose();
+});
+// What YouTube is actually sending right now, shown in the quality menu.
+function showPlayingQuality() {
+  const st = P;
+  if (!st) return;
+  let q = '';
+  try { q = st.ready && st.played ? YT_QUALITY[st.yt.getPlaybackQuality()] || '' : ''; } catch (e) { q = ''; }
+  const el = st.els.ctl.qnow;
+  el.hidden = !q;
+  el.textContent = q ? 'Playing at ' + q + ' right now.' : '';
+}
+function fitVideo(st) {
+  const frame = st.els.frame, ifr = frame && frame.querySelector('iframe');
+  if (!ifr) return;
+  const w = frame.clientWidth, fh = frame.clientHeight, q = qualityPref(), vw = q * 16 / 9;
+  if (!q || !w || !fh || w >= vw) {
+    ifr.classList.remove('scaled');
+    ifr.style.width = ifr.style.height = ifr.style.transform = '';
+    return;
+  }
+  const k = w / vw;
+  ifr.classList.add('scaled');
+  ifr.style.width = vw + 'px';
+  ifr.style.height = Math.round(fh / k) + 'px';
+  ifr.style.transform = 'scale(' + k + ')';
 }
 
 /* ---------- spoiler-free YouTube player ---------- */
@@ -1308,9 +1399,15 @@ function mountPlayer(f, idx, els) {
           else if (e.data === S.CUED) setCover('start');
           updatePlayIcon(e.data === S.PLAYING || (e.data === S.BUFFERING && st.played));
         },
+        onPlaybackQualityChange: () => { if (P === st && !st.els.ctl.qmenu.hidden) showPlayingQuality(); },
         onError: () => { if (P === st) setCover('error-video'); }
       }
     });
+    fitVideo(st);
+    if (window.ResizeObserver) {
+      st.ro = new ResizeObserver(() => { if (P === st) fitVideo(st); });
+      st.ro.observe(els.frame);
+    }
   }).catch(() => { if (P === st) setCover('error-api'); });
 }
 /* The cover sits over the YouTube frame at all times. It is solid whenever the
@@ -1466,6 +1563,7 @@ function destroyPlayer() {
   P = null;
   clearInterval(st.timer);
   clearTimeout(st.maskTimer);
+  if (st.ro) st.ro.disconnect();
   if (st.ready && st.mode !== 'ended') {
     let t = 0;
     try { t = st.yt.getCurrentTime() || 0; } catch (e) { t = 0; }
