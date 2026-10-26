@@ -885,7 +885,7 @@ function exampleNotice() {
 /* ---------- home ---------- */
 function renderHome(app) {
   const ts = data.tournaments;
-  const feat = findT(data.site.featuredId) || ts[0] || null;
+  const feat = findT(data.site.featuredId) || (AUTO && findT(str(AUTO.featured))) || ts[0] || null;
   const text = h('div', { class: 'hero-text' });
   if (feat) {
     text.append(h('div', { class: 'eyebrow' }, 'Featured tournament'),

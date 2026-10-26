@@ -333,7 +333,7 @@ async function main() {
     const ps = state.pages[tc.page] || (state.pages[tc.page] = {});
     if (revs[tc.page] === null) { problems.push('The Liquipedia page "' + tc.page + '" doesn’t exist. Check the name in config.json.'); continue; }
     const subs = arr(ps.subpages);
-    const changed = !ps.revid || revs[tc.page] !== ps.revid || subs.some(s => revs[s] !== (ps.subRevids || {})[s]) || !auto.tournaments.some(t => t.page === tc.page);
+    const changed = !ps.revid || revs[tc.page] !== ps.revid || subs.some(s => revs[s] !== (ps.subRevids || {})[s]);
     summary.checked++;
     if (!changed) continue;
     if (summary.fetched >= maxPages) { log('Page limit reached for this run; ' + tc.page + ' waits for the next one.'); continue; }
@@ -392,10 +392,15 @@ async function main() {
       auto.matches = auto.matches.filter(m => m.tournamentId !== old.id);
       auto.tournaments = auto.tournaments.filter(t => t !== old);
     }
+    const linked = Object.values(videos).reduce((n, v) => n + v.maps.filter(x => x.video).length, 0);
+    // Events whose matches aren't drawn yet stay off the site until they are, and so do
+    // finished events that never got any videos (some organisers don't post them).
+    if (!matches.length) continue;
+    const ended = Date.parse(str(tournament.edate).slice(0, 10) + 'T23:59:59Z');
+    if (!linked && ended && NOW.getTime() - ended > 14 * 24 * HOUR) { summary.tournaments.push(tournament.name + ': no videos, left off the site'); continue; }
     auto.tournaments.push(tournament);
     auto.matches.push(...matches);
     Object.assign(auto.videos, videos);
-    const linked = Object.values(videos).reduce((n, v) => n + v.maps.filter(x => x.video).length, 0);
     summary.tournaments.push(tournament.name + ': ' + matches.length + ' matches, ' + linked + ' map videos');
   }
   // Tournaments no longer in the config are dropped.
@@ -405,6 +410,9 @@ async function main() {
     auto.matches = auto.matches.filter(m => m.tournamentId !== t.id);
   }
   auto.tournaments = auto.tournaments.filter(t => keep.has(t.page)).sort((a, b) => (b.sdate || '') < (a.sdate || '') ? -1 : (b.sdate || '') > (a.sdate || '') ? 1 : 0);
+  // The home page features the newest tournament that has videos to watch.
+  const withVideos = new Set(auto.matches.filter(m => arr((auto.videos[m.id] || {}).maps).some(x => x.video)).map(m => m.tournamentId));
+  auto.featured = (auto.tournaments.find(t => withVideos.has(t.id)) || auto.tournaments[0] || {}).id || '';
   const usedTeams = new Set(auto.matches.flatMap(m => [m.a, m.b]));
   const teamList = new Map();
   for (const t of Object.values(state.teams)) if (usedTeams.has(t.id)) teamList.set(t.id, { id: t.id, name: t.name });

@@ -7,7 +7,7 @@
 */
 
 // Bump when the reader changes, so the watcher reads every page again with the new version.
-export const PARSER_VERSION = 3;
+export const PARSER_VERSION = 4;
 
 /* ---------- template parsing ---------- */
 
@@ -127,7 +127,7 @@ export function parseInfobox(text) {
     const p = params(ib.inner);
     Object.assign(info, {
       name: plain(p.name), shortname: plain(p.shortname), series: plain(p.series), organizer: plain(p.organizer),
-      sdate: (p.sdate || p.date || '').trim(), edate: (p.edate || p.date || '').trim(),
+      sdate: stripComments(p.sdate || p.date).trim(), edate: stripComments(p.edate || p.date).trim(),
       city: plain(p.city), country: plain(p.country), type: plain(p.type), tier: plain(p.liquipediatier),
       teamNumber: plain(p.team_number), prizepool: plain(p.prizepoolusd || p.prizepool)
     });
