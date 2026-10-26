@@ -265,6 +265,15 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .player:fullscreen .video-frame{flex:1;aspect-ratio:auto}
 .player:-webkit-full-screen{width:100%;height:100%}
 .player:-webkit-full-screen .video-frame{flex:1;aspect-ratio:auto}
+/* Full screen: the controls sit over the video and fade out while the map plays untouched. */
+.player:fullscreen{position:relative}
+.player:fullscreen .controls{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(24,25,28,.88);transition:opacity .25s}
+.player.idle:fullscreen .controls{opacity:0;pointer-events:none}
+.player.idle:fullscreen .cover{cursor:none}
+.player:-webkit-full-screen{position:relative}
+.player:-webkit-full-screen .controls{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(24,25,28,.88);transition:opacity .25s}
+.player.idle:-webkit-full-screen .controls{opacity:0;pointer-events:none}
+.player.idle:-webkit-full-screen .cover{cursor:none}
 .match-head{display:flex;flex-direction:column;gap:8px;padding-top:22px}
 .match-title{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5vw,3.5rem);line-height:.95;text-transform:uppercase;overflow-wrap:anywhere}
 .match-title .vs{font-style:italic;font-weight:600;font-size:.55em;color:var(--accent-ink);text-transform:none}
@@ -1248,9 +1257,10 @@ function qualityLabel(q) { return (QUALITIES.find(x => x[0] === q) || QUALITIES[
 function buildQualityMenu(c) {
   c.quality = h('button', { type: 'button', class: 'ctl ctl-q', 'aria-label': 'Video quality', 'aria-haspopup': 'true', 'aria-expanded': 'false', title: 'Video quality' }, qualityLabel(qualityPref()));
   c.qnow = h('div', { class: 'q-note', hidden: true });
+  c.qhint = h('div', { class: 'q-note', hidden: true }, 'Stuck this low? Ad and tracker blockers, such as the one built into Opera, can hold YouTube at 360p. Try turning yours off for this site, or another browser.');
   const opts = QUALITIES.map(([q, label]) => h('button', { type: 'button', class: 'q-opt', role: 'menuitemradio', 'aria-checked': String(q === qualityPref()), 'data-q': q },
     icon('check', 16), q ? label : 'Auto (by player size)'));
-  c.qmenu = h('div', { class: 'q-menu', role: 'menu', 'aria-label': 'Video quality', hidden: true }, opts, c.qnow,
+  c.qmenu = h('div', { class: 'q-menu', role: 'menu', 'aria-label': 'Video quality', hidden: true }, opts, c.qnow, c.qhint,
     h('div', { class: 'q-note' }, 'YouTube can still play lower than this when the connection is slow.'));
   c.qwrap = h('div', { class: 'q-wrap' }, c.quality, c.qmenu);
   const close = focus => { c.qmenu.hidden = true; c.quality.setAttribute('aria-expanded', 'false'); if (focus) c.quality.focus(); };
@@ -1286,18 +1296,20 @@ document.addEventListener('click', e => {
 function showPlayingQuality() {
   const st = P;
   if (!st) return;
-  let q = '', best = '';
+  const order = Object.keys(YT_QUALITY);
+  let now = '', top = '';
   try {
     if (st.ready && st.played) {
-      q = YT_QUALITY[st.yt.getPlaybackQuality()] || '';
-      const order = Object.keys(YT_QUALITY);
+      now = YT_QUALITY[st.yt.getPlaybackQuality()] ? st.yt.getPlaybackQuality() : '';
       const levels = (st.yt.getAvailableQualityLevels ? st.yt.getAvailableQualityLevels() : []).filter(l => YT_QUALITY[l]);
-      if (levels.length) best = YT_QUALITY[levels.sort((a, b) => order.indexOf(b) - order.indexOf(a))[0]];
+      if (levels.length) top = levels.sort((a, b) => order.indexOf(b) - order.indexOf(a))[0];
     }
-  } catch (e) { q = ''; }
-  const el = st.els.ctl.qnow;
-  el.hidden = !q;
-  el.textContent = q ? 'Playing at ' + q + ' right now' + (best ? ', and YouTube offers up to ' + best + ' for this video.' : '.') : '';
+  } catch (e) { now = ''; }
+  const { qnow, qhint } = st.els.ctl;
+  qnow.hidden = !now;
+  qnow.textContent = now ? 'Playing at ' + YT_QUALITY[now] + ' right now' + (top ? ', and YouTube offers up to ' + YT_QUALITY[top] + ' for this video.' : '.') : '';
+  // Held at 360p or lower for 20 seconds while HD is on offer: usually a blocker, not the connection.
+  qhint.hidden = !(now && top && order.indexOf(now) <= order.indexOf('medium') && order.indexOf(top) >= order.indexOf('hd720') && Date.now() - st.playedAt > 20000);
 }
 function fitVideo(st) {
   const frame = st.els.frame, ifr = frame && frame.querySelector('iframe');
@@ -1359,9 +1371,23 @@ function mountPlayer(f, idx, els) {
   c.fs.addEventListener('click', toggleFullscreen);
   els.cover.addEventListener('click', e => {
     if (e.target.closest('button, a')) return;
+    if (st.tapWoke) { st.tapWoke = false; return; } // a tap on hidden controls only brings them back
     if (st.mode === 'start' || st.mode === 'paused' || st.mode === 'clear') togglePlay();
   });
   els.cover.addEventListener('dblclick', e => { if (!e.target.closest('button, a')) toggleFullscreen(); });
+  // In full screen the controls fade out after 3 seconds without mouse, touch or key input while the map plays.
+  const player = els.frame.parentElement;
+  st.wake = () => {
+    player.classList.remove('idle');
+    clearTimeout(st.idleTimer);
+    st.idleTimer = setTimeout(() => {
+      if (P === st && isFullscreen() && st.mode === 'clear' && !st.overBar && c.qmenu.hidden) player.classList.add('idle');
+    }, 3000);
+  };
+  player.addEventListener('pointermove', st.wake);
+  player.addEventListener('pointerdown', e => { st.tapWoke = player.classList.contains('idle') && e.pointerType !== 'mouse'; st.wake(); }, true);
+  c.bar.addEventListener('pointerenter', () => { st.overBar = true; st.wake(); });
+  c.bar.addEventListener('pointerleave', () => { st.overBar = false; st.wake(); });
 
   const vid = parseYouTube(map.video);
   if (map.notPlayed) return setCover('notplayed');
@@ -1401,7 +1427,7 @@ function mountPlayer(f, idx, els) {
         onStateChange: e => {
           if (P !== st) return;
           const S = YT.PlayerState;
-          if (e.data === S.PLAYING) { st.played = true; setCover('clear'); }
+          if (e.data === S.PLAYING) { st.played = true; st.playedAt = st.playedAt || Date.now(); setCover('clear'); }
           else if (e.data === S.PAUSED) setCover('paused');
           else if (e.data === S.ENDED) { clearResume(m.id, idx); st.resumeAt = 0; setCover('ended'); }
           else if (e.data === S.BUFFERING) { if (!st.played) setCover('loading'); }
@@ -1427,6 +1453,7 @@ function setCover(mode) {
   if (!st) return;
   const prev = st.mode;
   st.mode = mode;
+  if (st.wake) st.wake();
   const c = st.els.cover;
   if (mode === 'clear') {
     if (prev === 'clear') return;
@@ -1558,6 +1585,8 @@ function toggleWide() {
   const b = P && P.els.ctl.wide;
   if (b) { b.setAttribute('aria-label', on ? 'Normal size' : 'Wide player'); b.replaceChildren(icon(on ? 'narrow' : 'wide', 22)); }
 }
+function isFullscreen() { return !!(document.fullscreenElement || document.webkitFullscreenElement); }
+for (const ev of ['fullscreenchange', 'webkitfullscreenchange']) document.addEventListener(ev, () => { if (P && P.wake) P.wake(); });
 function toggleFullscreen() {
   const el = document.getElementById('player');
   if (!el) return;
@@ -1572,6 +1601,7 @@ function destroyPlayer() {
   P = null;
   clearInterval(st.timer);
   clearTimeout(st.maskTimer);
+  clearTimeout(st.idleTimer);
   if (st.ro) st.ro.disconnect();
   if (st.ready && st.mode !== 'ended') {
     let t = 0;
@@ -1582,6 +1612,7 @@ function destroyPlayer() {
   if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {});
 }
 document.addEventListener('keydown', e => {
+  if (P && P.wake) P.wake();
   if (!P || !P.ready) return;
   if (e.altKey || e.ctrlKey || e.metaKey) return;
   if (document.querySelector('dialog[open]')) return;

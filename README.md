@@ -49,7 +49,7 @@ To use your own picture instead, upload it to the `images/events/` folder, named
 - **The Actions tab** shows each run. A red cross means a run failed. Click it to see which step.
 - **The Issues tab** gets an issue labelled `needs-review` when the watcher can't find a page or category. It closes itself once the problem is fixed.
 - **A map says "Video coming soon"** when Liquipedia doesn't have its video link yet. It usually fills in within a day.
-- **Video quality**: YouTube picks the quality from the player's size, and sites can't set it directly. So the player's quality button (1080p by default, 720p on phones) draws the video at that size and scales it down to fit. YouTube can still drop lower on a slow connection. The button's menu shows the quality playing right now.
+- **Video quality**: YouTube picks the quality from the player's size, and sites can't set it directly. So the player's quality button (1080p by default, 720p on phones) draws the video at that size and scales it down to fit. YouTube can still drop lower on a slow connection. The button's menu shows the quality playing right now. If it's stuck at 360p while YouTube offers more, a browser's ad or tracker blocker is the usual cause (Opera's built-in one does this, even with YouTube's normal player). The test page at `tools/quality-test.html` compares the player with YouTube's own and shows where the quality is lost.
 
 ## Credits
 
