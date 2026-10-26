@@ -4391,8 +4391,8 @@
       "stageOrder": 0,
       "round": "Round 3",
       "roundOrder": 3,
-      "a": "lp-mouz",
-      "b": "lp-the-mongolz",
+      "a": "lp-the-mongolz",
+      "b": "lp-mouz",
       "bo": 3,
       "date": "26 Oct"
     },
@@ -4404,8 +4404,8 @@
       "stageOrder": 0,
       "round": "Round 3",
       "roundOrder": 3,
-      "a": "lp-aurora-gaming",
-      "b": "lp-nemiga-gaming",
+      "a": "lp-nemiga-gaming",
+      "b": "lp-aurora-gaming",
       "bo": 3,
       "date": "26 Oct"
     },
@@ -10820,21 +10820,21 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Nuke",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Inferno",
           "notPlayed": false
         }
       ]
@@ -10845,21 +10845,21 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Anubis",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Nuke",
           "notPlayed": false
         }
       ]
@@ -11015,6 +11015,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-26T02:37:20.010Z",
+  "updatedAt": "2026-10-26T08:47:11.854Z",
   "featured": "pgl-masters-bucharest-2026"
 }
