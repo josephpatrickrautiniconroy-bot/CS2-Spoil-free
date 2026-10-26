@@ -395,9 +395,12 @@ async function main() {
     const linked = Object.values(videos).reduce((n, v) => n + v.maps.filter(x => x.video).length, 0);
     // Events whose matches aren't drawn yet stay off the site until they are, and so do
     // finished events that never got any videos (some organisers don't post them).
-    if (!matches.length) continue;
+    // What happened is noted in state.json too, since the run logs aren't always at hand.
+    const ps = state.pages[tc.page];
+    ps.result = matches.length + ' matches, ' + linked + ' map videos';
+    if (!matches.length) { ps.result = 'no matches drawn yet, not on the site'; continue; }
     const ended = Date.parse(str(tournament.edate).slice(0, 10) + 'T23:59:59Z');
-    if (!linked && ended && NOW.getTime() - ended > 14 * 24 * HOUR) { summary.tournaments.push(tournament.name + ': no videos, left off the site'); continue; }
+    if (!linked && ended && NOW.getTime() - ended > 14 * 24 * HOUR) { ps.result += ', none with videos, so not on the site'; summary.tournaments.push(tournament.name + ': no videos, left off the site'); continue; }
     auto.tournaments.push(tournament);
     auto.matches.push(...matches);
     Object.assign(auto.videos, videos);
