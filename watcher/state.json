@@ -1,20 +1,400 @@
 {
   "version": 2,
   "pages": {
-    "PGL/2026/Masters": {},
-    "ESL/Pro League/Season 24": {},
-    "BLAST/Open/2026/Fall": {},
-    "Intel Extreme Masters/2026/Cologne": {},
-    "Intel Extreme Masters/2026/Beijing": {},
-    "BLAST/Rivals/2026/Fall": {},
-    "PGL/2026/Singapore": {}
+    "PGL/2026/Masters": {
+      "revid": 3463168,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "ESL/Pro League/Season 24": {
+      "revid": 3461311,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Open/2026/Fall": {
+      "revid": 3446344,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Intel Extreme Masters/2026/Cologne": {
+      "revid": 3462007,
+      "subpages": [
+        "Intel Extreme Masters/2026/Cologne/Stage 2",
+        "Intel Extreme Masters/2026/Cologne/Stage 3",
+        "Intel Extreme Masters/2026/Cologne/Stage 1",
+        "Intel Extreme Masters/2026/Cologne/Playoffs"
+      ],
+      "subRevids": {
+        "Intel Extreme Masters/2026/Cologne/Stage 2": 3413161,
+        "Intel Extreme Masters/2026/Cologne/Stage 3": 3413157,
+        "Intel Extreme Masters/2026/Cologne/Stage 1": 3413160,
+        "Intel Extreme Masters/2026/Cologne/Playoffs": 3390154
+      },
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Intel Extreme Masters/2026/Beijing": {
+      "revid": 3461671,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Rivals/2026/Fall": {
+      "revid": 3462416,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "PGL/2026/Singapore": {
+      "revid": 3463117,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Bounty/2026/Summer": {
+      "revid": 3454780,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Bounty/2027/Summer": {
+      "revid": 3438982,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Bounty/2027/Winter": {
+      "revid": 3438979,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Open/2027/Fall": {
+      "revid": 3438988,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Open/2027/Spring": {
+      "revid": 3438971,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Open/2027/Summer": {
+      "revid": 3444205,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BLAST/Rivals/2027": {
+      "revid": 3438997,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "CS Asia Championships/2027": {
+      "revid": 3457940,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "ESL/Pro League/Season 25": {
+      "revid": 3454024,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "ESL/Pro League/Season 26": {
+      "revid": 3415557,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Esports World Cup/2026": {
+      "revid": 3454796,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Esports World Cup/2027": {
+      "revid": 3446872,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FISSURE/Playground/3": {
+      "revid": 3454798,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FISSURE/Playground/4": {
+      "revid": 3345265,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FISSURE/Playground/5": {
+      "revid": 3433536,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FISSURE/Playground/6": {
+      "revid": 3345270,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FISSURE/Playground/7": {
+      "revid": 3345271,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FISSURE/Playground/8": {
+      "revid": 3460532,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FISSURE/Playground/9": {
+      "revid": 3345273,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "FiReSPORTS/Major/2027/Buenos Aires": {},
+    "Forge of Legends/2026": {},
+    "Intel Extreme Masters/2027/Brazil": {},
+    "Intel Extreme Masters/2027/Cologne": {},
+    "Intel Extreme Masters/2027/Kraków": {},
+    "Intel Extreme Masters/2027/United States": {},
+    "PGL/2026/Fall": {},
+    "PGL/2026/Summer": {},
+    "PGL/2027/Bucharest": {},
+    "PGL/2027/China": {},
+    "PGL/2027/Cluj-Napoca": {},
+    "PGL/2027/October": {},
+    "PGL/2027/September": {},
+    "PGL/2027/Łódź": {},
+    "Perfect World/Major/2027/Shanghai": {},
+    "StarLadder/StarSeries/2026/Fall": {},
+    "StarLadder/StarSeries/2027/Fall": {},
+    "Thunderpick/World Championship/2026": {},
+    "YaLLa Compass/2026/Summer": {},
+    "YaLLa Compass/2026/UAE": {}
   },
   "resolved": {
     "IEM Cologne Major 2026": "Intel Extreme Masters/2026/Cologne",
     "BLAST Rivals 2026 Hong Kong": "BLAST/Rivals/2026/Fall",
     "Intel Extreme Masters Beijing 2026": "Intel Extreme Masters/2026/Beijing"
   },
-  "teams": {},
+  "teams": {
+    "fut": {
+      "id": "lp-fut-esports",
+      "name": "FUT"
+    },
+    "tyloo": {
+      "id": "lp-tyloo",
+      "name": "TYLOO"
+    },
+    "aurora": {
+      "id": "lp-aurora-gaming",
+      "name": "Aurora"
+    },
+    "mongolz": {
+      "id": "lp-the-mongolz",
+      "name": "MongolZ"
+    },
+    "spirit": {
+      "id": "lp-team-spirit",
+      "name": "Spirit"
+    },
+    "betboom": {
+      "id": "lp-betboom-team",
+      "name": "BetBoom"
+    },
+    "mouz": {
+      "id": "lp-mouz",
+      "name": "MOUZ"
+    },
+    "tl": {
+      "id": "lp-team-liquid",
+      "name": "Liquid"
+    },
+    "legacy": {
+      "id": "lp-legacy",
+      "name": "Legacy"
+    },
+    "nemiga": {
+      "id": "lp-nemiga-gaming",
+      "name": "Nemiga"
+    },
+    "vit": {
+      "id": "lp-team-vitality",
+      "name": "Vitality"
+    },
+    "9z": {
+      "id": "lp-9z-team",
+      "name": "9z"
+    },
+    "g2": {
+      "id": "lp-g2-esports",
+      "name": "G2"
+    },
+    "navi": {
+      "id": "lp-natus-vincere",
+      "name": "NAVI"
+    },
+    "furia": {
+      "id": "lp-furia",
+      "name": "FURIA"
+    },
+    "dendele": {
+      "id": "lp-dendele-cs",
+      "name": "DENDELE"
+    },
+    "falcons": {
+      "id": "lp-team-falcons",
+      "name": "Falcons"
+    },
+    "parivision": {
+      "id": "lp-parivision",
+      "name": "PARIVISION"
+    },
+    "shinden": {
+      "id": "lp-shinden",
+      "name": "ShindeN"
+    },
+    "1w": {
+      "id": "lp-1w-team",
+      "name": "1w"
+    },
+    "m80": {
+      "id": "lp-m80",
+      "name": "M80"
+    },
+    "pain": {
+      "id": "lp-pain-gaming",
+      "name": "paiN"
+    },
+    "lvg": {
+      "id": "lp-lynn-vision-gaming",
+      "name": "Lynn Vision"
+    },
+    "ic": {
+      "id": "lp-ic-esports",
+      "name": "IC"
+    },
+    "astralis": {
+      "id": "lp-astralis",
+      "name": "Astralis"
+    },
+    "gl": {
+      "id": "lp-gamerlegion",
+      "name": "GamerLegion"
+    },
+    "fq": {
+      "id": "lp-flyquest",
+      "name": "FlyQuest"
+    },
+    "b8": {
+      "id": "lp-b8",
+      "name": "B8"
+    },
+    "monte": {
+      "id": "lp-monte",
+      "name": "Monte"
+    },
+    "big": {
+      "id": "lp-big",
+      "name": "BIG"
+    },
+    "mibr": {
+      "id": "lp-mibr",
+      "name": "MIBR"
+    },
+    "sinners": {
+      "id": "lp-sinners-esports",
+      "name": "SINNERS"
+    },
+    "thunderdownunder": {
+      "id": "lp-off-chops",
+      "name": "Chops"
+    },
+    "nrg": {
+      "id": "lp-nrg",
+      "name": "NRG"
+    },
+    "heroic": {
+      "id": "lp-heroic",
+      "name": "HEROIC"
+    },
+    "sharks": {
+      "id": "lp-dendele-cs",
+      "name": "DENDELE"
+    },
+    "gaimin": {
+      "id": "lp-gaimin-gladiators",
+      "name": "Gaimin"
+    },
+    "the mongolz": {
+      "id": "lp-the-mongolz",
+      "name": "MongolZ"
+    },
+    "faze": {
+      "id": "lp-faze-clan",
+      "name": "FaZe"
+    },
+    "team liquid": {
+      "id": "lp-team-liquid",
+      "name": "Liquid"
+    },
+    "3dmax": {
+      "id": "lp-3dmax",
+      "name": "3DMAX"
+    },
+    "jjh": {
+      "id": "lp-jijiehao",
+      "name": "JiJieHao"
+    },
+    "lg": {
+      "id": "lp-luminosity-gaming",
+      "name": "Luminosity"
+    },
+    "k27": {
+      "id": "lp-k27",
+      "name": "K27"
+    },
+    "nip": {
+      "id": "lp-ninjas-in-pyjamas",
+      "name": "Ninjas in Pyjamas"
+    },
+    "100t": {
+      "id": "lp-100-thieves",
+      "name": "100T"
+    },
+    "magic": {
+      "id": "lp-magic",
+      "name": "magic"
+    },
+    "wildcard": {
+      "id": "lp-wildcard",
+      "name": "Wildcard"
+    },
+    "5star": {
+      "id": "lp-5star-esports",
+      "name": "5star"
+    },
+    "alliance": {
+      "id": "lp-alliance",
+      "name": "Alliance"
+    }
+  },
   "videos": {
     "YcBD2QIKQAI": {
       "ok": true,
@@ -975,7 +1355,2065 @@
       "ok": true,
       "seconds": 9847,
       "checkedAt": "2026-10-26T01:17:56.352Z"
+    },
+    "gwDAc5ofgUI": {
+      "ok": true,
+      "seconds": 5071,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "SDIDkuueLH0": {
+      "ok": true,
+      "seconds": 10872,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "xW8N1CefPGU": {
+      "ok": true,
+      "seconds": 8569,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "oboKxaQeD-k": {
+      "ok": true,
+      "seconds": 12786,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Co5d7IQaUyI": {
+      "ok": true,
+      "seconds": 8999,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "WMMC0d3yYuE": {
+      "ok": true,
+      "seconds": 9239,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "0G50IAwYIq0": {
+      "ok": true,
+      "seconds": 11714,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "U8wIIJxe9j0": {
+      "ok": true,
+      "seconds": 1876,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "f7Oig4GY2Ws": {
+      "ok": true,
+      "seconds": 2790,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "TvNoPuR1Xy8": {
+      "ok": true,
+      "seconds": 2926,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "ipO9LHvizpk": {
+      "ok": true,
+      "seconds": 3037,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "1sQGfbBcW3g": {
+      "ok": true,
+      "seconds": 2898,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "-GuQeDlpnNw": {
+      "ok": true,
+      "seconds": 3227,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "_llirIAM1eE": {
+      "ok": true,
+      "seconds": 2485,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "DvxbZE7Rk6k": {
+      "ok": true,
+      "seconds": 2702,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Aca7N2sOA38": {
+      "ok": true,
+      "seconds": 2626,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "m5WRilfyZuM": {
+      "ok": true,
+      "seconds": 3117,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "HmOqg8g3gI0": {
+      "ok": true,
+      "seconds": 2958,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "bcJ7YxEbT8g": {
+      "ok": true,
+      "seconds": 2085,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "6DI3K8f6E5Y": {
+      "ok": true,
+      "seconds": 2155,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "jk4hqINwlQg": {
+      "ok": true,
+      "seconds": 2405,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Mgff_IqWM9o": {
+      "ok": true,
+      "seconds": 2926,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "yv9CqDbC7yk": {
+      "ok": true,
+      "seconds": 2808,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "-AM04dNMCTY": {
+      "ok": true,
+      "seconds": 4393,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "NNpXbek_CTw": {
+      "ok": true,
+      "seconds": 8001,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "TYcb5A0Mf9Y": {
+      "ok": true,
+      "seconds": 6463,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "h8bQadEitrM": {
+      "ok": true,
+      "seconds": 6077,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "cfLbPSLnDPQ": {
+      "ok": true,
+      "seconds": 5642,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "hA1Pbx8k690": {
+      "ok": true,
+      "seconds": 4905,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "5BPCsSG03Ko": {
+      "ok": true,
+      "seconds": 5063,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "DrwEEyEYHgE": {
+      "ok": true,
+      "seconds": 4720,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "39ztss5mtY4": {
+      "ok": true,
+      "seconds": 5165,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Q7LQ8Xocd5Y": {
+      "ok": true,
+      "seconds": 4920,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "nQg62OwW7J0": {
+      "ok": true,
+      "seconds": 8900,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "IAOsdTS1IPk": {
+      "ok": true,
+      "seconds": 8692,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "S8BxPMWnlQg": {
+      "ok": true,
+      "seconds": 7285,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "4fptoTYV8J4": {
+      "ok": true,
+      "seconds": 8626,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "jYf8CIdW9qU": {
+      "ok": true,
+      "seconds": 7654,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "X53JHaJYego": {
+      "ok": true,
+      "seconds": 4612,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "b21jdD4vPKQ": {
+      "ok": true,
+      "seconds": 5137,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "DsTDbCBsJ30": {
+      "ok": true,
+      "seconds": 8524,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "3GfYT41Z8DA": {
+      "ok": true,
+      "seconds": 4019,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "pel2vsLIDNU": {
+      "ok": true,
+      "seconds": 6059,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "o-1ZuqOFywg": {
+      "ok": true,
+      "seconds": 4910,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "GBS8QEBDbZQ": {
+      "ok": true,
+      "seconds": 10887,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "8cX81NG_o5s": {
+      "ok": true,
+      "seconds": 7468,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "sMvTHNn2-N0": {
+      "ok": true,
+      "seconds": 5642,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "3_rA-ue8Jt4": {
+      "ok": true,
+      "seconds": 7546,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "uO-_Hhgaixg": {
+      "ok": true,
+      "seconds": 7864,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "vo3XO4OlpMU": {
+      "ok": true,
+      "seconds": 10309,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "c7srsHD_nro": {
+      "ok": true,
+      "seconds": 10634,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "_3I_qSUwOZs": {
+      "ok": true,
+      "seconds": 5151,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "Lu_ZA5fxc18": {
+      "ok": true,
+      "seconds": 4319,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "2E-XCNROV74": {
+      "ok": true,
+      "seconds": 5982,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "YVPokYxqqz8": {
+      "ok": true,
+      "seconds": 5572,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "NI2bp53rMn8": {
+      "ok": true,
+      "seconds": 6620,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "aWlnHCHTKHY": {
+      "ok": true,
+      "seconds": 5668,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "BT_vcsOQnAQ": {
+      "ok": true,
+      "seconds": 5473,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "I30m-F7oYiY": {
+      "ok": true,
+      "seconds": 9686,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "rwNuZoepzFA": {
+      "ok": true,
+      "seconds": 8674,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "o42F_-02_y4": {
+      "ok": true,
+      "seconds": 5648,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "iMOOG5kK95w": {
+      "ok": true,
+      "seconds": 8503,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
+    },
+    "pmyN2w-XNTQ": {
+      "ok": true,
+      "seconds": 13373,
+      "checkedAt": "2026-10-26T01:33:50.969Z"
     }
   },
-  "parserVersion": 3
+  "parserVersion": 3,
+  "discover": {
+    "info": {
+      "Arbalet Cup Dallas": {
+        "name": "Arbalet Dallas 2010",
+        "sdate": "2010-07-15",
+        "edate": "2010-07-18"
+      },
+      "CEVO/Season 7/Professional": {
+        "name": "CEVO Season 7 Professional",
+        "sdate": "2015-07-24",
+        "edate": "2015-07-26"
+      },
+      "CEVO/Season 8/Professional": {
+        "name": "CEVO Season 8 Professional",
+        "sdate": "2015-08-16",
+        "edate": "2015-11-08"
+      },
+      "Clickarena": {
+        "name": "ClikArena 2003",
+        "sdate": "2003-04-18",
+        "edate": "2003-04-21"
+      },
+      "BLAST Premier": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "BLAST/Bounty/2026/Winter": {
+        "name": "BLAST Bounty Winter 2026",
+        "sdate": "2026-01-22",
+        "edate": "2026-01-25"
+      },
+      "BLAST/Open/2026/Spring": {
+        "name": "BLAST Open Spring 2026",
+        "sdate": "2026-03-18",
+        "edate": "2026-03-29"
+      },
+      "BLAST/Rivals/2026/Spring": {
+        "name": "BLAST Rivals Spring 2026",
+        "sdate": "2026-04-29",
+        "edate": "2026-05-03"
+      },
+      "BLAST/Bounty/2026/Summer": {
+        "name": "BLAST Bounty Summer 2026",
+        "sdate": "2026-07-30",
+        "edate": "2026-08-02"
+      },
+      "BLAST/Open/2026/Fall": {
+        "name": "BLAST Open Fall 2026",
+        "sdate": "2026-08-26",
+        "edate": "2026-09-06"
+      },
+      "BLAST/Rivals/2026/Fall": {
+        "name": "BLAST Rivals Fall 2026",
+        "sdate": "2026-11-11",
+        "edate": "2026-11-15"
+      },
+      "CS Asia Championships/2026": {
+        "name": "CS Asia Championships 2026",
+        "sdate": "2026-05-20",
+        "edate": "2026-05-24"
+      },
+      "BLAST/Bounty/2027/Winter": {
+        "name": "BLAST Bounty Winter 2027",
+        "sdate": "2027-01-13",
+        "edate": "2027-01-24"
+      },
+      "BLAST/Bounty/2027/Summer": {
+        "name": "BLAST Bounty Summer 2027",
+        "sdate": "2027-08-30",
+        "edate": "2027-09-12"
+      },
+      "BLAST/Open/2027/Spring": {
+        "name": "BLAST Open Spring 2027",
+        "sdate": "2027-03-19",
+        "edate": "2027-03-28"
+      },
+      "BLAST/Open/2027/Summer": {
+        "name": "BLAST Open Summer 2027",
+        "sdate": "2027-05-10",
+        "edate": "2027-05-23"
+      },
+      "BLAST/Open/2027/Fall": {
+        "name": "BLAST Open Fall 2027",
+        "sdate": "2027-10-04",
+        "edate": "2027-10-17"
+      },
+      "BLAST/Rivals/2027": {
+        "name": "BLAST Rivals 2027",
+        "sdate": "2027-11-08",
+        "edate": "2027-11-14"
+      },
+      "BLAST/Premier/2026/Frequent Flyers": {
+        "name": "BLAST Frequent Flyers Program 2026",
+        "sdate": "2026-01-01",
+        "edate": "2026-12-31"
+      },
+      "CS Asia Championships/2027": {
+        "name": "CS Asia Championships 2027",
+        "sdate": "2027-08-17",
+        "edate": "2027-08-29"
+      },
+      "ESEA/Season 13/Invite": {
+        "name": "ESEA Global Finals Season 13",
+        "sdate": "2013-04-19",
+        "edate": "2013-04-21"
+      },
+      "ESEA/Season 15/Invite": {
+        "name": "ESEA Global Finals Season 15",
+        "sdate": "2014-01-17",
+        "edate": "2014-01-19"
+      },
+      "ESL Major Series One": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "ESEA/Season 14/Invite": {
+        "name": "ESEA Global Finals Season 14",
+        "sdate": "2013-05-27",
+        "edate": "2013-08-18"
+      },
+      "ESEA/Season 16/Invite": {
+        "name": "ESEA Season 16 - Global Invite Division",
+        "sdate": "2014-06-27",
+        "edate": "2014-06-29"
+      },
+      "ESEA/Season 17/Invite": {
+        "name": "ESEA Season 17 - Global Invite Division",
+        "sdate": "2014-12-05",
+        "edate": "2014-12-07"
+      },
+      "ESL ESEA/Pro League/Season 1/Europe": {
+        "name": "ESL ESEA Pro League Season 1 - Europe",
+        "sdate": "2015-05-04",
+        "edate": "2015-06-24"
+      },
+      "ESL ESEA/Pro League/Season 1/North America": {
+        "name": "ESL ESEA Pro League Season 1 - North America",
+        "sdate": "2015-05-04",
+        "edate": "2015-06-22"
+      },
+      "ESEA/Season 18/Invite": {
+        "name": "ESEA Season 18: Global Invite Division",
+        "sdate": "2015-04-17",
+        "edate": "2015-04-19"
+      },
+      "ESL ESEA/Pro League/Season 1/Finals": {
+        "name": "ESL ESEA Pro League Season 1 - Finals",
+        "sdate": "2015-07-02",
+        "edate": "2015-07-05"
+      },
+      "ESL ESEA/Pro League/Invitational": {
+        "name": "ESL ESEA Pro League Invitational",
+        "sdate": "2015-09-10",
+        "edate": "2015-09-12"
+      },
+      "ESL ESEA/Pro League/Season 2/North America": {
+        "name": "ESL ESEA Pro League Season 2 - North America",
+        "sdate": "2015-09-15",
+        "edate": "2015-11-19"
+      },
+      "ESL ESEA/Pro League/Season 2/Europe": {
+        "name": "ESL ESEA Pro League Season 2 - Europe",
+        "sdate": "2015-09-15",
+        "edate": "2015-11-17"
+      },
+      "ESL ESEA/Pro League/Season 2/Finals": {
+        "name": "ESL ESEA Pro League Season 2 - Finals",
+        "sdate": "2015-12-10",
+        "edate": "2015-12-13"
+      },
+      "ELEAGUE/Season 1": {
+        "name": "ELEAGUE Season 1",
+        "sdate": "2016-05-24",
+        "edate": "2016-07-30"
+      },
+      "ELEAGUE/Road to Vegas/Europe": {
+        "name": "ELEAGUE Road to Vegas: European Qualifier",
+        "sdate": "2015-12-15",
+        "edate": "2015-12-18"
+      },
+      "DreamHack Masters": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "ELEAGUE/Season 2": {
+        "name": "ELEAGUE Season 2",
+        "sdate": "2016-10-21",
+        "edate": "2016-12-03"
+      },
+      "ELEAGUE/Clash for Cash: The Rematch": {
+        "name": "ELEAGUE Clash for Cash: The Rematch",
+        "sdate": "2017-06-16",
+        "edate": "2017-06-16"
+      },
+      "EPICENTER": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "ESL Major Series One/Fall/Main Event": {
+        "name": "ESL Major Series One - Fall 2013",
+        "sdate": "2013-10-01",
+        "edate": "2013-10-27"
+      },
+      "ESL Major Series One/Spring/Cup Ranking": {
+        "name": "ESL Major Series One - Spring 2013: Cup Ranking",
+        "sdate": "2013-03-19",
+        "edate": "2013-09-25"
+      },
+      "ESL Major Series One/Spring/Main Event": {
+        "name": "ESL Major Series One - Spring 2013",
+        "sdate": "2013-03-19",
+        "edate": "2013-04-14"
+      },
+      "ESL One": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "ESL Pro League": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "ESL/Grand Slam": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "ESL/Pro League/Season 10/Europe": {
+        "name": "ESL Pro League Season 10 - Europe",
+        "sdate": "2019-10-08",
+        "edate": "2019-11-18"
+      },
+      "ESL/Pro League/Season 10/Americas": {
+        "name": "ESL Pro League Season 10 - Americas",
+        "sdate": "2019-10-08",
+        "edate": "2019-11-18"
+      },
+      "ESL/Pro League/Season 10/Finals": {
+        "name": "ESL Pro League Season 10 - Finals",
+        "sdate": "2019-12-03",
+        "edate": "2019-12-08"
+      },
+      "ESL/Pro League/Season 11": {
+        "name": "ESL Pro League Season 11",
+        "sdate": "2020-03-16",
+        "edate": "2020-04-12"
+      },
+      "ESL/Pro League/Season 12": {
+        "name": "ESL Pro League Season 12",
+        "sdate": "2020-09-02",
+        "edate": "2020-10-11"
+      },
+      "ESL/Pro League/Season 11/Europe": {
+        "name": "ESL Pro League Season 11: Europe",
+        "sdate": "2020-03-16",
+        "edate": "2020-04-12"
+      },
+      "ESL/Pro League/Season 11/North America": {
+        "name": "ESL Pro League Season 11: North America",
+        "sdate": "2020-03-26",
+        "edate": "2020-04-12"
+      },
+      "ESL/Pro League/Season 12/Europe": {
+        "name": "ESL Pro League Season 12: Europe",
+        "sdate": "2020-09-01",
+        "edate": "2020-10-04"
+      },
+      "ESL/Pro League/Season 12/North America": {
+        "name": "ESL Pro League Season 12: North America",
+        "sdate": "2020-09-01",
+        "edate": "2020-09-27"
+      },
+      "ESL/Pro League/Season 13": {
+        "name": "ESL Pro League Season 13",
+        "sdate": "2021-03-08",
+        "edate": "2021-04-11"
+      },
+      "ESL/Pro League/Season 14": {
+        "name": "ESL Pro League Season 14",
+        "sdate": "2021-08-16",
+        "edate": "2021-09-12"
+      },
+      "ESL/Grand Slam/5": {
+        "name": "ESL Grand Slam Season 5",
+        "sdate": "2023-04-17",
+        "edate": "2025-04-27"
+      },
+      "ESL/Grand Slam/VI": {
+        "name": "ESL Grand Slam VI",
+        "sdate": "2025-05-19",
+        "edate": "2026-04-19"
+      },
+      "ESL/Grand Slam/VII": {
+        "name": "ESL Grand Slam VII",
+        "sdate": "2026-05-11",
+        "edate": ""
+      },
+      "ESL/Pro League/Season 3/Europe": {
+        "name": "ESL Pro League Season 3 - Europe",
+        "sdate": "2016-02-09",
+        "edate": "2016-04-26"
+      },
+      "ESL/Pro League/Season 3/North America": {
+        "name": "ESL Pro League Season 3 - North America",
+        "sdate": "2016-02-09",
+        "edate": "2016-04-26"
+      },
+      "ESL/Pro League/Season 3/Finals": {
+        "name": "ESL Pro League Season 3 - Finals",
+        "sdate": "2016-05-11",
+        "edate": "2016-05-15"
+      },
+      "ESL/Pro League/Season 4/Europe": {
+        "name": "ESL Pro League Season 4 - Europe",
+        "sdate": "2016-08-17",
+        "edate": "2016-10-13"
+      },
+      "ESL/Pro League/Season 4/North America": {
+        "name": "ESL Pro League Season 4 - North America",
+        "sdate": "2016-08-17",
+        "edate": "2016-10-13"
+      },
+      "ESL/Pro League/Season 4/Finals": {
+        "name": "ESL Pro League Season 4 - Finals",
+        "sdate": "2016-10-26",
+        "edate": "2016-10-30"
+      },
+      "ESL/Pro League/Season 5/Europe": {
+        "name": "ESL Pro League Season 5 - Europe",
+        "sdate": "2017-02-07",
+        "edate": "2017-05-11"
+      },
+      "ESL/Pro League/Season 15": {
+        "name": "ESL Pro League Season 15",
+        "sdate": "2022-03-09",
+        "edate": "2022-04-10"
+      },
+      "ESL/Pro League/Season 16": {
+        "name": "ESL Pro League Season 16",
+        "sdate": "2022-08-31",
+        "edate": "2022-10-02"
+      },
+      "ESL/Pro League/Season 17": {
+        "name": "ESL Pro League Season 17",
+        "sdate": "2023-02-22",
+        "edate": "2023-03-26"
+      },
+      "ESL/Pro League/Season 18": {
+        "name": "ESL Pro League Season 18",
+        "sdate": "2023-08-30",
+        "edate": "2023-10-01"
+      },
+      "ESL/Pro League/Season 19": {
+        "name": "ESL Pro League Season 19",
+        "sdate": "2024-04-23",
+        "edate": "2024-05-12"
+      },
+      "ESL/Pro League/Season 20": {
+        "name": "ESL Pro League Season 20",
+        "sdate": "2024-09-03",
+        "edate": "2024-09-22"
+      },
+      "ESL/Pro League/Season 21": {
+        "name": "ESL Pro League Season 21",
+        "sdate": "2025-03-01",
+        "edate": "2025-03-16"
+      },
+      "ESL/Pro League/Season 22": {
+        "name": "ESL Pro League Season 22",
+        "sdate": "2025-09-28",
+        "edate": "2025-10-12"
+      },
+      "ESL/Pro League/Season 23": {
+        "name": "ESL Pro League Season 23",
+        "sdate": "2026-03-13",
+        "edate": "2026-03-15"
+      },
+      "ESL/Pro League/Season 23/Online Stage": {
+        "name": "ESL Pro League Season 23: Online Stage",
+        "sdate": "2026-03-01",
+        "edate": "2026-03-10"
+      },
+      "ESL/Pro League/Season 24": {
+        "name": "ESL Pro League Season 24",
+        "sdate": "2026-10-03",
+        "edate": "2026-10-11"
+      },
+      "ESL/Pro League/Season 25": {
+        "name": "ESL Pro League Season 25",
+        "sdate": "2027-03-06",
+        "edate": "2027-03-14"
+      },
+      "ESL/Pro League/Season 26": {
+        "name": "ESL Pro League Season 26",
+        "sdate": "2027-09-23",
+        "edate": "2027-10-03"
+      },
+      "Esports Championship Series": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "Esports Championship Series/Season 1": {
+        "name": "Esports Championship Series Season 1 - Finals",
+        "sdate": "2016-06-24",
+        "edate": "2016-06-26"
+      },
+      "Esports Championship Series/Season 2": {
+        "name": "Esports Championship Series Season 2 - Finals",
+        "sdate": "2016-12-09",
+        "edate": "2016-12-11"
+      },
+      "ESL/Pro League/Season 5/North America": {
+        "name": "ESL Pro League Season 5 - North America",
+        "sdate": "2017-02-07",
+        "edate": "2017-05-11"
+      },
+      "ESL/Pro League/Season 5/Finals": {
+        "name": "ESL Pro League Season 5 - Finals",
+        "sdate": "2017-05-30",
+        "edate": "2017-06-04"
+      },
+      "Esports Championship Series/Season 3": {
+        "name": "Esports Championship Series Season 3 - Finals",
+        "sdate": "2017-06-23",
+        "edate": "2017-06-25"
+      },
+      "ESL/Pro League/Season 6/Europe": {
+        "name": "ESL Pro League Season 6 - Europe",
+        "sdate": "2017-08-22",
+        "edate": "2017-11-11"
+      },
+      "ESL/Pro League/Season 6/North America": {
+        "name": "ESL Pro League Season 6 - North America",
+        "sdate": "2017-08-22",
+        "edate": "2017-11-12"
+      },
+      "ESL/Pro League/Season 6/Finals": {
+        "name": "ESL Pro League Season 6 - Finals",
+        "sdate": "2017-12-05",
+        "edate": "2017-12-10"
+      },
+      "Esports Championship Series/Season 4": {
+        "name": "Esports Championship Series Season 4 - Finals",
+        "sdate": "2017-12-15",
+        "edate": "2017-12-17"
+      },
+      "ESL/Pro League/Season 7/Finals": {
+        "name": "ESL Pro League Season 7 - Finals",
+        "sdate": "2018-05-15",
+        "edate": "2018-05-20"
+      },
+      "ESL/Pro League/Season 7/Europe": {
+        "name": "ESL Pro League Season 7 - Europe",
+        "sdate": "2018-02-13",
+        "edate": "2018-04-26"
+      },
+      "ESL/Pro League/Season 7/North America": {
+        "name": "ESL Pro League Season 7 - North America",
+        "sdate": "2018-02-13",
+        "edate": "2018-04-26"
+      },
+      "ESL/Pro League/Season 8/Finals": {
+        "name": "ESL Pro League Season 8 - Finals",
+        "sdate": "2018-12-04",
+        "edate": "2018-12-09"
+      },
+      "Esports Championship Series/Season 5": {
+        "name": "Esports Championship Series Season 5 - Finals",
+        "sdate": "2018-06-08",
+        "edate": "2018-06-10"
+      },
+      "ESL/Pro League/Season 8/Europe": {
+        "name": "ESL Pro League Season 8 - Europe",
+        "sdate": "2018-10-02",
+        "edate": "2018-11-14"
+      },
+      "ESL/Pro League/Season 8/North America": {
+        "name": "ESL Pro League Season 8 - North America",
+        "sdate": "2018-10-02",
+        "edate": "2018-11-14"
+      },
+      "ESL/Pro League/Season 9/Europe": {
+        "name": "ESL Pro League Season 9 - Europe",
+        "sdate": "2019-04-12",
+        "edate": "2019-05-23"
+      },
+      "ESL/Pro League/Season 9/Finals": {
+        "name": "ESL Pro League Season 9 - Finals",
+        "sdate": "2019-06-18",
+        "edate": "2019-06-23"
+      },
+      "ESL/Pro League/Season 9/Americas": {
+        "name": "ESL Pro League Season 9 - Americas",
+        "sdate": "2019-04-12",
+        "edate": "2019-05-23"
+      },
+      "FACEIT/League/Season 2": {
+        "name": "FACEIT League - Season 2",
+        "sdate": "2014-09-03",
+        "edate": "2014-10-26"
+      },
+      "Esports Championship Series/Season 6": {
+        "name": "Esports Championship Series Season 6 - Finals",
+        "sdate": "2018-11-22",
+        "edate": "2018-11-25"
+      },
+      "Esports Championship Series/Season 7": {
+        "name": "Esports Championship Series Season 7 - Finals",
+        "sdate": "2019-06-06",
+        "edate": "2019-06-09"
+      },
+      "Esports Championship Series/Season 8": {
+        "name": "Esports Championship Series Season 8 - Finals",
+        "sdate": "2019-11-28",
+        "edate": "2019-12-01"
+      },
+      "FISSURE/Playground/2": {
+        "name": "FISSURE Playground #2",
+        "sdate": "2025-09-12",
+        "edate": "2025-09-21"
+      },
+      "Esports World Cup/2026": {
+        "name": "Esports World Cup 2026",
+        "sdate": "2026-08-12 <!--Stop changing this, it is correct.-->",
+        "edate": "2026-08-23"
+      },
+      "FISSURE/Playground/3": {
+        "name": "FISSURE Playground #3",
+        "sdate": "2026-09-08",
+        "edate": "2026-09-13"
+      },
+      "FISSURE/Playground/4": {
+        "name": "FISSURE Playground #4",
+        "sdate": "2026-07-13",
+        "edate": "2026-07-19"
+      },
+      "FISSURE/Playground/5": {
+        "name": "FISSURE Playground #5",
+        "sdate": "2026-09-07",
+        "edate": "2026-09-13"
+      },
+      "FISSURE/Playground/6": {
+        "name": "FISSURE Playground #6",
+        "sdate": "2027-04-15",
+        "edate": "2027-04-26"
+      },
+      "FISSURE/Playground/7": {
+        "name": "FISSURE Playground #7",
+        "sdate": "2027-07-12",
+        "edate": "2027-07-19"
+      },
+      "FISSURE/Playground/8": {
+        "name": "FISSURE Playground #8",
+        "sdate": "2027-08-18",
+        "edate": "2027-08-30"
+      },
+      "FISSURE/Playground/9": {
+        "name": "FISSURE Playground #9",
+        "sdate": "2027-10-21",
+        "edate": "2027-10-30"
+      },
+      "FISSURE/Playground/10": {
+        "name": "FISSURE Playground #10",
+        "sdate": "2028-02-21",
+        "edate": "2028-02-28"
+      },
+      "FISSURE/Playground/11": {
+        "name": "FISSURE Playground #11",
+        "sdate": "2028-03-25",
+        "edate": "2028-04-08"
+      },
+      "FISSURE/Playground/12": {
+        "name": "FISSURE Playground #12",
+        "sdate": "2028-07-13",
+        "edate": "2028-07-30"
+      },
+      "FISSURE/Playground/13": {
+        "name": "FISSURE Playground #13",
+        "sdate": "2028-10-16",
+        "edate": "2028-10-22"
+      },
+      "FiReSPORTS/Major/2027/Buenos Aires": {
+        "name": "FiRe Major Buenos Aires 2027",
+        "sdate": "2027-05-31",
+        "edate": "2027-06-20"
+      },
+      "Esports World Cup/2027": {
+        "name": "Esports World Cup 2027",
+        "sdate": "2027-07-20",
+        "edate": "2027-08-01"
+      },
+      "Esports World Cup": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "Intel Extreme Masters": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "Fragbite Masters/Season 4": {
+        "name": "Fragbite Masters Season 4",
+        "sdate": "2015-06-06",
+        "edate": "2015-06-07"
+      },
+      "Gfinity/Spring Masters 1": {
+        "name": "Gfinity Spring Masters 1",
+        "sdate": "2015-03-20",
+        "edate": "2015-03-22"
+      },
+      "Gfinity/Masters/Spring 2": {
+        "name": "Gfinity Spring Masters 2",
+        "sdate": "2015-05-15",
+        "edate": "2015-05-17"
+      },
+      "Gfinity/Masters/Summer 1": {
+        "name": "Gfinity Masters Summer 1",
+        "sdate": "2015-06-26",
+        "edate": "2015-06-28"
+      },
+      "Fragbite Masters/Season 3": {
+        "name": "Fragbite Masters Season 3",
+        "sdate": "2014-10-01",
+        "edate": "2014-11-09"
+      },
+      "Fragbite Masters/Season 2": {
+        "name": "Fragbite Masters Season 2",
+        "sdate": "2014-03-08",
+        "edate": "2014-03-30"
+      },
+      "Gfinity/G3": {
+        "name": "Gfinity G3",
+        "sdate": "2014-08-02",
+        "edate": "2014-08-03"
+      },
+      "Fragbite Masters/Season 1": {
+        "name": "Fragbite Masters Season 1",
+        "sdate": "2013-11-17",
+        "edate": "2013-12-13"
+      },
+      "Gfinity/Champion of Champions": {
+        "name": "Gfinity Champion of Champions",
+        "sdate": "2015-09-26",
+        "edate": "2015-09-27"
+      },
+      "Fragbite Masters/Season 5": {
+        "name": "Fragbite Masters Season 5",
+        "sdate": "2015-12-04",
+        "edate": "2015-12-06"
+      },
+      "Game Show/Global eSports Cup/Season 1": {
+        "name": "Global eSports Cup - Season 1",
+        "sdate": "2016-02-04",
+        "edate": "2016-02-07"
+      },
+      "Game Show/Global eSports Cup/Season 1/EU Group Stage 2": {
+        "name": "Global eSports Cup - Season 1 - EU Group Stage #2",
+        "sdate": "2016-01-06",
+        "edate": "2016-01-31"
+      },
+      "Flashpoint/Season 1": {
+        "name": "Flashpoint Season 1",
+        "sdate": "2020-03-13",
+        "edate": "2020-04-19"
+      },
+      "Flashpoint": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "Flashpoint/Season 2": {
+        "name": "Flashpoint Season 2",
+        "sdate": "2020-11-10",
+        "edate": "2020-12-06"
+      },
+      "Intel Extreme Masters/2026/Cologne": {
+        "name": "Intel Extreme Masters Cologne Major 2026",
+        "sdate": "2026-06-02",
+        "edate": "2026-06-21"
+      },
+      "Forge of Legends/2026": {
+        "name": "Forge of Legends 2026",
+        "sdate": "2026-10-13",
+        "edate": "2026-10-18"
+      },
+      "Intel Extreme Masters/2026/Atlanta": {
+        "name": "Intel Extreme Masters Atlanta 2026",
+        "sdate": "2026-05-11",
+        "edate": "2026-05-17"
+      },
+      "Intel Extreme Masters/2026/Beijing": {
+        "name": "Intel Extreme Masters Beijing 2026",
+        "sdate": "2026-11-02",
+        "edate": "2026-11-08"
+      },
+      "Intel Extreme Masters/Season I/World Championship": {
+        "name": "Intel Extreme Masters I",
+        "sdate": "2007-03-15",
+        "edate": "2007-03-18"
+      },
+      "Intel Extreme Masters/Season II/World Championship": {
+        "name": "Intel Extreme Masters II",
+        "sdate": "2008-03-06",
+        "edate": "2008-03-09"
+      },
+      "Intel Extreme Masters/Season III/World Championship": {
+        "name": "Intel Extreme Masters III",
+        "sdate": "2009-03-06",
+        "edate": "2009-03-08"
+      },
+      "Intel Extreme Masters/Season III/European Championship Finals": {
+        "name": "IEM III European Championship Finals",
+        "sdate": "2009-03-03",
+        "edate": "2009-03-05"
+      },
+      "Intel Extreme Masters/Season III/Global Challenge Dubai": {
+        "name": "IEM III Global Challenge Dubai",
+        "sdate": "2008-10-22",
+        "edate": "2008-10-24"
+      },
+      "Intel Extreme Masters/Season III/Global Challenge Los Angeles": {
+        "name": "IEM III Global Challenge Los Angeles",
+        "sdate": "2008-10-03",
+        "edate": "2008-10-05"
+      },
+      "Intel Extreme Masters/Season III/Global Challenge Montreal": {
+        "name": "IEM III Global Challenge Montreal",
+        "sdate": "2008-10-17",
+        "edate": "2008-10-19"
+      },
+      "Intel Extreme Masters/Season II/Global Challenge Los Angeles": {
+        "name": "IEM II Global Challenge Los Angeles",
+        "sdate": "2007-10-18",
+        "edate": "2007-10-21"
+      },
+      "Intel Extreme Masters/Season IV/European Championship Finals": {
+        "name": "IEM IV European Championship Finals",
+        "sdate": "2010-01-14",
+        "edate": "2010-01-17"
+      },
+      "Intel Extreme Masters/Season IV/Global Challenge Chengdu": {
+        "name": "IEM IV Global Challenge Chengdu",
+        "sdate": "2009-10-01",
+        "edate": "2009-10-03"
+      },
+      "Intel Extreme Masters/Season IV/Global Challenge Dubai": {
+        "name": "IEM IV Global Challenge Dubai",
+        "sdate": "2009-10-17",
+        "edate": "2009-10-24"
+      },
+      "Intel Extreme Masters/Season IV/Global Challenge Gamescom": {
+        "name": "IEM IV Global Challenge Gamescom",
+        "sdate": "2009-08-23",
+        "edate": "2009-08-23"
+      },
+      "Intel Extreme Masters/Season I/Regular Season": {
+        "name": "Intel Extreme Masters I - Regular Season",
+        "sdate": "2006-10-27",
+        "edate": "2007-02-21"
+      },
+      "Intel Extreme Masters/Season III/Regular Season/Europe": {
+        "name": "Intel Extreme Masters III - Regular Season Europe",
+        "sdate": "2008-10-08",
+        "edate": "2009-02-10"
+      },
+      "Intel Extreme Masters/2026/Kraków": {
+        "name": "Intel Extreme Masters Kraków 2026",
+        "sdate": "2026-01-28",
+        "edate": "2026-02-08"
+      },
+      "Intel Extreme Masters/2026/Rio": {
+        "name": "Intel Extreme Masters Rio 2026",
+        "sdate": "2026-04-13",
+        "edate": "2026-04-19"
+      },
+      "Intel Extreme Masters/2027/Kraków": {
+        "name": "Intel Extreme Masters Kraków 2027",
+        "sdate": "2027-01-27",
+        "edate": "2027-02-07"
+      },
+      "Intel Extreme Masters/2027/United States": {
+        "name": "Intel Extreme Masters USA 2027",
+        "sdate": "2027-04-05",
+        "edate": "2027-04-11"
+      },
+      "Intel Extreme Masters/2027/Brazil": {
+        "name": "Intel Extreme Masters Brazil 2027",
+        "sdate": "2027-05-03",
+        "edate": "2027-05-09"
+      },
+      "Intel Extreme Masters/2027/Cologne": {
+        "name": "Intel Extreme Masters Cologne 2027",
+        "sdate": "2027-08-04",
+        "edate": "2027-08-15"
+      },
+      "Intel Extreme Masters/Season IV/World Championship": {
+        "name": "Intel Extreme Masters IV",
+        "sdate": "2010-03-02",
+        "edate": "2010-03-06"
+      },
+      "Intel Extreme Masters/Season V/World Championship": {
+        "name": "Intel Extreme Masters V",
+        "sdate": "2011-03-01",
+        "edate": "2011-03-05"
+      },
+      "Intel Extreme Masters/Season VI/World Championship": {
+        "name": "Intel Extreme Masters VI",
+        "sdate": "2012-03-06",
+        "edate": "2012-03-10"
+      },
+      "Intel Extreme Masters/Season VI/Global Challenge Guangzhou": {
+        "name": "IEM VI Global Challenge Guangzhou",
+        "sdate": "2011-10-01",
+        "edate": "2011-10-05"
+      },
+      "Intel Extreme Masters/Season VI/Global Challenge Kyiv": {
+        "name": "IEM VI Global Challenge Kyiv",
+        "sdate": "2012-01-19",
+        "edate": "2012-01-22"
+      },
+      "Intel Extreme Masters/Season VI/Global Challenge New York": {
+        "name": "IEM VI Global Challenge New York",
+        "sdate": "2011-10-13",
+        "edate": "2011-10-16"
+      },
+      "Intel Extreme Masters/Season V/European Championship Finals": {
+        "name": "IEM V European Championship Finals",
+        "sdate": "2011-01-20",
+        "edate": "2011-01-23"
+      },
+      "Intel Extreme Masters/Season V/Global Challenge Shanghai": {
+        "name": "IEM V Global Challenge Shanghai",
+        "sdate": "2010-07-29",
+        "edate": "2010-08-01"
+      },
+      "Intel Extreme Masters/Season X/gamescom": {
+        "name": "Intel Extreme Masters Season X - gamescom",
+        "sdate": "2015-08-05",
+        "edate": "2015-08-08"
+      },
+      "Intel Extreme Masters/Season X/San Jose": {
+        "name": "Intel Extreme Masters X - San Jose",
+        "sdate": "2015-11-21",
+        "edate": "2015-11-22"
+      },
+      "Intel Extreme Masters/Season X/World Championship": {
+        "name": "Intel Extreme Masters X - World Championship",
+        "sdate": "2016-03-02",
+        "edate": "2016-03-05"
+      },
+      "Intel Extreme Masters/Season XI/Oakland": {
+        "name": "Intel Extreme Masters XI - Oakland",
+        "sdate": "2016-11-16",
+        "edate": "2016-11-20"
+      },
+      "Intel Extreme Masters/Season XI/World Championship": {
+        "name": "Intel Extreme Masters XI - World Championship",
+        "sdate": "2017-03-01",
+        "edate": "2017-03-05"
+      },
+      "Intel Extreme Masters/Season XII/Sydney": {
+        "name": "Intel Extreme Masters XII - Sydney",
+        "sdate": "2017-05-03",
+        "edate": "2017-05-07"
+      },
+      "Intel Extreme Masters/Season XII/Oakland": {
+        "name": "Intel Extreme Masters XII - Oakland",
+        "sdate": "2017-11-14",
+        "edate": "2017-11-19"
+      },
+      "Intel Extreme Masters/Season XII/World Championship": {
+        "name": "Intel Extreme Masters XII - World Championship",
+        "sdate": "2018-02-27",
+        "edate": "2018-03-04"
+      },
+      "Intel Extreme Masters/Season XIII/Sydney": {
+        "name": "Intel Extreme Masters XIII - Sydney",
+        "sdate": "2018-05-01",
+        "edate": "2018-05-06"
+      },
+      "Intel Extreme Masters/Season XIII/Chicago": {
+        "name": "Intel Extreme Masters XIII - Chicago",
+        "sdate": "2018-11-06",
+        "edate": "2018-11-11"
+      },
+      "Intel Extreme Masters/Season IV/Regular Season/Europe": {
+        "name": "IEM IV - Regular Season",
+        "sdate": "2009-09-27",
+        "edate": "2009-10-04"
+      },
+      "Intel Extreme Masters/Season V/Regular Season/Europe": {
+        "name": "IEM V - Regular Season",
+        "sdate": "2010-10-06",
+        "edate": "2010-12-08"
+      },
+      "Intel/Grand Slam/1": {
+        "name": "Intel Grand Slam Season 1",
+        "sdate": "2017-07-04",
+        "edate": "2018-12-09"
+      },
+      "Intel Extreme Masters/Season XIII/World Championship": {
+        "name": "Intel Extreme Masters XIII - Katowice Major 2019",
+        "sdate": "2019-02-13",
+        "edate": "2019-03-03"
+      },
+      "Intel Extreme Masters/Season XIV/Sydney": {
+        "name": "Intel Extreme Masters XIV - Sydney",
+        "sdate": "2019-04-29",
+        "edate": "2019-05-05"
+      },
+      "Intel/Grand Slam/2": {
+        "name": "Intel Grand Slam Season 2",
+        "sdate": "2019-02-14",
+        "edate": "2019-07-07"
+      },
+      "Intel Extreme Masters/Season XIV/Chicago": {
+        "name": "Intel Extreme Masters XIV - Chicago",
+        "sdate": "2019-07-18",
+        "edate": "2019-07-21"
+      },
+      "Intel Extreme Masters/Season XIV/Beijing": {
+        "name": "Intel Extreme Masters XIV - Beijing",
+        "sdate": "2019-11-07",
+        "edate": "2019-11-10"
+      },
+      "Intel/Grand Slam/3": {
+        "name": "Intel Grand Slam Season 3",
+        "sdate": "2019-07-18",
+        "edate": "2021-09-12"
+      },
+      "Intel Extreme Masters/Season XIV/World Championship": {
+        "name": "Intel Extreme Masters XIV - World Championship",
+        "sdate": "2020-02-24",
+        "edate": "2020-03-01"
+      },
+      "Intel Extreme Masters/Season XV/Melbourne": {
+        "name": "Intel Extreme Masters XV - Melbourne",
+        "sdate": "2020-08-17",
+        "edate": "2020-08-23"
+      },
+      "Intel Extreme Masters/Season XV/Global Challenge": {
+        "name": "Intel Extreme Masters XV - Global Challenge",
+        "sdate": "2020-12-15",
+        "edate": "2020-12-20"
+      },
+      "Intel Extreme Masters/Season XV/Beijing/Europe": {
+        "name": "Intel Extreme Masters XV - Beijing Online: Europe",
+        "sdate": "2020-11-06",
+        "edate": "2020-11-22"
+      },
+      "Intel Extreme Masters/Season XV/World Championship": {
+        "name": "Intel Extreme Masters XV - World Championship",
+        "sdate": "2021-02-16",
+        "edate": "2021-02-28"
+      },
+      "Intel Extreme Masters/Season XVI/Cologne": {
+        "name": "Intel Extreme Masters XVI - Cologne",
+        "sdate": "2021-07-06",
+        "edate": "2021-07-18"
+      },
+      "Intel Extreme Masters/Season XVI/Fall": {
+        "name": "Intel Extreme Masters XVI - Fall",
+        "sdate": "2021-09-28",
+        "edate": "2021-10-10"
+      },
+      "Intel Extreme Masters/Season XVI/Winter": {
+        "name": "Intel Extreme Masters XVI - Winter",
+        "sdate": "2021-12-02",
+        "edate": "2021-12-12"
+      },
+      "Intel Extreme Masters/Season XVI/Summer": {
+        "name": "Intel Extreme Masters XVI - Summer",
+        "sdate": "2021-06-03",
+        "edate": "2021-06-13"
+      },
+      "Intel Extreme Masters/Season XVI/Katowice": {
+        "name": "Intel Extreme Masters XVI - Katowice",
+        "sdate": "2022-02-15",
+        "edate": "2022-02-27"
+      },
+      "Intel Extreme Masters/Season XVII/Cologne": {
+        "name": "Intel Extreme Masters XVII - Cologne",
+        "sdate": "2022-07-05",
+        "edate": "2022-07-17"
+      },
+      "Intel/Grand Slam/4": {
+        "name": "Intel Grand Slam Season 4",
+        "sdate": "2021-12-02",
+        "edate": "2023-03-26"
+      },
+      "Intel Extreme Masters/Season XVII/Dallas": {
+        "name": "Intel Extreme Masters XVII - Dallas",
+        "sdate": "2022-05-30",
+        "edate": "2022-06-05"
+      },
+      "MLG/Aspen Invitational": {
+        "name": "MLG X Games Aspen Invitational",
+        "sdate": "2015-01-23",
+        "edate": "2015-01-25"
+      },
+      "NGL-One/Season/I": {
+        "name": "NGL-One Season I - Finals",
+        "sdate": "2006-08-25",
+        "edate": "2006-08-27"
+      },
+      "NGL-One/Season/II": {
+        "name": "NGL-One Season II - Finals",
+        "sdate": "2007-03-30",
+        "edate": "2007-04-01"
+      },
+      "NGL-One/Season/III": {
+        "name": "NGL-One Season III - Finals",
+        "sdate": "2007-08-23",
+        "edate": "2007-08-25"
+      },
+      "NGL-One/Season/IV": {
+        "name": "NGL-One Season IV - Finals",
+        "sdate": "2008-02-22",
+        "edate": "2008-02-23"
+      },
+      "LAN Arena 7": {
+        "name": "LAN Arena 7",
+        "sdate": "2002-07-05",
+        "edate": "2002-07-07"
+      },
+      "Match of LeGGends": {
+        "name": "Match of LeGGends",
+        "sdate": "2023-07-08",
+        "edate": "2023-07-08"
+      },
+      "PGL/2026/Singapore": {
+        "name": "PGL Major Singapore 2026",
+        "sdate": "2026-11-24",
+        "edate": "2026-12-13"
+      },
+      "PGL/2026/Cluj-Napoca": {
+        "name": "PGL Cluj-Napoca 2026",
+        "sdate": "2026-02-14",
+        "edate": "2026-02-22"
+      },
+      "PGL/2026/Astana": {
+        "name": "PGL Astana 2026",
+        "sdate": "2026-05-09",
+        "edate": "2026-05-17"
+      },
+      "PGL/2026/Masters": {
+        "name": "PGL Masters Bucharest 2026",
+        "sdate": "2026-10-24",
+        "edate": "2026-10-31"
+      },
+      "PGL/2026/Fall": {
+        "name": "PGL Fall 2026",
+        "sdate": "2026-10-01",
+        "edate": "2026-10-11"
+      },
+      "PGL/2026/Summer": {
+        "name": "PGL Summer 2026",
+        "sdate": "2026-08-06",
+        "edate": "2026-08-16"
+      },
+      "Match of LeGGends/Double Down": {
+        "name": "Match of LeGGends: Double Down",
+        "sdate": "2024-10-05",
+        "edate": "2024-10-05"
+      },
+      "PGL/2027/Bucharest": {
+        "name": "PGL Bucharest 2027",
+        "sdate": "2027-01-17",
+        "edate": "2027-01-24"
+      },
+      "PGL/2027/Cluj-Napoca": {
+        "name": "PGL Cluj-Napoca 2027",
+        "sdate": "2027-02-11",
+        "edate": "2027-02-21"
+      },
+      "Perfect World/Major/2027/Shanghai": {
+        "name": "Perfect World Shanghai Major 2027",
+        "sdate": "2027-11-22",
+        "edate": "2027-12-12"
+      },
+      "PGL/2027/China": {
+        "name": "PGL China 2027",
+        "sdate": "2027-04-16",
+        "edate": "2027-04-25"
+      },
+      "PGL/2027/September": {
+        "name": "PGL September 2027",
+        "sdate": "2027-09-03",
+        "edate": "2027-09-12"
+      },
+      "PGL/2027/October": {
+        "name": "PGL October 2027",
+        "sdate": "2027-10-08",
+        "edate": "2027-10-17"
+      },
+      "StarLadder/StarSeries/XI": {
+        "name": "StarLadder StarSeries XI",
+        "sdate": "2014-09-12",
+        "edate": "2014-10-19"
+      },
+      "StarLadder/StarSeries/XII": {
+        "name": "StarLadder StarSeries XII",
+        "sdate": "2015-01-13",
+        "edate": "2015-03-29"
+      },
+      "StarLadder/StarSeries/IX": {
+        "name": "StarLadder StarSeries IX",
+        "sdate": "2014-05-02",
+        "edate": "2014-05-04"
+      },
+      "StarLadder/StarSeries/X": {
+        "name": "StarLadder StarSeries X",
+        "sdate": "2014-08-30",
+        "edate": "2014-08-31"
+      },
+      "StarLadder/StarSeries/VII": {
+        "name": "StarLadder StarSeries VII",
+        "sdate": "2013-10-10",
+        "edate": "2013-10-13"
+      },
+      "StarLadder/StarSeries/VIII": {
+        "name": "StarLadder StarSeries VIII",
+        "sdate": "2013-12-20",
+        "edate": "2013-12-22"
+      },
+      "StarLadder/StarSeries/XIII": {
+        "name": "StarLadder StarSeries XIII",
+        "sdate": "2015-05-18",
+        "edate": "2015-06-21"
+      },
+      "PGL/Championship Series/Kick-Off Season": {
+        "name": "PGL CS:GO Championship Series Kick-Off Season",
+        "sdate": "2015-04-24",
+        "edate": "2015-04-26"
+      },
+      "PGL/Championship Series/Season 1": {
+        "name": "PGL CS:GO Championship Series Season 1",
+        "sdate": "2015-10-02",
+        "edate": "2015-10-04"
+      },
+      "StarLadder/i-League StarSeries/XIV": {
+        "name": "StarLadder i-League StarSeries XIV",
+        "sdate": "2016-01-13",
+        "edate": "2016-01-17"
+      },
+      "StarLadder i-League/Invitational/1": {
+        "name": "StarLadder i-League Invitational #1",
+        "sdate": "2016-05-19",
+        "edate": "2016-05-22"
+      },
+      "StarLadder i-League/StarSeries/Season 2": {
+        "name": "StarLadder i-League StarSeries Season 2",
+        "sdate": "2016-09-07",
+        "edate": "2016-09-11"
+      },
+      "StarLadder i-League/StarSeries/Season 3": {
+        "name": "StarLadder i-League StarSeries Season 3",
+        "sdate": "2017-04-04",
+        "edate": "2017-04-09"
+      },
+      "PGL/Championship Series": {
+        "name": "",
+        "sdate": "",
+        "edate": ""
+      },
+      "StarLadder i-League/StarSeries/Season 4": {
+        "name": "StarLadder & i-League StarSeries Season 4",
+        "sdate": "2018-02-17",
+        "edate": "2018-02-25"
+      },
+      "StarSeries i-League/Season 5": {
+        "name": "StarSeries & i-League CS:GO Season 5",
+        "sdate": "2018-05-28",
+        "edate": "2018-06-03"
+      },
+      "StarSeries i-League/Season 6": {
+        "name": "StarSeries & i-League CS:GO Season 6",
+        "sdate": "2018-10-07",
+        "edate": "2018-10-14"
+      },
+      "PGL/2027/Łódź": {
+        "name": "PGL Łódź 2027",
+        "sdate": "2027-03-18",
+        "edate": "2027-03-28"
+      },
+      "StarLadder/StarSeries/2026/Fall": {
+        "name": "StarLadder StarSeries Fall 2026",
+        "sdate": "2026-09-17",
+        "edate": "2026-09-20"
+      },
+      "StarLadder/StarSeries/2027/Fall": {
+        "name": "StarLadder StarSeries Fall 2027",
+        "sdate": "2027-10-21",
+        "edate": "2027-10-24"
+      },
+      "StarSeries i-League/Season 7": {
+        "name": "StarSeries & i-League CS:GO Season 7",
+        "sdate": "2019-03-30",
+        "edate": "2019-04-07"
+      },
+      "StarSeries i-League/Season 8": {
+        "name": "StarSeries & i-League CS:GO Season 8",
+        "sdate": "2019-10-21",
+        "edate": "2019-10-27"
+      },
+      "YaLLa Compass/2026/Qatar": {
+        "name": "YaLLa Compass Qatar 2026",
+        "sdate": "2026-04-20",
+        "edate": "2026-04-26"
+      },
+      "YaLLa Compass/2026/UAE": {
+        "name": "YaLLa Compass UAE 2026",
+        "sdate": "2026-11-16",
+        "edate": "2026-11-22"
+      },
+      "YaLLa Compass/2026/Summer": {
+        "name": "YaLLa Compass Summer 2026",
+        "sdate": "2026-09-07",
+        "edate": "2026-09-13"
+      },
+      "Thunderpick/World Championship/2026": {
+        "name": "Thunderpick World Championship 2026",
+        "sdate": "2026-10-14",
+        "edate": "2026-10-18"
+      }
+    },
+    "titles": [
+      "2000 CPL Europe Cologne",
+      "2001 CPL Europe Berlin",
+      "2001 CPL Europe Holland",
+      "2001 CPL Europe London",
+      "2001 Speakeasy CPL Event",
+      "2002 CPL Summer Championship",
+      "2002 CPL Winter Championship",
+      "2003 CPL Europe Cannes",
+      "2003 CPL Europe Copenhagen",
+      "2003 CPL Summer Championship",
+      "2003 CPL Winter Championship",
+      "2004 CPL Summer Championship",
+      "2004 CPL Winter Championship",
+      "2005 CPL Spain",
+      "2005 CPL Summer Championship",
+      "2005 CPL UK",
+      "2005 CPL Winter Championship",
+      "2006 CPL Winter Championship",
+      "2006 Intel Summer Championship",
+      "Arbalet Cup Dallas",
+      "Arbalet Cup Europe 2009",
+      "Arbalet Cup Europe 2010",
+      "BLAST Premier",
+      "BLAST/Bounty/2025/Fall",
+      "BLAST/Bounty/2025/Spring",
+      "BLAST/Bounty/2026/Summer",
+      "BLAST/Bounty/2026/Winter",
+      "BLAST/Bounty/2027/Summer",
+      "BLAST/Bounty/2027/Winter",
+      "BLAST/Major/2023/Paris",
+      "BLAST/Major/2025/Austin",
+      "BLAST/Open/2025/Fall",
+      "BLAST/Open/2025/Fall/Qualifier",
+      "BLAST/Open/2025/Spring",
+      "BLAST/Open/2026/Fall",
+      "BLAST/Open/2026/Spring",
+      "BLAST/Open/2027/Fall",
+      "BLAST/Open/2027/Spring",
+      "BLAST/Open/2027/Summer",
+      "BLAST/Premier/2020/Circuit",
+      "BLAST/Premier/2020/Fall",
+      "BLAST/Premier/2020/Fall/Regular Season",
+      "BLAST/Premier/2020/Global Final",
+      "BLAST/Premier/2020/Spring",
+      "BLAST/Premier/2020/Spring/Americas",
+      "BLAST/Premier/2020/Spring/Europe",
+      "BLAST/Premier/2020/Spring/Regular Season",
+      "BLAST/Premier/2021/Fall",
+      "BLAST/Premier/2021/Fall/Groups",
+      "BLAST/Premier/2021/Leaderboard",
+      "BLAST/Premier/2021/Spring",
+      "BLAST/Premier/2021/Spring/Groups",
+      "BLAST/Premier/2021/World Final",
+      "BLAST/Premier/2022/Fall",
+      "BLAST/Premier/2022/Fall/Groups",
+      "BLAST/Premier/2022/Leaderboard",
+      "BLAST/Premier/2022/Spring",
+      "BLAST/Premier/2022/Spring/Groups",
+      "BLAST/Premier/2022/World Final",
+      "BLAST/Premier/2023/Fall",
+      "BLAST/Premier/2023/Fall/Groups",
+      "BLAST/Premier/2023/Leaderboard",
+      "BLAST/Premier/2023/Spring",
+      "BLAST/Premier/2023/Spring/Groups",
+      "BLAST/Premier/2023/World Final",
+      "BLAST/Premier/2024/Fall",
+      "BLAST/Premier/2024/Fall/Groups",
+      "BLAST/Premier/2024/Leaderboard",
+      "BLAST/Premier/2024/Spring",
+      "BLAST/Premier/2024/Spring/Groups",
+      "BLAST/Premier/2024/World Final",
+      "BLAST/Premier/2025/Frequent Flyers",
+      "BLAST/Premier/2026/Frequent Flyers",
+      "BLAST/Pro Series/2019/Global Final",
+      "BLAST/Rivals/2025/Fall",
+      "BLAST/Rivals/2025/Spring",
+      "BLAST/Rivals/2026/Fall",
+      "BLAST/Rivals/2026/Spring",
+      "BLAST/Rivals/2027",
+      "BetBoom Dacha/2024/Belgrade/1",
+      "BetBoom Dacha/2024/Belgrade/2",
+      "CEVO/Season 7/Professional",
+      "CEVO/Season 8/Professional",
+      "CGS/2007",
+      "CGS/2008",
+      "CPL Europe Cologne 2002",
+      "CPL Europe Oslo 2002",
+      "CPL/Winter/2000",
+      "CPL/Winter/2001",
+      "CS Asia Championships/2023",
+      "CS Asia Championships/2026",
+      "CS Asia Championships/2027",
+      "CS:GO Asia Championships/2019",
+      "Clickarena",
+      "DreamHack Masters",
+      "DreamHack/2006/Summer",
+      "DreamHack/2006/Winter",
+      "DreamHack/2007/Winter",
+      "DreamHack/2008/Summer",
+      "DreamHack/2008/Winter",
+      "DreamHack/2009/Summer",
+      "DreamHack/2009/Winter",
+      "DreamHack/2010/Summer",
+      "DreamHack/2010/Winter",
+      "DreamHack/2011/Summer",
+      "DreamHack/2011/Winter",
+      "DreamHack/2012/Summer",
+      "DreamHack/2012/Winter",
+      "DreamHack/2013/Bucharest",
+      "DreamHack/2013/Summer",
+      "DreamHack/2013/Winter",
+      "DreamHack/2014/Invitational II",
+      "DreamHack/2014/Summer",
+      "DreamHack/2014/Winter",
+      "DreamHack/2015/Cluj-Napoca",
+      "DreamHack/2015/London",
+      "DreamHack/2015/Stockholm",
+      "DreamHack/2015/Summer",
+      "DreamHack/2015/Tours",
+      "DreamHack/2016/Bucharest",
+      "DreamHack/2016/Leipzig",
+      "DreamHack/2016/Malmö",
+      "DreamHack/2016/Summer",
+      "DreamHack/2017/Las Vegas",
+      "DreamHack/2017/Malmö",
+      "DreamHack/2018/Marseille",
+      "DreamHack/2018/Stockholm",
+      "DreamHack/2019/Dallas",
+      "DreamHack/2019/Malmö",
+      "DreamHack/2020/Spring/Europe",
+      "DreamHack/2020/Summer",
+      "DreamHack/2020/Winter/Europe",
+      "DreamHack/2021/Spring",
+      "E-Frag/The World Championships/2015",
+      "ELEAGUE/2017/Major",
+      "ELEAGUE/2017/Premier",
+      "ELEAGUE/2018/Major",
+      "ELEAGUE/2018/Premier",
+      "ELEAGUE/Clash for Cash: The Rematch",
+      "ELEAGUE/Road to Vegas/Europe",
+      "ELEAGUE/Season 1",
+      "ELEAGUE/Season 2",
+      "EPICENTER",
+      "EPICENTER/2016",
+      "EPICENTER/2017",
+      "EPICENTER/2018",
+      "EPICENTER/2019",
+      "ESEA/Season 13/Invite",
+      "ESEA/Season 14/Invite",
+      "ESEA/Season 15/Invite",
+      "ESEA/Season 16/Invite",
+      "ESEA/Season 17/Invite",
+      "ESEA/Season 18/Invite",
+      "ESG Tour/2017/Mykonos",
+      "ESL ESEA/Pro League/Invitational",
+      "ESL ESEA/Pro League/Season 1/Europe",
+      "ESL ESEA/Pro League/Season 1/Finals",
+      "ESL ESEA/Pro League/Season 1/North America",
+      "ESL ESEA/Pro League/Season 2/Europe",
+      "ESL ESEA/Pro League/Season 2/Finals",
+      "ESL ESEA/Pro League/Season 2/North America",
+      "ESL Major Series One",
+      "ESL Major Series One/Fall/Main Event",
+      "ESL Major Series One/Spring/Cup Ranking",
+      "ESL Major Series One/Spring/Main Event",
+      "ESL One",
+      "ESL Pro League",
+      "ESL/Grand Slam",
+      "ESL/Grand Slam/5",
+      "ESL/Grand Slam/VI",
+      "ESL/Grand Slam/VII",
+      "ESL/League/Pro/2015/Winter",
+      "ESL/League/Pro/2015/Winter/Online Stage",
+      "ESL/Major Series One/2014/Katowice",
+      "ESL/Major Series One/Summer 2013",
+      "ESL/Major Series One/Summer 2013/Cup 1",
+      "ESL/Major Series One/Summer 2013/Cup 2",
+      "ESL/Major Series One/Summer 2013/Cup 3",
+      "ESL/Major Series One/Summer 2013/Cup 4",
+      "ESL/One/2014/Cologne",
+      "ESL/One/2014/Cologne/Qualifier/Europe",
+      "ESL/One/2015/Cologne",
+      "ESL/One/2015/Cologne/Qualifier/Europe",
+      "ESL/One/2015/Katowice",
+      "ESL/One/2016/Cologne",
+      "ESL/One/2016/New York",
+      "ESL/One/2017/Cologne",
+      "ESL/One/2017/New York",
+      "ESL/One/2018/Belo Horizonte",
+      "ESL/One/2018/Cologne",
+      "ESL/One/2018/New York",
+      "ESL/One/2019/Cologne",
+      "ESL/One/2019/New York",
+      "ESL/One/2020/Cologne",
+      "ESL/One/2020/Cologne/Europe",
+      "ESL/One/2020/Cologne/North America",
+      "ESL/One/2020/Rio",
+      "ESL/Pro League/Season 10/Americas",
+      "ESL/Pro League/Season 10/Europe",
+      "ESL/Pro League/Season 10/Finals",
+      "ESL/Pro League/Season 11",
+      "ESL/Pro League/Season 11/Europe",
+      "ESL/Pro League/Season 11/North America",
+      "ESL/Pro League/Season 12",
+      "ESL/Pro League/Season 12/Europe",
+      "ESL/Pro League/Season 12/North America",
+      "ESL/Pro League/Season 13",
+      "ESL/Pro League/Season 14",
+      "ESL/Pro League/Season 15",
+      "ESL/Pro League/Season 16",
+      "ESL/Pro League/Season 17",
+      "ESL/Pro League/Season 18",
+      "ESL/Pro League/Season 19",
+      "ESL/Pro League/Season 20",
+      "ESL/Pro League/Season 21",
+      "ESL/Pro League/Season 22",
+      "ESL/Pro League/Season 23",
+      "ESL/Pro League/Season 23/Online Stage",
+      "ESL/Pro League/Season 24",
+      "ESL/Pro League/Season 25",
+      "ESL/Pro League/Season 26",
+      "ESL/Pro League/Season 3/Europe",
+      "ESL/Pro League/Season 3/Finals",
+      "ESL/Pro League/Season 3/North America",
+      "ESL/Pro League/Season 4/Europe",
+      "ESL/Pro League/Season 4/Finals",
+      "ESL/Pro League/Season 4/North America",
+      "ESL/Pro League/Season 5/Europe",
+      "ESL/Pro League/Season 5/Finals",
+      "ESL/Pro League/Season 5/North America",
+      "ESL/Pro League/Season 6/Europe",
+      "ESL/Pro League/Season 6/Finals",
+      "ESL/Pro League/Season 6/North America",
+      "ESL/Pro League/Season 7/Europe",
+      "ESL/Pro League/Season 7/Finals",
+      "ESL/Pro League/Season 7/North America",
+      "ESL/Pro League/Season 8/Europe",
+      "ESL/Pro League/Season 8/Finals",
+      "ESL/Pro League/Season 8/North America",
+      "ESL/Pro League/Season 9/Americas",
+      "ESL/Pro League/Season 9/Europe",
+      "ESL/Pro League/Season 9/Finals",
+      "Electronic Sports World Cup/2003",
+      "Electronic Sports World Cup/2004",
+      "Electronic Sports World Cup/2005",
+      "Electronic Sports World Cup/2006",
+      "Electronic Sports World Cup/2007",
+      "Electronic Sports World Cup/2008",
+      "Electronic Sports World Cup/2008/Masters of Paris",
+      "Electronic Sports World Cup/2009/Masters of Cheonan",
+      "Electronic Sports World Cup/2010",
+      "Electronic Sports World Cup/2011/Counter-Strike",
+      "Electronic Sports World Cup/2011/Source",
+      "Electronic Sports World Cup/2012",
+      "Electronic Sports World Cup/2013",
+      "Electronic Sports World Cup/2014",
+      "Electronic Sports World Cup/2015",
+      "Esports Championship Series",
+      "Esports Championship Series/Season 1",
+      "Esports Championship Series/Season 1/Europe/Qualifier",
+      "Esports Championship Series/Season 2",
+      "Esports Championship Series/Season 3",
+      "Esports Championship Series/Season 4",
+      "Esports Championship Series/Season 5",
+      "Esports Championship Series/Season 6",
+      "Esports Championship Series/Season 7",
+      "Esports Championship Series/Season 8",
+      "Esports World Cup",
+      "Esports World Cup/2024",
+      "Esports World Cup/2025",
+      "Esports World Cup/2026",
+      "Esports World Cup/2027",
+      "Esports World Cup/2028",
+      "FACEIT/2018/Major",
+      "FACEIT/League/2015/Stage 1/Europe",
+      "FACEIT/League/2015/Stage 2/Europe",
+      "FACEIT/League/2015/Stage 2/Finals",
+      "FACEIT/League/2015/Stage 3/Europe",
+      "FACEIT/League/2015/Stage 3/Finals",
+      "FACEIT/League/Finals/2015",
+      "FACEIT/League/Season 2",
+      "FISSURE/Playground/10",
+      "FISSURE/Playground/11",
+      "FISSURE/Playground/12",
+      "FISSURE/Playground/13",
+      "FISSURE/Playground/2",
+      "FISSURE/Playground/3",
+      "FISSURE/Playground/4",
+      "FISSURE/Playground/5",
+      "FISSURE/Playground/6",
+      "FISSURE/Playground/7",
+      "FISSURE/Playground/8",
+      "FISSURE/Playground/9",
+      "FiReSPORTS/Major/2027/Buenos Aires",
+      "Flashpoint",
+      "Flashpoint/Season 1",
+      "Flashpoint/Season 2",
+      "Flashpoint/Season 2/Qualifier",
+      "Forge of Legends/2026",
+      "Fragbite Masters/Season 1",
+      "Fragbite Masters/Season 2",
+      "Fragbite Masters/Season 3",
+      "Fragbite Masters/Season 4",
+      "Fragbite Masters/Season 5",
+      "Game Show/Global eSports Cup/Season 1",
+      "Game Show/Global eSports Cup/Season 1/EU Group Stage 2",
+      "GameGune/2007",
+      "Gamers Without Borders/2020",
+      "Gamers Without Borders/2021",
+      "Gamers8/2023",
+      "Gfinity/Champion of Champions",
+      "Gfinity/G3",
+      "Gfinity/Masters/Spring 2",
+      "Gfinity/Masters/Summer 1",
+      "Gfinity/Spring Masters 1",
+      "Intel Challenge Cup/2007",
+      "Intel Extreme Masters",
+      "Intel Extreme Masters/2022/Rio",
+      "Intel Extreme Masters/2023/Cologne",
+      "Intel Extreme Masters/2023/Dallas",
+      "Intel Extreme Masters/2023/Katowice",
+      "Intel Extreme Masters/2023/Rio",
+      "Intel Extreme Masters/2023/Sydney",
+      "Intel Extreme Masters/2024/Chengdu",
+      "Intel Extreme Masters/2024/Cologne",
+      "Intel Extreme Masters/2024/Dallas",
+      "Intel Extreme Masters/2024/Katowice",
+      "Intel Extreme Masters/2024/Rio",
+      "Intel Extreme Masters/2025/Chengdu",
+      "Intel Extreme Masters/2025/Cologne",
+      "Intel Extreme Masters/2025/Dallas",
+      "Intel Extreme Masters/2025/Katowice",
+      "Intel Extreme Masters/2025/Melbourne",
+      "Intel Extreme Masters/2026/Atlanta",
+      "Intel Extreme Masters/2026/Beijing",
+      "Intel Extreme Masters/2026/Cologne",
+      "Intel Extreme Masters/2026/Kraków",
+      "Intel Extreme Masters/2026/Rio",
+      "Intel Extreme Masters/2027/Brazil",
+      "Intel Extreme Masters/2027/Cologne",
+      "Intel Extreme Masters/2027/Kraków",
+      "Intel Extreme Masters/2027/United States",
+      "Intel Extreme Masters/Season I/Regular Season",
+      "Intel Extreme Masters/Season I/World Championship",
+      "Intel Extreme Masters/Season II/European Qualifier",
+      "Intel Extreme Masters/Season II/Global Challenge Los Angeles",
+      "Intel Extreme Masters/Season II/World Championship",
+      "Intel Extreme Masters/Season III/European Championship Finals",
+      "Intel Extreme Masters/Season III/Global Challenge Dubai",
+      "Intel Extreme Masters/Season III/Global Challenge Los Angeles",
+      "Intel Extreme Masters/Season III/Global Challenge Montreal",
+      "Intel Extreme Masters/Season III/Regular Season/Europe",
+      "Intel Extreme Masters/Season III/World Championship",
+      "Intel Extreme Masters/Season IV/European Championship Finals",
+      "Intel Extreme Masters/Season IV/Global Challenge Chengdu",
+      "Intel Extreme Masters/Season IV/Global Challenge Dubai",
+      "Intel Extreme Masters/Season IV/Global Challenge Gamescom",
+      "Intel Extreme Masters/Season IV/Regular Season/Europe",
+      "Intel Extreme Masters/Season IV/World Championship",
+      "Intel Extreme Masters/Season V/European Championship Finals",
+      "Intel Extreme Masters/Season V/Global Challenge Shanghai",
+      "Intel Extreme Masters/Season V/Regular Season/Europe",
+      "Intel Extreme Masters/Season V/World Championship",
+      "Intel Extreme Masters/Season VI/Global Challenge Guangzhou",
+      "Intel Extreme Masters/Season VI/Global Challenge Kyiv",
+      "Intel Extreme Masters/Season VI/Global Challenge New York",
+      "Intel Extreme Masters/Season VI/World Championship",
+      "Intel Extreme Masters/Season X/San Jose",
+      "Intel Extreme Masters/Season X/World Championship",
+      "Intel Extreme Masters/Season X/gamescom",
+      "Intel Extreme Masters/Season XI/Oakland",
+      "Intel Extreme Masters/Season XI/World Championship",
+      "Intel Extreme Masters/Season XII/Oakland",
+      "Intel Extreme Masters/Season XII/Sydney",
+      "Intel Extreme Masters/Season XII/World Championship",
+      "Intel Extreme Masters/Season XIII/Chicago",
+      "Intel Extreme Masters/Season XIII/Sydney",
+      "Intel Extreme Masters/Season XIII/World Championship",
+      "Intel Extreme Masters/Season XIV/Beijing",
+      "Intel Extreme Masters/Season XIV/Chicago",
+      "Intel Extreme Masters/Season XIV/Sydney",
+      "Intel Extreme Masters/Season XIV/World Championship",
+      "Intel Extreme Masters/Season XV/Beijing/Europe",
+      "Intel Extreme Masters/Season XV/Global Challenge",
+      "Intel Extreme Masters/Season XV/Melbourne",
+      "Intel Extreme Masters/Season XV/World Championship",
+      "Intel Extreme Masters/Season XVI/Cologne",
+      "Intel Extreme Masters/Season XVI/Fall",
+      "Intel Extreme Masters/Season XVI/Katowice",
+      "Intel Extreme Masters/Season XVI/Summer",
+      "Intel Extreme Masters/Season XVI/Winter",
+      "Intel Extreme Masters/Season XVII/Cologne",
+      "Intel Extreme Masters/Season XVII/Dallas",
+      "Intel/Grand Slam/1",
+      "Intel/Grand Slam/2",
+      "Intel/Grand Slam/3",
+      "Intel/Grand Slam/4",
+      "KODE5/2006",
+      "KODE5/2008",
+      "KODE5/2009",
+      "LAN Arena 7",
+      "MLG/2016/Columbus",
+      "MLG/Aspen Invitational",
+      "Majors/2028/Summer",
+      "Majors/2028/Winter",
+      "Match of LeGGends",
+      "Match of LeGGends/Double Down",
+      "NGL-One/Season/I",
+      "NGL-One/Season/II",
+      "NGL-One/Season/III",
+      "NGL-One/Season/IV",
+      "PGL/2017/Krakow",
+      "PGL/2021/Stockholm",
+      "PGL/2022/Antwerp",
+      "PGL/2024/Copenhagen",
+      "PGL/2025/Astana",
+      "PGL/2025/Bucharest",
+      "PGL/2025/Cluj-Napoca",
+      "PGL/2026/Astana",
+      "PGL/2026/Cluj-Napoca",
+      "PGL/2026/Fall",
+      "PGL/2026/Masters",
+      "PGL/2026/Singapore",
+      "PGL/2026/Summer",
+      "PGL/2027/Bucharest",
+      "PGL/2027/China",
+      "PGL/2027/Cluj-Napoca",
+      "PGL/2027/October",
+      "PGL/2027/September",
+      "PGL/2027/Łódź",
+      "PGL/2028/February",
+      "PGL/2028/January",
+      "PGL/2028/March",
+      "PGL/Championship Series",
+      "PGL/Championship Series/Kick-Off Season",
+      "PGL/Championship Series/Season 1",
+      "Perfect World/Major/2024/Shanghai",
+      "Perfect World/Major/2027/Shanghai",
+      "Regional Major Rankings/2020/Rio/Europe",
+      "Regional Major Rankings/2021/Europe",
+      "Roobet Cup/2022",
+      "Roobet Cup/2023",
+      "SEC/2005",
+      "SEC/2007",
+      "SEC/2008",
+      "ShgOpen 2006",
+      "ShgOpen/2007/Counter-Strike",
+      "Skyesports/Championship/2025",
+      "Skyesports/World Tour/2025",
+      "StarLadder i-League/Invitational/1",
+      "StarLadder i-League/StarSeries/Season 2",
+      "StarLadder i-League/StarSeries/Season 3",
+      "StarLadder i-League/StarSeries/Season 4",
+      "StarLadder/2019/Major",
+      "StarLadder/2025/Major",
+      "StarLadder/StarSeries/2026/Fall",
+      "StarLadder/StarSeries/2027/Fall",
+      "StarLadder/StarSeries/IX",
+      "StarLadder/StarSeries/VII",
+      "StarLadder/StarSeries/VIII",
+      "StarLadder/StarSeries/X",
+      "StarLadder/StarSeries/XI",
+      "StarLadder/StarSeries/XII",
+      "StarLadder/StarSeries/XIII",
+      "StarLadder/i-League StarSeries/XIV",
+      "StarSeries i-League/Season 5",
+      "StarSeries i-League/Season 6",
+      "StarSeries i-League/Season 7",
+      "StarSeries i-League/Season 8",
+      "Thunderpick/World Championship/2023",
+      "Thunderpick/World Championship/2026",
+      "WEG 2005 S01",
+      "WEG 2005 S02",
+      "WEG 2005 S03",
+      "WEG Masters 2006",
+      "WEG/e-Stars/2008",
+      "WEG/e-Stars/2009",
+      "WEG/e-Stars/2010",
+      "WEG/e-Stars/2011",
+      "WEM/2008",
+      "WEM/2009",
+      "WEM/2010",
+      "WSVG/2006/London",
+      "WSVG/2006/New York",
+      "WSVG/2007/Louisville",
+      "World Cyber Games/2001",
+      "World Cyber Games/2002",
+      "World Cyber Games/2003",
+      "World Cyber Games/2004",
+      "World Cyber Games/2005",
+      "World Cyber Games/2006",
+      "World Cyber Games/2007",
+      "World Cyber Games/2008",
+      "World Cyber Games/2009",
+      "World Cyber Games/2010",
+      "World Cyber Games/2011",
+      "World Electronic Sports Games/2016",
+      "World Electronic Sports Games/2017",
+      "World Electronic Sports Games/2018",
+      "World Electronic Sports Games/2019",
+      "YaLLa Compass/2024",
+      "YaLLa Compass/2025/Dubai",
+      "YaLLa Compass/2026/Qatar",
+      "YaLLa Compass/2026/Summer",
+      "YaLLa Compass/2026/UAE"
+    ],
+    "checkedAt": "2026-10-26T01:33:50.969Z",
+    "key": "{\"categories\":[\"Category:S-Tier Tournaments\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\",\"exclude\":[]}"
+  }
 }
