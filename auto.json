@@ -731,318 +731,6 @@
   ],
   "matches": [
     {
-      "id": "lp-e017aaea27",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-fut-esports",
-      "b": "lp-tyloo",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-393ff49950",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-aurora-gaming",
-      "b": "lp-the-mongolz",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-bcb4b25560",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-mouz",
-      "b": "lp-team-liquid",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-65a3186140",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-team-spirit",
-      "b": "lp-betboom-team",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-68da0eaed5",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-legacy",
-      "b": "lp-nemiga-gaming",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-875a6ea362",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-team-vitality",
-      "b": "lp-9z-team",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-4705241044",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-furia",
-      "b": "lp-dendele-cs",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-265a03cb21",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 1",
-      "roundOrder": 1,
-      "a": "lp-g2-esports",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "24 Oct"
-    },
-    {
-      "id": "lp-29e9751caf",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-fut-esports",
-      "b": "lp-team-liquid",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-36d1a97657",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-team-spirit",
-      "b": "lp-tyloo",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-4bb4624b46",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-team-vitality",
-      "b": "lp-the-mongolz",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-78cb0cbdc3",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-betboom-team",
-      "b": "lp-nemiga-gaming",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-20a0ed19af",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-g2-esports",
-      "b": "lp-aurora-gaming",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-aaef61fdc4",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-mouz",
-      "b": "lp-9z-team",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-1b3aeaa770",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-legacy",
-      "b": "lp-dendele-cs",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-6349ecb515",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 2",
-      "roundOrder": 2,
-      "a": "lp-furia",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "25 Oct"
-    },
-    {
-      "id": "lp-5f1d51be1a",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-mouz",
-      "b": "lp-the-mongolz",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
-      "id": "lp-0a2612f357",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-aurora-gaming",
-      "b": "lp-nemiga-gaming",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
-      "id": "lp-27d740e8ea",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-team-vitality",
-      "b": "lp-fut-esports",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
-      "id": "lp-6aa2a3b941",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-9z-team",
-      "b": "lp-tyloo",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
-      "id": "lp-0f47fb67da",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-team-spirit",
-      "b": "lp-furia",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
-      "id": "lp-f3f9af2da1",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-team-liquid",
-      "b": "lp-legacy",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
-      "id": "lp-28d79119a5",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-betboom-team",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
-      "id": "lp-5ccf0b5624",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 3",
-      "roundOrder": 3,
-      "a": "lp-g2-esports",
-      "b": "lp-dendele-cs",
-      "bo": 3,
-      "date": "26 Oct"
-    },
-    {
       "id": "lp-a77df7458c",
       "tournamentId": "esl-pro-league-season-24",
       "tournament": "ESL Pro League Season 24",
@@ -4486,609 +4174,321 @@
       "b": "lp-team-vitality",
       "bo": 5,
       "date": "20 Sept"
+    },
+    {
+      "id": "lp-e017aaea27",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-fut-esports",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-393ff49950",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-aurora-gaming",
+      "b": "lp-the-mongolz",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-bcb4b25560",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-mouz",
+      "b": "lp-team-liquid",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-65a3186140",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-team-spirit",
+      "b": "lp-betboom-team",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-68da0eaed5",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-legacy",
+      "b": "lp-nemiga-gaming",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-875a6ea362",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-team-vitality",
+      "b": "lp-9z-team",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-4705241044",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-furia",
+      "b": "lp-dendele-cs",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-265a03cb21",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 1",
+      "roundOrder": 1,
+      "a": "lp-g2-esports",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "24 Oct"
+    },
+    {
+      "id": "lp-29e9751caf",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-fut-esports",
+      "b": "lp-team-liquid",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-36d1a97657",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-team-spirit",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-4bb4624b46",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-team-vitality",
+      "b": "lp-the-mongolz",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-78cb0cbdc3",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-betboom-team",
+      "b": "lp-nemiga-gaming",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-20a0ed19af",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-g2-esports",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-aaef61fdc4",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-mouz",
+      "b": "lp-9z-team",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-1b3aeaa770",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-legacy",
+      "b": "lp-dendele-cs",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-6349ecb515",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 2",
+      "roundOrder": 2,
+      "a": "lp-furia",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "25 Oct"
+    },
+    {
+      "id": "lp-5f1d51be1a",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-mouz",
+      "b": "lp-the-mongolz",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-0a2612f357",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-aurora-gaming",
+      "b": "lp-nemiga-gaming",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-27d740e8ea",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-team-vitality",
+      "b": "lp-fut-esports",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-6aa2a3b941",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-9z-team",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-0f47fb67da",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-team-spirit",
+      "b": "lp-furia",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-f3f9af2da1",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-team-liquid",
+      "b": "lp-legacy",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-28d79119a5",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-betboom-team",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "26 Oct"
+    },
+    {
+      "id": "lp-5ccf0b5624",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 3",
+      "roundOrder": 3,
+      "a": "lp-g2-esports",
+      "b": "lp-dendele-cs",
+      "bo": 3,
+      "date": "26 Oct"
     }
   ],
   "videos": {
-    "lp-e017aaea27": {
-      "maps": [
-        {
-          "video": "https://youtu.be/YcBD2QIKQAI",
-          "start": "25",
-          "end": "3026",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/YcBD2QIKQAI",
-          "start": "3026",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-393ff49950": {
-      "maps": [
-        {
-          "video": "https://youtu.be/6PbaO0zFSks",
-          "start": "34",
-          "end": "3979",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/6PbaO0zFSks",
-          "start": "3979",
-          "end": "5808",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/6PbaO0zFSks",
-          "start": "5808",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-bcb4b25560": {
-      "maps": [
-        {
-          "video": "https://youtu.be/1sAIX0q9kZw",
-          "start": "32",
-          "end": "3346",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/1sAIX0q9kZw",
-          "start": "3346",
-          "end": "6847",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/1sAIX0q9kZw",
-          "start": "6847",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-65a3186140": {
-      "maps": [
-        {
-          "video": "https://youtu.be/rIG_-eyz6cw",
-          "start": "29",
-          "end": "3193",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/rIG_-eyz6cw",
-          "start": "3193",
-          "end": "5145",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/rIG_-eyz6cw",
-          "start": "5145",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-68da0eaed5": {
-      "maps": [
-        {
-          "video": "https://youtu.be/HJG1DT3uV5E",
-          "start": "33",
-          "end": "6308",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/HJG1DT3uV5E",
-          "start": "6308",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-875a6ea362": {
-      "maps": [
-        {
-          "video": "https://youtu.be/q7FHCKvW6PA",
-          "start": "37",
-          "end": "2888",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/q7FHCKvW6PA",
-          "start": "2888",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-4705241044": {
-      "maps": [
-        {
-          "video": "https://youtu.be/733vAELdEVc",
-          "start": "32",
-          "end": "2489",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/733vAELdEVc",
-          "start": "2489",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-265a03cb21": {
-      "maps": [
-        {
-          "video": "https://youtu.be/1Zuz3qKR-xM",
-          "start": "31",
-          "end": "3318",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/1Zuz3qKR-xM",
-          "start": "3318",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-29e9751caf": {
-      "maps": [
-        {
-          "video": "https://youtu.be/V1OG46_y9v4",
-          "start": "33",
-          "end": "2112",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/V1OG46_y9v4",
-          "start": "2112",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-36d1a97657": {
-      "maps": [
-        {
-          "video": "https://youtu.be/BlBUsdtiCzU",
-          "start": "28",
-          "end": "2158",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/BlBUsdtiCzU",
-          "start": "2158",
-          "end": "",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-4bb4624b46": {
-      "maps": [
-        {
-          "video": "https://youtu.be/Tnrz0adGkbk",
-          "start": "39",
-          "end": "2734",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/Tnrz0adGkbk",
-          "start": "2734",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-78cb0cbdc3": {
-      "maps": [
-        {
-          "video": "https://youtu.be/C0nFNOrXEes",
-          "start": "31",
-          "end": "2075",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/C0nFNOrXEes",
-          "start": "2075",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-20a0ed19af": {
-      "maps": [
-        {
-          "video": "https://youtu.be/jGDacZjkyNo",
-          "start": "16",
-          "end": "3355",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/jGDacZjkyNo",
-          "start": "3355",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-aaef61fdc4": {
-      "maps": [
-        {
-          "video": "https://youtu.be/KZfU_dU437o",
-          "start": "29",
-          "end": "2566",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/KZfU_dU437o",
-          "start": "2566",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-1b3aeaa770": {
-      "maps": [
-        {
-          "video": "https://youtu.be/t3d0SBM9Lj0",
-          "start": "27",
-          "end": "2766",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/t3d0SBM9Lj0",
-          "start": "2766",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Ancient",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-6349ecb515": {
-      "maps": [
-        {
-          "video": "https://youtu.be/O_w8uZZIJRo",
-          "start": "38",
-          "end": "2897",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/O_w8uZZIJRo",
-          "start": "2897",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-5f1d51be1a": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-0a2612f357": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-27d740e8ea": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-6aa2a3b941": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-0f47fb67da": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-f3f9af2da1": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-28d79119a5": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-5ccf0b5624": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
     "lp-a77df7458c": {
       "maps": [
         {
@@ -11013,8 +10413,608 @@
           "notPlayed": true
         }
       ]
+    },
+    "lp-e017aaea27": {
+      "maps": [
+        {
+          "video": "https://youtu.be/YcBD2QIKQAI",
+          "start": "25",
+          "end": "3026",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/YcBD2QIKQAI",
+          "start": "3026",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-393ff49950": {
+      "maps": [
+        {
+          "video": "https://youtu.be/6PbaO0zFSks",
+          "start": "34",
+          "end": "3979",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/6PbaO0zFSks",
+          "start": "3979",
+          "end": "5808",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/6PbaO0zFSks",
+          "start": "5808",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-bcb4b25560": {
+      "maps": [
+        {
+          "video": "https://youtu.be/1sAIX0q9kZw",
+          "start": "32",
+          "end": "3346",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/1sAIX0q9kZw",
+          "start": "3346",
+          "end": "6847",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/1sAIX0q9kZw",
+          "start": "6847",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-65a3186140": {
+      "maps": [
+        {
+          "video": "https://youtu.be/rIG_-eyz6cw",
+          "start": "29",
+          "end": "3193",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/rIG_-eyz6cw",
+          "start": "3193",
+          "end": "5145",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/rIG_-eyz6cw",
+          "start": "5145",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-68da0eaed5": {
+      "maps": [
+        {
+          "video": "https://youtu.be/HJG1DT3uV5E",
+          "start": "33",
+          "end": "6308",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/HJG1DT3uV5E",
+          "start": "6308",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-875a6ea362": {
+      "maps": [
+        {
+          "video": "https://youtu.be/q7FHCKvW6PA",
+          "start": "37",
+          "end": "2888",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/q7FHCKvW6PA",
+          "start": "2888",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-4705241044": {
+      "maps": [
+        {
+          "video": "https://youtu.be/733vAELdEVc",
+          "start": "32",
+          "end": "2489",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/733vAELdEVc",
+          "start": "2489",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-265a03cb21": {
+      "maps": [
+        {
+          "video": "https://youtu.be/1Zuz3qKR-xM",
+          "start": "31",
+          "end": "3318",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/1Zuz3qKR-xM",
+          "start": "3318",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-29e9751caf": {
+      "maps": [
+        {
+          "video": "https://youtu.be/V1OG46_y9v4",
+          "start": "33",
+          "end": "2112",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/V1OG46_y9v4",
+          "start": "2112",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-36d1a97657": {
+      "maps": [
+        {
+          "video": "https://youtu.be/BlBUsdtiCzU",
+          "start": "28",
+          "end": "2158",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/BlBUsdtiCzU",
+          "start": "2158",
+          "end": "",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-4bb4624b46": {
+      "maps": [
+        {
+          "video": "https://youtu.be/Tnrz0adGkbk",
+          "start": "39",
+          "end": "2734",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/Tnrz0adGkbk",
+          "start": "2734",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-78cb0cbdc3": {
+      "maps": [
+        {
+          "video": "https://youtu.be/C0nFNOrXEes",
+          "start": "31",
+          "end": "2075",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/C0nFNOrXEes",
+          "start": "2075",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-20a0ed19af": {
+      "maps": [
+        {
+          "video": "https://youtu.be/jGDacZjkyNo",
+          "start": "16",
+          "end": "3355",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/jGDacZjkyNo",
+          "start": "3355",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-aaef61fdc4": {
+      "maps": [
+        {
+          "video": "https://youtu.be/KZfU_dU437o",
+          "start": "29",
+          "end": "2566",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/KZfU_dU437o",
+          "start": "2566",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-1b3aeaa770": {
+      "maps": [
+        {
+          "video": "https://youtu.be/t3d0SBM9Lj0",
+          "start": "27",
+          "end": "2766",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/t3d0SBM9Lj0",
+          "start": "2766",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Ancient",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-6349ecb515": {
+      "maps": [
+        {
+          "video": "https://youtu.be/O_w8uZZIJRo",
+          "start": "38",
+          "end": "2897",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/O_w8uZZIJRo",
+          "start": "2897",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-5f1d51be1a": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-0a2612f357": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-27d740e8ea": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-6aa2a3b941": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-0f47fb67da": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-f3f9af2da1": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-28d79119a5": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-5ccf0b5624": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-26T02:13:07.412Z",
+  "updatedAt": "2026-10-26T02:37:20.010Z",
   "featured": "pgl-masters-bucharest-2026"
 }
