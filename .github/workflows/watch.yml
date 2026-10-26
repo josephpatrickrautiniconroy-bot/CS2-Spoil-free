@@ -29,6 +29,10 @@ jobs:
     steps:
       - name: Get the site files
         uses: actions/checkout@v6
+        with:
+          # The latest main, not the commit that triggered the run: an earlier run may have
+          # saved new videos since, and starting from those avoids a clash when saving.
+          ref: main
 
       - name: Set up Node
         uses: actions/setup-node@v6
@@ -59,7 +63,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add auto.json watcher/state.json
           git commit -m "Video watcher: new videos"
-          git pull --rebase
+          git pull --rebase -X theirs
           git push
 
       - name: Collect the site files
