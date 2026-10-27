@@ -38,6 +38,15 @@ The watcher never saves scores, winners, placements or video titles. The only re
 
 The home page sorts events into **Happening now**, **Ready to watch** (finished) and **Coming up**, based on their dates. Upcoming events are listed before their matches are drawn. A finished event without any videos is hidden two days after it ends.
 
+## Pins
+
+Visitors can pin an event (button on its page) or a team (buttons on a match page, or "Pin a team" on the home page). Pins live in that visitor's browser, there are no accounts. When they come back, a box at the top of the page lists:
+
+- pinned events with matches that came out since they last looked and that they haven't marked as watched, and
+- pinned teams whose next match is ready, but only once every earlier match of that team in that event is marked as watched (a team's first match only counts if it's in an open round). That way the notice can't give away who went through. It never names the opponent.
+
+Opening a pinned event, following a notice or pressing Dismiss clears those notices.
+
 ## Event pictures
 
 Each event's logo is copied from Liquipedia into `images/auto/` automatically, with a separate version for dark mode if Liquipedia has one.
