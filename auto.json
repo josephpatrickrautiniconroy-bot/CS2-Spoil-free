@@ -11213,7 +11213,7 @@
           "start": "",
           "end": "",
           "name": "Ancient",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
@@ -11223,26 +11223,26 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Inferno",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         }
       ]
     }
   },
-  "updatedAt": "2026-10-27T16:23:38.293Z",
+  "updatedAt": "2026-10-27T18:16:43.488Z",
   "featured": "pgl-masters-bucharest-2026"
 }
