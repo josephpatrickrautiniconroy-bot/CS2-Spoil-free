@@ -4514,19 +4514,6 @@
       "date": "27 Oct"
     },
     {
-      "id": "lp-7e3817e1e5",
-      "tournamentId": "pgl-masters-bucharest-2026",
-      "tournament": "PGL Masters Bucharest 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Round 4",
-      "roundOrder": 4,
-      "a": "lp-team-spirit",
-      "b": "lp-mouz",
-      "bo": 3,
-      "date": "27 Oct"
-    },
-    {
       "id": "lp-2a5ea4e892",
       "tournamentId": "pgl-masters-bucharest-2026",
       "tournament": "PGL Masters Bucharest 2026",
@@ -4536,6 +4523,19 @@
       "roundOrder": 4,
       "a": "lp-the-mongolz",
       "b": "lp-legacy",
+      "bo": 3,
+      "date": "27 Oct"
+    },
+    {
+      "id": "lp-7e3817e1e5",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Round 4",
+      "roundOrder": 4,
+      "a": "lp-team-spirit",
+      "b": "lp-mouz",
       "bo": 3,
       "date": "27 Oct"
     },
@@ -11138,36 +11138,36 @@
           "start": "",
           "end": "",
           "name": "Mirage",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
-    "lp-7e3817e1e5": {
+    "lp-2a5ea4e892": {
       "maps": [
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Inferno",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         }
       ]
     },
-    "lp-2a5ea4e892": {
+    "lp-7e3817e1e5": {
       "maps": [
         {
           "video": "",
@@ -11243,6 +11243,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-27T12:11:58.851Z",
+  "updatedAt": "2026-10-27T13:30:16.283Z",
   "featured": "pgl-masters-bucharest-2026"
 }
