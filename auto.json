@@ -11045,22 +11045,22 @@
     "lp-5ccf0b5624": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/MOYBO0FEOsY",
+          "start": "32",
+          "end": "2944",
           "name": "Nuke",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/MOYBO0FEOsY",
+          "start": "2944",
+          "end": "7076",
           "name": "Ancient",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/MOYBO0FEOsY",
+          "start": "7076",
           "end": "",
           "name": "Inferno",
           "notPlayed": false
@@ -11243,6 +11243,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-26T20:36:51.025Z",
+  "updatedAt": "2026-10-27T02:35:03.780Z",
   "featured": "pgl-masters-bucharest-2026"
 }
