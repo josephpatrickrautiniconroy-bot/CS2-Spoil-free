@@ -11095,22 +11095,22 @@
     "lp-a897912a42": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/1iYkGc7TQJ8",
+          "start": "40",
+          "end": "3198",
           "name": "Anubis",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/1iYkGc7TQJ8",
+          "start": "3198",
+          "end": "6257",
           "name": "Inferno",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/1iYkGc7TQJ8",
+          "start": "6257",
           "end": "",
           "name": "Cache",
           "notPlayed": false
@@ -11120,15 +11120,15 @@
     "lp-ec5556bd28": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/K7pG-3Vgyts",
+          "start": "30",
+          "end": "2245",
           "name": "Nuke",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/K7pG-3Vgyts",
+          "start": "2245",
           "end": "",
           "name": "Ancient",
           "notPlayed": false
@@ -11145,15 +11145,15 @@
     "lp-2a5ea4e892": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/pOL5mZrMbm8",
+          "start": "25",
+          "end": "2767",
           "name": "Mirage",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/pOL5mZrMbm8",
+          "start": "2767",
           "end": "",
           "name": "Inferno",
           "notPlayed": false
@@ -11170,22 +11170,22 @@
     "lp-7e3817e1e5": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/urtM5q6WVYo",
+          "start": "38",
+          "end": "1850",
           "name": "Nuke",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/urtM5q6WVYo",
+          "start": "1850",
+          "end": "4627",
           "name": "Dust II",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/urtM5q6WVYo",
+          "start": "4627",
           "end": "",
           "name": "Mirage",
           "notPlayed": false
@@ -11195,15 +11195,15 @@
     "lp-93b0c5279f": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/0GbSsxAXFoM",
+          "start": "26",
+          "end": "2442",
           "name": "Inferno",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/0GbSsxAXFoM",
+          "start": "2442",
           "end": "",
           "name": "Mirage",
           "notPlayed": false
@@ -11243,6 +11243,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-27T18:16:43.488Z",
+  "updatedAt": "2026-10-27T19:23:56.756Z",
   "featured": "pgl-masters-bucharest-2026"
 }

@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3463810,
+      "revid": 3463860,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-27T18:16:43.488Z",
-      "result": "30 matches, 55 map videos"
+      "fetchedAt": "2026-10-27T19:23:56.756Z",
+      "result": "30 matches, 67 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -54,10 +54,10 @@
       "result": "4 matches, 0 map videos"
     },
     "PGL/2026/Singapore": {
-      "revid": 3463541,
+      "revid": 3463850,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-26T23:07:29.528Z",
+      "fetchedAt": "2026-10-27T19:23:56.756Z",
       "result": "coming up, no matches drawn yet"
     },
     "BLAST/Bounty/2026/Summer": {
@@ -1877,6 +1877,31 @@
       "ok": true,
       "seconds": 9358,
       "checkedAt": "2026-10-27T02:35:03.780Z"
+    },
+    "1iYkGc7TQJ8": {
+      "ok": true,
+      "seconds": 9212,
+      "checkedAt": "2026-10-27T19:23:56.756Z"
+    },
+    "K7pG-3Vgyts": {
+      "ok": true,
+      "seconds": 4454,
+      "checkedAt": "2026-10-27T19:23:56.756Z"
+    },
+    "pOL5mZrMbm8": {
+      "ok": true,
+      "seconds": 5775,
+      "checkedAt": "2026-10-27T19:23:56.756Z"
+    },
+    "urtM5q6WVYo": {
+      "ok": true,
+      "seconds": 8561,
+      "checkedAt": "2026-10-27T19:23:56.756Z"
+    },
+    "0GbSsxAXFoM": {
+      "ok": true,
+      "seconds": 4054,
+      "checkedAt": "2026-10-27T19:23:56.756Z"
     }
   },
   "parserVersion": 6,
