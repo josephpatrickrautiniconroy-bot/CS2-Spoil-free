@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Perfect World Shanghai Major 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:perfect-world-shanghai-major-2027-20271122@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271123
+DTEND;VALUE=DATE:20271124
+SUMMARY:Perfect World Shanghai Major 2027: Monday’s matches ready to watc
+ h
+DESCRIPTION:Videos from Monday’s matches of Perfect World Shanghai Major 
+ 2027 should be up by now. Watch spoiler-free: https://josephpatrickrautini
+ conroy-bot.github.io/CS2-Spoil-free/#/t/perfect-world-shanghai-major-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/per
+ fect-world-shanghai-major-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Perfect World Shanghai Major 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:perfect-world-shanghai-major-2027-20271212@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271213
+DTEND;VALUE=DATE:20271214
+SUMMARY:Perfect World Shanghai Major 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Perfect World Shanghai Major 2027 
+ should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
+ y-bot.github.io/CS2-Spoil-free/#/t/perfect-world-shanghai-major-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/per
+ fect-world-shanghai-major-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Perfect World Shanghai Major 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

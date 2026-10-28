@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BLAST Open Spring 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:blast-open-spring-2027-20270319@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:BLAST Open Spring 2027: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of BLAST Open Spring 2027 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/blast-open-spring-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-spring-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Spring 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-spring-2027-20270328@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:BLAST Open Spring 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Open Spring 2027 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/blast-open-spring-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-spring-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Spring 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

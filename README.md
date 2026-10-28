@@ -30,6 +30,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `watcher/watch.mjs`, `watcher/liquipedia.mjs`, `watcher/highlights.mjs`, `watcher/calendar.mjs` | The watcher | Nobody |
 | `calendar/` | Calendar feeds for "Add to calendar" | The watcher |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
+| `ratings/database.rules.json` | Who can read and write ratings in Firebase | Nobody, paste it into Firebase once |
 | `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
 
@@ -67,6 +68,26 @@ Hand-picked groups of series and events, shown on the home page under **Collecti
 `event` can be the Liquipedia page name, the site's event id, or the event's name. Any item can have a `note`. Items whose event isn't on the site yet are left out, so archive picks can be listed now and appear when the archive adds their event. A collection with nothing to show is hidden.
 
 Keep it spoiler-free: titles, blurbs and notes say what to watch, never how it went. Avoid words like "comeback", "upset", "overtime thriller" or "five maps", since each gives a result away. A match in a hidden round (anything after an event's first round) is shown without its teams until the visitor opens it.
+
+## "Worth watching" ratings
+
+After marking a match as watched, a visitor can rate the whole series: **Must watch**, **Worth a watch** or **Only for fans**. Once at least 3 people have voted, match cards and the match page show a badge, but only for the two good tiers, so a missing badge can just as well mean too few votes. Votes never mention scores or maps, so they can't tell who won or how many maps were played. Anyone who'd rather not see badges can press **Hide ratings** at the bottom of the page.
+
+Votes are shared between visitors through a free Firebase Realtime Database. Each browser gets an anonymous sign-in, so there's one vote per browser and nobody makes an account. Until it's set up, the site simply leaves ratings out.
+
+To set it up (about 10 minutes, free Spark plan, no card needed):
+
+1. Go to https://console.firebase.google.com, **Create a project**, and skip Google Analytics.
+2. **Build → Authentication → Get started → Sign-in method → Anonymous**, turn it on and save.
+3. **Build → Realtime Database → Create database**, pick a location, start in **locked mode**. On the **Rules** tab, paste the contents of `ratings/database.rules.json` and press **Publish**.
+4. **Project settings (gear) → General → Your apps → Web (</>)**, register an app (any nickname, no hosting). Copy `apiKey` and `databaseURL` from the config it shows.
+5. Add them to `data.json` under `site`:
+
+   ```json
+   "firebase": { "apiKey": "AIza...", "databaseURL": "https://your-project-default-rtdb.firebaseio.com" }
+   ```
+
+   These two values are meant to be public; the rules decide what visitors can do.
 
 ## Short versions and speed
 

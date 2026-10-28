@@ -1,0 +1,154 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ESL Pro League Season 24 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261003@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:ESL Pro League Season 24: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of ESL Pro League Season 24 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261004@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:ESL Pro League Season 24: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of ESL Pro League Season 24 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261005@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:ESL Pro League Season 24: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of ESL Pro League Season 24 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261006@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:ESL Pro League Season 24: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of ESL Pro League Season 24 sho
+ uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
+ ot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261007@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:ESL Pro League Season 24: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of ESL Pro League Season 24 s
+ hould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy
+ -bot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261009@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:ESL Pro League Season 24: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of ESL Pro League Season 24 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261010@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:ESL Pro League Season 24: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of ESL Pro League Season 24 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-24-20261011@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:ESL Pro League Season 24: final day ready to watch
+DESCRIPTION:Videos from the final day of ESL Pro League Season 24 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/esl-pro-league-season-24
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 24 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

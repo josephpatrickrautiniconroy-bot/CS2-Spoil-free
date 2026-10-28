@@ -231,6 +231,15 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .pin-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .pin-add{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
 .pin-add .input{flex:1 1 220px;width:auto}
+.rate-chip{position:absolute;right:0;top:0;z-index:1;background:var(--inv);color:var(--inv-ink);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
+.rate-chip:empty{display:none}
+.rate-badge{align-self:flex-start;background:var(--inv);color:var(--inv-ink);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
+.rate-badge:empty{display:none}
+.rate-box{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--rule);padding-top:14px}
+.rate-box[hidden]{display:none}
+.rate-title{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase}
+.rate-opts{display:flex;flex-wrap:wrap;gap:8px}
+.rate-opts .pin-btn{font-size:16px}
 .cal-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
 .cal-item{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--rule);padding-top:12px}
 .cal-name{font-family:var(--display);font-weight:800;font-size:22px;line-height:1.1;text-transform:uppercase}
@@ -603,7 +612,8 @@ function normalize(d) {
   const site = {
     name: str(s.name) || 'Spoiler-Free CS2', heroText: str(s.heroText), howTitle: str(s.howTitle) || 'How spoiler-free works',
     how: arr(s.how).length ? arr(s.how).map(x => ({ title: str(x && x.title), text: str(x && x.text) })) : clone(DEFAULT_HOW),
-    footer: str(s.footer), featuredId: str(s.featuredId), example: !!s.example
+    footer: str(s.footer), featuredId: str(s.featuredId), example: !!s.example,
+    firebase: { apiKey: str((s.firebase || {}).apiKey), databaseURL: str((s.firebase || {}).databaseURL).replace(/\/+$/, '') }
   };
   const teams = arr(d.teams).filter(x => x && x.id).map(x => ({ id: str(x.id), name: str(x.name), logo: str(x.logo), aliases: arr(x.aliases).map(str).filter(Boolean) }));
   const tournaments = arr(d.tournaments).filter(t => t && t.id).map(t => ({
@@ -1066,6 +1076,87 @@ const dot = () => h('span', { class: 'dot', 'aria-hidden': 'true' }, '·');
 const sep = () => h('span', { 'aria-hidden': 'true' }, '/');
 function field(labelText, control) { return h('div', { class: 'field' }, h('label', { for: control.id }, labelText), control); }
 
+/* ---------- worth-watching ratings ----------
+   Someone who marked a match as watched can say how worth watching it was. Everyone else sees a badge,
+   but only for the good tiers, so a missing badge could mean too few votes as much as a dull match.
+   Votes are for the whole series, never a map, so they can't tell how many maps were played.
+   The votes are kept in a Firebase Realtime Database (ratings/database.rules.json), set in data.json as site.firebase.
+   Each visitor gets an anonymous Firebase sign-in, so there's one vote per browser and no accounts. */
+const RATE_OPTS = [[3, 'Must watch'], [2, 'Worth a watch'], [1, 'Only for fans']];
+const RATE_MIN_VOTES = 3;
+let RATINGS = {}; // match id -> { avg, votes }
+const fb = () => data.site.firebase || {};
+const ratingsReady = () => !!(fb().apiKey && fb().databaseURL);
+const ratingsShown = () => ratingsReady() && !store.get('hideRatings', false);
+let fbToken = null; // { id, uid, exp }
+async function fbAuth() {
+  if (fbToken && fbToken.exp > Date.now() + 60000) return fbToken;
+  const key = encodeURIComponent(fb().apiKey), saved = store.get('fbAuth', null);
+  const r = saved && saved.refresh
+    ? await fetch('https://securetoken.googleapis.com/v1/token?key=' + key, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: 'grant_type=refresh_token&refresh_token=' + encodeURIComponent(saved.refresh) })
+    : await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + key, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ returnSecureToken: true }) });
+  if (!r.ok) { if (saved) store.set('fbAuth', null); throw new Error('sign-in ' + r.status); }
+  const j = await r.json();
+  const id = j.idToken || j.id_token, refresh = j.refreshToken || j.refresh_token, uid = j.localId || j.user_id;
+  store.set('fbAuth', { refresh, uid });
+  fbToken = { id, uid, exp: Date.now() + (+(j.expiresIn || j.expires_in) || 3600) * 1000 };
+  return fbToken;
+}
+async function loadRatings() {
+  if (!ratingsReady()) return;
+  try {
+    const r = await fetch(fb().databaseURL + '/votes.json');
+    if (!r.ok) return;
+    const all = (await r.json()) || {};
+    RATINGS = {};
+    for (const [mid, votes] of Object.entries(all)) {
+      const v = Object.values(votes || {}).filter(x => x === 1 || x === 2 || x === 3);
+      if (v.length) RATINGS[mid] = { avg: v.reduce((p, q) => p + q, 0) / v.length, votes: v.length };
+    }
+    paintRatings();
+  } catch (e) { /* ratings are extra; the site works without them */ }
+}
+async function sendRating(mid, score) {
+  const tk = await fbAuth();
+  const r = await fetch(fb().databaseURL + '/votes/' + encodeURIComponent(mid) + '/' + tk.uid + '.json?auth=' + encodeURIComponent(tk.id), { method: 'PUT', body: JSON.stringify(score) });
+  if (!r.ok) throw new Error('vote ' + r.status);
+}
+function ratingLabel(mid) {
+  const r = RATINGS[mid];
+  if (!ratingsShown() || !r || r.votes < RATE_MIN_VOTES) return '';
+  return r.avg >= 2.5 ? 'Must watch' : r.avg >= 1.8 ? 'Worth a watch' : '';
+}
+function ratingSlot(mid, cls) { const el = h('span', { class: cls, 'data-rate-mid': mid }); el.textContent = ratingLabel(mid); return el; }
+function paintRatings() {
+  document.querySelectorAll('[data-rate-mid]').forEach(el => { el.textContent = ratingLabel(el.dataset.rateMid); });
+  const b = $('#rate-toggle');
+  if (b) b.textContent = store.get('hideRatings', false) ? 'Show ratings' : 'Hide ratings';
+}
+function rateBox(m) {
+  const mine = store.get('myRatings', {});
+  const status = h('p', { class: 'hint', 'aria-live': 'polite' }, mine[m.id] ? 'Thanks, your vote is in. You can change it.' : '');
+  const btns = RATE_OPTS.map(([score, label]) => {
+    const b = h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': String(mine[m.id] === score) }, label);
+    b.addEventListener('click', async () => {
+      btns.forEach(x => { x.disabled = true; });
+      try {
+        await sendRating(m.id, score);
+        const my = store.get('myRatings', {}); my[m.id] = score; store.set('myRatings', my);
+        btns.forEach((x, i) => x.setAttribute('aria-pressed', String(RATE_OPTS[i][0] === score)));
+        status.textContent = 'Thanks, your vote is in. You can change it.';
+        loadRatings();
+      } catch (e) { status.textContent = 'Your vote didn’t go through. Try again in a moment.'; }
+      btns.forEach(x => { x.disabled = false; });
+    });
+    return b;
+  });
+  return h('div', { class: 'rate-box', id: 'rate-box' },
+    h('h2', { class: 'rate-title' }, 'Worth watching?'),
+    h('div', { class: 'rate-opts', role: 'group', 'aria-label': 'How worth watching was this match' }, btns),
+    h('p', { class: 'hint' }, 'Rate the whole series, not who won. Others only see a badge like “Must watch”, never a score, and only once a few people have voted.'),
+    status);
+}
+
 /* ---------- routing ---------- */
 function parseRoute() {
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
@@ -1091,6 +1182,7 @@ function route(keepScroll, initial) {
   else renderHome(app, r);
   renderHeader();
   renderFooter();
+  paintRatings();
   if (keepScroll) { window.scrollTo(0, y); return; }
   const sec = r.section && document.getElementById('sec-' + r.section);
   if (sec) sec.scrollIntoView();
@@ -1122,7 +1214,8 @@ function renderFooter() {
     ed('span', 'footer-text', data.site.footer, v => { data.site.footer = v; }, { label: 'Footer text', placeholder: 'Footer text' }),
     // Liquipedia's content is CC BY-SA, so its use is credited whenever the watcher's data is on the page.
     AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/counterstrike/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
-      ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null));
+      ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null,
+    ratingsReady() && !editing() ? h('button', { type: 'button', class: 'text-btn', id: 'rate-toggle', onClick: () => { store.set('hideRatings', !store.get('hideRatings', false)); paintRatings(); } }, 'Hide ratings') : null));
 }
 function exampleNotice() {
   return h('div', { class: 'wrap' }, h('div', { class: 'edit-panel notice' },
@@ -1415,6 +1508,7 @@ function matchCard(m, rd) {
   const card = h('a', { class: 'm-card', href: '#/match/' + m.id + '/0' },
     thumbView(m),
     watched ? h('span', { class: 'watched-chip' }, 'Watched') : going ? h('span', { class: 'watched-chip' }, 'In progress') : null,
+    ratingSlot(m.id, 'rate-chip'),
     h('div', { class: 'm-cap' }, h('span', {}, teamName(m.a) + ' vs ' + teamName(m.b)), m.date ? h('span', {}, m.date) : null));
   const w = h('div', { class: 'm-wrap' }, card);
   if (editing()) w.append(h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match')));
@@ -1531,6 +1625,7 @@ function renderPlayer(app, r) {
     h('div', { class: 'player', id: 'player' }, frame, ctl.bar),
     h('div', { class: 'match-head' },
       h('h1', { class: 'match-title' }, teamName(m.a), ' ', h('span', { class: 'vs' }, 'versus'), ' ', teamName(m.b)),
+      ratingSlot(m.id, 'rate-badge'),
       metaLine([short ? 'Short version' : 'Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), s.name, rd.name, 'Best of ' + m.bo, m.date]),
       editing() ? null : h('div', { class: 'pin-row' }, [m.a, m.b].filter(id => team(id)).map(id => pinButton('teams', id, teamName(id))))),
     editing() ? h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match')) : null);
@@ -1545,7 +1640,11 @@ function renderPlayer(app, r) {
     wbtn.className = 'btn ' + (on ? 'btn-inv' : 'btn-outline');
     wbtn.setAttribute('aria-pressed', String(on));
     wbtn.textContent = on ? 'Watched' : 'Mark as watched';
+    if (rbox) rbox.hidden = !on;
   });
+  // Rating is offered once the match is marked as watched, so votes come from people who saw it.
+  const rbox = ratingsReady() && !editing() ? rateBox(m) : null;
+  if (rbox) rbox.hidden = !watched;
   const aside = h('aside', { class: 'maps', 'aria-label': 'Maps in this series' },
     h('div', { class: 'maps-head' }, h('h2', { class: 'maps-title' }, 'Maps'), h('span', { class: 'hint' }, 'Best of ' + m.bo)),
     h('div', { class: 'map-list' }, m.maps.map((mp, i) => h('a', { class: 'map-btn', href: '#/match/' + m.id + '/' + i, 'aria-current': i === idx ? 'true' : null },
@@ -1557,6 +1656,7 @@ function renderPlayer(app, r) {
     h('p', { class: 'hint' }, 'Every possible map is listed, so this list can’t tell you how long the series went. Map names only show for the map you’re on.'),
     hasShort ? h('p', { class: 'hint' }, 'Short on time? The short version is the organiser’s highlights of the whole series. Its length stays hidden and it plays map by map, so it gives nothing away early. Every match in this round has one.') : null,
     wbtn,
+    rbox,
     editing() ? null : partyBox(),
     h('p', { class: 'hint' }, 'Keys: Space plays or pauses. ← and → skip 10 seconds, hold Shift for 30. < and > change the speed. W for a wide player, F for full screen.'));
   page.append(h('div', { class: 'player-row' }, col, aside));
@@ -2646,6 +2746,7 @@ initTheme();
   }
   if (!EDIT && partyParam()) joinParty(partyParam(), false);
   route(false, true);
+  loadRatings();
 })();
 })();
 </script>

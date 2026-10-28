@@ -1,0 +1,172 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BLAST Open Porto 2026 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260826@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:BLAST Open Porto 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of BLAST Open Porto 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260827@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:BLAST Open Porto 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of BLAST Open Porto 2026 shoul
+ d be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot
+ .github.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260828@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLAST Open Porto 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of BLAST Open Porto 2026 should 
+ be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.g
+ ithub.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260829@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260830
+DTEND;VALUE=DATE:20260831
+SUMMARY:BLAST Open Porto 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of BLAST Open Porto 2026 shoul
+ d be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot
+ .github.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260830@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:BLAST Open Porto 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of BLAST Open Porto 2026 should 
+ be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.g
+ ithub.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260831@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:BLAST Open Porto 2026: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of BLAST Open Porto 2026 should 
+ be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.g
+ ithub.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260904@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLAST Open Porto 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of BLAST Open Porto 2026 should 
+ be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.g
+ ithub.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260905@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260906
+DTEND;VALUE=DATE:20260907
+SUMMARY:BLAST Open Porto 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of BLAST Open Porto 2026 shoul
+ d be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot
+ .github.io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-porto-2026-20260906@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:BLAST Open Porto 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Open Porto 2026 should be up
+  by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github
+ .io/CS2-Spoil-free/#/t/blast-open-porto-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-porto-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Porto 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

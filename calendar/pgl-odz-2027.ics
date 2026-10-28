@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PGL Łódź 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:pgl-odz-2027-20270318@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:PGL Łódź 2027: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of PGL Łódź 2027 should be 
+ up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gith
+ ub.io/CS2-Spoil-free/#/t/pgl-odz-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -odz-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Łódź 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-odz-2027-20270328@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:PGL Łódź 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL Łódź 2027 should be up by n
+ ow. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io/C
+ S2-Spoil-free/#/t/pgl-odz-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -odz-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Łódź 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

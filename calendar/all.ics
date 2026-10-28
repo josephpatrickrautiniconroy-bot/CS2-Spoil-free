@@ -1,0 +1,1173 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Spoiler-Free CS2
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:perfect-world-shanghai-major-2027-20271122@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271123
+DTEND;VALUE=DATE:20271124
+SUMMARY:Perfect World Shanghai Major 2027: Monday’s matches ready to watc
+ h
+DESCRIPTION:Videos from Monday’s matches of Perfect World Shanghai Major 
+ 2027 should be up by now. Watch spoiler-free: https://josephpatrickrautini
+ conroy-bot.github.io/CS2-Spoil-free/#/t/perfect-world-shanghai-major-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/per
+ fect-world-shanghai-major-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Perfect World Shanghai Major 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:perfect-world-shanghai-major-2027-20271212@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271213
+DTEND;VALUE=DATE:20271214
+SUMMARY:Perfect World Shanghai Major 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Perfect World Shanghai Major 2027 
+ should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
+ y-bot.github.io/CS2-Spoil-free/#/t/perfect-world-shanghai-major-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/per
+ fect-world-shanghai-major-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Perfect World Shanghai Major 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-2027-20271108@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+SUMMARY:BLAST Rivals 2027: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of BLAST Rivals 2027 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/blast-rivals-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-2027-20271114@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:BLAST Rivals 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Rivals 2027 should be up by 
+ now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io/
+ CS2-Spoil-free/#/t/blast-rivals-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:starladder-starseries-fall-2027-20271021@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:StarLadder StarSeries Fall 2027: Thursday’s matches ready to watc
+ h
+DESCRIPTION:Videos from Thursday’s matches of StarLadder StarSeries Fall 
+ 2027 should be up by now. Watch spoiler-free: https://josephpatrickrautini
+ conroy-bot.github.io/CS2-Spoil-free/#/t/starladder-starseries-fall-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/sta
+ rladder-starseries-fall-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:StarLadder StarSeries Fall 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:starladder-starseries-fall-2027-20271024@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271025
+DTEND;VALUE=DATE:20271026
+SUMMARY:StarLadder StarSeries Fall 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of StarLadder StarSeries Fall 2027 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/starladder-starseries-fall-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/sta
+ rladder-starseries-fall-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:StarLadder StarSeries Fall 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-october-2027-20271008@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+SUMMARY:PGL October 2027: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of PGL October 2027 should be up
+  by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github
+ .io/CS2-Spoil-free/#/t/pgl-october-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -october-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL October 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-october-2027-20271017@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271019
+SUMMARY:PGL October 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL October 2027 should be up by n
+ ow. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io/C
+ S2-Spoil-free/#/t/pgl-october-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -october-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL October 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-fall-2027-20271004@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271006
+SUMMARY:BLAST Open Fall 2027: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of BLAST Open Fall 2027 should b
+ e up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gi
+ thub.io/CS2-Spoil-free/#/t/blast-open-fall-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-fall-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Fall 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-fall-2027-20271017@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271019
+SUMMARY:BLAST Open Fall 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Open Fall 2027 should be up 
+ by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.
+ io/CS2-Spoil-free/#/t/blast-open-fall-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-fall-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Fall 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-26-20270923@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:ESL Pro League Season 26: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of ESL Pro League Season 26 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-26
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-26
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 26 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-26-20271003@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271005
+SUMMARY:ESL Pro League Season 26: final day ready to watch
+DESCRIPTION:Videos from the final day of ESL Pro League Season 26 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/esl-pro-league-season-26
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-26
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 26 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-september-2027-20270903@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+SUMMARY:PGL September 2027: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of PGL September 2027 should be 
+ up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gith
+ ub.io/CS2-Spoil-free/#/t/pgl-september-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -september-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL September 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-september-2027-20270912@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270914
+SUMMARY:PGL September 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL September 2027 should be up by
+  now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io
+ /CS2-Spoil-free/#/t/pgl-september-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -september-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL September 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-bounty-summer-2027-20270830@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270831
+DTEND;VALUE=DATE:20270901
+SUMMARY:BLAST Bounty Summer 2027: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of BLAST Bounty Summer 2027 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/blast-bounty-summer-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-bounty-summer-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Bounty Summer 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-bounty-summer-2027-20270912@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270914
+SUMMARY:BLAST Bounty Summer 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Bounty Summer 2027 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/blast-bounty-summer-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-bounty-summer-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Bounty Summer 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cs-asia-championships-2027-20270817@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:CS Asia Championships 2027: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of CS Asia Championships 2027 s
+ hould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy
+ -bot.github.io/CS2-Spoil-free/#/t/cs-asia-championships-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/cs-
+ asia-championships-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CS Asia Championships 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cs-asia-championships-2027-20270829@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270831
+SUMMARY:CS Asia Championships 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of CS Asia Championships 2027 should 
+ be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.g
+ ithub.io/CS2-Spoil-free/#/t/cs-asia-championships-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/cs-
+ asia-championships-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CS Asia Championships 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-cologne-2027-20270804@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270806
+SUMMARY:Intel Extreme Masters Cologne 2027: Wednesday’s matches ready to 
+ watch
+DESCRIPTION:Videos from Wednesday’s matches of Intel Extreme Masters Colo
+ gne 2027 should be up by now. Watch spoiler-free: https://josephpatrickrau
+ tiniconroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-cologne-
+ 2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-cologne-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Cologne 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-cologne-2027-20270815@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
+SUMMARY:Intel Extreme Masters Cologne 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters Cologne 2027
+  should be up by now. Watch spoiler-free: https://josephpatrickrautiniconr
+ oy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-cologne-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-cologne-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Cologne 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2027-20270720@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270721
+DTEND;VALUE=DATE:20270722
+SUMMARY:Esports World Cup 2027: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of Esports World Cup 2027 shoul
+ d be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot
+ .github.io/CS2-Spoil-free/#/t/esports-world-cup-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2027-20270801@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270802
+DTEND;VALUE=DATE:20270803
+SUMMARY:Esports World Cup 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Esports World Cup 2027 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/esports-world-cup-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fire-major-buenos-aires-2027-20270531@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:FiRe Major Buenos Aires 2027: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of FiRe Major Buenos Aires 2027 
+ should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
+ y-bot.github.io/CS2-Spoil-free/#/t/fire-major-buenos-aires-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/fir
+ e-major-buenos-aires-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FiRe Major Buenos Aires 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fire-major-buenos-aires-2027-20270620@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:FiRe Major Buenos Aires 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of FiRe Major Buenos Aires 2027 shoul
+ d be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot
+ .github.io/CS2-Spoil-free/#/t/fire-major-buenos-aires-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/fir
+ e-major-buenos-aires-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FiRe Major Buenos Aires 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-summer-2027-20270510@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:BLAST Open Summer 2027: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of BLAST Open Summer 2027 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/blast-open-summer-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-summer-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Summer 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-summer-2027-20270523@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270524
+DTEND;VALUE=DATE:20270525
+SUMMARY:BLAST Open Summer 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Open Summer 2027 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/blast-open-summer-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-summer-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Summer 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-brazil-2027-20270503@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:Intel Extreme Masters Brazil 2027: Monday’s matches ready to watc
+ h
+DESCRIPTION:Videos from Monday’s matches of Intel Extreme Masters Brazil 
+ 2027 should be up by now. Watch spoiler-free: https://josephpatrickrautini
+ conroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-brazil-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-brazil-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Brazil 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-brazil-2027-20270509@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:Intel Extreme Masters Brazil 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters Brazil 2027 
+ should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
+ y-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-brazil-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-brazil-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Brazil 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-china-2027-20270416@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:PGL China 2027: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of PGL China 2027 should be up b
+ y now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.i
+ o/CS2-Spoil-free/#/t/pgl-china-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -china-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL China 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-china-2027-20270425@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:PGL China 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL China 2027 should be up by now
+ . Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io/CS2
+ -Spoil-free/#/t/pgl-china-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -china-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL China 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-usa-2027-20270405@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:Intel Extreme Masters USA 2027: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of Intel Extreme Masters USA 202
+ 7 should be up by now. Watch spoiler-free: https://josephpatrickrautinicon
+ roy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-usa-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-usa-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters USA 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-usa-2027-20270411@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:Intel Extreme Masters USA 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters USA 2027 sho
+ uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
+ ot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-usa-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-usa-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters USA 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-spring-2027-20270319@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:BLAST Open Spring 2027: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of BLAST Open Spring 2027 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/blast-open-spring-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-spring-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Spring 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-open-spring-2027-20270328@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:BLAST Open Spring 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Open Spring 2027 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/blast-open-spring-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-open-spring-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Open Spring 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-odz-2027-20270318@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:PGL Łódź 2027: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of PGL Łódź 2027 should be 
+ up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gith
+ ub.io/CS2-Spoil-free/#/t/pgl-odz-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -odz-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Łódź 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-odz-2027-20270328@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:PGL Łódź 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL Łódź 2027 should be up by n
+ ow. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io/C
+ S2-Spoil-free/#/t/pgl-odz-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -odz-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Łódź 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-25-20270306@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:ESL Pro League Season 25: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of ESL Pro League Season 25 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-25
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-25
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 25 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-25-20270314@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:ESL Pro League Season 25: final day ready to watch
+DESCRIPTION:Videos from the final day of ESL Pro League Season 25 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/esl-pro-league-season-25
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-25
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 25 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-cluj-napoca-2027-20270211@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:PGL Cluj-Napoca 2027: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of PGL Cluj-Napoca 2027 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/pgl-cluj-napoca-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -cluj-napoca-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Cluj-Napoca 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-cluj-napoca-2027-20270221@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:PGL Cluj-Napoca 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL Cluj-Napoca 2027 should be up 
+ by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.
+ io/CS2-Spoil-free/#/t/pgl-cluj-napoca-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -cluj-napoca-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Cluj-Napoca 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-krakow-2027-20270127@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:Intel Extreme Masters Kraków 2027: Wednesday’s matches ready to 
+ watch
+DESCRIPTION:Videos from Wednesday’s matches of Intel Extreme Masters Krak
+ ów 2027 should be up by now. Watch spoiler-free: https://josephpatrickrau
+ tiniconroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-krakow-2
+ 027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-krakow-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Kraków 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-krakow-2027-20270207@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:Intel Extreme Masters Kraków 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters Kraków 2027
+  should be up by now. Watch spoiler-free: https://josephpatrickrautiniconr
+ oy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-krakow-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-krakow-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Kraków 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-bucharest-2027-20270117@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:PGL Bucharest 2027: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of PGL Bucharest 2027 should be 
+ up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gith
+ ub.io/CS2-Spoil-free/#/t/pgl-bucharest-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -bucharest-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Bucharest 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-bucharest-2027-20270124@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:PGL Bucharest 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL Bucharest 2027 should be up by
+  now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io
+ /CS2-Spoil-free/#/t/pgl-bucharest-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -bucharest-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Bucharest 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-bounty-winter-2027-20270113@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:BLAST Bounty Winter 2027: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of BLAST Bounty Winter 2027 s
+ hould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy
+ -bot.github.io/CS2-Spoil-free/#/t/blast-bounty-winter-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-bounty-winter-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Bounty Winter 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-bounty-winter-2027-20270124@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:BLAST Bounty Winter 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Bounty Winter 2027 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/blast-bounty-winter-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-bounty-winter-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Bounty Winter 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-major-singapore-2026-20261124@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:PGL Major Singapore 2026: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of PGL Major Singapore 2026 sho
+ uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
+ ot.github.io/CS2-Spoil-free/#/t/pgl-major-singapore-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -major-singapore-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Major Singapore 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-major-singapore-2026-20261213@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:PGL Major Singapore 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL Major Singapore 2026 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/pgl-major-singapore-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -major-singapore-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Major Singapore 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:yalla-compass-uae-2026-20261116@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:YaLLa Compass UAE 2026: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of YaLLa Compass UAE 2026 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/yalla-compass-uae-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/yal
+ la-compass-uae-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:YaLLa Compass UAE 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:yalla-compass-uae-2026-20261122@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:YaLLa Compass UAE 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of YaLLa Compass UAE 2026 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/yalla-compass-uae-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/yal
+ la-compass-uae-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:YaLLa Compass UAE 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261111@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:BLAST Rivals Fall 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of BLAST Rivals Fall 2026 sho
+ uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
+ ot.github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261112@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:BLAST Rivals Fall 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of BLAST Rivals Fall 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261113@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLAST Rivals Fall 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of BLAST Rivals Fall 2026 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261114@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:BLAST Rivals Fall 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of BLAST Rivals Fall 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261115@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:BLAST Rivals Fall 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Rivals Fall 2026 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-beijing-2026-20261106@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Intel Extreme Masters Beijing 2026: Friday’s matches ready to wat
+ ch
+DESCRIPTION:Videos from Friday’s matches of Intel Extreme Masters Beijing
+  2026 should be up by now. Watch spoiler-free: https://josephpatrickrautin
+ iconroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-beijing-202
+ 6
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-beijing-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Beijing 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-beijing-2026-20261107@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Intel Extreme Masters Beijing 2026: Saturday’s matches ready to w
+ atch
+DESCRIPTION:Videos from Saturday’s matches of Intel Extreme Masters Beiji
+ ng 2026 should be up by now. Watch spoiler-free: https://josephpatrickraut
+ iniconroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-beijing-2
+ 026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-beijing-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Beijing 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-beijing-2026-20261108@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Intel Extreme Masters Beijing 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters Beijing 2026
+  should be up by now. Watch spoiler-free: https://josephpatrickrautiniconr
+ oy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-beijing-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-beijing-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Beijing 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-masters-bucharest-2026-20261024@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:PGL Masters Bucharest 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of PGL Masters Bucharest 2026 
+ should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
+ y-bot.github.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -masters-bucharest-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Masters Bucharest 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-masters-bucharest-2026-20261025@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:PGL Masters Bucharest 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of PGL Masters Bucharest 2026 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -masters-bucharest-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Masters Bucharest 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-masters-bucharest-2026-20261026@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:PGL Masters Bucharest 2026: Monday’s matches ready to watch
+DESCRIPTION:Videos from Monday’s matches of PGL Masters Bucharest 2026 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -masters-bucharest-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Masters Bucharest 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-masters-bucharest-2026-20261027@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:PGL Masters Bucharest 2026: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of PGL Masters Bucharest 2026 s
+ hould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy
+ -bot.github.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -masters-bucharest-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Masters Bucharest 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-masters-bucharest-2026-20261028@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:PGL Masters Bucharest 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of PGL Masters Bucharest 2026
+  should be up by now. Watch spoiler-free: https://josephpatrickrautiniconr
+ oy-bot.github.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -masters-bucharest-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Masters Bucharest 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pgl-masters-bucharest-2026-20261031@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:PGL Masters Bucharest 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of PGL Masters Bucharest 2026 should 
+ be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.g
+ ithub.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
+ -masters-bucharest-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PGL Masters Bucharest 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

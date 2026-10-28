@@ -1,0 +1,190 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Esports World Cup 2026 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260812@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:Esports World Cup 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of Esports World Cup 2026 sho
+ uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
+ ot.github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260813@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:Esports World Cup 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of Esports World Cup 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260814@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:Esports World Cup 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Esports World Cup 2026 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260815@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+SUMMARY:Esports World Cup 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Esports World Cup 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260816@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:Esports World Cup 2026: Sunday’s matches ready to watch
+DESCRIPTION:Videos from Sunday’s matches of Esports World Cup 2026 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260819@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:Esports World Cup 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of Esports World Cup 2026 sho
+ uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
+ ot.github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260820@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:Esports World Cup 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of Esports World Cup 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260821@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+SUMMARY:Esports World Cup 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of Esports World Cup 2026 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260822@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260824
+SUMMARY:Esports World Cup 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of Esports World Cup 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esports-world-cup-2026-20260823@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:Esports World Cup 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of Esports World Cup 2026 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/esports-world-cup-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esp
+ orts-world-cup-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Esports World Cup 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
