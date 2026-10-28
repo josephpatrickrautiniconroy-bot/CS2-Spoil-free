@@ -5,8 +5,10 @@
   Every run it:
     1. asks Liquipedia which of the tournament pages in watcher/config.json changed since last time,
     2. reads the changed pages: stages, rounds, matches, teams, and each map's video link and start time,
-    3. checks the videos with YouTube (if YOUTUBE_API_KEY is set) and leaves out any that can't be embedded,
-    4. writes everything to auto.json, which the site merges with data.json when it loads.
+    3. looks for the organisers' highlight videos of recent matches (watcher/highlights.mjs),
+    4. checks the videos with YouTube (if YOUTUBE_API_KEY is set) and leaves out any that can't be embedded,
+    5. writes everything to auto.json, which the site merges with data.json when it loads,
+       and a calendar feed per event into calendar/ (watcher/calendar.mjs).
 
   The organisers post one video per series on their archive channels ("ESL Archives",
   "BLAST Premier VOD Archive", "PGL VOD's"), and Liquipedia records where each map starts.
@@ -24,6 +26,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { parsePage, parseInfobox, teamNamesFromExpansion, PARSER_VERSION } from './liquipedia.mjs';
+import { findHighlights } from './highlights.mjs';
+import { buildCalendars } from './calendar.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FILES = {
@@ -31,6 +35,7 @@ const FILES = {
   state: path.join(ROOT, 'watcher', 'state.json'),
   auto: path.join(ROOT, 'auto.json'),
   autoImages: path.join(ROOT, 'images', 'auto'),
+  calendar: path.join(ROOT, 'calendar'),
   ownImages: path.join(ROOT, 'images', 'events')
 };
 const YT_KEY = process.env.YOUTUBE_API_KEY || '';
@@ -42,6 +47,8 @@ const GH_TOKEN = process.env.GITHUB_TOKEN || '';
 const GH_REPO = process.env.GITHUB_REPOSITORY || '';
 const NOW = process.env.WATCHER_NOW ? new Date(process.env.WATCHER_NOW) : new Date();
 const HOUR = 3600 * 1000;
+// 2: matches keep their start time (for highlights and calendars), and events their match days.
+const BUILD_VERSION = 2;
 const USER_AGENT = 'cs2-spoiler-free-site video watcher (https://github.com/' + (GH_REPO || 'josephpatrickrautiniconroy-bot/CS2-Spoil-free') + ')';
 
 /* ---------- small helpers ---------- */
@@ -179,6 +186,8 @@ function buildTournament(tc, pages, teamOf) {
   const all = [];
   pages.forEach((pg, pi) => pg.matches.forEach(m => all.push({ ...m, pageIndex: pi, page: pg.title })));
   const known = all.filter(m => m.a && m.b && m.a !== m.b);
+  // The days with matches, including ones whose teams aren't known yet, for the calendar feeds.
+  tournament.days = [...new Set(all.map(m => Date.parse(m.date)).filter(Boolean).map(t => new Date(t).toISOString().slice(0, 10)))].sort();
   // Stages and rounds go in the order they were played (earliest match first), so watching
   // from the top follows the event as it happened.
   const first = list => list.reduce((min, m) => (m.date && (!min || m.date < min)) ? m.date : min, '');
@@ -203,7 +212,7 @@ function buildTournament(tc, pages, teamOf) {
         const mid = 'lp-' + shortHash(tc.page + '|' + m.page + '|' + m.container + '|' + m.key);
         const a = teamOf(m.a), b = teamOf(m.b);
         const bo = m.bo || (/grand\s*final/i.test(round) ? 5 : 3);
-        matches.push({ id: mid, tournamentId: id, tournament: name, stage, stageOrder: si, round, roundOrder, a: a.id, b: b.id, bo, date: shortDate(m.date) });
+        matches.push({ id: mid, tournamentId: id, tournament: name, stage, stageOrder: si, round, roundOrder, a: a.id, b: b.id, bo, date: shortDate(m.date), time: m.date || '' });
 
         // Map slots: the video and start time from Liquipedia, and an end time where the next
         // map in the same video begins. Older pages only link one video for the whole series.
@@ -251,6 +260,8 @@ async function main() {
   for (const k of ['pages', 'resolved', 'teams', 'videos']) if (!state[k] || typeof state[k] !== 'object') state[k] = {};
   // A newer page reader: read every page again.
   if (state.parserVersion !== PARSER_VERSION) { state.pages = {}; state.teams = {}; state.parserVersion = PARSER_VERSION; }
+  // A change in what's built from the pages (not in how they're read): read every page again, keeping team names.
+  if (state.buildVersion !== BUILD_VERSION) { state.pages = {}; state.buildVersion = BUILD_VERSION; }
   if (auto.version !== 2) { for (const k of Object.keys(auto)) delete auto[k]; }
   auto.version = 2;
   auto.source = 'Liquipedia (CC BY-SA 3.0), https://liquipedia.net/counterstrike/';
@@ -429,9 +440,22 @@ async function main() {
   for (const t of Object.values(state.teams)) if (usedTeams.has(t.id)) teamList.set(t.id, { id: t.id, name: t.name });
   auto.teams = [...teamList.values()].sort((a, b) => a.name.localeCompare(b.name));
 
+  /* 4b. official highlight videos: the short version of a series */
+  if (YT_KEY) {
+    try { await findHighlights({ config, state, auto, yt, now: NOW, log, warn }); } catch (e) { warn('Couldn’t look for highlights: ' + e.message); }
+  }
+  const matchIds = new Set(auto.matches.map(m => m.id));
+  state.highlights = (state.highlights && typeof state.highlights === 'object') ? state.highlights : {};
+  for (const mid of Object.keys(state.highlights)) if (!matchIds.has(mid)) delete state.highlights[mid];
+  for (const [mid, vid] of Object.entries(state.highlights)) if (auto.videos[mid]) auto.videos[mid].highlight = 'https://youtu.be/' + vid;
+
   /* 5. check videos with YouTube: leave out ones that are private, deleted or can't be embedded */
   const allIds = new Set();
-  for (const v of Object.values(auto.videos)) for (const mp of v.maps) { const m = str(mp.video).match(/youtu\.be\/([\w-]{11})/); if (m) allIds.add(m[1]); }
+  for (const v of Object.values(auto.videos)) {
+    for (const mp of v.maps) { const m = str(mp.video).match(/youtu\.be\/([\w-]{11})/); if (m) allIds.add(m[1]); }
+    const hm = str(v.highlight).match(/youtu\.be\/([\w-]{11})/);
+    if (hm) allIds.add(hm[1]);
+  }
   if (YT_KEY) {
     const recheckAfter = (+config.recheckVideosAfterDays || 14) * 24 * HOUR;
     const toCheck = [...allIds].filter(id => !state.videos[id] || NOW.getTime() - Date.parse(state.videos[id].checkedAt) > recheckAfter);
@@ -453,6 +477,12 @@ async function main() {
   for (const v of Object.values(auto.videos)) for (const mp of v.maps) {
     const m = str(mp.video).match(/youtu\.be\/([\w-]{11})/);
     if (m && state.videos[m[1]] && !state.videos[m[1]].ok) { mp.video = ''; mp.start = ''; mp.end = ''; blocked++; }
+  }
+  // Highlights must play here and be longer than a two-minute clip (that's a Short, not a match).
+  for (const v of Object.values(auto.videos)) {
+    const hm = str(v.highlight).match(/youtu\.be\/([\w-]{11})/);
+    const chk = hm && state.videos[hm[1]];
+    if (hm && (!chk || !chk.ok || chk.seconds < 120)) delete v.highlight;
   }
   for (const id of Object.keys(state.videos)) if (!allIds.has(id)) delete state.videos[id];
   for (const p of Object.keys(state.pages)) if (!keep.has(p)) delete state.pages[p];
@@ -509,6 +539,18 @@ async function main() {
     await unlink(path.join(FILES.autoImages, img.saved)).catch(() => {});
     delete state.images[key];
   }
+
+  /* 6b. calendar feeds, one per event, for the site's "Add to calendar" */
+  const siteUrl = str(config.siteUrl) || ('https://' + (GH_REPO.split('/')[0] || 'josephpatrickrautiniconroy-bot').toLowerCase() + '.github.io/' + (GH_REPO.split('/')[1] || 'CS2-Spoil-free') + '/');
+  const calendars = buildCalendars(auto, siteUrl, NOW);
+  await mkdir(FILES.calendar, { recursive: true });
+  for (const [rel, text] of Object.entries(calendars)) {
+    const file = path.join(ROOT, rel);
+    let prev = '';
+    try { prev = await readFile(file, 'utf8'); } catch (e) { /* new file */ }
+    if (prev !== text) await writeFile(file, text);
+  }
+  for (const f of await readdir(FILES.calendar)) if (f.endsWith('.ics') && !calendars['calendar/' + f]) await unlink(path.join(FILES.calendar, f)).catch(() => {});
 
   /* 7. save */
   const before = await readJson(FILES.auto, {});
