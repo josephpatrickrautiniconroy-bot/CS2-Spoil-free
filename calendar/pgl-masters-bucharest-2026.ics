@@ -104,10 +104,10 @@ DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:PGL Masters Bucharest 2026: Thursday’s matches ready to watch
 DESCRIPTION:Videos from Thursday’s matches of PGL Masters Bucharest 2026 
- should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
- y-bot.github.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -masters-bucharest-2026
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-masters-buchare
+ st-2026
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -122,10 +122,10 @@ DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:PGL Masters Bucharest 2026: Friday’s matches ready to watch
 DESCRIPTION:Videos from Friday’s matches of PGL Masters Bucharest 2026 sh
- ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
- bot.github.io/CS2-Spoil-free/#/t/pgl-masters-bucharest-2026
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -masters-bucharest-2026
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS
+ 2-Spoil-free/#/t/pgl-masters-bucharest-2026
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-masters-buchare
+ st-2026
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
