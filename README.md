@@ -29,6 +29,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `watcher/watch.mjs`, `watcher/liquipedia.mjs`, `watcher/highlights.mjs`, `watcher/calendar.mjs` | The watcher | Nobody |
 | `calendar/` | Calendar feeds for "Add to calendar" | The watcher |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
+| `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
 
 ## Choosing tournaments (`watcher/config.json`)
@@ -68,6 +69,16 @@ Liquipedia doesn't record when each round starts in a video, so a "key rounds on
 Events that are on now or coming up have an **Add to calendar** button (and pinned events a **Calendar reminders** button on the home page). It offers the event's calendar feed, `calendar/<event-id>.ics`, as a subscription (Apple Calendar, Outlook), in Google Calendar, or as a download. Each match day gets an all-day entry on the following day, "Saturday's matches ready to watch", with a 9am alert where the calendar app supports it. Entries never name teams. The days come from Liquipedia's schedule, and subscribed calendars pick up changes within about a day. `calendar/all.ics` holds every event on now or coming up.
 
 Pinned teams don't get calendar entries, because the date of a team's next match would show whether they went through.
+
+## Watch parties
+
+On any match page, **Start a watch party** gives a link to send to friends. Everyone who opens it watches together: play, pause, skips and opening another map happen for everyone, and there's a chat beside the video (the latest message also shows over the video, so it's seen in full screen). Anyone can name themselves.
+
+- There are no accounts and no server. Browsers connect to each other directly, and public Nostr relays only help them find each other. Some strict networks (some workplaces and mobile carriers) block direct connections, so a friend there may not be able to join.
+- It's spoiler-free: only the time into the map is shared, never a video's length or a result. People who join later don't see the earlier chat, and land wherever the party is.
+- Someone who opens the link gets a "Join in" button first, because browsers only play sound after a click.
+- Best for small groups, up to about eight.
+- Everyone watches at the same speed: changing it changes it for the whole party. A short version can be watched together too.
 
 ## Event pictures
 
