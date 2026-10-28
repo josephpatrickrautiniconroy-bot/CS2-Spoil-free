@@ -215,6 +215,12 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .pin-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .pin-add{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
 .pin-add .input{flex:1 1 220px;width:auto}
+.cal-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.cal-item{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--rule);padding-top:12px}
+.cal-name{font-family:var(--display);font-weight:800;font-size:22px;line-height:1.1;text-transform:uppercase}
+.cal-links{display:flex;flex-wrap:wrap;gap:8px}
+.cal-links .btn{min-height:44px;font-size:17px;padding:8px 16px}
+.short-tag{font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink)}
 .watched-chip{position:absolute;left:0;top:0;z-index:1;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
 .logo{display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--raised);flex-shrink:0}
 .logo>img{width:100%;height:100%;object-fit:contain;padding:4px}
@@ -673,6 +679,7 @@ function mergeAuto(d, auto) {
   Object.keys(vids).forEach(mid => {
     const m = all.get(mid), v = vids[mid];
     if (!m || !v) return;
+    if (v.highlight) m.highlight = str(v.highlight);
     arr(v.maps).forEach((av, i) => {
       if (!av || i >= m.maps.length) return;
       const dm = m.maps[i];
@@ -760,6 +767,10 @@ function clearResume(mid, i) { const p = store.get('pos', {}); delete p[mid + ':
 function getPins() { const p = store.get('pins', {}); return { tournaments: p.tournaments || {}, teams: p.teams || {} }; }
 const isPinned = (kind, id) => !!getPins()[kind][id];
 const hasVideo = m => m.maps.some(x => x.video);
+/* Short versions (the organisers' highlight videos) are offered for a round only once every match
+   in it has one. Organisers don't cut highlights of every match, and a round where only some
+   matches have them could hint at which ones were worth cutting. */
+const shortReady = rd => !!rd && rd.matches.length > 0 && rd.matches.every(m => m.highlight);
 const isWatched = id => !!store.get('watched', {})[id];
 function eventMatches(t) {
   const out = [];
@@ -834,6 +845,35 @@ function pinButton(kind, id, label) {
     toast(now ? 'Pinned. You’ll see new matches here when you come back.' : 'Unpinned');
     rerender();
   } }, icon('pin', 18), on ? 'Pinned ' + label : 'Pin ' + label);
+}
+
+/* ---------- calendar reminders ----------
+   The watcher writes a calendar feed per event (calendar/<id>.ics) with an entry the day after each
+   match day, when its videos are usually up. The entries never name teams. Pinned teams get no
+   calendar: the date of a team's next match would show whether they went through. */
+const calendarOk = t => !!(AUTO && arr(AUTO.tournaments).some(x => x && x.id === t.id)) && tStatus(t) !== 'done';
+function calendarUrls(file) {
+  const https = new URL('calendar/' + file, location.href).href.replace(/#.*$/, '');
+  const webcal = https.replace(/^https?:/, 'webcal:');
+  return { https, webcal, google: 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcal) };
+}
+function calendarItem(name, file) {
+  const u = calendarUrls(file);
+  return h('li', { class: 'cal-item' }, h('div', { class: 'cal-name' }, name),
+    h('div', { class: 'cal-links' },
+      h('a', { class: 'btn btn-accent', href: u.webcal }, 'Subscribe'),
+      h('a', { class: 'btn btn-outline', href: u.google, target: '_blank', rel: 'noopener' }, 'Google Calendar'),
+      h('a', { class: 'btn btn-outline', href: u.https, download: file }, 'Download')));
+}
+function openCalendarDialog(ts) {
+  const dlg = $('#dlg');
+  const body = h('div', { class: 'dlg-body' },
+    h('p', {}, 'Get a reminder the day after each match day, when that day’s videos are usually up. The entries only say which day is ready, never who plays.'),
+    h('ul', { class: 'cal-list' }, ts.map(t => calendarItem(t.name || 'Tournament', t.id + '.ics')),
+      ts.length > 1 ? calendarItem('Every event on now or coming up', 'all.ics') : null),
+    h('p', { class: 'hint' }, 'Subscribe opens your calendar app (Apple Calendar, Outlook and others) and keeps the dates up to date when the schedule changes. Google Calendar does the same in your browser. Download gives you a file to import once, which doesn’t update.'),
+    h('p', { class: 'hint' }, 'Pinned teams don’t get calendar reminders: the date of a team’s next match would tell you whether they went through.'));
+  showDialog(dlg, 'Calendar reminders', body, [h('span'), h('button', { type: 'button', class: 'btn btn-accent', onClick: () => dlg.close() }, 'Done')]);
 }
 
 /* ---------- saving (edit mode) ---------- */
@@ -961,7 +1001,7 @@ function field(labelText, control) { return h('div', { class: 'field' }, h('labe
 function parseRoute() {
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
   if (p[0] === 't') return { name: 'tournament', tid: p[1], sid: p[2] };
-  if (p[0] === 'match') return { name: 'player', mid: p[1], map: parseInt(p[2] || '0', 10) || 0 };
+  if (p[0] === 'match') return { name: 'player', mid: p[1], map: parseInt(p[2] || '0', 10) || 0, short: p[2] === 'short' };
   if (p[0] === 'tournaments' || p[0] === 'how') return { name: 'home', section: p[0] };
   return { name: 'home' };
 }
@@ -1115,6 +1155,9 @@ function pinsView() {
       ? 'Pin an event or a team and you’ll be told about new matches when you come back. Pins are kept in this browser.'
       : 'New matches for these show at the top of the page when you come back. Team notices wait until you’ve marked their earlier matches in that event as watched.'));
   if (pts.length) g.append(h('div', { class: 'grid' }, pts.map(tCard)));
+  const cal = pts.filter(calendarOk);
+  if (cal.length) g.append(h('div', { class: 'pin-row' }, h('button', { type: 'button', class: 'btn btn-outline', onClick: () => openCalendarDialog(cal) }, 'Calendar reminders'),
+    h('span', { class: 'hint' }, 'A reminder the day after each match day of your pinned events.')));
   if (pteams.length) g.append(h('div', { class: 'pin-row', role: 'group', 'aria-label': 'Pinned teams' },
     pteams.sort((a, b) => teamName(a).localeCompare(teamName(b))).map(id => h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': 'true', 'aria-label': 'Unpin ' + teamName(id), title: 'Unpin', onClick: () => { togglePin('teams', id); toast('Unpinned ' + teamName(id)); rerender(); } },
       icon('pin', 18), teamName(id), icon('x', 16)))));
@@ -1176,7 +1219,8 @@ function renderTournament(app, r) {
     h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/' }, 'Home'), sep(), h('a', { href: '#/tournaments' }, 'Tournaments'), sep(), h('span', { class: 'crumb-cur' }, t.name || 'Untitled tournament')),
     h('div', { class: 't-title-row' },
       imgSlot({ src: t.logo, alt: (t.name || 'Tournament') + ' logo', kind: 'logo', cls: 't-logo', what: 'logo', onChange: v => { t.logo = v; }, fallback: () => monogram(t.name) }),
-      h('div', { class: 't-title-col' }, title, meta, editing() ? null : h('div', { class: 'pin-row' }, pinButton('tournaments', t.id, 'event')))));
+      h('div', { class: 't-title-col' }, title, meta, editing() ? null : h('div', { class: 'pin-row' }, pinButton('tournaments', t.id, 'event'),
+        calendarOk(t) ? h('button', { type: 'button', class: 'pin-btn', onClick: () => openCalendarDialog([t]) }, 'Add to calendar') : null))));
   // Opening a pinned event counts as having seen what's new in it.
   const al = tournamentAlert(t);
   if (al) markSeen(al.kind, al.id, al.mids);
@@ -1257,6 +1301,7 @@ function roundView(t, s, rd, i) {
   } else if (rd.locked && revealed) {
     head.append(h('button', { type: 'button', class: 'text-btn', onClick: () => { setRevealed(rd.id, false); rerender(); } }, 'Hide again'));
   }
+  if (open && !editing() && shortReady(rd)) head.append(h('span', { class: 'short-tag' }, 'Short versions ready'));
   const wrap = h('div', { class: 'round' }, head);
   if (open) {
     if (!rd.matches.length && !editing()) wrap.append(h('p', { class: 'empty' }, 'No matches in this round yet.'));
@@ -1309,8 +1354,11 @@ function renderPlayer(app, r) {
   const f = findMatch(r.mid);
   if (!f) return renderNotFound(app);
   const { t, s, rd, m } = f;
-  const idx = Math.min(Math.max(0, r.map || 0), m.maps.length - 1);
-  const map = m.maps[idx];
+  const hasShort = !!m.highlight && shortReady(rd);
+  // The short version plays as slot -1: the whole highlight video, with nothing to skip into.
+  const short = !!r.short && hasShort;
+  const idx = short ? -1 : Math.min(Math.max(0, r.map || 0), m.maps.length - 1);
+  const map = short ? { name: '', video: m.highlight, start: '', end: '', notPlayed: false } : m.maps[idx];
   const page = h('div', { class: 'wrap player-page' + (store.get('wide', false) ? ' wide' : '') },
     h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' },
       h('a', { href: '#/t/' + t.id }, t.name || 'Tournament'), sep(),
@@ -1325,7 +1373,7 @@ function renderPlayer(app, r) {
     h('div', { class: 'player', id: 'player' }, frame, ctl.bar),
     h('div', { class: 'match-head' },
       h('h1', { class: 'match-title' }, teamName(m.a), ' ', h('span', { class: 'vs' }, 'versus'), ' ', teamName(m.b)),
-      metaLine(['Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), s.name, rd.name, 'Best of ' + m.bo, m.date]),
+      metaLine([short ? 'Short version' : 'Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), s.name, rd.name, 'Best of ' + m.bo, m.date]),
       editing() ? null : h('div', { class: 'pin-row' }, [m.a, m.b].filter(id => team(id)).map(id => pinButton('teams', id, teamName(id))))),
     editing() ? h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match')) : null);
 
@@ -1344,10 +1392,14 @@ function renderPlayer(app, r) {
     h('div', { class: 'maps-head' }, h('h2', { class: 'maps-title' }, 'Maps'), h('span', { class: 'hint' }, 'Best of ' + m.bo)),
     h('div', { class: 'map-list' }, m.maps.map((mp, i) => h('a', { class: 'map-btn', href: '#/match/' + m.id + '/' + i, 'aria-current': i === idx ? 'true' : null },
       h('span', { class: 'map-label' }, 'Map ' + (i + 1)),
-      h('span', { class: 'map-state' }, i === idx ? 'Now showing' : 'Open')))),
+      h('span', { class: 'map-state' }, i === idx ? 'Now showing' : 'Open'))),
+      hasShort ? h('a', { class: 'map-btn short-btn', href: '#/match/' + m.id + '/short', 'aria-current': short ? 'true' : null },
+        h('span', { class: 'map-label' }, 'Short version'),
+        h('span', { class: 'map-state' }, short ? 'Now showing' : 'Highlights')) : null),
     h('p', { class: 'hint' }, 'Every possible map is listed, so this list can’t tell you how long the series went. Map names only show for the map you’re on.'),
+    hasShort ? h('p', { class: 'hint' }, 'Short on time? The short version is the organiser’s highlights of the whole series. Its length stays hidden and it plays map by map, so it gives nothing away early. Every match in this round has one.') : null,
     wbtn,
-    h('p', { class: 'hint' }, 'Keys: Space plays or pauses. ← and → skip 10 seconds, hold Shift for 30. W for a wide player, F for full screen.'));
+    h('p', { class: 'hint' }, 'Keys: Space plays or pauses. ← and → skip 10 seconds, hold Shift for 30. < and > change the speed. W for a wide player, F for full screen.'));
   page.append(h('div', { class: 'player-row' }, col, aside));
 
   const others = rd.matches.filter(x => x !== m);
@@ -1355,7 +1407,7 @@ function renderPlayer(app, r) {
     h('h2', { class: 'h2 h2-sm' }, 'More from ' + (rd.name || 'this round')),
     h('div', { class: 'grid' }, others.map(x => matchCard(x, rd)))));
   app.append(page);
-  mountPlayer(f, idx, { host, cover, ctl, frame });
+  mountPlayer(f, idx, map, { host, cover, ctl, frame });
 }
 function buildControls() {
   const btn = (label, content) => h('button', { type: 'button', class: 'ctl', 'aria-label': label }, content);
@@ -1368,15 +1420,43 @@ function buildControls() {
     elapsed: h('span', { class: 'elapsed', title: 'Time watched so far' }, '0:00'),
     mute: btn('Mute', icon('vol', 22)),
     vol: h('input', { type: 'range', min: '0', max: '100', step: '5', value: '100', class: 'vol', id: 'vol', 'aria-label': 'Volume' }),
+    speed: btn('Playback speed', speedLabel(speedPref())),
     wide: btn(store.get('wide', false) ? 'Normal size' : 'Wide player', icon(store.get('wide', false) ? 'narrow' : 'wide', 22)),
     fs: btn('Full screen', icon('fs', 22))
   };
   c.wide.title = 'Wide player (W)';
+  c.speed.classList.add('ctl-q');
+  c.speed.title = 'Playback speed (< and >)';
+  c.speed.addEventListener('click', () => stepSpeed(1, true));
   c.wide.addEventListener('click', toggleWide);
   buildQualityMenu(c);
   c.bar = h('div', { class: 'controls' }, c.play, c.b30, c.b10, c.f10, c.f30, h('span', { class: 'spacer' }),
-    c.elapsed, h('span', { class: 'len-hidden' }, icon('eyeoff', 16), h('span', {}, 'Length hidden')), c.mute, c.vol, c.qwrap, c.wide, c.fs);
+    c.elapsed, h('span', { class: 'len-hidden' }, icon('eyeoff', 16), h('span', {}, 'Length hidden')), c.mute, c.vol, c.speed, c.qwrap, c.wide, c.fs);
   return c;
+}
+
+/* ---------- playback speed ----------
+   Watching faster is the simplest way to fit a match into less time, and it gives nothing away. */
+const SPEEDS = [1, 1.25, 1.5, 1.75, 2];
+function speedPref() { const v = store.get('speed', 1); return SPEEDS.includes(v) ? v : 1; }
+const speedLabel = v => String(v).replace(/^0/, '') + '×';
+// Moves one step up or down the list of speeds (wrapping round when clicked).
+function stepSpeed(d, wrapRound) {
+  let i = SPEEDS.indexOf(speedPref()) + d;
+  if (wrapRound) i = (i + SPEEDS.length) % SPEEDS.length;
+  i = Math.min(Math.max(0, i), SPEEDS.length - 1);
+  store.set('speed', SPEEDS[i]);
+  applySpeed();
+  if (P) toast('Speed ' + speedLabel(SPEEDS[i]));
+}
+function applySpeed() {
+  const st = P;
+  if (!st) return;
+  const v = speedPref();
+  st.els.ctl.speed.textContent = speedLabel(v);
+  st.els.ctl.speed.setAttribute('aria-label', 'Playback speed ' + speedLabel(v));
+  if (!st.ready) return;
+  try { st.yt.setPlaybackRate(v); } catch (e) { /* the video doesn't allow it */ }
 }
 
 /* ---------- video quality ----------
@@ -1484,12 +1564,12 @@ function loadYT() {
 function currentTime() {
   try { return (P && P.ready && P.yt.getCurrentTime()) || 0; } catch (e) { return 0; }
 }
-function mountPlayer(f, idx, els) {
-  const m = f.m, map = m.maps[idx];
+function mountPlayer(f, idx, map, els) {
+  const m = f.m;
   const st = { f, m, idx, els, yt: null, ready: false, played: false, timer: null, maskTimer: null, lastSave: 0, mode: '', resumeAt: 0 };
   P = st;
   const c = els.ctl;
-  const live = [c.play, c.b30, c.b10, c.f10, c.f30, c.mute, c.vol];
+  const live = [c.play, c.b30, c.b10, c.f10, c.f30, c.mute, c.vol, c.speed];
   live.forEach(b => { b.disabled = true; });
   c.play.addEventListener('click', togglePlay);
   c.b30.addEventListener('click', () => seek(-30));
@@ -1556,6 +1636,7 @@ function mountPlayer(f, idx, els) {
           st.ready = true;
           live.forEach(b => { b.disabled = false; });
           applyVol();
+          applySpeed();
           setCover('start');
           if (auto) st.yt.playVideo();
           st.timer = setInterval(tick, 500);
@@ -1603,8 +1684,8 @@ function setCover(mode) {
   c.className = 'cover';
   c.replaceChildren();
   const { t, s, rd, m } = st.f;
-  const idx = st.idx, label = 'Map ' + (idx + 1);
-  const next = idx + 1 < m.maps.length ? idx + 1 : -1;
+  const idx = st.idx, label = idx < 0 ? 'Short version' : 'Map ' + (idx + 1);
+  const next = idx >= 0 && idx + 1 < m.maps.length ? idx + 1 : -1;
   const back = () => h('a', { class: 'btn btn-ghost', href: '#/t/' + t.id + '/' + s.id }, 'Back to ' + (rd.name || 'the round'));
   const playBtn = () => h('button', { type: 'button', class: 'big-play', 'aria-label': 'Play', onClick: e => { e.stopPropagation(); togglePlay(); } }, icon('play', 36, 'currentColor'));
   if (mode === 'loading') {
@@ -1617,7 +1698,7 @@ function setCover(mode) {
     c.append(h('div', { class: 'cover-eyebrow' }, 'Paused · ' + label), h('div', { class: 'cover-title', id: 'cover-time' }, fmt(mapTime(st))), playBtn());
   } else if (mode === 'ended') {
     c.append(h('div', { class: 'cover-eyebrow' }, 'End of ' + label),
-      h('div', { class: 'cover-title' }, next >= 0 ? 'Ready for Map ' + (next + 1) + '?' : 'That’s the end of the series'),
+      h('div', { class: 'cover-title' }, next >= 0 ? 'Ready for Map ' + (next + 1) + '?' : idx < 0 ? 'That’s the end of the short version' : 'That’s the end of the series'),
       h('div', { class: 'btn-row center' },
         next >= 0 ? h('a', { class: 'btn btn-accent', href: '#/match/' + m.id + '/' + next, onClick: () => { autoplayNext = true; } }, 'Play Map ' + (next + 1)) : null,
         back()));
@@ -1765,6 +1846,8 @@ document.addEventListener('keydown', e => {
   else if (k === 'm' || k === 'M') toggleMute();
   else if (k === 'f' || k === 'F') toggleFullscreen();
   else if (k === 'w' || k === 'W') toggleWide();
+  else if (k === '>' || k === '.' && e.shiftKey) stepSpeed(1);
+  else if (k === '<' || k === ',' && e.shiftKey) stepSpeed(-1);
 });
 window.addEventListener('pagehide', () => {
   if (P && P.ready && P.mode !== 'ended') { const t = currentTime(); if (t > 15) saveResume(P.m.id, P.idx, t); }
