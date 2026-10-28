@@ -25,7 +25,7 @@ import { readFile, writeFile, appendFile, mkdir, readdir, unlink } from 'node:fs
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { parsePage, parseInfobox, teamNamesFromExpansion, PARSER_VERSION } from './liquipedia.mjs';
+import { parsePage, parseInfobox, teamNamesFromExpansion, teamLogoFiles, PARSER_VERSION } from './liquipedia.mjs';
 import { findHighlights } from './highlights.mjs';
 import { buildCalendars } from './calendar.mjs';
 
@@ -35,6 +35,7 @@ const FILES = {
   state: path.join(ROOT, 'watcher', 'state.json'),
   auto: path.join(ROOT, 'auto.json'),
   autoImages: path.join(ROOT, 'images', 'auto'),
+  teamImages: path.join(ROOT, 'images', 'teams'),
   calendar: path.join(ROOT, 'calendar'),
   ownImages: path.join(ROOT, 'images', 'events')
 };
@@ -538,6 +539,60 @@ async function main() {
     if (ids.has(key)) continue;
     await unlink(path.join(FILES.autoImages, img.saved)).catch(() => {});
     delete state.images[key];
+  }
+
+  /* 6a. team logos: each team's logo (and its version for dark backgrounds, where there is one) is copied from
+         Liquipedia's team template ({{TeamIcon|key}}) into images/teams/<team-id>.png once. Logos carry no results. */
+  state.teamLogos = (state.teamLogos && typeof state.teamLogos === 'object') ? state.teamLogos : {};
+  let haveTeams = [];
+  try { haveTeams = await readdir(FILES.teamImages); } catch (e) { /* no folder yet */ }
+  const keyOf = new Map();
+  for (const [k, t] of Object.entries(state.teams)) if (usedTeams.has(t.id) && !keyOf.has(t.id)) keyOf.set(t.id, k);
+  const unseen = [...keyOf].filter(([id]) => !state.teamLogos[id]);
+  for (let i = 0; i < unseen.length && i < 120; i += 40) {
+    const batch = unseen.slice(i, i + 40);
+    try {
+      const res = await lp({ action: 'expandtemplates', prop: 'wikitext', text: batch.map(([, k]) => '{{TeamIcon|' + k + '}}').join('\n@@@\n') });
+      const parts = res.expandtemplates.wikitext.split('@@@');
+      batch.forEach(([id], j) => { state.teamLogos[id] = { ...teamLogoFiles(parts[j] || ''), saved: {} }; });
+    } catch (e) { warn('Couldn’t look up team logos: ' + e.message); break; }
+  }
+  const wantLogos = [];
+  for (const [id] of keyOf) {
+    const tl = state.teamLogos[id];
+    if (!tl) continue;
+    for (const [field, file, saved] of [['logo', tl.light, id + '.png'], ['logoDark', tl.dark && tl.dark !== tl.light ? tl.dark : '', id + '-dark.png']]) {
+      if (!file) continue;
+      if (haveTeams.includes(saved) && (tl.saved[field] === file || !tl.saved[field])) { tl.saved[field] = file; continue; }
+      wantLogos.push({ id, field, file, saved, tl });
+    }
+  }
+  if (wantLogos.length) {
+    await mkdir(FILES.teamImages, { recursive: true });
+    const batch = wantLogos.slice(0, +config.maxTeamLogosPerRun || 40);
+    try {
+      const res = await lp({ action: 'query', prop: 'imageinfo', iiprop: 'url|mime', iiurlwidth: '256', titles: [...new Set(batch.map(w => 'File:' + w.file))].join('|') });
+      const norm = new Map(arr(res.query.normalized).map(n => [n.to, n.from]));
+      const urls = new Map(arr(res.query.pages).map(p => [norm.get(p.title) || p.title, p.imageinfo && p.imageinfo[0]]));
+      for (const w of batch) {
+        const ii = urls.get('File:' + w.file);
+        if (!ii) continue;
+        const wait = lastLp + LP_DELAY - Date.now();
+        if (wait > 0) await sleep(wait);
+        lastLp = Date.now();
+        const r = await fetch(ii.thumburl || ii.url, { headers: { 'User-Agent': USER_AGENT } });
+        if (!r.ok) { warn('Couldn’t download the logo ' + w.file + ': HTTP ' + r.status); continue; }
+        await writeFile(path.join(FILES.teamImages, w.saved), Buffer.from(await r.arrayBuffer()));
+        w.tl.saved[w.field] = w.file;
+        if (!haveTeams.includes(w.saved)) haveTeams.push(w.saved);
+      }
+    } catch (e) { warn('Couldn’t fetch team logos: ' + e.message); }
+  }
+  for (const t of auto.teams) {
+    const tl = state.teamLogos[t.id];
+    if (!tl) continue;
+    if (tl.saved.logo && haveTeams.includes(t.id + '.png')) t.logo = 'images/teams/' + t.id + '.png';
+    if (tl.saved.logoDark && haveTeams.includes(t.id + '-dark.png')) t.logoDark = 'images/teams/' + t.id + '-dark.png';
   }
 
   /* 6b. calendar feeds, one per event, for the site's "Add to calendar" */

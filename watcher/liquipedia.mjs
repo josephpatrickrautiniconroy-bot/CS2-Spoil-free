@@ -226,3 +226,13 @@ export function teamNamesFromExpansion(wikitext) {
     return m ? { page: plain(m[1]), name: plain(m[2] || m[1]) } : null;
   });
 }
+
+/* One expanded {{TeamIcon|key}} -> { light, dark } logo file names. The template wraps them in spans
+   marked lightmode and darkmode; a team with a single logo uses it for both. */
+export function teamLogoFiles(wikitext) {
+  const t = String(wikitext);
+  const files = [...t.matchAll(/\[\[(?:File|Image):([^|\]]+)/gi)].map(m => m[1].trim());
+  const dark = (t.match(/darkmode[^[]*\[\[(?:File|Image):([^|\]]+)/i) || [])[1];
+  const light = (t.match(/lightmode[^[]*\[\[(?:File|Image):([^|\]]+)/i) || [])[1];
+  return { light: (light || files[0] || '').trim(), dark: (dark || '').trim() };
+}
