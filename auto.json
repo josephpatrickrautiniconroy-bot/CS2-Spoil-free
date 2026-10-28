@@ -4586,8 +4586,8 @@
       "stageOrder": 0,
       "round": "Round 5",
       "roundOrder": 5,
-      "a": "lp-furia",
-      "b": "lp-team-liquid",
+      "a": "lp-team-liquid",
+      "b": "lp-furia",
       "bo": 3,
       "date": "28 Oct"
     },
@@ -11259,15 +11259,15 @@
     "lp-eba4f5a003": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/c_fWIKhjYsg",
+          "start": "33",
+          "end": "2198",
           "name": "Inferno",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/c_fWIKhjYsg",
+          "start": "2198",
           "end": "",
           "name": "Dust II",
           "notPlayed": false
@@ -11357,6 +11357,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-27T20:14:08.326Z",
+  "updatedAt": "2026-10-28T01:56:54.648Z",
   "featured": "pgl-masters-bucharest-2026"
 }
