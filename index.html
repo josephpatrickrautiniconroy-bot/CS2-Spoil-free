@@ -210,6 +210,22 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .pin-alerts ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .pin-alert{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-top:1px solid var(--rule);padding-top:10px}
 .pin-alert-text{display:flex;flex-direction:column;gap:2px;min-width:0;overflow-wrap:anywhere}
+/* Watch party */
+.party{border:2px solid var(--strong);background:var(--raised);padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.party p{margin:0}
+.party-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.party-title{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.1;text-transform:uppercase;margin:0}
+.party-form{display:flex;gap:8px}
+.party-form .input{flex:1;min-width:0}
+.btn-sm{min-height:44px;padding:6px 16px;font-size:18px}
+.party-log{list-style:none;margin:0;padding:8px 10px;min-height:120px;max-height:280px;overflow-y:auto;border:1px solid var(--rule);background:var(--paper);display:flex;flex-direction:column;gap:4px;font-size:15px;overflow-wrap:anywhere}
+.party-log .sys{color:var(--muted);font-size:13px}
+.party-log b,.party-pop b{font-weight:600}
+.party-name{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.party-name .input{flex:1;min-width:0;min-height:40px}
+.party-pop{position:absolute;top:12px;right:12px;z-index:4;max-width:min(60%,420px);background:rgba(11,12,14,.88);color:#F2EFE8;padding:8px 12px;font-size:15px;line-height:1.4;pointer-events:none;overflow-wrap:anywhere}
+.party-pop[hidden]{display:none}
+.party-bar{margin-top:24px;border:2px solid var(--strong);background:var(--raised);padding:12px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px}
 .pin-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;background:transparent;color:var(--ink);border:2px solid var(--strong);font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 .pin-btn[aria-pressed="true"]{background:var(--inv);color:var(--inv-ink)}
 .pin-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
@@ -1065,6 +1081,7 @@ function route(keepScroll, initial) {
   if (editing() && data.site.example) app.append(exampleNotice());
   const alerts = alertsPanel();
   if (alerts) app.append(alerts);
+  if (party && r.name !== 'player') app.append(partyBar());
   if (r.name === 'tournament') renderTournament(app, r);
   else if (r.name === 'player') renderPlayer(app, r);
   else renderHome(app, r);
@@ -1413,7 +1430,7 @@ function renderPlayer(app, r) {
 
   const host = h('div', { id: 'yt-host' });
   const cover = h('div', { class: 'cover', id: 'cover' });
-  const frame = h('div', { class: 'video-frame' }, host, cover);
+  const frame = h('div', { class: 'video-frame' }, host, cover, h('div', { class: 'party-pop', id: 'party-pop', hidden: true, 'aria-hidden': 'true' }));
   const ctl = buildControls();
   const col = h('div', { class: 'player-col' },
     h('div', { class: 'player', id: 'player' }, frame, ctl.bar),
@@ -1447,6 +1464,7 @@ function renderPlayer(app, r) {
     h('p', { class: 'hint' }, 'Every possible map is listed, so this list can’t tell you how long the series went. Map names only show for the map you’re on.'),
     wbtn,
     rbox,
+    editing() ? null : partyBox(),
     h('p', { class: 'hint' }, 'Keys: Space plays or pauses. ← and → skip 10 seconds, hold Shift for 30. W for a wide player, F for full screen.'));
   page.append(h('div', { class: 'player-row' }, col, aside));
 
@@ -1456,6 +1474,8 @@ function renderPlayer(app, r) {
     h('div', { class: 'grid' }, others.map(x => matchCard(x, rd)))));
   app.append(page);
   mountPlayer(f, idx, { host, cover, ctl, frame });
+  partyRender();
+  partyOnPlayer();
 }
 function buildControls() {
   const btn = (label, content) => h('button', { type: 'button', class: 'ctl', 'aria-label': label }, content);
@@ -1609,7 +1629,7 @@ function mountPlayer(f, idx, els) {
   els.cover.addEventListener('click', e => {
     if (e.target.closest('button, a')) return;
     if (st.tapWoke) { st.tapWoke = false; return; } // a tap on hidden controls only brings them back
-    if (st.mode === 'start' || st.mode === 'paused' || st.mode === 'clear') togglePlay();
+    if (st.mode === 'start' || st.mode === 'paused' || st.mode === 'clear' || st.mode === 'party') togglePlay();
   });
   els.cover.addEventListener('dblclick', e => { if (!e.target.closest('button, a')) toggleFullscreen(); });
   // In full screen the controls fade out after 3 seconds without mouse, touch or key input while the map plays.
@@ -1639,6 +1659,7 @@ function mountPlayer(f, idx, els) {
   const startAt = st.resumeAt || st.start;
   const auto = autoplayNext;
   autoplayNext = false;
+  st.auto = auto;
   setCover('loading');
   loadYT().then(YT => {
     if (P !== st) return;
@@ -1658,6 +1679,7 @@ function mountPlayer(f, idx, els) {
           applyVol();
           setCover('start');
           if (auto) st.yt.playVideo();
+          partyApply();
           st.timer = setInterval(tick, 500);
           tick();
         },
@@ -1711,8 +1733,11 @@ function setCover(mode) {
     c.append(h('div', { class: 'spinner', 'aria-hidden': 'true' }), h('p', { class: 'cover-sub' }, 'Loading the video…'));
   } else if (mode === 'start') {
     c.append(h('div', { class: 'cover-eyebrow' }, label), h('div', { class: 'cover-title' }, teamName(m.a) + ' vs ' + teamName(m.b)), playBtn(),
-      st.resumeAt ? h('div', { class: 'resume' }, h('span', {}, 'Picks up where you left off, at ' + fmt(st.resumeAt - st.start) + '.'),
+      st.resumeAt && !partyHere() ? h('div', { class: 'resume' }, h('span', {}, 'Picks up where you left off, at ' + fmt(st.resumeAt - st.start) + '.'),
         h('button', { type: 'button', class: 'text-btn light', onClick: e => { e.stopPropagation(); restart(); } }, 'Start from the beginning')) : '');
+  } else if (mode === 'party') {
+    c.append(h('div', { class: 'cover-eyebrow' }, 'Watch party · ' + label), h('div', { class: 'cover-title' }, 'Your party is watching'), playBtn(),
+      h('p', { class: 'cover-sub' }, 'Press play to join in.'));
   } else if (mode === 'paused') {
     c.append(h('div', { class: 'cover-eyebrow' }, 'Paused · ' + label), h('div', { class: 'cover-title', id: 'cover-time' }, fmt(mapTime(st))), playBtn());
   } else if (mode === 'ended') {
@@ -1758,14 +1783,21 @@ function tick() {
   st.els.ctl.elapsed.textContent = fmt(mapTime(st));
   if (st.mode === 'paused') { const ct = document.getElementById('cover-time'); if (ct) ct.textContent = fmt(mapTime(st)); }
   const now = Date.now();
+  if (party && now - (st.lastDrift || 0) > 3000) { st.lastDrift = now; partyDrift(); }
   if (st.mode !== 'ended' && t > 15 && now - st.lastSave > 4000) { st.lastSave = now; saveResume(st.m.id, st.idx, t); }
 }
 function togglePlay() {
   const st = P;
   if (!st || !st.ready) return;
   const s = st.yt.getPlayerState();
-  if (s === 1 || s === 3) st.yt.pauseVideo();
-  else if (st.mode !== 'ended') st.yt.playVideo();
+  if (s === 1 || s === 3) { st.yt.pauseVideo(); partySend('pause', false, currentTime()); }
+  else if (st.mode !== 'ended') {
+    // In a party, play starts from where the party is (it may be further on, for someone who just joined).
+    const ps = partyHere();
+    if (ps) { const want = partyPos(ps, st); if (s === -1 || s === 5 || Math.abs(currentTime() - want) > 1) st.yt.seekTo(want, true); }
+    st.yt.playVideo();
+    if (!(ps && ps.playing)) partySend('play', true, ps ? partyPos(ps, st) : currentTime());
+  }
 }
 function seek(d) {
   const st = P;
@@ -1774,6 +1806,8 @@ function seek(d) {
   let to = Math.max(st.start || 0, currentTime() + d);
   if (st.end) to = Math.min(to, st.end);
   st.yt.seekTo(to, true);
+  const ps = st.yt.getPlayerState();
+  partySend('seek', ps === 1 || ps === 3, to, { d });
   setTimeout(tick, 150);
 }
 function restart() {
@@ -1783,6 +1817,7 @@ function restart() {
   clearResume(st.m.id, st.idx);
   st.yt.seekTo(st.start || 0, true);
   st.yt.playVideo();
+  partySend('restart', true, st.start || 0);
 }
 function updatePlayIcon(playing) {
   if (!P) return;
@@ -1869,6 +1904,328 @@ document.addEventListener('keydown', e => {
 window.addEventListener('pagehide', () => {
   if (P && P.ready && P.mode !== 'ended') { const t = currentTime(); if (t > 15) saveResume(P.m.id, P.idx, t); }
 });
+
+/* ---------- watch parties ----------
+   Friends open the same link and watch together. Play, pause, skips and map changes reach everyone in
+   the party, and there's a chat. Browsers connect to each other directly (WebRTC); public Nostr relays
+   only help them find each other, so there's no server and no account. Only map times are shared, never
+   a video's length or a result, and people who join later don't see earlier chat, so it can't spoil. */
+const PARTY_APP = 'cs2-spoil-free-party-v1';
+const PARTY_CHARS = 'abcdefghjkmnpqrstuvwxyz23456789';
+let party = null;
+function newPartyCode() {
+  const b = new Uint8Array(10);
+  crypto.getRandomValues(b);
+  return Array.from(b, x => PARTY_CHARS[x % PARTY_CHARS.length]).join('');
+}
+const partyParam = () => (new URLSearchParams(location.search).get('party') || '').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 16);
+function partyUrl(code) {
+  const q = new URLSearchParams(location.search);
+  if (code) q.set('party', code); else q.delete('party');
+  const s = q.toString();
+  return location.pathname + (s ? '?' + s : '') + location.hash;
+}
+const partyLink = () => location.origin + partyUrl(party.code);
+
+/* The connection. Every way of connecting offers the same few calls: send(type, data, to), on(type, fn),
+   onJoin, onLeave and leave(). ?party-net=local connects tabs of one browser instead, for testing. */
+function partyNet(code) {
+  if (new URLSearchParams(location.search).get('party-net') === 'local') return Promise.resolve(localPartyNet(code));
+  return import('./vendor/trystero-nostr.mjs').then(T => {
+    const room = T.joinRoom({ appId: PARTY_APP, password: code }, code);
+    const acts = {};
+    const act = type => acts[type] || (acts[type] = room.makeAction(type));
+    const net = {
+      self: T.selfId, onJoin: null, onLeave: null,
+      send: (type, data, to) => { act(type).send(data, to ? { target: to } : undefined).catch(() => {}); },
+      on: (type, fn) => { act(type).onMessage = (d, ctx) => fn(d, ctx.peerId); },
+      leave: () => { room.leave().catch(() => {}); }
+    };
+    room.onPeerJoin = id => net.onJoin && net.onJoin(id);
+    room.onPeerLeave = id => net.onLeave && net.onLeave(id);
+    return net;
+  });
+}
+function localPartyNet(code) {
+  const self = Math.random().toString(36).slice(2, 10);
+  const bc = new BroadcastChannel('sf-party-' + code);
+  const peers = new Set(), handlers = {};
+  const net = { self, onJoin: null, onLeave: null };
+  const post = (type, data, to) => bc.postMessage({ from: self, to, type, data });
+  bc.onmessage = e => {
+    const { from, to, type, data } = e.data || {};
+    if (to && to !== self) return;
+    if (type === '_hi') { if (!peers.has(from)) { peers.add(from); post('_hi', null, from); if (net.onJoin) net.onJoin(from); } return; }
+    if (type === '_bye') { if (peers.delete(from) && net.onLeave) net.onLeave(from); return; }
+    if (handlers[type]) handlers[type](data, from);
+  };
+  net.send = post;
+  net.on = (type, fn) => { handlers[type] = fn; };
+  net.leave = () => { post('_bye'); bc.close(); };
+  window.addEventListener('pagehide', () => { if (party && party.net === net) post('_bye'); });
+  setTimeout(() => post('_hi'), 0);
+  return net;
+}
+
+function partyName() {
+  const n = str(store.get('partyName', '')).trim();
+  return n || 'Guest ' + String(Math.floor(Math.random() * 90) + 10);
+}
+const cleanName = v => str(v).replace(/\s+/g, ' ').trim().slice(0, 24) || 'Someone';
+function joinParty(code, starting) {
+  if (party) leaveParty(true);
+  const me = { code, net: null, name: partyName(), peers: {}, log: [], state: null, synced: !!starting, joinedAt: Date.now(), status: 'connecting', els: null };
+  party = me;
+  if (starting) { history.replaceState(null, '', partyUrl(code)); partyStateFromPlayer(false); }
+  partyNote(starting ? 'You started a watch party. Send the link to your friends.' : 'You joined the watch party. Earlier chat isn’t shown, so nothing gets spoiled.');
+  partyRender();
+  partyNet(code).then(net => {
+    if (party !== me) { net.leave(); return; }
+    me.net = net;
+    me.status = 'on';
+    net.onJoin = id => {
+      if (!me.peers[id]) me.peers[id] = { name: 'Someone', named: false };
+      net.send('hi', { name: me.name }, id);
+      if (me.synced && me.state) net.send('sync', partyWire(me.state), id);
+      partyRender();
+    };
+    net.onLeave = id => {
+      const p = me.peers[id];
+      if (!p) return;
+      delete me.peers[id];
+      if (p.named) partyNote(p.name + ' left');
+      partyRender();
+    };
+    net.on('hi', (d, id) => {
+      const p = me.peers[id] || (me.peers[id] = { name: 'Someone', named: false });
+      const name = cleanName(d && d.name);
+      if (!p.named) partyNote(name + (Date.now() - me.joinedAt > 8000 ? ' joined' : ' is here'));
+      else if (p.name !== name) partyNote(p.name + ' is now called ' + name);
+      p.name = name;
+      p.named = true;
+      partyRender();
+    });
+    net.on('sync', (d, id) => {
+      if (me.synced) return;
+      me.synced = true;
+      partyRemote(d, id, true);
+    });
+    net.on('state', (d, id) => { me.synced = true; partyRemote(d, id, false); });
+    net.on('chat', (d, id) => {
+      const text = str(d && d.text).trim().slice(0, 300);
+      if (!text) return;
+      const who = (me.peers[id] && me.peers[id].name) || 'Someone';
+      partyAdd({ who, text });
+    });
+    partyRender();
+  }).catch(() => {
+    if (party !== me) return;
+    me.status = 'failed';
+    partyRender();
+  });
+}
+function leaveParty(quiet) {
+  if (!party) return;
+  const me = party;
+  party = null;
+  if (me.net) me.net.leave();
+  history.replaceState(null, '', partyUrl(''));
+  if (quiet) return;
+  partyRender();
+  const bar = document.getElementById('party-bar');
+  if (bar) bar.remove();
+  toast('You left the watch party');
+}
+// Sound only plays once the visitor has clicked or pressed a key on the page, so someone who opens a
+// party link gets a "Join in" button instead of a video that starts by itself.
+let pageTouched = false;
+for (const ev of ['pointerdown', 'keydown']) document.addEventListener(ev, () => { pageTouched = true; }, { capture: true, once: true });
+const canAutoplay = () => pageTouched || !!(navigator.userActivation && navigator.userActivation.hasBeenActive);
+
+/* What the party is watching: a match, a map, whether it's playing, and the video time at a moment
+   (performance.now() here, so clocks on different computers never need to agree). */
+const partyWire = s => ({ mid: s.mid, map: s.map, playing: s.playing, t: Math.round(partyPos(s) * 10) / 10 });
+function partyPos(s, st) {
+  let t = s.t + (s.playing ? (performance.now() - s.at) / 1000 : 0);
+  if (st) { t = Math.max(st.start || 0, t); if (st.end) t = Math.min(t, st.end); }
+  return t;
+}
+function partyHere() {
+  const s = party && party.state;
+  return s && P && s.mid === P.m.id && s.map === P.idx ? s : null;
+}
+function mapStart(mid, i) {
+  const f = findMatch(mid), mp = f && f.m.maps[i];
+  return mp ? (toSeconds(mp.start) || parseYouTube(mp.video).start || 0) : 0;
+}
+function partyStateFromPlayer(playing, t) {
+  if (!party || !P) return null;
+  const st = P;
+  party.state = { mid: st.m.id, map: st.idx, playing, t: t === undefined ? (st.played ? currentTime() : st.resumeAt || st.start || 0) : t, at: performance.now() };
+  return party.state;
+}
+// This visitor played, paused, skipped or opened a map: tell everyone.
+function partySend(act, playing, t, extra) {
+  if (!party || !P) return;
+  const s = partyStateFromPlayer(playing, t);
+  party.synced = true;
+  if (party.net) party.net.send('state', Object.assign(partyWire(s), { act }, extra || {}));
+  const line = partyActLine(act, s, extra);
+  if (line) partyNote('You ' + line);
+}
+function partyActLine(act, s, extra) {
+  const d = extra && +extra.d;
+  if (act === 'play') return 'pressed play';
+  if (act === 'pause') return 'paused at ' + fmt(s.t - mapStart(s.mid, s.map));
+  if (act === 'seek' && d) return 'skipped ' + (d > 0 ? 'forward ' : 'back ') + Math.abs(d) + 's';
+  if (act === 'restart') return 'went back to the start of the map';
+  if (act === 'go') {
+    const f = findMatch(s.mid);
+    return 'opened ' + (f ? teamName(f.m.a) + ' vs ' + teamName(f.m.b) + ', ' : '') + 'Map ' + (s.map + 1);
+  }
+  return '';
+}
+function partyRemote(d, id, quiet) {
+  if (!party || !d || typeof d !== 'object') return;
+  const f = findMatch(str(d.mid));
+  const map = Math.floor(+d.map) || 0;
+  const t = +d.t;
+  if (!f || map < 0 || map >= f.m.maps.length || !isFinite(t) || t < 0) return; // not a map on this site
+  party.state = { mid: f.m.id, map, playing: !!d.playing, t, at: performance.now() };
+  const p = party.peers[id];
+  const line = quiet ? '' : partyActLine(str(d.act), party.state, { d: +d.d || 0 });
+  if (line) partyNote(((p && p.name) || 'Someone') + ' ' + line);
+  const r = parseRoute();
+  if (r.name !== 'player' || r.mid !== f.m.id || (r.map || 0) !== map) {
+    location.hash = '#/match/' + f.m.id + '/' + map; // the player page picks the state up once the video is ready
+    return;
+  }
+  partyApply();
+}
+// Bring this player in line with the party.
+function partyApply() {
+  const st = P, s = partyHere();
+  if (!st || !st.ready || !s) return;
+  const want = partyPos(s, st);
+  let ps = -1;
+  try { ps = st.yt.getPlayerState(); } catch (e) { ps = -1; }
+  const started = st.played && ps !== -1 && ps !== 5;
+  if (s.playing) {
+    if (!canAutoplay()) { setCover('party'); return; }
+    if (Math.abs(currentTime() - want) > 1) st.yt.seekTo(want, true);
+    st.yt.playVideo();
+  } else {
+    if (ps === 1 || ps === 3) st.yt.pauseVideo();
+    // Seeking a video that hasn't started would start it, so that waits for the next press of play.
+    if (started && Math.abs(currentTime() - want) > 0.5) st.yt.seekTo(want, true);
+  }
+}
+// Called by the player every few seconds: catch up after buffering, or wait for the others.
+function partyDrift() {
+  const st = P, s = partyHere();
+  if (!st || !st.ready || !s || !s.playing || st.mode !== 'clear') return;
+  const want = partyPos(s, st);
+  if (Math.abs(currentTime() - want) > 2.5) st.yt.seekTo(want, true);
+}
+// A player page opened. If this visitor went there themselves, the party follows.
+function partyOnPlayer() {
+  if (!party || !P || partyHere()) return;
+  if (!party.synced && Date.now() - party.joinedAt > 12000 && !Object.keys(party.peers).length) party.synced = true;
+  if (!party.synced) return; // still finding out what the others are watching
+  partySend('go', !!P.auto, P.resumeAt || P.start || 0);
+}
+
+function partyAdd(item) {
+  if (!party) return;
+  party.log.push(item);
+  if (party.log.length > 200) party.log.shift();
+  const els = party.els;
+  if (els && els.log.isConnected) {
+    els.log.append(partyLine(item));
+    els.log.scrollTop = els.log.scrollHeight;
+  }
+  if (!item.sys) partyPop(item);
+}
+const partyNote = text => partyAdd({ sys: true, text });
+function partyLine(x) {
+  return x.sys ? h('li', { class: 'sys' }, x.text) : h('li', {}, h('b', {}, x.who + ': '), x.text);
+}
+// The latest chat message also shows over the video for a few seconds, so it's seen in full screen too.
+function partyPop(item) {
+  const el = document.getElementById('party-pop');
+  if (!el) return;
+  el.replaceChildren(h('b', {}, item.who + ': '), item.text);
+  el.hidden = false;
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.hidden = true; }, 6000);
+}
+function partySay(text) {
+  text = str(text).trim().slice(0, 300);
+  if (!party || !text) return;
+  if (party.net) party.net.send('chat', { text });
+  partyAdd({ who: 'You', text });
+}
+function partyRename(v) {
+  if (!party) return;
+  const name = cleanName(v);
+  if (name === party.name) return;
+  party.name = name;
+  store.set('partyName', name);
+  if (party.net) party.net.send('hi', { name });
+  partyNote('You’re now called ' + name);
+}
+
+/* The party box on the player page (and a short bar on every other page while in a party). */
+function partyBox() { return h('section', { class: 'party', id: 'party-box', 'aria-label': 'Watch party' }); }
+function partyRender() {
+  const box = document.getElementById('party-box');
+  if (box) fillPartyBox(box);
+  const bar = document.getElementById('party-bar');
+  if (bar && party) bar.replaceWith(partyBar());
+}
+function fillPartyBox(box) {
+  if (!party) {
+    box.replaceChildren(
+      h('h2', { class: 'party-title' }, 'Watch together'),
+      h('p', { class: 'hint' }, 'Start a watch party and send the link to friends. Play, pause, skips and map changes stay in sync for everyone, with a chat on the side. No account needed. Best for small groups.'),
+      h('button', { type: 'button', class: 'btn btn-outline', onClick: () => joinParty(newPartyCode(), true) }, 'Start a watch party'));
+    return;
+  }
+  const n = Object.keys(party.peers).length;
+  const status = party.status === 'connecting' ? 'Connecting…'
+    : party.status === 'failed' ? 'Couldn’t connect. Check your internet connection, or turn off anything that blocks it, then reload the page.'
+    : n ? plural(n + 1, 'person', 'people') + ' watching: you, ' + Object.values(party.peers).map(p => p.name).join(', ')
+    : 'Waiting for friends to open the link.';
+  const link = h('input', { class: 'input', type: 'text', readonly: true, value: partyLink(), 'aria-label': 'Party link', onFocus: e => e.target.select() });
+  const copy = h('button', { type: 'button', class: 'btn btn-inv btn-sm', onClick: () => {
+    const done = () => toast('Link copied. Send it to your friends.');
+    if (navigator.clipboard) navigator.clipboard.writeText(link.value).then(done, () => { link.select(); toast('Press Ctrl+C to copy the link'); });
+    else { link.select(); toast('Press Ctrl+C to copy the link'); }
+  } }, 'Copy');
+  const log = h('ul', { class: 'party-log', 'aria-live': 'polite', 'aria-label': 'Party chat' }, party.log.map(partyLine));
+  const say = h('input', { class: 'input', type: 'text', maxlength: '300', placeholder: 'Say something…', 'aria-label': 'Message', autocomplete: 'off' });
+  const form = h('form', { class: 'party-form', onSubmit: e => { e.preventDefault(); partySay(say.value); say.value = ''; say.focus(); } },
+    say, h('button', { type: 'submit', class: 'btn btn-inv btn-sm' }, 'Send'));
+  const nameIn = h('input', { class: 'input', type: 'text', maxlength: '24', value: party.name, id: 'party-name', autocomplete: 'off', onChange: e => partyRename(e.target.value) });
+  box.replaceChildren(
+    h('div', { class: 'party-head' }, h('h2', { class: 'party-title' }, 'Watch party'),
+      h('button', { type: 'button', class: 'text-btn', onClick: () => leaveParty() }, 'Leave')),
+    h('p', { class: 'hint' + (party.status === 'failed' ? ' bad' : '') }, status),
+    h('div', { class: 'party-form' }, link, copy),
+    log, form,
+    h('div', { class: 'party-name' }, h('label', { for: 'party-name' }, 'Your name'), nameIn),
+    h('p', { class: 'hint' }, 'Anyone in the party can play, pause, skip or open another map, and everyone follows. Keep results out of the chat for anyone who’s behind.'));
+  party.els = { log };
+  log.scrollTop = log.scrollHeight;
+}
+function partyBar() {
+  const s = party.state, n = Object.keys(party.peers).length;
+  return h('section', { class: 'wrap', id: 'party-bar', 'aria-label': 'Watch party' }, h('div', { class: 'party-bar' },
+    h('span', {}, h('strong', {}, 'You’re in a watch party'), n ? ' with ' + plural(n, 'other person', 'other people') : ''),
+    h('div', { class: 'row' },
+      s ? h('a', { class: 'btn btn-outline btn-sm', href: '#/match/' + s.mid + '/' + s.map }, 'Back to the video') : null,
+      h('button', { type: 'button', class: 'text-btn', onClick: () => leaveParty() }, 'Leave'))));
+}
 
 /* ---------- dialogs ---------- */
 function showDialog(dlg, title, body, foot) {
@@ -2151,6 +2508,7 @@ initTheme();
         : 'Editing your saved changes from ' + ago(d.savedAt) + '. They’re kept in this browser.');
     }
   }
+  if (!EDIT && partyParam()) joinParty(partyParam(), false);
   route(false, true);
   loadRatings();
 })();

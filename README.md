@@ -28,6 +28,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `watcher/watch.mjs`, `watcher/liquipedia.mjs` | The watcher | Nobody |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
 | `ratings/database.rules.json` | Who can read and write ratings in Firebase | Nobody, paste it into Firebase once |
+| `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
 
 ## Choosing tournaments (`watcher/config.json`)
@@ -67,6 +68,15 @@ To set it up (about 10 minutes, free Spark plan, no card needed):
    ```
 
    These two values are meant to be public; the rules decide what visitors can do.
+
+## Watch parties
+
+On any match page, **Start a watch party** gives a link to send to friends. Everyone who opens it watches together: play, pause, skips and opening another map happen for everyone, and there's a chat beside the video (the latest message also shows over the video, so it's seen in full screen). Anyone can name themselves.
+
+- There are no accounts and no server. Browsers connect to each other directly, and public Nostr relays only help them find each other. Some strict networks (some workplaces and mobile carriers) block direct connections, so a friend there may not be able to join.
+- It's spoiler-free: only the time into the map is shared, never a video's length or a result. People who join later don't see the earlier chat, and land wherever the party is.
+- Someone who opens the link gets a "Join in" button first, because browsers only play sound after a click.
+- Best for small groups, up to about eight.
 
 ## Event pictures
 
