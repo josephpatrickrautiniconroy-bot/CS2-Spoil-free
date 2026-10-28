@@ -4,409 +4,488 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Spoiler-Free CS2</title>
+<meta name="theme-color" content="#0a0a0b">
 <meta name="description" content="Watch CS2 tournament videos without spoilers: no scores, no video lengths, no giveaways.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,600&amp;family=Barlow:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&amp;family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,500&amp;display=swap">
 <style>
-/* Layout: broadcast lower-third. Cream paper, ink bars, one red; dark mode inverts to charcoal with cream type. */
+/* Layout: Theatre. A dark cinema: black, one orange, tall event posters and rows of tiles.
+   Pages: home (a marquee of the featured event, or the match you were watching), event (rounds down the
+   side like seasons, matches as numbered episodes), match (the player with a side panel that closes). */
 :root{
-  --paper:#F2EFE8; --ink:#15171A; --muted:#4A4D52; --rule:#CFC9BC; --frame:#15171A;
-  --thumb:#E6E0D3; --raised:#FFFFFF; --ph-line:#9A9488; --ph-ink:#5E5A52;
-  --accent:#C8372D; --accent-hover:#A92D25; --accent-ink:#C8372D; --accent-ink-hover:#9E2A22; --on-accent:#FFFFFF;
-  --bar:#15171A; --bar-ink:#F2EFE8; --bar-line:#5A5D63; --bar-accent:#E2483D;
-  --band:#15171A; --band-ink:#F2EFE8; --band-muted:#CFCBC2;
-  --strong:#15171A; --inv:#15171A; --inv-ink:#F2EFE8;
-  --edit:#1F5FA8; --edit-soft:rgba(31,95,168,.10); --edit-bar:#1F4F8A;
-  --ok:#2E7D4F; --controls:#222428;
-  --display:'Barlow Condensed','Arial Narrow','Roboto Condensed',sans-serif;
-  --body:'Barlow','Segoe UI','Helvetica Neue',Arial,sans-serif;
-  color-scheme:light;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#17181B; --ink:#F2EFE8; --muted:#B4B0A7; --rule:#34373C; --frame:#4A4D52;
-    --thumb:#26282C; --raised:#212327; --ph-line:#5A5D63; --ph-ink:#B4B0A7;
-    --accent:#C8372D; --accent-hover:#DB4236; --accent-ink:#EE6B5F; --accent-ink-hover:#F59088; --on-accent:#FFFFFF;
-    --bar:#0E0F11; --bar-ink:#F2EFE8; --bar-line:#5A5D63; --bar-accent:#EE6B5F;
-    --band:#0E0F11; --band-ink:#F2EFE8; --band-muted:#CFCBC2;
-    --strong:#F2EFE8; --inv:#F2EFE8; --inv-ink:#17181B;
-    --edit:#7DB3F0; --edit-soft:rgba(125,179,240,.12); --edit-bar:#1D4677;
-    --ok:#6CC48F; --controls:#26282C;
-    color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#17181B; --ink:#F2EFE8; --muted:#B4B0A7; --rule:#34373C; --frame:#4A4D52;
-  --thumb:#26282C; --raised:#212327; --ph-line:#5A5D63; --ph-ink:#B4B0A7;
-  --accent:#C8372D; --accent-hover:#DB4236; --accent-ink:#EE6B5F; --accent-ink-hover:#F59088; --on-accent:#FFFFFF;
-  --bar:#0E0F11; --bar-ink:#F2EFE8; --bar-line:#5A5D63; --bar-accent:#EE6B5F;
-  --band:#0E0F11; --band-ink:#F2EFE8; --band-muted:#CFCBC2;
-  --strong:#F2EFE8; --inv:#F2EFE8; --inv-ink:#17181B;
-  --edit:#7DB3F0; --edit-soft:rgba(125,179,240,.12); --edit-bar:#1D4677;
-  --ok:#6CC48F; --controls:#26282C;
   color-scheme:dark;
+  --ink:#0a0a0b; --card:#151517; --card2:#1f1f22; --raised:#1a1a1d; --line:#232327; --line2:#34343a;
+  --fg:#f3f1ee; --muted:#8f8b85; --soft:#cfcac3; --orange:#ff8a3d; --orange-hover:#ff9d5c; --on-orange:#1a0d03; --live:#ff4d4d;
+  --ok:#6cc48f; --bad:#ff7a6b;
+  --edit:#7db3f0; --edit-soft:rgba(125,179,240,.12); --edit-bar:#1d4677;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Figtree",system-ui,"Segoe UI",sans-serif;
 }
-
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 html.edit-mode{scroll-padding-top:120px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--ink);color:var(--fg);font:16px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:41;background:var(--ink)}
 img{max-width:100%;display:block}
 button,input,select{font:inherit;color:inherit}
-a{color:var(--accent-ink)}
-a:hover{color:var(--accent-ink-hover)}
-:focus-visible{outline:3px solid var(--edit);outline-offset:2px}
+a{color:var(--orange)}
+a:hover{color:var(--orange-hover)}
+:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
 [tabindex="-1"]:focus{outline:none}
 h1,h2,h3{margin:0;text-wrap:balance}
 p{margin:0}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92em}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.wrap{max-width:1280px;margin-inline:auto;padding-left:max(clamp(16px,3vw,32px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,3vw,32px),env(safe-area-inset-right,0px))}
+.wrap{padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+@media (max-width:640px){.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}}
 .row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .ic{display:inline-flex;line-height:0}
+.grow{flex:1}
+.muted{color:var(--muted)}
 
 /* Header */
-.site-header{background:var(--bar);color:var(--bar-ink)}
-.header-in{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding-block:8px}
-.brand{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.04em;text-transform:uppercase;color:var(--bar-ink);text-decoration:none;line-height:1.1}
-.brand:hover{color:var(--bar-ink)}
-.main-nav{display:flex;flex-wrap:wrap;gap:0 28px;font-weight:600;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
-.main-nav a{color:var(--bar-ink);text-decoration:none;padding:12px 0;border-bottom:3px solid transparent}
-.main-nav a:hover{color:var(--bar-ink);border-bottom-color:var(--bar-line)}
-.main-nav a[aria-current="page"]{border-bottom-color:var(--bar-accent)}
-.header-tools{display:flex;align-items:center;gap:12px}
-.icon-btn{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--bar-line);color:var(--bar-ink);cursor:pointer}
-.icon-btn:hover{background:rgba(255,255,255,.08)}
-.sf-badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--bar-line);padding:8px 12px;min-height:44px}
-.site-header :focus-visible{outline-color:var(--bar-ink)}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:linear-gradient(180deg,rgba(10,10,11,.94),rgba(10,10,11,.8));backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(35,35,39,.6)}
+.header-in{min-height:62px;display:flex;align-items:center;gap:8px 24px;padding-block:8px}
+.brand{font:900 24px/1 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--fg);text-decoration:none;white-space:nowrap}
+.brand:hover{color:var(--fg)}
+.brand i{color:var(--orange);font-style:normal}
+.main-nav{display:flex;gap:0 22px;font-weight:500;font-size:15px}
+.main-nav a{color:var(--soft);text-decoration:none;padding:8px 0}
+.main-nav a:hover{color:var(--fg)}
+.main-nav a[aria-current="page"]{color:var(--fg);box-shadow:0 2px 0 var(--orange)}
+.bell{position:relative;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 14px;border:1px solid var(--line2);border-radius:999px;background:transparent;color:var(--soft);font-size:14px;cursor:pointer;white-space:nowrap}
+.bell:hover{color:var(--fg);border-color:#4a4a50}
+.bell[hidden]{display:none}
+.bell em{background:var(--orange);color:var(--on-orange);font:700 11px/18px var(--body);min-width:18px;height:18px;padding:0 5px;border-radius:9px;text-align:center;font-style:normal}
+@media (max-width:760px){.main-nav{display:none}}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:10px 24px;font-family:var(--display);font-weight:800;font-size:21px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:2px solid transparent;line-height:1.1;text-align:center}
-.btn-accent{background:var(--accent);color:var(--on-accent)}
-.btn-accent:hover{background:var(--accent-hover);color:var(--on-accent)}
-.btn-outline{background:transparent;color:var(--ink);border-color:var(--strong)}
-.btn-outline:hover{background:var(--inv);color:var(--inv-ink)}
-.btn-inv{background:var(--inv);color:var(--inv-ink);border-color:var(--inv)}
-.btn-inv:hover{color:var(--inv-ink);opacity:.9}
-.btn-ghost{background:transparent;color:#F2EFE8;border-color:#F2EFE8}
-.btn-ghost:hover{background:#F2EFE8;color:#15171A}
-.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:4px;border:0;background:#2a2a2e;color:var(--fg);font-weight:700;font-size:15px;line-height:1.2;text-decoration:none;text-align:center;cursor:pointer}
+.btn:hover{background:#34343a;color:var(--fg)}
+.btn-accent{background:var(--orange);color:var(--on-orange)}
+.btn-accent:hover{background:var(--orange-hover);color:var(--on-orange)}
+.btn-outline{background:transparent;box-shadow:inset 0 0 0 1px var(--line2)}
+.btn-outline:hover{background:#1c1c1f}
+.btn-inv{background:var(--fg);color:var(--ink)}
+.btn-inv:hover{background:#fff;color:var(--ink)}
+.btn-ghost{background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-sm,.btn.sm{min-height:36px;padding:7px 12px;font-size:14px}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px}
 .btn-row.center{justify-content:center}
-.text-btn{background:none;border:none;color:var(--accent-ink);font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;min-height:44px;padding:0 4px;cursor:pointer}
-.text-btn.light{color:#F2EFE8;text-transform:none;letter-spacing:0;text-decoration:underline;font-size:15px}
+.btn .tlogo{width:20px;height:20px}
+.text-btn{background:none;border:none;color:var(--orange);font-weight:600;font-size:14px;min-height:40px;padding:0 4px;cursor:pointer}
+.text-btn:hover{color:var(--orange-hover)}
+.text-btn.light{color:var(--fg);text-decoration:underline}
 
 /* Shared type */
-.eyebrow{font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.h2{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5vw,3.5rem);line-height:1;text-transform:uppercase}
-.h2-sm{font-size:clamp(1.9rem,4vw,2.4rem)}
-.meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;font-weight:600;font-size:18px;color:var(--muted)}
-.dot{color:var(--ph-line)}
-.hint{font-size:14px;color:var(--muted)}
+.eyebrow{font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.h2{font:800 clamp(1.6rem,3vw,2.1rem)/1 var(--display);text-transform:uppercase}
+.h2 small,.sh small{font:500 14px var(--body);text-transform:none;color:var(--muted);margin-left:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;color:var(--muted);font-size:15px}
+.dot{color:#55524d}
+.hint{font-size:13px;color:var(--muted)}
 .hint.ok{color:var(--ok)}
-.hint.bad{color:var(--accent-ink)}
+.hint.bad{color:var(--bad)}
 .empty{color:var(--muted)}
-.lbl{font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lbl{font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.live{display:inline-flex;gap:8px;align-items:center;font-weight:600;color:var(--orange)}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--live);display:inline-block;flex:none}
+@media (prefers-reduced-motion:no-preference){.live-dot{animation:pulse 1.6s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 7px;border-radius:3px;background:rgba(0,0,0,.7);color:var(--fg);letter-spacing:.04em;text-transform:uppercase;line-height:1.3}
+.badge.or{background:var(--orange);color:var(--on-orange)}
+.badge:empty{display:none}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{min-height:34px;padding:5px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line2);color:var(--soft);font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--ink);border-color:var(--fg);font-weight:600}
 
-/* Home */
-.hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px 48px;padding-block:56px}
-.hero-text{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:18px}
-.hero-title{font-family:var(--display);font-weight:800;font-size:clamp(3rem,8vw,5.5rem);line-height:.92;text-transform:uppercase;overflow-wrap:anywhere}
-.lede{max-width:34em;font-size:19px}
-.hero-art{flex:1 1 340px;max-width:100%;aspect-ratio:4/3;background:var(--thumb);overflow:hidden}
-.hero-art>img{width:100%;height:100%;object-fit:cover}
-.art-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--thumb)}
-.art-logo{max-height:62%;max-width:62%;object-fit:contain}
-.art-name{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1;text-transform:uppercase;text-align:center;color:var(--muted);overflow-wrap:anywhere}
-.section{border-top:2px solid var(--strong)}
-.section-in{padding-block:48px 64px;display:flex;flex-direction:column;gap:28px}
-.section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.group{display:flex;flex-direction:column;gap:20px}
-.group + .group{padding-top:20px}
-.group-note{color:var(--muted);margin-top:-12px}
-.live-dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--accent);margin-right:12px;vertical-align:middle}
-.show-more{align-self:flex-start}
-/* Event logos come in a version for light backgrounds and one for dark. */
-.art-logo.dk{display:none}
-:root[data-theme="dark"] .art-logo.lt{display:none}
-:root[data-theme="dark"] .art-logo.dk{display:block}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]) .art-logo.lt{display:none}
-  :root:not([data-theme="light"]) .art-logo.dk{display:block}
-}
-.chip{min-height:44px;padding:8px 18px;background:transparent;color:var(--ink);border:2px solid var(--strong);font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
-.chip[aria-pressed="true"]{background:var(--inv);color:var(--inv-ink)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:32px 24px}
-.t-card{display:flex;flex-direction:column;gap:14px;color:var(--ink);text-decoration:none}
-.t-card:hover{color:var(--ink)}
-.t-card:hover .t-name{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
-.t-art{aspect-ratio:16/9;max-width:100%;background:var(--thumb);border-bottom:6px solid var(--strong);overflow:hidden}
-.t-art>img{width:100%;height:100%;object-fit:cover}
-.t-art .art-name{font-size:28px}
-.t-body{display:flex;flex-direction:column;gap:2px}
-.t-name{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.05;text-transform:uppercase;overflow-wrap:anywhere}
-.t-dates{font-weight:500;color:var(--muted)}
-.t-meta{font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
-.band{background:var(--band);color:var(--band-ink);border-block:1px solid var(--rule)}
-.band-in{padding-block:56px;display:flex;flex-direction:column;gap:32px}
-.how-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:32px}
-.how-item{display:flex;flex-direction:column;gap:8px;border-top:3px solid var(--accent);padding-top:16px}
-.how-item h3{font-family:var(--display);font-weight:800;font-size:28px;line-height:1.05;text-transform:uppercase}
-.how-item p{color:var(--band-muted)}
-.band :focus-visible{outline-color:var(--band-ink)}
+/* Event art: the event's own picture, or its logo on a stage-lit backdrop in the event's colour. */
+.art{position:relative;overflow:hidden;background-color:#111113;background-size:cover;background-position:center;--h:24}
+.art.lit{background-image:conic-gradient(from 168deg at 50% -8%,transparent 0 4deg,hsl(var(--h) 90% 70% / .13) 6deg,transparent 9deg 13deg,hsl(var(--h) 90% 70% / .1) 15deg,transparent 18deg 22deg,hsl(var(--h) 90% 70% / .12) 24deg,transparent 27deg),
+  radial-gradient(110% 60% at 50% 0%,hsl(var(--h) 75% 45% / .55),transparent 62%),
+  radial-gradient(90% 45% at 50% 105%,hsl(calc(var(--h) + 30) 70% 35% / .45),transparent 70%)}
+.art-logo{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);width:62%;max-height:52%;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(0,0,0,.6))}
+.art-name{position:absolute;inset:18% 10% auto;font:900 clamp(1.6rem,3vw,2.4rem)/.9 var(--display);text-transform:uppercase;text-align:center;color:rgba(243,241,238,.28);overflow-wrap:anywhere}
 
-/* Footer */
-.footer-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;padding-block:32px;font-size:15px;color:var(--muted)}
-.footer-brand{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;color:var(--ink)}
+/* Shelves and posters */
+.shelf{padding-block:28px 4px;display:flex;flex-direction:column;gap:14px}
+.sh{display:flex;flex-wrap:wrap;gap:6px 0;align-items:baseline;font:800 26px/1 var(--display);text-transform:uppercase}
+.shelf-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 16px}
+.shelf-note{color:var(--muted);font-size:14px;margin-top:-6px}
+.posters{display:grid;grid-auto-flow:column;grid-auto-columns:max(150px,calc((100% - 72px) / 7));gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:#333 transparent}
+.poster{position:relative;display:block;aspect-ratio:2/3;border-radius:6px;overflow:hidden;border:1px solid var(--line);color:var(--fg);text-decoration:none;transition:transform .2s,border-color .2s}
+.poster:hover{transform:translateY(-3px);border-color:#3a3a3e;color:var(--fg)}
+.poster .art{position:absolute;inset:0}
+.poster::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.92))}
+.poster .badges{position:absolute;top:10px;left:10px;right:10px;z-index:1;display:flex;flex-wrap:wrap;gap:4px}
+.poster .cap{position:absolute;left:12px;right:12px;bottom:12px;z-index:1;display:grid;gap:3px}
+.poster .nm{font:900 22px/.92 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+.poster .s{font-size:12px;color:#d8d4ce}
+.thumbs{display:grid;grid-auto-flow:column;grid-auto-columns:max(240px,calc((100% - 36px) / 4));gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:#333 transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:20px 14px}
+.wide3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:12px}
+.wtile{background:var(--card);border-radius:6px;padding:16px;display:grid;gap:4px;align-content:start;border-left:3px solid var(--orange);color:var(--fg);text-decoration:none}
+a.wtile:hover{background:#1b1b1e;color:var(--fg)}
+.wtile b{font:800 21px/1 var(--display);text-transform:uppercase}
+.wtile span{color:var(--muted);font-size:14px}
+.wtile .t-meta{color:var(--orange);font-size:13px;font-weight:600}
 
-/* Tournament page */
-.t-head{padding-block:32px 0;display:flex;flex-direction:column;gap:20px}
-.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-weight:500;font-size:15px;color:var(--muted)}
-.crumbs a{color:var(--muted)}
-.crumbs a:hover{color:var(--ink)}
-.crumb-cur{color:var(--ink)}
-.t-title-row{display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px}
-.t-title-col{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:10px}
-.t-title{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,7vw,5rem);line-height:.92;text-transform:uppercase;overflow-wrap:anywhere}
-.t-logo{width:128px;height:128px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
-.img-slot.t-logo>img{object-fit:contain;padding:12px}
-.t-logo .monogram{font-size:44px}
-.art-edit{width:min(320px,100%);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
-.stage-nav{border-bottom:2px solid var(--strong);margin-top:32px}
-.stage-tabs{display:flex;flex-wrap:wrap;gap:4px}
-.stage-tab{min-height:48px;display:inline-flex;align-items:center;padding:10px 22px;font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);text-decoration:none;background:transparent;border:none;cursor:pointer}
-.stage-tab:hover{color:var(--accent-ink)}
-.stage-tab[aria-current="page"]{background:var(--inv);color:var(--inv-ink)}
-.stage-tab.add{color:var(--edit);border:2px dashed var(--edit);margin-block:4px;font-size:18px}
-.stage-body{padding-block:40px 64px;display:flex;flex-direction:column;gap:44px}
-.stage-meta{font-weight:600;color:var(--muted)}
-.round{display:flex;flex-direction:column;gap:20px}
-.round-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-bottom:1px solid var(--rule);padding-bottom:10px}
-.round-title{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.1;text-transform:uppercase}
-.locked{border:2px dashed var(--ph-line);padding:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.locked-text{display:flex;gap:16px;align-items:flex-start;flex:1 1 320px;min-width:0}
-.locked-text .ic{color:var(--accent-ink);flex-shrink:0}
-.locked-title{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.1;text-transform:uppercase}
-.locked-sub{color:var(--muted)}
+/* Home: marquee */
+.hero{position:relative;min-height:min(74vh,620px);display:grid;align-content:end;overflow:hidden}
+#app>.hero:first-child{margin-top:-63px}
+.hero>.art{position:absolute;inset:0}
+.hero>.art::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--ink) 3%,rgba(10,10,11,.2) 52%,rgba(10,10,11,.65) 100%),linear-gradient(90deg,rgba(10,10,11,.7),transparent 65%)}
+.hero .art-logo{left:auto;right:max(24px,env(safe-area-inset-right,0px));top:48%;transform:translateY(-50%);width:min(32vw,400px);max-height:58%;z-index:1}
+.hero .ghost{position:absolute;right:-1vw;top:78px;font:900 clamp(90px,16vw,230px)/.8 var(--display);color:rgba(255,138,61,.1);text-transform:uppercase;letter-spacing:-.02em;pointer-events:none;white-space:nowrap}
+.hero-text{position:relative;z-index:2;display:grid;gap:14px;padding-block:130px 36px;max-width:660px}
+.hero-title{font:900 clamp(46px,8vw,94px)/.88 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+.lede{color:var(--soft);font-size:17px;max-width:46ch}
+@media (max-width:760px){.hero .art-logo{width:46vw;top:30%;right:16px;opacity:.9}.hero-text{padding-top:210px}}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:10px 28px;padding-block:16px;border-block:1px solid var(--line)}
+.rule{font-size:14px;color:var(--soft)}
+.rule h3{display:inline;font:700 14px var(--body);color:var(--fg)}
+.rule h3::after{content:" "}
+.rule p{display:inline}
+.rules-title{grid-column:1/-1;font:800 18px/1 var(--display);text-transform:uppercase;color:var(--muted)}
+.edit-mode .rule h3,.edit-mode .rule p{display:block}
 
-/* Match cards */
-.m-wrap{display:flex;flex-direction:column;gap:10px;min-width:0}
-.m-card{display:flex;flex-direction:column;gap:10px;color:var(--ink);text-decoration:none;position:relative}
-.m-card:hover{color:var(--ink)}
-.m-card:hover .thumb{outline:3px solid var(--accent);outline-offset:-3px}
-.thumb{aspect-ratio:16/9;max-width:100%;background:var(--thumb);position:relative;overflow:hidden;display:flex;align-items:center;gap:16px;padding:18px 22px}
+/* Home: the match you were watching */
+.resume-card{margin-top:22px;border-radius:8px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);background:var(--card);border:1px solid var(--line)}
+.resume-card .still{position:relative;min-height:260px;display:grid;place-items:center;color:var(--fg);text-decoration:none}
+.resume-card .still .thumb-bg{position:absolute;inset:0}
+.resume-card .still::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,var(--card))}
+.rlg{position:relative;z-index:1;display:flex;gap:clamp(16px,4vw,40px);align-items:center}
+.rlg .tlogo{width:clamp(80px,10vw,130px);height:clamp(80px,10vw,130px);font-size:34px;filter:drop-shadow(0 8px 20px rgba(0,0,0,.7))}
+.rlg i{font:italic 600 14px var(--body);color:var(--orange)}
+.resume-card .info{padding:26px;display:grid;gap:10px;align-content:center}
+.resume-card .vs{font:900 clamp(34px,4vw,46px)/.9 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+.resume-card .vs i{font:500 18px var(--body);color:var(--muted);font-style:normal;padding:0 8px;text-transform:none}
+@media (max-width:760px){.resume-card{grid-template-columns:1fr}.resume-card .still{min-height:180px}.resume-card .still::after{background:linear-gradient(0deg,var(--card),transparent 60%)}}
+.pips{display:flex;gap:6px;flex-wrap:wrap}
+.pips span{padding:5px 10px;border-radius:3px;background:#222225;color:var(--muted);font-size:12px}
+.pips .done{background:#33302c;color:#bdb6ad}
+.pips .now{background:var(--orange);color:var(--on-orange);font-weight:700}
+
+/* Match tiles: two team logos on the teams' colours. Never a YouTube thumbnail, which can carry a score. */
+.m-wrap{display:flex;flex-direction:column;gap:6px;min-width:0}
+.m-card{display:flex;flex-direction:column;gap:7px;color:var(--fg);text-decoration:none;position:relative;min-width:0}
+.m-card:hover{color:var(--fg)}
+.m-card:hover .thumb{border-color:#4a4a50}
+.thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#111113}
+.thumb-bg{background:radial-gradient(60% 90% at 22% 45%,hsl(var(--ha) 60% 42% / .55),transparent 70%),radial-gradient(60% 90% at 78% 45%,hsl(var(--hb) 60% 42% / .55),transparent 70%),linear-gradient(180deg,#19191c,#0d0d0f)}
+.thumb>.thumb-bg,.thumb>.art{position:absolute;inset:0}
+.thumb>.art .art-logo{top:50%;width:40%;max-height:64%}
 .thumb>img.custom{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.thumb-names{flex:1;min-width:0;display:flex;flex-direction:column}
-.thumb-team{font-family:var(--display);font-weight:800;font-size:clamp(26px,2.8vw,36px);line-height:.95;text-transform:uppercase;overflow-wrap:anywhere}
-.thumb-vs{font-family:var(--display);font-style:italic;font-weight:600;font-size:20px;line-height:1.2;color:var(--accent-ink)}
-.thumb-logos{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
-.bo-tag{position:absolute;right:0;bottom:0;background:var(--inv);color:var(--inv-ink);font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:.06em;padding:5px 12px}
-.m-cap{display:flex;justify-content:space-between;gap:12px;font-weight:500;font-size:15px;color:var(--muted)}
-.m-cap span:first-child{min-width:0;overflow-wrap:anywhere}
-.pin-alerts{margin-top:24px;border:2px solid var(--strong);background:var(--raised);padding:20px 24px;display:flex;flex-direction:column;gap:12px}
+.thumb .lgs{position:absolute;inset:0 0 24% 0;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;justify-items:center;padding:8% 4% 0}
+.thumb .lgs .tlogo{width:min(56%,110px);height:62%;font-size:clamp(18px,2.2vw,28px);filter:drop-shadow(0 6px 16px rgba(0,0,0,.65))}
+.thumb .lgs i{font:italic 600 12px var(--body);color:var(--orange)}
+.thumb .tcap{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;padding:18px 8px 7px;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent)}
+.thumb .tcap b{font:800 clamp(14px,1.5vw,19px)/1 var(--display);text-transform:uppercase;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 4px}
+.thumb .badge{position:absolute;z-index:1}
+.thumb .br,.bo-tag{right:8px;top:8px}
+.thumb .tl{left:8px;top:8px}
+.thumb.cur{border-color:var(--orange);box-shadow:0 0 0 1px var(--orange)}
+.hidden-tile{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;padding:12px;text-align:center;background:repeating-linear-gradient(115deg,#141416 0 10px,#18181b 10px 20px)}
+.hidden-tile b{font:800 22px/1 var(--display);text-transform:uppercase}
+.hidden-teams{display:flex;align-items:center;gap:6px;font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.m-cap{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted)}
+.m-cap span:first-child{min-width:0;overflow-wrap:anywhere;color:var(--soft)}
+.tlogo{object-fit:contain;flex:none}
+.tlogo.halo{filter:drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 0 8px rgba(255,255,255,.3))!important}
+span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display);color:rgba(243,241,238,.75);text-transform:uppercase;border-radius:50%;background:rgba(255,255,255,.07)}
+.cw-remove{align-self:flex-start;font-size:13px;min-height:30px}
+
+/* Pins */
+.pin-alerts{margin-top:18px;border:1px solid var(--line2);border-left:3px solid var(--orange);background:var(--card);border-radius:6px;padding:16px 20px;display:flex;flex-direction:column;gap:10px}
 .pin-alerts-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 16px}
-.pin-alerts-title{font-family:var(--display);font-weight:800;font-size:26px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.pin-alerts-title{font:800 22px/1 var(--display);text-transform:uppercase;display:flex;align-items:center;gap:10px}
 .pin-alerts ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.pin-alert{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-top:1px solid var(--rule);padding-top:10px}
+.pin-alert{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-top:1px solid var(--line);padding-top:10px}
 .pin-alert-text{display:flex;flex-direction:column;gap:2px;min-width:0;overflow-wrap:anywhere}
-/* Watch party */
-.party{border:2px solid var(--strong);background:var(--raised);padding:16px 18px;display:flex;flex-direction:column;gap:10px}
-.party p{margin:0}
-.party-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.party-title{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.1;text-transform:uppercase;margin:0}
-.party-form{display:flex;gap:8px}
-.party-form .input{flex:1;min-width:0}
-.btn-sm{min-height:44px;padding:6px 16px;font-size:18px}
-.party-log{list-style:none;margin:0;padding:8px 10px;min-height:120px;max-height:280px;overflow-y:auto;border:1px solid var(--rule);background:var(--paper);display:flex;flex-direction:column;gap:4px;font-size:15px;overflow-wrap:anywhere}
-.party-log .sys{color:var(--muted);font-size:13px}
-.party-log b,.party-pop b{font-weight:600}
-.party-name{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
-.party-name .input{flex:1;min-width:0;min-height:40px}
-.party-pop{position:absolute;top:12px;right:12px;z-index:4;max-width:min(60%,420px);background:rgba(11,12,14,.88);color:#F2EFE8;padding:8px 12px;font-size:15px;line-height:1.4;pointer-events:none;overflow-wrap:anywhere}
-.party-pop[hidden]{display:none}
-.party-bar{margin-top:24px;border:2px solid var(--strong);background:var(--raised);padding:12px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px}
-.pin-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;background:transparent;color:var(--ink);border:2px solid var(--strong);font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
-.pin-btn[aria-pressed="true"]{background:var(--inv);color:var(--inv-ink)}
+.pin-btn{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:7px 12px;border-radius:4px;background:#2a2a2e;color:var(--fg);border:0;font-weight:700;font-size:14px;cursor:pointer}
+.pin-btn:hover{background:#34343a}
+.pin-btn[aria-pressed="true"]{background:#33302c;color:#f0c9a8;box-shadow:inset 0 0 0 1px #5a4636}
+.pin-btn .tlogo{width:20px;height:20px;font-size:9px}
 .pin-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .pin-add{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
 .pin-add .input{flex:1 1 220px;width:auto}
-.rate-chip{position:absolute;right:0;top:0;z-index:1;background:var(--inv);color:var(--inv-ink);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
+.rate-chip{position:absolute;right:8px;bottom:8px;z-index:2;background:var(--fg);color:var(--ink);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:3px}
 .rate-chip:empty{display:none}
-.rate-badge{align-self:flex-start;background:var(--inv);color:var(--inv-ink);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
+.rate-badge{align-self:flex-start;background:var(--fg);color:var(--ink);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:3px}
 .rate-badge:empty{display:none}
-.rate-box{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--rule);padding-top:14px}
+.rate-box{display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:6px;background:var(--card)}
 .rate-box[hidden]{display:none}
-.rate-title{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase}
+.rate-title{font:800 20px/1 var(--display);text-transform:uppercase}
 .rate-opts{display:flex;flex-wrap:wrap;gap:8px}
-.rate-opts .pin-btn{font-size:16px}
 .cal-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
-.cal-item{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--rule);padding-top:12px}
-.cal-name{font-family:var(--display);font-weight:800;font-size:22px;line-height:1.1;text-transform:uppercase}
+.cal-item{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.cal-name{font:800 22px/1.1 var(--display);text-transform:uppercase}
 .cal-links{display:flex;flex-wrap:wrap;gap:8px}
-.cal-links .btn{min-height:44px;font-size:17px;padding:8px 16px}
-.short-tag{font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink)}
-.watched-chip{position:absolute;left:0;top:0;z-index:1;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
-.hidden-teams{display:flex;align-items:center;gap:6px;margin-top:10px;font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.cw-remove{align-self:flex-start;font-size:13px;min-height:32px}
-.logo{display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--raised);flex-shrink:0}
-.logo>img{width:100%;height:100%;object-fit:contain;padding:4px}
-.logo-sm{width:52px;height:52px}
-.logo-md{width:56px;height:56px}
-.monogram{font-family:var(--display);font-weight:800;text-transform:uppercase;color:var(--muted);line-height:1}
-.logo-sm .monogram{font-size:18px}
-.logo-md .monogram{font-size:20px}
+.short-tag{font-weight:600;font-size:13px;color:var(--orange)}
+.watched-chip{position:absolute;left:8px;top:8px;z-index:2;background:var(--orange);color:var(--on-orange);font-weight:700;font-size:11px;letter-spacing:.04em;text-transform:uppercase;padding:3px 7px;border-radius:3px}
+.watched-chip.done{background:#33302c;color:#d8cfc4}
 
-/* Player page */
-.player-page{padding-block:28px 64px;display:flex;flex-direction:column;gap:28px}
-.player-row{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
-/* Wide mode: the video takes the full width (YouTube picks a higher quality for a bigger player) and the maps go underneath. */
-.player-page.wide{max-width:1800px}
-.wide .player-col{flex-basis:100%}
-/* As big as the window allows while the controls stay in view. */
-.wide .player{width:min(100%,calc((100vh - 240px) * 16 / 9));align-self:center}
-.wide .maps{flex-basis:100%}
-.wide .map-list{flex-direction:row;flex-wrap:wrap}
-.wide .map-btn{flex:1 1 180px}
-.player-col{flex:999 1 640px;min-width:0;display:flex;flex-direction:column}
-.player{background:#000;display:flex;flex-direction:column}
+/* Footer */
+.site-footer{margin-top:48px;border-top:1px solid var(--line)}
+.footer-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;padding-block:24px 48px;font-size:13px;color:var(--muted)}
+.footer-in a{color:var(--soft)}
+.footer-brand{font:800 18px/1 var(--display);text-transform:uppercase;color:var(--fg)}
+
+/* Event page */
+.ehead{position:relative;display:flex;gap:22px;align-items:flex-end;padding-block:26px;border-bottom:1px solid var(--line);overflow:hidden}
+.ehead>.art{position:absolute;inset:0}
+.ehead>.art .art-logo{display:none}
+.ehead>.art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,11,.95) 30%,rgba(10,10,11,.6))}
+.ehead .poster{position:relative;z-index:1;width:110px;flex:none}
+.ehead .poster::after{display:none}
+.ehead .poster:hover{transform:none}
+.e-title-col{position:relative;z-index:1;display:grid;gap:6px;flex:1;min-width:0}
+.t-title{font:900 clamp(34px,5vw,58px)/.9 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+@media (max-width:640px){.ehead .poster{width:72px}}
+.crumbs{display:flex;flex-wrap:wrap;gap:6px;font-size:13px;color:var(--muted)}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--fg)}
+.crumb-cur{color:var(--soft)}
+.ebody{display:grid;grid-template-columns:250px minmax(0,1fr)}
+.chapters{border-right:1px solid var(--line);padding-block:16px;display:flex;flex-direction:column}
+.chapters .g{padding:12px 22px 6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.chapters a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 22px;color:var(--fg);text-decoration:none}
+.chapters a b{font:800 20px/1.1 var(--display);text-transform:uppercase}
+.chapters a span{font-size:13px;color:var(--muted);white-space:nowrap}
+.chapters a[aria-current="page"]{background:var(--card);box-shadow:inset 3px 0 0 var(--orange)}
+.chapters a.lk{color:var(--muted)}
+.chapters a:hover{background:#121214;color:var(--fg)}
+.eps{padding:18px 0 18px 24px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ephead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.ep{display:grid;grid-template-columns:28px minmax(140px,220px) minmax(0,1fr) auto;gap:16px;align-items:center;padding:8px;border-radius:6px}
+.ep:hover{background:var(--card)}
+.ep .n{font:900 26px var(--display);color:#4a4740;text-align:center}
+.ep h3{font:800 24px/1 var(--display);text-transform:uppercase;margin-bottom:4px}
+.ep h3 a{color:var(--fg);text-decoration:none}
+.ep h3 a:hover{color:var(--orange)}
+.ep .sub{font-size:14px;color:var(--muted)}
+.ep .stat{color:var(--orange)}
+.ep .extra{display:flex;gap:8px;align-items:center}
+.seg{display:inline-flex;background:var(--card);border-radius:4px;padding:3px;border:1px solid #2a2a2e}
+.seg button{padding:6px 11px;border:0;border-radius:3px;background:transparent;color:var(--muted);font-size:13px;cursor:pointer}
+.seg button:hover{color:var(--fg)}
+.seg button[aria-pressed="true"]{background:#2f2f33;color:var(--fg);font-weight:600}
+.curtain{border-radius:6px;padding:22px;display:grid;gap:10px;justify-items:start;background:repeating-linear-gradient(115deg,#141416 0 10px,#18181b 10px 20px);border:1px solid var(--line)}
+.curtain b{display:flex;align-items:center;gap:10px;font:800 24px/1 var(--display);text-transform:uppercase}
+.t-head{padding-block:24px 0;display:flex;flex-direction:column;gap:16px}
+.t-title-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.t-title-col{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:8px}
+@media (max-width:760px){
+  .ebody{grid-template-columns:1fr}
+  .chapters{flex-direction:row;border-right:0;border-bottom:1px solid var(--line);overflow-x:auto;gap:6px;padding:12px 0}
+  .chapters .g{display:none}
+  .chapters a{flex:none;border-radius:999px;background:var(--card);padding:7px 14px}
+  .chapters a b{font-size:16px}
+  .chapters a span{display:none}
+  .chapters a[aria-current="page"]{background:var(--fg);color:var(--ink);box-shadow:none}
+  .chapters a.lk::after{content:"🔒";font-size:11px}
+  .eps{padding-left:0}
+  .ep{grid-template-columns:120px minmax(0,1fr);gap:12px;padding:6px 0}
+  .ep .n,.ep .thumb .tcap,.ep .thumb .badge,.ep .rate-chip,.ep .watched-chip{display:none}
+  .ep .thumb .lgs{inset:0;padding:6%}
+  .ep .extra{grid-column:2}
+  .ep h3{font-size:19px}
+}
+
+/* Edit mode keeps the plain list of rounds */
+.stage-nav{border-bottom:1px solid var(--line);margin-top:8px}
+.stage-tabs{display:flex;flex-wrap:wrap;gap:4px}
+.stage-tab{min-height:44px;display:inline-flex;align-items:center;padding:8px 18px;font:800 20px var(--display);text-transform:uppercase;color:var(--soft);text-decoration:none;background:transparent;border:none;cursor:pointer}
+.stage-tab[aria-current="page"]{color:var(--fg);box-shadow:inset 0 -3px 0 var(--orange)}
+.stage-tab.add{color:var(--edit);border:2px dashed var(--edit);margin-block:4px;font-size:17px}
+.stage-body{padding-block:28px 48px;display:flex;flex-direction:column;gap:36px}
+.section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px}
+.stage-meta{color:var(--muted)}
+.round{display:flex;flex-direction:column;gap:16px}
+.round-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.round-title{font:800 26px/1.1 var(--display);text-transform:uppercase}
+.t-logo{width:110px;height:110px;flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.img-slot.t-logo>img{object-fit:contain;padding:10px}
+.art-edit{width:min(320px,100%);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
+
+/* Match page: the player, with a side panel (maps, watch party, next) that closes */
+.mwrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;transition:grid-template-columns .25s}
+.mwrap.closed{grid-template-columns:minmax(0,1fr) 0}
+@media (prefers-reduced-motion:reduce){.mwrap{transition:none}}
+.stage-col{min-width:0}
+.player-box{background:#000;position:relative}
+.player{background:#000;display:flex;flex-direction:column;width:min(100%,calc((100vh - 150px) * 16 / 9));margin-inline:auto}
 .video-frame{position:relative;aspect-ratio:16/9;max-width:100%;background:#000;overflow:hidden}
 .video-frame iframe,#yt-host{position:absolute;inset:0;width:100%;height:100%;border:0}
-.cover{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:#0B0C0E;color:#F2EFE8;cursor:pointer}
+.reopen{position:absolute;top:12px;right:12px;z-index:4;display:none}
+.mwrap.closed .reopen{display:inline-flex}
+.cover{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:radial-gradient(70% 60% at 50% 40%,#1a1612,#0a0a0b);color:var(--fg);cursor:pointer}
 .cover.clear{background:transparent}
-.cover.clear.mask-top::before{content:"";position:absolute;left:0;right:0;top:0;height:16%;background:#0B0C0E}
-.cover-eyebrow{font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#B4B0A7}
-.cover-title{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.75rem);line-height:1;text-transform:uppercase;max-width:20em;font-variant-numeric:tabular-nums}
-.cover-sub{color:#CFCBC2;max-width:34em;font-size:16px}
-.big-play{width:88px;height:88px;border-radius:50%;background:var(--accent);color:#FFFFFF;border:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
-.big-play:hover{background:var(--accent-hover)}
-.big-play .ic{margin-left:6px}
-.resume{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 16px;color:#CFCBC2;font-size:15px}
-.spinner{width:40px;height:40px;border:4px solid rgba(242,239,232,.25);border-top-color:#F2EFE8;border-radius:50%;animation:spin 1s linear infinite}
+.cover.clear.mask-top::before{content:"";position:absolute;left:0;right:0;top:0;height:16%;background:#0a0a0b}
+.cover-eyebrow{font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cover-title{font:900 clamp(1.7rem,4vw,3rem)/.95 var(--display);text-transform:uppercase;max-width:20em;font-variant-numeric:tabular-nums}
+.cover-sub{color:var(--soft);max-width:34em;font-size:15px}
+.cover .tlogo{width:clamp(48px,7vw,84px);height:clamp(48px,7vw,84px)}
+.cover-teams{display:flex;align-items:center;gap:16px}
+.big-play{width:76px;height:76px;border-radius:50%;background:var(--orange);color:var(--on-orange);border:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.big-play:hover{background:var(--orange-hover)}
+.big-play .ic{margin-left:5px}
+.resume{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 16px;color:var(--soft);font-size:14px}
+.spinner{width:40px;height:40px;border:4px solid rgba(243,241,238,.2);border-top-color:var(--orange);border-radius:50%;animation:spin 1s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-@media (prefers-reduced-motion: reduce){.spinner{animation-duration:3s}}
-.controls{position:relative;background:var(--controls);color:#F2EFE8;display:flex;flex-wrap:wrap;align-items:center;gap:2px;padding:6px 10px}
-.ctl{min-width:48px;height:44px;padding:0 6px;background:transparent;border:none;color:#F2EFE8;font-family:var(--display);font-weight:800;font-size:18px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
-.ctl:hover:not(:disabled){background:rgba(255,255,255,.1)}
+@media (prefers-reduced-motion:reduce){.spinner{animation-duration:3s}}
+.controls{position:relative;background:#111113;color:#e3dfd9;display:flex;flex-wrap:wrap;align-items:center;gap:2px;padding:6px 10px;border-top:1px solid #1d1d20}
+.ctl{min-width:44px;height:40px;padding:0 6px;background:transparent;border:none;border-radius:4px;color:#e3dfd9;font:700 15px var(--body);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.ctl:hover:not(:disabled){background:rgba(255,255,255,.08)}
 .ctl:disabled{opacity:.4;cursor:default}
-.controls :focus-visible{outline-color:#F2EFE8}
+.ctl.ctl-play{width:40px;min-width:40px;border-radius:50%;background:var(--orange);color:var(--on-orange);margin:0 6px}
+.ctl.ctl-play:hover:not(:disabled){background:var(--orange-hover)}
 .spacer{flex:1}
-.elapsed{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.04em;padding:0 8px;font-variant-numeric:tabular-nums}
-.len-hidden{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#B4B0A7;padding:0 8px}
-.vol{width:96px;accent-color:#C8372D}
-/* YouTube picks the quality from the player's size, so the video is drawn at the chosen quality's size and scaled down to fit. */
+.elapsed{font-weight:600;font-size:14px;padding:0 8px;font-variant-numeric:tabular-nums}
+.len-hidden{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#bbb;border:1px dashed #666;border-radius:3px;padding:1px 7px;margin-right:6px}
+.vol{width:90px;accent-color:#ff8a3d}
 .video-frame iframe.scaled{right:auto;bottom:auto;transform-origin:0 0}
 .q-wrap{position:relative;display:inline-flex}
-.ctl-q{font-size:15px;letter-spacing:.04em;min-width:60px}
-.q-menu{position:absolute;right:0;bottom:calc(100% + 6px);z-index:5;width:230px;background:var(--controls);border:1px solid rgba(255,255,255,.18);padding:6px;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.ctl-q{font-size:14px;min-width:56px}
+.q-menu{position:absolute;right:0;bottom:calc(100% + 6px);z-index:5;width:230px;background:#151517;border:1px solid var(--line2);border-radius:6px;padding:6px;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.5)}
 .q-menu[hidden]{display:none}
-.q-opt{display:flex;align-items:center;gap:10px;min-height:40px;padding:0 10px;background:transparent;border:none;color:#F2EFE8;font:inherit;font-weight:600;font-size:16px;text-align:left;cursor:pointer}
-.q-opt:hover{background:rgba(255,255,255,.1)}
+.q-opt{display:flex;align-items:center;gap:10px;min-height:38px;padding:0 10px;background:transparent;border:none;border-radius:4px;color:var(--fg);font:inherit;font-weight:600;font-size:15px;text-align:left;cursor:pointer}
+.q-opt:hover{background:rgba(255,255,255,.08)}
 .q-opt .ic{visibility:hidden}
-.q-opt[aria-checked="true"] .ic{visibility:visible}
-.q-note{font-size:13px;line-height:1.4;color:#B4B0A7;padding:6px 10px 4px}
-.player:fullscreen{width:100%;height:100%}
+.q-opt[aria-checked="true"] .ic{visibility:visible;color:var(--orange)}
+.q-note{font-size:12px;line-height:1.4;color:var(--muted);padding:6px 10px 4px}
+.player:fullscreen{width:100%;height:100%;position:relative}
 .player:fullscreen .video-frame{flex:1;aspect-ratio:auto}
-.player:-webkit-full-screen{width:100%;height:100%}
+.player:-webkit-full-screen{width:100%;height:100%;position:relative}
 .player:-webkit-full-screen .video-frame{flex:1;aspect-ratio:auto}
 /* Full screen: the controls sit over the video and fade out while the map plays untouched. */
-.player:fullscreen{position:relative}
-.player:fullscreen .controls{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(24,25,28,.88);transition:opacity .25s}
+.player:fullscreen .controls{position:absolute;left:0;right:0;bottom:0;z-index:3;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.5));border:0;transition:opacity .25s}
 .player.idle:fullscreen .controls{opacity:0;pointer-events:none}
 .player.idle:fullscreen .cover{cursor:none}
-.player:-webkit-full-screen{position:relative}
-.player:-webkit-full-screen .controls{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(24,25,28,.88);transition:opacity .25s}
+.player:-webkit-full-screen .controls{position:absolute;left:0;right:0;bottom:0;z-index:3;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.5));border:0;transition:opacity .25s}
 .player.idle:-webkit-full-screen .controls{opacity:0;pointer-events:none}
 .player.idle:-webkit-full-screen .cover{cursor:none}
-.match-head{display:flex;flex-direction:column;gap:8px;padding-top:22px}
-.match-title{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5vw,3.5rem);line-height:.95;text-transform:uppercase;overflow-wrap:anywhere}
-.match-title .vs{font-style:italic;font-weight:600;font-size:.55em;color:var(--accent-ink);text-transform:none}
-.maps{flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:14px}
-.maps-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.maps-title{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase}
-.map-list{display:flex;flex-direction:column;gap:8px}
-.map-btn{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;padding:10px 18px;background:var(--raised);color:var(--ink);border:2px solid var(--frame);text-decoration:none}
-.map-btn:hover{color:var(--ink);border-color:var(--accent-ink)}
-.map-btn[aria-current="true"]{background:var(--inv);color:var(--inv-ink);border-color:var(--inv)}
-.map-label{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.1;text-transform:uppercase}
-.map-state{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
-.more{display:flex;flex-direction:column;gap:20px;border-top:2px solid var(--strong);padding-top:28px}
+.minfo{padding-block:18px 28px;display:flex;flex-direction:column;gap:12px}
+.match-title{font:900 clamp(32px,4vw,46px)/.95 var(--display);text-transform:uppercase;display:flex;align-items:center;gap:12px;flex-wrap:wrap;overflow-wrap:anywhere}
+.match-title .tlogo{width:clamp(36px,4vw,50px);height:clamp(36px,4vw,50px);font-size:14px}
+.match-title .vs{font:500 17px var(--body);color:var(--muted);text-transform:none;padding:0 4px}
+.mb{flex:none;width:52px;height:30px;border-radius:5px;background:#1c1a18 center/cover;border:1px solid var(--line);display:inline-grid;place-items:center;color:#6d6862;font-weight:700;font-size:13px}
+.meta .mb{width:40px;height:23px}
+.side{border-left:1px solid var(--line);background:#0e0e10;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.mwrap.closed .side{border-left:0;visibility:hidden}
+.stabs{display:grid;grid-template-columns:1fr 1fr 1fr auto;border-bottom:1px solid var(--line);width:340px;max-width:100%}
+.stabs button{padding:14px 0;background:transparent;border:0;font:700 16px var(--display);text-transform:uppercase;color:var(--muted);white-space:nowrap;cursor:pointer}
+.stabs button[aria-selected="true"]{color:var(--fg);box-shadow:inset 0 -3px 0 var(--orange)}
+.stabs .x{padding:0 14px;font:600 18px var(--body);display:inline-flex;align-items:center}
+.stabs .x:hover{color:var(--fg)}
+.pane{padding:16px;display:flex;flex-direction:column;gap:12px;width:340px;max-width:100%}
+.pane[hidden]{display:none}
+.map-list{display:flex;flex-direction:column;gap:6px}
+.map-btn{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border-radius:4px;background:var(--card);color:var(--fg);text-decoration:none}
+.map-btn:hover{background:#1b1b1e;color:var(--fg)}
+.map-btn[aria-current="true"]{box-shadow:inset 3px 0 0 var(--orange);background:#1c1a18}
+.map-btn .l{display:flex;align-items:center;gap:12px;min-width:0}
+.map-label{display:block;font:800 18px/1.1 var(--display);text-transform:uppercase}
+.map-state{font-size:12px;color:var(--muted)}
+.pane-title{font:800 22px/1 var(--display);text-transform:uppercase}
+.next-list{display:flex;flex-direction:column;gap:14px}
 .notfound{padding-block:64px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+@media (max-width:900px){
+  .mwrap,.mwrap.closed{grid-template-columns:1fr}
+  .side{border-left:0;border-top:1px solid var(--line)}
+  .mwrap.closed .side{display:none}
+  .stabs,.pane{width:auto}
+  .player{width:100%}
+}
+/* Watch party */
+.party{display:flex;flex-direction:column;gap:10px}
+.party-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.party-title{font:800 22px/1 var(--display);text-transform:uppercase;margin:0}
+.party-form{display:flex;gap:8px}
+.party-form .input{flex:1;min-width:0}
+.party-log{list-style:none;margin:0;padding:8px 10px;min-height:120px;max-height:280px;overflow-y:auto;border:1px solid var(--line);border-radius:4px;background:var(--ink);display:flex;flex-direction:column;gap:4px;font-size:14px;overflow-wrap:anywhere}
+.party-log .sys{color:var(--muted);font-size:12px}
+.party-log b,.party-pop b{font-weight:600;color:var(--orange)}
+.party-name{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.party-name .input{flex:1;min-width:0;min-height:36px}
+.party-pop{position:absolute;top:12px;left:12px;z-index:4;max-width:min(60%,420px);background:rgba(10,10,11,.88);color:var(--fg);padding:8px 12px;border-radius:4px;font-size:14px;line-height:1.4;pointer-events:none;overflow-wrap:anywhere}
+.party-pop[hidden]{display:none}
+.party-bar{margin-top:18px;border:1px solid var(--line2);border-radius:6px;background:var(--card);padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px}
 
 /* Edit mode */
-.edit-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--edit-bar);color:#FFFFFF}
-.edit-mode body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:41;background:var(--edit-bar)}
+.edit-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--edit-bar);color:#fff}
+.edit-mode .site-header{position:static}
 .edit-bar-in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;padding-block:10px}
 .eb-info{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;min-width:0}
-.eb-title{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.06em;text-transform:uppercase}
-.eb-status{font-size:14px;color:#DCE7F5}
+.eb-title{font:800 20px var(--display);letter-spacing:.06em;text-transform:uppercase}
+.eb-status{font-size:14px;color:#dce7f5}
 .eb-actions{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}
-.eb-btn{min-height:40px;padding:6px 14px;background:transparent;color:#FFFFFF;border:1px solid rgba(255,255,255,.55);font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
-.eb-btn:hover{background:rgba(255,255,255,.12);color:#FFFFFF}
-.eb-btn.primary{background:#FFFFFF;color:#1F4F8A;border-color:#FFFFFF}
-.eb-btn.primary:hover{background:#DCE7F5;color:#1F4F8A}
-.eb-help{width:100%;font-size:13px;color:#DCE7F5}
-.edit-bar :focus-visible{outline-color:#FFFFFF}
+.eb-btn{min-height:38px;padding:6px 14px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);border-radius:4px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.eb-btn:hover{background:rgba(255,255,255,.12);color:#fff}
+.eb-btn.primary{background:#fff;color:#1f4f8a;border-color:#fff}
+.eb-btn.primary:hover{background:#dce7f5;color:#1f4f8a}
+.eb-help{width:100%;font-size:13px;color:#dce7f5}
+.edit-bar :focus-visible{outline-color:#fff}
 .editable{outline:1px dashed var(--edit);outline-offset:4px;cursor:text;min-width:3ch}
 span.editable{display:inline-block}
 .editable:hover{background:var(--edit-soft)}
 .editable:focus{outline:2px solid var(--edit);background:var(--edit-soft)}
 .editable:empty::before{content:attr(data-placeholder);color:var(--muted);font-style:italic;font-weight:500;text-transform:none;letter-spacing:0}
-.band .editable:empty::before{color:var(--band-muted)}
-.edit-panel{border:1px dashed var(--edit);background:var(--edit-soft);padding:16px;display:flex;flex-wrap:wrap;gap:20px 32px;align-items:flex-start}
+.edit-panel{border:1px dashed var(--edit);background:var(--edit-soft);border-radius:4px;padding:16px;display:flex;flex-wrap:wrap;gap:20px 32px;align-items:flex-start;position:relative;z-index:1}
 .edit-panel p{flex-basis:100%}
-.mini-btn{min-height:40px;padding:6px 14px;background:var(--raised);color:var(--edit);border:1px solid var(--edit);font-family:var(--body);font-weight:600;font-size:14px;letter-spacing:0;text-transform:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.mini-btn{min-height:36px;padding:6px 12px;background:var(--raised);color:var(--edit);border:1px solid var(--edit);border-radius:4px;font:600 14px var(--body);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
 .mini-btn:hover:not(:disabled){background:var(--edit-soft)}
-.mini-btn.danger{color:var(--accent-ink);border-color:var(--accent-ink)}
+.mini-btn.danger{color:var(--bad);border-color:var(--bad)}
 .mini-btn:disabled{opacity:.45;cursor:not-allowed}
-.add-tile{min-height:180px;border:2px dashed var(--edit);background:var(--edit-soft);color:var(--edit);font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:16px}
-.add-tile.slim{min-height:64px;width:100%}
+.add-tile{min-height:150px;border:2px dashed var(--edit);border-radius:6px;background:var(--edit-soft);color:var(--edit);font:800 22px var(--display);text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:16px}
+.add-tile.slim{min-height:60px;width:100%}
 .add-tile:hover{background:var(--raised)}
-.img-field{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
-.img-slot{position:relative;overflow:hidden;background:var(--thumb)}
+.img-field{display:flex;flex-direction:column;gap:8px;align-items:flex-start;position:relative;z-index:1}
+.img-slot{position:relative;overflow:hidden;background:var(--card);border-radius:4px}
 .img-slot>img{width:100%;height:100%;object-fit:cover}
 .img-field>.img-slot{outline:1px dashed var(--edit);outline-offset:3px}
-.img-empty{display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--ph-ink);font-weight:600;font-size:14px;letter-spacing:.04em;text-align:center;padding:8px}
-.check{display:inline-flex;align-items:center;gap:10px;min-height:40px;font-weight:500;font-size:15px;cursor:pointer}
+.img-empty{display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--muted);font-weight:600;font-size:13px;text-align:center;padding:8px}
+.monogram{font:900 40px/1 var(--display);text-transform:uppercase;color:var(--muted)}
+.check{display:inline-flex;align-items:center;gap:10px;min-height:38px;font-weight:500;font-size:15px;cursor:pointer}
 .check input{width:18px;height:18px;accent-color:var(--edit);margin:0;flex-shrink:0}
 .field{display:flex;flex-direction:column;gap:6px;min-width:0}
-.field>label{font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.input{width:100%;min-height:44px;padding:8px 12px;background:var(--raised);color:var(--ink);border:1px solid var(--frame);border-radius:0}
+.field>label{font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.input{width:100%;min-height:42px;padding:8px 12px;background:var(--ink);color:var(--fg);border:1px solid #2a2a2e;border-radius:4px}
+.input:focus{border-color:#4a4a50}
 .input:disabled{opacity:.5}
 .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:14px}
 .maps-edit{display:flex;flex-direction:column;gap:12px}
-.map-edit{border:1px solid var(--rule);padding:14px;display:flex;flex-direction:column;gap:12px}
+.map-edit{border:1px solid var(--line);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:12px}
 .map-edit-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}
-.map-edit-head strong{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase}
-.section-label{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;margin-top:6px}
+.map-edit-head strong{font:800 20px var(--display);text-transform:uppercase}
+.section-label{font:800 20px var(--display);text-transform:uppercase;margin-top:6px}
 .thumb-edit{display:flex;flex-direction:column;gap:8px}
-.thumb-prev{width:min(320px,100%);aspect-ratio:16/9;background:var(--thumb);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:8px}
+.thumb-prev{width:min(320px,100%);aspect-ratio:16/9;background:var(--card);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:8px}
 .thumb-prev>img{width:100%;height:100%;object-fit:cover}
 .team-list{display:flex;flex-direction:column}
-.team-row{display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px 14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+.team-row{display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px 14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.team-row>.tlogo{width:56px;height:56px}
 .team-row>.row,.team-row>.alias-field{grid-column:2}
-.notice{margin-top:24px;align-items:center}
+.notice{margin-top:18px;align-items:center}
 
 /* Dialogs and toast */
-.dlg{border:none;padding:0;background:var(--paper);color:var(--ink);width:min(760px,calc(100vw - 32px));max-height:calc(100dvh - 48px);box-shadow:0 24px 64px rgba(0,0,0,.4)}
+.dlg{border:1px solid var(--line2);border-radius:8px;padding:0;background:#111113;color:var(--fg);width:min(760px,calc(100vw - 32px));max-height:calc(100dvh - 48px);box-shadow:0 24px 64px rgba(0,0,0,.6)}
 .dlg[open]{display:flex;flex-direction:column}
 .dlg-sm{width:min(480px,calc(100vw - 32px))}
-.dlg::backdrop{background:rgba(10,11,13,.6)}
-.dlg-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 24px;border-bottom:2px solid var(--strong)}
-.dlg-title{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.1;text-transform:uppercase}
-.dlg-body{padding:20px 24px;display:flex;flex-direction:column;gap:16px;overflow:auto;min-height:0}
-.dlg-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:16px 24px;border-top:1px solid var(--rule)}
-.icon-close{width:44px;height:44px;flex-shrink:0;background:transparent;border:1px solid var(--rule);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
-.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;background:var(--inv);color:var(--inv-ink);padding:12px 18px;font-weight:600;max-width:calc(100vw - 32px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.dlg::backdrop{background:rgba(0,0,0,.7)}
+.dlg-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line)}
+.dlg-title{font:800 28px/1.1 var(--display);text-transform:uppercase}
+.dlg-body{padding:18px 22px;display:flex;flex-direction:column;gap:16px;overflow:auto;min-height:0}
+.dlg-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:14px 22px;border-top:1px solid var(--line)}
+.icon-close{width:40px;height:40px;flex-shrink:0;background:transparent;border:1px solid var(--line2);border-radius:4px;color:var(--fg);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;background:var(--card2);color:var(--fg);border:1px solid #333;border-radius:6px;padding:10px 16px;font-size:14px;font-weight:500;max-width:calc(100vw - 32px);box-shadow:0 8px 24px rgba(0,0,0,.5)}
 
 @media (max-width:640px){
-  .main-nav{gap:0 18px;font-size:14px}
-  .sf-badge span{display:none}
-  .len-hidden span,.vol{display:none}
-  .q-wrap{position:static}
+  .controls{gap:0;padding:4px 6px}
+  .len-hidden,.vol,.ctl-b30,.ctl-f30,.ctl-wide{display:none}
   .q-menu{left:8px;right:8px;width:auto}
-  .hero{padding-block:36px}
-  .locked{padding:20px}
+  .ctl{min-width:40px}
 }
 </style>
 </head>
@@ -432,17 +511,15 @@ span.editable{display:inline-block}
 
 <header class="site-header">
   <div class="wrap header-in">
-    <a class="brand" id="brand" href="#/">Spoiler-Free CS2</a>
+    <a class="brand" id="brand" href="#/">Spoiler<i>/</i>free CS2</a>
     <nav class="main-nav" aria-label="Main">
       <a href="#/" data-nav="home">Home</a>
-      <a href="#/tournaments" data-nav="tournaments">Tournaments</a>
+      <a href="#/tournaments" data-nav="tournaments">Events</a>
       <a href="#/collections" data-nav="collections">Collections</a>
       <a href="#/how" data-nav="how">How it works</a>
     </nav>
-    <div class="header-tools">
-      <button type="button" class="icon-btn" id="theme-btn" aria-label="Switch to dark mode"></button>
-      <span class="sf-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><line x1="3" y1="3" x2="21" y2="21"></line></svg><span>Spoiler-free</span></span>
-    </div>
+    <span class="grow"></span>
+    <button type="button" class="bell" id="bell" hidden></button>
   </div>
 </header>
 
@@ -535,7 +612,7 @@ function ago(ts) {
   return plural(Math.round(hr / 24), 'day') + ' ago';
 }
 
-/* ---------- per-visitor storage (watched, revealed rounds, positions, theme) ---------- */
+/* ---------- per-visitor storage (watched, revealed rounds, positions) ---------- */
 const store = {
   get(k, d) { try { const v = localStorage.getItem('sf:' + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('sf:' + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
@@ -615,7 +692,7 @@ function normalize(d) {
     footer: str(s.footer), featuredId: str(s.featuredId), example: !!s.example,
     firebase: { apiKey: str((s.firebase || {}).apiKey), databaseURL: str((s.firebase || {}).databaseURL).replace(/\/+$/, '') }
   };
-  const teams = arr(d.teams).filter(x => x && x.id).map(x => ({ id: str(x.id), name: str(x.name), logo: str(x.logo), aliases: arr(x.aliases).map(str).filter(Boolean) }));
+  const teams = arr(d.teams).filter(x => x && x.id).map(x => ({ id: str(x.id), name: str(x.name), logo: str(x.logo), logoDark: str(x.logoDark), aliases: arr(x.aliases).map(str).filter(Boolean) }));
   const tournaments = arr(d.tournaments).filter(t => t && t.id).map(t => ({
     id: str(t.id), name: str(t.name), year: str(t.year), dates: str(t.dates), location: str(t.location),
     teamsText: str(t.teamsText), logo: str(t.logo), art: str(t.art),
@@ -659,8 +736,11 @@ function mergeAuto(d, auto) {
   if (!auto || typeof auto !== 'object') return d;
   const hidden = new Set(d.hiddenAuto);
   arr(auto.teams).forEach(t => {
-    if (!t || !t.id || hidden.has(str(t.id)) || d.teams.some(x => x.id === str(t.id))) return;
-    d.teams.push({ id: str(t.id), name: str(t.name), logo: '', aliases: arr(t.aliases).map(str).filter(Boolean) });
+    if (!t || !t.id || hidden.has(str(t.id))) return;
+    // The watcher copies each team's logo from Liquipedia. A logo set in data.json wins.
+    const mine = d.teams.find(x => x.id === str(t.id));
+    if (mine) { if (!mine.logo) { mine.logo = str(t.logo); mine.logoDark = str(t.logoDark); } return; }
+    d.teams.push({ id: str(t.id), name: str(t.name), logo: str(t.logo), logoDark: str(t.logoDark), aliases: arr(t.aliases).map(str).filter(Boolean) });
   });
   // Tournaments the watcher built from Liquipedia, newest first, after any you added yourself.
   arr(auto.tournaments).forEach(at => {
@@ -820,25 +900,42 @@ function continueCaption(m, e) {
   const pos = resumeTime(m.id, i);
   return 'Map ' + (i + 1) + (pos > start ? ' · ' + fmt(pos - start) + ' in' : '');
 }
-function continueView() {
-  const list = continueList().slice(0, 6);
-  if (!list.length) return null;
-  return h('div', { class: 'group', id: 'grp-continue' },
-    h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Continue watching')),
-    h('p', { class: 'group-note' }, 'Picks up on the map you were on. After a map ends it points at the next one listed, played or not, so nothing here gives away how a series went.'),
-    h('div', { class: 'grid' }, list.map(({ f, e }) => {
+/* The rest of the visitor's unfinished series, as a row of tiles under the big "Continue watching" card. */
+function continueShelf(list) {
+  return h('section', { class: 'shelf', id: 'grp-continue-more' },
+    h('h2', { class: 'sh' }, 'Also in progress'),
+    h('div', { class: 'thumbs' }, list.map(({ f, e }) => {
       const { t, m } = f;
       const i = Math.min(Math.max(0, +e.map || 0), m.maps.length - 1);
       return h('div', { class: 'm-wrap' },
         h('a', { class: 'm-card', href: '#/match/' + m.id + '/' + i },
-          thumbView(m),
-          h('span', { class: 'watched-chip' }, continueCaption(m, e)),
+          thumbView(m, h('span', { class: 'watched-chip' }, continueCaption(m, e))),
           h('div', { class: 'm-cap' }, h('span', {}, teamName(m.a) + ' vs ' + teamName(m.b)), h('span', {}, t.name || ''))),
         h('button', { type: 'button', class: 'text-btn cw-remove', 'aria-label': 'Remove ' + teamName(m.a) + ' vs ' + teamName(m.b) + ' from Continue watching',
           onClick: () => { forgetWatching(m.id); rerender(); } }, 'Remove'));
     })));
 }
-
+/* The series the visitor was last watching, big, at the top of the home page. After a map ends it points at
+   the next map listed, played or not, so nothing here gives away how a series went. */
+function resumeCard({ f, e }) {
+  const { t, s, rd, m } = f;
+  const i = Math.min(Math.max(0, +e.map || 0), m.maps.length - 1);
+  const href = '#/match/' + m.id + '/' + i;
+  return h('section', { class: 'wrap', id: 'grp-continue' }, h('div', { class: 'resume-card' },
+    h('a', { class: 'still', href, tabindex: '-1', 'aria-hidden': 'true' },
+      h('span', { class: 'thumb-bg', style: '--ha:' + hue(m.a) + ';--hb:' + hue(m.b) }),
+      h('span', { class: 'rlg' }, teamLogo(team(m.a)), h('i', {}, 'vs'), teamLogo(team(m.b)))),
+    h('div', { class: 'info' },
+      h('span', { class: 'live' }, 'Continue watching'),
+      h('h1', { class: 'vs' }, teamName(m.a), h('i', {}, 'vs'), teamName(m.b)),
+      h('span', { class: 'muted' }, [t.name, [s.name, rd.name].filter(Boolean).join(', ')].filter(Boolean).join(' · ')),
+      h('div', { class: 'pips', 'aria-hidden': 'true' }, m.maps.map((_, k) => h('span', { class: k < i ? 'done' : k === i ? 'now' : null }, 'Map ' + (k + 1)))),
+      h('span', { class: 'hint' }, continueCaption(m, e)),
+      h('div', { class: 'row' },
+        h('a', { class: 'btn btn-accent', href }, icon('play', 16, 'currentColor'), e.next ? 'Play Map ' + (i + 1) : 'Resume'),
+        h('a', { class: 'btn', href: '#/t/' + t.id }, 'Open event'),
+        h('button', { type: 'button', class: 'text-btn', onClick: () => { forgetWatching(m.id); rerender(); } }, 'Remove')))));
+}
 /* ---------- pins: tournaments and teams a visitor follows ----------
    Kept in this browser. Each pin remembers which matches it has already told the visitor about ("seen"),
    so a notice only lists matches that came out since. A team notice only appears once the visitor has
@@ -909,21 +1006,21 @@ function alertsPanel() {
   if (editing() || !alertsOpen) return null;
   const list = pinAlerts();
   if (!list.length) return null;
-  return h('section', { class: 'wrap', 'aria-label': 'New for your pins' }, h('div', { class: 'pin-alerts' },
+  return h('section', { class: 'wrap', id: 'pin-alerts', 'aria-label': 'New for your pins' }, h('div', { class: 'pin-alerts' },
     h('div', { class: 'pin-alerts-head' },
       h('h2', { class: 'pin-alerts-title' }, icon('pin', 22), 'New since you were last here'),
       h('button', { type: 'button', class: 'text-btn', onClick: () => { list.forEach(a => markSeen(a.kind, a.id, a.mids)); alertsOpen = false; rerender(); } }, 'Dismiss')),
     h('ul', {}, list.map(a => h('li', { class: 'pin-alert' },
       h('div', { class: 'pin-alert-text' }, h('strong', {}, a.title), h('span', {}, a.text), a.note ? h('span', { class: 'hint' }, a.note) : null),
-      h('a', { class: 'btn btn-outline', href: a.href, onClick: () => markSeen(a.kind, a.id, a.mids) }, a.go))))));
+      h('a', { class: 'btn btn-sm', href: a.href, onClick: () => markSeen(a.kind, a.id, a.mids) }, a.go))))));
 }
-function pinButton(kind, id, label) {
+function pinButton(kind, id, label, pic) {
   const on = isPinned(kind, id);
   return h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': String(on), onClick: () => {
     const now = togglePin(kind, id);
     toast(now ? 'Pinned. You’ll see new matches here when you come back.' : 'Unpinned');
     rerender();
-  } }, icon('pin', 18), on ? 'Pinned ' + label : 'Pin ' + label);
+  } }, pic || icon('pin', 16), on ? 'Pinned ' + label : 'Pin ' + label);
 }
 
 /* ---------- calendar reminders ----------
@@ -1054,16 +1151,49 @@ function monogram(name) {
   const letters = str(name).split(/\s+/).filter(Boolean).map(w => w[0]).join('').slice(0, 3).toUpperCase();
   return h('span', { class: 'monogram', 'aria-hidden': 'true' }, letters || '?');
 }
-function logoBox(tm, cls) {
-  const box = h('div', { class: 'logo ' + cls });
-  box.append(tm && tm.logo ? h('img', { src: tm.logo, alt: '' }) : monogram(tm ? tm.name : ''));
+/* A colour for a team or event, worked out from its id, so the same one always gets the same colour. */
+function hue(id) { let x = 7; for (const c of str(id)) x = (x * 31 + c.charCodeAt(0)) >>> 0; return x % 360; }
+/* Team logos. The site is dark, so a logo's dark-background version is used where Liquipedia has one.
+   A logo that's still mostly dark (FURIA's black panther, say) gets a faint light outline. */
+const DARK_LOGO = new Map();
+function looksDark(img) {
+  try {
+    const c = document.createElement('canvas'); c.width = c.height = 24;
+    const g = c.getContext('2d', { willReadFrequently: true });
+    g.drawImage(img, 0, 0, 24, 24);
+    const px = g.getImageData(0, 0, 24, 24).data;
+    let sum = 0, n = 0;
+    for (let i = 0; i < px.length; i += 4) { if (px[i + 3] < 128) continue; sum += 0.2126 * px[i] + 0.7152 * px[i + 1] + 0.0722 * px[i + 2]; n++; }
+    return n > 20 && sum / n < 60;
+  } catch (e) { return false; }
+}
+function teamLogo(tm, cls) {
+  const src = tm ? (/^data:/.test(tm.logo) ? tm.logo : (tm.logoDark || tm.logo)) : '';
+  if (!src) return h('span', { class: 'tlogo ' + (cls || ''), 'aria-hidden': 'true' }, str(tm && tm.name).replace(/[^A-Za-z0-9]/g, '').slice(0, 3) || '?');
+  const img = h('img', { class: 'tlogo ' + (cls || '') + (DARK_LOGO.get(src) ? ' halo' : ''), src, alt: '', loading: 'lazy', decoding: 'async' });
+  if (!DARK_LOGO.has(src)) img.addEventListener('load', () => {
+    if (DARK_LOGO.has(src)) { if (DARK_LOGO.get(src)) img.classList.add('halo'); return; }
+    const dark = looksDark(img);
+    DARK_LOGO.set(src, dark);
+    if (dark) document.querySelectorAll('img.tlogo').forEach(x => { if (x.getAttribute('src') === src) x.classList.add('halo'); });
+  }, { once: true });
+  return img;
+}
+const logoBox = (tm, cls) => teamLogo(tm, cls);
+/* Event art: your own picture for the event, or its logo on a stage-lit backdrop in the event's colour. */
+function artView(t, cls) {
+  if (t.art) return h('div', { class: 'art ' + (cls || ''), style: 'background-image:url("' + encodeURI(t.art) + '")' });
+  const box = h('div', { class: 'art lit ' + (cls || ''), style: '--h:' + hue(t.id) });
+  const logo = t.logoDark || t.logo;
+  box.append(logo ? h('img', { class: 'art-logo', src: logo, alt: '', loading: 'lazy' }) : h('span', { class: 'art-name', 'aria-hidden': 'true' }, t.name || ''));
   return box;
 }
-function artView(t) {
-  if (t.art) return h('img', { src: t.art, alt: '' });
-  if (t.logo && t.logoDark) return h('div', { class: 'art-fallback' }, h('img', { class: 'art-logo lt', src: t.logo, alt: '' }), h('img', { class: 'art-logo dk', src: t.logoDark, alt: '' }));
-  if (t.logo) return h('div', { class: 'art-fallback' }, h('img', { class: 'art-logo', src: t.logo, alt: '' }));
-  return h('div', { class: 'art-fallback' }, h('span', { class: 'art-name' }, t.name || 'Tournament'));
+/* Map pictures (in-game views from Liquipedia), shown only for the map being watched, like its name. */
+const MAP_PICS = { ancient: 'jpg', anubis: 'jpg', cache: 'png', 'dust-ii': 'jpg', inferno: 'jpg', mirage: 'jpg', nuke: 'jpg', overpass: 'jpg', train: 'png', vertigo: 'jpg' };
+function mapBadge(name) {
+  const k = str(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').replace(/^dust-2$/, 'dust-ii');
+  if (name && MAP_PICS[k]) return h('span', { class: 'mb', role: 'img', 'aria-label': name, style: 'background-image:url("images/maps/' + k + '.' + MAP_PICS[k] + '")' });
+  return name ? null : h('span', { class: 'mb', 'aria-hidden': 'true' }, '?'); // a named map with no picture just shows its name
 }
 function metaLine(parts) {
   const vals = parts.filter(Boolean);
@@ -1160,7 +1290,7 @@ function rateBox(m) {
 /* ---------- routing ---------- */
 function parseRoute() {
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
-  if (p[0] === 't') return { name: 'tournament', tid: p[1], sid: p[2] };
+  if (p[0] === 't') return { name: 'tournament', tid: p[1], sid: p[2], rid: p[3] };
   if (p[0] === 'match') return { name: 'player', mid: p[1], map: parseInt(p[2] || '0', 10) || 0, short: p[2] === 'short' };
   if (p[0] === 'c' && p[1]) return { name: 'collection', cid: p[1] };
   if (p[0] === 'tournaments' || p[0] === 'how' || p[0] === 'collections') return { name: 'home', section: p[0] };
@@ -1196,8 +1326,16 @@ function rerender() { route(true); }
 
 function renderHeader() {
   const name = data.site.name || 'Spoiler-Free CS2';
-  $('#brand').textContent = name;
+  // "Spoiler-Free CS2" is drawn as "Spoiler/free CS2", with the slash in orange.
+  const cut = name.indexOf('-');
+  $('#brand').replaceChildren(...(cut > 0 ? [name.slice(0, cut), h('i', {}, '/'), name.slice(cut + 1).replace(/^Free/, 'free')] : [name]));
   document.title = name;
+  // The bell counts what's new for the visitor's pins and brings the notices back after they were dismissed.
+  const n = editing() ? 0 : pinAlerts().length, bell = $('#bell');
+  bell.hidden = !n;
+  bell.replaceChildren(icon('pin', 16), h('span', {}, 'New'), h('em', {}, String(n)));
+  bell.setAttribute('aria-label', plural(n, 'new notice') + ' for your pins');
+  bell.onclick = () => { alertsOpen = true; rerender(); const a = document.getElementById('pin-alerts'); if (a) a.scrollIntoView({ block: 'nearest' }); };
   const r = parseRoute();
   document.querySelectorAll('[data-nav]').forEach(a => {
     const k = a.dataset.nav;
@@ -1212,6 +1350,7 @@ function renderFooter() {
   $('#footer').replaceChildren(h('div', { class: 'wrap footer-in' },
     ed('span', 'footer-brand', data.site.name, v => { data.site.name = v; renderHeader(); }, { label: 'Site name', placeholder: 'Site name' }),
     ed('span', 'footer-text', data.site.footer, v => { data.site.footer = v; }, { label: 'Footer text', placeholder: 'Footer text' }),
+    parseRoute().name === 'player' && !editing() ? h('span', { class: 'footer-text' }, 'Keys: Space plays or pauses · ← → skip 10s, Shift for 30s · < > speed · W hides the side panel · F full screen') : null,
     // Liquipedia's content is CC BY-SA, so its use is credited whenever the watcher's data is on the page.
     AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/counterstrike/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
       ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null,
@@ -1235,102 +1374,115 @@ function exampleNotice() {
 /* ---------- home ---------- */
 function renderHome(app) {
   const ts = data.tournaments;
-  const feat = findT(data.site.featuredId) || (AUTO && findT(str(AUTO.featured))) || ts[0] || null;
-  const text = h('div', { class: 'hero-text' });
-  if (feat) {
-    text.append(h('div', { class: 'eyebrow' }, 'Featured tournament'),
-      h('h1', { class: 'hero-title' }, feat.name || 'Untitled tournament'),
-      metaLine([feat.dates, feat.location, feat.teamsText]));
-  } else {
-    text.append(h('div', { class: 'eyebrow' }, 'CS2 tournaments, spoiler-free'), h('h1', { class: 'hero-title' }, data.site.name || 'Spoiler-Free CS2'));
-  }
-  if (editing() || data.site.heroText) text.append(ed('p', 'lede', data.site.heroText, v => { data.site.heroText = v; }, { label: 'Intro text', placeholder: 'Write a short intro for your site' }));
-  const btns = h('div', { class: 'btn-row' });
-  if (feat) {
-    const fm = firstMatch(feat);
-    btns.append(h('a', { class: 'btn btn-accent', href: fm ? '#/match/' + fm.id + '/0' : '#/t/' + feat.id }, fm ? 'Start from match one' : 'Open tournament'));
-  }
-  btns.append(h('a', { class: 'btn btn-outline', href: '#/tournaments' }, 'All tournaments'));
-  text.append(btns);
-  if (editing() && ts.length > 1) {
-    const sel = h('select', { id: 'feat-select', class: 'input' }, ts.map(t => h('option', { value: t.id, selected: feat && t.id === feat.id }, t.name || 'Untitled tournament')));
-    sel.addEventListener('change', () => { data.site.featuredId = sel.value; commit(); });
-    text.append(h('div', { class: 'edit-panel' }, field('Featured on the home page', sel)));
-  }
-  const hero = h('section', { class: 'wrap hero' }, text);
-  if (feat) hero.append(h('div', { class: 'hero-art' }, artView(feat)));
-  app.append(hero);
+  const feat = findT(data.site.featuredId) || (AUTO && findT(str(AUTO.featured))) || ts.find(t => tStatus(t) === 'live') || ts[0] || null;
+  // Someone who's started a series gets it back first; everyone else gets the featured event as a marquee.
+  const cont = editing() ? [] : continueList();
+  app.append(cont.length ? resumeCard(cont[0]) : heroView(feat));
+  app.append(rulesBand());
 
-  // tournament list, in three groups: on now, finished, and still to come
-  const inner = h('div', { class: 'wrap section-in' });
-  if (!ts.length && !editing()) inner.append(h('p', { class: 'empty' }, 'No tournaments have been added yet. Check back soon.'));
+  const wrap = h('div', { class: 'wrap', id: 'sec-tournaments' });
+  if (cont.length > 1) wrap.append(continueShelf(cont.slice(1, 9)));
+  if (!ts.length && !editing()) wrap.append(h('section', { class: 'shelf' }, h('p', { class: 'empty' }, 'No tournaments have been added yet. Check back soon.')));
   const live = ts.filter(t => tStatus(t) === 'live');
   const done = ts.filter(t => tStatus(t) === 'done');
   // Coming up: soonest first.
   const upcoming = ts.filter(t => tStatus(t) === 'upcoming').sort((a, b) => str(a.sdate) < str(b.sdate) ? -1 : str(a.sdate) > str(b.sdate) ? 1 : 0);
   const pinGroup = editing() ? null : pinsView();
   const anyPins = pinGroup && pinGroup.dataset.empty !== 'true';
-  const cont = editing() ? null : continueView();
-  if (cont) inner.append(cont);
-  if (anyPins) inner.append(pinGroup);
-  if (live.length) {
-    inner.append(h('div', { class: 'group', id: 'grp-live' },
-      h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, h('span', { class: 'live-dot', 'aria-hidden': 'true' }), 'Happening now')),
-      h('p', { class: 'group-note' }, 'Matches are added as their videos come out, usually within a day.'),
-      h('div', { class: 'grid' }, live.map(tCard))));
-  }
+  if (anyPins) wrap.append(pinGroup);
+  // The marquee already shows the featured event, so it isn't repeated underneath.
+  const liveRow = cont.length ? live : live.filter(t => t !== feat);
+  if (liveRow.length) wrap.append(shelf('grp-live', [h('span', { class: 'live-dot', 'aria-hidden': 'true', style: 'margin-right:10px;align-self:center' }), 'Happening now'],
+    'Matches are added as their videos come out, usually within a day.', h('div', { class: 'posters' }, liveRow.map(tCard))));
   if (done.length || editing()) {
     const years = [...new Set(done.map(t => t.year.trim()).filter(Boolean))].sort().reverse();
     if (homeYear !== 'all' && !years.includes(homeYear)) homeYear = 'all';
-    const head = h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Ready to watch'));
-    if (years.length > 1) {
-      head.append(h('div', { class: 'chips', role: 'group', 'aria-label': 'Filter by year' },
-        ['all'].concat(years).map(y => h('button', { type: 'button', class: 'chip', 'aria-pressed': String(homeYear === y), onClick: () => { homeYear = y; rerender(); } }, y === 'all' ? 'All' : y))));
-    }
-    const grid = h('div', { class: 'grid' });
-    if (editing()) grid.append(h('button', { type: 'button', class: 'add-tile', onClick: addTournament }, '+ Add tournament'));
-    done.filter(t => homeYear === 'all' || t.year.trim() === homeYear).forEach(t => grid.append(tCard(t)));
-    inner.append(h('div', { class: 'group', id: 'grp-done' }, head,
-      h('p', { class: 'group-note' }, 'Finished events. Start from the first match and watch it unfold.'), grid));
+    const chips = years.length > 1 ? h('div', { class: 'chips', role: 'group', 'aria-label': 'Filter by year' },
+      ['all'].concat(years).map(y => h('button', { type: 'button', class: 'chip', 'aria-pressed': String(homeYear === y), onClick: () => { homeYear = y; rerender(); } }, y === 'all' ? 'All' : y))) : null;
+    const row = h('div', { class: 'posters' });
+    if (editing()) row.append(h('button', { type: 'button', class: 'add-tile', onClick: addTournament }, '+ Add tournament'));
+    done.filter(t => homeYear === 'all' || t.year.trim() === homeYear).forEach(t => row.append(tCard(t)));
+    wrap.append(shelf('grp-done', 'Ready to watch', 'Finished events. Start from the first match and watch it unfold.', row, chips));
   }
-  if (upcoming.length) {
-    const first = showAllUpcoming ? upcoming : upcoming.slice(0, 6);
-    inner.append(h('div', { class: 'group', id: 'grp-upcoming' },
-      h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Coming up')),
-      h('p', { class: 'group-note' }, 'Matches show up here once they’re drawn.'),
-      h('div', { class: 'grid' }, first.map(tCard)),
-      upcoming.length > first.length ? h('button', { type: 'button', class: 'btn btn-outline show-more', onClick: () => { showAllUpcoming = true; rerender(); } }, 'Show all ' + upcoming.length) : null));
-  }
-  if (pinGroup && !anyPins) inner.append(pinGroup);
-  app.append(h('section', { class: 'section', id: 'sec-tournaments' }, inner));
+  if (upcoming.length) wrap.append(shelf('grp-upcoming', 'Coming up', 'Matches show up once they’re drawn. Add an event to your calendar to hear when its videos are ready.',
+    h('div', { class: 'posters' }, upcoming.map(tCard))));
+  if (!cont.length && !editing()) wrap.append(shelf('grp-short', 'Short on time?', '', h('div', { class: 'wide3' },
+    h('div', { class: 'wtile' }, h('b', {}, 'Short versions'), h('span', {}, 'The organisers’ own highlights, offered once every match in a round has one.')),
+    h('div', { class: 'wtile' }, h('b', {}, 'Watch faster'), h('span', {}, 'Every map plays at up to 2×, and the site remembers your speed.')),
+    h('div', { class: 'wtile' }, h('b', {}, 'Pick up later'), h('span', {}, 'Leave mid-map and the home page takes you back to the same moment.')))));
   const cols = editing() ? null : collectionsView();
-  if (cols) app.append(h('section', { class: 'section', id: 'sec-collections' }, h('div', { class: 'wrap section-in' }, cols)));
-
-  // how it works
-  app.append(h('section', { class: 'band', id: 'sec-how' }, h('div', { class: 'wrap band-in' },
-    ed('h2', 'h2', data.site.howTitle, v => { data.site.howTitle = v; }, { label: 'Section title', placeholder: 'Section title' }),
-    h('div', { class: 'how-grid' }, data.site.how.map(it => h('div', { class: 'how-item' },
-      ed('h3', '', it.title, v => { it.title = v; }, { label: 'Point title', placeholder: 'Title' }),
-      ed('p', '', it.text, v => { it.text = v; }, { label: 'Point text', placeholder: 'Short explanation' })))))));
+  if (cols) wrap.append(cols);
+  if (pinGroup && !anyPins) wrap.append(pinGroup);
+  app.append(wrap);
 }
-/* Your pins: pinned events as cards, pinned teams as buttons, and a box to pin a team by name. */
+function shelf(id, title, note, body, side) {
+  return h('section', { class: 'shelf', id },
+    h('div', { class: 'shelf-head' }, h('h2', { class: 'sh' }, title), side || null),
+    note ? h('p', { class: 'shelf-note' }, note) : null,
+    body);
+}
+/* The marquee: the featured event (or the one on now), big, with a way straight into its first match. */
+function heroView(t) {
+  const text = h('div', { class: 'hero-text' });
+  const st = t ? tStatus(t) : '';
+  if (t) {
+    const when = [t.dates, str(t.location).split(',')[0], t.teamsText].filter(Boolean).join(' · ');
+    text.append(st === 'live'
+      ? h('span', { class: 'live' }, h('span', { class: 'live-dot', 'aria-hidden': 'true' }), 'Happening now' + (when ? ' · ' + when : ''))
+      : h('span', { class: 'eyebrow' }, (st === 'upcoming' ? 'Coming up' : 'Featured') + (when ? ' · ' + when : '')),
+      h('h1', { class: 'hero-title' }, t.name || 'Untitled tournament'));
+  } else {
+    text.append(h('span', { class: 'eyebrow' }, 'CS2 tournaments, spoiler-free'), h('h1', { class: 'hero-title' }, data.site.name || 'Spoiler-Free CS2'));
+  }
+  if (editing() || data.site.heroText) text.append(ed('p', 'lede', data.site.heroText, v => { data.site.heroText = v; }, { label: 'Intro text', placeholder: 'Write a short intro for your site' }));
+  const btns = h('div', { class: 'btn-row' });
+  if (t) {
+    const fm = firstMatch(t);
+    btns.append(h('a', { class: 'btn btn-accent', href: fm ? '#/match/' + fm.id + '/0' : '#/t/' + t.id }, fm ? [icon('play', 16, 'currentColor'), 'Watch from match one'] : 'Open event'));
+    if (fm) btns.append(h('a', { class: 'btn', href: '#/t/' + t.id }, 'Open event'));
+    if (calendarOk(t) && !editing()) btns.append(h('button', { type: 'button', class: 'btn btn-outline', onClick: () => openCalendarDialog([t]) }, 'Add to calendar'));
+  } else btns.append(h('a', { class: 'btn btn-outline', href: '#/tournaments' }, 'All events'));
+  text.append(btns);
+  const ts = data.tournaments;
+  if (editing() && ts.length > 1) {
+    const sel = h('select', { id: 'feat-select', class: 'input' }, ts.map(x => h('option', { value: x.id, selected: t && x.id === t.id }, x.name || 'Untitled tournament')));
+    sel.addEventListener('change', () => { data.site.featuredId = sel.value; commit(); });
+    text.append(h('div', { class: 'edit-panel' }, field('Featured on the home page', sel)));
+  }
+  const hero = h('section', { class: 'hero wrap' });
+  if (t) {
+    const city = str(t.location).split(',')[0].trim();
+    hero.append(artView(t), h('span', { class: 'ghost', 'aria-hidden': 'true' }, city && !/online/i.test(city) ? city : t.year || ''));
+  }
+  hero.append(text);
+  return hero;
+}
+/* The spoiler rules, in one line each, under the marquee. "How it works" in the menu leads here. */
+function rulesBand() {
+  return h('section', { class: 'wrap', id: 'sec-how' }, h('div', { class: 'rules' },
+    editing() ? ed('h2', 'rules-title', data.site.howTitle, v => { data.site.howTitle = v; }, { label: 'Section title', placeholder: 'Section title' }) : h('h2', { class: 'sr-only' }, data.site.howTitle),
+    data.site.how.map(it => h('div', { class: 'rule' },
+      ed('h3', '', it.title, v => { it.title = v; }, { label: 'Point title', placeholder: 'Title' }),
+      ed('p', '', it.text, v => { it.text = v; }, { label: 'Point text', placeholder: 'Short explanation' })))));
+}
+/* Your pins: pinned events as posters, pinned teams as buttons, and a box to pin a team by name. */
 function pinsView() {
   const p = getPins();
   const pts = data.tournaments.filter(t => p.tournaments[t.id]);
   const pteams = Object.keys(p.teams).filter(id => team(id));
   const empty = !pts.length && !pteams.length;
-  const g = h('div', { class: 'group', id: 'grp-pins', 'data-empty': String(empty) },
-    h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Your pins')),
-    h('p', { class: 'group-note' }, empty
+  const g = h('section', { class: 'shelf', id: 'grp-pins', 'data-empty': String(empty) },
+    h('h2', { class: 'sh' }, 'Your pins'),
+    h('p', { class: 'shelf-note' }, empty
       ? 'Pin an event or a team and you’ll be told about new matches when you come back. Pins are kept in this browser.'
       : 'New matches for these show at the top of the page when you come back. Team notices wait until you’ve marked their earlier matches in that event as watched.'));
-  if (pts.length) g.append(h('div', { class: 'grid' }, pts.map(tCard)));
+  if (pts.length) g.append(h('div', { class: 'posters' }, pts.map(tCard)));
   const cal = pts.filter(calendarOk);
-  if (cal.length) g.append(h('div', { class: 'pin-row' }, h('button', { type: 'button', class: 'btn btn-outline', onClick: () => openCalendarDialog(cal) }, 'Calendar reminders'),
+  if (cal.length) g.append(h('div', { class: 'pin-row' }, h('button', { type: 'button', class: 'btn btn-sm', onClick: () => openCalendarDialog(cal) }, 'Calendar reminders'),
     h('span', { class: 'hint' }, 'A reminder the day after each match day of your pinned events.')));
   if (pteams.length) g.append(h('div', { class: 'pin-row', role: 'group', 'aria-label': 'Pinned teams' },
     pteams.sort((a, b) => teamName(a).localeCompare(teamName(b))).map(id => h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': 'true', 'aria-label': 'Unpin ' + teamName(id), title: 'Unpin', onClick: () => { togglePin('teams', id); toast('Unpinned ' + teamName(id)); rerender(); } },
-      icon('pin', 18), teamName(id), icon('x', 16)))));
+      teamLogo(team(id)), teamName(id), icon('x', 14)))));
   const choices = data.teams.filter(x => x.name && !p.teams[x.id]).sort((a, b) => a.name.localeCompare(b.name));
   if (choices.length) {
     const inp = h('input', { class: 'input', id: 'pin-team-input', list: 'pin-team-list', placeholder: 'Team name', autocomplete: 'off' });
@@ -1343,22 +1495,23 @@ function pinsView() {
     inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); add(); } });
     g.append(h('div', { class: 'field' }, h('label', { for: inp.id }, 'Pin a team'),
       h('div', { class: 'pin-add' }, inp, h('datalist', { id: 'pin-team-list' }, choices.map(x => h('option', { value: x.name }))),
-        h('button', { type: 'button', class: 'btn btn-outline', onClick: add }, 'Pin'))));
+        h('button', { type: 'button', class: 'btn', onClick: add }, 'Pin'))));
   }
   return g;
 }
+/* An event as a tall poster. */
 function tCard(t) {
   const n = countMatches(t);
   const st = tStatus(t);
   const al = tournamentAlert(t);
-  const meta = (isPinned('tournaments', t.id) ? 'Pinned · ' + (al ? al.mids.length + ' new · ' : '') : '') + (st === 'upcoming' && !n ? 'Coming up' + (t.teamsText ? ' · ' + t.teamsText : '')
-    : (st === 'live' ? 'Live · ' : '') + plural(t.stages.length, 'stage') + ' · ' + plural(n, 'match', 'matches'));
-  return h('a', { class: 't-card', href: '#/t/' + t.id },
-    h('div', { class: 't-art' }, artView(t)),
-    h('div', { class: 't-body' },
-      h('div', { class: 't-name' }, t.name || 'Untitled tournament'),
-      t.dates ? h('div', { class: 't-dates' }, t.dates) : null,
-      h('div', { class: 't-meta' }, meta)));
+  const badges = [st === 'live' ? h('span', { class: 'badge or' }, 'Live') : null,
+    al ? h('span', { class: 'badge or' }, al.mids.length + ' new') : null,
+    isPinned('tournaments', t.id) ? h('span', { class: 'badge' }, 'Pinned') : null].filter(Boolean);
+  const sub = [t.dates || (st === 'upcoming' ? 'Dates to come' : ''), n ? plural(n, 'match', 'matches') : (st === 'upcoming' ? t.teamsText : '')].filter(Boolean).join(' · ');
+  return h('a', { class: 'poster', href: '#/t/' + t.id },
+    artView(t),
+    badges.length ? h('span', { class: 'badges' }, badges) : null,
+    h('span', { class: 'cap' }, h('span', { class: 'nm' }, t.name || 'Untitled tournament'), sub ? h('span', { class: 's' }, sub) : null));
 }
 function addTournament() {
   const t = {
@@ -1371,10 +1524,102 @@ function addTournament() {
   scheduleSave();
 }
 
-/* ---------- tournament ---------- */
+/* ---------- tournament ----------
+   Rounds run down the side like a show's seasons; the matches of the chosen round are its episodes.
+   Edit mode keeps the plain list of every round, with its editing tools. */
 function renderTournament(app, r) {
   const t = findT(r.tid);
   if (!t) return renderNotFound(app);
+  if (editing()) return renderTournamentEdit(app, r);
+  // Opening a pinned event counts as having seen what's new in it.
+  const al = tournamentAlert(t);
+  if (al) markSeen(al.kind, al.id, al.mids);
+  const st = tStatus(t);
+  const when = [t.dates, t.location, t.teamsText].filter(Boolean).join(' · ');
+  app.append(h('section', { class: 'ehead wrap' }, artView(t),
+    h('div', { class: 'poster', 'aria-hidden': 'true' }, artView(t)),
+    h('div', { class: 'e-title-col' },
+      h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/' }, 'Home'), sep(), h('a', { href: '#/tournaments' }, 'Events'), sep(), h('span', { class: 'crumb-cur' }, t.name || 'Untitled tournament')),
+      st === 'live' ? h('span', { class: 'live' }, h('span', { class: 'live-dot', 'aria-hidden': 'true' }), 'Happening now' + (when ? ' · ' + when : '')) : (when ? h('span', { class: 'meta' }, when) : null),
+      h('h1', { class: 't-title' }, t.name || 'Untitled tournament'),
+      h('div', { class: 'pin-row' }, pinButton('tournaments', t.id, 'event'),
+        calendarOk(t) ? h('button', { type: 'button', class: 'pin-btn', onClick: () => openCalendarDialog([t]) }, 'Add to calendar') : null))));
+
+  const all = [];
+  t.stages.forEach(s => s.rounds.forEach(rd => all.push({ s, rd })));
+  if (!all.length) {
+    app.append(h('section', { class: 'wrap stage-body' }, h('p', { class: 'empty' }, st === 'upcoming' ? 'This event hasn’t started yet. Its matches show up here once they’re drawn.' : 'No matches have been added yet.')));
+    return;
+  }
+  const isOpen = rd => !rd.locked || !!store.get('revealed', {})[rd.id];
+  // Without a round in the address: the first round still to watch (a hidden one counts, so its curtain shows next).
+  const cur = all.find(x => x.rd.id === r.rid) || (r.sid && all.find(x => x.s.id === r.sid))
+    || all.find(x => !isOpen(x.rd) || x.rd.matches.some(m => !isWatched(m.id))) || all[0];
+  const chapters = h('nav', { class: 'chapters', 'aria-label': 'Rounds' });
+  t.stages.forEach(s => {
+    if (!s.rounds.length) return;
+    if (t.stages.length > 1 || s.name) chapters.append(h('div', { class: 'g' }, s.name || 'Stage'));
+    s.rounds.forEach(rd => {
+      const open = isOpen(rd);
+      chapters.append(h('a', { class: open ? null : 'lk', href: '#/t/' + t.id + '/' + s.id + '/' + rd.id, 'aria-current': rd === cur.rd ? 'page' : null,
+        'aria-label': (rd.name || 'Round') + (open ? '' : ', hidden') },
+        h('b', {}, rd.name || 'Round'), h('span', {}, open ? plural(rd.matches.length, 'match', 'matches') : 'Hidden')));
+    });
+  });
+  app.append(h('div', { class: 'ebody wrap' }, chapters, episodesView(t, cur.s, cur.rd, all.indexOf(cur), all)));
+}
+function episodesView(t, s, rd, i, all) {
+  const open = !rd.locked || !!store.get('revealed', {})[rd.id];
+  const box = h('section', { class: 'eps', 'aria-label': rd.name || 'Round' });
+  const head = h('div', { class: 'ephead' }, h('h2', { class: 'sh' }, rd.name || 'Round',
+    h('small', {}, [all.length > 1 && s.name !== rd.name ? s.name : '', s.info].filter(Boolean).join(' · '))));
+  box.append(head);
+  if (!open) {
+    const prev = i > 0 ? (all[i - 1].rd.name || 'the round before') : '';
+    box.append(h('div', { class: 'curtain' },
+      h('b', {}, icon('lock', 22), (rd.name || 'These') + ' matchups are hidden'),
+      h('span', { class: 'muted' }, prev ? 'Seeing who plays who here could give away results from ' + prev + '.' : 'Seeing these matchups early could give away results.'),
+      h('button', { type: 'button', class: 'btn btn-inv btn-sm', onClick: () => { setRevealed(rd.id, true); rerender(); } }, 'Show ' + (rd.name || 'matchups'))));
+    return box;
+  }
+  if (!rd.matches.length) { box.append(h('p', { class: 'empty' }, 'No matches in this round yet.')); return box; }
+  // Full maps or the short versions, for the whole round. Short versions only once every match has one.
+  const hasShort = shortReady(rd);
+  const short = hasShort && !!store.get('shortView', false);
+  const tools = h('div', { class: 'row' });
+  if (hasShort) tools.append(h('div', { class: 'seg', role: 'group', 'aria-label': 'Version' },
+    [[false, 'Full maps'], [true, 'Short versions']].map(([v, label]) => h('button', { type: 'button', 'aria-pressed': String(short === v), onClick: () => { store.set('shortView', v); rerender(); } }, label))));
+  const next = rd.matches.find(m => !isWatched(m.id)) || rd.matches[0];
+  tools.append(h('a', { class: 'btn btn-accent btn-sm', href: slotFor(next, short) }, icon('play', 14, 'currentColor'), 'Play ' + (rd.name || 'round')));
+  if (rd.locked) tools.append(h('button', { type: 'button', class: 'text-btn', onClick: () => { setRevealed(rd.id, false); rerender(); } }, 'Hide again'));
+  head.append(tools);
+  rd.matches.forEach((m, k) => box.append(episode(m, k, short)));
+  if (hasShort) box.append(h('p', { class: 'hint' }, 'Short versions are the organisers’ highlights of each series. Their length stays hidden.'));
+  return box;
+}
+// Where a match opens: its short version, the map the visitor was on, or map 1.
+function slotFor(m, short) {
+  if (short) return '#/match/' + m.id + '/short';
+  const cw = !isWatched(m.id) && store.get('cw', {})[m.id];
+  return '#/match/' + m.id + '/' + (cw ? Math.min(Math.max(0, +cw.map || 0), m.maps.length - 1) : 0);
+}
+function episode(m, k, short) {
+  const watched = isWatched(m.id);
+  const going = !watched && !!store.get('cw', {})[m.id];
+  const href = slotFor(m, short);
+  const names = teamName(m.a) + ' vs ' + teamName(m.b);
+  return h('div', { class: 'ep' },
+    h('span', { class: 'n', 'aria-hidden': 'true' }, String(k + 1)),
+    h('a', { class: 'm-card', href, tabindex: '-1', 'aria-hidden': 'true' },
+      thumbView(m, going ? h('span', { class: 'watched-chip' }, 'In progress') : watched ? h('span', { class: 'watched-chip done' }, 'Watched') : null, ratingSlot(m.id, 'rate-chip'))),
+    h('div', {},
+      h('h3', {}, h('a', { href }, names)),
+      h('span', { class: 'sub' }, ['Best of ' + m.bo, m.date].filter(Boolean).join(' · ')),
+      going || watched ? h('span', { class: 'sub stat' }, ' · ' + (going ? 'In progress' : 'Watched')) : null),
+    h('span', { class: 'extra' }, going ? h('a', { class: 'btn btn-accent btn-sm', href }, 'Resume') : null));
+}
+function renderTournamentEdit(app, r) {
+  const t = findT(r.tid);
   const s = t.stages.find(x => x.id === r.sid) || t.stages[0] || null;
 
   const title = ed('h1', 't-title', t.name, v => { t.name = v; }, { label: 'Tournament name', placeholder: 'Tournament name' });
@@ -1402,7 +1647,7 @@ function renderTournament(app, r) {
         h('span', { class: 'hint' }, 'Used for the year filter on the home page.')),
       h('div', { class: 'field' }, h('span', { class: 'lbl' }, 'Card picture'),
         imgSlot({ src: t.art, alt: '', kind: 'art', cls: 'art-edit', empty: 'No card picture yet', onChange: v => { t.art = v; } }),
-        h('span', { class: 'hint' }, 'Shown on the home page. Wide pictures work best.')),
+        h('span', { class: 'hint' }, 'Shown on the event’s poster and at the top of its page. Tall pictures work best.')),
       h('div', { class: 'field' }, h('span', { class: 'lbl' }, 'This tournament'),
         h('div', { class: 'row' },
           data.site.featuredId === t.id
@@ -1490,25 +1735,22 @@ function roundView(t, s, rd, i) {
   }
   return wrap;
 }
-function thumbView(m) {
+/* A match tile: the two logos on the teams' colours. Never a YouTube thumbnail, which can carry a score. */
+function thumbView(m, ...extras) {
   const box = h('div', { class: 'thumb' });
-  if (m.thumb) { box.append(h('img', { class: 'custom', src: m.thumb, alt: '' })); return box; }
-  box.append(h('div', { class: 'thumb-names' },
-    h('div', { class: 'thumb-team' }, teamName(m.a)),
-    h('div', { class: 'thumb-vs' }, 'versus'),
-    h('div', { class: 'thumb-team' }, teamName(m.b))));
-  const ta = team(m.a), tb = team(m.b);
-  if ((ta && ta.logo) || (tb && tb.logo)) box.append(h('div', { class: 'thumb-logos' }, logoBox(ta, 'logo-sm'), logoBox(tb, 'logo-sm')));
-  box.append(h('span', { class: 'bo-tag' }, 'BO' + m.bo));
+  if (m.thumb) box.append(h('img', { class: 'custom', src: m.thumb, alt: '' }));
+  else box.append(h('span', { class: 'thumb-bg', style: '--ha:' + hue(m.a) + ';--hb:' + hue(m.b) }),
+    h('span', { class: 'lgs' }, teamLogo(team(m.a)), h('i', {}, 'vs'), teamLogo(team(m.b))),
+    h('span', { class: 'tcap' }, h('b', {}, teamName(m.a)), h('b', {}, teamName(m.b))));
+  box.append(h('span', { class: 'badge br' }, 'BO' + m.bo));
+  addKids(box, extras);
   return box;
 }
 function matchCard(m, rd) {
-  const watched = !!store.get('watched', {})[m.id];
+  const watched = isWatched(m.id);
   const going = !watched && !!store.get('cw', {})[m.id];
   const card = h('a', { class: 'm-card', href: '#/match/' + m.id + '/0' },
-    thumbView(m),
-    watched ? h('span', { class: 'watched-chip' }, 'Watched') : going ? h('span', { class: 'watched-chip' }, 'In progress') : null,
-    ratingSlot(m.id, 'rate-chip'),
+    thumbView(m, watched ? h('span', { class: 'watched-chip done' }, 'Watched') : going ? h('span', { class: 'watched-chip' }, 'In progress') : null, ratingSlot(m.id, 'rate-chip')),
     h('div', { class: 'm-cap' }, h('span', {}, teamName(m.a) + ' vs ' + teamName(m.b)), m.date ? h('span', {}, m.date) : null));
   const w = h('div', { class: 'm-wrap' }, card);
   if (editing()) w.append(h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match')));
@@ -1541,25 +1783,19 @@ function collectionItems(c) { return c.items.map(it => ({ it, r: resolveItem(it)
 function collectionsView() {
   const list = COLLECTIONS.map(c => ({ c, n: collectionItems(c).length })).filter(x => x.n);
   if (!list.length) return null;
-  return h('div', { class: 'group', id: 'grp-collections' },
-    h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Collections')),
-    h('p', { class: 'group-note' }, 'Hand-picked places to start. The notes say what to watch, never how it went.'),
-    h('div', { class: 'grid' }, list.map(({ c, n }) => {
-      const first = collectionItems(c)[0].r;
-      const t = first.t || first.f.t;
-      return h('a', { class: 't-card', href: '#/c/' + encodeURIComponent(c.id) },
-        h('div', { class: 't-art' }, artView(t)),
-        h('div', { class: 't-body' },
-          h('div', { class: 't-name' }, c.title || 'Collection'),
-          c.blurb ? h('div', { class: 't-dates' }, c.blurb) : null,
-          h('div', { class: 't-meta' }, plural(n, 'pick'))));
-    })));
+  return h('section', { class: 'shelf', id: 'sec-collections' },
+    h('h2', { class: 'sh' }, 'Collections'),
+    h('p', { class: 'shelf-note' }, 'Hand-picked places to start. The notes say what to watch, never how it went.'),
+    h('div', { class: 'wide3' }, list.map(({ c, n }) => h('a', { class: 'wtile', href: '#/c/' + encodeURIComponent(c.id) },
+      h('b', {}, c.title || 'Collection'),
+      c.blurb ? h('span', {}, c.blurb) : null,
+      h('span', { class: 't-meta' }, plural(n, 'pick'))))));
 }
 function hiddenThumb(t, rd) {
-  return h('div', { class: 'thumb' }, h('div', { class: 'thumb-names' },
-    h('div', { class: 'thumb-team' }, rd.name || 'Match'),
-    h('div', { class: 'thumb-vs' }, t.name || ''),
-    h('div', { class: 'hidden-teams' }, icon('lock', 18), 'Teams hidden')));
+  return h('div', { class: 'thumb' }, h('div', { class: 'hidden-tile' },
+    h('b', {}, rd.name || 'Match'),
+    h('span', { class: 'hint' }, t.name || ''),
+    h('span', { class: 'hidden-teams' }, icon('lock', 16), 'Teams hidden')));
 }
 function collectionCard(it, r) {
   const note = it.note ? h('p', { class: 'hint' }, it.note) : null;
@@ -1570,18 +1806,15 @@ function collectionCard(it, r) {
     const watched = isWatched(m.id);
     return h('div', { class: 'm-wrap' },
       h('a', { class: 'm-card', href: '#/match/' + m.id + '/0' }, hiddenThumb(t, rd),
-        watched ? h('span', { class: 'watched-chip' }, 'Watched') : null,
+        watched ? h('span', { class: 'watched-chip done' }, 'Watched') : null,
         h('div', { class: 'm-cap' }, h('span', {}, s.name || ''), m.date ? h('span', {}, m.date) : null)),
       h('p', { class: 'hint' }, 'Opening it shows who made it this far.'), note);
   }
   const t = r.t;
   return h('div', { class: 'm-wrap' },
-    h('a', { class: 't-card', href: '#/t/' + t.id + (r.s ? '/' + r.s.id : '') },
-      h('div', { class: 't-art' }, artView(t)),
-      h('div', { class: 't-body' },
-        h('div', { class: 't-name' }, t.name || 'Untitled tournament'),
-        t.dates ? h('div', { class: 't-dates' }, t.dates) : null,
-        h('div', { class: 't-meta' }, r.s ? (r.s.name || 'Stage') : 'Whole event'))),
+    h('a', { class: 'm-card', href: '#/t/' + t.id + (r.s ? '/' + r.s.id : '') },
+      h('div', { class: 'thumb' }, artView(t)),
+      h('div', { class: 'm-cap' }, h('span', {}, t.name || 'Untitled tournament'), h('span', {}, r.s ? (r.s.name || 'Stage') : 'Whole event'))),
     note);
 }
 function renderCollection(app, r) {
@@ -1611,64 +1844,87 @@ function renderPlayer(app, r) {
   const short = !!r.short && hasShort;
   const idx = short ? -1 : Math.min(Math.max(0, r.map || 0), m.maps.length - 1);
   const map = short ? { name: '', video: m.highlight, start: '', end: '', notPlayed: false } : m.maps[idx];
-  const page = h('div', { class: 'wrap player-page' + (store.get('wide', false) ? ' wide' : '') },
-    h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' },
-      h('a', { href: '#/t/' + t.id }, t.name || 'Tournament'), sep(),
-      h('a', { href: '#/t/' + t.id + '/' + s.id }, s.name || 'Stage'), sep(),
-      h('span', { class: 'crumb-cur' }, rd.name || 'Round')));
+  const ta = team(m.a), tb = team(m.b);
 
   const host = h('div', { id: 'yt-host' });
   const cover = h('div', { class: 'cover', id: 'cover' });
   const frame = h('div', { class: 'video-frame' }, host, cover, h('div', { class: 'party-pop', id: 'party-pop', hidden: true, 'aria-hidden': 'true' }));
   const ctl = buildControls();
-  const col = h('div', { class: 'player-col' },
-    h('div', { class: 'player', id: 'player' }, frame, ctl.bar),
-    h('div', { class: 'match-head' },
-      h('h1', { class: 'match-title' }, teamName(m.a), ' ', h('span', { class: 'vs' }, 'versus'), ' ', teamName(m.b)),
-      ratingSlot(m.id, 'rate-badge'),
-      metaLine([short ? 'Short version' : 'Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), s.name, rd.name, 'Best of ' + m.bo, m.date]),
-      editing() ? null : h('div', { class: 'pin-row' }, [m.a, m.b].filter(id => team(id)).map(id => pinButton('teams', id, teamName(id))))),
-    editing() ? h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match')) : null);
 
-  const watched = !!store.get('watched', {})[m.id];
-  const wbtn = h('button', { type: 'button', class: 'btn ' + (watched ? 'btn-inv' : 'btn-outline'), 'aria-pressed': String(watched) }, watched ? 'Watched' : 'Mark as watched');
+  const watched = isWatched(m.id);
+  const wbtn = h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': String(watched) }, watched ? '✓ Watched' : 'Mark as watched');
   wbtn.addEventListener('click', () => {
     const w = store.get('watched', {});
     const on = !w[m.id];
     if (on) { w[m.id] = true; forgetWatching(m.id); } else delete w[m.id];
     store.set('watched', w);
-    wbtn.className = 'btn ' + (on ? 'btn-inv' : 'btn-outline');
     wbtn.setAttribute('aria-pressed', String(on));
-    wbtn.textContent = on ? 'Watched' : 'Mark as watched';
+    wbtn.textContent = on ? '✓ Watched' : 'Mark as watched';
     if (rbox) rbox.hidden = !on;
   });
   // Rating is offered once the match is marked as watched, so votes come from people who saw it.
   const rbox = ratingsReady() && !editing() ? rateBox(m) : null;
   if (rbox) rbox.hidden = !watched;
-  const aside = h('aside', { class: 'maps', 'aria-label': 'Maps in this series' },
-    h('div', { class: 'maps-head' }, h('h2', { class: 'maps-title' }, 'Maps'), h('span', { class: 'hint' }, 'Best of ' + m.bo)),
-    h('div', { class: 'map-list' }, m.maps.map((mp, i) => h('a', { class: 'map-btn', href: '#/match/' + m.id + '/' + i, 'aria-current': i === idx ? 'true' : null },
-      h('span', { class: 'map-label' }, 'Map ' + (i + 1)),
-      h('span', { class: 'map-state' }, i === idx ? 'Now showing' : 'Open'))),
-      hasShort ? h('a', { class: 'map-btn short-btn', href: '#/match/' + m.id + '/short', 'aria-current': short ? 'true' : null },
-        h('span', { class: 'map-label' }, 'Short version'),
-        h('span', { class: 'map-state' }, short ? 'Now showing' : 'Highlights')) : null),
-    h('p', { class: 'hint' }, 'Every possible map is listed, so this list can’t tell you how long the series went. Map names only show for the map you’re on.'),
-    hasShort ? h('p', { class: 'hint' }, 'Short on time? The short version is the organiser’s highlights of the whole series. Its length stays hidden and it plays map by map, so it gives nothing away early. Every match in this round has one.') : null,
-    wbtn,
-    rbox,
-    editing() ? null : partyBox(),
-    h('p', { class: 'hint' }, 'Keys: Space plays or pauses. ← and → skip 10 seconds, hold Shift for 30. < and > change the speed. W for a wide player, F for full screen.'));
-  page.append(h('div', { class: 'player-row' }, col, aside));
 
-  const others = rd.matches.filter(x => x !== m);
-  if (others.length) page.append(h('section', { class: 'more' },
-    h('h2', { class: 'h2 h2-sm' }, 'More from ' + (rd.name || 'this round')),
-    h('div', { class: 'grid' }, others.map(x => matchCard(x, rd)))));
+  // The map being watched shows its name and picture. Every other map gets the same plain "?" badge.
+  const meta = h('div', { class: 'meta' });
+  if (!short) { const b = mapBadge(map.name); if (b) meta.append(b); }
+  [short ? 'Short version' : 'Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), 'Best of ' + m.bo, m.date].filter(Boolean)
+    .forEach((v, i) => { if (i) meta.append(dot()); meta.append(h('span', {}, v)); });
+  const info = h('div', { class: 'minfo wrap' },
+    h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' },
+      h('a', { href: '#/t/' + t.id }, t.name || 'Tournament'), sep(),
+      h('a', { href: '#/t/' + t.id + '/' + s.id + '/' + rd.id }, [s.name, rd.name].filter(Boolean).join(' / ') || 'Round')),
+    h('h1', { class: 'match-title' }, teamLogo(ta), teamName(m.a), h('span', { class: 'vs' }, 'vs'), teamName(m.b), teamLogo(tb)),
+    ratingSlot(m.id, 'rate-badge'),
+    meta,
+    editing() ? h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match'))
+      : h('div', { class: 'pin-row' }, [m.a, m.b].filter(id => team(id)).map(id => pinButton('teams', id, teamName(id), teamLogo(team(id)))),
+        wbtn, h('button', { type: 'button', class: 'pin-btn', onClick: () => showSideTab('party') }, 'Watch with friends')),
+    rbox);
+
+  const mapList = h('div', { class: 'map-list' }, m.maps.map((mp, i) => h('a', { class: 'map-btn', href: '#/match/' + m.id + '/' + i, 'aria-current': i === idx ? 'true' : null },
+    h('span', { class: 'l' }, mapBadge(i === idx ? mp.name : ''),
+      h('span', {}, h('span', { class: 'map-label' }, 'Map ' + (i + 1)), i === idx ? h('span', { class: 'map-state' }, (mp.name ? mp.name + ' · ' : '') + 'Now showing') : null)),
+    h('span', { class: 'map-state' }, i === idx ? '▶' : 'Open'))),
+    hasShort ? h('a', { class: 'map-btn', href: '#/match/' + m.id + '/short', 'aria-current': short ? 'true' : null },
+      h('span', { class: 'l' }, h('span', {}, h('span', { class: 'map-label' }, 'Short version'), h('span', { class: 'map-state' }, short ? 'Now showing' : 'The organiser’s highlights'))),
+      h('span', { class: 'map-state' }, short ? '▶' : 'Open')) : null);
+  // Up next: the rest of the round, starting after this match.
+  const k = rd.matches.indexOf(m);
+  const others = rd.matches.slice(k + 1).concat(rd.matches.slice(0, k));
+  const panes = {
+    maps: h('div', { class: 'pane', id: 'pane-maps', role: 'tabpanel' }, mapList,
+      h('p', { class: 'hint' }, 'Every possible map is listed, so this can’t tell you how long the series went. A map’s name shows once you’re on it.'),
+      hasShort ? h('p', { class: 'hint' }, 'Short on time? The short version is the organiser’s highlights of the whole series. Its length stays hidden. Every match in this round has one.') : null),
+    party: h('div', { class: 'pane', id: 'pane-party', role: 'tabpanel' }, editing() ? h('p', { class: 'hint' }, 'Watch parties are off in edit mode.') : partyBox()),
+    next: h('div', { class: 'pane', id: 'pane-next', role: 'tabpanel' }, h('h2', { class: 'pane-title' }, 'Up next in ' + (rd.name || 'this round')),
+      others.length ? h('div', { class: 'next-list' }, others.map(x => matchCard(x, rd))) : h('p', { class: 'hint' }, 'Nothing else in this round yet.'))
+  };
+  const tabs = [['maps', 'Maps'], ['party', 'Party'], ['next', 'Next']].map(([k2, label]) => h('button', { type: 'button', role: 'tab', id: 'tab-' + k2, 'aria-controls': 'pane-' + k2, 'data-tab': k2, onClick: () => showSideTab(k2) }, label));
+  const side = h('aside', { class: 'side', id: 'side', 'aria-label': 'Maps, watch party and what’s next' },
+    h('div', { class: 'stabs', role: 'tablist' }, tabs,
+      h('button', { type: 'button', class: 'x', 'aria-label': 'Close the side panel', title: 'Close the side panel (W)', onClick: toggleWide }, icon('x', 18))),
+    Object.values(panes));
+  const page = h('div', { class: 'mwrap' + (store.get('wide', false) ? ' closed' : '') },
+    h('div', { class: 'stage-col' },
+      h('div', { class: 'player-box' },
+        h('div', { class: 'player', id: 'player' }, frame, ctl.bar),
+        h('button', { type: 'button', class: 'btn btn-sm btn-ghost reopen', onClick: toggleWide }, 'Show side panel')),
+      info),
+    side);
   app.append(page);
+  showSideTab(['maps', 'party', 'next'].includes(store.get('sideTab', 'maps')) ? store.get('sideTab', 'maps') : 'maps', true);
   mountPlayer(f, idx, map, { host, cover, ctl, frame });
   partyRender();
   partyOnPlayer();
+}
+/* The side panel's tabs. Picking one opens the panel if it was closed. */
+function showSideTab(name, quiet) {
+  document.querySelectorAll('.stabs [data-tab]').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
+  document.querySelectorAll('.side .pane').forEach(p => { p.hidden = p.id !== 'pane-' + name; });
+  store.set('sideTab', name);
+  if (!quiet && document.querySelector('.mwrap.closed')) toggleWide();
 }
 function buildControls() {
   const btn = (label, content) => h('button', { type: 'button', class: 'ctl', 'aria-label': label }, content);
@@ -1682,16 +1938,20 @@ function buildControls() {
     mute: btn('Mute', icon('vol', 22)),
     vol: h('input', { type: 'range', min: '0', max: '100', step: '5', value: '100', class: 'vol', id: 'vol', 'aria-label': 'Volume' }),
     speed: btn('Playback speed', speedLabel(speedPref())),
-    wide: btn(store.get('wide', false) ? 'Normal size' : 'Wide player', icon(store.get('wide', false) ? 'narrow' : 'wide', 22)),
+    wide: btn(store.get('wide', false) ? 'Show the side panel' : 'Hide the side panel', icon(store.get('wide', false) ? 'narrow' : 'wide', 22)),
     fs: btn('Full screen', icon('fs', 22))
   };
-  c.wide.title = 'Wide player (W)';
+  c.wide.title = 'Side panel (W)';
+  c.play.classList.add('ctl-play');
+  c.b30.classList.add('ctl-b30');
+  c.f30.classList.add('ctl-f30');
+  c.wide.classList.add('ctl-wide');
   c.speed.classList.add('ctl-q');
   c.speed.title = 'Playback speed (< and >)';
   c.speed.addEventListener('click', () => stepSpeed(1, true));
   c.wide.addEventListener('click', toggleWide);
   buildQualityMenu(c);
-  c.bar = h('div', { class: 'controls' }, c.play, c.b30, c.b10, c.f10, c.f30, h('span', { class: 'spacer' }),
+  c.bar = h('div', { class: 'controls' }, c.b30, c.b10, c.play, c.f10, c.f30, h('span', { class: 'spacer' }),
     c.elapsed, h('span', { class: 'len-hidden' }, icon('eyeoff', 16), h('span', {}, 'Length hidden')), c.mute, c.vol, c.speed, c.qwrap, c.wide, c.fs);
   return c;
 }
@@ -1955,7 +2215,8 @@ function setCover(mode) {
   if (mode === 'loading') {
     c.append(h('div', { class: 'spinner', 'aria-hidden': 'true' }), h('p', { class: 'cover-sub' }, 'Loading the video…'));
   } else if (mode === 'start') {
-    c.append(h('div', { class: 'cover-eyebrow' }, label), h('div', { class: 'cover-title' }, teamName(m.a) + ' vs ' + teamName(m.b)), playBtn(),
+    c.append(h('div', { class: 'cover-teams', 'aria-hidden': 'true' }, teamLogo(team(m.a)), teamLogo(team(m.b))),
+      h('div', { class: 'cover-eyebrow' }, label), h('div', { class: 'cover-title' }, teamName(m.a) + ' vs ' + teamName(m.b)), playBtn(),
       st.resumeAt && !partyHere() ? h('div', { class: 'resume' }, h('span', {}, 'Picks up where you left off, at ' + fmt(st.resumeAt - st.start) + '.'),
         h('button', { type: 'button', class: 'text-btn light', onClick: e => { e.stopPropagation(); restart(); } }, 'Start from the beginning')) : '');
   } else if (mode === 'party') {
@@ -2073,14 +2334,15 @@ function updateMuteIcon(muted) {
   b.replaceChildren(icon(muted ? 'mute' : 'vol', 22));
   b.setAttribute('aria-label', muted ? 'Unmute' : 'Mute');
 }
+/* W, or the panel's close button: the side panel closes and the video grows (YouTube picks a higher quality for a bigger player). */
 function toggleWide() {
-  const page = document.querySelector('.player-page');
+  const page = document.querySelector('.mwrap');
   if (!page) return;
-  const on = !page.classList.contains('wide');
-  page.classList.toggle('wide', on);
+  const on = !page.classList.contains('closed');
+  page.classList.toggle('closed', on);
   store.set('wide', on);
   const b = P && P.els.ctl.wide;
-  if (b) { b.setAttribute('aria-label', on ? 'Normal size' : 'Wide player'); b.replaceChildren(icon(on ? 'narrow' : 'wide', 22)); }
+  if (b) { b.setAttribute('aria-label', on ? 'Show the side panel' : 'Hide the side panel'); b.replaceChildren(icon(on ? 'narrow' : 'wide', 22)); }
 }
 function isFullscreen() { return !!(document.fullscreenElement || document.webkitFullscreenElement); }
 for (const ev of ['fullscreenchange', 'webkitfullscreenchange']) document.addEventListener(ev, () => { if (P && P.wake) P.wake(); });
@@ -2203,6 +2465,8 @@ function joinParty(code, starting) {
   if (party) leaveParty(true);
   const me = { code, net: null, name: partyName(), peers: {}, log: [], state: null, synced: !!starting, joinedAt: Date.now(), status: 'connecting', els: null };
   party = me;
+  store.set('sideTab', 'party'); // the party's chat lives in the match page's side panel
+  if (document.getElementById('pane-party')) showSideTab('party');
   if (starting) { history.replaceState(null, '', partyUrl(code)); partyStateFromPlayer(false); }
   partyNote(starting ? 'You started a watch party. Send the link to your friends.' : 'You joined the watch party. Earlier chat isn’t shown, so nothing gets spoiled.');
   partyRender();
@@ -2424,7 +2688,7 @@ function fillPartyBox(box) {
     box.replaceChildren(
       h('h2', { class: 'party-title' }, 'Watch together'),
       h('p', { class: 'hint' }, 'Start a watch party and send the link to friends. Play, pause, skips and map changes stay in sync for everyone, with a chat on the side. No account needed. Best for small groups.'),
-      h('button', { type: 'button', class: 'btn btn-outline', onClick: () => joinParty(newPartyCode(), true) }, 'Start a watch party'));
+      h('button', { type: 'button', class: 'btn btn-accent', onClick: () => joinParty(newPartyCode(), true) }, 'Start a watch party'));
     return;
   }
   const n = Object.keys(party.peers).length;
@@ -2700,37 +2964,8 @@ function setupEditBar() {
   $('#eb-discard').addEventListener('click', discard);
 }
 
-/* ---------- theme ---------- */
-function effectiveTheme() {
-  const a = document.documentElement.getAttribute('data-theme');
-  if (a) return a;
-  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-}
-function updateThemeBtn() {
-  const dark = effectiveTheme() === 'dark';
-  const b = $('#theme-btn');
-  b.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-  b.replaceChildren(icon(dark ? 'sun' : 'moon', 20));
-}
-function initTheme() {
-  const t = store.get('theme', null);
-  if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
-  updateThemeBtn();
-  $('#theme-btn').addEventListener('click', () => {
-    const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    store.set('theme', next);
-    updateThemeBtn();
-  });
-  if (window.matchMedia) {
-    const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    if (mq.addEventListener) mq.addEventListener('change', updateThemeBtn);
-  }
-}
-
 /* ---------- start ---------- */
 window.addEventListener('hashchange', () => route(false));
-initTheme();
 (async () => {
   await loadSources();
   if (EDIT) {
