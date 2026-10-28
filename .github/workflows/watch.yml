@@ -50,8 +50,8 @@ jobs:
       - name: Save what the watcher found
         id: save
         run: |
-          # New or changed event pictures count as a site change too.
-          pictures="$(git status --porcelain -- images 2>/dev/null)"
+          # New or changed event pictures and calendar feeds count as a site change too.
+          pictures="$(git status --porcelain -- images calendar 2>/dev/null)"
           if git diff --quiet -- auto.json && [ -z "$pictures" ]; then
             echo "site_changed=false" >> "$GITHUB_OUTPUT"
           else
@@ -65,6 +65,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add auto.json watcher/state.json
           if [ -d images ]; then git add -A images; fi
+          if [ -d calendar ]; then git add -A calendar; fi
           git commit -m "Video watcher: new videos"
           git pull --rebase -X theirs
           git push
@@ -76,6 +77,7 @@ jobs:
           cp index.html data.json auto.json _site/
           if [ -d images ]; then cp -r images _site/; fi
           if [ -d tools ]; then cp -r tools _site/; fi
+          if [ -d calendar ]; then cp -r calendar _site/; fi
           if [ -d vendor ]; then cp -r vendor _site/; fi
 
       - name: Set up GitHub Pages
