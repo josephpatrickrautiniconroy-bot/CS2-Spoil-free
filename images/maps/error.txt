@@ -1,0 +1,4 @@
+Error: Liquipedia request failed: HTTP 429
+    at lp (file:///home/runner/work/CS2-Spoil-free/CS2-Spoil-free/tools/map-icons.mjs:37:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///home/runner/work/CS2-Spoil-free/CS2-Spoil-free/tools/map-icons.mjs:58:13
