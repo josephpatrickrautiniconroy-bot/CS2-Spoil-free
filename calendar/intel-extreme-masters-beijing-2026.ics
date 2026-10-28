@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Intel Extreme Masters Beijing 2026 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:intel-extreme-masters-beijing-2026-20261106@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Intel Extreme Masters Beijing 2026: Friday’s matches ready to wat
+ ch
+DESCRIPTION:Videos from Friday’s matches of Intel Extreme Masters Beijing
+  2026 should be up by now. Watch spoiler-free: https://josephpatrickrautin
+ iconroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-beijing-202
+ 6
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-beijing-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Beijing 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-beijing-2026-20261107@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Intel Extreme Masters Beijing 2026: Saturday’s matches ready to w
+ atch
+DESCRIPTION:Videos from Saturday’s matches of Intel Extreme Masters Beiji
+ ng 2026 should be up by now. Watch spoiler-free: https://josephpatrickraut
+ iniconroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-beijing-2
+ 026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-beijing-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Beijing 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-beijing-2026-20261108@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Intel Extreme Masters Beijing 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters Beijing 2026
+  should be up by now. Watch spoiler-free: https://josephpatrickrautiniconr
+ oy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-beijing-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-beijing-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Beijing 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

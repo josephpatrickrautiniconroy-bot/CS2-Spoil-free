@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Intel Extreme Masters Brazil 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:intel-extreme-masters-brazil-2027-20270503@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:Intel Extreme Masters Brazil 2027: Monday’s matches ready to watc
+ h
+DESCRIPTION:Videos from Monday’s matches of Intel Extreme Masters Brazil 
+ 2027 should be up by now. Watch spoiler-free: https://josephpatrickrautini
+ conroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-brazil-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-brazil-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Brazil 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-brazil-2027-20270509@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:Intel Extreme Masters Brazil 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters Brazil 2027 
+ should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
+ y-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-brazil-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-brazil-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Brazil 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BLAST Bounty Winter 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:blast-bounty-winter-2027-20270113@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:BLAST Bounty Winter 2027: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of BLAST Bounty Winter 2027 s
+ hould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy
+ -bot.github.io/CS2-Spoil-free/#/t/blast-bounty-winter-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-bounty-winter-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Bounty Winter 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-bounty-winter-2027-20270124@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:BLAST Bounty Winter 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Bounty Winter 2027 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/blast-bounty-winter-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-bounty-winter-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Bounty Winter 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

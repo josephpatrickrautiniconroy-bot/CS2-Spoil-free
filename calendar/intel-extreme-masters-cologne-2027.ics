@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Intel Extreme Masters Cologne 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:intel-extreme-masters-cologne-2027-20270804@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270806
+SUMMARY:Intel Extreme Masters Cologne 2027: Wednesday’s matches ready to 
+ watch
+DESCRIPTION:Videos from Wednesday’s matches of Intel Extreme Masters Colo
+ gne 2027 should be up by now. Watch spoiler-free: https://josephpatrickrau
+ tiniconroy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-cologne-
+ 2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-cologne-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Cologne 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intel-extreme-masters-cologne-2027-20270815@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
+SUMMARY:Intel Extreme Masters Cologne 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of Intel Extreme Masters Cologne 2027
+  should be up by now. Watch spoiler-free: https://josephpatrickrautiniconr
+ oy-bot.github.io/CS2-Spoil-free/#/t/intel-extreme-masters-cologne-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/int
+ el-extreme-masters-cologne-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Cologne 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

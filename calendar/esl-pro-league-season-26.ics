@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ESL Pro League Season 26 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:esl-pro-league-season-26-20270923@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:ESL Pro League Season 26: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of ESL Pro League Season 26 sh
+ ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
+ bot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-26
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-26
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 26 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:esl-pro-league-season-26-20271003@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271005
+SUMMARY:ESL Pro League Season 26: final day ready to watch
+DESCRIPTION:Videos from the final day of ESL Pro League Season 26 should be
+  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
+ hub.io/CS2-Spoil-free/#/t/esl-pro-league-season-26
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
+ -pro-league-season-26
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ESL Pro League Season 26 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

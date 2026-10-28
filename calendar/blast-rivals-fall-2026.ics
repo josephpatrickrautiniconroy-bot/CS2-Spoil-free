@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BLAST Rivals Fall 2026 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261111@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:BLAST Rivals Fall 2026: Wednesday’s matches ready to watch
+DESCRIPTION:Videos from Wednesday’s matches of BLAST Rivals Fall 2026 sho
+ uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
+ ot.github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261112@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:BLAST Rivals Fall 2026: Thursday’s matches ready to watch
+DESCRIPTION:Videos from Thursday’s matches of BLAST Rivals Fall 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261113@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLAST Rivals Fall 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of BLAST Rivals Fall 2026 should
+  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
+ github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261114@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:BLAST Rivals Fall 2026: Saturday’s matches ready to watch
+DESCRIPTION:Videos from Saturday’s matches of BLAST Rivals Fall 2026 shou
+ ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
+ t.github.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:blast-rivals-fall-2026-20261115@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:BLAST Rivals Fall 2026: final day ready to watch
+DESCRIPTION:Videos from the final day of BLAST Rivals Fall 2026 should be u
+ p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
+ b.io/CS2-Spoil-free/#/t/blast-rivals-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
+ st-rivals-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BLAST Rivals Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

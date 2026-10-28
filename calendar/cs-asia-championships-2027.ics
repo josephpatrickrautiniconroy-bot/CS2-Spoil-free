@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spoiler-Free CS2//Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CS Asia Championships 2027 (spoiler-free)
+X-WR-CALDESC:When each day is ready to watch. No teams\, no results.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:cs-asia-championships-2027-20270817@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:CS Asia Championships 2027: Tuesday’s matches ready to watch
+DESCRIPTION:Videos from Tuesday’s matches of CS Asia Championships 2027 s
+ hould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy
+ -bot.github.io/CS2-Spoil-free/#/t/cs-asia-championships-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/cs-
+ asia-championships-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CS Asia Championships 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cs-asia-championships-2027-20270829@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270831
+SUMMARY:CS Asia Championships 2027: final day ready to watch
+DESCRIPTION:Videos from the final day of CS Asia Championships 2027 should 
+ be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.g
+ ithub.io/CS2-Spoil-free/#/t/cs-asia-championships-2027
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/cs-
+ asia-championships-2027
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CS Asia Championships 2027 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
