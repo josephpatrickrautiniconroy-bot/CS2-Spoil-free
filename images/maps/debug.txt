@@ -1,0 +1,29 @@
+Mirage (Mirage/cs2): {"image":"CS2_Mirage_A_site_behind_triple.jpg"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Mirage | |image=CS2_Mirage_A_site_behind_triple.jpg | |creator=Valve | |theme=Suburban | |scenario=Bomb defusal | |game=cs2 | |size=Small | |span=2011 – "current" | |t=Phoenix Connection | |ct=SAS | |location={{Flag|ma}} Morocco | }} |  | ==Overview== | Valve's new port of the classic map of
+
+Inferno (Inferno/cs2): {"image":"De infernoCS2BSite.jpeg"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Inferno | |image=De infernoCS2BSite.jpeg | |creator=Valve | |theme=Live Village | |scenario=Bomb defusal | |location={{Flag|it}} Italy | |game=cs2 | |size=Small | |span=2011 – "current" | |t=Phoenix Connection | |ct=SAS | }} |  | This version of the map is a complete overhaul of the Infern
+
+Nuke (Nuke/cs2): {"image":"CS2 Nuke Outside.jpeg"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Nuke | |image=CS2 Nuke Outside.jpeg | |creator=Valve | |location={{Flag|us}} Tennessee | |theme=Industrial | |scenario=Bomb defusal | |game=cs2 | |size=Small | |span=2011 – "current" | |t=Phoenix Connection | |ct=SAS | }} |  | ==Overview== | Valve's port of a classic map. There is really not
+
+Anubis (Anubis/cs2): {"image":"CS2AnubisWater.jpg"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Anubis | |image=CS2AnubisWater.jpg | |location={{Flag|egypt}} Egypt | |creator=Roald | |creator2=jakuza | |creator3=jd40 | |theme=Desert | |scenario=Bomb defusal | |game=cs2 | |span=2023 – "current" | |size=Small | |ct=Phoenix Connection | |t=SAS | }} |  | ==Overview== | '''Anubis''' is a bomb d
+
+Ancient (Ancient/cs2): {"image":"AncientASite.jpg"}
+  starts:  {{For|the Swedish team|Team Ancient}} | {{Maps Navbox}} | {{Infobox map | |name=Ancient | |aka=de_ancient | |image=AncientASite.jpg | |creator=Valve | |theme=Rainforest | |scenario=Bomb defusal | |location={{Flag|mx}} Mexico | |game=cs2 | |t=Phoenix Connection | |ct=SAS | |releasedate=2020-12-03 | |achievement1=  | |download-li
+
+Overpass (Overpass/cs2): {"image":"CS2OverpassConnector.jpg"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Overpass | |image=CS2OverpassConnector.jpg | |creator=Valve | |theme=Urban | |scenario=Bomb defusal | |game=cs2 | |size=Medium | |location={{Flag|de}} Berlin | |achievement1    = | |releasedate= {{CSGO}} [[Update - December 18, 2013|2013-12-18]] | |t=Elite Crew | |ct=SAS | }} |  | ==Overview
+
+Vertigo (Vertigo/cs2): {"image":"CS2VertigoASite.jpeg"}
+  starts: {{for|the Norwegian player|Vertigo (Norwegian player)}} | {{for|the Irish player|vertiGo}} | {{Maps Navbox}} | {{Infobox map | |name=Vertigo | |aka=de_vertigo | |image=CS2VertigoASite.jpeg | |creator=Narby | |creator2=Valve | |theme=Urban | |releasedate=June 27th, 1999 | |scenario=Bomb defusal | |location={{Flag|us}} Unite
+
+Dust II (Dust II/cs2): {"image":"CS2 Dust 2 A Site.jpg"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Dust II | |image=CS2 Dust 2 A Site.jpg | |creator=Valve | |theme=Desert | |scenario=Bomb defusal | |location={{Flag|ma}} Morocco | |game=cs2 | |size=Small | |span=2024 – "current" | |t=Phoenix Connection | |ct=SAS | |no-cat=true | }} |  | ==Overview== | '''Dust II''' is a bomb defusal map in '
+
+Train (Train/cs2): {"image":"CS2 de train.png"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Train | |image=CS2 de train.png | |creator=Valve | |theme=Industrial | |scenario=Bomb defusal | |game=cs2 | |size=Large | |location={{Flag|ru}} Russia | |span=2024 – 2025 | |t=Elite Crew | |ct=SAS | }} |  | ==Overview== | Valve completely remade train for Counter-Strike 2. There's rain that 
+
+Cache (Cache/cs2): {"image":"CS2 de cache.png"}
+  starts: {{Maps Navbox}} | {{Infobox map | |name=Cache | |image=CS2 de cache.png | |location={{Flag|ua}} Chernobyl | |creator=FMPONE | |theme=Industrial | |scenario=Bomb defusal | |game=cs2 | |size=Medium | |span=2026 – '''Current''' | |t=Phoenix Connexion | |ct=GIGN | }} |  | ==Overview== | '''Cache''' is a bomb defusal map featured in [[
