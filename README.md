@@ -2,7 +2,7 @@
 
 A website for watching Counter-Strike tournaments as if they were live: no scores, no video lengths, nothing that gives a result away.
 
-Live at **https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/**
+Live at **https://spoilerfreecs2.github.io/CS2-Spoil-free/**
 
 ## How it works
 

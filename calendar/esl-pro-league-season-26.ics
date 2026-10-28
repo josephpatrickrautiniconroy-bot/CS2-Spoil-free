@@ -14,10 +14,10 @@ DTSTART;VALUE=DATE:20270924
 DTEND;VALUE=DATE:20270925
 SUMMARY:ESL Pro League Season 26: Thursday’s matches ready to watch
 DESCRIPTION:Videos from Thursday’s matches of ESL Pro League Season 26 sh
- ould be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-
- bot.github.io/CS2-Spoil-free/#/t/esl-pro-league-season-26
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
- -pro-league-season-26
+ ould be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS
+ 2-Spoil-free/#/t/esl-pro-league-season-26
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/esl-pro-league-seas
+ on-26
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +32,10 @@ DTSTART;VALUE=DATE:20271004
 DTEND;VALUE=DATE:20271005
 SUMMARY:ESL Pro League Season 26: final day ready to watch
 DESCRIPTION:Videos from the final day of ESL Pro League Season 26 should be
-  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
- hub.io/CS2-Spoil-free/#/t/esl-pro-league-season-26
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/esl
- -pro-league-season-26
+  up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil
+ -free/#/t/esl-pro-league-season-26
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/esl-pro-league-seas
+ on-26
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

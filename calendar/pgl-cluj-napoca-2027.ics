@@ -14,10 +14,10 @@ DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:PGL Cluj-Napoca 2027: Thursday’s matches ready to watch
 DESCRIPTION:Videos from Thursday’s matches of PGL Cluj-Napoca 2027 should
-  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
- github.io/CS2-Spoil-free/#/t/pgl-cluj-napoca-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -cluj-napoca-2027
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Sp
+ oil-free/#/t/pgl-cluj-napoca-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-cluj-napoca-202
+ 7
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +32,10 @@ DTSTART;VALUE=DATE:20270222
 DTEND;VALUE=DATE:20270223
 SUMMARY:PGL Cluj-Napoca 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of PGL Cluj-Napoca 2027 should be up 
- by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.
- io/CS2-Spoil-free/#/t/pgl-cluj-napoca-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -cluj-napoca-2027
+ by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-fre
+ e/#/t/pgl-cluj-napoca-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-cluj-napoca-202
+ 7
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

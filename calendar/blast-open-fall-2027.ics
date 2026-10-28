@@ -14,10 +14,10 @@ DTSTART;VALUE=DATE:20271005
 DTEND;VALUE=DATE:20271006
 SUMMARY:BLAST Open Fall 2027: Monday’s matches ready to watch
 DESCRIPTION:Videos from Monday’s matches of BLAST Open Fall 2027 should b
- e up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gi
- thub.io/CS2-Spoil-free/#/t/blast-open-fall-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
- st-open-fall-2027
+ e up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoi
+ l-free/#/t/blast-open-fall-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/blast-open-fall-202
+ 7
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +32,10 @@ DTSTART;VALUE=DATE:20271018
 DTEND;VALUE=DATE:20271019
 SUMMARY:BLAST Open Fall 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of BLAST Open Fall 2027 should be up 
- by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.
- io/CS2-Spoil-free/#/t/blast-open-fall-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
- st-open-fall-2027
+ by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-fre
+ e/#/t/blast-open-fall-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/blast-open-fall-202
+ 7
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

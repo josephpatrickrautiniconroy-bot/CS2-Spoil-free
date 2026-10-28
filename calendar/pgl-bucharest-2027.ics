@@ -14,10 +14,9 @@ DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:PGL Bucharest 2027: Sunday’s matches ready to watch
 DESCRIPTION:Videos from Sunday’s matches of PGL Bucharest 2027 should be 
- up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gith
- ub.io/CS2-Spoil-free/#/t/pgl-bucharest-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -bucharest-2027
+ up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-
+ free/#/t/pgl-bucharest-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-bucharest-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +31,9 @@ DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
 SUMMARY:PGL Bucharest 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of PGL Bucharest 2027 should be up by
-  now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io
- /CS2-Spoil-free/#/t/pgl-bucharest-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -bucharest-2027
+  now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-free/
+ #/t/pgl-bucharest-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-bucharest-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

@@ -14,10 +14,10 @@ DTSTART;VALUE=DATE:20270831
 DTEND;VALUE=DATE:20270901
 SUMMARY:BLAST Bounty Summer 2027: Monday’s matches ready to watch
 DESCRIPTION:Videos from Monday’s matches of BLAST Bounty Summer 2027 shou
- ld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bo
- t.github.io/CS2-Spoil-free/#/t/blast-bounty-summer-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
- st-bounty-summer-2027
+ ld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-
+ Spoil-free/#/t/blast-bounty-summer-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/blast-bounty-summer
+ -2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +32,10 @@ DTSTART;VALUE=DATE:20270913
 DTEND;VALUE=DATE:20270914
 SUMMARY:BLAST Bounty Summer 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of BLAST Bounty Summer 2027 should be
-  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
- hub.io/CS2-Spoil-free/#/t/blast-bounty-summer-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
- st-bounty-summer-2027
+  up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil
+ -free/#/t/blast-bounty-summer-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/blast-bounty-summer
+ -2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
