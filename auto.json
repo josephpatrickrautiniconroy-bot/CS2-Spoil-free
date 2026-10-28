@@ -5096,8 +5096,22 @@
       "stageOrder": 1,
       "round": "Quarterfinals",
       "roundOrder": 6,
-      "a": "lp-aurora-gaming",
-      "b": "lp-mouz",
+      "a": "lp-mouz",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "",
+      "time": ""
+    },
+    {
+      "id": "lp-7ef0c2168d",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Quarterfinals",
+      "roundOrder": 6,
+      "a": "lp-team-vitality",
+      "b": "lp-natus-vincere",
       "bo": 3,
       "date": "",
       "time": ""
@@ -11918,6 +11932,31 @@
         }
       ]
     },
+    "lp-7ef0c2168d": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
     "lp-1aad385709": {
       "maps": [
         {
@@ -11944,6 +11983,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-28T17:47:20.082Z",
+  "updatedAt": "2026-10-28T18:49:14.420Z",
   "featured": "pgl-masters-bucharest-2026"
 }
