@@ -10,8 +10,9 @@ Every 30 minutes GitHub runs the **video watcher** (`watcher/watch.mjs`). It:
 
 1. finds the tournaments to show: every page in Liquipedia's S tier category that starts in the configured date range, plus any listed by hand,
 2. reads each tournament's Liquipedia page: stages, rounds, matches, teams, and the video link and start time of every map,
-3. checks with YouTube that each video can be played on other sites,
-4. saves it all to `auto.json`, and republishes the site if anything changed.
+3. every few hours, looks for the organisers' official highlight videos of recent matches (see **Short versions** below),
+4. checks with YouTube that each video can be played on other sites,
+5. saves it all to `auto.json`, writes a calendar feed per event into `calendar/`, and republishes the site if anything changed.
 
 The videos are the organisers' own uploads, mostly from their archive channels (ESL Archives, BLAST Premier VOD Archive, PGL VOD's), with one video per series. Liquipedia's editors add the links, usually within a day of a match. Each map plays from its start to where the next map begins, and skipping can't leave the map.
 
@@ -26,7 +27,8 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `auto.json` | Tournaments, teams, matches and videos from Liquipedia | The watcher |
 | `collections.json` | Hand-picked collections (see below) | You |
 | `watcher/config.json` | Which tournaments to show | You |
-| `watcher/watch.mjs`, `watcher/liquipedia.mjs` | The watcher | Nobody |
+| `watcher/watch.mjs`, `watcher/liquipedia.mjs`, `watcher/highlights.mjs`, `watcher/calendar.mjs` | The watcher | Nobody |
+| `calendar/` | Calendar feeds for "Add to calendar" | The watcher |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
 | `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
@@ -66,6 +68,26 @@ Hand-picked groups of series and events, shown on the home page under **Collecti
 
 Keep it spoiler-free: titles, blurbs and notes say what to watch, never how it went. Avoid words like "comeback", "upset", "overtime thriller" or "five maps", since each gives a result away. A match in a hidden round (anything after an event's first round) is shown without its teams until the visitor opens it.
 
+## Short versions and speed
+
+For people short on time, the player has a **speed button** (1× up to 2×, also the `<` and `>` keys). It's remembered in the browser.
+
+A match can also have a **short version**: the organiser's own highlight video of the series. The watcher reads the latest uploads of the channels listed under `highlights` in `watcher/config.json` (ESL, BLAST and PGL's main channels). A video counts as a match's highlights when its title says "highlights", names both teams, and it came out within 4 days of the match. Titles are only read to make that match and are never saved. Videos shorter than two minutes (Shorts) are skipped.
+
+To keep this spoiler-free:
+
+- The short version is only offered once **every match in that round** has one. Organisers don't cut highlights of every match, so a round where only some do could hint at which matches were worth watching.
+- It plays like any map: length hidden, and the cover hides YouTube's titles and end screens.
+- It covers the whole series, so you learn how many maps were played as you watch it, the same as live.
+
+Liquipedia doesn't record when each round starts in a video, so a "key rounds only" cut of the full match isn't possible from the data we have.
+
+## Calendar reminders
+
+Events that are on now or coming up have an **Add to calendar** button (and pinned events a **Calendar reminders** button on the home page). It offers the event's calendar feed, `calendar/<event-id>.ics`, as a subscription (Apple Calendar, Outlook), in Google Calendar, or as a download. Each match day gets an all-day entry on the following day, "Saturday's matches ready to watch", with a 9am alert where the calendar app supports it. Entries never name teams. The days come from Liquipedia's schedule, and subscribed calendars pick up changes within about a day. `calendar/all.ics` holds every event on now or coming up.
+
+Pinned teams don't get calendar entries, because the date of a team's next match would show whether they went through.
+
 ## Watch parties
 
 On any match page, **Start a watch party** gives a link to send to friends. Everyone who opens it watches together: play, pause, skips and opening another map happen for everyone, and there's a chat beside the video (the latest message also shows over the video, so it's seen in full screen). Anyone can name themselves.
@@ -74,6 +96,7 @@ On any match page, **Start a watch party** gives a link to send to friends. Ever
 - It's spoiler-free: only the time into the map is shared, never a video's length or a result. People who join later don't see the earlier chat, and land wherever the party is.
 - Someone who opens the link gets a "Join in" button first, because browsers only play sound after a click.
 - Best for small groups, up to about eight.
+- Everyone watches at the same speed: changing it changes it for the whole party. A short version can be watched together too.
 
 ## Event pictures
 
