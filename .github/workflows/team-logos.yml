@@ -1,28 +1,43 @@
-name: Fetch team logos (redesign preview)
+name: Fetch team logos and map symbols (redesign preview)
 
-# Runs only on the redesign branch, whenever the logo script changes.
+# Runs only on the redesign branch, whenever one of the fetch scripts changes,
+# and runs just the scripts that changed.
 on:
   push:
     branches: [claude/project-thread-etkzqu]
-    paths: [tools/team-logos.mjs, .github/workflows/team-logos.yml]
+    paths: [tools/team-logos.mjs, tools/map-icons.mjs, .github/workflows/team-logos.yml]
 
 permissions:
-  contents: write   # save the logos back to this branch
+  contents: write   # save the pictures back to this branch
 
 jobs:
-  logos:
+  pictures:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v6
         with:
           node-version: 24
+      - name: See which scripts changed
+        id: changed
+        run: |
+          changed="$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" 2>/dev/null || echo all)"
+          echo "$changed"
+          for s in team-logos map-icons; do
+            if echo "$changed" | grep -q -e "tools/$s.mjs" -e "^all$"; then echo "$s=true" >> "$GITHUB_OUTPUT"; fi
+          done
       - name: Copy team logos from Liquipedia
+        if: steps.changed.outputs.team-logos == 'true'
         run: node tools/team-logos.mjs
+      - name: Copy map symbols from Liquipedia
+        if: steps.changed.outputs.map-icons == 'true'
+        run: node tools/map-icons.mjs
       - name: Save them to this branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/teams
-          git diff --cached --quiet || git commit -m "Team logos from Liquipedia"
+          for d in images/teams images/maps; do if [ -d "$d" ]; then git add "$d"; fi; done
+          git diff --cached --quiet || git commit -m "Team logos and map symbols from Liquipedia"
           git push
