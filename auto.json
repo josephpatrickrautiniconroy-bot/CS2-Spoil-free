@@ -11796,15 +11796,15 @@
     "lp-2008d2bf59": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/q1tDOoUWykU",
+          "start": "40",
+          "end": "2370",
           "name": "Cache",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/q1tDOoUWykU",
+          "start": "2370",
           "end": "",
           "name": "Dust II",
           "notPlayed": false
@@ -11821,15 +11821,15 @@
     "lp-57b77e1db0": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/N0KxTb_RCJc",
+          "start": "41",
+          "end": "3029",
           "name": "Nuke",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/N0KxTb_RCJc",
+          "start": "3029",
           "end": "",
           "name": "Inferno",
           "notPlayed": false
@@ -11944,6 +11944,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-28T16:53:23.945Z",
+  "updatedAt": "2026-10-28T17:47:20.082Z",
   "featured": "pgl-masters-bucharest-2026"
 }

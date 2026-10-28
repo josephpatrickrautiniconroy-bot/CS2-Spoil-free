@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3464062,
+      "revid": 3464083,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-28T16:53:23.945Z",
-      "result": "36 matches, 69 map videos"
+      "fetchedAt": "2026-10-28T17:47:20.082Z",
+      "result": "36 matches, 73 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -54,10 +54,10 @@
       "result": "4 matches, 0 map videos"
     },
     "PGL/2026/Singapore": {
-      "revid": 3464016,
+      "revid": 3464085,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-28T14:55:38.900Z",
+      "fetchedAt": "2026-10-28T17:47:20.082Z",
       "result": "coming up, no matches drawn yet"
     },
     "BLAST/Bounty/2026/Summer": {
@@ -1911,6 +1911,16 @@
       "ok": true,
       "seconds": 4897,
       "checkedAt": "2026-10-28T01:56:54.648Z"
+    },
+    "q1tDOoUWykU": {
+      "ok": true,
+      "seconds": 6966,
+      "checkedAt": "2026-10-28T17:47:20.082Z"
+    },
+    "N0KxTb_RCJc": {
+      "ok": true,
+      "seconds": 5545,
+      "checkedAt": "2026-10-28T17:47:20.082Z"
     }
   },
   "parserVersion": 6,
@@ -3654,7 +3664,7 @@
       "YaLLa Compass/2026/Summer",
       "YaLLa Compass/2026/UAE"
     ],
-    "checkedAt": "2026-10-28T05:44:13.427Z",
+    "checkedAt": "2026-10-28T17:47:20.082Z",
     "key": "{\"categories\":[\"Category:S-Tier Tournaments\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\",\"exclude\":[\"FISSURE/\"]}"
   },
   "images": {
