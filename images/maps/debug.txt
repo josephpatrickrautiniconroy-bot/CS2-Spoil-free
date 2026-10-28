@@ -28,22 +28,5 @@ Train (Train/cs2): {"image":"CS2 de train.png"}
 Cache (Cache/cs2): {"image":"CS2 de cache.png"}
   starts: {{Maps Navbox}} | {{Infobox map | |name=Cache | |image=CS2 de cache.png | |location={{Flag|ua}} Chernobyl | |creator=FMPONE | |theme=Industrial | |scenario=Bomb defusal | |game=cs2 | |size=Medium | |span=2026 – '''Current''' | |t=Phoenix Connexion | |ct=GIGN | }} |  | ==Overview== | '''Cache''' is a bomb defusal map featured in [[
 
-Mirage file search: []
+Files with icon-like names:
 
-Dust II file search: []
-
-Nuke file search: []
-
-Inferno file search: []
-
-Ancient file search: []
-
-Anubis file search: []
-
-Overpass file search: []
-
-Train file search: []
-
-Vertigo file search: []
-
-Cache file search: []
