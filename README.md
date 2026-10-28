@@ -24,6 +24,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `index.html` | The website | Nobody, unless you want to change the design |
 | `data.json` | The site's own text (name, intro, footer) | You, through edit mode (`?edit` at the end of the address) |
 | `auto.json` | Tournaments, teams, matches and videos from Liquipedia | The watcher |
+| `collections.json` | Hand-picked collections (see below) | You |
 | `watcher/config.json` | Which tournaments to show | You |
 | `watcher/watch.mjs`, `watcher/liquipedia.mjs` | The watcher | Nobody |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
@@ -46,6 +47,23 @@ Visitors can pin an event (button on its page) or a team (buttons on a match pag
 - pinned teams whose next match is ready, but only once every earlier match of that team in that event is marked as watched (a team's first match only counts if it's in an open round). That way the notice can't give away who went through. It never names the opponent.
 
 Opening a pinned event, following a notice or pressing Dismiss clears those notices.
+
+## Continue watching
+
+The home page lists the series a visitor started and hasn't marked as watched, newest first, with the map and time they stopped at. It's kept in their browser, like pins. When a map ends, the entry moves on to the next map listed, whether or not that map was played (opening it says so), so the list can't give away how long a series went. An entry goes away when the visitor marks the series as watched, finishes the last possible map, or presses Remove. Match cards show **In progress** for these series.
+
+## Collections (`collections.json`)
+
+Hand-picked groups of series and events, shown on the home page under **Collections**. Each collection has an `id` (used in its address, `#/c/<id>`), a `title`, a `blurb` and a list of `items`. An item is one of:
+
+- a whole event: `{ "event": "ESL/Pro League/Season 24" }`
+- a stage: `{ "event": "...", "stage": "Playoffs" }`
+- a round: `{ "event": "...", "round": "Grand Final" }` (shows the match if the round has one, or the stage if it has several)
+- a match: `{ "match": "lp-7efaffa731" }` (the id from the match's address, `#/match/<id>/0`)
+
+`event` can be the Liquipedia page name, the site's event id, or the event's name. Any item can have a `note`. Items whose event isn't on the site yet are left out, so archive picks can be listed now and appear when the archive adds their event. A collection with nothing to show is hidden.
+
+Keep it spoiler-free: titles, blurbs and notes say what to watch, never how it went. Avoid words like "comeback", "upset", "overtime thriller" or "five maps", since each gives a result away. A match in a hidden round (anything after an event's first round) is shown without its teams until the visitor opens it.
 
 ## Event pictures
 

@@ -1,0 +1,40 @@
+{
+  "about": "Hand-picked collections shown on the site. See README.md, section Collections.",
+  "collections": [
+    {
+      "id": "major-grand-finals",
+      "title": "Major grand finals",
+      "blurb": "The last series of every CS2 Major. The teams stay hidden until you open one, because seeing them gives away who got there.",
+      "items": [
+        { "event": "PGL/2024/Copenhagen", "round": "Grand Final", "note": "The first CS2 Major." },
+        { "event": "Perfect World/Major/2024/Shanghai", "round": "Grand Final" },
+        { "event": "BLAST/Major/2025/Austin", "round": "Grand Final" },
+        { "event": "StarLadder/Major/2025/Budapest", "round": "Grand Final" },
+        { "event": "Intel Extreme Masters/2026/Cologne", "round": "Grand Final" }
+      ]
+    },
+    {
+      "id": "majors-start-to-finish",
+      "title": "Majors, start to finish",
+      "blurb": "Follow a whole Major from its first stage. Every storyline, in the order it happened.",
+      "items": [
+        { "event": "PGL/2024/Copenhagen", "note": "The first CS2 Major." },
+        { "event": "Perfect World/Major/2024/Shanghai" },
+        { "event": "BLAST/Major/2025/Austin" },
+        { "event": "StarLadder/Major/2025/Budapest" },
+        { "event": "Intel Extreme Masters/2026/Cologne", "note": "Three Swiss stages, then an eight-team bracket." }
+      ]
+    },
+    {
+      "id": "playoffs-only",
+      "title": "Short on time: just the playoffs",
+      "blurb": "Skip the group stages and start at the bracket. Each round stays hidden until you choose to open it.",
+      "items": [
+        { "event": "Intel Extreme Masters/2026/Cologne", "stage": "Playoffs" },
+        { "event": "Esports World Cup/2026", "stage": "Playoffs" },
+        { "event": "ESL/Pro League/Season 24", "stage": "Playoffs" },
+        { "event": "BLAST/Open/2026/Fall", "stage": "Playoffs" }
+      ]
+    }
+  ]
+}

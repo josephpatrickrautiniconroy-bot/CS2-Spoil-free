@@ -216,6 +216,8 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .pin-add{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
 .pin-add .input{flex:1 1 220px;width:auto}
 .watched-chip{position:absolute;left:0;top:0;z-index:1;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
+.hidden-teams{display:flex;align-items:center;gap:6px;margin-top:10px;font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cw-remove{align-self:flex-start;font-size:13px;min-height:32px}
 .logo{display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--raised);flex-shrink:0}
 .logo>img{width:100%;height:100%;object-fit:contain;padding:4px}
 .logo-sm{width:52px;height:52px}
@@ -403,6 +405,7 @@ span.editable{display:inline-block}
     <nav class="main-nav" aria-label="Main">
       <a href="#/" data-nav="home">Home</a>
       <a href="#/tournaments" data-nav="tournaments">Tournaments</a>
+      <a href="#/collections" data-nav="collections">Collections</a>
       <a href="#/how" data-nav="how">How it works</a>
     </nav>
     <div class="header-tools">
@@ -630,7 +633,7 @@ function mergeAuto(d, auto) {
   // Tournaments the watcher built from Liquipedia, newest first, after any you added yourself.
   arr(auto.tournaments).forEach(at => {
     if (!at || !at.id || hidden.has(str(at.id)) || d.tournaments.some(x => x.id === str(at.id))) return;
-    d.tournaments.push({ id: str(at.id), name: str(at.name), year: str(at.year), dates: str(at.dates), location: str(at.location),
+    d.tournaments.push({ id: str(at.id), name: str(at.name), page: str(at.page), year: str(at.year), dates: str(at.dates), location: str(at.location),
       teamsText: str(at.teamsText), logo: str(at.logo), logoDark: str(at.logoDark), art: str(at.art), sdate: str(at.sdate), edate: str(at.edate), stages: [] });
   });
   const all = new Map();
@@ -686,6 +689,7 @@ function mergeAuto(d, auto) {
 }
 
 let AUTO = null;
+let COLLECTIONS = [];
 let BASE = normalize(readEmbedded());
 let PUBLISHED = clone(BASE);
 let data = clone(PUBLISHED);
@@ -702,8 +706,10 @@ async function fetchJson(url) {
 }
 async function loadSources() {
   if (!/^https?:$/.test(location.protocol)) return;
-  const [d, a] = await Promise.all([fetchJson('data.json'), fetchJson('auto.json')]);
+  const [d, a, c] = await Promise.all([fetchJson('data.json'), fetchJson('auto.json'), fetchJson('collections.json')]);
   if (d && typeof d === 'object') BASE = normalize(d);
+  COLLECTIONS = arr(c && c.collections).filter(x => x && x.id).map(x => ({ id: str(x.id), title: str(x.title), blurb: str(x.blurb),
+    items: arr(x.items).filter(Boolean).map(i => ({ event: str(i.event), stage: str(i.stage), round: str(i.round), match: str(i.match), note: str(i.note) })) }));
   AUTO = (a && typeof a === 'object') ? a : null;
   PUBLISHED = mergeAuto(clone(BASE), AUTO);
   data = clone(PUBLISHED);
@@ -752,6 +758,52 @@ function setRevealed(id, on) { const r = store.get('revealed', {}); if (on) r[id
 function resumeTime(mid, i) { return store.get('pos', {})[mid + ':' + i] || 0; }
 function saveResume(mid, i, t) { const p = store.get('pos', {}); p[mid + ':' + i] = Math.floor(t); store.set('pos', p); }
 function clearResume(mid, i) { const p = store.get('pos', {}); delete p[mid + ':' + i]; store.set('pos', p); }
+
+/* ---------- continue watching ----------
+   Remembers the last map played in each series ('cw'), so the home page can pick up from there.
+   When a map ends it points at the next possible map, whether or not that map was played,
+   so the list never shows how long a series went. It's cleared by "Mark as watched", by the
+   last possible map ending, or by the visitor. */
+function noteWatching(m, idx, ended) {
+  const cw = store.get('cw', {});
+  if (!ended) cw[m.id] = { map: idx, at: Date.now() };
+  else if (idx + 1 < m.maps.length) cw[m.id] = { map: idx + 1, at: Date.now(), next: true };
+  else delete cw[m.id];
+  store.set('cw', cw);
+}
+function forgetWatching(mid) { const cw = store.get('cw', {}); delete cw[mid]; store.set('cw', cw); }
+function continueList() {
+  const cw = store.get('cw', {});
+  return Object.keys(cw).map(mid => ({ f: findMatch(mid), e: cw[mid] }))
+    .filter(x => x.f && x.e && !isWatched(x.f.m.id))
+    .sort((a, b) => (b.e.at || 0) - (a.e.at || 0));
+}
+function continueCaption(m, e) {
+  const i = Math.min(Math.max(0, +e.map || 0), m.maps.length - 1);
+  if (e.next) return 'Up next: Map ' + (i + 1);
+  const mp = m.maps[i];
+  const start = toSeconds(mp.start) || parseYouTube(mp.video).start || 0;
+  const pos = resumeTime(m.id, i);
+  return 'Map ' + (i + 1) + (pos > start ? ' · ' + fmt(pos - start) + ' in' : '');
+}
+function continueView() {
+  const list = continueList().slice(0, 6);
+  if (!list.length) return null;
+  return h('div', { class: 'group', id: 'grp-continue' },
+    h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Continue watching')),
+    h('p', { class: 'group-note' }, 'Picks up on the map you were on. After a map ends it points at the next one listed, played or not, so nothing here gives away how a series went.'),
+    h('div', { class: 'grid' }, list.map(({ f, e }) => {
+      const { t, m } = f;
+      const i = Math.min(Math.max(0, +e.map || 0), m.maps.length - 1);
+      return h('div', { class: 'm-wrap' },
+        h('a', { class: 'm-card', href: '#/match/' + m.id + '/' + i },
+          thumbView(m),
+          h('span', { class: 'watched-chip' }, continueCaption(m, e)),
+          h('div', { class: 'm-cap' }, h('span', {}, teamName(m.a) + ' vs ' + teamName(m.b)), h('span', {}, t.name || ''))),
+        h('button', { type: 'button', class: 'text-btn cw-remove', 'aria-label': 'Remove ' + teamName(m.a) + ' vs ' + teamName(m.b) + ' from Continue watching',
+          onClick: () => { forgetWatching(m.id); rerender(); } }, 'Remove'));
+    })));
+}
 
 /* ---------- pins: tournaments and teams a visitor follows ----------
    Kept in this browser. Each pin remembers which matches it has already told the visitor about ("seen"),
@@ -962,7 +1014,8 @@ function parseRoute() {
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
   if (p[0] === 't') return { name: 'tournament', tid: p[1], sid: p[2] };
   if (p[0] === 'match') return { name: 'player', mid: p[1], map: parseInt(p[2] || '0', 10) || 0 };
-  if (p[0] === 'tournaments' || p[0] === 'how') return { name: 'home', section: p[0] };
+  if (p[0] === 'c' && p[1]) return { name: 'collection', cid: p[1] };
+  if (p[0] === 'tournaments' || p[0] === 'how' || p[0] === 'collections') return { name: 'home', section: p[0] };
   return { name: 'home' };
 }
 function route(keepScroll, initial) {
@@ -976,6 +1029,7 @@ function route(keepScroll, initial) {
   if (alerts) app.append(alerts);
   if (r.name === 'tournament') renderTournament(app, r);
   else if (r.name === 'player') renderPlayer(app, r);
+  else if (r.name === 'collection') renderCollection(app, r);
   else renderHome(app, r);
   renderHeader();
   renderFooter();
@@ -998,7 +1052,8 @@ function renderHeader() {
   document.querySelectorAll('[data-nav]').forEach(a => {
     const k = a.dataset.nav;
     const cur = (k === 'home' && r.name === 'home' && !r.section) ||
-      (k === 'tournaments' && (r.name !== 'home' || r.section === 'tournaments')) ||
+      (k === 'tournaments' && ((r.name !== 'home' && r.name !== 'collection') || r.section === 'tournaments')) ||
+      (k === 'collections' && (r.name === 'collection' || r.section === 'collections')) ||
       (k === 'how' && r.section === 'how');
     if (cur) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
@@ -1064,6 +1119,8 @@ function renderHome(app) {
   const upcoming = ts.filter(t => tStatus(t) === 'upcoming').sort((a, b) => str(a.sdate) < str(b.sdate) ? -1 : str(a.sdate) > str(b.sdate) ? 1 : 0);
   const pinGroup = editing() ? null : pinsView();
   const anyPins = pinGroup && pinGroup.dataset.empty !== 'true';
+  const cont = editing() ? null : continueView();
+  if (cont) inner.append(cont);
   if (anyPins) inner.append(pinGroup);
   if (live.length) {
     inner.append(h('div', { class: 'group', id: 'grp-live' },
@@ -1095,6 +1152,8 @@ function renderHome(app) {
   }
   if (pinGroup && !anyPins) inner.append(pinGroup);
   app.append(h('section', { class: 'section', id: 'sec-tournaments' }, inner));
+  const cols = editing() ? null : collectionsView();
+  if (cols) app.append(h('section', { class: 'section', id: 'sec-collections' }, h('div', { class: 'wrap section-in' }, cols)));
 
   // how it works
   app.append(h('section', { class: 'band', id: 'sec-how' }, h('div', { class: 'wrap band-in' },
@@ -1289,13 +1348,94 @@ function thumbView(m) {
 }
 function matchCard(m, rd) {
   const watched = !!store.get('watched', {})[m.id];
+  const going = !watched && !!store.get('cw', {})[m.id];
   const card = h('a', { class: 'm-card', href: '#/match/' + m.id + '/0' },
     thumbView(m),
-    watched ? h('span', { class: 'watched-chip' }, 'Watched') : null,
+    watched ? h('span', { class: 'watched-chip' }, 'Watched') : going ? h('span', { class: 'watched-chip' }, 'In progress') : null,
     h('div', { class: 'm-cap' }, h('span', {}, teamName(m.a) + ' vs ' + teamName(m.b)), m.date ? h('span', {}, m.date) : null));
   const w = h('div', { class: 'm-wrap' }, card);
   if (editing()) w.append(h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match')));
   return w;
+}
+/* ---------- collections: hand-picked series and events (collections.json) ----------
+   An item names an event (its Liquipedia page, site id or name) and optionally a stage, a round or a match id.
+   Items whose event isn't on the site yet stay hidden, so archive picks can be listed before the archive has them.
+   A match in a hidden round is shown without its teams, because who made it there is a result. */
+function findEvent(key) {
+  const k = looseName(key);
+  return k ? data.tournaments.find(t => t.id === key || looseName(t.page) === k || looseName(t.name) === k) || null : null;
+}
+function resolveItem(it) {
+  if (it.match) { const f = findMatch(it.match); return f ? { kind: 'match', f } : null; }
+  const t = findEvent(it.event);
+  if (!t) return null;
+  const stages = it.stage ? t.stages.filter(s => looseName(s.name) === looseName(it.stage)) : t.stages;
+  if (it.round) {
+    for (const s of stages) for (const rd of s.rounds) {
+      if (looseName(rd.name) !== looseName(it.round) || !rd.matches.length) continue;
+      return rd.matches.length === 1 ? { kind: 'match', f: { t, s, rd, m: rd.matches[0] } } : { kind: 'stage', t, s };
+    }
+    return null;
+  }
+  if (it.stage) return stages.length && stages[0].rounds.some(r => r.matches.length) ? { kind: 'stage', t, s: stages[0] } : null;
+  return countMatches(t) ? { kind: 'event', t } : null;
+}
+function collectionItems(c) { return c.items.map(it => ({ it, r: resolveItem(it) })).filter(x => x.r); }
+function collectionsView() {
+  const list = COLLECTIONS.map(c => ({ c, n: collectionItems(c).length })).filter(x => x.n);
+  if (!list.length) return null;
+  return h('div', { class: 'group', id: 'grp-collections' },
+    h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Collections')),
+    h('p', { class: 'group-note' }, 'Hand-picked places to start. The notes say what to watch, never how it went.'),
+    h('div', { class: 'grid' }, list.map(({ c, n }) => {
+      const first = collectionItems(c)[0].r;
+      const t = first.t || first.f.t;
+      return h('a', { class: 't-card', href: '#/c/' + encodeURIComponent(c.id) },
+        h('div', { class: 't-art' }, artView(t)),
+        h('div', { class: 't-body' },
+          h('div', { class: 't-name' }, c.title || 'Collection'),
+          c.blurb ? h('div', { class: 't-dates' }, c.blurb) : null,
+          h('div', { class: 't-meta' }, plural(n, 'pick'))));
+    })));
+}
+function hiddenThumb(t, rd) {
+  return h('div', { class: 'thumb' }, h('div', { class: 'thumb-names' },
+    h('div', { class: 'thumb-team' }, rd.name || 'Match'),
+    h('div', { class: 'thumb-vs' }, t.name || ''),
+    h('div', { class: 'hidden-teams' }, icon('lock', 18), 'Teams hidden')));
+}
+function collectionCard(it, r) {
+  const note = it.note ? h('p', { class: 'hint' }, it.note) : null;
+  if (r.kind === 'match') {
+    const { t, s, rd, m } = r.f;
+    const open = !rd.locked || !!store.get('revealed', {})[rd.id];
+    if (open) return h('div', { class: 'm-wrap' }, matchCard(m, rd), h('p', { class: 'hint' }, [t.name, s.name].filter(Boolean).join(' · ')), note);
+    const watched = isWatched(m.id);
+    return h('div', { class: 'm-wrap' },
+      h('a', { class: 'm-card', href: '#/match/' + m.id + '/0' }, hiddenThumb(t, rd),
+        watched ? h('span', { class: 'watched-chip' }, 'Watched') : null,
+        h('div', { class: 'm-cap' }, h('span', {}, s.name || ''), m.date ? h('span', {}, m.date) : null)),
+      h('p', { class: 'hint' }, 'Opening it shows who made it this far.'), note);
+  }
+  const t = r.t;
+  return h('div', { class: 'm-wrap' },
+    h('a', { class: 't-card', href: '#/t/' + t.id + (r.s ? '/' + r.s.id : '') },
+      h('div', { class: 't-art' }, artView(t)),
+      h('div', { class: 't-body' },
+        h('div', { class: 't-name' }, t.name || 'Untitled tournament'),
+        t.dates ? h('div', { class: 't-dates' }, t.dates) : null,
+        h('div', { class: 't-meta' }, r.s ? (r.s.name || 'Stage') : 'Whole event'))),
+    note);
+}
+function renderCollection(app, r) {
+  const c = COLLECTIONS.find(x => x.id === r.cid);
+  const items = c ? collectionItems(c) : [];
+  if (!items.length) return renderNotFound(app);
+  app.append(h('section', { class: 'wrap t-head' },
+    h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/' }, 'Home'), sep(), h('a', { href: '#/collections' }, 'Collections'), sep(), h('span', { class: 'crumb-cur' }, c.title || 'Collection')),
+    h('h1', { class: 't-title' }, c.title || 'Collection'),
+    c.blurb ? h('p', { class: 'lede' }, c.blurb) : null));
+  app.append(h('section', { class: 'wrap stage-body' }, h('div', { class: 'grid' }, items.map(x => collectionCard(x.it, x.r)))));
 }
 function renderNotFound(app) {
   app.append(h('section', { class: 'wrap notfound' },
@@ -1334,7 +1474,7 @@ function renderPlayer(app, r) {
   wbtn.addEventListener('click', () => {
     const w = store.get('watched', {});
     const on = !w[m.id];
-    if (on) w[m.id] = true; else delete w[m.id];
+    if (on) { w[m.id] = true; forgetWatching(m.id); } else delete w[m.id];
     store.set('watched', w);
     wbtn.className = 'btn ' + (on ? 'btn-inv' : 'btn-outline');
     wbtn.setAttribute('aria-pressed', String(on));
@@ -1564,9 +1704,9 @@ function mountPlayer(f, idx, els) {
         onStateChange: e => {
           if (P !== st) return;
           const S = YT.PlayerState;
-          if (e.data === S.PLAYING) { st.played = true; st.playedAt = st.playedAt || Date.now(); setCover('clear'); }
+          if (e.data === S.PLAYING) { st.played = true; st.playedAt = st.playedAt || Date.now(); if (!st.noted) { st.noted = true; noteWatching(m, idx, false); } setCover('clear'); }
           else if (e.data === S.PAUSED) setCover('paused');
-          else if (e.data === S.ENDED) { clearResume(m.id, idx); st.resumeAt = 0; setCover('ended'); }
+          else if (e.data === S.ENDED) { clearResume(m.id, idx); st.resumeAt = 0; mapEnded(st); setCover('ended'); }
           else if (e.data === S.BUFFERING) { if (!st.played) setCover('loading'); }
           else if (e.data === S.CUED) setCover('start');
           updatePlayIcon(e.data === S.PLAYING || (e.data === S.BUFFERING && st.played));
@@ -1640,6 +1780,7 @@ function setCover(mode) {
       back());
   }
 }
+function mapEnded(st) { st.noted = false; noteWatching(st.m, st.idx, true); }
 // Time into the map (not into the video), so a map's clock always starts at 0:00.
 const mapTime = st => Math.max(0, currentTime() - (st.start || 0));
 function tick() {
@@ -1651,6 +1792,7 @@ function tick() {
     st.yt.pauseVideo();
     clearResume(st.m.id, st.idx);
     st.resumeAt = 0;
+    mapEnded(st);
     setCover('ended');
     updatePlayIcon(false);
     return;
