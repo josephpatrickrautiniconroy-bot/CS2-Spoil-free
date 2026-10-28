@@ -14,6 +14,8 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'images', 'maps');
 const LP_API = 'https://liquipedia.net/counterstrike/api.php';
+// Pictures live on Liquipedia's shared commons wiki, so file listings come from there.
+const LP_COMMONS = 'https://liquipedia.net/commons/api.php';
 const LP_DELAY = 2500;
 const USER_AGENT = 'cs2-spoiler-free-site video watcher (https://github.com/' + (process.env.GITHUB_REPOSITORY || 'josephpatrickrautiniconroy-bot/CS2-Spoil-free') + ')';
 const MAPS = ['Mirage', 'Dust II', 'Nuke', 'Inferno', 'Ancient', 'Anubis', 'Overpass', 'Train', 'Vertigo', 'Cache'];
@@ -27,9 +29,9 @@ async function polite() {
   if (wait > 0) await sleep(wait);
   last = Date.now();
 }
-async function lp(params) {
+async function lp(params, api = LP_API) {
   await polite();
-  const url = new URL(LP_API);
+  const url = new URL(api);
   for (const [k, v] of Object.entries({ format: 'json', formatversion: '2', ...params })) url.searchParams.set(k, v);
   const r = await fetch(url, { headers: { 'User-Agent': USER_AGENT, 'Accept-Encoding': 'gzip' } });
   if (!r.ok) throw new Error('Liquipedia request failed: HTTP ' + r.status);
@@ -71,13 +73,15 @@ for (const p of arr(res.query.pages)) {
 const prefixes = ['Map icon', 'Mapicon', 'Map Icon', 'Icon', 'CS2 map', 'Cs2 map', 'CS2 icon', 'Cs2 icon', 'De ', 'De_'];
 for (const name of MAPS) prefixes.push(name, name.replace(' II', ' 2'), 'CS2 ' + name, 'Cs2 ' + name.toLowerCase(), 'Cs2 ' + name);
 const names = new Set();
+let seen = 0;
 for (const prefix of [...new Set(prefixes)]) {
   try {
-    const found = await lp({ action: 'query', list: 'allimages', aiprefix: prefix, ailimit: '500' });
+    const found = await lp({ action: 'query', list: 'allimages', aiprefix: prefix, ailimit: '500' }, LP_COMMONS);
+    seen += arr(found.query.allimages).length;
     for (const x of arr(found.query.allimages)) if (/icon|emblem|logo|symbol|pin|badge/i.test(x.name) && !/team|player|org/i.test(x.name)) names.add(x.name);
   } catch (e) { debug.push('allimages ' + prefix + ': ' + e.message); }
 }
-debug.push('Files with icon-like names:\n' + [...names].sort().join('\n'));
+debug.push(seen + ' files looked at. Files with icon-like names:\n' + [...names].sort().join('\n'));
 for (const name of MAPS) {
   const key = name.replace(' II', ' 2').toLowerCase().replace(/\s+/g, '');
   const icon = [...names].find(n => n.toLowerCase().replace(/[\s_]+/g, '').includes(key) && /icon/i.test(n));
