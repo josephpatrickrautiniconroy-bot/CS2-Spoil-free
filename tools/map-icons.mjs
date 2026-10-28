@@ -67,6 +67,15 @@ for (const p of arr(res.query.pages)) {
   debug.push(name + ' (' + p.title + '): ' + JSON.stringify(fields) + '\n  starts: ' + text.slice(0, 300).replace(/\n/g, ' | '));
   for (const [field, file] of Object.entries(fields)) wanted.push({ map: slug(name), name, field, file });
 }
+// The infobox only has a screenshot, so also look for each map's symbol among Liquipedia's files.
+for (const name of MAPS) {
+  const q = name.replace(' II', ' 2');
+  const found = await lp({ action: 'query', list: 'search', srnamespace: '6', srlimit: '15', srsearch: q + ' icon' });
+  const titles = arr(found.query.search).map(x => x.title.replace(/^File:/, ''));
+  debug.push(name + ' file search: ' + JSON.stringify(titles));
+  const icon = titles.find(t => /icon|emblem|logo|symbol|pin/i.test(t) && t.toLowerCase().includes(q.split(' ')[0].toLowerCase()) && !/team|player/i.test(t));
+  if (icon) wanted.push({ map: slug(name), name, field: 'icon', file: icon });
+}
 await writeFile(path.join(OUT, 'debug.txt'), debug.join('\n\n') + '\n');
 
 const index = {};
