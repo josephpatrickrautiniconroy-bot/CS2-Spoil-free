@@ -204,6 +204,17 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .bo-tag{position:absolute;right:0;bottom:0;background:var(--inv);color:var(--inv-ink);font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:.06em;padding:5px 12px}
 .m-cap{display:flex;justify-content:space-between;gap:12px;font-weight:500;font-size:15px;color:var(--muted)}
 .m-cap span:first-child{min-width:0;overflow-wrap:anywhere}
+.pin-alerts{margin-top:24px;border:2px solid var(--strong);background:var(--raised);padding:20px 24px;display:flex;flex-direction:column;gap:12px}
+.pin-alerts-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 16px}
+.pin-alerts-title{font-family:var(--display);font-weight:800;font-size:26px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.pin-alerts ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.pin-alert{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-top:1px solid var(--rule);padding-top:10px}
+.pin-alert-text{display:flex;flex-direction:column;gap:2px;min-width:0;overflow-wrap:anywhere}
+.pin-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;background:transparent;color:var(--ink);border:2px solid var(--strong);font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.pin-btn[aria-pressed="true"]{background:var(--inv);color:var(--inv-ink)}
+.pin-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.pin-add{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
+.pin-add .input{flex:1 1 220px;width:auto}
 .watched-chip{position:absolute;left:0;top:0;z-index:1;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px}
 .logo{display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--raised);flex-shrink:0}
 .logo>img{width:100%;height:100%;object-fit:contain;padding:4px}
@@ -535,7 +546,8 @@ const ICONS = {
   sun: '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>',
   lock: '<rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path>',
   x: '<line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line>',
-  check: '<polyline points="4 12 10 18 20 6"></polyline>'
+  check: '<polyline points="4 12 10 18 20 6"></polyline>',
+  pin: '<line x1="12" y1="17" x2="12" y2="22"></line><path d="M5 17h14v-1.8a2 2 0 0 0-1.1-1.8l-1.8-.9A2 2 0 0 1 15 10.8V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.8a2 2 0 0 1-1.1 1.8l-1.8.9A2 2 0 0 0 5 15.2z"></path>'
 };
 function icon(name, size, fill) {
   const span = document.createElement('span');
@@ -741,6 +753,89 @@ function resumeTime(mid, i) { return store.get('pos', {})[mid + ':' + i] || 0; }
 function saveResume(mid, i, t) { const p = store.get('pos', {}); p[mid + ':' + i] = Math.floor(t); store.set('pos', p); }
 function clearResume(mid, i) { const p = store.get('pos', {}); delete p[mid + ':' + i]; store.set('pos', p); }
 
+/* ---------- pins: tournaments and teams a visitor follows ----------
+   Kept in this browser. Each pin remembers which matches it has already told the visitor about ("seen"),
+   so a notice only lists matches that came out since. A team notice only appears once the visitor has
+   watched all of that team's earlier matches in the event, so it can't give away who went through. */
+function getPins() { const p = store.get('pins', {}); return { tournaments: p.tournaments || {}, teams: p.teams || {} }; }
+const isPinned = (kind, id) => !!getPins()[kind][id];
+const hasVideo = m => m.maps.some(x => x.video);
+const isWatched = id => !!store.get('watched', {})[id];
+function eventMatches(t) {
+  const out = [];
+  t.stages.forEach(s => s.rounds.forEach(rd => rd.matches.forEach(m => out.push({ m, rd }))));
+  return out;
+}
+function togglePin(kind, id) {
+  const p = getPins();
+  const on = !p[kind][id];
+  if (!on) delete p[kind][id];
+  // A newly pinned event starts from what's out now, so it doesn't announce every match it already had.
+  else p[kind][id] = { seen: kind === 'tournaments' && findT(id) ? eventMatches(findT(id)).filter(x => hasVideo(x.m)).map(x => x.m.id) : [] };
+  store.set('pins', p);
+  return on;
+}
+function markSeen(kind, id, mids) {
+  const p = getPins();
+  if (!p[kind][id]) return;
+  p[kind][id].seen = [...new Set(arr(p[kind][id].seen).concat(mids))];
+  store.set('pins', p);
+}
+function tournamentAlert(t) {
+  const pin = getPins().tournaments[t.id];
+  if (!pin) return null;
+  const seen = new Set(arr(pin.seen));
+  const mids = eventMatches(t).filter(x => hasVideo(x.m) && !isWatched(x.m.id) && !seen.has(x.m.id)).map(x => x.m.id);
+  return mids.length ? { kind: 'tournaments', id: t.id, mids, href: '#/t/' + t.id,
+    title: t.name || 'Untitled tournament', text: plural(mids.length, 'new match', 'new matches') + ' ready to watch', go: 'Open event' } : null;
+}
+function teamAlerts(tid) {
+  const pin = getPins().teams[tid];
+  if (!pin) return [];
+  const seen = new Set(arr(pin.seen));
+  const out = [];
+  data.tournaments.forEach(t => {
+    const mine = eventMatches(t).filter(x => x.m.a === tid || x.m.b === tid);
+    const k = mine.findIndex(x => !isWatched(x.m.id));
+    if (k < 0) return;
+    const { m, rd } = mine[k];
+    // Their first match only counts when it's in an open round: in a hidden round, just being there could be a result.
+    if (!hasVideo(m) || seen.has(m.id) || (k === 0 && rd.locked)) return;
+    out.push({ kind: 'teams', id: tid, mids: [m.id], href: '#/match/' + m.id + '/0',
+      title: teamName(tid), text: 'Next match ready in ' + (t.name || 'an event'), go: 'Watch',
+      note: 'Opening it shows who they play, which can give away other results from this event.' });
+  });
+  return out;
+}
+function pinAlerts() {
+  const p = getPins();
+  const out = [];
+  data.tournaments.forEach(t => { const a = tournamentAlert(t); if (a) out.push(a); });
+  Object.keys(p.teams).forEach(tid => out.push(...teamAlerts(tid)));
+  return out;
+}
+let alertsOpen = true; // shown on every page until the visitor dismisses or follows them
+function alertsPanel() {
+  if (editing() || !alertsOpen) return null;
+  const list = pinAlerts();
+  if (!list.length) return null;
+  return h('section', { class: 'wrap', 'aria-label': 'New for your pins' }, h('div', { class: 'pin-alerts' },
+    h('div', { class: 'pin-alerts-head' },
+      h('h2', { class: 'pin-alerts-title' }, icon('pin', 22), 'New since you were last here'),
+      h('button', { type: 'button', class: 'text-btn', onClick: () => { list.forEach(a => markSeen(a.kind, a.id, a.mids)); alertsOpen = false; rerender(); } }, 'Dismiss')),
+    h('ul', {}, list.map(a => h('li', { class: 'pin-alert' },
+      h('div', { class: 'pin-alert-text' }, h('strong', {}, a.title), h('span', {}, a.text), a.note ? h('span', { class: 'hint' }, a.note) : null),
+      h('a', { class: 'btn btn-outline', href: a.href, onClick: () => markSeen(a.kind, a.id, a.mids) }, a.go))))));
+}
+function pinButton(kind, id, label) {
+  const on = isPinned(kind, id);
+  return h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': String(on), onClick: () => {
+    const now = togglePin(kind, id);
+    toast(now ? 'Pinned. You’ll see new matches here when you come back.' : 'Unpinned');
+    rerender();
+  } }, icon('pin', 18), on ? 'Pinned ' + label : 'Pin ' + label);
+}
+
 /* ---------- saving (edit mode) ---------- */
 let saveTimer = null;
 function setStatus(msg) { const el = $('#edit-status'); if (el) el.textContent = msg; }
@@ -877,6 +972,8 @@ function route(keepScroll, initial) {
   const app = $('#app');
   app.replaceChildren();
   if (editing() && data.site.example) app.append(exampleNotice());
+  const alerts = alertsPanel();
+  if (alerts) app.append(alerts);
   if (r.name === 'tournament') renderTournament(app, r);
   else if (r.name === 'player') renderPlayer(app, r);
   else renderHome(app, r);
@@ -965,6 +1062,9 @@ function renderHome(app) {
   const done = ts.filter(t => tStatus(t) === 'done');
   // Coming up: soonest first.
   const upcoming = ts.filter(t => tStatus(t) === 'upcoming').sort((a, b) => str(a.sdate) < str(b.sdate) ? -1 : str(a.sdate) > str(b.sdate) ? 1 : 0);
+  const pinGroup = editing() ? null : pinsView();
+  const anyPins = pinGroup && pinGroup.dataset.empty !== 'true';
+  if (anyPins) inner.append(pinGroup);
   if (live.length) {
     inner.append(h('div', { class: 'group', id: 'grp-live' },
       h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, h('span', { class: 'live-dot', 'aria-hidden': 'true' }), 'Happening now')),
@@ -993,6 +1093,7 @@ function renderHome(app) {
       h('div', { class: 'grid' }, first.map(tCard)),
       upcoming.length > first.length ? h('button', { type: 'button', class: 'btn btn-outline show-more', onClick: () => { showAllUpcoming = true; rerender(); } }, 'Show all ' + upcoming.length) : null));
   }
+  if (pinGroup && !anyPins) inner.append(pinGroup);
   app.append(h('section', { class: 'section', id: 'sec-tournaments' }, inner));
 
   // how it works
@@ -1002,11 +1103,43 @@ function renderHome(app) {
       ed('h3', '', it.title, v => { it.title = v; }, { label: 'Point title', placeholder: 'Title' }),
       ed('p', '', it.text, v => { it.text = v; }, { label: 'Point text', placeholder: 'Short explanation' })))))));
 }
+/* Your pins: pinned events as cards, pinned teams as buttons, and a box to pin a team by name. */
+function pinsView() {
+  const p = getPins();
+  const pts = data.tournaments.filter(t => p.tournaments[t.id]);
+  const pteams = Object.keys(p.teams).filter(id => team(id));
+  const empty = !pts.length && !pteams.length;
+  const g = h('div', { class: 'group', id: 'grp-pins', 'data-empty': String(empty) },
+    h('div', { class: 'section-head' }, h('h2', { class: 'h2' }, 'Your pins')),
+    h('p', { class: 'group-note' }, empty
+      ? 'Pin an event or a team and you’ll be told about new matches when you come back. Pins are kept in this browser.'
+      : 'New matches for these show at the top of the page when you come back. Team notices wait until you’ve marked their earlier matches in that event as watched.'));
+  if (pts.length) g.append(h('div', { class: 'grid' }, pts.map(tCard)));
+  if (pteams.length) g.append(h('div', { class: 'pin-row', role: 'group', 'aria-label': 'Pinned teams' },
+    pteams.sort((a, b) => teamName(a).localeCompare(teamName(b))).map(id => h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': 'true', 'aria-label': 'Unpin ' + teamName(id), title: 'Unpin', onClick: () => { togglePin('teams', id); toast('Unpinned ' + teamName(id)); rerender(); } },
+      icon('pin', 18), teamName(id), icon('x', 16)))));
+  const choices = data.teams.filter(x => x.name && !p.teams[x.id]).sort((a, b) => a.name.localeCompare(b.name));
+  if (choices.length) {
+    const inp = h('input', { class: 'input', id: 'pin-team-input', list: 'pin-team-list', placeholder: 'Team name', autocomplete: 'off' });
+    const add = () => {
+      const v = looseName(inp.value);
+      const tm = choices.find(x => looseName(x.name) === v || x.aliases.some(a => looseName(a) === v));
+      if (!tm) { toast(inp.value.trim() ? 'No team called “' + inp.value.trim() + '”' : 'Type a team name'); return; }
+      togglePin('teams', tm.id); toast('Pinned ' + tm.name); rerender();
+    };
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); add(); } });
+    g.append(h('div', { class: 'field' }, h('label', { for: inp.id }, 'Pin a team'),
+      h('div', { class: 'pin-add' }, inp, h('datalist', { id: 'pin-team-list' }, choices.map(x => h('option', { value: x.name }))),
+        h('button', { type: 'button', class: 'btn btn-outline', onClick: add }, 'Pin'))));
+  }
+  return g;
+}
 function tCard(t) {
   const n = countMatches(t);
   const st = tStatus(t);
-  const meta = st === 'upcoming' && !n ? 'Coming up' + (t.teamsText ? ' · ' + t.teamsText : '')
-    : (st === 'live' ? 'Live · ' : '') + plural(t.stages.length, 'stage') + ' · ' + plural(n, 'match', 'matches');
+  const al = tournamentAlert(t);
+  const meta = (isPinned('tournaments', t.id) ? 'Pinned · ' + (al ? al.mids.length + ' new · ' : '') : '') + (st === 'upcoming' && !n ? 'Coming up' + (t.teamsText ? ' · ' + t.teamsText : '')
+    : (st === 'live' ? 'Live · ' : '') + plural(t.stages.length, 'stage') + ' · ' + plural(n, 'match', 'matches'));
   return h('a', { class: 't-card', href: '#/t/' + t.id },
     h('div', { class: 't-art' }, artView(t)),
     h('div', { class: 't-body' },
@@ -1043,7 +1176,10 @@ function renderTournament(app, r) {
     h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/' }, 'Home'), sep(), h('a', { href: '#/tournaments' }, 'Tournaments'), sep(), h('span', { class: 'crumb-cur' }, t.name || 'Untitled tournament')),
     h('div', { class: 't-title-row' },
       imgSlot({ src: t.logo, alt: (t.name || 'Tournament') + ' logo', kind: 'logo', cls: 't-logo', what: 'logo', onChange: v => { t.logo = v; }, fallback: () => monogram(t.name) }),
-      h('div', { class: 't-title-col' }, title, meta)));
+      h('div', { class: 't-title-col' }, title, meta, editing() ? null : h('div', { class: 'pin-row' }, pinButton('tournaments', t.id, 'event')))));
+  // Opening a pinned event counts as having seen what's new in it.
+  const al = tournamentAlert(t);
+  if (al) markSeen(al.kind, al.id, al.mids);
   if (editing()) {
     const i = data.tournaments.indexOf(t);
     head.append(h('div', { class: 'edit-panel' },
@@ -1189,7 +1325,8 @@ function renderPlayer(app, r) {
     h('div', { class: 'player', id: 'player' }, frame, ctl.bar),
     h('div', { class: 'match-head' },
       h('h1', { class: 'match-title' }, teamName(m.a), ' ', h('span', { class: 'vs' }, 'versus'), ' ', teamName(m.b)),
-      metaLine(['Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), s.name, rd.name, 'Best of ' + m.bo, m.date])),
+      metaLine(['Map ' + (idx + 1) + (map.name ? ' · ' + map.name : ''), s.name, rd.name, 'Best of ' + m.bo, m.date]),
+      editing() ? null : h('div', { class: 'pin-row' }, [m.a, m.b].filter(id => team(id)).map(id => pinButton('teams', id, teamName(id))))),
     editing() ? h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match')) : null);
 
   const watched = !!store.get('watched', {})[m.id];
