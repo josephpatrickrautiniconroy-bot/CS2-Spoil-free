@@ -29,6 +29,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `watcher/watch.mjs`, `watcher/liquipedia.mjs`, `watcher/highlights.mjs`, `watcher/calendar.mjs` | The watcher | Nobody |
 | `calendar/` | Calendar feeds for "Add to calendar" | The watcher |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
+| `ratings/database.rules.json` | Who can read and write ratings in Firebase | Nobody, paste it into Firebase once |
 | `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
 
@@ -49,6 +50,26 @@ Visitors can pin an event (button on its page) or a team (buttons on a match pag
 - pinned teams whose next match is ready, but only once every earlier match of that team in that event is marked as watched (a team's first match only counts if it's in an open round). That way the notice can't give away who went through. It never names the opponent.
 
 Opening a pinned event, following a notice or pressing Dismiss clears those notices.
+
+## "Worth watching" ratings
+
+After marking a match as watched, a visitor can rate the whole series: **Must watch**, **Worth a watch** or **Only for fans**. Once at least 3 people have voted, match cards and the match page show a badge, but only for the two good tiers, so a missing badge can just as well mean too few votes. Votes never mention scores or maps, so they can't tell who won or how many maps were played. Anyone who'd rather not see badges can press **Hide ratings** at the bottom of the page.
+
+Votes are shared between visitors through a free Firebase Realtime Database. Each browser gets an anonymous sign-in, so there's one vote per browser and nobody makes an account. Until it's set up, the site simply leaves ratings out.
+
+To set it up (about 10 minutes, free Spark plan, no card needed):
+
+1. Go to https://console.firebase.google.com, **Create a project**, and skip Google Analytics.
+2. **Build → Authentication → Get started → Sign-in method → Anonymous**, turn it on and save.
+3. **Build → Realtime Database → Create database**, pick a location, start in **locked mode**. On the **Rules** tab, paste the contents of `ratings/database.rules.json` and press **Publish**.
+4. **Project settings (gear) → General → Your apps → Web (</>)**, register an app (any nickname, no hosting). Copy `apiKey` and `databaseURL` from the config it shows.
+5. Add them to `data.json` under `site`:
+
+   ```json
+   "firebase": { "apiKey": "AIza...", "databaseURL": "https://your-project-default-rtdb.firebaseio.com" }
+   ```
+
+   These two values are meant to be public; the rules decide what visitors can do.
 
 ## Short versions and speed
 
