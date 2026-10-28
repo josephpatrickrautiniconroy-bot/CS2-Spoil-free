@@ -50,7 +50,7 @@ const NOW = process.env.WATCHER_NOW ? new Date(process.env.WATCHER_NOW) : new Da
 const HOUR = 3600 * 1000;
 // 2: matches keep their start time (for highlights and calendars), and events their match days.
 const BUILD_VERSION = 2;
-const USER_AGENT = 'cs2-spoiler-free-site video watcher (https://github.com/' + (GH_REPO || 'josephpatrickrautiniconroy-bot/CS2-Spoil-free') + ')';
+const USER_AGENT = 'cs2-spoiler-free-site video watcher (https://github.com/' + (GH_REPO || 'spoilerfreecs2/CS2-Spoil-free') + ')';
 
 /* ---------- small helpers ---------- */
 const str = v => (v === null || v === undefined) ? '' : String(v);
@@ -596,7 +596,7 @@ async function main() {
   }
 
   /* 6b. calendar feeds, one per event, for the site's "Add to calendar" */
-  const siteUrl = str(config.siteUrl) || ('https://' + (GH_REPO.split('/')[0] || 'josephpatrickrautiniconroy-bot').toLowerCase() + '.github.io/' + (GH_REPO.split('/')[1] || 'CS2-Spoil-free') + '/');
+  const siteUrl = str(config.siteUrl) || ('https://' + (GH_REPO.split('/')[0] || 'spoilerfreecs2').toLowerCase() + '.github.io/' + (GH_REPO.split('/')[1] || 'CS2-Spoil-free') + '/');
   const calendars = buildCalendars(auto, siteUrl, NOW);
   await mkdir(FILES.calendar, { recursive: true });
   for (const [rel, text] of Object.entries(calendars)) {

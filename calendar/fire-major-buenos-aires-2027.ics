@@ -14,10 +14,10 @@ DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:FiRe Major Buenos Aires 2027: Monday’s matches ready to watch
 DESCRIPTION:Videos from Monday’s matches of FiRe Major Buenos Aires 2027 
- should be up by now. Watch spoiler-free: https://josephpatrickrautiniconro
- y-bot.github.io/CS2-Spoil-free/#/t/fire-major-buenos-aires-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/fir
- e-major-buenos-aires-2027
+ should be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/
+ CS2-Spoil-free/#/t/fire-major-buenos-aires-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/fire-major-buenos-a
+ ires-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +32,10 @@ DTSTART;VALUE=DATE:20270621
 DTEND;VALUE=DATE:20270622
 SUMMARY:FiRe Major Buenos Aires 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of FiRe Major Buenos Aires 2027 shoul
- d be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot
- .github.io/CS2-Spoil-free/#/t/fire-major-buenos-aires-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/fir
- e-major-buenos-aires-2027
+ d be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-S
+ poil-free/#/t/fire-major-buenos-aires-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/fire-major-buenos-a
+ ires-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

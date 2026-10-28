@@ -14,10 +14,10 @@ DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:BLAST Open Spring 2027: Friday’s matches ready to watch
 DESCRIPTION:Videos from Friday’s matches of BLAST Open Spring 2027 should
-  be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.
- github.io/CS2-Spoil-free/#/t/blast-open-spring-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
- st-open-spring-2027
+  be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Sp
+ oil-free/#/t/blast-open-spring-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/blast-open-spring-2
+ 027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +32,10 @@ DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270330
 SUMMARY:BLAST Open Spring 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of BLAST Open Spring 2027 should be u
- p by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.githu
- b.io/CS2-Spoil-free/#/t/blast-open-spring-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/bla
- st-open-spring-2027
+ p by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-f
+ ree/#/t/blast-open-spring-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/blast-open-spring-2
+ 027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

@@ -14,10 +14,9 @@ DTSTART;VALUE=DATE:20271009
 DTEND;VALUE=DATE:20271010
 SUMMARY:PGL October 2027: Friday’s matches ready to watch
 DESCRIPTION:Videos from Friday’s matches of PGL October 2027 should be up
-  by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github
- .io/CS2-Spoil-free/#/t/pgl-october-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -october-2027
+  by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-fr
+ ee/#/t/pgl-october-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-october-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +31,9 @@ DTSTART;VALUE=DATE:20271018
 DTEND;VALUE=DATE:20271019
 SUMMARY:PGL October 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of PGL October 2027 should be up by n
- ow. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io/C
- S2-Spoil-free/#/t/pgl-october-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -october-2027
+ ow. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-free/#/
+ t/pgl-october-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-october-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

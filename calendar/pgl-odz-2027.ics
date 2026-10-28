@@ -14,10 +14,9 @@ DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:PGL Łódź 2027: Thursday’s matches ready to watch
 DESCRIPTION:Videos from Thursday’s matches of PGL Łódź 2027 should be 
- up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.gith
- ub.io/CS2-Spoil-free/#/t/pgl-odz-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -odz-2027
+ up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-
+ free/#/t/pgl-odz-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-odz-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +31,9 @@ DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270330
 SUMMARY:PGL Łódź 2027: final day ready to watch
 DESCRIPTION:Videos from the final day of PGL Łódź 2027 should be up by n
- ow. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.github.io/C
- S2-Spoil-free/#/t/pgl-odz-2027
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -odz-2027
+ ow. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil-free/#/
+ t/pgl-odz-2027
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-odz-2027
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

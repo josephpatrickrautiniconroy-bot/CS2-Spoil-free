@@ -14,10 +14,10 @@ DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:PGL Major Singapore 2026: Tuesday’s matches ready to watch
 DESCRIPTION:Videos from Tuesday’s matches of PGL Major Singapore 2026 sho
- uld be up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-b
- ot.github.io/CS2-Spoil-free/#/t/pgl-major-singapore-2026
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -major-singapore-2026
+ uld be up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2
+ -Spoil-free/#/t/pgl-major-singapore-2026
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-major-singapore
+ -2026
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -32,10 +32,10 @@ DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:PGL Major Singapore 2026: final day ready to watch
 DESCRIPTION:Videos from the final day of PGL Major Singapore 2026 should be
-  up by now. Watch spoiler-free: https://josephpatrickrautiniconroy-bot.git
- hub.io/CS2-Spoil-free/#/t/pgl-major-singapore-2026
-URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/pgl
- -major-singapore-2026
+  up by now. Watch spoiler-free: https://spoilerfreecs2.github.io/CS2-Spoil
+ -free/#/t/pgl-major-singapore-2026
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/pgl-major-singapore
+ -2026
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
