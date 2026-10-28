@@ -52,6 +52,7 @@ export function pictureFields(text) {
 }
 
 await mkdir(OUT, { recursive: true });
+try {
 const res = await lp({ action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', redirects: '1', titles: MAPS.join('|') });
 const back = new Map();
 for (const n of arr(res.query.normalized)) back.set(n.to, n.from);
@@ -89,3 +90,8 @@ for (let i = 0; i < wanted.length; i += 40) {
 }
 await writeFile(path.join(OUT, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 console.log(Object.keys(index).length + ' maps with pictures');
+} catch (e) {
+  // Run logs can't be read from where this is looked at, so the error is saved with the pictures.
+  await writeFile(path.join(OUT, 'error.txt'), String(e && e.stack || e) + '\n');
+  console.log('Failed: ' + e.message);
+}
