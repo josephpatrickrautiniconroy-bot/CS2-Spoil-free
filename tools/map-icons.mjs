@@ -67,13 +67,20 @@ for (const p of arr(res.query.pages)) {
   debug.push(name + ' (' + p.title + '): ' + JSON.stringify(fields) + '\n  starts: ' + text.slice(0, 300).replace(/\n/g, ' | '));
   for (const [field, file] of Object.entries(fields)) wanted.push({ map: slug(name), name, field, file });
 }
-// The infobox only has a screenshot, so also look for each map's symbol among Liquipedia's files.
+// The infobox only has a screenshot, so also look for each map's symbol among Liquipedia's file names.
+const prefixes = ['Map icon', 'Mapicon', 'Map Icon', 'Icon', 'CS2 map', 'Cs2 map', 'CS2 icon', 'Cs2 icon', 'De ', 'De_'];
+for (const name of MAPS) prefixes.push(name, name.replace(' II', ' 2'), 'CS2 ' + name, 'Cs2 ' + name.toLowerCase(), 'Cs2 ' + name);
+const names = new Set();
+for (const prefix of [...new Set(prefixes)]) {
+  try {
+    const found = await lp({ action: 'query', list: 'allimages', aiprefix: prefix, ailimit: '500' });
+    for (const x of arr(found.query.allimages)) if (/icon|emblem|logo|symbol|pin|badge/i.test(x.name) && !/team|player|org/i.test(x.name)) names.add(x.name);
+  } catch (e) { debug.push('allimages ' + prefix + ': ' + e.message); }
+}
+debug.push('Files with icon-like names:\n' + [...names].sort().join('\n'));
 for (const name of MAPS) {
-  const q = name.replace(' II', ' 2');
-  const found = await lp({ action: 'query', list: 'search', srnamespace: '6', srlimit: '15', srsearch: q + ' icon' });
-  const titles = arr(found.query.search).map(x => x.title.replace(/^File:/, ''));
-  debug.push(name + ' file search: ' + JSON.stringify(titles));
-  const icon = titles.find(t => /icon|emblem|logo|symbol|pin/i.test(t) && t.toLowerCase().includes(q.split(' ')[0].toLowerCase()) && !/team|player/i.test(t));
+  const key = name.replace(' II', ' 2').toLowerCase().replace(/\s+/g, '');
+  const icon = [...names].find(n => n.toLowerCase().replace(/[\s_]+/g, '').includes(key) && /icon/i.test(n));
   if (icon) wanted.push({ map: slug(name), name, field: 'icon', file: icon });
 }
 await writeFile(path.join(OUT, 'debug.txt'), debug.join('\n\n') + '\n');
