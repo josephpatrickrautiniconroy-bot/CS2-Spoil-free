@@ -14,6 +14,7 @@
       "teamsText": "32 teams",
       "image": "Perfect World Shanghai Major 2024 alt icon lightmode.png",
       "imageDark": "Perfect World Shanghai Major 2024 alt icon darkmode.png",
+      "days": [],
       "art": "",
       "logo": "images/auto/perfect-world-shanghai-major-2027.png",
       "logoDark": "images/auto/perfect-world-shanghai-major-2027-dark.png"
@@ -47,6 +48,7 @@
       "teamsText": "",
       "image": "StarLadder StarSeries lightmode.png",
       "imageDark": "StarLadder StarSeries darkmode.png",
+      "days": [],
       "art": "",
       "logo": "images/auto/starladder-starseries-fall-2027.png",
       "logoDark": "images/auto/starladder-starseries-fall-2027-dark.png"
@@ -63,6 +65,7 @@
       "teamsText": "16 teams",
       "image": "PGL allmode.png",
       "imageDark": "",
+      "days": [],
       "art": "",
       "logo": "images/auto/pgl-october-2027.png",
       "logoDark": ""
@@ -113,6 +116,7 @@
       "teamsText": "16 teams",
       "image": "PGL allmode.png",
       "imageDark": "",
+      "days": [],
       "art": "",
       "logo": "images/auto/pgl-september-2027.png",
       "logoDark": ""
@@ -248,6 +252,7 @@
       "teamsText": "16 teams",
       "image": "PGL allmode.png",
       "imageDark": "",
+      "days": [],
       "art": "",
       "logo": "images/auto/pgl-china-2027.png",
       "logoDark": ""
@@ -298,6 +303,7 @@
       "teamsText": "16 teams",
       "image": "PGL allmode.png",
       "imageDark": "",
+      "days": [],
       "art": "",
       "logo": "images/auto/pgl-odz-2027.png",
       "logoDark": ""
@@ -331,6 +337,7 @@
       "teamsText": "16 teams",
       "image": "PGL allmode.png",
       "imageDark": "",
+      "days": [],
       "art": "",
       "logo": "images/auto/pgl-cluj-napoca-2027.png",
       "logoDark": ""
@@ -364,6 +371,7 @@
       "teamsText": "16 teams",
       "image": "PGL allmode.png",
       "imageDark": "",
+      "days": [],
       "art": "",
       "logo": "images/auto/pgl-bucharest-2027.png",
       "logoDark": ""
@@ -414,6 +422,7 @@
       "teamsText": "",
       "image": "YaLLa Compass 2025 lightmode.png",
       "imageDark": "YaLLa Compass 2025 darkmode.png",
+      "days": [],
       "art": "",
       "logo": "images/auto/yalla-compass-uae-2026.png",
       "logoDark": "images/auto/yalla-compass-uae-2026-dark.png"
@@ -524,6 +533,12 @@
       "teamsText": "8 teams",
       "image": "StarLadder StarSeries lightmode.png",
       "imageDark": "StarLadder StarSeries darkmode.png",
+      "days": [
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-19",
+        "2026-09-20"
+      ],
       "art": "",
       "logo": "images/auto/starladder-starseries-fall-2026.png",
       "logoDark": "images/auto/starladder-starseries-fall-2026-dark.png"
@@ -824,188 +839,6 @@
     }
   ],
   "matches": [
-    {
-      "id": "lp-a5a27a1cb3",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-mouz",
-      "b": "lp-nrg",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-c30108b80a",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-magic",
-      "b": "lp-team-vitality",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-fc91dd494c",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-aurora-gaming",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-82001a6e30",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Quarter-Finals",
-      "roundOrder": 1,
-      "a": "lp-furia",
-      "b": "lp-mibr",
-      "bo": 3,
-      "date": "17 Sept"
-    },
-    {
-      "id": "lp-d5a53e2b36",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Round 1",
-      "roundOrder": 2,
-      "a": "lp-mouz",
-      "b": "lp-natus-vincere",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-23b3e2f5bb",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Round 1",
-      "roundOrder": 2,
-      "a": "lp-mibr",
-      "b": "lp-magic",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-73c76734e9",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Semi-Finals",
-      "roundOrder": 3,
-      "a": "lp-nrg",
-      "b": "lp-aurora-gaming",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-54017faf5b",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Semi-Finals",
-      "roundOrder": 3,
-      "a": "lp-furia",
-      "b": "lp-team-vitality",
-      "bo": 3,
-      "date": "18 Sept"
-    },
-    {
-      "id": "lp-5b671aa81a",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Quarter-Finals",
-      "roundOrder": 4,
-      "a": "lp-nrg",
-      "b": "lp-mibr",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-640ae2ea41",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Quarter-Finals",
-      "roundOrder": 4,
-      "a": "lp-furia",
-      "b": "lp-mouz",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-bd07c1aa44",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Upper Bracket Final",
-      "roundOrder": 5,
-      "a": "lp-aurora-gaming",
-      "b": "lp-team-vitality",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-36be919591",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Semi-Finals",
-      "roundOrder": 6,
-      "a": "lp-furia",
-      "b": "lp-mibr",
-      "bo": 3,
-      "date": "19 Sept"
-    },
-    {
-      "id": "lp-d144c054ea",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Lower Bracket Final",
-      "roundOrder": 7,
-      "a": "lp-team-vitality",
-      "b": "lp-furia",
-      "bo": 3,
-      "date": "20 Sept"
-    },
-    {
-      "id": "lp-104b3ca3e8",
-      "tournamentId": "starladder-starseries-fall-2026",
-      "tournament": "StarLadder StarSeries Fall 2026",
-      "stage": "Main Event",
-      "stageOrder": 0,
-      "round": "Grand Final",
-      "roundOrder": 8,
-      "a": "lp-aurora-gaming",
-      "b": "lp-team-vitality",
-      "bo": 5,
-      "date": "20 Sept"
-    },
     {
       "id": "lp-e017aaea27",
       "tournamentId": "pgl-masters-bucharest-2026",
@@ -4981,373 +4814,205 @@
       "bo": 5,
       "date": "23 Aug",
       "time": "2026-08-23T12:15:00.000Z"
+    },
+    {
+      "id": "lp-a5a27a1cb3",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-mouz",
+      "b": "lp-nrg",
+      "bo": 3,
+      "date": "17 Sept",
+      "time": "2026-09-17T10:00:00.000Z"
+    },
+    {
+      "id": "lp-c30108b80a",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-magic",
+      "b": "lp-team-vitality",
+      "bo": 3,
+      "date": "17 Sept",
+      "time": "2026-09-17T13:05:00.000Z"
+    },
+    {
+      "id": "lp-fc91dd494c",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-aurora-gaming",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "17 Sept",
+      "time": "2026-09-17T15:05:00.000Z"
+    },
+    {
+      "id": "lp-82001a6e30",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Quarter-Finals",
+      "roundOrder": 1,
+      "a": "lp-furia",
+      "b": "lp-mibr",
+      "bo": 3,
+      "date": "17 Sept",
+      "time": "2026-09-17T17:10:00.000Z"
+    },
+    {
+      "id": "lp-d5a53e2b36",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Round 1",
+      "roundOrder": 2,
+      "a": "lp-mouz",
+      "b": "lp-natus-vincere",
+      "bo": 3,
+      "date": "18 Sept",
+      "time": "2026-09-18T10:00:00.000Z"
+    },
+    {
+      "id": "lp-23b3e2f5bb",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Round 1",
+      "roundOrder": 2,
+      "a": "lp-mibr",
+      "b": "lp-magic",
+      "bo": 3,
+      "date": "18 Sept",
+      "time": "2026-09-18T13:10:00.000Z"
+    },
+    {
+      "id": "lp-73c76734e9",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Semi-Finals",
+      "roundOrder": 3,
+      "a": "lp-nrg",
+      "b": "lp-aurora-gaming",
+      "bo": 3,
+      "date": "18 Sept",
+      "time": "2026-09-18T16:05:00.000Z"
+    },
+    {
+      "id": "lp-54017faf5b",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Semi-Finals",
+      "roundOrder": 3,
+      "a": "lp-furia",
+      "b": "lp-team-vitality",
+      "bo": 3,
+      "date": "18 Sept",
+      "time": "2026-09-18T18:35:00.000Z"
+    },
+    {
+      "id": "lp-5b671aa81a",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarter-Finals",
+      "roundOrder": 4,
+      "a": "lp-nrg",
+      "b": "lp-mibr",
+      "bo": 3,
+      "date": "19 Sept",
+      "time": "2026-09-19T10:00:00.000Z"
+    },
+    {
+      "id": "lp-640ae2ea41",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Quarter-Finals",
+      "roundOrder": 4,
+      "a": "lp-furia",
+      "b": "lp-mouz",
+      "bo": 3,
+      "date": "19 Sept",
+      "time": "2026-09-19T12:00:00.000Z"
+    },
+    {
+      "id": "lp-bd07c1aa44",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Upper Bracket Final",
+      "roundOrder": 5,
+      "a": "lp-aurora-gaming",
+      "b": "lp-team-vitality",
+      "bo": 3,
+      "date": "19 Sept",
+      "time": "2026-09-19T15:25:00.000Z"
+    },
+    {
+      "id": "lp-36be919591",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Semi-Finals",
+      "roundOrder": 6,
+      "a": "lp-furia",
+      "b": "lp-mibr",
+      "bo": 3,
+      "date": "19 Sept",
+      "time": "2026-09-19T18:30:00.000Z"
+    },
+    {
+      "id": "lp-d144c054ea",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Lower Bracket Final",
+      "roundOrder": 7,
+      "a": "lp-team-vitality",
+      "b": "lp-furia",
+      "bo": 3,
+      "date": "20 Sept",
+      "time": "2026-09-20T12:00:00.000Z"
+    },
+    {
+      "id": "lp-104b3ca3e8",
+      "tournamentId": "starladder-starseries-fall-2026",
+      "tournament": "StarLadder StarSeries Fall 2026",
+      "stage": "Main Event",
+      "stageOrder": 0,
+      "round": "Grand Final",
+      "roundOrder": 8,
+      "a": "lp-aurora-gaming",
+      "b": "lp-team-vitality",
+      "bo": 5,
+      "date": "20 Sept",
+      "time": "2026-09-20T15:00:00.000Z"
     }
   ],
   "videos": {
-    "lp-a5a27a1cb3": {
-      "maps": [
-        {
-          "video": "https://youtu.be/ZWv5cwe8WO8",
-          "start": "23",
-          "end": "2952",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/ZWv5cwe8WO8",
-          "start": "2952",
-          "end": "5359",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/ZWv5cwe8WO8",
-          "start": "5359",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-c30108b80a": {
-      "maps": [
-        {
-          "video": "https://youtu.be/l94aqGHxLPg",
-          "start": "30",
-          "end": "2413",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/l94aqGHxLPg",
-          "start": "2413",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-fc91dd494c": {
-      "maps": [
-        {
-          "video": "https://youtu.be/1E6LIK7EGHs",
-          "start": "28",
-          "end": "2991",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/1E6LIK7EGHs",
-          "start": "2991",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-82001a6e30": {
-      "maps": [
-        {
-          "video": "https://youtu.be/5W4-_BHXl7g",
-          "start": "29",
-          "end": "3217",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/5W4-_BHXl7g",
-          "start": "3217",
-          "end": "5579",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/5W4-_BHXl7g",
-          "start": "5579",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-d5a53e2b36": {
-      "maps": [
-        {
-          "video": "https://youtu.be/h9Aqi4BzpfM",
-          "start": "32",
-          "end": "3104",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/h9Aqi4BzpfM",
-          "start": "3104",
-          "end": "6196",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/h9Aqi4BzpfM",
-          "start": "6196",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-23b3e2f5bb": {
-      "maps": [
-        {
-          "video": "https://youtu.be/09SREO1c36Q",
-          "start": "28",
-          "end": "2427",
-          "name": "Ancient",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/09SREO1c36Q",
-          "start": "2427",
-          "end": "5292",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/09SREO1c36Q",
-          "start": "5292",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-73c76734e9": {
-      "maps": [
-        {
-          "video": "https://youtu.be/KAIwaUgiKvo",
-          "start": "28",
-          "end": "2864",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/KAIwaUgiKvo",
-          "start": "2864",
-          "end": "",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-54017faf5b": {
-      "maps": [
-        {
-          "video": "https://youtu.be/OvpiH_e2D6s",
-          "start": "28",
-          "end": "2844",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/OvpiH_e2D6s",
-          "start": "2844",
-          "end": "",
-          "name": "Dust II",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-5b671aa81a": {
-      "maps": [
-        {
-          "video": "https://youtu.be/Et6cs2OYQAc",
-          "start": "27",
-          "end": "2524",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/Et6cs2OYQAc",
-          "start": "2524",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-640ae2ea41": {
-      "maps": [
-        {
-          "video": "https://youtu.be/OEwN5pO-xFA",
-          "start": "23",
-          "end": "2836",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/OEwN5pO-xFA",
-          "start": "2836",
-          "end": "7370",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/OEwN5pO-xFA",
-          "start": "7370",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-bd07c1aa44": {
-      "maps": [
-        {
-          "video": "https://youtu.be/jhRCPLzyino",
-          "start": "25",
-          "end": "2577",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/jhRCPLzyino",
-          "start": "2577",
-          "end": "6072",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/jhRCPLzyino",
-          "start": "6072",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-36be919591": {
-      "maps": [
-        {
-          "video": "https://youtu.be/unV0K0cpsGE",
-          "start": "16",
-          "end": "2731",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/unV0K0cpsGE",
-          "start": "2731",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Inferno",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-d144c054ea": {
-      "maps": [
-        {
-          "video": "https://youtu.be/edHKRIU5BUU",
-          "start": "31",
-          "end": "2289",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/edHKRIU5BUU",
-          "start": "2289",
-          "end": "",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
-    "lp-104b3ca3e8": {
-      "maps": [
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "32",
-          "end": "2421",
-          "name": "Anubis",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "2421",
-          "end": "5818",
-          "name": "Inferno",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "5818",
-          "end": "8033",
-          "name": "Mirage",
-          "notPlayed": false
-        },
-        {
-          "video": "https://youtu.be/WsjToHpGI-M",
-          "start": "8033",
-          "end": "",
-          "name": "Cache",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "Nuke",
-          "notPlayed": true
-        }
-      ]
-    },
     "lp-e017aaea27": {
       "maps": [
         {
@@ -11733,8 +11398,372 @@
           "notPlayed": true
         }
       ]
+    },
+    "lp-a5a27a1cb3": {
+      "maps": [
+        {
+          "video": "https://youtu.be/ZWv5cwe8WO8",
+          "start": "23",
+          "end": "2952",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/ZWv5cwe8WO8",
+          "start": "2952",
+          "end": "5359",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/ZWv5cwe8WO8",
+          "start": "5359",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-c30108b80a": {
+      "maps": [
+        {
+          "video": "https://youtu.be/l94aqGHxLPg",
+          "start": "30",
+          "end": "2413",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/l94aqGHxLPg",
+          "start": "2413",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-fc91dd494c": {
+      "maps": [
+        {
+          "video": "https://youtu.be/1E6LIK7EGHs",
+          "start": "28",
+          "end": "2991",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/1E6LIK7EGHs",
+          "start": "2991",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-82001a6e30": {
+      "maps": [
+        {
+          "video": "https://youtu.be/5W4-_BHXl7g",
+          "start": "29",
+          "end": "3217",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/5W4-_BHXl7g",
+          "start": "3217",
+          "end": "5579",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/5W4-_BHXl7g",
+          "start": "5579",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-d5a53e2b36": {
+      "maps": [
+        {
+          "video": "https://youtu.be/h9Aqi4BzpfM",
+          "start": "32",
+          "end": "3104",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/h9Aqi4BzpfM",
+          "start": "3104",
+          "end": "6196",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/h9Aqi4BzpfM",
+          "start": "6196",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-23b3e2f5bb": {
+      "maps": [
+        {
+          "video": "https://youtu.be/09SREO1c36Q",
+          "start": "28",
+          "end": "2427",
+          "name": "Ancient",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/09SREO1c36Q",
+          "start": "2427",
+          "end": "5292",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/09SREO1c36Q",
+          "start": "5292",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-73c76734e9": {
+      "maps": [
+        {
+          "video": "https://youtu.be/KAIwaUgiKvo",
+          "start": "28",
+          "end": "2864",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/KAIwaUgiKvo",
+          "start": "2864",
+          "end": "",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-54017faf5b": {
+      "maps": [
+        {
+          "video": "https://youtu.be/OvpiH_e2D6s",
+          "start": "28",
+          "end": "2844",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/OvpiH_e2D6s",
+          "start": "2844",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-5b671aa81a": {
+      "maps": [
+        {
+          "video": "https://youtu.be/Et6cs2OYQAc",
+          "start": "27",
+          "end": "2524",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/Et6cs2OYQAc",
+          "start": "2524",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-640ae2ea41": {
+      "maps": [
+        {
+          "video": "https://youtu.be/OEwN5pO-xFA",
+          "start": "23",
+          "end": "2836",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/OEwN5pO-xFA",
+          "start": "2836",
+          "end": "7370",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/OEwN5pO-xFA",
+          "start": "7370",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-bd07c1aa44": {
+      "maps": [
+        {
+          "video": "https://youtu.be/jhRCPLzyino",
+          "start": "25",
+          "end": "2577",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/jhRCPLzyino",
+          "start": "2577",
+          "end": "6072",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/jhRCPLzyino",
+          "start": "6072",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-36be919591": {
+      "maps": [
+        {
+          "video": "https://youtu.be/unV0K0cpsGE",
+          "start": "16",
+          "end": "2731",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/unV0K0cpsGE",
+          "start": "2731",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Inferno",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-d144c054ea": {
+      "maps": [
+        {
+          "video": "https://youtu.be/edHKRIU5BUU",
+          "start": "31",
+          "end": "2289",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/edHKRIU5BUU",
+          "start": "2289",
+          "end": "",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-104b3ca3e8": {
+      "maps": [
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "32",
+          "end": "2421",
+          "name": "Anubis",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "2421",
+          "end": "5818",
+          "name": "Inferno",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "5818",
+          "end": "8033",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/WsjToHpGI-M",
+          "start": "8033",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-28T07:54:45.037Z",
+  "updatedAt": "2026-10-28T07:59:16.832Z",
   "featured": "pgl-masters-bucharest-2026"
 }

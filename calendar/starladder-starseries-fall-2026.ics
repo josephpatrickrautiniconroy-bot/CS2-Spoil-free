@@ -27,6 +27,43 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:starladder-starseries-fall-2026-20260918@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:StarLadder StarSeries Fall 2026: Friday’s matches ready to watch
+DESCRIPTION:Videos from Friday’s matches of StarLadder StarSeries Fall 20
+ 26 should be up by now. Watch spoiler-free: https://josephpatrickrautinico
+ nroy-bot.github.io/CS2-Spoil-free/#/t/starladder-starseries-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/sta
+ rladder-starseries-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:StarLadder StarSeries Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:starladder-starseries-fall-2026-20260919@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:StarLadder StarSeries Fall 2026: Saturday’s matches ready to watc
+ h
+DESCRIPTION:Videos from Saturday’s matches of StarLadder StarSeries Fall 
+ 2026 should be up by now. Watch spoiler-free: https://josephpatrickrautini
+ conroy-bot.github.io/CS2-Spoil-free/#/t/starladder-starseries-fall-2026
+URL:https://josephpatrickrautiniconroy-bot.github.io/CS2-Spoil-free/#/t/sta
+ rladder-starseries-fall-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:StarLadder StarSeries Fall 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:starladder-starseries-fall-2026-20260920@cs2-spoiler-free
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260921

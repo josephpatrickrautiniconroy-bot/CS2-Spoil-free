@@ -193,19 +193,97 @@
       "fetchedAt": "2026-10-28T07:54:45.037Z",
       "result": "no matches, not on the site"
     },
-    "PGL/2026/Summer": {},
-    "PGL/2027/Bucharest": {},
-    "PGL/2027/China": {},
-    "PGL/2027/Cluj-Napoca": {},
-    "PGL/2027/October": {},
-    "PGL/2027/September": {},
-    "PGL/2027/Łódź": {},
-    "Perfect World/Major/2027/Shanghai": {},
-    "StarLadder/StarSeries/2026/Fall": {},
-    "StarLadder/StarSeries/2027/Fall": {},
-    "Thunderpick/World Championship/2026": {},
-    "YaLLa Compass/2026/Summer": {},
-    "YaLLa Compass/2026/UAE": {}
+    "PGL/2026/Summer": {
+      "revid": 3411916,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "no matches, not on the site"
+    },
+    "PGL/2027/Bucharest": {
+      "revid": 3461697,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "PGL/2027/China": {
+      "revid": 3456893,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "PGL/2027/Cluj-Napoca": {
+      "revid": 3456852,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "PGL/2027/October": {
+      "revid": 3456934,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "PGL/2027/September": {
+      "revid": 3456929,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "PGL/2027/Łódź": {
+      "revid": 3456870,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "Perfect World/Major/2027/Shanghai": {
+      "revid": 3448190,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "StarLadder/StarSeries/2026/Fall": {
+      "revid": 3450463,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "14 matches, 36 map videos"
+    },
+    "StarLadder/StarSeries/2027/Fall": {
+      "revid": 3448985,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    },
+    "Thunderpick/World Championship/2026": {
+      "revid": 3462582,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "14 matches, 0 map videos, none with videos, so not on the site"
+    },
+    "YaLLa Compass/2026/Summer": {
+      "revid": 3432052,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "no matches, not on the site"
+    },
+    "YaLLa Compass/2026/UAE": {
+      "revid": 3403849,
+      "subpages": [],
+      "subRevids": {},
+      "fetchedAt": "2026-10-28T07:59:16.832Z",
+      "result": "coming up, no matches drawn yet"
+    }
   },
   "resolved": {
     "IEM Cologne Major 2026": "Intel Extreme Masters/2026/Cologne",
