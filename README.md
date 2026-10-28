@@ -27,6 +27,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `watcher/config.json` | Which tournaments to show | You |
 | `watcher/watch.mjs`, `watcher/liquipedia.mjs` | The watcher | Nobody |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
+| `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
 
 ## Choosing tournaments (`watcher/config.json`)
@@ -46,6 +47,15 @@ Visitors can pin an event (button on its page) or a team (buttons on a match pag
 - pinned teams whose next match is ready, but only once every earlier match of that team in that event is marked as watched (a team's first match only counts if it's in an open round). That way the notice can't give away who went through. It never names the opponent.
 
 Opening a pinned event, following a notice or pressing Dismiss clears those notices.
+
+## Watch parties
+
+On any match page, **Start a watch party** gives a link to send to friends. Everyone who opens it watches together: play, pause, skips and opening another map happen for everyone, and there's a chat beside the video (the latest message also shows over the video, so it's seen in full screen). Anyone can name themselves.
+
+- There are no accounts and no server. Browsers connect to each other directly, and public Nostr relays only help them find each other. Some strict networks (some workplaces and mobile carriers) block direct connections, so a friend there may not be able to join.
+- It's spoiler-free: only the time into the map is shared, never a video's length or a result. People who join later don't see the earlier chat, and land wherever the party is.
+- Someone who opens the link gets a "Join in" button first, because browsers only play sound after a click.
+- Best for small groups, up to about eight.
 
 ## Event pictures
 
