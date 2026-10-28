@@ -2,10 +2,10 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3463938,
+      "revid": 3463972,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-28T08:53:00.308Z",
+      "fetchedAt": "2026-10-28T11:44:04.936Z",
       "result": "33 matches, 69 map videos"
     },
     "ESL/Pro League/Season 24": {
@@ -490,6 +490,10 @@
     "alliance": {
       "id": "lp-alliance",
       "name": "Alliance"
+    },
+    "vitality": {
+      "id": "lp-team-vitality",
+      "name": "Vitality"
     }
   },
   "videos": {
@@ -3910,7 +3914,7 @@
       "@BLASTPremier": "UU9k--dE_UE0Faxzgb_DDkYQ",
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww"
     },
-    "checkedAt": "2026-10-28T07:54:45.037Z"
+    "checkedAt": "2026-10-28T11:44:04.936Z"
   },
   "highlights": {},
   "teamLogos": {
