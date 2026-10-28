@@ -5072,7 +5072,49 @@
       "b": "lp-natus-vincere",
       "bo": 3,
       "date": "28 Oct",
-      "time": "2026-10-28T17:00:00.000Z"
+      "time": "2026-10-28T16:00:00.000Z"
+    },
+    {
+      "id": "lp-00344f41cc",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Quarterfinals",
+      "roundOrder": 6,
+      "a": "lp-betboom-team",
+      "b": "lp-furia",
+      "bo": 3,
+      "date": "",
+      "time": ""
+    },
+    {
+      "id": "lp-e71bfb3abd",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Quarterfinals",
+      "roundOrder": 6,
+      "a": "lp-aurora-gaming",
+      "b": "lp-mouz",
+      "bo": 3,
+      "date": "",
+      "time": ""
+    },
+    {
+      "id": "lp-1aad385709",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Quarterfinals",
+      "roundOrder": 6,
+      "a": "lp-nemiga-gaming",
+      "b": "lp-fut-esports",
+      "bo": 3,
+      "date": "",
+      "time": ""
     }
   ],
   "videos": {
@@ -11797,7 +11839,7 @@
           "start": "",
           "end": "",
           "name": "Mirage",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
@@ -11825,8 +11867,83 @@
           "notPlayed": false
         }
       ]
+    },
+    "lp-00344f41cc": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-e71bfb3abd": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-1aad385709": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-28T13:59:49.983Z",
+  "updatedAt": "2026-10-28T15:54:02.145Z",
   "featured": "pgl-masters-bucharest-2026"
 }
