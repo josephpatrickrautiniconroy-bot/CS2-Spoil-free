@@ -659,183 +659,246 @@
   "teams": [
     {
       "id": "lp-100-thieves",
-      "name": "100T"
+      "name": "100T",
+      "logo": "images/teams/lp-100-thieves.png",
+      "logoDark": "images/teams/lp-100-thieves-dark.png"
     },
     {
       "id": "lp-1w-team",
-      "name": "1w"
+      "name": "1w",
+      "logo": "images/teams/lp-1w-team.png"
     },
     {
       "id": "lp-3dmax",
-      "name": "3DMAX"
+      "name": "3DMAX",
+      "logo": "images/teams/lp-3dmax.png"
     },
     {
       "id": "lp-9z-team",
-      "name": "9z"
+      "name": "9z",
+      "logo": "images/teams/lp-9z-team.png",
+      "logoDark": "images/teams/lp-9z-team-dark.png"
     },
     {
       "id": "lp-astralis",
-      "name": "Astralis"
+      "name": "Astralis",
+      "logo": "images/teams/lp-astralis.png"
     },
     {
       "id": "lp-aurora-gaming",
-      "name": "Aurora"
+      "name": "Aurora",
+      "logo": "images/teams/lp-aurora-gaming.png"
     },
     {
       "id": "lp-b8",
-      "name": "B8"
+      "name": "B8",
+      "logo": "images/teams/lp-b8.png",
+      "logoDark": "images/teams/lp-b8-dark.png"
     },
     {
       "id": "lp-betboom-team",
-      "name": "BetBoom"
+      "name": "BetBoom",
+      "logo": "images/teams/lp-betboom-team.png"
     },
     {
       "id": "lp-big",
-      "name": "BIG"
+      "name": "BIG",
+      "logo": "images/teams/lp-big.png",
+      "logoDark": "images/teams/lp-big-dark.png"
     },
     {
       "id": "lp-off-chops",
-      "name": "Chops"
+      "name": "Chops",
+      "logo": "images/teams/lp-off-chops.png",
+      "logoDark": "images/teams/lp-off-chops-dark.png"
     },
     {
       "id": "lp-dendele-cs",
-      "name": "DENDELE"
+      "name": "DENDELE",
+      "logo": "images/teams/lp-dendele-cs.png"
     },
     {
       "id": "lp-team-falcons",
-      "name": "Falcons"
+      "name": "Falcons",
+      "logo": "images/teams/lp-team-falcons.png"
     },
     {
       "id": "lp-faze-clan",
-      "name": "FaZe"
+      "name": "FaZe",
+      "logo": "images/teams/lp-faze-clan.png",
+      "logoDark": "images/teams/lp-faze-clan-dark.png"
     },
     {
       "id": "lp-flyquest",
-      "name": "FlyQuest"
+      "name": "FlyQuest",
+      "logo": "images/teams/lp-flyquest.png"
     },
     {
       "id": "lp-furia",
-      "name": "FURIA"
+      "name": "FURIA",
+      "logo": "images/teams/lp-furia.png"
     },
     {
       "id": "lp-fut-esports",
-      "name": "FUT"
+      "name": "FUT",
+      "logo": "images/teams/lp-fut-esports.png",
+      "logoDark": "images/teams/lp-fut-esports-dark.png"
     },
     {
       "id": "lp-g2-esports",
-      "name": "G2"
+      "name": "G2",
+      "logo": "images/teams/lp-g2-esports.png",
+      "logoDark": "images/teams/lp-g2-esports-dark.png"
     },
     {
       "id": "lp-gaimin-gladiators",
-      "name": "Gaimin"
+      "name": "Gaimin",
+      "logo": "images/teams/lp-gaimin-gladiators.png"
     },
     {
       "id": "lp-gamerlegion",
-      "name": "GamerLegion"
+      "name": "GamerLegion",
+      "logo": "images/teams/lp-gamerlegion.png"
     },
     {
       "id": "lp-heroic",
-      "name": "HEROIC"
+      "name": "HEROIC",
+      "logo": "images/teams/lp-heroic.png"
     },
     {
       "id": "lp-ic-esports",
-      "name": "IC"
+      "name": "IC",
+      "logo": "images/teams/lp-ic-esports.png"
     },
     {
       "id": "lp-jijiehao",
-      "name": "JiJieHao"
+      "name": "JiJieHao",
+      "logo": "images/teams/lp-jijiehao.png"
     },
     {
       "id": "lp-k27",
-      "name": "K27"
+      "name": "K27",
+      "logo": "images/teams/lp-k27.png"
     },
     {
       "id": "lp-legacy",
-      "name": "Legacy"
+      "name": "Legacy",
+      "logo": "images/teams/lp-legacy.png"
     },
     {
       "id": "lp-team-liquid",
-      "name": "Liquid"
+      "name": "Liquid",
+      "logo": "images/teams/lp-team-liquid.png",
+      "logoDark": "images/teams/lp-team-liquid-dark.png"
     },
     {
       "id": "lp-luminosity-gaming",
-      "name": "Luminosity"
+      "name": "Luminosity",
+      "logo": "images/teams/lp-luminosity-gaming.png"
     },
     {
       "id": "lp-lynn-vision-gaming",
-      "name": "Lynn Vision"
+      "name": "Lynn Vision",
+      "logo": "images/teams/lp-lynn-vision-gaming.png"
     },
     {
       "id": "lp-m80",
-      "name": "M80"
+      "name": "M80",
+      "logo": "images/teams/lp-m80.png"
     },
     {
       "id": "lp-magic",
-      "name": "magic"
+      "name": "magic",
+      "logo": "images/teams/lp-magic.png"
     },
     {
       "id": "lp-mibr",
-      "name": "MIBR"
+      "name": "MIBR",
+      "logo": "images/teams/lp-mibr.png",
+      "logoDark": "images/teams/lp-mibr-dark.png"
     },
     {
       "id": "lp-the-mongolz",
-      "name": "MongolZ"
+      "name": "MongolZ",
+      "logo": "images/teams/lp-the-mongolz.png"
     },
     {
       "id": "lp-monte",
-      "name": "Monte"
+      "name": "Monte",
+      "logo": "images/teams/lp-monte.png"
     },
     {
       "id": "lp-mouz",
-      "name": "MOUZ"
+      "name": "MOUZ",
+      "logo": "images/teams/lp-mouz.png"
     },
     {
       "id": "lp-natus-vincere",
-      "name": "NAVI"
+      "name": "NAVI",
+      "logo": "images/teams/lp-natus-vincere.png",
+      "logoDark": "images/teams/lp-natus-vincere-dark.png"
     },
     {
       "id": "lp-nemiga-gaming",
-      "name": "Nemiga"
+      "name": "Nemiga",
+      "logo": "images/teams/lp-nemiga-gaming.png"
     },
     {
       "id": "lp-ninjas-in-pyjamas",
-      "name": "Ninjas in Pyjamas"
+      "name": "Ninjas in Pyjamas",
+      "logo": "images/teams/lp-ninjas-in-pyjamas.png",
+      "logoDark": "images/teams/lp-ninjas-in-pyjamas-dark.png"
     },
     {
       "id": "lp-nrg",
-      "name": "NRG"
+      "name": "NRG",
+      "logo": "images/teams/lp-nrg.png",
+      "logoDark": "images/teams/lp-nrg-dark.png"
     },
     {
       "id": "lp-pain-gaming",
-      "name": "paiN"
+      "name": "paiN",
+      "logo": "images/teams/lp-pain-gaming.png",
+      "logoDark": "images/teams/lp-pain-gaming-dark.png"
     },
     {
       "id": "lp-parivision",
-      "name": "PARIVISION"
+      "name": "PARIVISION",
+      "logo": "images/teams/lp-parivision.png"
     },
     {
       "id": "lp-shinden",
-      "name": "ShindeN"
+      "name": "ShindeN",
+      "logo": "images/teams/lp-shinden.png",
+      "logoDark": "images/teams/lp-shinden-dark.png"
     },
     {
       "id": "lp-sinners-esports",
-      "name": "SINNERS"
+      "name": "SINNERS",
+      "logo": "images/teams/lp-sinners-esports.png"
     },
     {
       "id": "lp-team-spirit",
-      "name": "Spirit"
+      "name": "Spirit",
+      "logo": "images/teams/lp-team-spirit.png",
+      "logoDark": "images/teams/lp-team-spirit-dark.png"
     },
     {
       "id": "lp-tyloo",
-      "name": "TYLOO"
+      "name": "TYLOO",
+      "logo": "images/teams/lp-tyloo.png"
     },
     {
       "id": "lp-team-vitality",
-      "name": "Vitality"
+      "name": "Vitality",
+      "logo": "images/teams/lp-team-vitality.png",
+      "logoDark": "images/teams/lp-team-vitality-dark.png"
     },
     {
       "id": "lp-wildcard",
-      "name": "Wildcard"
+      "name": "Wildcard",
+      "logo": "images/teams/lp-wildcard.png",
+      "logoDark": "images/teams/lp-wildcard-dark.png"
     }
   ],
   "matches": [
@@ -11764,6 +11827,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-28T08:53:00.308Z",
+  "updatedAt": "2026-10-28T10:01:33.970Z",
   "featured": "pgl-masters-bucharest-2026"
 }

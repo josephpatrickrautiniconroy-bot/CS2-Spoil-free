@@ -3912,5 +3912,340 @@
     },
     "checkedAt": "2026-10-28T07:54:45.037Z"
   },
-  "highlights": {}
+  "highlights": {},
+  "teamLogos": {
+    "lp-fut-esports": {
+      "light": "Futbolist 2021 lightmode.png",
+      "dark": "Futbolist 2021 darkmode.png",
+      "saved": {
+        "logo": "Futbolist 2021 lightmode.png",
+        "logoDark": "Futbolist 2021 darkmode.png"
+      }
+    },
+    "lp-tyloo": {
+      "light": "TyLoo2016logo.png",
+      "dark": "",
+      "saved": {
+        "logo": "TyLoo2016logo.png"
+      }
+    },
+    "lp-aurora-gaming": {
+      "light": "Aurora Gaming 2025 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Aurora Gaming 2025 allmode.png"
+      }
+    },
+    "lp-the-mongolz": {
+      "light": "The MongolZ 2024 03 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "The MongolZ 2024 03 allmode.png"
+      }
+    },
+    "lp-team-spirit": {
+      "light": "Team Spirit 2022 lightmode.png",
+      "dark": "Team Spirit 2022 darkmode.png",
+      "saved": {
+        "logo": "Team Spirit 2022 lightmode.png",
+        "logoDark": "Team Spirit 2022 darkmode.png"
+      }
+    },
+    "lp-betboom-team": {
+      "light": "BetBoom Team 2024 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "BetBoom Team 2024 allmode.png"
+      }
+    },
+    "lp-mouz": {
+      "light": "MOUZ allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "MOUZ allmode.png"
+      }
+    },
+    "lp-team-liquid": {
+      "light": "Team Liquid 2024 lightmode.png",
+      "dark": "Team Liquid 2024 darkmode.png",
+      "saved": {
+        "logo": "Team Liquid 2024 lightmode.png",
+        "logoDark": "Team Liquid 2024 darkmode.png"
+      }
+    },
+    "lp-legacy": {
+      "light": "Legacy allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Legacy allmode.png"
+      }
+    },
+    "lp-nemiga-gaming": {
+      "light": "Nemiga Gaming 2020 temporary.png",
+      "dark": "",
+      "saved": {
+        "logo": "Nemiga Gaming 2020 temporary.png"
+      }
+    },
+    "lp-team-vitality": {
+      "light": "Team Vitality 2023 lightmode.png",
+      "dark": "Team Vitality 2023 darkmode.png",
+      "saved": {
+        "logo": "Team Vitality 2023 lightmode.png",
+        "logoDark": "Team Vitality 2023 darkmode.png"
+      }
+    },
+    "lp-9z-team": {
+      "light": "9z Team 2026 lightmode.png",
+      "dark": "9z Team 2026 darkmode.png",
+      "saved": {
+        "logo": "9z Team 2026 lightmode.png",
+        "logoDark": "9z Team 2026 darkmode.png"
+      }
+    },
+    "lp-g2-esports": {
+      "light": "G2 Esports 2020 lightmode.png",
+      "dark": "G2 Esports 2019 darkmode.png",
+      "saved": {
+        "logo": "G2 Esports 2020 lightmode.png",
+        "logoDark": "G2 Esports 2019 darkmode.png"
+      }
+    },
+    "lp-natus-vincere": {
+      "light": "Natus Vincere 2021 lightmode.png",
+      "dark": "Natus Vincere 2021 allmode.png",
+      "saved": {
+        "logo": "Natus Vincere 2021 lightmode.png",
+        "logoDark": "Natus Vincere 2021 allmode.png"
+      }
+    },
+    "lp-furia": {
+      "light": "FURIA Esports allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "FURIA Esports allmode.png"
+      }
+    },
+    "lp-dendele-cs": {
+      "light": "DENDELE CS allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "DENDELE CS allmode.png"
+      }
+    },
+    "lp-team-falcons": {
+      "light": "Team Falcons 2022 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Team Falcons 2022 allmode.png"
+      }
+    },
+    "lp-parivision": {
+      "light": "PARIVISION allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "PARIVISION allmode.png"
+      }
+    },
+    "lp-shinden": {
+      "light": "ShindeN lightmode.png",
+      "dark": "ShindeN darkmode.png",
+      "saved": {
+        "logo": "ShindeN lightmode.png",
+        "logoDark": "ShindeN darkmode.png"
+      }
+    },
+    "lp-1w-team": {
+      "light": "1win Team 2024 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "1win Team 2024 allmode.png"
+      }
+    },
+    "lp-m80": {
+      "light": "M80 2023 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "M80 2023 allmode.png"
+      }
+    },
+    "lp-pain-gaming": {
+      "light": "PaiN_Gaming_2023_lightmode.png",
+      "dark": "PaiN_Gaming_2023_darkmode.png",
+      "saved": {
+        "logo": "PaiN_Gaming_2023_lightmode.png",
+        "logoDark": "PaiN_Gaming_2023_darkmode.png"
+      }
+    },
+    "lp-lynn-vision-gaming": {
+      "light": "Lynn Vision Gaming 2024 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Lynn Vision Gaming 2024 allmode.png"
+      }
+    },
+    "lp-ic-esports": {
+      "light": "Inner Circle 2025 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Inner Circle 2025 allmode.png"
+      }
+    },
+    "lp-astralis": {
+      "light": "Astralis 2020 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Astralis 2020 allmode.png"
+      }
+    },
+    "lp-gamerlegion": {
+      "light": "GamerLegion 2026 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "GamerLegion 2026 allmode.png"
+      }
+    },
+    "lp-flyquest": {
+      "light": "FlyQuest 2021 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "FlyQuest 2021 allmode.png"
+      }
+    },
+    "lp-b8": {
+      "light": "B8 lightmode.png",
+      "dark": "B8 darkmode.png",
+      "saved": {
+        "logo": "B8 lightmode.png",
+        "logoDark": "B8 darkmode.png"
+      }
+    },
+    "lp-monte": {
+      "light": "Monte 2022 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Monte 2022 allmode.png"
+      }
+    },
+    "lp-big": {
+      "light": "BIG 2020 lightmode.png",
+      "dark": "BIG 2020 darkmode.png",
+      "saved": {
+        "logo": "BIG 2020 lightmode.png",
+        "logoDark": "BIG 2020 darkmode.png"
+      }
+    },
+    "lp-mibr": {
+      "light": "MIBR 2018 lightmode.png",
+      "dark": "MIBR 2018 darkmode.png",
+      "saved": {
+        "logo": "MIBR 2018 lightmode.png",
+        "logoDark": "MIBR 2018 darkmode.png"
+      }
+    },
+    "lp-sinners-esports": {
+      "light": "SINNERS Esports allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "SINNERS Esports allmode.png"
+      }
+    },
+    "lp-off-chops": {
+      "light": "Off Chops lightmode.png",
+      "dark": "Off Chops darkmode.png",
+      "saved": {
+        "logo": "Off Chops lightmode.png",
+        "logoDark": "Off Chops darkmode.png"
+      }
+    },
+    "lp-nrg": {
+      "light": "NRG 2024 lightmode.png",
+      "dark": "NRG 2024 allmode.png",
+      "saved": {
+        "logo": "NRG 2024 lightmode.png",
+        "logoDark": "NRG 2024 allmode.png"
+      }
+    },
+    "lp-heroic": {
+      "light": "HEROIC 2024 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "HEROIC 2024 allmode.png"
+      }
+    },
+    "lp-gaimin-gladiators": {
+      "light": "Gladiators 2022 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Gladiators 2022 allmode.png"
+      }
+    },
+    "lp-faze-clan": {
+      "light": "FaZe Esports 2026 lightmode.png",
+      "dark": "FaZe Esports 2026 darkmode.png",
+      "saved": {
+        "logo": "FaZe Esports 2026 lightmode.png",
+        "logoDark": "FaZe Esports 2026 darkmode.png"
+      }
+    },
+    "lp-3dmax": {
+      "light": "3DMAX 2024 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "3DMAX 2024 allmode.png"
+      }
+    },
+    "lp-jijiehao": {
+      "light": "JiJieHao International allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "JiJieHao International allmode.png"
+      }
+    },
+    "lp-luminosity-gaming": {
+      "light": "Luminosity Gaming 2018 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Luminosity Gaming 2018 allmode.png"
+      }
+    },
+    "lp-k27": {
+      "light": "K27 allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "K27 allmode.png"
+      }
+    },
+    "lp-ninjas-in-pyjamas": {
+      "light": "Ninjas in Pyjamas 2021 lightmode.png",
+      "dark": "Ninjas in Pyjamas 2021 darkmode.png",
+      "saved": {
+        "logo": "Ninjas in Pyjamas 2021 lightmode.png",
+        "logoDark": "Ninjas in Pyjamas 2021 darkmode.png"
+      }
+    },
+    "lp-100-thieves": {
+      "light": "100 Thieves lightmode.png",
+      "dark": "100 Thieves darkmode.png",
+      "saved": {
+        "logo": "100 Thieves lightmode.png",
+        "logoDark": "100 Thieves darkmode.png"
+      }
+    },
+    "lp-magic": {
+      "light": "Magic (Russian team) allmode.png",
+      "dark": "",
+      "saved": {
+        "logo": "Magic (Russian team) allmode.png"
+      }
+    },
+    "lp-wildcard": {
+      "light": "Wildcard 2024 lightmode.png",
+      "dark": "Wildcard 2024 darkmode.png",
+      "saved": {
+        "logo": "Wildcard 2024 lightmode.png",
+        "logoDark": "Wildcard 2024 darkmode.png"
+      }
+    }
+  }
 }
