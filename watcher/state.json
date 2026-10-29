@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3464111,
+      "revid": 3464195,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-28T19:45:22.829Z",
-      "result": "37 matches, 73 map videos"
+      "fetchedAt": "2026-10-29T02:49:26.722Z",
+      "result": "37 matches, 76 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -1921,6 +1921,11 @@
       "ok": true,
       "seconds": 5545,
       "checkedAt": "2026-10-28T17:47:20.082Z"
+    },
+    "Xd2g9rTfGYw": {
+      "ok": true,
+      "seconds": 6986,
+      "checkedAt": "2026-10-29T02:49:26.722Z"
     }
   },
   "parserVersion": 6,

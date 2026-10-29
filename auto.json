@@ -5084,8 +5084,8 @@
       "stageOrder": 1,
       "round": "Quarterfinals",
       "roundOrder": 6,
-      "a": "lp-fut-esports",
-      "b": "lp-nemiga-gaming",
+      "a": "lp-nemiga-gaming",
+      "b": "lp-fut-esports",
       "bo": 3,
       "date": "29 Oct",
       "time": "2026-10-29T08:00:00.000Z"
@@ -5112,8 +5112,8 @@
       "stageOrder": 1,
       "round": "Quarterfinals",
       "roundOrder": 6,
-      "a": "lp-aurora-gaming",
-      "b": "lp-mouz",
+      "a": "lp-mouz",
+      "b": "lp-aurora-gaming",
       "bo": 3,
       "date": "29 Oct",
       "time": "2026-10-29T14:00:00.000Z"
@@ -11862,22 +11862,22 @@
     "lp-8aaa795794": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/Xd2g9rTfGYw",
+          "start": "44",
+          "end": "1923",
           "name": "Cache",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/Xd2g9rTfGYw",
+          "start": "1923",
+          "end": "4942",
           "name": "Dust II",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/Xd2g9rTfGYw",
+          "start": "4942",
           "end": "",
           "name": "Anubis",
           "notPlayed": false
@@ -11985,6 +11985,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-28T19:45:22.829Z",
+  "updatedAt": "2026-10-29T02:49:26.722Z",
   "featured": "pgl-masters-bucharest-2026"
 }
