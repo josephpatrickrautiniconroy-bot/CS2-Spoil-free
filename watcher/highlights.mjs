@@ -35,12 +35,13 @@ export function titleMatches(title, formsA, formsB) {
 
 // Picks a match for each upload: both teams in the title, published 0 to maxDays after the match started.
 // When a pair played more than once, the latest match before the upload wins.
-export function matchUploads(uploads, matches, teamName, maxDays = 4) {
+export function matchUploads(uploads, matches, teamName, maxDays = 4, aliases = {}) {
   const found = {};
   const forms = new Map();
   // The site's name ("NAVI") and Liquipedia's full one from the id ("lp-natus-vincere" -> "Natus Vincere").
   const formsOf = id => {
-    if (!forms.has(id)) forms.set(id, [...new Set(nameForms(teamName(id)).concat(nameForms(str(id).replace(/^lp-/, '').replace(/-/g, ' '))))]);
+    // Plus any other names from config.highlights.aliases, such as MOUZ's YouTube handle "@mousesports".
+    if (!forms.has(id)) forms.set(id, [...new Set(nameForms(teamName(id)).concat(nameForms(str(id).replace(/^lp-/, '').replace(/-/g, ' ')), arr(aliases[id]).flatMap(nameForms)))]);
     return forms.get(id);
   };
   for (const up of uploads) {
@@ -106,7 +107,8 @@ export async function findHighlights({ config, state, auto, yt, now, log, warn }
       }
     } catch (e) { warn('Couldn’t read the uploads of ' + handle + ': ' + e.message); }
   }
-  const found = matchUploads(uploads, recent, id => teams.get(id) || '', +hc.maxDaysAfter || 4);
+  const aliases = (hc.aliases && typeof hc.aliases === 'object') ? hc.aliases : {};
+  const found = matchUploads(uploads, recent, id => teams.get(id) || '', +hc.maxDaysAfter || 4, aliases);
   Object.assign(state.highlights, found);
   const n = Object.keys(found).length;
   hs.last = scanReport(uploads, recent, id => teams.get(id) || '', found);
