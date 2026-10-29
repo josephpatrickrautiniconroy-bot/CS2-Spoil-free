@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3464375,
+      "revid": 3464415,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-29T15:55:15.141Z",
-      "result": "38 matches, 78 map videos"
+      "fetchedAt": "2026-10-29T16:55:14.538Z",
+      "result": "38 matches, 83 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -1931,6 +1931,16 @@
       "ok": true,
       "seconds": 5988,
       "checkedAt": "2026-10-29T11:44:43.508Z"
+    },
+    "BEVTiiowoMA": {
+      "ok": true,
+      "seconds": 7701,
+      "checkedAt": "2026-10-29T16:55:14.538Z"
+    },
+    "bbNscBSqFng": {
+      "ok": true,
+      "seconds": 4496,
+      "checkedAt": "2026-10-29T16:55:14.538Z"
     }
   },
   "parserVersion": 6,
@@ -3934,10 +3944,10 @@
       "@BLASTPremier": "UU9k--dE_UE0Faxzgb_DDkYQ",
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww"
     },
-    "checkedAt": "2026-10-29T12:55:16.930Z",
+    "checkedAt": "2026-10-29T16:55:14.538Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 49,
+      "matchesLookedFor": 50,
       "matchesFrom": "2026-10-09",
       "matchesTo": "2026-11-11",
       "found": 0,
