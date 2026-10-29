@@ -11890,21 +11890,21 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Nuke",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Ancient",
           "notPlayed": false
         }
       ]
@@ -11985,6 +11985,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-29T02:49:26.722Z",
+  "updatedAt": "2026-10-29T08:55:13.286Z",
   "featured": "pgl-masters-bucharest-2026"
 }
