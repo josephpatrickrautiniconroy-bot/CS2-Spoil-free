@@ -11887,15 +11887,15 @@
     "lp-1aad385709": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/7k767k3bYFE",
+          "start": "31",
+          "end": "3053",
           "name": "Nuke",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/7k767k3bYFE",
+          "start": "3053",
           "end": "",
           "name": "Dust II",
           "notPlayed": false
@@ -11985,6 +11985,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-29T10:49:51.037Z",
+  "updatedAt": "2026-10-29T11:44:43.508Z",
   "featured": "pgl-masters-bucharest-2026"
 }
