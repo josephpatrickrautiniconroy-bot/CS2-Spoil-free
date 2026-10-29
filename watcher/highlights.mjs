@@ -21,7 +21,7 @@ const flat = s => str(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '')
 export function nameForms(name) {
   const n = str(name).trim();
   const forms = new Set([flat(n)]);
-  const bare = n.replace(/^team\s+/i, '').replace(/\s+(esports|e-sports|gaming|team|club|gg|academy)$/i, '');
+  const bare = n.replace(/^(team|the)\s+/i, '').replace(/\s+(esports|e-sports|gaming|team|club|clan|gg|academy)$/i, '');
   forms.add(flat(bare));
   return [...forms].filter(f => f.length >= 2);
 }
@@ -38,7 +38,11 @@ export function titleMatches(title, formsA, formsB) {
 export function matchUploads(uploads, matches, teamName, maxDays = 4) {
   const found = {};
   const forms = new Map();
-  const formsOf = id => { if (!forms.has(id)) forms.set(id, nameForms(teamName(id))); return forms.get(id); };
+  // The site's name ("NAVI") and Liquipedia's full one from the id ("lp-natus-vincere" -> "Natus Vincere").
+  const formsOf = id => {
+    if (!forms.has(id)) forms.set(id, [...new Set(nameForms(teamName(id)).concat(nameForms(str(id).replace(/^lp-/, '').replace(/-/g, ' '))))]);
+    return forms.get(id);
+  };
   for (const up of uploads) {
     const at = Date.parse(up.publishedAt);
     if (!at) continue;
@@ -63,13 +67,17 @@ export async function findHighlights({ config, state, auto, yt, now, log, warn }
   state.highlights = (state.highlights && typeof state.highlights === 'object') ? state.highlights : {};
   hs.uploads = (hs.uploads && typeof hs.uploads === 'object') ? hs.uploads : {};
   const every = (+hc.everyHours || 3) * HOUR;
-  if (hs.checkedAt && now.getTime() - Date.parse(hs.checkedAt) < every) return 0;
+  // A changed "highlights" setting scans again straight away, and reads further back the first time.
+  const key = JSON.stringify(hc);
+  const fresh = hs.key !== key;
+  if (!fresh && hs.checkedAt && now.getTime() - Date.parse(hs.checkedAt) < every) return 0;
 
   // Only matches from the last few weeks can still get highlights.
   const since = now.getTime() - (+hc.lookBackDays || 21) * 24 * HOUR;
   const recent = auto.matches.filter(m => m.time && Date.parse(m.time) > since && !state.highlights[m.id]);
   if (!recent.length) return 0;
   hs.checkedAt = now.toISOString();
+  hs.key = key;
 
   const teams = new Map(arr(auto.teams).map(t => [t.id, t.name]));
   const uploads = [];
@@ -84,14 +92,14 @@ export async function findHighlights({ config, state, auto, yt, now, log, warn }
         hs.uploads[handle] = list;
       }
       let token = '';
-      for (let page = 0; page < (+hc.pages || 2); page++) {
+      for (let page = 0; page < (fresh ? +hc.firstPages || 10 : +hc.pages || 4); page++) {
         const q = { part: 'snippet', playlistId: list, maxResults: '50' };
         if (token) q.pageToken = token;
         const res = await yt('playlistItems', q);
         for (const it of arr(res.items)) {
           const sn = it.snippet || {};
           const id = (sn.resourceId || {}).videoId;
-          if (id) uploads.push({ id, title: str(sn.title), publishedAt: str(sn.publishedAt) });
+          if (id) uploads.push({ id, title: str(sn.title), publishedAt: str(sn.publishedAt), channel: handle });
         }
         token = res.nextPageToken;
         if (!token) break;
@@ -101,6 +109,30 @@ export async function findHighlights({ config, state, auto, yt, now, log, warn }
   const found = matchUploads(uploads, recent, id => teams.get(id) || '', +hc.maxDaysAfter || 4);
   Object.assign(state.highlights, found);
   const n = Object.keys(found).length;
+  hs.last = scanReport(uploads, recent, id => teams.get(id) || '', found);
   log('Read ' + uploads.length + ' recent uploads from ' + arr(hc.channels).join(', ') + ' and found highlights for ' + n + ' more matches.');
   return n;
+}
+
+/* What the last scan saw, saved in state.json so a scan that finds nothing can be looked into.
+   Highlight titles are kept with every known team name and anything like a score blanked out. */
+function scanReport(uploads, matches, teamName, found) {
+  const teamIds = [...new Set(matches.flatMap(m => [m.a, m.b]))];
+  const allForms = teamIds.flatMap(id => nameForms(teamName(id))).filter(f => f.length >= 3).sort((a, b) => b.length - a.length);
+  const mask = title => {
+    let t = str(title).replace(/\b\d{1,2}\s*[-:–]\s*\d{1,2}\b/g, '#-#');
+    for (const f of allForms) t = t.replace(new RegExp(f.split('').map(c => c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[^a-z0-9]*'), 'gi'), '<team>');
+    return t;
+  };
+  const channels = {};
+  for (const u of uploads) {
+    const c = channels[u.channel] = channels[u.channel] || { uploads: 0, sayHighlights: 0, oldest: '', newest: '' };
+    c.uploads++;
+    if (/highlight/i.test(u.title)) c.sayHighlights++;
+    if (!c.oldest || u.publishedAt < c.oldest) c.oldest = u.publishedAt;
+    if (!c.newest || u.publishedAt > c.newest) c.newest = u.publishedAt;
+  }
+  const samples = uploads.filter(u => /highlight/i.test(u.title)).slice(0, 25).map(u => ({ channel: u.channel, at: u.publishedAt.slice(0, 16), title: mask(u.title) }));
+  const times = matches.map(m => m.time).filter(Boolean).sort();
+  return { matchesLookedFor: matches.length, matchesFrom: (times[0] || '').slice(0, 10), matchesTo: (times[times.length - 1] || '').slice(0, 10), found: Object.keys(found).length, channels, samples };
 }

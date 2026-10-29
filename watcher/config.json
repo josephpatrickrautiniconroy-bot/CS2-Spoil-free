@@ -51,7 +51,8 @@
       "@pgl"
     ],
     "everyHours": 3,
-    "pages": 2,
+    "pages": 4,
+    "firstPages": 10,
     "maxDaysAfter": 4,
     "lookBackDays": 21
   }
