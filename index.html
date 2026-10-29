@@ -322,7 +322,6 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .mwrap.closed .reopen{display:inline-flex}
 .cover{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:radial-gradient(70% 60% at 50% 40%,#1a1612,#0a0a0b);color:var(--fg);cursor:pointer}
 .cover.clear{background:transparent}
-.cover.clear.mask-top::before{content:"";position:absolute;left:0;right:0;top:0;height:16%;background:#0a0a0b}
 .cover-eyebrow{font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .cover-title{font:900 clamp(1.7rem,4vw,3rem)/.95 var(--display);text-transform:uppercase;max-width:20em;font-variant-numeric:tabular-nums}
 .cover-sub{color:var(--soft);max-width:34em;font-size:15px}
@@ -348,6 +347,9 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .video-frame iframe.scaled{right:auto;bottom:auto;transform-origin:0 0}
 .q-wrap{position:relative;display:inline-flex}
 .ctl-q{font-size:14px;min-width:56px}
+.ctl-cc{font-size:13px;letter-spacing:.04em}
+.ctl-cc .cc-box{border:2px solid currentColor;border-radius:3px;padding:0 4px;line-height:16px}
+.ctl-cc[aria-pressed="true"] .cc-box{background:#e3dfd9;color:#111113;border-color:#e3dfd9}
 .q-menu{position:absolute;right:0;bottom:calc(100% + 6px);z-index:5;width:230px;background:#151517;border:1px solid var(--line2);border-radius:6px;padding:6px;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,.5)}
 .q-menu[hidden]{display:none}
 .q-opt{display:flex;align-items:center;gap:10px;min-height:38px;padding:0 10px;background:transparent;border:none;border-radius:4px;color:var(--fg);font:inherit;font-weight:600;font-size:15px;text-align:left;cursor:pointer}
@@ -1938,6 +1940,7 @@ function buildControls() {
     mute: btn('Mute', icon('vol', 22)),
     vol: h('input', { type: 'range', min: '0', max: '100', step: '5', value: '100', class: 'vol', id: 'vol', 'aria-label': 'Volume' }),
     speed: btn('Playback speed', speedLabel(speedPref())),
+    cc: btn('Subtitles', h('span', { class: 'cc-box' }, 'CC')),
     wide: btn(store.get('wide', false) ? 'Show the side panel' : 'Hide the side panel', icon(store.get('wide', false) ? 'narrow' : 'wide', 22)),
     fs: btn('Full screen', icon('fs', 22))
   };
@@ -1949,10 +1952,14 @@ function buildControls() {
   c.speed.classList.add('ctl-q');
   c.speed.title = 'Playback speed (< and >)';
   c.speed.addEventListener('click', () => stepSpeed(1, true));
+  c.cc.classList.add('ctl-cc');
+  c.cc.title = 'Subtitles (C)';
+  c.cc.setAttribute('aria-pressed', String(ccPref()));
+  c.cc.addEventListener('click', toggleCaptions);
   c.wide.addEventListener('click', toggleWide);
   buildQualityMenu(c);
   c.bar = h('div', { class: 'controls' }, c.b30, c.b10, c.play, c.f10, c.f30, h('span', { class: 'spacer' }),
-    c.elapsed, h('span', { class: 'len-hidden' }, icon('eyeoff', 16), h('span', {}, 'Length hidden')), c.mute, c.vol, c.speed, c.qwrap, c.wide, c.fs);
+    c.elapsed, h('span', { class: 'len-hidden' }, icon('eyeoff', 16), h('span', {}, 'Length hidden')), c.mute, c.vol, c.cc, c.speed, c.qwrap, c.wide, c.fs);
   return c;
 }
 
@@ -1979,6 +1986,28 @@ function applySpeed() {
   st.els.ctl.speed.setAttribute('aria-label', 'Playback speed ' + speedLabel(v));
   if (!st.ready) return;
   try { st.yt.setPlaybackRate(v); } catch (e) { /* the video doesn't allow it */ }
+}
+
+/* ---------- subtitles ----------
+   Off unless the viewer turns them on. YouTube would otherwise show captions to anyone who
+   once turned them on there, so the captions module is unloaded whenever they're off. */
+const ccPref = () => store.get('cc', false) === true;
+function applyCaptions() {
+  const st = P;
+  if (!st) return;
+  const on = ccPref();
+  st.els.ctl.cc.setAttribute('aria-pressed', String(on));
+  st.els.ctl.cc.setAttribute('aria-label', on ? 'Turn subtitles off' : 'Turn subtitles on');
+  if (!st.ready) return;
+  try {
+    if (on) { st.yt.loadModule('captions'); st.yt.setOption('captions', 'reload', true); }
+    else { st.yt.unloadModule('captions'); st.yt.unloadModule('cc'); }
+  } catch (e) { /* the player isn't ready for it yet */ }
+}
+function toggleCaptions() {
+  store.set('cc', !ccPref());
+  applyCaptions();
+  if (P) toast(ccPref() ? 'Subtitles on' : 'Subtitles off');
 }
 
 /* ---------- video quality ----------
@@ -2088,10 +2117,10 @@ function currentTime() {
 }
 function mountPlayer(f, idx, map, els) {
   const m = f.m;
-  const st = { f, m, idx, els, yt: null, ready: false, played: false, timer: null, maskTimer: null, lastSave: 0, mode: '', resumeAt: 0 };
+  const st = { f, m, idx, els, yt: null, ready: false, played: false, timer: null, holdTimer: null, lastSave: 0, mode: '', resumeAt: 0 };
   P = st;
   const c = els.ctl;
-  const live = [c.play, c.b30, c.b10, c.f10, c.f30, c.mute, c.vol, c.speed];
+  const live = [c.play, c.b30, c.b10, c.f10, c.f30, c.mute, c.vol, c.cc, c.speed];
   live.forEach(b => { b.disabled = true; });
   c.play.addEventListener('click', togglePlay);
   c.b30.addEventListener('click', () => seek(-30));
@@ -2102,16 +2131,17 @@ function mountPlayer(f, idx, map, els) {
   c.vol.addEventListener('input', () => {
     if (!st.ready) return;
     const v = +c.vol.value;
+    store.set('vol', { v, muted: v === 0 });
+    if (st.mode === 'hold') return updateMuteIcon(v === 0); // the sound comes back when the video shows
     st.yt.setVolume(v);
     if (v === 0) st.yt.mute(); else st.yt.unMute();
-    store.set('vol', { v, muted: v === 0 });
     updateMuteIcon(v === 0);
   });
   c.fs.addEventListener('click', toggleFullscreen);
   els.cover.addEventListener('click', e => {
     if (e.target.closest('button, a')) return;
     if (st.tapWoke) { st.tapWoke = false; return; } // a tap on hidden controls only brings them back
-    if (st.mode === 'start' || st.mode === 'paused' || st.mode === 'clear' || st.mode === 'party') togglePlay();
+    if (st.mode === 'start' || st.mode === 'paused' || st.mode === 'clear' || st.mode === 'hold' || st.mode === 'party') togglePlay();
   });
   els.cover.addEventListener('dblclick', e => { if (!e.target.closest('button, a')) toggleFullscreen(); });
   // In full screen the controls fade out after 3 seconds without mouse, touch or key input while the map plays.
@@ -2152,7 +2182,7 @@ function mountPlayer(f, idx, map, els) {
       videoId: vid.id,
       width: '100%',
       height: '100%',
-      playerVars: Object.assign({ controls: 0, disablekb: 1, fs: 0, rel: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1, start: Math.floor(startAt), origin: location.origin }, st.end ? { end: Math.ceil(st.end) } : {}),
+      playerVars: Object.assign({ controls: 0, disablekb: 1, fs: 0, rel: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1, cc_load_policy: ccPref() ? 1 : 0, cc_lang_pref: 'en', start: Math.floor(startAt), origin: location.origin }, st.end ? { end: Math.ceil(st.end) } : {}),
       events: {
         onReady: () => {
           if (P !== st) return;
@@ -2160,6 +2190,7 @@ function mountPlayer(f, idx, map, els) {
           live.forEach(b => { b.disabled = false; });
           applyVol();
           applySpeed();
+          applyCaptions();
           setCover('start');
           if (auto) st.yt.playVideo();
           partyApply();
@@ -2169,7 +2200,7 @@ function mountPlayer(f, idx, map, els) {
         onStateChange: e => {
           if (P !== st) return;
           const S = YT.PlayerState;
-          if (e.data === S.PLAYING) { st.played = true; st.playedAt = st.playedAt || Date.now(); if (!st.noted) { st.noted = true; noteWatching(m, idx, false); } setCover('clear'); }
+          if (e.data === S.PLAYING) { st.played = true; st.playedAt = st.playedAt || Date.now(); if (!st.noted) { st.noted = true; noteWatching(m, idx, false); } applyCaptions(); setCover('clear'); }
           else if (e.data === S.PAUSED) setCover('paused');
           else if (e.data === S.ENDED) { clearResume(m.id, idx); st.resumeAt = 0; mapEnded(st); setCover('ended'); }
           else if (e.data === S.BUFFERING) { if (!st.played) setCover('loading'); }
@@ -2189,20 +2220,40 @@ function mountPlayer(f, idx, map, els) {
 }
 /* The cover sits over the YouTube frame at all times. It is solid whenever the
    video isn't playing (so YouTube's title, end screens and suggestions never show)
-   and see-through while playing, still catching clicks so YouTube's own UI stays hidden. */
+   and see-through while playing, still catching clicks so YouTube's own UI stays hidden.
+   YouTube also lays the video's title (which can name the winner) over the top of the
+   picture for a few seconds each time play starts. So the cover stays solid for that long
+   ('hold'), with the sound off, and then the video goes back to where it started. */
+const HOLD_START = 3200, HOLD_RESUME = 1600;
 function setCover(mode) {
   const st = P;
   if (!st) return;
   const prev = st.mode;
+  const c = st.els.cover;
+  if (mode === 'clear' && (prev === 'clear' || prev === 'hold')) return;
+  clearTimeout(st.holdTimer);
   st.mode = mode;
   if (st.wake) st.wake();
-  const c = st.els.cover;
+  if (prev === 'hold') applyVol();
   if (mode === 'clear') {
-    if (prev === 'clear') return;
-    c.className = 'cover clear mask-top';
-    c.replaceChildren();
-    clearTimeout(st.maskTimer);
-    st.maskTimer = setTimeout(() => { if (P === st && st.mode === 'clear') c.classList.remove('mask-top'); }, 3500);
+    const resuming = prev === 'paused';
+    st.mode = 'hold';
+    st.holdFrom = currentTime();
+    try { st.yt.mute(); } catch (e) { /* not ready */ }
+    if (!resuming) {
+      c.className = 'cover';
+      c.replaceChildren(h('div', { class: 'spinner', 'aria-hidden': 'true' }), h('p', { class: 'cover-sub' }, 'Starting…'));
+    }
+    st.holdTimer = setTimeout(() => {
+      if (P !== st || st.mode !== 'hold') return;
+      st.mode = 'clear';
+      applyVol();
+      // Go back over the hidden seconds, unless this is a watch party, which keeps everyone in step.
+      if (!partyHere()) { try { st.yt.seekTo(st.holdFrom, true); } catch (e) { /* not ready */ } }
+      c.className = 'cover clear';
+      c.replaceChildren();
+      if (st.wake) st.wake();
+    }, resuming ? HOLD_RESUME : HOLD_START);
     return;
   }
   c.className = 'cover';
@@ -2292,6 +2343,7 @@ function seek(d) {
   let to = Math.max(st.start || 0, currentTime() + d);
   if (st.end) to = Math.min(to, st.end);
   st.yt.seekTo(to, true);
+  if (st.mode === 'hold') st.holdFrom = to;
   const ps = st.yt.getPlayerState();
   partySend('seek', ps === 1 || ps === 3, to, { d });
   setTimeout(tick, 150);
@@ -2302,6 +2354,7 @@ function restart() {
   st.resumeAt = 0;
   clearResume(st.m.id, st.idx);
   st.yt.seekTo(st.start || 0, true);
+  if (st.mode === 'hold') st.holdFrom = st.start || 0;
   st.yt.playVideo();
   partySend('restart', true, st.start || 0);
 }
@@ -2323,9 +2376,9 @@ function applyVol() {
 function toggleMute() {
   const st = P;
   if (!st || !st.ready) return;
-  const was = st.yt.isMuted();
-  if (was) st.yt.unMute(); else st.yt.mute();
+  const was = !!store.get('vol', { v: 100, muted: false }).muted;
   store.set('vol', { v: +st.els.ctl.vol.value, muted: !was });
+  if (st.mode !== 'hold') { if (was) st.yt.unMute(); else st.yt.mute(); }
   updateMuteIcon(!was);
 }
 function updateMuteIcon(muted) {
@@ -2359,7 +2412,7 @@ function destroyPlayer() {
   const st = P;
   P = null;
   clearInterval(st.timer);
-  clearTimeout(st.maskTimer);
+  clearTimeout(st.holdTimer);
   clearTimeout(st.idleTimer);
   if (st.ro) st.ro.disconnect();
   if (st.ready && st.mode !== 'ended') {
@@ -2387,6 +2440,7 @@ document.addEventListener('keydown', e => {
   else if (k === 'm' || k === 'M') toggleMute();
   else if (k === 'f' || k === 'F') toggleFullscreen();
   else if (k === 'w' || k === 'W') toggleWide();
+  else if (k === 'c' || k === 'C') toggleCaptions();
   else if (k === '>' || k === '.' && e.shiftKey) stepSpeed(1);
   else if (k === '<' || k === ',' && e.shiftKey) stepSpeed(-1);
 });
