@@ -69,6 +69,12 @@ Hand-picked groups of series and events, shown on the home page under **Collecti
 
 Keep it spoiler-free: titles, blurbs and notes say what to watch, never how it went. Avoid words like "comeback", "upset", "overtime thriller" or "five maps", since each gives a result away. A match in a hidden round (anything after an event's first round) is shown without its teams until the visitor opens it.
 
+## Watched, and seeing the result
+
+Visitors mark matches as watched themselves. The site never does it for them, because flipping it when a map ends would give away how long the series went. Besides the button on the match page, every match in an event's round list has a **Mark watched** toggle, and **Mark round as watched** marks a whole round at once (after a confirmation), for matches seen somewhere else. Both can be undone.
+
+Once a match is marked as watched, its page offers **Show me the result**. Nothing is revealed on the site itself: it opens a warning that Liquipedia's page also lists the event's other results, and only **Open Liquipedia** there opens it in a new tab. Cancel has the focus, so pressing Enter or a stray key can't open it. Matches on a stage subpage (Majors and similar) link to that subpage once the watcher has re-read it; until then they link to the event's main page.
+
 ## "Worth watching" ratings
 
 After marking a match as watched, a visitor can rate the whole series: **Must watch**, **Worth a watch** or **Only for fans**. Once at least 3 people have voted, match cards and the match page show a badge, but only for the two good tiers, so a missing badge can just as well mean too few votes. Votes never mention scores or maps, so they can't tell who won or how many maps were played. Anyone who'd rather not see badges can press **Hide ratings** at the bottom of the page.

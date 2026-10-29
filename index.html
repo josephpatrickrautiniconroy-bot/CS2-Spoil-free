@@ -281,6 +281,10 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .pin-btn:hover{background:var(--btn-hover)}
 .pin-btn[aria-pressed="true"]{background:var(--warm);color:var(--pin-on);box-shadow:inset 0 0 0 1px var(--pin-on-line)}
 .pin-btn .tlogo{width:20px;height:20px;font-size:9px}
+.pin-btn.sm{min-height:32px;padding:5px 10px;font-size:13px;white-space:nowrap}
+.reveal-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.reveal-row[hidden]{display:none}
+.reveal-row .hint{margin:0}
 .pin-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .pin-add{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
 .pin-add .input{flex:1 1 220px;width:auto}
@@ -827,7 +831,7 @@ function normMatch(m) {
   const bo = [1, 3, 5].includes(+m.bo) ? +m.bo : 3;
   const maps = arr(m.maps).slice(0, bo).map(x => ({ name: str(x && x.name), video: str(x && x.video), start: str(x && x.start), end: str(x && x.end), notPlayed: !!(x && x.notPlayed) }));
   while (maps.length < bo) maps.push(blankMap());
-  return { id: str(m.id), a: str(m.a), b: str(m.b), bo, date: str(m.date), thumb: str(m.thumb), maps };
+  return { id: str(m.id), a: str(m.a), b: str(m.b), bo, date: str(m.date), thumb: str(m.thumb), maps, ...(m.page ? { page: str(m.page) } : {}) };
 }
 function normalize(d) {
   d = (d && typeof d === 'object') ? d : {};
@@ -1094,6 +1098,18 @@ const hasVideo = m => m.maps.some(x => x.video);
    matches have them could hint at which ones were worth cutting. */
 const shortReady = rd => !!rd && rd.matches.length > 0 && rd.matches.every(m => m.highlight);
 const isWatched = id => !!store.get('watched', {})[id];
+// Visitors set this by hand, also for matches they saw somewhere else. Marking one clears its Continue watching entry.
+function setWatched(id, on) {
+  const w = store.get('watched', {});
+  if (on) { w[id] = true; forgetWatching(id); } else delete w[id];
+  store.set('watched', w);
+}
+// A small Watched / Mark watched toggle for match lists.
+function watchToggle(m) {
+  const on = isWatched(m.id);
+  return h('button', { type: 'button', class: 'pin-btn sm', 'aria-pressed': String(on), title: on ? 'Mark as not watched' : 'Mark as watched, for example if you saw it somewhere else',
+    onClick: () => { setWatched(m.id, !on); rerender(); } }, on ? '✓ Watched' : 'Mark watched');
+}
 function eventMatches(t) {
   const out = [];
   t.stages.forEach(s => s.rounds.forEach(rd => rd.matches.forEach(m => out.push({ m, rd }))));
@@ -2110,6 +2126,16 @@ function episodesView(t, s, rd, i, all) {
   const next = rd.matches.find(m => !isWatched(m.id)) || rd.matches[0];
   tools.append(h('a', { class: 'btn btn-accent btn-sm', href: slotFor(next, short) }, icon('play', 14, 'currentColor'), 'Play ' + (rd.name || 'round')));
   if (rd.locked) tools.append(h('button', { type: 'button', class: 'text-btn', onClick: () => { setRevealed(rd.id, false); rerender(); } }, 'Hide again'));
+  if (!editing()) {
+    const allSeen = rd.matches.every(m => isWatched(m.id));
+    const what = rd.name || 'this round';
+    tools.append(h('button', { type: 'button', class: 'text-btn', onClick: async () => {
+      const ok = await askConfirm(allSeen ? 'Mark every match in ' + what + ' as not watched?' : 'Mark every match in ' + what + ' as watched? Do this if you saw them somewhere else.', allSeen ? 'Mark as not watched' : 'Mark as watched');
+      if (!ok) return;
+      rd.matches.forEach(m => setWatched(m.id, !allSeen));
+      rerender();
+    } }, allSeen ? 'Mark round as not watched' : 'Mark round as watched'));
+  }
   head.append(tools);
   rd.matches.forEach((m, k) => box.append(episode(m, k, short)));
   if (hasShort) box.append(h('p', { class: 'hint' }, 'Short versions are the organisers’ highlights of each series. Their length stays hidden.'));
@@ -2134,7 +2160,7 @@ function episode(m, k, short) {
       h('h3', {}, h('a', { href }, names)),
       h('span', { class: 'sub' }, ['Best of ' + m.bo, m.date].filter(Boolean).join(' · ')),
       going || watched ? h('span', { class: 'sub stat' }, ' · ' + (going ? 'In progress' : 'Watched')) : null),
-    h('span', { class: 'extra' }, going ? h('a', { class: 'btn btn-accent btn-sm', href }, 'Resume') : null));
+    h('span', { class: 'extra' }, going ? h('a', { class: 'btn btn-accent btn-sm', href }, 'Resume') : null, editing() ? null : watchToggle(m)));
 }
 function renderTournamentEdit(app, r) {
   const t = findT(r.tid);
@@ -2372,14 +2398,20 @@ function renderPlayer(app, r) {
   const watched = isWatched(m.id);
   const wbtn = h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': String(watched) }, watched ? '✓ Watched' : 'Mark as watched');
   wbtn.addEventListener('click', () => {
-    const w = store.get('watched', {});
-    const on = !w[m.id];
-    if (on) { w[m.id] = true; forgetWatching(m.id); } else delete w[m.id];
-    store.set('watched', w);
+    const on = !isWatched(m.id);
+    setWatched(m.id, on);
     wbtn.setAttribute('aria-pressed', String(on));
     wbtn.textContent = on ? '✓ Watched' : 'Mark as watched';
     if (rbox) rbox.hidden = !on;
+    if (rev) rev.hidden = !on;
   });
+  // The result is only ever one deliberate step away: offered once the match is marked as watched,
+  // and opened on Liquipedia (never on this site) after a warning.
+  const lpPage = m.page || t.page;
+  const rev = lpPage && !editing() ? h('div', { class: 'reveal-row' },
+    h('button', { type: 'button', class: 'pin-btn', onClick: () => openReveal(t, m, lpPage) }, icon('eyeoff', 16), 'Show me the result'),
+    h('span', { class: 'hint' }, 'Opens Liquipedia, after a warning.')) : null;
+  if (rev) rev.hidden = !watched;
   // Rating is offered once the match is marked as watched, so votes come from people who saw it.
   const rbox = ratingsReady() && !editing() ? rateBox(m) : null;
   if (rbox) rbox.hidden = !watched;
@@ -2399,7 +2431,7 @@ function renderPlayer(app, r) {
     editing() ? h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match'))
       : h('div', { class: 'pin-row' }, [m.a, m.b].filter(id => team(id)).map(id => pinButton('teams', id, teamName(id), teamLogo(team(id)))),
         wbtn, h('button', { type: 'button', class: 'pin-btn', onClick: () => showSideTab('party') }, 'Watch with friends')),
-    rbox);
+    rbox, rev);
 
   const mapList = h('div', { class: 'map-list' }, m.maps.map((mp, i) => h('a', { class: 'map-btn', href: '#/match/' + m.id + '/' + i, 'aria-current': i === idx ? 'true' : null },
     h('span', { class: 'l' }, mapBadge(i === idx ? mp.name : ''),
@@ -3359,6 +3391,20 @@ function askConfirm(msg, okLabel) {
     showDialog(dlg, 'Are you sure?', h('div', { class: 'dlg-body' }, h('p', {}, msg)), [h('span'), h('div', { class: 'row' }, cancel, ok)]);
     cancel.focus();
   });
+}
+// Liquipedia's page for the event (or the stage subpage the match is on). It lists every result
+// there, so the warning says so before anything opens.
+function openReveal(t, m, page) {
+  const dlg = $('#dlg-confirm');
+  dlg.onclose = null;
+  const url = 'https://liquipedia.net/counterstrike/' + encodeURI(page.replace(/ /g, '_'));
+  const cancel = h('button', { type: 'button', class: 'btn btn-outline', onClick: () => dlg.close() }, 'Cancel');
+  const go = h('a', { class: 'btn btn-accent', href: url, target: '_blank', rel: 'noopener noreferrer', onClick: () => dlg.close() }, 'Open Liquipedia');
+  showDialog(dlg, 'Show the result?', h('div', { class: 'dlg-body' },
+    h('p', {}, 'This opens Liquipedia in a new tab, where you can find the score of ' + teamName(m.a) + ' vs ' + teamName(m.b) + '.'),
+    h('p', {}, 'That page shows the other results of ' + (t.name || 'this event') + ' too, including matches you haven’t watched and who went through.')),
+    [h('span'), h('div', { class: 'row' }, cancel, go)]);
+  cancel.focus();
 }
 function mapEditor(mp, i) {
   const nameIn = h('input', { id: 'md-m' + i + '-name', class: 'input', type: 'text', value: mp.name, placeholder: 'e.g. Mirage', autocomplete: 'off' });
