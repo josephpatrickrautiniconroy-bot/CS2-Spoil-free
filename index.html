@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Spoiler-Free CS2</title>
 <meta name="theme-color" content="#0a0a0b">
+<script>try { if (JSON.parse(localStorage.getItem('sf:theme')) === 'light') { document.documentElement.dataset.theme = 'light'; document.querySelector('meta[name="theme-color"]').content = '#f5f3ef'; } } catch (e) { /* storage unavailable */ }</script>
 <meta name="description" content="Watch CS2 tournament videos without spoilers: no scores, no video lengths, no giveaways.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +20,47 @@
   --fg:#f3f1ee; --muted:#8f8b85; --soft:#cfcac3; --orange:#ff8a3d; --orange-hover:#ff9d5c; --on-orange:#1a0d03; --live:#ff4d4d;
   --ok:#6cc48f; --bad:#ff7a6b;
   --edit:#7db3f0; --edit-soft:rgba(125,179,240,.12); --edit-bar:#1d4677;
+  --header-bg:linear-gradient(180deg,rgba(10,10,11,.94),rgba(10,10,11,.8)); --header-line:rgba(35,35,39,.6);
+  --btn:#2a2a2e; --btn-hover:#34343a; --hover:#1b1b1e; --inv-hover:#fff; --line-strong:#4a4a50; --scroll:#333; --dot:#55524d;
+  --warm:#33302c; --warm-fg:#d8cfc4; --warm-dim:#1c1a18; --pin-on:#f0c9a8; --pin-on-line:#5a4636; --num:#4a4740;
+  --mono-fg:rgba(243,241,238,.75); --mono-bg:rgba(255,255,255,.07); --stripe1:#141416; --stripe2:#18181b;
+  --side:#0e0e10; --dlg:#111113; --backdrop:rgba(0,0,0,.7);
   --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
   --body:"Figtree",system-ui,"Segoe UI",sans-serif;
 }
+/* Light theme: the same layout on paper white. Posters, the marquee, event banners, match tiles and the player
+   stay dark (they sit on dark stage art and on video), so they get the dark colours back. */
+:root[data-theme="light"]{
+  color-scheme:light;
+  --ink:#f5f3ef; --card:#fff; --card2:#ebe8e3; --raised:#fff; --line:#e2ded7; --line2:#cdc8c0;
+  --fg:#16151a; --muted:#68635c; --soft:#3b3833; --orange:#b84e09; --orange-hover:#9c4208; --on-orange:#fff; --live:#d92b2b;
+  --ok:#1d7442; --bad:#b3261e;
+  --edit:#1f5fa8; --edit-soft:rgba(31,95,168,.08);
+  --header-bg:linear-gradient(180deg,rgba(245,243,239,.95),rgba(245,243,239,.86)); --header-line:rgba(205,200,192,.7);
+  --btn:#e8e5df; --btn-hover:#dcd8d1; --hover:#efece7; --inv-hover:#000; --line-strong:#a39d94; --scroll:#c4bfb7; --dot:#aaa49b;
+  --warm:#f6e3d3; --warm-fg:#6e3a12; --warm-dim:#faeee3; --pin-on:#7a3608; --pin-on-line:#e6b896; --num:#c4bfb7;
+  --mono-fg:rgba(22,21,26,.7); --mono-bg:rgba(0,0,0,.06); --stripe1:#ebe8e3; --stripe2:#e3dfd9;
+  --side:#fbfaf8; --dlg:#fff; --backdrop:rgba(20,18,16,.45);
+}
+:root[data-theme="light"] :is(.hero,.ehead,.poster,.thumb,.resume-card .still,.player-box){
+  color:var(--fg);
+  color-scheme:dark;
+  --ink:#0a0a0b; --card:#151517; --card2:#1f1f22; --raised:#1a1a1d; --line:#232327; --line2:#34343a;
+  --fg:#f3f1ee; --muted:#8f8b85; --soft:#cfcac3; --orange:#ff8a3d; --orange-hover:#ff9d5c; --on-orange:#1a0d03; --live:#ff4d4d;
+  --ok:#6cc48f; --bad:#ff7a6b;
+  --edit:#7db3f0; --edit-soft:rgba(125,179,240,.12); --edit-bar:#1d4677;
+  --header-bg:linear-gradient(180deg,rgba(10,10,11,.94),rgba(10,10,11,.8)); --header-line:rgba(35,35,39,.6);
+  --btn:#2a2a2e; --btn-hover:#34343a; --hover:#1b1b1e; --inv-hover:#fff; --line-strong:#4a4a50; --scroll:#333; --dot:#55524d;
+  --warm:#33302c; --warm-fg:#d8cfc4; --warm-dim:#1c1a18; --pin-on:#f0c9a8; --pin-on-line:#5a4636; --num:#4a4740;
+  --mono-fg:rgba(243,241,238,.75); --mono-bg:rgba(255,255,255,.07); --stripe1:#141416; --stripe2:#18181b;
+  --side:#0e0e10; --dlg:#111113; --backdrop:rgba(0,0,0,.7);
+}
+:root[data-theme="light"] .resume-card .still::after{background:linear-gradient(90deg,transparent 55%,#fff)}
+@media (max-width:760px){:root[data-theme="light"] .resume-card .still::after{background:linear-gradient(0deg,#fff,transparent 60%)}}
+:root[data-theme="light"] .tlogo.halo{filter:none!important}
+:root[data-theme="light"] :is(.hero,.ehead,.poster,.thumb,.resume-card .still,.player-box) .tlogo.halo{filter:drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 0 8px rgba(255,255,255,.3))!important}
+:root[data-theme="light"] .toast{box-shadow:0 8px 24px rgba(0,0,0,.15)}
+:root[data-theme="light"] .dlg{box-shadow:0 24px 64px rgba(0,0,0,.2)}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 html.edit-mode{scroll-padding-top:120px}
@@ -45,7 +84,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .muted{color:var(--muted)}
 
 /* Header */
-.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:linear-gradient(180deg,rgba(10,10,11,.94),rgba(10,10,11,.8));backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(35,35,39,.6)}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--header-bg);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--header-line)}
 .header-in{min-height:62px;display:flex;align-items:center;gap:8px 24px;padding-block:8px}
 .brand{font:900 24px/1 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--fg);text-decoration:none;white-space:nowrap}
 .brand:hover{color:var(--fg)}
@@ -55,20 +94,55 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .main-nav a:hover{color:var(--fg)}
 .main-nav a[aria-current="page"]{color:var(--fg);box-shadow:0 2px 0 var(--orange)}
 .bell{position:relative;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 14px;border:1px solid var(--line2);border-radius:999px;background:transparent;color:var(--soft);font-size:14px;cursor:pointer;white-space:nowrap}
-.bell:hover{color:var(--fg);border-color:#4a4a50}
+.bell:hover{color:var(--fg);border-color:var(--line-strong)}
 .bell[hidden]{display:none}
 .bell em{background:var(--orange);color:var(--on-orange);font:700 11px/18px var(--body);min-width:18px;height:18px;padding:0 5px;border-radius:9px;text-align:center;font-style:normal}
 @media (max-width:760px){.main-nav{display:none}}
+.hd-tools{display:flex;align-items:center;gap:8px}
+.hd-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:40px;min-height:40px;padding:6px 10px;border:1px solid var(--line2);border-radius:999px;background:transparent;color:var(--soft);font-size:14px;cursor:pointer;white-space:nowrap}
+.hd-btn:hover{color:var(--fg);border-color:var(--line-strong)}
+.hd-btn kbd{font:600 11px/16px var(--body);padding:0 5px;border:1px solid var(--line2);border-radius:3px;color:var(--muted)}
+@media (max-width:640px){.hd-btn .lb,.hd-btn kbd{display:none}.hd-btn{padding:6px}}
+
+/* Search: teams and events by name. It never shows results, and a team only lists the events where it
+   plays in a round that's open, since turning up in a hidden round would show it went through. */
+.search-in{position:relative}
+.search-in .ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search-in .input{padding-left:40px;min-height:48px;font-size:17px}
+.sr-group{display:flex;flex-direction:column;gap:4px}
+.sr-group h3{font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.sr-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.sr-item{display:flex;align-items:center;gap:12px;padding:8px 10px;border-radius:6px;color:var(--fg);text-decoration:none;min-width:0}
+a.sr-item:hover,a.sr-item:focus-visible{background:var(--hover);color:var(--fg)}
+.sr-item .tlogo{width:34px;height:34px;font-size:11px}
+.sr-thumb{width:34px;height:48px;border-radius:3px;overflow:hidden;flex:none}
+.sr-thumb .art{width:100%;height:100%}
+.sr-thumb .art-name{display:none}
+.sr-text{display:flex;flex-direction:column;min-width:0;flex:1}
+.sr-text b{font:800 19px/1.1 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
+.sr-text span{font-size:13px;color:var(--muted)}
+.sr-team{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:8px 10px}
+.sr-team .sr-events{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:6px}
+.sr-team .sr-events a{font-size:13px;padding:3px 10px;border-radius:999px;background:var(--btn);color:var(--fg);text-decoration:none}
+.sr-team .sr-events a:hover{background:var(--btn-hover)}
+
+/* Keyboard shortcuts */
+.keys{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:18px 32px}
+.keys h3{font:800 20px/1 var(--display);text-transform:uppercase;margin-bottom:8px}
+.keys dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;align-items:baseline}
+.keys dt{display:flex;flex-wrap:wrap;gap:4px;justify-content:flex-end}
+.keys dd{margin:0;color:var(--soft);font-size:15px}
+kbd{font:600 13px/1 var(--body);display:inline-block;min-width:26px;padding:5px 7px;text-align:center;border:1px solid var(--line2);border-bottom-width:2px;border-radius:4px;background:var(--card);color:var(--fg)}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:4px;border:0;background:#2a2a2e;color:var(--fg);font-weight:700;font-size:15px;line-height:1.2;text-decoration:none;text-align:center;cursor:pointer}
-.btn:hover{background:#34343a;color:var(--fg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:4px;border:0;background:var(--btn);color:var(--fg);font-weight:700;font-size:15px;line-height:1.2;text-decoration:none;text-align:center;cursor:pointer}
+.btn:hover{background:var(--btn-hover);color:var(--fg)}
 .btn-accent{background:var(--orange);color:var(--on-orange)}
 .btn-accent:hover{background:var(--orange-hover);color:var(--on-orange)}
 .btn-outline{background:transparent;box-shadow:inset 0 0 0 1px var(--line2)}
-.btn-outline:hover{background:#1c1c1f}
+.btn-outline:hover{background:var(--hover)}
 .btn-inv{background:var(--fg);color:var(--ink)}
-.btn-inv:hover{background:#fff;color:var(--ink)}
+.btn-inv:hover{background:var(--inv-hover);color:var(--ink)}
 .btn-ghost{background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
 .btn-ghost:hover{background:rgba(255,255,255,.16)}
 .btn-sm,.btn.sm{min-height:36px;padding:7px 12px;font-size:14px}
@@ -84,7 +158,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .h2{font:800 clamp(1.6rem,3vw,2.1rem)/1 var(--display);text-transform:uppercase}
 .h2 small,.sh small{font:500 14px var(--body);text-transform:none;color:var(--muted);margin-left:10px}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;color:var(--muted);font-size:15px}
-.dot{color:#55524d}
+.dot{color:var(--dot)}
 .hint{font-size:13px;color:var(--muted)}
 .hint.ok{color:var(--ok)}
 .hint.bad{color:var(--bad)}
@@ -113,7 +187,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .sh{display:flex;flex-wrap:wrap;gap:6px 0;align-items:baseline;font:800 26px/1 var(--display);text-transform:uppercase}
 .shelf-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 16px}
 .shelf-note{color:var(--muted);font-size:14px;margin-top:-6px}
-.posters{display:grid;grid-auto-flow:column;grid-auto-columns:max(150px,calc((100% - 72px) / 7));gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:#333 transparent}
+.posters{display:grid;grid-auto-flow:column;grid-auto-columns:max(150px,calc((100% - 72px) / 7));gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--scroll) transparent}
 .poster{position:relative;display:block;aspect-ratio:2/3;border-radius:6px;overflow:hidden;border:1px solid var(--line);color:var(--fg);text-decoration:none;transition:transform .2s,border-color .2s}
 .poster:hover{transform:translateY(-3px);border-color:#3a3a3e;color:var(--fg)}
 .poster .art{position:absolute;inset:0}
@@ -122,11 +196,11 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 .poster .cap{position:absolute;left:12px;right:12px;bottom:12px;z-index:1;display:grid;gap:3px}
 .poster .nm{font:900 22px/.92 var(--display);text-transform:uppercase;overflow-wrap:anywhere}
 .poster .s{font-size:12px;color:#d8d4ce}
-.thumbs{display:grid;grid-auto-flow:column;grid-auto-columns:max(240px,calc((100% - 36px) / 4));gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:#333 transparent}
+.thumbs{display:grid;grid-auto-flow:column;grid-auto-columns:max(240px,calc((100% - 36px) / 4));gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--scroll) transparent}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:20px 14px}
 .wide3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:12px}
 .wtile{background:var(--card);border-radius:6px;padding:16px;display:grid;gap:4px;align-content:start;border-left:3px solid var(--orange);color:var(--fg);text-decoration:none}
-a.wtile:hover{background:#1b1b1e;color:var(--fg)}
+a.wtile:hover{background:var(--hover);color:var(--fg)}
 .wtile b{font:800 21px/1 var(--display);text-transform:uppercase}
 .wtile span{color:var(--muted);font-size:14px}
 .wtile .t-meta{color:var(--orange);font-size:13px;font-weight:600}
@@ -163,15 +237,15 @@ a.wtile:hover{background:#1b1b1e;color:var(--fg)}
 .resume-card .vs i{font:500 18px var(--body);color:var(--muted);font-style:normal;padding:0 8px;text-transform:none}
 @media (max-width:760px){.resume-card{grid-template-columns:1fr}.resume-card .still{min-height:180px}.resume-card .still::after{background:linear-gradient(0deg,var(--card),transparent 60%)}}
 .pips{display:flex;gap:6px;flex-wrap:wrap}
-.pips span{padding:5px 10px;border-radius:3px;background:#222225;color:var(--muted);font-size:12px}
-.pips .done{background:#33302c;color:#bdb6ad}
+.pips span{padding:5px 10px;border-radius:3px;background:var(--btn);color:var(--muted);font-size:12px}
+.pips .done{background:var(--warm);color:var(--warm-fg)}
 .pips .now{background:var(--orange);color:var(--on-orange);font-weight:700}
 
 /* Match tiles: two team logos on the teams' colours. Never a YouTube thumbnail, which can carry a score. */
 .m-wrap{display:flex;flex-direction:column;gap:6px;min-width:0}
 .m-card{display:flex;flex-direction:column;gap:7px;color:var(--fg);text-decoration:none;position:relative;min-width:0}
 .m-card:hover{color:var(--fg)}
-.m-card:hover .thumb{border-color:#4a4a50}
+.m-card:hover .thumb{border-color:var(--line-strong)}
 .thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#111113}
 .thumb-bg{background:radial-gradient(60% 90% at 22% 45%,hsl(var(--ha) 60% 42% / .55),transparent 70%),radial-gradient(60% 90% at 78% 45%,hsl(var(--hb) 60% 42% / .55),transparent 70%),linear-gradient(180deg,#19191c,#0d0d0f)}
 .thumb>.thumb-bg,.thumb>.art{position:absolute;inset:0}
@@ -186,14 +260,14 @@ a.wtile:hover{background:#1b1b1e;color:var(--fg)}
 .thumb .br,.bo-tag{right:8px;top:8px}
 .thumb .tl{left:8px;top:8px}
 .thumb.cur{border-color:var(--orange);box-shadow:0 0 0 1px var(--orange)}
-.hidden-tile{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;padding:12px;text-align:center;background:repeating-linear-gradient(115deg,#141416 0 10px,#18181b 10px 20px)}
+.hidden-tile{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;padding:12px;text-align:center;background:repeating-linear-gradient(115deg,var(--stripe1) 0 10px,var(--stripe2) 10px 20px)}
 .hidden-tile b{font:800 22px/1 var(--display);text-transform:uppercase}
 .hidden-teams{display:flex;align-items:center;gap:6px;font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .m-cap{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted)}
 .m-cap span:first-child{min-width:0;overflow-wrap:anywhere;color:var(--soft)}
 .tlogo{object-fit:contain;flex:none}
 .tlogo.halo{filter:drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 0 8px rgba(255,255,255,.3))!important}
-span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display);color:rgba(243,241,238,.75);text-transform:uppercase;border-radius:50%;background:rgba(255,255,255,.07)}
+span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display);color:var(--mono-fg);text-transform:uppercase;border-radius:50%;background:var(--mono-bg)}
 .cw-remove{align-self:flex-start;font-size:13px;min-height:30px}
 
 /* Pins */
@@ -203,9 +277,9 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .pin-alerts ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .pin-alert{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-top:1px solid var(--line);padding-top:10px}
 .pin-alert-text{display:flex;flex-direction:column;gap:2px;min-width:0;overflow-wrap:anywhere}
-.pin-btn{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:7px 12px;border-radius:4px;background:#2a2a2e;color:var(--fg);border:0;font-weight:700;font-size:14px;cursor:pointer}
-.pin-btn:hover{background:#34343a}
-.pin-btn[aria-pressed="true"]{background:#33302c;color:#f0c9a8;box-shadow:inset 0 0 0 1px #5a4636}
+.pin-btn{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:7px 12px;border-radius:4px;background:var(--btn);color:var(--fg);border:0;font-weight:700;font-size:14px;cursor:pointer}
+.pin-btn:hover{background:var(--btn-hover)}
+.pin-btn[aria-pressed="true"]{background:var(--warm);color:var(--pin-on);box-shadow:inset 0 0 0 1px var(--pin-on-line)}
 .pin-btn .tlogo{width:20px;height:20px;font-size:9px}
 .pin-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .pin-add{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
@@ -224,7 +298,7 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .cal-links{display:flex;flex-wrap:wrap;gap:8px}
 .short-tag{font-weight:600;font-size:13px;color:var(--orange)}
 .watched-chip{position:absolute;left:8px;top:8px;z-index:2;background:var(--orange);color:var(--on-orange);font-weight:700;font-size:11px;letter-spacing:.04em;text-transform:uppercase;padding:3px 7px;border-radius:3px}
-.watched-chip.done{background:#33302c;color:#d8cfc4}
+.watched-chip.done{background:var(--warm);color:var(--warm-fg)}
 
 /* Footer */
 .site-footer{margin-top:48px;border-top:1px solid var(--line)}
@@ -255,23 +329,23 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .chapters a span{font-size:13px;color:var(--muted);white-space:nowrap}
 .chapters a[aria-current="page"]{background:var(--card);box-shadow:inset 3px 0 0 var(--orange)}
 .chapters a.lk{color:var(--muted)}
-.chapters a:hover{background:#121214;color:var(--fg)}
+.chapters a:hover{background:var(--hover);color:var(--fg)}
 .eps{padding:18px 0 18px 24px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .ephead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px}
 .ep{display:grid;grid-template-columns:28px minmax(140px,220px) minmax(0,1fr) auto;gap:16px;align-items:center;padding:8px;border-radius:6px}
 .ep:hover{background:var(--card)}
-.ep .n{font:900 26px var(--display);color:#4a4740;text-align:center}
+.ep .n{font:900 26px var(--display);color:var(--num);text-align:center}
 .ep h3{font:800 24px/1 var(--display);text-transform:uppercase;margin-bottom:4px}
 .ep h3 a{color:var(--fg);text-decoration:none}
 .ep h3 a:hover{color:var(--orange)}
 .ep .sub{font-size:14px;color:var(--muted)}
 .ep .stat{color:var(--orange)}
 .ep .extra{display:flex;gap:8px;align-items:center}
-.seg{display:inline-flex;background:var(--card);border-radius:4px;padding:3px;border:1px solid #2a2a2e}
+.seg{display:inline-flex;background:var(--card);border-radius:4px;padding:3px;border:1px solid var(--line2)}
 .seg button{padding:6px 11px;border:0;border-radius:3px;background:transparent;color:var(--muted);font-size:13px;cursor:pointer}
 .seg button:hover{color:var(--fg)}
-.seg button[aria-pressed="true"]{background:#2f2f33;color:var(--fg);font-weight:600}
-.curtain{border-radius:6px;padding:22px;display:grid;gap:10px;justify-items:start;background:repeating-linear-gradient(115deg,#141416 0 10px,#18181b 10px 20px);border:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--btn-hover);color:var(--fg);font-weight:600}
+.curtain{border-radius:6px;padding:22px;display:grid;gap:10px;justify-items:start;background:repeating-linear-gradient(115deg,var(--stripe1) 0 10px,var(--stripe2) 10px 20px);border:1px solid var(--line)}
 .curtain b{display:flex;align-items:center;gap:10px;font:800 24px/1 var(--display);text-transform:uppercase}
 .t-head{padding-block:24px 0;display:flex;flex-direction:column;gap:16px}
 .t-title-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
@@ -372,9 +446,9 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .match-title{font:900 clamp(32px,4vw,46px)/.95 var(--display);text-transform:uppercase;display:flex;align-items:center;gap:12px;flex-wrap:wrap;overflow-wrap:anywhere}
 .match-title .tlogo{width:clamp(36px,4vw,50px);height:clamp(36px,4vw,50px);font-size:14px}
 .match-title .vs{font:500 17px var(--body);color:var(--muted);text-transform:none;padding:0 4px}
-.mb{flex:none;width:52px;height:30px;border-radius:5px;background:#1c1a18 center/cover;border:1px solid var(--line);display:inline-grid;place-items:center;color:#6d6862;font-weight:700;font-size:13px}
+.mb{flex:none;width:52px;height:30px;border-radius:5px;background:var(--warm-dim) center/cover;border:1px solid var(--line);display:inline-grid;place-items:center;color:var(--muted);font-weight:700;font-size:13px}
 .meta .mb{width:40px;height:23px}
-.side{border-left:1px solid var(--line);background:#0e0e10;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.side{border-left:1px solid var(--line);background:var(--side);display:flex;flex-direction:column;min-width:0;overflow:hidden}
 .mwrap.closed .side{border-left:0;visibility:hidden}
 .stabs{display:grid;grid-template-columns:1fr 1fr 1fr auto;border-bottom:1px solid var(--line);width:340px;max-width:100%}
 .stabs button{padding:14px 0;background:transparent;border:0;font:700 16px var(--display);text-transform:uppercase;color:var(--muted);white-space:nowrap;cursor:pointer}
@@ -385,8 +459,8 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .pane[hidden]{display:none}
 .map-list{display:flex;flex-direction:column;gap:6px}
 .map-btn{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border-radius:4px;background:var(--card);color:var(--fg);text-decoration:none}
-.map-btn:hover{background:#1b1b1e;color:var(--fg)}
-.map-btn[aria-current="true"]{box-shadow:inset 3px 0 0 var(--orange);background:#1c1a18}
+.map-btn:hover{background:var(--hover);color:var(--fg)}
+.map-btn[aria-current="true"]{box-shadow:inset 3px 0 0 var(--orange);background:var(--warm-dim)}
 .map-btn .l{display:flex;align-items:center;gap:12px;min-width:0}
 .map-label{display:block;font:800 18px/1.1 var(--display);text-transform:uppercase}
 .map-state{font-size:12px;color:var(--muted)}
@@ -417,7 +491,7 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 
 /* Edit mode */
 .edit-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--edit-bar);color:#fff}
-.edit-mode .site-header{position:static}
+.edit-mode .site-header{position:relative}
 .edit-bar-in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;padding-block:10px}
 .eb-info{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;min-width:0}
 .eb-title{font:800 20px var(--display);letter-spacing:.06em;text-transform:uppercase}
@@ -453,8 +527,8 @@ span.editable{display:inline-block}
 .check input{width:18px;height:18px;accent-color:var(--edit);margin:0;flex-shrink:0}
 .field{display:flex;flex-direction:column;gap:6px;min-width:0}
 .field>label{font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.input{width:100%;min-height:42px;padding:8px 12px;background:var(--ink);color:var(--fg);border:1px solid #2a2a2e;border-radius:4px}
-.input:focus{border-color:#4a4a50}
+.input{width:100%;min-height:42px;padding:8px 12px;background:var(--ink);color:var(--fg);border:1px solid var(--line2);border-radius:4px}
+.input:focus{border-color:var(--line-strong)}
 .input:disabled{opacity:.5}
 .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:14px}
 .maps-edit{display:flex;flex-direction:column;gap:12px}
@@ -472,16 +546,16 @@ span.editable{display:inline-block}
 .notice{margin-top:18px;align-items:center}
 
 /* Dialogs and toast */
-.dlg{border:1px solid var(--line2);border-radius:8px;padding:0;background:#111113;color:var(--fg);width:min(760px,calc(100vw - 32px));max-height:calc(100dvh - 48px);box-shadow:0 24px 64px rgba(0,0,0,.6)}
+.dlg{border:1px solid var(--line2);border-radius:8px;padding:0;background:var(--dlg);color:var(--fg);width:min(760px,calc(100vw - 32px));max-height:calc(100dvh - 48px);box-shadow:0 24px 64px rgba(0,0,0,.6)}
 .dlg[open]{display:flex;flex-direction:column}
 .dlg-sm{width:min(480px,calc(100vw - 32px))}
-.dlg::backdrop{background:rgba(0,0,0,.7)}
+.dlg::backdrop{background:var(--backdrop)}
 .dlg-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line)}
 .dlg-title{font:800 28px/1.1 var(--display);text-transform:uppercase}
 .dlg-body{padding:18px 22px;display:flex;flex-direction:column;gap:16px;overflow:auto;min-height:0}
 .dlg-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:14px 22px;border-top:1px solid var(--line)}
 .icon-close{width:40px;height:40px;flex-shrink:0;background:transparent;border:1px solid var(--line2);border-radius:4px;color:var(--fg);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
-.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;background:var(--card2);color:var(--fg);border:1px solid #333;border-radius:6px;padding:10px 16px;font-size:14px;font-weight:500;max-width:calc(100vw - 32px);box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;background:var(--card2);color:var(--fg);border:1px solid var(--line2);border-radius:6px;padding:10px 16px;font-size:14px;font-weight:500;max-width:calc(100vw - 32px);box-shadow:0 8px 24px rgba(0,0,0,.5)}
 
 @media (max-width:640px){
   .controls{gap:0;padding:4px 6px}
@@ -521,7 +595,11 @@ span.editable{display:inline-block}
       <a href="#/how" data-nav="how">How it works</a>
     </nav>
     <span class="grow"></span>
-    <button type="button" class="bell" id="bell" hidden></button>
+    <div class="hd-tools">
+      <button type="button" class="bell" id="bell" hidden></button>
+      <button type="button" class="hd-btn" id="search-btn" aria-label="Search teams and events" aria-keyshortcuts="/"></button>
+      <button type="button" class="hd-btn" id="theme-btn"></button>
+    </div>
   </div>
 </header>
 
@@ -656,6 +734,7 @@ const ICONS = {
   narrow: '<rect x="2" y="6" width="13" height="12" rx="1"></rect><line x1="18" y1="6" x2="22" y2="6"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="18" y1="18" x2="22" y2="18"></line>',
   eyeoff: '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><line x1="3" y1="3" x2="21" y2="21"></line>',
   moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>',
+  search: '<circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line>',
   sun: '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>',
   lock: '<rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path>',
   x: '<line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line>',
@@ -1054,6 +1133,155 @@ function openCalendarDialog(ts) {
   showDialog(dlg, 'Calendar reminders', body, [h('span'), h('button', { type: 'button', class: 'btn btn-accent', onClick: () => dlg.close() }, 'Done')]);
 }
 
+/* ---------- light and dark theme ----------
+   Dark is the default. The choice is kept in this browser and applied in <head> before the page draws. */
+const DARK_PANELS = '.hero,.ehead,.poster,.thumb,.resume-card .still,.player-box'; // stay dark in the light theme (see the CSS)
+const theme = () => document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+function themeLogo(img) {
+  const want = theme() === 'light' && !img.closest(DARK_PANELS) ? img.dataset.ll : img.dataset.ld;
+  if (want && img.getAttribute('src') !== want) img.src = want;
+}
+const paintLogos = () => document.querySelectorAll('img.tlogo[data-ll]').forEach(themeLogo);
+// Logos are made before they're on the page, so the light-theme swap happens once they're added.
+new MutationObserver(list => {
+  if (theme() !== 'light') return;
+  for (const m of list) for (const n of m.addedNodes) {
+    if (n.nodeType !== 1) continue;
+    if (n.matches('img.tlogo[data-ll]')) themeLogo(n);
+    else n.querySelectorAll('img.tlogo[data-ll]').forEach(themeLogo);
+  }
+}).observe(document.body, { childList: true, subtree: true });
+function setTheme(v) {
+  if (v === 'light') document.documentElement.dataset.theme = 'light';
+  else delete document.documentElement.dataset.theme;
+  store.set('theme', v);
+  const meta = $('meta[name="theme-color"]');
+  if (meta) meta.content = v === 'light' ? '#f5f3ef' : '#0a0a0b';
+  paintLogos();
+  paintThemeBtn();
+}
+function paintThemeBtn() {
+  const b = $('#theme-btn'), light = theme() === 'light';
+  b.replaceChildren(icon(light ? 'moon' : 'sun', 16), h('span', { class: 'lb' }, light ? 'Dark' : 'Light'));
+  b.setAttribute('aria-label', light ? 'Switch to the dark theme' : 'Switch to the light theme');
+  b.onclick = () => setTheme(light ? 'dark' : 'light');
+}
+
+/* ---------- search ----------
+   Finds teams and events by name. It shows no results and no matchups: an event shows its dates, and a team
+   lists only the events where it plays in an open round. Being in a hidden round (the playoffs, say) would
+   show that the team went through, so those don't count until the visitor opens that round. */
+const roundOpen = rd => !rd.locked || !!store.get('revealed', {})[rd.id];
+const fold = v => str(v).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+const words = v => fold(v).split(/[^a-z0-9]+/).filter(Boolean);
+// 0: the name starts with the search, 1: every word starts a word, 2: found inside a name, -1: no match.
+function matchScore(q, names) {
+  const qw = words(q), qc = qw.join('');
+  if (!qc) return -1;
+  let best = -1;
+  for (const nm of names) {
+    const ws = words(nm), c = ws.join('');
+    if (!c) continue;
+    let sc;
+    if (c.startsWith(qc)) sc = 0;
+    else if (qw.every(x => ws.some(w => w.startsWith(x)))) sc = 1;
+    else if (qw.every(x => ws.some(w => w.startsWith(x)) || (x.length >= 3 && c.includes(x)))) sc = 2;
+    else continue;
+    if (best < 0 || sc < best) best = sc;
+  }
+  return best;
+}
+const STATUS_RANK = { live: 0, upcoming: 1, done: 2 };
+const STATUS_TEXT = { live: 'Happening now', upcoming: 'Coming up', done: 'Finished' };
+function byStatusAndDate(a, b) {
+  const sa = tStatus(a), sb = tStatus(b);
+  if (sa !== sb) return STATUS_RANK[sa] - STATUS_RANK[sb];
+  // Coming up: soonest first. Everything else: newest first.
+  const d = str(a.sdate) < str(b.sdate) ? -1 : str(a.sdate) > str(b.sdate) ? 1 : 0;
+  return sa === 'upcoming' ? d : -d;
+}
+function teamEvents(id) {
+  return data.tournaments.filter(t => t.stages.some(s => s.rounds.some(rd => roundOpen(rd) && rd.matches.some(m => m.a === id || m.b === id))))
+    .sort(byStatusAndDate);
+}
+function searchFor(q) {
+  const events = data.tournaments.map(t => ({ t, sc: matchScore(q, [t.name, [t.name, t.year].join(' '), str(t.location).split(',')[0]]) }))
+    .filter(x => x.sc >= 0).sort((a, b) => a.sc - b.sc || byStatusAndDate(a.t, b.t)).slice(0, 8).map(x => x.t);
+  const teams = data.teams.filter(x => x.name).map(tm => ({ tm, sc: matchScore(q, [tm.name].concat(tm.aliases)), evs: teamEvents(tm.id) }))
+    .filter(x => x.sc >= 0 && (x.evs.length || isPinned('teams', x.tm.id)))
+    .sort((a, b) => a.sc - b.sc || a.tm.name.localeCompare(b.tm.name)).slice(0, 8);
+  return { events, teams };
+}
+function openSearch() {
+  const dlg = $('#dlg');
+  const go = () => dlg.close();
+  const inp = h('input', { type: 'text', role: 'searchbox', enterkeyhint: 'search', class: 'input', id: 'search-q', placeholder: 'Team or event', autocomplete: 'off', spellcheck: 'false',
+    'aria-label': 'Search teams and events', 'aria-describedby': 'search-note' });
+  const out = h('div', { class: 'dlg-body', id: 'search-out', style: 'padding-top:0' });
+  const status = h('p', { class: 'sr-only', role: 'status' });
+  const draw = () => {
+    const q = inp.value.trim();
+    if (!q) { out.replaceChildren(h('p', { class: 'hint' }, 'Type part of a team or event name.')); status.textContent = ''; return; }
+    const { events, teams } = searchFor(q);
+    const kids = [];
+    if (events.length) kids.push(h('section', { class: 'sr-group' }, h('h3', {}, 'Events'), h('ul', { class: 'sr-list' }, events.map(t => {
+      const st = tStatus(t);
+      const sub = [STATUS_TEXT[st], t.dates, str(t.location).split(',')[0]].filter(Boolean).join(' · ');
+      return h('li', {}, h('a', { class: 'sr-item', href: '#/t/' + t.id, onClick: go },
+        h('span', { class: 'sr-thumb', 'aria-hidden': 'true' }, artView(t)),
+        h('span', { class: 'sr-text' }, h('b', {}, t.name || 'Untitled tournament'), h('span', {}, sub))));
+    }))));
+    if (teams.length) kids.push(h('section', { class: 'sr-group' }, h('h3', {}, 'Teams'), h('ul', { class: 'sr-list' }, teams.map(({ tm, evs }) => {
+      const pinned = isPinned('teams', tm.id);
+      return h('li', { class: 'sr-team' }, teamLogo(tm),
+        h('span', { class: 'sr-text' }, h('b', {}, tm.name), h('span', {}, evs.length ? 'Plays in' : 'Not in an open round yet')),
+        h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': String(pinned), onClick: () => { togglePin('teams', tm.id); toast(pinned ? 'Unpinned ' + tm.name : 'Pinned ' + tm.name); draw(); if (parseRoute().name === 'home') rerender(); } },
+          icon('pin', 14), pinned ? 'Pinned' : 'Pin'),
+        evs.length ? h('div', { class: 'sr-events' }, evs.slice(0, 6).map(t => h('a', { href: '#/t/' + t.id, onClick: go }, t.name || 'Untitled tournament'))) : null);
+    }))));
+    if (!kids.length) kids.push(h('p', { class: 'empty' }, 'Nothing called “' + q + '”.'));
+    out.replaceChildren(...kids);
+    status.textContent = events.length + teams.length ? plural(events.length, 'event') + ', ' + plural(teams.length, 'team') : 'Nothing found';
+  };
+  inp.addEventListener('input', draw);
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') { const a = out.querySelector('a[href]'); if (a) { e.preventDefault(); a.click(); } } });
+  showDialog(dlg, 'Search', h('div', { style: 'display:contents' }, h('div', { class: 'dlg-body' }, h('div', { class: 'search-in' }, icon('search', 18), inp), status), out),
+    [h('p', { class: 'hint', id: 'search-note' }, 'Search never shows results. A team only lists events where it plays in a round you can see.'),
+      h('button', { type: 'button', class: 'btn btn-outline', onClick: go }, 'Close')]);
+  draw();
+  inp.focus();
+}
+
+/* ---------- keyboard shortcuts ---------- */
+function openKeys() {
+  const dlg = $('#dlg');
+  const row = (keys, text) => [h('dt', {}, keys.map(k => h('kbd', {}, k))), h('dd', {}, text)];
+  const body = h('div', { class: 'dlg-body' }, h('div', { class: 'keys' },
+    h('section', {}, h('h3', {}, 'While watching'), h('dl', {},
+      row(['Space'], 'Play or pause (K works too)'),
+      row(['←', '→'], 'Back or forward 10 seconds'),
+      row(['Shift', '← →'], 'Back or forward 30 seconds (J and L too)'),
+      row(['<', '>'], 'Slower or faster, up to 2×'),
+      row(['M'], 'Sound on or off'),
+      row(['C'], 'Subtitles on or off'),
+      row(['W'], 'Hide or show the side panel for a bigger video'),
+      row(['F'], 'Full screen'))),
+    h('section', {}, h('h3', {}, 'Anywhere'), h('dl', {},
+      row(['/'], 'Search teams and events'),
+      row(['?'], 'Show these shortcuts'),
+      row(['Esc'], 'Close a window like this one')))),
+    h('p', { class: 'hint' }, 'Skips never go past the start or end of the map you’re on, so they can’t show how long it is.'));
+  showDialog(dlg, 'Keyboard shortcuts', body, [h('span'), h('button', { type: 'button', class: 'btn btn-accent', onClick: () => dlg.close() }, 'Done')]);
+}
+document.addEventListener('keydown', e => {
+  if (e.altKey || e.ctrlKey || e.metaKey || e.defaultPrevented) return;
+  if (document.querySelector('dialog[open]')) return;
+  const tgt = e.target;
+  if (tgt && tgt.closest && tgt.closest('input, textarea, select, [contenteditable="true"], [contenteditable="plaintext-only"]')) return;
+  if (e.key === '?') { e.preventDefault(); openKeys(); }
+  else if (e.key === '/') { e.preventDefault(); openSearch(); }
+});
+
 /* ---------- saving (edit mode) ---------- */
 let saveTimer = null;
 function setStatus(msg) { const el = $('#edit-status'); if (el) el.textContent = msg; }
@@ -1172,13 +1400,18 @@ function looksDark(img) {
 function teamLogo(tm, cls) {
   const src = tm ? (/^data:/.test(tm.logo) ? tm.logo : (tm.logoDark || tm.logo)) : '';
   if (!src) return h('span', { class: 'tlogo ' + (cls || ''), 'aria-hidden': 'true' }, str(tm && tm.name).replace(/[^A-Za-z0-9]/g, '').slice(0, 3) || '?');
-  const img = h('img', { class: 'tlogo ' + (cls || '') + (DARK_LOGO.get(src) ? ' halo' : ''), src, alt: '', loading: 'lazy', decoding: 'async' });
-  if (!DARK_LOGO.has(src)) img.addEventListener('load', () => {
-    if (DARK_LOGO.has(src)) { if (DARK_LOGO.get(src)) img.classList.add('halo'); return; }
+  // With both versions, the light theme swaps in the light-background one outside the dark panels (see themeLogo).
+  const both = src !== tm.logo && !!tm.logo;
+  const img = h('img', { class: 'tlogo ' + (cls || '') + (DARK_LOGO.get(src) ? ' halo' : ''), src, alt: '', loading: 'lazy', decoding: 'async',
+    'data-ld': both ? src : null, 'data-ll': both ? tm.logo : null });
+  // Runs again whenever the theme swaps the picture, so the outline follows the version on show.
+  img.addEventListener('load', () => {
+    const cur = img.getAttribute('src');
+    if (DARK_LOGO.has(cur)) { img.classList.toggle('halo', DARK_LOGO.get(cur)); return; }
     const dark = looksDark(img);
-    DARK_LOGO.set(src, dark);
-    if (dark) document.querySelectorAll('img.tlogo').forEach(x => { if (x.getAttribute('src') === src) x.classList.add('halo'); });
-  }, { once: true });
+    DARK_LOGO.set(cur, dark);
+    document.querySelectorAll('img.tlogo').forEach(x => { if (x.getAttribute('src') === cur) x.classList.toggle('halo', dark); });
+  });
   return img;
 }
 const logoBox = (tm, cls) => teamLogo(tm, cls);
@@ -1332,6 +1565,10 @@ function renderHeader() {
   const cut = name.indexOf('-');
   $('#brand').replaceChildren(...(cut > 0 ? [name.slice(0, cut), h('i', {}, '/'), name.slice(cut + 1).replace(/^Free/, 'free')] : [name]));
   document.title = name;
+  const sb = $('#search-btn');
+  sb.replaceChildren(icon('search', 16), h('span', { class: 'lb' }, 'Search'), h('kbd', { 'aria-hidden': 'true' }, '/'));
+  sb.onclick = openSearch;
+  paintThemeBtn();
   // The bell counts what's new for the visitor's pins and brings the notices back after they were dismissed.
   const n = editing() ? 0 : pinAlerts().length, bell = $('#bell');
   bell.hidden = !n;
@@ -1352,7 +1589,7 @@ function renderFooter() {
   $('#footer').replaceChildren(h('div', { class: 'wrap footer-in' },
     ed('span', 'footer-brand', data.site.name, v => { data.site.name = v; renderHeader(); }, { label: 'Site name', placeholder: 'Site name' }),
     ed('span', 'footer-text', data.site.footer, v => { data.site.footer = v; }, { label: 'Footer text', placeholder: 'Footer text' }),
-    parseRoute().name === 'player' && !editing() ? h('span', { class: 'footer-text' }, 'Keys: Space plays or pauses · ← → skip 10s, Shift for 30s · < > speed · W hides the side panel · F full screen') : null,
+    !editing() ? h('button', { type: 'button', class: 'text-btn', 'aria-keyshortcuts': 'Shift+?', onClick: openKeys }, 'Keyboard shortcuts (?)') : null,
     // Liquipedia's content is CC BY-SA, so its use is credited whenever the watcher's data is on the page.
     AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/counterstrike/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
       ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null,
