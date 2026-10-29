@@ -3949,10 +3949,10 @@
       "@BLASTPremier": "UU9k--dE_UE0Faxzgb_DDkYQ",
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww"
     },
-    "checkedAt": "2026-10-29T16:55:14.538Z",
+    "checkedAt": "2026-10-29T20:45:11.228Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 50,
+      "matchesLookedFor": 51,
       "matchesFrom": "2026-10-09",
       "matchesTo": "2026-11-11",
       "found": 0,
@@ -3960,8 +3960,8 @@
         "@ESLCS": {
           "uploads": 200,
           "sayHighlights": 0,
-          "oldest": "2026-06-20T19:45:17Z",
-          "newest": "2026-10-28T20:52:55Z"
+          "oldest": "2026-06-20T20:49:44Z",
+          "newest": "2026-10-29T17:45:19Z"
         },
         "@BLASTPremier": {
           "uploads": 200,
@@ -3973,7 +3973,7 @@
           "uploads": 200,
           "sayHighlights": 0,
           "oldest": "2025-11-21T22:19:53Z",
-          "newest": "2026-10-29T07:17:38Z"
+          "newest": "2026-10-29T17:47:21Z"
         }
       },
       "samples": [
