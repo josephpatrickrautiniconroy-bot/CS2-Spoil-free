@@ -478,6 +478,7 @@ span.editable{display:inline-block}
 .dlg::backdrop{background:rgba(0,0,0,.7)}
 .dlg-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line)}
 .dlg-title{font:800 28px/1.1 var(--display);text-transform:uppercase}
+.sync-code{font:700 1.5rem/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em;margin:0}
 .dlg-body{padding:18px 22px;display:flex;flex-direction:column;gap:16px;overflow:auto;min-height:0}
 .dlg-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:14px 22px;border-top:1px solid var(--line)}
 .icon-close{width:40px;height:40px;flex-shrink:0;background:transparent;border:1px solid var(--line2);border-radius:4px;color:var(--fg);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
@@ -617,8 +618,12 @@ function ago(ts) {
 /* ---------- per-visitor storage (watched, revealed rounds, positions) ---------- */
 const store = {
   get(k, d) { try { const v = localStorage.getItem('sf:' + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
-  set(k, v) { try { localStorage.setItem('sf:' + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
+  set(k, v) { if (SYNC_KEYS[k]) { try { syncNote(k, this.get(k, {}), v); } catch (e) { /* sync is extra */ } } this.put(k, v); },
+  put(k, v) { try { localStorage.setItem('sf:' + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
 };
+// What "Sync my devices" shares, and how deep each one goes: watched[mid], pins[kind][id] and so on.
+// Player settings (speed, volume, side panel) stay per device.
+const SYNC_KEYS = { watched: 1, cw: 1, pos: 1, revealed: 1, pins: 2 };
 
 /* ---------- draft storage for edit mode (IndexedDB holds pictures comfortably) ---------- */
 const idb = {
@@ -692,7 +697,7 @@ function normalize(d) {
     name: str(s.name) || 'Spoiler-Free CS2', heroText: str(s.heroText), howTitle: str(s.howTitle) || 'How spoiler-free works',
     how: arr(s.how).length ? arr(s.how).map(x => ({ title: str(x && x.title), text: str(x && x.text) })) : clone(DEFAULT_HOW),
     footer: str(s.footer), featuredId: str(s.featuredId), example: !!s.example,
-    firebase: { apiKey: str((s.firebase || {}).apiKey), databaseURL: str((s.firebase || {}).databaseURL).replace(/\/+$/, '') }
+    firebase: { apiKey: str((s.firebase || {}).apiKey), databaseURL: str((s.firebase || {}).databaseURL).replace(/\/+$/, ''), sync: (s.firebase || {}).sync !== false }
   };
   const teams = arr(d.teams).filter(x => x && x.id).map(x => ({ id: str(x.id), name: str(x.name), logo: str(x.logo), logoDark: str(x.logoDark), aliases: arr(x.aliases).map(str).filter(Boolean) }));
   const tournaments = arr(d.tournaments).filter(t => t && t.id).map(t => ({
@@ -1289,6 +1294,219 @@ function rateBox(m) {
     status);
 }
 
+/* ---------- sync across devices ----------
+   Optional. "Sync my devices" gives the visitor a private sync code, and opening its link on another device
+   shares the watched list, pins, Continue watching, map positions and opened rounds between them.
+   There are no accounts: the code is the only key. It's kept in the same Firebase database as the ratings,
+   under sync/<code>, and the rules (ratings/database.rules.json) don't let anyone list the codes.
+   Each entry (one watched match, one pin, one position) carries the time it last changed and the newer one wins,
+   so two devices used at once don't undo each other. A removed entry is kept as a blank with its time,
+   so the removal reaches the other devices too. Nothing synced says how a match went.
+   Off until site.firebase is set, or with "sync": false in site.firebase. */
+const SYNC_ABC = 'abcdefghjkmnpqrstuvwxyz23456789';
+const SYNC_EVERY = 90000;
+const syncReady = () => ratingsReady() && fb().sync !== false && !editing();
+const syncCode = () => { const c = str(store.get('syncCode', '')); return /^[a-z0-9]{16,40}$/.test(c) ? c : ''; };
+const cleanCode = s => str(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+const showCode = c => c.match(/.{1,4}/g).join('-');
+let syncOut = {}; // entry -> { t, v } waiting to be sent
+let syncTimer = null, syncLast = 0, syncErr = false;
+function newSyncCode() {
+  const b = crypto.getRandomValues(new Uint8Array(16));
+  return Array.from(b, x => SYNC_ABC[x % SYNC_ABC.length]).join('');
+}
+// Firebase keys can't hold . $ # [ ] /, so each part is URL-encoded (with dots too) and the parts are joined by |.
+const syncKey = parts => parts.map(x => encodeURIComponent(x).replace(/\./g, '%2E')).join('|');
+const syncParts = key => key.split('|').map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
+function syncFlat(k, v) {
+  const out = {};
+  const walk = (o, path, depth) => {
+    if (!o || typeof o !== 'object' || Array.isArray(o)) return;
+    for (const [x, y] of Object.entries(o)) {
+      if (depth > 1) walk(y, path.concat(x), depth - 1);
+      else if (y !== undefined && y !== null) out[syncKey(path.concat(x))] = JSON.stringify(y);
+    }
+  };
+  walk(v, [k], SYNC_KEYS[k]);
+  return out;
+}
+const syncLocal = () => Object.keys(SYNC_KEYS).reduce((o, k) => Object.assign(o, syncFlat(k, store.get(k, {}))), {});
+function syncNote(k, before, after) {
+  if (!syncCode() || !syncReady()) return;
+  const a = syncFlat(k, before), b = syncFlat(k, after), meta = store.get('syncMeta', {}), now = Date.now();
+  let any = false;
+  for (const x of new Set(Object.keys(a).concat(Object.keys(b)))) {
+    if (a[x] === b[x]) continue;
+    meta[x] = now; syncOut[x] = x in b ? { t: now, v: b[x] } : { t: now };
+    any = true;
+  }
+  if (!any) return;
+  store.put('syncMeta', meta);
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(() => syncPush().catch(() => {}), 4000);
+}
+const syncUrl = (c, tk) => fb().databaseURL + '/sync/' + c + '/e.json?auth=' + encodeURIComponent(tk.id);
+async function syncPush(keepalive) {
+  clearTimeout(syncTimer);
+  const c = syncCode(), out = syncOut;
+  if (!c || !Object.keys(out).length) return;
+  syncOut = {};
+  try {
+    const tk = await fbAuth();
+    const r = await fetch(syncUrl(c, tk), { method: 'PATCH', body: JSON.stringify(out), keepalive: !!keepalive });
+    if (!r.ok) throw new Error('sync ' + r.status);
+    syncLast = Date.now(); syncErr = false;
+  } catch (e) {
+    syncOut = Object.assign(out, syncOut); // keep them for the next try, without undoing newer changes
+    syncErr = true;
+    throw e;
+  }
+}
+// Applies what the other devices changed, then sends whatever this device has that the database doesn't.
+async function syncPull() {
+  const c = syncCode();
+  if (!c || !syncReady()) return false;
+  try {
+    const tk = await fbAuth();
+    const r = await fetch(syncUrl(c, tk));
+    if (!r.ok) throw new Error('sync ' + r.status);
+    const remote = (await r.json()) || {};
+    const meta = store.get('syncMeta', {}), objs = {};
+    let changed = false;
+    for (const [x, e] of Object.entries(remote)) {
+      const t = e && +e.t;
+      if (!t || t <= (meta[x] || 0) || (syncOut[x] && syncOut[x].t >= t)) continue;
+      const parts = syncParts(x), k = parts[0];
+      if (!SYNC_KEYS[k] || parts.length !== SYNC_KEYS[k] + 1) continue;
+      let v;
+      try { v = typeof e.v === 'string' ? JSON.parse(e.v) : undefined; } catch (err) { continue; }
+      const o = objs[k] || (objs[k] = store.get(k, {}));
+      let node = o;
+      for (const p of parts.slice(1, -1)) node = (node[p] && typeof node[p] === 'object') ? node[p] : (node[p] = {});
+      const leaf = parts[parts.length - 1];
+      if (v === undefined) delete node[leaf]; else node[leaf] = v;
+      meta[x] = t;
+      changed = true;
+    }
+    for (const k in objs) store.put(k, objs[k]);
+    const local = syncLocal();
+    for (const x of new Set(Object.keys(local).concat(Object.keys(meta)))) {
+      const mine = meta[x] || 1, theirs = remote[x] ? +remote[x].t || 0 : 0;
+      if (mine <= theirs || syncOut[x] || (!(x in local) && !remote[x])) continue;
+      syncOut[x] = x in local ? { t: mine, v: local[x] } : { t: mine };
+    }
+    store.put('syncMeta', meta);
+    syncLast = Date.now(); syncErr = false;
+    await syncPush();
+    // Leave a playing video alone: the match page picks the changes up next time it's opened.
+    if (changed && parseRoute().name !== 'player' && !document.querySelector('dialog[open]')) rerender();
+    return true;
+  } catch (e) { syncErr = true; return false; }
+}
+async function linkSync(code) {
+  store.put('syncCode', code);
+  syncOut = {};
+  const ok = await syncPull();
+  if (!ok) store.put('syncCode', '');
+  return ok;
+}
+function unlinkSync() { store.put('syncCode', ''); syncOut = {}; clearTimeout(syncTimer); }
+function syncLink(c) {
+  const q = new URLSearchParams(location.search);
+  q.delete('party'); q.set('sync', c);
+  return location.origin + location.pathname + '?' + q + '#/';
+}
+function openSyncDialog(offered) {
+  const dlg = $('#dlg');
+  const status = h('p', { class: 'hint', 'aria-live': 'polite' });
+  const busy = async (btn, fn) => { btn.disabled = true; try { await fn(); } finally { btn.disabled = false; } };
+  const close = h('button', { type: 'button', class: 'btn btn-outline', onClick: () => dlg.close() }, 'Close');
+  dlg.onclose = () => { dlg.onclose = null; rerender(); };
+  const c = syncCode();
+  if (offered && offered !== c) {
+    const yes = h('button', { type: 'button', class: 'btn btn-accent' }, 'Sync this device');
+    yes.addEventListener('click', () => busy(yes, async () => {
+      status.textContent = 'Linking…';
+      if (await linkSync(offered)) { toast('This device is synced'); openSyncDialog(); }
+      else status.textContent = 'That didn’t work. Check your internet connection and try again.';
+    }));
+    showDialog(dlg, 'Sync this device?', h('div', { class: 'dlg-body' },
+      h('p', {}, 'This link joins this device to sync code ' + showCode(offered) + '. Your watched matches, pins and places in matches are shared with the other devices that use it, and what’s already on this device is kept.'),
+      c ? h('p', { class: 'hint' }, 'This device is already syncing with another code. It will switch to the new one.') : null,
+      status), [h('span'), h('div', { class: 'row' }, close, yes)]);
+    return;
+  }
+  if (!c) {
+    const start = h('button', { type: 'button', class: 'btn btn-accent' }, 'Start syncing');
+    start.addEventListener('click', () => busy(start, async () => {
+      status.textContent = 'Setting up…';
+      if (await linkSync(newSyncCode())) openSyncDialog();
+      else status.textContent = 'That didn’t work. Check your internet connection and try again.';
+    }));
+    const codeIn = h('input', { id: 'sync-code', class: 'input', type: 'text', placeholder: 'e.g. abcd-efgh-jkmn-pqrs', autocomplete: 'off', spellcheck: 'false', autocapitalize: 'off' });
+    const join = h('button', { type: 'button', class: 'btn btn-outline' }, 'Use this code');
+    join.addEventListener('click', () => busy(join, async () => {
+      const v = cleanCode(codeIn.value);
+      if (v.length < 16) { status.textContent = 'A sync code has 16 letters and numbers.'; return; }
+      status.textContent = 'Linking…';
+      if (await linkSync(v)) { toast('This device is synced'); openSyncDialog(); }
+      else status.textContent = 'That didn’t work. Check the code and your internet connection.';
+    }));
+    showDialog(dlg, 'Sync my devices', h('div', { class: 'dlg-body' },
+      h('p', {}, 'Keep your watched matches, pins and places in matches the same on your phone, laptop and TV. There’s no account: you get a private code to open on your other devices.'),
+      h('div', { class: 'row' }, start),
+      field('Already have a code from another device?', codeIn), h('div', { class: 'row' }, join),
+      status), [h('span'), close]);
+    return;
+  }
+  const link = h('input', { class: 'input', type: 'text', readonly: true, value: syncLink(c), 'aria-label': 'Sync link', style: 'flex:1;min-width:0', onFocus: e => e.target.select() });
+  const copy = h('button', { type: 'button', class: 'btn btn-sm', onClick: () => {
+    const done = () => toast('Link copied. Open it on your other device.');
+    if (navigator.clipboard) navigator.clipboard.writeText(link.value).then(done, () => { link.select(); toast('Press Ctrl+C to copy the link'); });
+    else { link.select(); toast('Press Ctrl+C to copy the link'); }
+  } }, 'Copy');
+  const paint = () => { status.textContent = syncErr ? 'The last sync didn’t go through. It will try again.' : syncLast ? 'Last synced ' + ago(syncLast) + '.' : ''; };
+  const now = h('button', { type: 'button', class: 'mini-btn' }, 'Sync now');
+  now.addEventListener('click', () => busy(now, async () => { status.textContent = 'Syncing…'; await syncPull(); paint(); }));
+  const stop = h('button', { type: 'button', class: 'mini-btn', onClick: () => { unlinkSync(); toast('This device stopped syncing'); openSyncDialog(); } }, 'Stop syncing on this device');
+  const del = h('button', { type: 'button', class: 'mini-btn danger' }, 'Delete synced data');
+  del.addEventListener('click', () => busy(del, async () => {
+    dlg.onclose = null;
+    if (!(await askConfirm('Delete the copy kept for this sync code? Every device stops syncing, and each keeps what it has now.', 'Delete'))) { openSyncDialog(); return; }
+    try {
+      const tk = await fbAuth();
+      const r = await fetch(fb().databaseURL + '/sync/' + c + '.json?auth=' + encodeURIComponent(tk.id), { method: 'DELETE' });
+      if (!r.ok) throw new Error('sync ' + r.status);
+      unlinkSync(); toast('Synced data deleted');
+    } catch (e) { toast('That didn’t work. Try again in a moment.'); }
+    openSyncDialog();
+  }));
+  paint();
+  showDialog(dlg, 'Sync my devices', h('div', { class: 'dlg-body' },
+    h('p', {}, 'This device is syncing. Open this link on your other devices, or type the code there under Sync my devices.'),
+    h('p', { class: 'sync-code' }, showCode(c)),
+    h('div', { class: 'row' }, link, copy),
+    h('p', { class: 'hint' }, 'Anyone with the code can see and change your watched list, so only share it with your own devices.'),
+    status,
+    h('div', { class: 'row' }, now, stop, del)), [h('span'), close]);
+}
+function startSync() {
+  if (!syncReady()) return;
+  const offered = cleanCode(new URLSearchParams(location.search).get('sync'));
+  if (offered) {
+    const q = new URLSearchParams(location.search); q.delete('sync');
+    history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash);
+    if (/^[a-z0-9]{16,40}$/.test(offered)) openSyncDialog(offered);
+  }
+  if (!syncCode()) return;
+  syncPull();
+  setInterval(() => { if (document.visibilityState === 'visible') syncPull(); }, SYNC_EVERY);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') syncPull();
+    else syncPush(true).catch(() => {});
+  });
+}
+
 /* ---------- routing ---------- */
 function parseRoute() {
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch (e) { return x; } });
@@ -1356,6 +1574,7 @@ function renderFooter() {
     // Liquipedia's content is CC BY-SA, so its use is credited whenever the watcher's data is on the page.
     AUTO && AUTO.source ? h('span', { class: 'footer-text' }, 'Match data from ', h('a', { href: 'https://liquipedia.net/counterstrike/', target: '_blank', rel: 'noopener' }, 'Liquipedia'),
       ', under ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/3.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 3.0'), '.') : null,
+    syncReady() ? h('button', { type: 'button', class: 'text-btn', onClick: () => openSyncDialog() }, syncCode() ? 'Synced devices' : 'Sync my devices') : null,
     ratingsReady() && !editing() ? h('button', { type: 'button', class: 'text-btn', id: 'rate-toggle', onClick: () => { store.set('hideRatings', !store.get('hideRatings', false)); paintRatings(); } }, 'Hide ratings') : null));
 }
 function exampleNotice() {
@@ -3036,6 +3255,7 @@ window.addEventListener('hashchange', () => route(false));
   if (!EDIT && partyParam()) joinParty(partyParam(), false);
   route(false, true);
   loadRatings();
+  startSync();
 })();
 })();
 </script>

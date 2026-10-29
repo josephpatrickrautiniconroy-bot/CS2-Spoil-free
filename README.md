@@ -30,7 +30,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `watcher/watch.mjs`, `watcher/liquipedia.mjs`, `watcher/highlights.mjs`, `watcher/calendar.mjs` | The watcher | Nobody |
 | `calendar/` | Calendar feeds for "Add to calendar" | The watcher |
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
-| `ratings/database.rules.json` | Who can read and write ratings in Firebase | Nobody, paste it into Firebase once |
+| `ratings/database.rules.json` | Who can read and write ratings and synced devices in Firebase | Nobody, paste it into Firebase once |
 | `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
 
@@ -88,6 +88,18 @@ To set it up (about 10 minutes, free Spark plan, no card needed):
    ```
 
    These two values are meant to be public; the rules decide what visitors can do.
+
+The same setup also turns on **Sync my devices** (below).
+
+## Sync my devices
+
+A link at the bottom of every page lets a visitor keep their watched matches, pins, Continue watching, places in matches and opened rounds the same on all their devices. There's no account: pressing **Start syncing** gives them a private 16-character code and a link, and opening the link (or typing the code) on another device joins it. What each device already had is kept and merged. Player settings like speed and volume stay per device.
+
+Each change carries the time it was made and the newer one wins, so two devices used at the same time don't undo each other. Devices check for changes when the page opens, when it comes back to the front, and every 90 seconds. A video that's playing isn't interrupted; the match page picks changes up the next time it's opened.
+
+It uses the Firebase database set up for ratings, under `sync/<code>`. The rules in `ratings/database.rules.json` only let a visitor read a code they already know, and nobody can list the codes. **Delete synced data** removes a code's copy for good. Nothing synced mentions scores or results.
+
+It stays hidden until `site.firebase` is set. To keep ratings but turn sync off, add `"sync": false` inside `site.firebase`.
 
 ## Short versions and speed
 
