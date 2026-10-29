@@ -5130,7 +5130,7 @@
       "b": "lp-furia",
       "bo": 3,
       "date": "29 Oct",
-      "time": "2026-10-29T17:00:00.000Z"
+      "time": "2026-10-29T15:20:00.000Z"
     },
     {
       "id": "lp-3379025bc8",
@@ -11969,7 +11969,7 @@
           "start": "",
           "end": "",
           "name": "Dust II",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
@@ -11979,21 +11979,21 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Cache",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Nuke",
           "notPlayed": false
         }
       ]
@@ -12024,6 +12024,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-29T14:03:44.539Z",
+  "updatedAt": "2026-10-29T15:55:15.141Z",
   "featured": "pgl-masters-bucharest-2026"
 }
