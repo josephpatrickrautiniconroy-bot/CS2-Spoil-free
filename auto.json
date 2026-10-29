@@ -5145,6 +5145,20 @@
       "bo": 3,
       "date": "30 Oct",
       "time": "2026-10-30T12:00:00.000Z"
+    },
+    {
+      "id": "lp-7023cf824f",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Semifinals",
+      "roundOrder": 7,
+      "a": "lp-furia",
+      "b": "lp-mouz",
+      "bo": 3,
+      "date": "30 Oct",
+      "time": "2026-10-30T15:00:00.000Z"
     }
   ],
   "videos": {
@@ -11994,7 +12008,7 @@
           "start": "",
           "end": "",
           "name": "Nuke",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
@@ -12022,8 +12036,33 @@
           "notPlayed": false
         }
       ]
+    },
+    "lp-7023cf824f": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-29T16:55:14.538Z",
+  "updatedAt": "2026-10-29T17:50:44.180Z",
   "featured": "pgl-masters-bucharest-2026"
 }
