@@ -213,7 +213,10 @@ function buildTournament(tc, pages, teamOf) {
         const mid = 'lp-' + shortHash(tc.page + '|' + m.page + '|' + m.container + '|' + m.key);
         const a = teamOf(m.a), b = teamOf(m.b);
         const bo = m.bo || (/grand\s*final/i.test(round) ? 5 : 3);
-        matches.push({ id: mid, tournamentId: id, tournament: name, stage, stageOrder: si, round, roundOrder, a: a.id, b: b.id, bo, date: shortDate(m.date), time: m.date || '' });
+        const row = { id: mid, tournamentId: id, tournament: name, stage, stageOrder: si, round, roundOrder, a: a.id, b: b.id, bo, date: shortDate(m.date), time: m.date || '' };
+        // A match on a stage subpage keeps that page, so "Show me the result" can open it.
+        if (m.page && m.page !== tc.page) row.page = m.page;
+        matches.push(row);
 
         // Map slots: the video and start time from Liquipedia, and an end time where the next
         // map in the same video begins. Older pages only link one video for the whole series.
