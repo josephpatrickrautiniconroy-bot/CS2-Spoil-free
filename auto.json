@@ -5102,7 +5102,7 @@
       "b": "lp-natus-vincere",
       "bo": 3,
       "date": "29 Oct",
-      "time": "2026-10-29T11:00:00.000Z"
+      "time": "2026-10-29T10:15:00.000Z"
     },
     {
       "id": "lp-e71bfb3abd",
@@ -5116,7 +5116,7 @@
       "b": "lp-aurora-gaming",
       "bo": 3,
       "date": "29 Oct",
-      "time": "2026-10-29T14:00:00.000Z"
+      "time": "2026-10-29T13:25:00.000Z"
     },
     {
       "id": "lp-00344f41cc",
@@ -5130,7 +5130,35 @@
       "b": "lp-furia",
       "bo": 3,
       "date": "29 Oct",
-      "time": "2026-10-29T17:00:00.000Z"
+      "time": "2026-10-29T15:20:00.000Z"
+    },
+    {
+      "id": "lp-3379025bc8",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Semifinals",
+      "roundOrder": 7,
+      "a": "lp-team-vitality",
+      "b": "lp-nemiga-gaming",
+      "bo": 3,
+      "date": "30 Oct",
+      "time": "2026-10-30T12:00:00.000Z"
+    },
+    {
+      "id": "lp-7023cf824f",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Semifinals",
+      "roundOrder": 7,
+      "a": "lp-furia",
+      "b": "lp-mouz",
+      "bo": 3,
+      "date": "30 Oct",
+      "time": "2026-10-30T15:00:00.000Z"
     }
   ],
   "videos": {
@@ -11887,49 +11915,49 @@
     "lp-1aad385709": {
       "maps": [
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/7k767k3bYFE",
+          "start": "31",
+          "end": "3053",
+          "name": "Nuke",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/7k767k3bYFE",
+          "start": "3053",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
+          "name": "Ancient",
+          "notPlayed": true
         }
       ]
     },
     "lp-7ef0c2168d": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/BEVTiiowoMA",
+          "start": "36",
+          "end": "2423",
+          "name": "Cache",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
+          "video": "https://youtu.be/BEVTiiowoMA",
+          "start": "2423",
+          "end": "5336",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/BEVTiiowoMA",
+          "start": "5336",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         }
       ]
@@ -11937,6 +11965,56 @@
     "lp-e71bfb3abd": {
       "maps": [
         {
+          "video": "https://youtu.be/bbNscBSqFng",
+          "start": "32",
+          "end": "2488",
+          "name": "Mirage",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/bbNscBSqFng",
+          "start": "2488",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Dust II",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-00344f41cc": {
+      "maps": [
+        {
+          "video": "https://youtu.be/l93dicm_y8s",
+          "start": "35",
+          "end": "3861",
+          "name": "Dust II",
+          "notPlayed": false
+        },
+        {
+          "video": "https://youtu.be/l93dicm_y8s",
+          "start": "3861",
+          "end": "",
+          "name": "Cache",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "Nuke",
+          "notPlayed": true
+        }
+      ]
+    },
+    "lp-3379025bc8": {
+      "maps": [
+        {
           "video": "",
           "start": "",
           "end": "",
@@ -11959,7 +12037,7 @@
         }
       ]
     },
-    "lp-00344f41cc": {
+    "lp-7023cf824f": {
       "maps": [
         {
           "video": "",
@@ -11985,6 +12063,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-29T02:49:26.722Z",
+  "updatedAt": "2026-10-29T18:51:09.760Z",
   "featured": "pgl-masters-bucharest-2026"
 }

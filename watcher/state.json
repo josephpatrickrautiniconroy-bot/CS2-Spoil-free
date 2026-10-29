@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3464195,
+      "revid": 3464475,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-29T02:49:26.722Z",
-      "result": "37 matches, 76 map videos"
+      "fetchedAt": "2026-10-29T18:51:09.760Z",
+      "result": "39 matches, 85 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -54,10 +54,10 @@
       "result": "4 matches, 0 map videos"
     },
     "PGL/2026/Singapore": {
-      "revid": 3464184,
+      "revid": 3464274,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-29T00:54:35.452Z",
+      "fetchedAt": "2026-10-29T14:03:44.539Z",
       "result": "coming up, no matches drawn yet"
     },
     "BLAST/Bounty/2026/Summer": {
@@ -1926,6 +1926,26 @@
       "ok": true,
       "seconds": 6986,
       "checkedAt": "2026-10-29T02:49:26.722Z"
+    },
+    "7k767k3bYFE": {
+      "ok": true,
+      "seconds": 5988,
+      "checkedAt": "2026-10-29T11:44:43.508Z"
+    },
+    "BEVTiiowoMA": {
+      "ok": true,
+      "seconds": 7701,
+      "checkedAt": "2026-10-29T16:55:14.538Z"
+    },
+    "bbNscBSqFng": {
+      "ok": true,
+      "seconds": 4496,
+      "checkedAt": "2026-10-29T16:55:14.538Z"
+    },
+    "l93dicm_y8s": {
+      "ok": true,
+      "seconds": 6209,
+      "checkedAt": "2026-10-29T18:51:09.760Z"
     }
   },
   "parserVersion": 6,
@@ -3669,7 +3689,7 @@
       "YaLLa Compass/2026/Summer",
       "YaLLa Compass/2026/UAE"
     ],
-    "checkedAt": "2026-10-29T06:54:51.604Z",
+    "checkedAt": "2026-10-29T19:51:10.326Z",
     "key": "{\"categories\":[\"Category:S-Tier Tournaments\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\",\"exclude\":[\"FISSURE/\"]}"
   },
   "images": {
@@ -3929,31 +3949,31 @@
       "@BLASTPremier": "UU9k--dE_UE0Faxzgb_DDkYQ",
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww"
     },
-    "checkedAt": "2026-10-29T05:39:13.870Z",
+    "checkedAt": "2026-10-29T20:45:11.228Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 49,
+      "matchesLookedFor": 51,
       "matchesFrom": "2026-10-09",
       "matchesTo": "2026-11-11",
       "found": 0,
       "channels": {
         "@ESLCS": {
-          "uploads": 500,
+          "uploads": 200,
           "sayHighlights": 0,
-          "oldest": "2026-04-16T20:45:01Z",
-          "newest": "2026-10-28T20:52:55Z"
+          "oldest": "2026-06-20T20:49:44Z",
+          "newest": "2026-10-29T17:45:19Z"
         },
         "@BLASTPremier": {
-          "uploads": 500,
-          "sayHighlights": 19,
-          "oldest": "2026-04-12T14:00:23Z",
+          "uploads": 200,
+          "sayHighlights": 7,
+          "oldest": "2026-08-02T14:22:31Z",
           "newest": "2026-10-23T16:17:23Z"
         },
         "@pgl": {
-          "uploads": 500,
-          "sayHighlights": 1,
-          "oldest": "2025-03-09T08:08:25Z",
-          "newest": "2026-10-29T01:28:32Z"
+          "uploads": 200,
+          "sayHighlights": 0,
+          "oldest": "2025-11-21T22:19:53Z",
+          "newest": "2026-10-29T17:47:21Z"
         }
       },
       "samples": [
@@ -3991,71 +4011,6 @@
           "channel": "@BLASTPremier",
           "at": "2026-08-02T14:49",
           "title": "@Team<team>CS vs @mousesports 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2 GRAND FINAL"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-08-01T17:28",
-          "title": "​@Astralisgg vs @mousesports 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-08-01T13:40",
-          "title": "@Team<team>CS vs @FaZeEsports 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-07-31T20:27",
-          "title": "@paingamingbr vs @Astralisgg 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-07-31T15:39",
-          "title": "@FaZeClan vs @1<team> 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-07-30T19:07",
-          "title": "@Team3DMAX vs @mousesports 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-07-30T14:54",
-          "title": "@Team<team>CS vs @Team<team>CS 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-05-03T21:13",
-          "title": "@Team<team>CS vs @<team>CounterStrike - 3 Minute Highlights - BLAST Rivals Fort Worth GRAND FINAL"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-05-02T22:12",
-          "title": "@Team<team>CS vs @GamerLegion - 3 Minute Highlights - BLAST Rivals Fort Worth 2026"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-05-02T19:32",
-          "title": "@<team>CounterStrike vs @FaZeEsports - 3 Minute Highlights - BLAST Rivals Fort Worth 2026"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-05-02T02:25",
-          "title": "@Astralisgg vs @GamerLegion - 3 Minute Highlights - BLAST Rivals Fort Worth 2026"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-05-01T23:16",
-          "title": "@FaZeEsports vs @G2esports - 3 Minute Highlights - BLAST Rivals Fort Worth 2026"
-        },
-        {
-          "channel": "@BLASTPremier",
-          "at": "2026-05-01T00:59",
-          "title": "w0nderful AWP shots? Add them to the highlight reel 😏"
-        },
-        {
-          "channel": "@pgl",
-          "at": "2025-06-24T07:19",
-          "title": "Guess the Highlight - Part 1 [PGL Wallachia Season 5]"
         }
       ]
     }
