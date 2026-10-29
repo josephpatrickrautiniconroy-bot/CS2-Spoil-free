@@ -396,12 +396,13 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .mwrap.closed .reopen{display:inline-flex}
 .cover{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:radial-gradient(70% 60% at 50% 40%,#1a1612,#0a0a0b);color:var(--fg);cursor:pointer}
 .cover.clear{background:transparent}
+.cover{touch-action:manipulation}
 .cover-eyebrow{font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .cover-title{font:900 clamp(1.7rem,4vw,3rem)/.95 var(--display);text-transform:uppercase;max-width:20em;font-variant-numeric:tabular-nums}
 .cover-sub{color:var(--soft);max-width:34em;font-size:15px}
 .cover .tlogo{width:clamp(48px,7vw,84px);height:clamp(48px,7vw,84px)}
 .cover-teams{display:flex;align-items:center;gap:16px}
-.big-play{width:76px;height:76px;border-radius:50%;background:var(--orange);color:var(--on-orange);border:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.big-play{flex:none;width:76px;height:76px;border-radius:50%;background:var(--orange);color:var(--on-orange);border:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
 .big-play:hover{background:var(--orange-hover)}
 .big-play .ic{margin-left:5px}
 .resume{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 16px;color:var(--soft);font-size:14px}
@@ -558,11 +559,64 @@ span.editable{display:inline-block}
 .icon-close{width:40px;height:40px;flex-shrink:0;background:transparent;border:1px solid var(--line2);border-radius:4px;color:var(--fg);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;background:var(--card2);color:var(--fg);border:1px solid var(--line2);border-radius:6px;padding:10px 16px;font-size:14px;font-weight:500;max-width:calc(100vw - 32px);box-shadow:0 8px 24px rgba(0,0,0,.5)}
 
+/* Phones: the iPhone has no full screen for a page element, so the player fills the window instead. */
+.player.fs-fallback{position:fixed;inset:0;z-index:70;width:100%;height:100%;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+.player.fs-fallback .video-frame{flex:1;aspect-ratio:auto}
+.player.fs-fallback .controls{position:absolute;left:0;right:0;bottom:env(safe-area-inset-bottom,0px);z-index:3;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.5));border:0;transition:opacity .25s}
+.player.idle.fs-fallback .controls{opacity:0;pointer-events:none}
+html.fs-lock,html.fs-lock body{overflow:hidden}
+html.fs-lock .tab-bar{display:none}
+/* A double tap on the left or right of the video skips 10 seconds; this shows which way. */
+.tap-skip{position:absolute;top:50%;z-index:3;transform:translateY(-50%);padding:10px 16px;border-radius:999px;background:rgba(10,10,11,.75);color:var(--fg);font:700 16px var(--body);pointer-events:none;animation:tapfade .6s ease-out forwards}
+.tap-skip.l{left:12%}
+.tap-skip.r{right:12%}
+@keyframes tapfade{0%{opacity:1}70%{opacity:1}100%{opacity:0}}
+
+/* Phones: a tab bar along the bottom takes the place of the header's links. */
+.tab-bar{display:none}
+@media (max-width:760px){
+  .tab-bar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:35;background:rgba(10,10,11,.96);border-top:1px solid var(--line);padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .tab-bar a{min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:600}
+  .tab-bar a[aria-current="page"]{color:var(--orange)}
+  .tab-bar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  body{padding-bottom:calc(56px + env(safe-area-inset-bottom,0px))}
+  .toast{bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+  .site-footer{margin-top:32px}
+  .match-title{font-size:30px;gap:8px}
+  .match-title .tlogo{width:34px;height:34px}
+  .pin-row .pin-btn{min-height:44px}
+  .map-btn{min-height:56px}
+  .stabs button{padding:16px 0}
+  .stabs .x,.mwrap.closed .reopen{display:none}
+  .mwrap.closed .side{display:flex;visibility:visible;border-top:1px solid var(--line)}
+}
 @media (max-width:640px){
   .controls{gap:0;padding:4px 6px}
-  .len-hidden,.vol,.ctl-b30,.ctl-f30,.ctl-wide{display:none}
+  .len-hidden,.vol,.ctl-wide{display:none}
   .q-menu{left:8px;right:8px;width:auto}
-  .ctl{min-width:40px}
+  .ctl{min-width:44px;height:48px;font-size:16px}
+  .ctl.ctl-play{width:52px;min-width:52px;height:52px}
+  /* Two rows: skips and play across the top, the rest below with the time on the left. */
+  .ctl-b30,.ctl-b10,.ctl-f10,.ctl-f30{flex:1 1 0}
+  .controls .spacer{flex:0 0 100%;height:0}
+  .elapsed{margin-right:auto}
+}
+/* Phones held upright: the player stays at the top while the maps and the rest scroll under it. */
+@media (max-width:760px) and (orientation:portrait) and (min-height:560px){
+  body:has(.mwrap) .site-header{position:static}
+  .mwrap .stage-col{display:contents}
+  .mwrap .player-box{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;box-shadow:0 6px 16px rgba(0,0,0,.6)}
+}
+/* Phones on their side: the header gets out of the way and the video and its controls fit the screen. */
+@media (orientation:landscape) and (max-height:500px){
+  body:has(.mwrap) .site-header{position:static}
+  body:has(.mwrap) .tab-bar{display:none}
+  body:has(.mwrap){padding-bottom:0}
+  .player{width:min(100%,calc((100dvh - 54px) * 16 / 9))}
+  .controls{flex-wrap:nowrap;padding:2px 6px}
+  .ctl{height:48px}
+  .ctl.ctl-play{width:48px;min-width:48px}
+  .len-hidden,.vol,.ctl-wide{display:none}
 }
 </style>
 </head>
@@ -606,6 +660,12 @@ span.editable{display:inline-block}
 
 <main id="app"></main>
 <footer class="site-footer" id="footer"></footer>
+<nav class="tab-bar" aria-label="Main">
+  <a href="#/" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>Home</a>
+  <a href="#/tournaments" data-nav="tournaments"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="7" height="11" rx="1"></rect><rect x="13" y="3" width="7" height="11" rx="1"></rect><path d="M4 18h16M4 21h10"></path></svg>Events</a>
+  <a href="#/collections" data-nav="collections"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"></path><circle cx="4" cy="6" r="1"></circle><circle cx="4" cy="12" r="1"></circle><circle cx="4" cy="18" r="1"></circle></svg>Collections</a>
+  <a href="#/how" data-nav="how"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"></path><circle cx="12" cy="17.5" r=".6"></circle></svg>How it works</a>
+</nav>
 
 <dialog id="dlg" class="dlg"></dialog>
 <dialog id="dlg-teams" class="dlg"></dialog>
@@ -2374,6 +2434,7 @@ function renderPlayer(app, r) {
   app.append(page);
   showSideTab(['maps', 'party', 'next'].includes(store.get('sideTab', 'maps')) ? store.get('sideTab', 'maps') : 'maps', true);
   mountPlayer(f, idx, map, { host, cover, ctl, frame });
+  requestAnimationFrame(fitSideways);
   partyRender();
   partyOnPlayer();
 }
@@ -2594,12 +2655,28 @@ function mountPlayer(f, idx, map, els) {
     updateMuteIcon(v === 0);
   });
   c.fs.addEventListener('click', toggleFullscreen);
+  // On a touch screen a tap waits a moment to see if a second follows: a double tap on the left or
+  // right third of the video skips 10 seconds (like YouTube's app), and in the middle goes full screen.
+  let touch = false, lastTap = 0, tapTimer = null;
+  els.cover.addEventListener('pointerdown', e => { touch = e.pointerType === 'touch'; });
   els.cover.addEventListener('click', e => {
     if (e.target.closest('button, a')) return;
     if (st.tapWoke) { st.tapWoke = false; return; } // a tap on hidden controls only brings them back
-    if (st.mode === 'start' || st.mode === 'paused' || st.mode === 'clear' || st.mode === 'hold' || st.mode === 'party') togglePlay();
+    const tap = () => { if (st.mode === 'start' || st.mode === 'paused' || st.mode === 'clear' || st.mode === 'hold' || st.mode === 'party') togglePlay(); };
+    if (!touch || !st.ready) return tap();
+    const r = els.cover.getBoundingClientRect(), x = (e.clientX - r.left) / r.width;
+    const side = x < 1 / 3 ? -1 : x > 2 / 3 ? 1 : 0;
+    clearTimeout(tapTimer);
+    if (Date.now() - lastTap < 300) {
+      lastTap = 0;
+      if (!side) return toggleFullscreen();
+      if (st.mode === 'clear' || st.mode === 'paused' || st.mode === 'hold') { seek(side * 10); tapSkipFlash(els.frame, side); }
+      return;
+    }
+    lastTap = Date.now();
+    tapTimer = setTimeout(tap, 300);
   });
-  els.cover.addEventListener('dblclick', e => { if (!e.target.closest('button, a')) toggleFullscreen(); });
+  els.cover.addEventListener('dblclick', e => { if (!touch && !e.target.closest('button, a')) toggleFullscreen(); });
   // In full screen the controls fade out after 3 seconds without mouse, touch or key input while the map plays.
   const player = els.frame.parentElement;
   st.wake = () => {
@@ -2853,15 +2930,38 @@ function toggleWide() {
   const b = P && P.els.ctl.wide;
   if (b) { b.setAttribute('aria-label', on ? 'Show the side panel' : 'Hide the side panel'); b.replaceChildren(icon(on ? 'narrow' : 'wide', 22)); }
 }
-function isFullscreen() { return !!(document.fullscreenElement || document.webkitFullscreenElement); }
+function isFullscreen() { return !!(document.fullscreenElement || document.webkitFullscreenElement || document.querySelector('.player.fs-fallback')); }
+function tapSkipFlash(frame, side) {
+  const old = frame.querySelector('.tap-skip');
+  if (old) old.remove();
+  const el = h('span', { class: 'tap-skip ' + (side < 0 ? 'l' : 'r'), 'aria-hidden': 'true' }, side < 0 ? '−10s' : '+10s');
+  frame.append(el);
+  setTimeout(() => el.remove(), 650);
+}
+/* iPhones can't put a page element in full screen, so there the player fills the window instead. */
+function setFsFallback(el, on) {
+  el.classList.toggle('fs-fallback', on);
+  document.documentElement.classList.toggle('fs-lock', on);
+  if (P && P.wake) P.wake();
+}
+/* Turning a phone on its side brings the whole player into view. */
+const sideways = window.matchMedia('(orientation:landscape) and (max-height:500px)');
+function fitSideways() {
+  const b = document.querySelector('.mwrap .player-box');
+  if (sideways.matches && b) b.scrollIntoView({ block: 'start' });
+}
+if (sideways.addEventListener) sideways.addEventListener('change', fitSideways);
 for (const ev of ['fullscreenchange', 'webkitfullscreenchange']) document.addEventListener(ev, () => { if (P && P.wake) P.wake(); });
 function toggleFullscreen() {
   const el = document.getElementById('player');
   if (!el) return;
   const fsEl = document.fullscreenElement || document.webkitFullscreenElement;
   if (fsEl) { const ex = document.exitFullscreen || document.webkitExitFullscreen; if (ex) { const p = ex.call(document); if (p && p.catch) p.catch(() => {}); } return; }
+  if (el.classList.contains('fs-fallback')) return setFsFallback(el, false);
   const req = el.requestFullscreen || el.webkitRequestFullscreen;
-  if (req) { const p = req.call(el); if (p && p.catch) p.catch(() => {}); }
+  if (!req) return setFsFallback(el, true);
+  const p = req.call(el);
+  if (p && p.catch) p.catch(() => setFsFallback(el, true));
 }
 function destroyPlayer() {
   if (!P) return;
@@ -2878,6 +2978,7 @@ function destroyPlayer() {
   }
   try { if (st.yt && st.yt.destroy) st.yt.destroy(); } catch (e) { /* already gone */ }
   if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {});
+  document.documentElement.classList.remove('fs-lock');
 }
 document.addEventListener('keydown', e => {
   if (P && P.wake) P.wake();
