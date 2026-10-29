@@ -5102,7 +5102,7 @@
       "b": "lp-natus-vincere",
       "bo": 3,
       "date": "29 Oct",
-      "time": "2026-10-29T11:00:00.000Z"
+      "time": "2026-10-29T10:15:00.000Z"
     },
     {
       "id": "lp-e71bfb3abd",
@@ -11905,7 +11905,7 @@
           "start": "",
           "end": "",
           "name": "Ancient",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
@@ -11915,21 +11915,21 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Cache",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         }
       ]
@@ -11985,6 +11985,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-29T08:55:13.286Z",
+  "updatedAt": "2026-10-29T10:49:51.037Z",
   "featured": "pgl-masters-bucharest-2026"
 }
