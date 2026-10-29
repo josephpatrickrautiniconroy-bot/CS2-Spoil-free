@@ -5116,7 +5116,7 @@
       "b": "lp-aurora-gaming",
       "bo": 3,
       "date": "29 Oct",
-      "time": "2026-10-29T14:00:00.000Z"
+      "time": "2026-10-29T13:25:00.000Z"
     },
     {
       "id": "lp-00344f41cc",
@@ -5131,6 +5131,20 @@
       "bo": 3,
       "date": "29 Oct",
       "time": "2026-10-29T17:00:00.000Z"
+    },
+    {
+      "id": "lp-3379025bc8",
+      "tournamentId": "pgl-masters-bucharest-2026",
+      "tournament": "PGL Masters Bucharest 2026",
+      "stage": "Playoffs",
+      "stageOrder": 1,
+      "round": "Semifinals",
+      "roundOrder": 7,
+      "a": "lp-team-vitality",
+      "b": "lp-nemiga-gaming",
+      "bo": 3,
+      "date": "30 Oct",
+      "time": "2026-10-30T12:00:00.000Z"
     }
   ],
   "videos": {
@@ -11940,21 +11954,21 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Cache",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         }
       ]
@@ -11983,8 +11997,33 @@
           "notPlayed": false
         }
       ]
+    },
+    "lp-3379025bc8": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-29T11:44:43.508Z",
+  "updatedAt": "2026-10-29T14:03:44.539Z",
   "featured": "pgl-masters-bucharest-2026"
 }
