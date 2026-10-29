@@ -27,20 +27,22 @@ export function nameForms(name) {
 }
 
 // Is this title a highlight video of a match between these two teams?
-export function titleMatches(title, formsA, formsB) {
-  if (!/highlight/i.test(title) || /#shorts?\b/i.test(title)) return false;
+// Uploads from an all-highlights channel (anyTitle) count without the word in the title.
+export function titleMatches(title, formsA, formsB, anyTitle = false) {
+  if ((!anyTitle && !/highlight/i.test(title)) || /#shorts?\b/i.test(title)) return false;
   const t = flat(title);
   return formsA.some(f => t.includes(f)) && formsB.some(f => t.includes(f));
 }
 
 // Picks a match for each upload: both teams in the title, published 0 to maxDays after the match started.
 // When a pair played more than once, the latest match before the upload wins.
-export function matchUploads(uploads, matches, teamName, maxDays = 4) {
+export function matchUploads(uploads, matches, teamName, maxDays = 4, aliases = {}, anyTitle = []) {
   const found = {};
   const forms = new Map();
   // The site's name ("NAVI") and Liquipedia's full one from the id ("lp-natus-vincere" -> "Natus Vincere").
   const formsOf = id => {
-    if (!forms.has(id)) forms.set(id, [...new Set(nameForms(teamName(id)).concat(nameForms(str(id).replace(/^lp-/, '').replace(/-/g, ' '))))]);
+    // Plus any other names from config.highlights.aliases, such as MOUZ's YouTube handle "@mousesports".
+    if (!forms.has(id)) forms.set(id, [...new Set(nameForms(teamName(id)).concat(nameForms(str(id).replace(/^lp-/, '').replace(/-/g, ' ')), arr(aliases[id]).flatMap(nameForms)))]);
     return forms.get(id);
   };
   for (const up of uploads) {
@@ -50,7 +52,7 @@ export function matchUploads(uploads, matches, teamName, maxDays = 4) {
     for (const m of matches) {
       const t = Date.parse(m.time);
       if (!t || at < t || at - t > maxDays * 24 * HOUR) continue;
-      if (!titleMatches(up.title, formsOf(m.a), formsOf(m.b))) continue;
+      if (!titleMatches(up.title, formsOf(m.a), formsOf(m.b), anyTitle.includes(up.channel))) continue;
       if (!best || t > Date.parse(best.time)) best = m;
     }
     if (best && !found[best.id]) found[best.id] = up.id;
@@ -106,17 +108,18 @@ export async function findHighlights({ config, state, auto, yt, now, log, warn }
       }
     } catch (e) { warn('Couldn’t read the uploads of ' + handle + ': ' + e.message); }
   }
-  const found = matchUploads(uploads, recent, id => teams.get(id) || '', +hc.maxDaysAfter || 4);
+  const aliases = (hc.aliases && typeof hc.aliases === 'object') ? hc.aliases : {};
+  const found = matchUploads(uploads, recent, id => teams.get(id) || '', +hc.maxDaysAfter || 4, aliases, arr(hc.anyTitle).map(str));
   Object.assign(state.highlights, found);
   const n = Object.keys(found).length;
-  hs.last = scanReport(uploads, recent, id => teams.get(id) || '', found);
+  hs.last = scanReport(uploads, recent, id => teams.get(id) || '', found, arr(hc.anyTitle).map(str));
   log('Read ' + uploads.length + ' recent uploads from ' + arr(hc.channels).join(', ') + ' and found highlights for ' + n + ' more matches.');
   return n;
 }
 
 /* What the last scan saw, saved in state.json so a scan that finds nothing can be looked into.
-   Highlight titles are kept with every known team name and anything like a score blanked out. */
-function scanReport(uploads, matches, teamName, found) {
+   Up to 10 highlight titles per channel are kept, with every known team name and anything like a score blanked out. */
+function scanReport(uploads, matches, teamName, found, anyTitle = []) {
   const teamIds = [...new Set(matches.flatMap(m => [m.a, m.b]))];
   const allForms = teamIds.flatMap(id => nameForms(teamName(id))).filter(f => f.length >= 3).sort((a, b) => b.length - a.length);
   const mask = title => {
@@ -132,7 +135,9 @@ function scanReport(uploads, matches, teamName, found) {
     if (!c.oldest || u.publishedAt < c.oldest) c.oldest = u.publishedAt;
     if (!c.newest || u.publishedAt > c.newest) c.newest = u.publishedAt;
   }
-  const samples = uploads.filter(u => /highlight/i.test(u.title)).slice(0, 25).map(u => ({ channel: u.channel, at: u.publishedAt.slice(0, 16), title: mask(u.title) }));
+  // Up to 10 per channel, so one busy channel doesn't crowd out the others.
+  const perChannel = {};
+  const samples = uploads.filter(u => (anyTitle.includes(u.channel) || /highlight/i.test(u.title)) && (perChannel[u.channel] = (perChannel[u.channel] || 0) + 1) <= 10).map(u => ({ channel: u.channel, at: u.publishedAt.slice(0, 16), title: mask(u.title) }));
   const times = matches.map(m => m.time).filter(Boolean).sort();
   return { matchesLookedFor: matches.length, matchesFrom: (times[0] || '').slice(0, 10), matchesTo: (times[times.length - 1] || '').slice(0, 10), found: Object.keys(found).length, channels, samples };
 }

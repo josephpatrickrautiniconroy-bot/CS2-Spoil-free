@@ -6,7 +6,7 @@
     "Optional per tournament: \"name\" to show a different name on the site, and \"subpages\" to list stage pages by hand (normally found automatically).",
     "Videos come from the links Liquipedia's editors add to each map, usually within a day of the match. Most point at the organisers' archive channels (ESL Archives, BLAST Premier VOD Archive, PGL VOD's).",
     "Tournaments removed from this list disappear from the site on the next run.",
-    "\"highlights\" looks for the organisers' official highlight videos on these YouTube channels, every few hours, and offers them on the site as a short version of a series. A video counts when its title says highlights and names both teams, and it came out within \"maxDaysAfter\" days of the match. Titles are never saved.",
+    "\"highlights\" looks for the organisers' official highlight videos on these YouTube channels, every few hours, and offers them on the site as a short version of a series. A video counts when its title says highlights and names both teams, and it came out within \"maxDaysAfter\" days of the match. Titles are never saved. Only BLAST posts per-match highlights (\"3 Minute Highlights\", naming teams by their YouTube handles), so \"aliases\" lists other names a team goes by there, by the team's id on the site.",
     "\"siteUrl\" is the site's address, used for the links inside the calendar feeds in calendar/."
   ],
   "tournaments": [
@@ -48,11 +48,14 @@
     "channels": [
       "@ESLCS",
       "@BLASTPremier",
-      "@pgl"
+      "@pgl",
+      "@Counter_Strike_Highlights"
     ],
     "everyHours": 3,
     "pages": 4,
     "firstPages": 10,
+    "anyTitle": ["@Counter_Strike_Highlights"],
+    "aliases": { "lp-mouz": ["mousesports"] },
     "maxDaysAfter": 4,
     "lookBackDays": 21
   }
