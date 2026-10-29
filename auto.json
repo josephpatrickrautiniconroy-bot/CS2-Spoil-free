@@ -11990,15 +11990,15 @@
     "lp-00344f41cc": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/l93dicm_y8s",
+          "start": "35",
+          "end": "3861",
           "name": "Dust II",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/l93dicm_y8s",
+          "start": "3861",
           "end": "",
           "name": "Cache",
           "notPlayed": false
@@ -12063,6 +12063,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-29T17:50:44.180Z",
+  "updatedAt": "2026-10-29T18:51:09.760Z",
   "featured": "pgl-masters-bucharest-2026"
 }
