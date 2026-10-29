@@ -48,11 +48,13 @@
     "channels": [
       "@ESLCS",
       "@BLASTPremier",
-      "@pgl"
+      "@pgl",
+      "@Counter_Strike_Highlights"
     ],
     "everyHours": 3,
     "pages": 4,
     "firstPages": 10,
+    "anyTitle": ["@Counter_Strike_Highlights"],
     "aliases": { "lp-mouz": ["mousesports"] },
     "maxDaysAfter": 4,
     "lookBackDays": 21
