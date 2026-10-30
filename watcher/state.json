@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3464848,
+      "revid": 3464904,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-30T17:55:19.486Z",
-      "result": "41 matches, 87 map videos"
+      "fetchedAt": "2026-10-30T19:48:45.093Z",
+      "result": "41 matches, 90 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -40,10 +40,10 @@
       "result": "106 matches, 202 map videos"
     },
     "Intel Extreme Masters/2026/Beijing": {
-      "revid": 3464634,
+      "revid": 3464908,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-30T10:49:07.597Z",
+      "fetchedAt": "2026-10-30T19:48:45.093Z",
       "result": "8 matches, 0 map videos"
     },
     "BLAST/Rivals/2026/Fall": {
@@ -2151,6 +2151,11 @@
       "ok": true,
       "seconds": 3565,
       "checkedAt": "2026-10-30T17:55:19.486Z"
+    },
+    "SqCRvXv7EPw": {
+      "ok": true,
+      "seconds": 8041,
+      "checkedAt": "2026-10-30T19:48:45.093Z"
     }
   },
   "parserVersion": 6,
