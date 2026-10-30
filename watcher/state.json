@@ -54,10 +54,16 @@
       "result": "4 matches, 0 map videos"
     },
     "PGL/2026/Singapore": {
-      "revid": 3464556,
-      "subpages": [],
-      "subRevids": {},
-      "fetchedAt": "2026-10-30T00:56:16.987Z",
+      "revid": 3464632,
+      "subpages": [
+        "PGL/2026/Singapore/Stage 1",
+        "PGL/2026/Singapore/Stage 3"
+      ],
+      "subRevids": {
+        "PGL/2026/Singapore/Stage 1": 3464628,
+        "PGL/2026/Singapore/Stage 3": 3464630
+      },
+      "fetchedAt": "2026-10-30T08:56:02.794Z",
       "result": "coming up, no matches drawn yet"
     },
     "BLAST/Bounty/2026/Summer": {
