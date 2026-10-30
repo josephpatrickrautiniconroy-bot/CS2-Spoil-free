@@ -12071,7 +12071,7 @@
           "start": "",
           "end": "",
           "name": "Mirage",
-          "notPlayed": false
+          "notPlayed": true
         }
       ]
     },
@@ -12101,6 +12101,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-30T12:54:51.372Z",
+  "updatedAt": "2026-10-30T14:00:32.711Z",
   "featured": "pgl-masters-bucharest-2026"
 }

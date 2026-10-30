@@ -2,10 +2,10 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3464683,
+      "revid": 3464704,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-30T12:54:51.372Z",
+      "fetchedAt": "2026-10-30T14:00:32.711Z",
       "result": "39 matches, 85 map videos"
     },
     "ESL/Pro League/Season 24": {
@@ -4145,10 +4145,10 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-30T10:49:07.597Z",
+    "checkedAt": "2026-10-30T14:00:32.711Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 21,
+      "matchesLookedFor": 20,
       "matchesFrom": "2026-10-09",
       "matchesTo": "2026-11-11",
       "found": 0,
@@ -4169,13 +4169,13 @@
           "uploads": 200,
           "sayHighlights": 0,
           "oldest": "2025-11-22T09:45:10Z",
-          "newest": "2026-10-30T10:43:43Z"
+          "newest": "2026-10-30T11:15:55Z"
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
           "sayHighlights": 38,
-          "oldest": "2026-06-13T12:00:01Z",
-          "newest": "2026-10-29T17:39:06Z"
+          "oldest": "2026-06-19T11:57:56Z",
+          "newest": "2026-10-30T12:41:12Z"
         }
       },
       "samples": [
@@ -4216,6 +4216,21 @@
         },
         {
           "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T12:41",
+          "title": "robo WHAT WAS THAT SHOT?! #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T12:28",
+          "title": "robo OUTPLAYS BOTH OPPONENTS #clutch #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T12:19",
+          "title": "khaN CLUTCHES 1v2 AGAINST <team> #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-29T17:39",
           "title": "34 HP… YEKINDAR Still Gets The Quad Kill #pgl #Bucharest #cs #cs2"
         },
@@ -4248,21 +4263,6 @@
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-29T13:14",
           "title": "QUARTER-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T13:13",
-          "title": "iM Deletes The Entire Enemy Team #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T11:56",
-          "title": "This 1v2 Clutch From jL Was Unreal #pgl #Bucharest #cs #cs2 #clutch"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T11:30",
-          "title": "They Almost Won The 2v5… jL Ran Out Of Time #pgl #Bucharest #cs #cs2"
         }
       ]
     }
