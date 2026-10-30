@@ -2156,6 +2156,11 @@
       "ok": true,
       "seconds": 8041,
       "checkedAt": "2026-10-30T19:48:45.093Z"
+    },
+    "0uJJxFswWjQ": {
+      "ok": true,
+      "seconds": 3315,
+      "checkedAt": "2026-10-30T21:40:06.282Z"
     }
   },
   "parserVersion": 6,
@@ -4160,10 +4165,10 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-30T17:55:19.486Z",
+    "checkedAt": "2026-10-30T21:40:06.282Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 20,
+      "matchesLookedFor": 19,
       "matchesFrom": "2026-10-10",
       "matchesTo": "2026-11-11",
       "found": 1,
@@ -4184,13 +4189,13 @@
           "uploads": 200,
           "sayHighlights": 0,
           "oldest": "2025-11-22T09:45:10Z",
-          "newest": "2026-10-30T11:15:55Z"
+          "newest": "2026-10-30T18:09:57Z"
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
-          "sayHighlights": 39,
-          "oldest": "2026-07-08T12:00:29Z",
-          "newest": "2026-10-30T16:58:55Z"
+          "sayHighlights": 40,
+          "oldest": "2026-07-10T12:00:22Z",
+          "newest": "2026-10-30T18:10:07Z"
         }
       },
       "samples": [
@@ -4228,6 +4233,11 @@
           "channel": "@BLASTPremier",
           "at": "2026-08-02T14:49",
           "title": "@Team<team>CS vs @mousesports 🔥 | 3 Minute Highlights - BLAST Bounty Malta 2026 Season 2 GRAND FINAL"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T18:10",
+          "title": "SEMI-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
         },
         {
           "channel": "@Counter_Strike_Highlights",
@@ -4273,11 +4283,6 @@
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-30T12:19",
           "title": "khaN CLUTCHES 1v2 AGAINST <team> #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T17:39",
-          "title": "34 HP… YEKINDAR Still Gets The Quad Kill #pgl #Bucharest #cs #cs2"
         }
       ]
     }
@@ -4320,7 +4325,8 @@
     "lp-bcb4b25560": "VNreCms3jeY",
     "lp-393ff49950": "PZw5pfxjqlk",
     "lp-e017aaea27": "DzI_fFIJLcw",
-    "lp-3379025bc8": "0kBYiZC6Amo"
+    "lp-3379025bc8": "0kBYiZC6Amo",
+    "lp-7023cf824f": "0uJJxFswWjQ"
   },
   "teamLogos": {
     "lp-fut-esports": {
