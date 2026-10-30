@@ -40,10 +40,10 @@
       "result": "106 matches, 202 map videos"
     },
     "Intel Extreme Masters/2026/Beijing": {
-      "revid": 3463987,
+      "revid": 3464634,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-28T12:54:22.825Z",
+      "fetchedAt": "2026-10-30T10:49:07.597Z",
       "result": "8 matches, 0 map videos"
     },
     "BLAST/Rivals/2026/Fall": {
@@ -54,16 +54,20 @@
       "result": "4 matches, 0 map videos"
     },
     "PGL/2026/Singapore": {
-      "revid": 3464632,
+      "revid": 3464647,
       "subpages": [
-        "PGL/2026/Singapore/Stage 1",
-        "PGL/2026/Singapore/Stage 3"
+        "PGL/2026/Singapore/Stage 3",
+        "PGL/2026/Singapore/Playoffs",
+        "PGL/2026/Singapore/Stage 2",
+        "PGL/2026/Singapore/Stage 1"
       ],
       "subRevids": {
-        "PGL/2026/Singapore/Stage 1": 3464628,
-        "PGL/2026/Singapore/Stage 3": 3464630
+        "PGL/2026/Singapore/Stage 3": 3464630,
+        "PGL/2026/Singapore/Playoffs": 3464631,
+        "PGL/2026/Singapore/Stage 2": 3464629,
+        "PGL/2026/Singapore/Stage 1": 3464628
       },
-      "fetchedAt": "2026-10-30T08:56:02.794Z",
+      "fetchedAt": "2026-10-30T10:49:07.597Z",
       "result": "coming up, no matches drawn yet"
     },
     "BLAST/Bounty/2026/Summer": {
@@ -4141,10 +4145,10 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-30T06:54:53.052Z",
+    "checkedAt": "2026-10-30T10:49:07.597Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 14,
+      "matchesLookedFor": 21,
       "matchesFrom": "2026-10-09",
       "matchesTo": "2026-11-11",
       "found": 0,
@@ -4164,8 +4168,8 @@
         "@pgl": {
           "uploads": 200,
           "sayHighlights": 0,
-          "oldest": "2025-11-21T22:19:53Z",
-          "newest": "2026-10-30T01:32:01Z"
+          "oldest": "2025-11-22T09:45:10Z",
+          "newest": "2026-10-30T10:43:43Z"
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
@@ -4218,7 +4222,7 @@
         {
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-29T17:37",
-          "title": "QUARTER-FINALS! BetBoom Team vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
+          "title": "QUARTER-FINALS! <team> Team vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
         },
         {
           "channel": "@Counter_Strike_Highlights",
@@ -4243,7 +4247,7 @@
         {
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-29T13:14",
-          "title": "QUARTER-FINALS! <team> vs NAVI - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
+          "title": "QUARTER-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
         },
         {
           "channel": "@Counter_Strike_Highlights",

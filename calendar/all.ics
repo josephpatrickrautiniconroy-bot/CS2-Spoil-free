@@ -991,6 +991,25 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:intel-extreme-masters-beijing-2026-20261102@cs2-spoiler-free
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Intel Extreme Masters Beijing 2026: Monday’s matches ready to wat
+ ch
+DESCRIPTION:Videos from Monday’s matches of Intel Extreme Masters Beijing
+  2026 should be up by now. Watch spoiler-free: https://spoilerfreecs2.gith
+ ub.io/CS2-Spoil-free/#/t/intel-extreme-masters-beijing-2026
+URL:https://spoilerfreecs2.github.io/CS2-Spoil-free/#/t/intel-extreme-maste
+ rs-beijing-2026
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Intel Extreme Masters Beijing 2026 is ready to watch
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:intel-extreme-masters-beijing-2026-20261106@cs2-spoiler-free
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261107
