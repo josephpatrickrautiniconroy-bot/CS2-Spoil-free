@@ -12053,15 +12053,15 @@
     "lp-3379025bc8": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/gZqzGpg2gH0",
+          "start": "33",
+          "end": "2920",
           "name": "Cache",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/gZqzGpg2gH0",
+          "start": "2920",
           "end": "",
           "name": "Dust II",
           "notPlayed": false
@@ -12081,26 +12081,26 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Cache",
           "notPlayed": false
         }
       ]
     }
   },
-  "updatedAt": "2026-10-30T14:00:32.711Z",
+  "updatedAt": "2026-10-30T15:52:08.744Z",
   "featured": "pgl-masters-bucharest-2026"
 }
