@@ -2,11 +2,11 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3464764,
+      "revid": 3464848,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-30T16:49:42.055Z",
-      "result": "39 matches, 87 map videos"
+      "fetchedAt": "2026-10-30T17:55:19.486Z",
+      "result": "41 matches, 87 map videos"
     },
     "ESL/Pro League/Season 24": {
       "revid": 3461311,
@@ -54,20 +54,20 @@
       "result": "4 matches, 0 map videos"
     },
     "PGL/2026/Singapore": {
-      "revid": 3464647,
+      "revid": 3464790,
       "subpages": [
-        "PGL/2026/Singapore/Stage 3",
-        "PGL/2026/Singapore/Playoffs",
+        "PGL/2026/Singapore/Stage 1",
         "PGL/2026/Singapore/Stage 2",
-        "PGL/2026/Singapore/Stage 1"
+        "PGL/2026/Singapore/Stage 3",
+        "PGL/2026/Singapore/Playoffs"
       ],
       "subRevids": {
-        "PGL/2026/Singapore/Stage 3": 3464630,
-        "PGL/2026/Singapore/Playoffs": 3464631,
+        "PGL/2026/Singapore/Stage 1": 3464628,
         "PGL/2026/Singapore/Stage 2": 3464629,
-        "PGL/2026/Singapore/Stage 1": 3464628
+        "PGL/2026/Singapore/Stage 3": 3464630,
+        "PGL/2026/Singapore/Playoffs": 3464631
       },
-      "fetchedAt": "2026-10-30T10:49:07.597Z",
+      "fetchedAt": "2026-10-30T17:55:19.486Z",
       "result": "coming up, no matches drawn yet"
     },
     "BLAST/Bounty/2026/Summer": {
@@ -2146,6 +2146,11 @@
       "ok": true,
       "seconds": 5938,
       "checkedAt": "2026-10-30T15:52:08.744Z"
+    },
+    "0kBYiZC6Amo": {
+      "ok": true,
+      "seconds": 3565,
+      "checkedAt": "2026-10-30T17:55:19.486Z"
     }
   },
   "parserVersion": 6,
@@ -4150,13 +4155,13 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-30T14:00:32.711Z",
+    "checkedAt": "2026-10-30T17:55:19.486Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
       "matchesLookedFor": 20,
-      "matchesFrom": "2026-10-09",
+      "matchesFrom": "2026-10-10",
       "matchesTo": "2026-11-11",
-      "found": 0,
+      "found": 1,
       "channels": {
         "@ESLCS": {
           "uploads": 200,
@@ -4178,9 +4183,9 @@
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
-          "sayHighlights": 38,
-          "oldest": "2026-06-19T11:57:56Z",
-          "newest": "2026-10-30T12:41:12Z"
+          "sayHighlights": 39,
+          "oldest": "2026-07-08T12:00:29Z",
+          "newest": "2026-10-30T16:58:55Z"
         }
       },
       "samples": [
@@ -4221,6 +4226,36 @@
         },
         {
           "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T16:58",
+          "title": "torzsi WITH SOME BEAUTIFUL AWP SHOTS #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T16:24",
+          "title": "PR FINDS THE PERFECT MOMENT TO KNIFE #knife #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T15:53",
+          "title": "<team> ARE JUST MESSING AROUND #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T14:18",
+          "title": "mezii WHAT A QUAD KILL! #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T14:09",
+          "title": "SEMI-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-30T14:02",
+          "title": "flameZ WAS LANDING HEADSHOTS BUT khaN HIT BACK #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-30T12:41",
           "title": "robo WHAT WAS THAT SHOT?! #pgl #Bucharest #cs #cs2"
         },
@@ -4238,36 +4273,6 @@
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-29T17:39",
           "title": "34 HP… YEKINDAR Still Gets The Quad Kill #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T17:37",
-          "title": "QUARTER-FINALS! <team> Team vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T16:24",
-          "title": "zorte Pulls Off A Huge Quad Kill With The AWP #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T15:12",
-          "title": "QUARTER-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T15:03",
-          "title": "torzsi Pulls Off A Huge Quad Kill With The AWP #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T14:42",
-          "title": "xertioN Turns A Solo Site Defense Into A Triple Kill #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-29T13:14",
-          "title": "QUARTER-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
         }
       ]
     }
@@ -4309,7 +4314,8 @@
     "lp-65a3186140": "AOO33S4a10I",
     "lp-bcb4b25560": "VNreCms3jeY",
     "lp-393ff49950": "PZw5pfxjqlk",
-    "lp-e017aaea27": "DzI_fFIJLcw"
+    "lp-e017aaea27": "DzI_fFIJLcw",
+    "lp-3379025bc8": "0kBYiZC6Amo"
   },
   "teamLogos": {
     "lp-fut-esports": {
