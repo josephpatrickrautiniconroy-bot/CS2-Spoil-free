@@ -26,7 +26,11 @@
     ],
     "footer": "Videos are played from YouTube.",
     "featuredId": "",
-    "example": false
+    "example": false,
+    "firebase": {
+      "apiKey": "AIzaSyAm1M2gGfYOvipzRtqhN37OxcnjuYKapnQ",
+      "databaseURL": "https://cs2spoilerfree-default-rtdb.firebaseio.com"
+    }
   },
   "teams": [],
   "tournaments": []
