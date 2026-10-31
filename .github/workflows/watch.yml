@@ -79,6 +79,8 @@ jobs:
           if [ -d tools ]; then cp -r tools _site/; fi
           if [ -d calendar ]; then cp -r calendar _site/; fi
           if [ -d vendor ]; then cp -r vendor _site/; fi
+          # A real address for every event, team and match, and a sitemap (watcher/pages.mjs).
+          node watcher/pages.mjs _site
 
       - name: Set up GitHub Pages
         if: steps.save.outputs.site_changed == 'true' || github.event_name != 'schedule'
