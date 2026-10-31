@@ -2171,6 +2171,11 @@
       "ok": true,
       "seconds": 3235,
       "checkedAt": "2026-10-31T11:37:54.488Z"
+    },
+    "9Vut-wBOQDs": {
+      "ok": true,
+      "seconds": 4822,
+      "checkedAt": "2026-10-31T18:09:30.442Z"
     }
   },
   "parserVersion": 6,
@@ -4175,19 +4180,19 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-31T14:38:27.266Z",
+    "checkedAt": "2026-10-31T18:09:30.442Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 16,
-      "matchesFrom": "2026-10-10",
+      "matchesLookedFor": 15,
+      "matchesFrom": "2026-10-11",
       "matchesTo": "2026-11-11",
-      "found": 0,
+      "found": 1,
       "channels": {
         "@ESLCS": {
           "uploads": 200,
           "sayHighlights": 0,
-          "oldest": "2026-06-20T20:49:44Z",
-          "newest": "2026-10-29T17:45:19Z"
+          "oldest": "2026-06-20T21:00:35Z",
+          "newest": "2026-10-31T16:00:16Z"
         },
         "@BLASTPremier": {
           "uploads": 200,
@@ -4198,14 +4203,14 @@
         "@pgl": {
           "uploads": 200,
           "sayHighlights": 0,
-          "oldest": "2025-11-23T11:46:34Z",
-          "newest": "2026-10-31T11:45:08Z"
+          "oldest": "2025-12-08T01:58:39Z",
+          "newest": "2026-10-31T17:07:55Z"
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
           "sayHighlights": 41,
-          "oldest": "2026-07-31T12:00:08Z",
-          "newest": "2026-10-31T14:34:41Z"
+          "oldest": "2026-08-07T12:00:16Z",
+          "newest": "2026-10-31T15:58:07Z"
         }
       },
       "samples": [
@@ -4246,6 +4251,31 @@
         },
         {
           "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T15:58",
+          "title": "GRAND FINAL! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T15:53",
+          "title": "Best Moments of PGL Masters Bucharest 2026 Playoffs"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T15:51",
+          "title": "Best Moments of PGL Masters Bucharest 2026 Playoffs in 3 min"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T15:31",
+          "title": "khaN REFUSES to Fall and Shuts Down <team> in a 1v3 #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T15:16",
+          "title": "yuurih SAVES YEKINDAR From an Embarrassing Knife Kill #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-31T14:34",
           "title": "YEKINDAR Turns the Bomb Into a DEADLY Trap for <team> #pgl #Bucharest #cs #cs2"
         },
@@ -4268,31 +4298,6 @@
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-31T09:53",
           "title": "DECIDER MATCH FOR 3rd PLACE! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-31T09:43",
-          "title": "jL Reads the <team> PUSH and Deletes the Entire Squad #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-31T09:24",
-          "title": "torzsi Shuts Down <team> Push With DEADLY AWP Shots #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-31T08:44",
-          "title": "FOUR Kills From mezii to Steal the IMPOSSIBLE Round #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-31T08:22",
-          "title": "<team> Had No Answer for SPINX on the GALIL #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-30T18:10",
-          "title": "SEMI-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
         }
       ]
     }
@@ -4337,7 +4342,8 @@
     "lp-e017aaea27": "DzI_fFIJLcw",
     "lp-3379025bc8": "0kBYiZC6Amo",
     "lp-7023cf824f": "0uJJxFswWjQ",
-    "lp-9ce284b0fe": "9I-KnGe4tHg"
+    "lp-9ce284b0fe": "9I-KnGe4tHg",
+    "lp-9cc996dbcd": "9Vut-wBOQDs"
   },
   "teamLogos": {
     "lp-fut-esports": {
