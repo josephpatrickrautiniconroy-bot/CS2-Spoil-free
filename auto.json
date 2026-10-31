@@ -12133,15 +12133,15 @@
     "lp-9ce284b0fe": {
       "maps": [
         {
-          "video": "",
-          "start": "",
-          "end": "",
+          "video": "https://youtu.be/qriZVRUZu20",
+          "start": "26",
+          "end": "2531",
           "name": "Nuke",
           "notPlayed": false
         },
         {
-          "video": "",
-          "start": "",
+          "video": "https://youtu.be/qriZVRUZu20",
+          "start": "2531",
           "end": "",
           "name": "Inferno",
           "notPlayed": false
@@ -12153,7 +12153,8 @@
           "name": "Mirage",
           "notPlayed": true
         }
-      ]
+      ],
+      "highlight": "https://youtu.be/9I-KnGe4tHg"
     },
     "lp-9cc996dbcd": {
       "maps": [
@@ -12161,40 +12162,40 @@
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Ancient",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Dust II",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Cache",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Mirage",
           "notPlayed": false
         },
         {
           "video": "",
           "start": "",
           "end": "",
-          "name": "",
+          "name": "Nuke",
           "notPlayed": false
         }
       ]
     }
   },
-  "updatedAt": "2026-10-31T10:38:54.858Z",
+  "updatedAt": "2026-10-31T11:37:54.488Z",
   "featured": "pgl-masters-bucharest-2026"
 }
