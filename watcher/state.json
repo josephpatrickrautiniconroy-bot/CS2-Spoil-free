@@ -4165,13 +4165,13 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-30T21:40:06.282Z",
+    "checkedAt": "2026-10-31T00:58:10.557Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 19,
+      "matchesLookedFor": 18,
       "matchesFrom": "2026-10-10",
       "matchesTo": "2026-11-11",
-      "found": 1,
+      "found": 0,
       "channels": {
         "@ESLCS": {
           "uploads": 200,
@@ -4189,7 +4189,7 @@
           "uploads": 200,
           "sayHighlights": 0,
           "oldest": "2025-11-22T09:45:10Z",
-          "newest": "2026-10-30T18:09:57Z"
+          "newest": "2026-10-30T22:37:06Z"
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
