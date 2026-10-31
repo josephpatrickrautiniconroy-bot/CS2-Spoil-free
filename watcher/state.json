@@ -3919,7 +3919,7 @@
       "YaLLa Compass/2026/Summer",
       "YaLLa Compass/2026/UAE"
     ],
-    "checkedAt": "2026-10-31T08:45:32.218Z",
+    "checkedAt": "2026-10-31T21:37:12.648Z",
     "key": "{\"categories\":[\"Category:S-Tier Tournaments\"],\"from\":\"2026-06-01\",\"to\":\"2027-12-31\",\"exclude\":[\"FISSURE/\"]}"
   },
   "images": {
@@ -4180,13 +4180,13 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-31T18:09:30.442Z",
+    "checkedAt": "2026-10-31T21:37:12.648Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 15,
+      "matchesLookedFor": 14,
       "matchesFrom": "2026-10-11",
       "matchesTo": "2026-11-11",
-      "found": 1,
+      "found": 0,
       "channels": {
         "@ESLCS": {
           "uploads": 200,
@@ -4203,8 +4203,8 @@
         "@pgl": {
           "uploads": 200,
           "sayHighlights": 0,
-          "oldest": "2025-12-08T01:58:39Z",
-          "newest": "2026-10-31T17:07:55Z"
+          "oldest": "2025-12-20T20:18:23Z",
+          "newest": "2026-10-31T20:45:17Z"
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
@@ -4252,7 +4252,7 @@
         {
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-31T15:58",
-          "title": "GRAND FINAL! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
+          "title": "GRAND FINAL! Nemiga vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
         },
         {
           "channel": "@Counter_Strike_Highlights",
@@ -4277,7 +4277,7 @@
         {
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-31T14:34",
-          "title": "YEKINDAR Turns the Bomb Into a DEADLY Trap for <team> #pgl #Bucharest #cs #cs2"
+          "title": "YEKINDAR Turns the Bomb Into a DEADLY Trap for Nemiga #pgl #Bucharest #cs #cs2"
         },
         {
           "channel": "@Counter_Strike_Highlights",
