@@ -378,6 +378,18 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .stage-tab[aria-current="page"]{color:var(--fg);box-shadow:inset 0 -3px 0 var(--orange)}
 .stage-tab.add{color:var(--edit);border:2px dashed var(--edit);margin-block:4px;font-size:17px}
 .stage-body{padding-block:28px 48px;display:flex;flex-direction:column;gap:36px}
+/* Team pages */
+.team-head{display:flex;align-items:center;gap:16px}
+.team-head .tlogo{width:72px;height:72px;font-size:20px}
+.team-eps{padding-left:0}
+.team-eps .sh a{color:var(--fg);text-decoration:none}
+.team-eps .sh a:hover{color:var(--orange)}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));gap:10px}
+.team-card{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:8px;background:var(--card);border:1px solid var(--line);color:var(--fg);text-decoration:none;min-width:0}
+.team-card:hover{border-color:var(--orange)}
+.team-card .tlogo{width:40px;height:40px;font-size:12px}
+.team-card b{display:block;font-weight:700;overflow-wrap:anywhere}
+.team-card span{font-size:13px;color:var(--muted)}
 .section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px}
 .stage-meta{color:var(--muted)}
 .round{display:flex;flex-direction:column;gap:16px}
@@ -450,6 +462,8 @@ span.tlogo{display:inline-grid;place-items:center;font:900 15px/1 var(--display)
 .minfo{padding-block:18px 28px;display:flex;flex-direction:column;gap:12px}
 .match-title{font:900 clamp(32px,4vw,46px)/.95 var(--display);text-transform:uppercase;display:flex;align-items:center;gap:12px;flex-wrap:wrap;overflow-wrap:anywhere}
 .match-title .tlogo{width:clamp(36px,4vw,50px);height:clamp(36px,4vw,50px);font-size:14px}
+.match-title a{color:inherit;text-decoration:none}
+.match-title a:hover{color:var(--orange)}
 .match-title .vs{font:500 17px var(--body);color:var(--muted);text-transform:none;padding:0 4px}
 .mb{flex:none;width:52px;height:30px;border-radius:5px;background:var(--warm-dim) center/cover;border:1px solid var(--line);display:inline-grid;place-items:center;color:var(--muted);font-weight:700;font-size:13px}
 .meta .mb{width:40px;height:23px}
@@ -579,7 +593,7 @@ html.fs-lock .tab-bar{display:none}
 /* Phones: a tab bar along the bottom takes the place of the header's links. */
 .tab-bar{display:none}
 @media (max-width:760px){
-  .tab-bar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:35;background:rgba(10,10,11,.96);border-top:1px solid var(--line);padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .tab-bar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:35;background:rgba(10,10,11,.96);border-top:1px solid var(--line);padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
   .tab-bar a{min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:600}
   .tab-bar a[aria-current="page"]{color:var(--orange)}
   .tab-bar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -650,6 +664,7 @@ html.fs-lock .tab-bar{display:none}
     <nav class="main-nav" aria-label="Main">
       <a href="#/" data-nav="home">Home</a>
       <a href="#/tournaments" data-nav="tournaments">Events</a>
+      <a href="#/teams" data-nav="teams">Teams</a>
       <a href="#/collections" data-nav="collections">Collections</a>
       <a href="#/how" data-nav="how">How it works</a>
     </nav>
@@ -667,6 +682,7 @@ html.fs-lock .tab-bar{display:none}
 <nav class="tab-bar" aria-label="Main">
   <a href="#/" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>Home</a>
   <a href="#/tournaments" data-nav="tournaments"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="7" height="11" rx="1"></rect><rect x="13" y="3" width="7" height="11" rx="1"></rect><path d="M4 18h16M4 21h10"></path></svg>Events</a>
+  <a href="#/teams" data-nav="teams"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"></path></svg>Teams</a>
   <a href="#/collections" data-nav="collections"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"></path><circle cx="4" cy="6" r="1"></circle><circle cx="4" cy="12" r="1"></circle><circle cx="4" cy="18" r="1"></circle></svg>Collections</a>
   <a href="#/how" data-nav="how"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"></path><circle cx="12" cy="17.5" r=".6"></circle></svg>How it works</a>
 </nav>
@@ -840,6 +856,8 @@ function normalize(d) {
     name: str(s.name) || 'Spoiler-Free CS2', heroText: str(s.heroText), howTitle: str(s.howTitle) || 'How spoiler-free works',
     how: arr(s.how).length ? arr(s.how).map(x => ({ title: str(x && x.title), text: str(x && x.text) })) : clone(DEFAULT_HOW),
     footer: str(s.footer), featuredId: str(s.featuredId), example: !!s.example,
+    // Kept so that saving from edit mode doesn't drop it (watcher/pages.mjs adds it to the pages for Google).
+    ...(s.googleVerification ? { googleVerification: str(s.googleVerification) } : {}),
     firebase: { apiKey: str((s.firebase || {}).apiKey), databaseURL: str((s.firebase || {}).databaseURL).replace(/\/+$/, ''), sync: (s.firebase || {}).sync !== false }
   };
   const teams = arr(d.teams).filter(x => x && x.id).map(x => ({ id: str(x.id), name: str(x.name), logo: str(x.logo), logoDark: str(x.logoDark), aliases: arr(x.aliases).map(str).filter(Boolean) }));
@@ -1315,7 +1333,7 @@ function openSearch() {
     if (teams.length) kids.push(h('section', { class: 'sr-group' }, h('h3', {}, 'Teams'), h('ul', { class: 'sr-list' }, teams.map(({ tm, evs }) => {
       const pinned = isPinned('teams', tm.id);
       return h('li', { class: 'sr-team' }, teamLogo(tm),
-        h('span', { class: 'sr-text' }, h('b', {}, tm.name), h('span', {}, evs.length ? 'Plays in' : 'Not in an open round yet')),
+        h('span', { class: 'sr-text' }, h('a', { href: '#/team/' + tm.id, onClick: go }, h('b', {}, tm.name)), h('span', {}, evs.length ? 'Plays in' : 'Not in an open round yet')),
         h('button', { type: 'button', class: 'pin-btn', 'aria-pressed': String(pinned), onClick: () => { togglePin('teams', tm.id); toast(pinned ? 'Unpinned ' + tm.name : 'Pinned ' + tm.name); draw(); if (parseRoute().name === 'home') rerender(); } },
           icon('pin', 14), pinned ? 'Pinned' : 'Pin'),
         evs.length ? h('div', { class: 'sr-events' }, evs.slice(0, 6).map(t => h('a', { href: '#/t/' + t.id, onClick: go }, t.name || 'Untitled tournament'))) : null);
@@ -1822,6 +1840,8 @@ function parseRoute() {
   if (p[0] === 't') return { name: 'tournament', tid: p[1], sid: p[2], rid: p[3] };
   if (p[0] === 'match') return { name: 'player', mid: p[1], map: parseInt(p[2] || '0', 10) || 0, short: p[2] === 'short' };
   if (p[0] === 'c' && p[1]) return { name: 'collection', cid: p[1] };
+  if (p[0] === 'team' && p[1]) return { name: 'team', id: p[1] };
+  if (p[0] === 'teams') return { name: 'teams' };
   if (p[0] === 'tournaments' || p[0] === 'how' || p[0] === 'collections') return { name: 'home', section: p[0] };
   return { name: 'home' };
 }
@@ -1831,6 +1851,7 @@ function route(keepScroll, initial) {
   const r = parseRoute();
   const app = $('#app');
   app.replaceChildren();
+  pageTitle = '';
   if (editing() && data.site.example) app.append(exampleNotice());
   const alerts = alertsPanel();
   if (alerts) app.append(alerts);
@@ -1838,6 +1859,8 @@ function route(keepScroll, initial) {
   if (r.name === 'tournament') renderTournament(app, r);
   else if (r.name === 'player') renderPlayer(app, r);
   else if (r.name === 'collection') renderCollection(app, r);
+  else if (r.name === 'team') renderTeam(app, r);
+  else if (r.name === 'teams') renderTeams(app);
   else renderHome(app, r);
   renderHeader();
   renderFooter();
@@ -1852,13 +1875,15 @@ function route(keepScroll, initial) {
   }
 }
 function rerender() { route(true); }
+// The page's own part of the tab title, set by each page as it draws (never a matchup in a hidden round).
+let pageTitle = '';
 
 function renderHeader() {
   const name = data.site.name || 'Spoiler-Free CS2';
   // "Spoiler-Free CS2" is drawn as "Spoiler/free CS2", with the slash in orange.
   const cut = name.indexOf('-');
   $('#brand').replaceChildren(...(cut > 0 ? [name.slice(0, cut), h('i', {}, '/'), name.slice(cut + 1).replace(/^Free/, 'free')] : [name]));
-  document.title = name;
+  document.title = pageTitle ? pageTitle + ' · ' + name : name;
   const sb = $('#search-btn');
   sb.replaceChildren(icon('search', 16), h('span', { class: 'lb' }, 'Search'), h('kbd', { 'aria-hidden': 'true' }, '/'));
   sb.onclick = openSearch;
@@ -1873,7 +1898,8 @@ function renderHeader() {
   document.querySelectorAll('[data-nav]').forEach(a => {
     const k = a.dataset.nav;
     const cur = (k === 'home' && r.name === 'home' && !r.section) ||
-      (k === 'tournaments' && ((r.name !== 'home' && r.name !== 'collection') || r.section === 'tournaments')) ||
+      (k === 'tournaments' && ((r.name !== 'home' && r.name !== 'collection' && r.name !== 'team' && r.name !== 'teams') || r.section === 'tournaments')) ||
+      (k === 'teams' && (r.name === 'team' || r.name === 'teams')) ||
       (k === 'collections' && (r.name === 'collection' || r.section === 'collections')) ||
       (k === 'how' && r.section === 'how');
     if (cur) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
@@ -2065,6 +2091,7 @@ function renderTournament(app, r) {
   const t = findT(r.tid);
   if (!t) return renderNotFound(app);
   if (editing()) return renderTournamentEdit(app, r);
+  pageTitle = t.name;
   // Opening a pinned event counts as having seen what's new in it.
   const al = tournamentAlert(t);
   if (al) markSeen(al.kind, al.id, al.mids);
@@ -2147,7 +2174,7 @@ function slotFor(m, short) {
   const cw = !isWatched(m.id) && store.get('cw', {})[m.id];
   return '#/match/' + m.id + '/' + (cw ? Math.min(Math.max(0, +cw.map || 0), m.maps.length - 1) : 0);
 }
-function episode(m, k, short) {
+function episode(m, k, short, label) {
   const watched = isWatched(m.id);
   const going = !watched && !!store.get('cw', {})[m.id];
   const href = slotFor(m, short);
@@ -2158,7 +2185,7 @@ function episode(m, k, short) {
       thumbView(m, going ? h('span', { class: 'watched-chip' }, 'In progress') : watched ? h('span', { class: 'watched-chip done' }, 'Watched') : null, ratingSlot(m.id, 'rate-chip'))),
     h('div', {},
       h('h3', {}, h('a', { href }, names)),
-      h('span', { class: 'sub' }, ['Best of ' + m.bo, m.date].filter(Boolean).join(' · ')),
+      h('span', { class: 'sub' }, [label, 'Best of ' + m.bo, m.date].filter(Boolean).join(' · ')),
       going || watched ? h('span', { class: 'sub stat' }, ' · ' + (going ? 'In progress' : 'Watched')) : null),
     h('span', { class: 'extra' }, going ? h('a', { class: 'btn btn-accent btn-sm', href }, 'Resume') : null, editing() ? null : watchToggle(m)));
 }
@@ -2365,6 +2392,7 @@ function renderCollection(app, r) {
   const c = COLLECTIONS.find(x => x.id === r.cid);
   const items = c ? collectionItems(c) : [];
   if (!items.length) return renderNotFound(app);
+  pageTitle = c.title;
   app.append(h('section', { class: 'wrap t-head' },
     h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/' }, 'Home'), sep(), h('a', { href: '#/collections' }, 'Collections'), sep(), h('span', { class: 'crumb-cur' }, c.title || 'Collection')),
     h('h1', { class: 't-title' }, c.title || 'Collection'),
@@ -2378,11 +2406,77 @@ function renderNotFound(app) {
     h('a', { class: 'btn btn-outline', href: '#/' }, 'Go to the home page')));
 }
 
+/* ---------- team pages ----------
+   A team's page lists its matches in open rounds only (and rounds the visitor opened), like search.
+   A match in a hidden round would show that the team went through. */
+const teamLink = id => team(id) ? h('a', { href: '#/team/' + id }, teamName(id)) : teamName(id);
+function teamMatches(id) {
+  return teamEvents(id).map(t => {
+    const ms = [];
+    t.stages.forEach(s => s.rounds.forEach(rd => {
+      if (roundOpen(rd)) rd.matches.forEach(m => { if (m.a === id || m.b === id) ms.push({ s, rd, m }); });
+    }));
+    return { t, ms };
+  });
+}
+function renderTeam(app, r) {
+  const tm = team(r.id);
+  if (!tm || !tm.name) return renderNotFound(app);
+  pageTitle = tm.name;
+  const evs = teamMatches(tm.id);
+  app.append(h('section', { class: 'wrap t-head' },
+    h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/' }, 'Home'), sep(), h('a', { href: '#/teams' }, 'Teams'), sep(), h('span', { class: 'crumb-cur' }, tm.name)),
+    h('div', { class: 'team-head' }, teamLogo(tm), h('h1', { class: 't-title' }, tm.name)),
+    h('div', { class: 'pin-row' }, pinButton('teams', tm.id, tm.name))));
+  const body = h('section', { class: 'wrap stage-body' });
+  if (!evs.length) body.append(h('p', { class: 'empty' }, tm.name + ' has no matches in a round you can see yet.'));
+  evs.forEach(({ t, ms }) => body.append(h('section', { class: 'eps team-eps', 'aria-label': t.name || 'Event' },
+    h('div', { class: 'ephead' }, h('h2', { class: 'sh' }, h('a', { href: '#/t/' + t.id }, t.name || 'Untitled tournament'),
+      h('small', {}, [STATUS_TEXT[tStatus(t)], t.dates].filter(Boolean).join(' · ')))),
+    ms.map(({ s, rd, m }, k) => episode(m, k, false, [t.stages.length > 1 && s.name !== rd.name ? s.name : '', rd.name].filter(Boolean).join(' / '))))));
+  body.append(h('p', { class: 'hint' }, 'Only matches in rounds you can see are listed, so this page can’t give away how far a team went. Open later rounds on an event’s page to add them here.'));
+  app.append(body);
+}
+function renderTeams(app) {
+  pageTitle = 'Teams';
+  const list = data.teams.filter(x => x.name).map(tm => ({ tm, n: teamEvents(tm.id).length }))
+    .filter(x => x.n || isPinned('teams', x.tm.id)).sort((a, b) => a.tm.name.localeCompare(b.tm.name));
+  app.append(h('section', { class: 'wrap t-head' },
+    h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/' }, 'Home'), sep(), h('span', { class: 'crumb-cur' }, 'Teams')),
+    h('h1', { class: 't-title' }, 'Teams'),
+    h('p', { class: 'lede' }, 'Every team playing in a round you can see. A team’s page lists those matches, and never the rounds still hidden.')));
+  app.append(h('section', { class: 'wrap stage-body' }, list.length
+    ? h('div', { class: 'team-grid' }, list.map(({ tm, n }) => h('a', { class: 'team-card', href: '#/team/' + tm.id }, teamLogo(tm),
+      h('span', {}, h('b', {}, tm.name), n ? plural(n, 'event') : 'Pinned'))))
+    : h('p', { class: 'empty' }, 'No teams to show yet.')));
+}
+/* Someone arriving from a search engine or a shared page address lands straight on a match. If it's in a
+   hidden round, its matchup could spoil the rounds before it, so they're asked first. */
+const LANDING = (window.SF_LANDING && typeof window.SF_LANDING === 'object') ? window.SF_LANDING : {};
+let landingOpened = false;
+function landingGate(app, f) {
+  const { t, s, rd, m } = f;
+  if (landingOpened || LANDING.match !== m.id || !rd.locked || store.get('revealed', {})[rd.id]) return false;
+  app.append(h('section', { class: 'wrap t-head' },
+    h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, h('a', { href: '#/t/' + t.id }, t.name || 'Tournament'), sep(),
+      h('span', { class: 'crumb-cur' }, [s.name, rd.name].filter(Boolean).join(' / ') || 'Round')),
+    h('h1', { class: 't-title' }, rd.name || 'Match'),
+    h('div', { class: 'curtain' },
+      h('b', {}, icon('lock', 22), 'This matchup is hidden'),
+      h('span', { class: 'muted' }, 'Seeing who plays here could give away results from earlier rounds of ' + (t.name || 'this event') + '.'),
+      h('div', { class: 'row' },
+        h('button', { type: 'button', class: 'btn btn-inv btn-sm', onClick: () => { landingOpened = true; rerender(); } }, 'Show the match'),
+        h('a', { class: 'btn btn-outline btn-sm', href: '#/t/' + t.id }, 'Go to the event')))));
+  return true;
+}
+
 /* ---------- player page ---------- */
 function renderPlayer(app, r) {
   const f = findMatch(r.mid);
   if (!f) return renderNotFound(app);
   const { t, s, rd, m } = f;
+  pageTitle = [rd.name, t.name].filter(Boolean).join(' · ');
+  if (landingGate(app, f)) return;
   const hasShort = !!m.highlight && shortReady(rd);
   // The short version plays as slot -1: the whole highlight video, with nothing to skip into.
   const short = !!r.short && hasShort;
@@ -2425,7 +2519,7 @@ function renderPlayer(app, r) {
     h('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' },
       h('a', { href: '#/t/' + t.id }, t.name || 'Tournament'), sep(),
       h('a', { href: '#/t/' + t.id + '/' + s.id + '/' + rd.id }, [s.name, rd.name].filter(Boolean).join(' / ') || 'Round')),
-    h('h1', { class: 'match-title' }, teamLogo(ta), teamName(m.a), h('span', { class: 'vs' }, 'vs'), teamName(m.b), teamLogo(tb)),
+    h('h1', { class: 'match-title' }, teamLogo(ta), teamLink(m.a), h('span', { class: 'vs' }, 'vs'), teamLink(m.b), teamLogo(tb)),
     ratingSlot(m.id, 'rate-badge'),
     meta,
     editing() ? h('div', { class: 'row' }, h('button', { type: 'button', class: 'mini-btn', onClick: () => openMatchDialog(m, rd) }, 'Edit match'))

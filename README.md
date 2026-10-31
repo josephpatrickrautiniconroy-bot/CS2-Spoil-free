@@ -32,6 +32,7 @@ The watcher never saves scores, winners, placements or video titles. The only re
 | `watcher/state.json` | The watcher's notes (page versions, team names, checked videos) | The watcher |
 | `ratings/database.rules.json` | Who can read and write ratings and synced devices in Firebase | Nobody, paste it into Firebase once |
 | `vendor/trystero-nostr.mjs` | The library watch parties use to connect browsers (Trystero, bundled) | Nobody |
+| `watcher/pages.mjs` | Writes the findable event, team and match pages and the sitemap when the site is published | Nobody |
 | `.github/workflows/watch.yml` | Runs the watcher every 30 minutes and publishes the site | Nobody |
 
 ## Choosing tournaments (`watcher/config.json`)
@@ -136,6 +137,28 @@ On any match page, **Start a watch party** gives a link to send to friends. Ever
 - Someone who opens the link gets a "Join in" button first, because browsers only play sound after a click.
 - Best for small groups, up to about eight.
 - Everyone watches at the same speed: changing it changes it for the whole party. A short version can be watched together too.
+
+## Team pages
+
+Every team playing in an open round has a page (**Teams** in the menu, or click a team's name on a match page or in search). It lists the team's matches, grouped by event, and has a button to pin the team. Like search, a team page only lists matches in rounds the visitor can see (an event's first round, plus any rounds they opened). That way it can't give away how far the team went.
+
+## Findable addresses (for Google and shared links)
+
+The site works from `#/` addresses, which search engines mostly skip. So when the site is published, `watcher/pages.mjs` also writes a real page for each event, team and match, plus a sitemap:
+
+- `event/<id>/`, `team/<id>/`, `match/<id>/` and `teams/`. Each has its own title, description and link preview (the event or team logo).
+- `sitemap.xml`, which lists all of them.
+- `404.html`, so a longer address like `match/<id>/2` still opens the right page.
+
+Opening one of these starts the site on that page as usual, and the address bar then shows the `#/` address. The pages follow the same spoiler rules. A match in a hidden round never names its teams in its title, description or text, and someone who lands on it from Google is asked before the matchup is shown. Team pages only list matches in open rounds.
+
+To get the site into Google:
+
+1. Open [Google Search Console](https://search.google.com/search-console), choose **Add property → URL prefix**, and enter `https://spoilerfreecs2.github.io/CS2-Spoil-free/`.
+2. Pick **HTML tag** as the way to verify. Copy the `content` value from the tag it shows and add it to `data.json` under `site`, as `"googleVerification": "abc123..."`. Wait for the next publish (a few minutes), then press **Verify**.
+3. Under **Sitemaps**, submit `sitemap.xml`.
+
+A `robots.txt` isn't needed. Crawlers only read it at the top of the domain, so one here would be ignored anyway.
 
 ## Event pictures
 
