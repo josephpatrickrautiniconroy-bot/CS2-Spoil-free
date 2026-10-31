@@ -4504,118 +4504,6 @@
       "time": "2026-11-11T10:30:00.000Z"
     },
     {
-      "id": "lp-1144bd1cb8",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A: Upper Bracket Quarterfinals",
-      "roundOrder": 1,
-      "a": "lp-legacy",
-      "b": "lp-the-mongolz",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T16:00:00.000Z"
-    },
-    {
-      "id": "lp-34a1fee10a",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A: Upper Bracket Quarterfinals",
-      "roundOrder": 1,
-      "a": "lp-heroic",
-      "b": "lp-b8",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T16:00:00.000Z"
-    },
-    {
-      "id": "lp-dbfa622f88",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A: Upper Bracket Quarterfinals",
-      "roundOrder": 1,
-      "a": "lp-furia",
-      "b": "lp-faze-clan",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T21:00:00.000Z"
-    },
-    {
-      "id": "lp-0ff6e121ef",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group A: Upper Bracket Quarterfinals",
-      "roundOrder": 1,
-      "a": "lp-natus-vincere",
-      "b": "lp-team-falcons",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T23:30:00.000Z"
-    },
-    {
-      "id": "lp-87a240523e",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B: Upper Bracket Quarterfinals",
-      "roundOrder": 2,
-      "a": "lp-aurora-gaming",
-      "b": "lp-team-liquid",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T18:30:00.000Z"
-    },
-    {
-      "id": "lp-b4a46d837a",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B: Upper Bracket Quarterfinals",
-      "roundOrder": 2,
-      "a": "lp-parivision",
-      "b": "lp-g2-esports",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T18:30:00.000Z"
-    },
-    {
-      "id": "lp-cbfa7e1e72",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B: Upper Bracket Quarterfinals",
-      "roundOrder": 2,
-      "a": "lp-9z-team",
-      "b": "lp-betboom-team",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T21:00:00.000Z"
-    },
-    {
-      "id": "lp-ac9e34a298",
-      "tournamentId": "intel-extreme-masters-beijing-2026",
-      "tournament": "Intel Extreme Masters Beijing 2026",
-      "stage": "Group Stage",
-      "stageOrder": 0,
-      "round": "Group B: Upper Bracket Quarterfinals",
-      "roundOrder": 2,
-      "a": "lp-mouz",
-      "b": "lp-tyloo",
-      "bo": 3,
-      "date": "2 Nov",
-      "time": "2026-11-02T23:30:00.000Z"
-    },
-    {
       "id": "lp-e017aaea27",
       "tournamentId": "pgl-masters-bucharest-2026",
       "tournament": "PGL Masters Bucharest 2026",
@@ -5188,6 +5076,118 @@
       "bo": 5,
       "date": "31 Oct",
       "time": "2026-10-31T11:00:00.000Z"
+    },
+    {
+      "id": "lp-1144bd1cb8",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-legacy",
+      "b": "lp-the-mongolz",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T16:00:00.000Z"
+    },
+    {
+      "id": "lp-34a1fee10a",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-heroic",
+      "b": "lp-b8",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T16:00:00.000Z"
+    },
+    {
+      "id": "lp-dbfa622f88",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-furia",
+      "b": "lp-faze-clan",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T21:00:00.000Z"
+    },
+    {
+      "id": "lp-0ff6e121ef",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group A: Upper Bracket Quarterfinals",
+      "roundOrder": 1,
+      "a": "lp-natus-vincere",
+      "b": "lp-team-falcons",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T23:30:00.000Z"
+    },
+    {
+      "id": "lp-87a240523e",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-aurora-gaming",
+      "b": "lp-team-liquid",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T18:30:00.000Z"
+    },
+    {
+      "id": "lp-b4a46d837a",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-parivision",
+      "b": "lp-g2-esports",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T18:30:00.000Z"
+    },
+    {
+      "id": "lp-cbfa7e1e72",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-9z-team",
+      "b": "lp-betboom-team",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T21:00:00.000Z"
+    },
+    {
+      "id": "lp-ac9e34a298",
+      "tournamentId": "intel-extreme-masters-beijing-2026",
+      "tournament": "Intel Extreme Masters Beijing 2026",
+      "stage": "Group Stage",
+      "stageOrder": 0,
+      "round": "Group B: Upper Bracket Quarterfinals",
+      "roundOrder": 2,
+      "a": "lp-mouz",
+      "b": "lp-tyloo",
+      "bo": 3,
+      "date": "2 Nov",
+      "time": "2026-11-02T23:30:00.000Z"
     }
   ],
   "videos": {
@@ -10916,206 +10916,6 @@
         }
       ]
     },
-    "lp-1144bd1cb8": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-34a1fee10a": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-dbfa622f88": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-0ff6e121ef": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-87a240523e": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-b4a46d837a": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-cbfa7e1e72": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
-    "lp-ac9e34a298": {
-      "maps": [
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        },
-        {
-          "video": "",
-          "start": "",
-          "end": "",
-          "name": "",
-          "notPlayed": false
-        }
-      ]
-    },
     "lp-e017aaea27": {
       "maps": [
         {
@@ -12194,8 +11994,208 @@
           "notPlayed": false
         }
       ]
+    },
+    "lp-1144bd1cb8": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-34a1fee10a": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-dbfa622f88": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-0ff6e121ef": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-87a240523e": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-b4a46d837a": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-cbfa7e1e72": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
+    },
+    "lp-ac9e34a298": {
+      "maps": [
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        },
+        {
+          "video": "",
+          "start": "",
+          "end": "",
+          "name": "",
+          "notPlayed": false
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-31T11:37:54.488Z",
+  "updatedAt": "2026-10-31T16:38:52.018Z",
   "featured": "pgl-masters-bucharest-2026"
 }
