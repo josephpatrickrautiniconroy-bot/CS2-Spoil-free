@@ -2,10 +2,10 @@
   "version": 2,
   "pages": {
     "PGL/2026/Masters": {
-      "revid": 3465124,
+      "revid": 3465169,
       "subpages": [],
       "subRevids": {},
-      "fetchedAt": "2026-10-31T12:47:46.664Z",
+      "fetchedAt": "2026-10-31T14:38:27.266Z",
       "result": "41 matches, 92 map videos"
     },
     "ESL/Pro League/Season 24": {
@@ -4175,13 +4175,13 @@
       "@pgl": "UU5jpxDZx4yoBo324pMQ91Ww",
       "@Counter_Strike_Highlights": "UU3y-TwdfrUfm7Iindvvxsjg"
     },
-    "checkedAt": "2026-10-31T11:37:54.488Z",
+    "checkedAt": "2026-10-31T14:38:27.266Z",
     "key": "{\"channels\":[\"@ESLCS\",\"@BLASTPremier\",\"@pgl\",\"@Counter_Strike_Highlights\"],\"everyHours\":3,\"pages\":4,\"firstPages\":10,\"anyTitle\":[\"@Counter_Strike_Highlights\"],\"aliases\":{\"lp-mouz\":[\"mousesports\"]},\"maxDaysAfter\":4,\"lookBackDays\":21}",
     "last": {
-      "matchesLookedFor": 18,
+      "matchesLookedFor": 16,
       "matchesFrom": "2026-10-10",
       "matchesTo": "2026-11-11",
-      "found": 1,
+      "found": 0,
       "channels": {
         "@ESLCS": {
           "uploads": 200,
@@ -4198,14 +4198,14 @@
         "@pgl": {
           "uploads": 200,
           "sayHighlights": 0,
-          "oldest": "2025-11-22T21:15:28Z",
-          "newest": "2026-10-31T07:15:06Z"
+          "oldest": "2025-11-23T11:46:34Z",
+          "newest": "2026-10-31T11:45:08Z"
         },
         "@Counter_Strike_Highlights": {
           "uploads": 200,
           "sayHighlights": 41,
-          "oldest": "2026-07-25T12:00:29Z",
-          "newest": "2026-10-31T09:53:49Z"
+          "oldest": "2026-07-31T12:00:08Z",
+          "newest": "2026-10-31T14:34:41Z"
         }
       },
       "samples": [
@@ -4246,6 +4246,26 @@
         },
         {
           "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T14:34",
+          "title": "YEKINDAR Turns the Bomb Into a DEADLY Trap for <team> #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T13:08",
+          "title": "syph0 Sees NOTHING Through the Smoke Yet Finds TWO <team> Players #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T12:37",
+          "title": "YEKINDAR STEALS the Clutch and Denies the ACE #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
+          "at": "2026-10-31T12:15",
+          "title": "robo Sends YEKINDAR Straight Into the ZEUS Trap #pgl #Bucharest #cs #cs2"
+        },
+        {
+          "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-31T09:53",
           "title": "DECIDER MATCH FOR 3rd PLACE! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
         },
@@ -4273,26 +4293,6 @@
           "channel": "@Counter_Strike_Highlights",
           "at": "2026-10-30T18:10",
           "title": "SEMI-FINALS! <team> vs <team> - HIGHLIGHTS - PGL Masters Bucharest 2026 | CS2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-30T16:58",
-          "title": "torzsi WITH SOME BEAUTIFUL AWP SHOTS #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-30T16:24",
-          "title": "PR FINDS THE PERFECT MOMENT TO KNIFE #knife #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-30T15:53",
-          "title": "<team> ARE JUST MESSING AROUND #pgl #Bucharest #cs #cs2"
-        },
-        {
-          "channel": "@Counter_Strike_Highlights",
-          "at": "2026-10-30T14:18",
-          "title": "mezii WHAT A QUAD KILL! #pgl #Bucharest #cs #cs2"
         }
       ]
     }
