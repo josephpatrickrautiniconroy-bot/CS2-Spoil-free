@@ -54,20 +54,20 @@
       "result": "4 matches, 0 map videos"
     },
     "PGL/2026/Singapore": {
-      "revid": 3464790,
+      "revid": 3465026,
       "subpages": [
-        "PGL/2026/Singapore/Stage 1",
-        "PGL/2026/Singapore/Stage 2",
         "PGL/2026/Singapore/Stage 3",
+        "PGL/2026/Singapore/Stage 2",
+        "PGL/2026/Singapore/Stage 1",
         "PGL/2026/Singapore/Playoffs"
       ],
       "subRevids": {
-        "PGL/2026/Singapore/Stage 1": 3464628,
-        "PGL/2026/Singapore/Stage 2": 3464629,
         "PGL/2026/Singapore/Stage 3": 3464630,
+        "PGL/2026/Singapore/Stage 2": 3464629,
+        "PGL/2026/Singapore/Stage 1": 3464628,
         "PGL/2026/Singapore/Playoffs": 3464631
       },
-      "fetchedAt": "2026-10-30T17:55:19.486Z",
+      "fetchedAt": "2026-10-31T02:48:46.773Z",
       "result": "coming up, no matches drawn yet"
     },
     "BLAST/Bounty/2026/Summer": {
